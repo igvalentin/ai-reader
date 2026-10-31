@@ -1,0 +1,13 @@
+# ImoIndex — politica pentru crawlere
+# Paginile publice (căutare și detalii proprietăți) sunt deschise
+# motoarelor de căutare. Zonele de cont, autentificare și administrare
+# sunt excluse pentru toți roboții.
+
+User-agent: *
+Allow: /
+Disallow: /cautari-salvate
+Disallow: /admin
+Disallow: /auth
+Disallow: /reset-password
+
+Sitemap: https://imoindex.lovable.app/sitemap.xml

@@ -1,0 +1,372 @@
+{
+  "src/components/ai-reader/language-selector.tsx": {
+    "filename": "language-selector.tsx",
+    "path": "src/components/ai-reader/language-selector.tsx",
+    "version": "1.2",
+    "contextFile": "e0adbe1b-context.json",
+    "chunks": {
+      "d3cf67": {
+        "user": "Valentin Ion",
+        "model": "gpt-4.1",
+        "timestamp": 1793452515,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "38969c52"
+        },
+        "hash": "58dd423f",
+        "messageId": "system_d54adc90-d527-11f1-b130-cf6379984105",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-4.1\n- **timestamp**: 10/31/2026, 3:15:15 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "d3cf67",
+        "hash": "a744101f",
+        "encoded": "import%20%7B%20Label%20%7D%20from%20%22@/components/ui/label%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "d3cf67",
+        "hash": "d807101c",
+        "encoded": "import%20%7B%20Select,%20SelectContent,%20SelectItem,%20SelectTrigger,%20SelectValue%20%7D%20from%20%22@/components/ui/select%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "d3cf67",
+        "hash": "3edfd3bd",
+        "encoded": "import%20%7B%20Languages%20%7D%20from%20%22lucide-react%22;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "d3cf67",
+        "hash": "69407bac",
+        "encoded": "export%20type%20LanguageCode%20=%20%22auto%22%20%7C%20%22ro-RO%22%20%7C%20%22en-US%22%20%7C%20%22en-GB%22;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "d3cf67",
+        "hash": "cbc71678",
+        "encoded": "export%20interface%20Language%20%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "d3cf67",
+        "hash": "fc40db53",
+        "encoded": "code:%20LanguageCode;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "d3cf67",
+        "hash": "6f5d543b",
+        "encoded": "name:%20string;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "d3cf67",
+        "hash": "839723e3",
+        "encoded": "nativeName:%20string;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "d3cf67",
+        "hash": "c2f1edd6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "d3cf67",
+        "hash": "8f0f4a64",
+        "encoded": "export%20const%20SUPPORTED_LANGUAGES:%20Language%5B%5D%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "d3cf67",
+        "hash": "487faf14",
+        "encoded": "%7B%20code:%20%22auto%22,%20name:%20%22Auto-detect%22,%20nativeName:%20%22Detectare%20automat%C4%83%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "d3cf67",
+        "hash": "f95d973d",
+        "encoded": "%7B%20code:%20%22ro-RO%22,%20name:%20%22Romanian%22,%20nativeName:%20%22Rom%C3%A2n%C4%83%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "d3cf67",
+        "hash": "299accc0",
+        "encoded": "%7B%20code:%20%22en-US%22,%20name:%20%22English%20(US)%22,%20nativeName:%20%22English%20(US)%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "d3cf67",
+        "hash": "a9fbc84f",
+        "encoded": "%7B%20code:%20%22en-GB%22,%20name:%20%22English%20(UK)%22,%20nativeName:%20%22English%20(UK)%22%20%7D,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "d3cf67",
+        "hash": "f46993bd",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "d3cf67",
+        "hash": "385802bd",
+        "encoded": "interface%20LanguageSelectorProps%20%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "d3cf67",
+        "hash": "7043a4a6",
+        "encoded": "value:%20LanguageCode;",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "d3cf67",
+        "hash": "bd38d6f8",
+        "encoded": "onChange:%20(value:%20LanguageCode)%20=%3E%20void;",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "d3cf67",
+        "hash": "2863a9a1",
+        "encoded": "disabled?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "d3cf67",
+        "hash": "d25f1027",
+        "encoded": "detectedLanguage?:%20LanguageCode%20%7C%20null;",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "d3cf67",
+        "hash": "71870443",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "d3cf67",
+        "hash": "28f9552e",
+        "encoded": "export%20function%20LanguageSelector(%7B%20value,%20onChange,%20disabled%20=%20false,%20detectedLanguage%20=%20null%20%7D:%20LanguageSelectorProps)%20%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "d3cf67",
+        "hash": "7ffd43c6",
+        "encoded": "const%20selectedLanguage%20=%20SUPPORTED_LANGUAGES.find((lang)%20=%3E%20lang.code%20===%20value);",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "d3cf67",
+        "hash": "5df2c631",
+        "encoded": "const%20detectedLanguageName%20=%20detectedLanguage",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "d3cf67",
+        "hash": "98a999f7",
+        "encoded": "?%20SUPPORTED_LANGUAGES.find((lang)%20=%3E%20lang.code%20===%20detectedLanguage)?.nativeName",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "d3cf67",
+        "hash": "3ca8a02c",
+        "encoded": ":%20null;",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "d3cf67",
+        "hash": "ce4663cf",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "d3cf67",
+        "hash": "a2de2be3",
+        "encoded": "%3Cdiv%20className=%22space-y-2%22%3E",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "d3cf67",
+        "hash": "13df360b",
+        "encoded": "%3CLabel%20htmlFor=%22language-selector%22%20className=%22flex%20items-center%20gap-2%22%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "d3cf67",
+        "hash": "bd8fcb73",
+        "encoded": "%3CLanguages%20className=%22h-4%20w-4%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "d3cf67",
+        "hash": "1eb91761",
+        "encoded": "Limba",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "d3cf67",
+        "hash": "04d00288",
+        "encoded": "%3C/Label%3E",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "d3cf67",
+        "hash": "1f1965c5",
+        "encoded": "%3CSelect%20value=%7Bvalue%7D%20onValueChange=%7B(val)%20=%3E%20onChange(val%20as%20LanguageCode)%7D%20disabled=%7Bdisabled%7D%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "d3cf67",
+        "hash": "86796fd7",
+        "encoded": "%3CSelectTrigger%20id=%22language-selector%22%20className=%22w-full%22%3E",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "d3cf67",
+        "hash": "45f6590b",
+        "encoded": "%3CSelectValue%20placeholder=%22Selecteaz%C4%83%20limba%22%3E",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "d3cf67",
+        "hash": "4b703221",
+        "encoded": "%7BselectedLanguage?.nativeName%20%7C%7C%20%22Selecteaz%C4%83%20limba%22%7D",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "d3cf67",
+        "hash": "2eff8bfe",
+        "encoded": "%3C/SelectValue%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "d3cf67",
+        "hash": "301ca398",
+        "encoded": "%3C/SelectTrigger%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "d3cf67",
+        "hash": "ce3f1ad1",
+        "encoded": "%3CSelectContent%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "d3cf67",
+        "hash": "724a1f27",
+        "encoded": "%7BSUPPORTED_LANGUAGES.map((lang)%20=%3E%20(",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "d3cf67",
+        "hash": "b7344f77",
+        "encoded": "%3CSelectItem%20key=%7Blang.code%7D%20value=%7Blang.code%7D%3E",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "d3cf67",
+        "hash": "06bd0bf2",
+        "encoded": "%3Cspan%20className=%22flex%20items-center%20gap-2%22%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "d3cf67",
+        "hash": "9501ccc6",
+        "encoded": "%7Blang.nativeName%7D",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "d3cf67",
+        "hash": "243eb949",
+        "encoded": "%7Blang.code%20!==%20%22auto%22%20&&%20%3Cspan%20className=%22text-xs%20text-muted-foreground%22%3E(%7Blang.name%7D)%3C/span%3E%7D",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "d3cf67",
+        "hash": "eea8dbea",
+        "encoded": "%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "d3cf67",
+        "hash": "97f83ee4",
+        "encoded": "%3C/SelectItem%3E",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "d3cf67",
+        "hash": "9d030c30",
+        "encoded": "))%7D",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "d3cf67",
+        "hash": "32824678",
+        "encoded": "%3C/SelectContent%3E",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "d3cf67",
+        "hash": "81cebac2",
+        "encoded": "%3C/Select%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "d3cf67",
+        "hash": "63626eb6",
+        "encoded": "%7BdetectedLanguageName%20&&%20value%20===%20%22auto%22%20&&%20(",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "d3cf67",
+        "hash": "7627fe83",
+        "encoded": "%3Cp%20className=%22text-xs%20text-muted-foreground%22%3E",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "d3cf67",
+        "hash": "184a3192",
+        "encoded": "Limb%C4%83%20detectat%C4%83:%20%3Cspan%20className=%22font-medium%22%3E%7BdetectedLanguageName%7D%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "d3cf67",
+        "hash": "5c70cb3c",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "d3cf67",
+        "hash": "fbdc1816",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "d3cf67",
+        "hash": "e1df0d13",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "d3cf67",
+        "hash": "eec168c4",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "d3cf67",
+        "hash": "646a8e84",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "src/components/ai-reader/text-input.tsx": {
+    "filename": "text-input.tsx",
+    "path": "src/components/ai-reader/text-input.tsx",
+    "version": "1.2",
+    "contextFile": "93307e34-context.json",
+    "chunks": {
+      "292312": {
+        "user": "Valentin Ion",
+        "model": "gpt-4.1",
+        "timestamp": 1793452515,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "38969c52"
+        },
+        "hash": "b3e18d50",
+        "messageId": "system_d54adc90-d527-11f1-b130-cf6379984105",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-4.1\n- **timestamp**: 10/31/2026, 3:15:15 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "292312",
+        "hash": "3d5c9eb2",
+        "encoded": "import%20%7B%20Textarea%20%7D%20from%20%22@/components/ui/textarea%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "292312",
+        "hash": "45868004",
+        "encoded": "import%20%7B%20Label%20%7D%20from%20%22@/components/ui/label%22;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "292312",
+        "hash": "9b4b3f4c",
+        "encoded": "import%20%7B%20FileText%20%7D%20from%20%22lucide-react%22;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "292312",
+        "hash": "2f8fb2fe",
+        "encoded": "interface%20TextInputProps%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "292312",
+        "hash": "cc2fcee0",
+        "encoded": "value:%20string;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "292312",
+        "hash": "96d9f9f0",
+        "encoded": "onChange:%20(value:%20string)%20=%3E%20void;",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "292312",
+        "hash": "7b2c41e7",
+        "encoded": "disabled?:%20boolean;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "292312",
+        "hash": "55230228",
+        "encoded": "placeholder?:%20string;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "292312",
+        "hash": "2ce165fa",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "292312",
+        "hash": "334e6613",
+        "encoded": "export%20function%20TextInput(%7B%20value,%20onChange,%20disabled%20=%20false,%20placeholder%20=%20%22Lipe%C8%99te%20sau%20scrie%20textul%20aici...%22%20%7D:%20TextInputProps)%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "292312",
+        "hash": "6b2ee14d",
+        "encoded": "const%20charCount%20=%20value.length;",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "292312",
+        "hash": "899c019c",
+        "encoded": "const%20wordCount%20=%20value.trim()%20?%20value.trim().split(/%5Cs+/).length%20:%200;",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "292312",
+        "hash": "cc2a6fcd",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "292312",
+        "hash": "59b4a369",
+        "encoded": "%3Cdiv%20className=%22space-y-2%22%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "292312",
+        "hash": "e54e7e43",
+        "encoded": "%3CLabel%20htmlFor=%22text-input%22%20className=%22flex%20items-center%20gap-2%22%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "292312",
+        "hash": "97efa9f2",
+        "encoded": "%3CFileText%20className=%22h-4%20w-4%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "292312",
+        "hash": "754aebe4",
+        "encoded": "Text%20de%20citit",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "292312",
+        "hash": "ea20ebb5",
+        "encoded": "%3C/Label%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "292312",
+        "hash": "6d91ff10",
+        "encoded": "%3CTextarea",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "292312",
+        "hash": "e1a71dff",
+        "encoded": "id=%22text-input%22",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "292312",
+        "hash": "006c140e",
+        "encoded": "value=%7Bvalue%7D",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "292312",
+        "hash": "c27ed5af",
+        "encoded": "onChange=%7B(e)%20=%3E%20onChange(e.target.value)%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "292312",
+        "hash": "af0ea9d5",
+        "encoded": "disabled=%7Bdisabled%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "292312",
+        "hash": "95b602a4",
+        "encoded": "placeholder=%7Bplaceholder%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "292312",
+        "hash": "697a6222",
+        "encoded": "className=%22min-h-%5B200px%5D%20resize-y%20text-base%22",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "292312",
+        "hash": "6e6f4f0c",
+        "encoded": "aria-describedby=%22text-stats%22",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "292312",
+        "hash": "84d1a349",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "292312",
+        "hash": "3d524126",
+        "encoded": "%3Cdiv%20id=%22text-stats%22%20className=%22flex%20items-center%20gap-4%20text-xs%20text-muted-foreground%22%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "292312",
+        "hash": "008dcf16",
+        "encoded": "%3Cspan%3E%7BcharCount%7D%20caractere%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "292312",
+        "hash": "a701e59d",
+        "encoded": "%3Cspan%3E%C2%B7%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "292312",
+        "hash": "650584ff",
+        "encoded": "%3Cspan%3E%7BwordCount%7D%20cuvinte%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "292312",
+        "hash": "832c6a9d",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "292312",
+        "hash": "4988e367",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "292312",
+        "hash": "f2c6d78f",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "292312",
+        "hash": "880eeeff",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

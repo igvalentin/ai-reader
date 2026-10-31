@@ -1,0 +1,108 @@
+{
+  "src/components/ai-reader/privacy-notice.tsx": {
+    "filename": "privacy-notice.tsx",
+    "path": "src/components/ai-reader/privacy-notice.tsx",
+    "version": "1.2",
+    "contextFile": "6bd348cf-context.json",
+    "chunks": {
+      "511953": {
+        "user": "Valentin Ion",
+        "model": "gpt-4.1",
+        "timestamp": 1793452516,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "38969c52"
+        },
+        "hash": "da0b51a1",
+        "messageId": "system_d54adc90-d527-11f1-b130-cf6379984105",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-4.1\n- **timestamp**: 10/31/2026, 3:15:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "511953",
+        "hash": "03958c88",
+        "encoded": "import%20%7B%20Alert,%20AlertDescription%20%7D%20from%20%22@/components/ui/alert%22;",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "511953",
+        "hash": "17c6b6f3",
+        "encoded": "import%20%7B%20ShieldCheck%20%7D%20from%20%22lucide-react%22;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "511953",
+        "hash": "3995069f",
+        "encoded": "export%20function%20PrivacyNotice()%20%7B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "511953",
+        "hash": "4cf3ee79",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "511953",
+        "hash": "4eb792cf",
+        "encoded": "%3CAlert%20className=%22border-primary/20%20bg-primary/5%22%3E",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "511953",
+        "hash": "21110ce1",
+        "encoded": "%3CShieldCheck%20className=%22h-4%20w-4%20text-primary%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "511953",
+        "hash": "f98f4c32",
+        "encoded": "%3CAlertDescription%20className=%22text-sm%20leading-relaxed%22%3E",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "511953",
+        "hash": "40a51835",
+        "encoded": "%3Cstrong%3EConfiden%C8%9Bialitate:%3C/strong%3E%20Textul%20%C8%99i%20imaginile%20tale%20sunt%20procesate%20temporar%20pentru%20a%20genera%20audio.",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "511953",
+        "hash": "c91bccc6",
+        "encoded": "Nu%20stoc%C4%83m%20permanent%20con%C8%9Binutul%20t%C4%83u.%20Imaginile%20sunt%20%C8%99terse%20imediat%20dup%C4%83%20extragerea%20textului.",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "511953",
+        "hash": "cc050641",
+        "encoded": "%3C/AlertDescription%3E",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "511953",
+        "hash": "c692bce8",
+        "encoded": "%3C/Alert%3E",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "511953",
+        "hash": "5d262367",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "511953",
+        "hash": "e683dcf7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

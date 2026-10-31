@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.evaluate_feature_flags(text) FROM anon, authenticated, PUBLIC;
