@@ -11,7 +11,9 @@ function makeRequest(parts: Buffer[]): Readable {
 
 function filePart(fieldName = 'image'): Buffer[] {
   return [
-    Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="${fieldName}"; filename="photo.png"\r\nContent-Type: image/png\r\n\r\n`),
+    Buffer.from(
+      `--${boundary}\r\nContent-Disposition: form-data; name="${fieldName}"; filename="photo.png"\r\nContent-Type: image/png\r\n\r\n`,
+    ),
     pngBytes,
     Buffer.from('\r\n'),
   ]
@@ -19,7 +21,9 @@ function filePart(fieldName = 'image'): Buffer[] {
 
 function fieldPart(name: string, value: string): Buffer[] {
   return [
-    Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="${name}"\r\n\r\n${value}\r\n`),
+    Buffer.from(
+      `--${boundary}\r\nContent-Disposition: form-data; name="${name}"\r\n\r\n${value}\r\n`,
+    ),
   ]
 }
 
@@ -30,7 +34,10 @@ function finishMultipart(): Buffer {
 describe('parseMultipartImage', () => {
   it('accepts exactly one image in the expected image field', async () => {
     const request = makeRequest([...filePart(), finishMultipart()])
-    const parsed = await parseMultipartImage(request as never, `multipart/form-data; boundary=${boundary}`)
+    const parsed = await parseMultipartImage(
+      request as never,
+      `multipart/form-data; boundary=${boundary}`,
+    )
 
     expect(parsed.fieldName).toBe('image')
     expect(parsed.buffer).toEqual(pngBytes)
@@ -39,8 +46,9 @@ describe('parseMultipartImage', () => {
   it('rejects files sent under a different field name', async () => {
     const request = makeRequest([...filePart('attachment'), finishMultipart()])
 
-    await expect(parseMultipartImage(request as never, `multipart/form-data; boundary=${boundary}`))
-      .rejects.toMatchObject({ statusCode: 400 })
+    await expect(
+      parseMultipartImage(request as never, `multipart/form-data; boundary=${boundary}`),
+    ).rejects.toMatchObject({ statusCode: 400 })
   })
 
   it('rejects extra non-file form fields instead of parsing an unbounded multipart body', async () => {
@@ -50,7 +58,8 @@ describe('parseMultipartImage', () => {
       finishMultipart(),
     ])
 
-    await expect(parseMultipartImage(request as never, `multipart/form-data; boundary=${boundary}`))
-      .rejects.toBeInstanceOf(MultipartParseError)
+    await expect(
+      parseMultipartImage(request as never, `multipart/form-data; boundary=${boundary}`),
+    ).rejects.toBeInstanceOf(MultipartParseError)
   })
 })

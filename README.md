@@ -85,15 +85,14 @@ Variabile server-only necesare pentru entitlement/billing:
 
 ## OCR (extragere text din imagini)
 
-- Imaginea este trimisă din browser către funcția server `api/ocr.ts` (Vercel Function) prin
-  `multipart/form-data`; furnizorul OCR configurat este [OCR.space](https://ocr.space/) (motor 2,
-  limbă română), ales pentru suport bun al diacriticelor și cost redus pentru un MVP.
-- Cheia API (`OCR_SPACE_API_KEY`) rămâne exclusiv pe server — nu este niciodată expusă clientului.
-- Imaginea este validată după conținutul binar real (semnătura/magic bytes), nu doar după
-  extensie sau `Content-Type`; este procesată integral în memorie și nu este niciodată scrisă pe
-  disc sau stocată — este eliminată imediat după generarea răspunsului.
-- Limita de dimensiune este de 4 MB; tipurile acceptate sunt JPEG, PNG și WebP.
-- **Variabilă de mediu necesară (doar pe server, în Vercel):** `OCR_SPACE_API_KEY`.
+- Browserul trimite imaginea prin `multipart/form-data` către `api/ocr.ts`; Tesseract.js/WASM rulează
+  local în funcția Vercel, folosind traineddata românesc (`ron`) inclus în deployment. Imaginea nu
+  este transmisă unui furnizor OCR extern.
+- Imaginea este validată după conținutul binar real (semnătura/magic bytes), apoi procesată în
+  memoria funcției și nu este stocată.
+- Limita aplicației este de 4 MiB; tipurile acceptate sunt JPEG, PNG și WebP. Limita request-ului
+  Vercel rămâne aplicabilă.
+- OCR nu necesită cheie API sau variabilă de mediu.
 - Impunerea autentificării obligatorii pe acest endpoint este planificată pentru etapa de
   entitlement/abonament (vezi `docs/ARCHITECTURE.md`), când va exista și un ecran de login.
 

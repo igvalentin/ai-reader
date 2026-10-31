@@ -1,0 +1,84 @@
+{
+  "src/server/ocr/tesseractOcrProvider.ts": {
+    "filename": "tesseractOcrProvider.ts",
+    "path": "src/server/ocr/tesseractOcrProvider.ts",
+    "version": "1.2",
+    "contextFile": "9aa61ffd-context.json",
+    "chunks": {
+      "797a3f": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480588,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "777ab028",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:03:08 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "37": {
+        "chunkId": "797a3f",
+        "hash": "492fbf06",
+        "encoded": "export%20class%20TesseractOcrProvider%20implements%20OcrProvider%20%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "797a3f",
+        "hash": "281a4ca0",
+        "encoded": "private%20workerPromise:%20Promise%3CLocalOcrWorker%3E%20%7C%20null%20=%20null",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "797a3f",
+        "hash": "9efaa63d",
+        "encoded": "private%20recognitionQueue:%20Promise%3Cvoid%3E%20=%20Promise.resolve()",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "797a3f",
+        "hash": "538d6460",
+        "encoded": "constructor(private%20readonly%20workerFactory:%20LocalOcrWorkerFactory%20=%20createRomanianWorker)%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "797a3f",
+        "hash": "69f9a4ff",
+        "encoded": "recognizeText(imageBytes:%20Uint8Array,%20mimeType:%20string):%20Promise%3Cstring%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "797a3f",
+        "hash": "ddf81694",
+        "encoded": "void%20mimeType",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "797a3f",
+        "hash": "a390a8b0",
+        "encoded": "const%20recognition%20=%20this.recognitionQueue.then(async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "797a3f",
+        "hash": "bb0dfd93",
+        "encoded": "const%20worker%20=%20await%20this.getWorker()",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "797a3f",
+        "hash": "b9561a72",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

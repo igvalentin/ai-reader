@@ -107,7 +107,9 @@ describe('POST /api/stripe-webhook', () => {
   it('rejects an invalid Stripe signature before writing billing state', async () => {
     const signatureError = new Error('invalid signature')
     Object.setPrototypeOf(signatureError, Stripe.errors.StripeSignatureVerificationError.prototype)
-    mocks.constructEvent.mockImplementation(() => { throw signatureError })
+    mocks.constructEvent.mockImplementation(() => {
+      throw signatureError
+    })
     const { req, res } = createMockReqRes()
 
     await handler(req, res)

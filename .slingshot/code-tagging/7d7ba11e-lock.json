@@ -1,0 +1,186 @@
+{
+  "README.md": {
+    "filename": "README.md",
+    "path": "README.md",
+    "version": "1.2",
+    "contextFile": "7d7ba11e-context.json",
+    "chunks": {
+      "236847": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480498,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "bd2c3a0f"
+        },
+        "hash": "860fa42e",
+        "messageId": "system_654ca1e0-d535-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:01:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "641730": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480498,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "bd2c3a0f"
+        },
+        "hash": "7a35c11a",
+        "messageId": "system_654ca1e0-d535-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:01:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ad4caa": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480498,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c4ae9a5d"
+        },
+        "hash": "fc0d623a",
+        "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:01:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "2": {
+        "chunkId": "ad4caa",
+        "hash": "6cc3154c",
+        "encoded": "Aplica%C8%9Bie%20web%20instalabil%C4%83%20(PWA),%20mobile-first,%20care%20permite%20utilizatorilor%20s%C4%83%20lipeasc%C4%83/scrie%20text,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "ad4caa",
+        "hash": "d069fb1f",
+        "encoded": "s%C4%83%20%C3%AEncarce%20imagini%20cu%20text%20%C8%99i%20s%C4%83-l%20extrag%C4%83%20prin%20OCR%20%C8%99i%20s%C4%83%20asculte%20textul%20citit%20cu%20voce%20tare,%20%C3%AEn",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "ad4caa",
+        "hash": "83c9d6e1",
+        "encoded": "rom%C3%A2n%C4%83%20%C8%99i%20englez%C4%83.%20Prima%20lectur%C4%83%20audio%20reu%C8%99it%C4%83%20este%20gratuit%C4%83,%20apoi%20este%20necesar%20un%20abonament.",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "ad4caa",
+        "hash": "c6f098a2",
+        "encoded": "%3E%20TTS%20%C8%99i%20paywall-ul%20sunt%20implementate,%20dar%20schema%20Supabase%20%C8%99i%20configurarea%20Stripe%20trebuie%20aplicate",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "ad4caa",
+        "hash": "f4f5ff60",
+        "encoded": "%3E%20separat,%20cu%20aprobare%20explicit%C4%83.%20Detalii%20despre%20arhitectur%C4%83:%20%5B%60docs/ARCHITECTURE.md%60%5D(./docs/ARCHITECTURE.md).",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "236847",
+        "hash": "4686a049",
+        "encoded": "%3E%20Nu%20ad%C4%83uga%20niciodat%C4%83%20cheia%20%60service_role%60%20Supabase%20sau%20alte%20secrete%20%C3%AEn%20fi%C8%99iere%20cu%20prefixul",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "236847",
+        "hash": "1ae47dde",
+        "encoded": "%3E%20%60VITE_%60%20%E2%80%94%20acestea%20sunt%20expuse%20%C3%AEn%20codul%20client.%20Secretele%20serverului%20(%60SUPABASE_SERVICE_ROLE_KEY%60,",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "236847",
+        "hash": "2c638845",
+        "encoded": "%3E%20%60ANONYMOUS_USAGE_SECRET%60,%20Stripe%20%C8%99i%20furnizorii%20OCR/TTS)%20se%20configureaz%C4%83%20doar%20%C3%AEn%20runtime-ul%20serverului.",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "641730",
+        "hash": "b66995ce",
+        "encoded": "##%20Deploy%20pe%20Vercel",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "641730",
+        "hash": "644cf9d5",
+        "encoded": "Deploy-ul%20nu%20face%20parte%20din%20aceast%C4%83%20implementare%20%C8%99i%20necesit%C4%83%20aprobare%20explicit%C4%83.%20%C3%8Enainte%20de%20orice",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "641730",
+        "hash": "f55d58c3",
+        "encoded": "activare,%20aplic%C4%83%20%5B%60supabase/schema.sql%60%5D(./supabase/schema.sql)%20%C3%AEntr-un%20mediu%20aprobat%20%C8%99i%20configureaz%C4%83",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "641730",
+        "hash": "e8ea7c6a",
+        "encoded": "valorile%20Stripe%20%C3%AEn%20test%20mode.%20Func%C8%9Biile%20server%20folosesc%20%60api/checkout.ts%60,%20%60api/portal.ts%60,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "641730",
+        "hash": "a90572bb",
+        "encoded": "%60api/subscription.ts%60%20%C8%99i%20%60api/stripe-webhook.ts%60;%20nu%20configura%20chei%20live%20sau%20webhook-uri%20de%20produc%C8%9Bie",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "641730",
+        "hash": "cfa60831",
+        "encoded": "f%C4%83r%C4%83%20aprobare.",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "641730",
+        "hash": "03d0f563",
+        "encoded": "Variabile%20publice%20necesare%20pentru%20client:",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "641730",
+        "hash": "4b02dfff",
+        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_URL%60",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "641730",
+        "hash": "c5bd712e",
+        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY%60",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "641730",
+        "hash": "b051fccf",
+        "encoded": "Variabile%20server-only%20necesare%20pentru%20entitlement/billing:",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "641730",
+        "hash": "967016f5",
+        "encoded": "-%20%60SUPABASE_URL%60,%20%60SUPABASE_SERVICE_ROLE_KEY%60,%20%60ANONYMOUS_USAGE_SECRET%60,%20%60APP_URL%60",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "641730",
+        "hash": "dfd3f7c0",
+        "encoded": "-%20%60STRIPE_SECRET_KEY%60,%20%60STRIPE_PRICE_ID%60,%20%60STRIPE_WEBHOOK_SECRET%60",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

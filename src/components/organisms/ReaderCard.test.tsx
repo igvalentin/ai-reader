@@ -14,9 +14,9 @@ import { ReaderCard } from './ReaderCard'
 
 beforeEach(() => {
   cleanup()
-  mocks.requestSpeech.mockReset().mockRejectedValue(
-    new TtsRequestError('Lectura gratuită a fost folosită.', 'PAYWALL', 402),
-  )
+  mocks.requestSpeech
+    .mockReset()
+    .mockRejectedValue(new TtsRequestError('Lectura gratuită a fost folosită.', 'PAYWALL', 402))
 })
 
 describe('ReaderCard entitlement journey', () => {
@@ -26,14 +26,18 @@ describe('ReaderCard entitlement journey', () => {
 
     await user.type(screen.getByLabelText('Textul tău'), 'Text românesc pentru citire.')
     await user.click(screen.getByRole('button', { name: /citește cu voce tare/i }))
-    expect(await screen.findByRole('heading', { name: 'Lectura gratuită a fost folosită' })).toBeInTheDocument()
+    expect(
+      await screen.findByRole('heading', { name: 'Lectura gratuită a fost folosită' }),
+    ).toBeInTheDocument()
 
     firstRender.unmount()
     render(<ReaderCard />)
     await user.type(screen.getByLabelText('Textul tău'), 'A second reading after reload.')
     await user.click(screen.getByRole('button', { name: /citește cu voce tare/i }))
 
-    expect(await screen.findByRole('heading', { name: 'Lectura gratuită a fost folosită' })).toBeInTheDocument()
+    expect(
+      await screen.findByRole('heading', { name: 'Lectura gratuită a fost folosită' }),
+    ).toBeInTheDocument()
     expect(mocks.requestSpeech).toHaveBeenCalledTimes(2)
   })
 })

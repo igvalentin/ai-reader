@@ -8,7 +8,7 @@ describe('signed anonymous entitlement identity', () => {
     process.env.ANONYMOUS_USAGE_SECRET = 'test-secret'
     const cookie = createAnonymousCookie()
     expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)
-    expect(getAnonymousCookie(cookie.header.replace(/([a-f0-9])(; Max-Age)/, '0$2'))).toBeNull()
+    expect(getAnonymousCookie(cookie.header.replace(cookie.id, `${cookie.id}x`))).toBeNull()
     expect(getAnonymousCookie(cookie.header.replace(/\.[a-f0-9]{64}/, `.${'g'.repeat(64)}`))).toBeNull()
   })
 

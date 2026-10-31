@@ -1,4 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/ocr.ts": {
+      "includeFiles": "node_modules/@tesseract.js-data/ron/4.0.0/ron.traineddata.gz"
+    }
+  },
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

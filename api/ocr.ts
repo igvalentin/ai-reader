@@ -23,11 +23,11 @@ function sanitizeOcrDiagnosticMessage(message: string): string {
  * Server-side OCR for the anonymous reading flow.
  *
  * The endpoint validates image magic bytes, accepts no user-supplied URL, and keeps the upload
- * in memory rather than persisting it. The image is forwarded over HTTPS to OCR.space for
- * recognition; the provider's retention and processing terms are outside this application and
- * must be reviewed separately. OCR is intentionally unauthenticated for guest access and no
- * distributed rate limit is configured here, so production deployment requires an external
- * abuse/cost control. Response bodies are no-store and logs exclude image and extracted text.
+ * in memory rather than persisting it. Recognition uses a local Tesseract.js/WASM engine with
+ * bundled Romanian traineddata; the image is not forwarded to a third-party OCR API. OCR is
+ * intentionally unauthenticated for guest access and no distributed rate limit is configured
+ * here, so production deployment requires an external abuse/cost control. Response bodies are
+ * no-store and logs exclude image and extracted text.
  */
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Cache-Control', 'private, no-store')
@@ -74,7 +74,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (error instanceof OcrProviderError) {
       console.error(JSON.stringify({
         event: 'ocr_provider_failed',
-        provider: 'ocr.space',
+        provider: 'tesseract-local',
         providerMessage: sanitizeOcrDiagnosticMessage(error.message),
       }))
       res.status(502).json({ error: 'Serviciul de recunoaștere text nu a putut procesa imaginea.' })

@@ -1,0 +1,120 @@
+{
+  "docs/ARCHITECTURE.md": {
+    "filename": "ARCHITECTURE.md",
+    "path": "docs/ARCHITECTURE.md",
+    "version": "1.2",
+    "contextFile": "7b502a3a-context.json",
+    "chunks": {
+      "779059": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480702,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "7ad30354",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:05:02 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c45db2": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480562,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "448f4220",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:02:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "105": {
+        "chunkId": "c45db2",
+        "hash": "0cab2654",
+        "encoded": "%7C%20----------------------------------------------------%20%7C%20--------------------------------------%20%7C%20--------------------------------------------------------------------%20%7C",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "c45db2",
+        "hash": "052aa098",
+        "encoded": "%7C%20Supabase%20URL%20+%20cheie%20anon%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Autentificare,%20citire%20date%20proprii%20%20%20%20%20%7C%20Client%20(%60VITE_*%60)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "c45db2",
+        "hash": "e22c4c02",
+        "encoded": "%7C%20Supabase%20%60service_role%60%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Scriere%20entitlement,%20verific%C4%83ri%20server%20%7C%20Doar%20server%20(Vercel%20Functions),%20niciodat%C4%83%20%60VITE_*%60%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "c45db2",
+        "hash": "6e6502c5",
+        "encoded": "%7C%20Motor%20OCR%20local%20(Tesseract.js/WASM)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Extragere%20text%20din%20imagini%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Server%20Vercel%20Function,%20model%20%60ron%60%20inclus%20%C3%AEn%20deployment%20%20%20%20%20%20%20%20%20%20%20%20%20%7C",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "c45db2",
+        "hash": "88201c05",
+        "encoded": "%7C%20Furnizor%20TTS%20cu%20voce%20rom%C3%A2n%C4%83%20de%20calitate%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Conversie%20text-%C3%AEn-vorbire%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Server%20(apel%20API%20cu%20cheie%20secret%C4%83)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "c45db2",
+        "hash": "ad3a6ee3",
+        "encoded": "%7C%20Furnizor%20de%20pl%C4%83%C8%9Bi/abonamente%20(ex.%20Stripe)%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Facturare%20%C8%99i%20webhook-uri%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Server,%20chei%20secrete,%20webhook%20secret%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "779059",
+        "hash": "90d1df02",
+        "encoded": "##%2011.%20Jurnal%20de%20execu%C8%9Bie%20%E2%80%94%20Prompt%202%20(%C3%AEnc%C4%83rcare%20imagine%20%C8%99i%20OCR)",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "779059",
+        "hash": "37952ffd",
+        "encoded": "-%20**Alegere%20OCR%20ini%C8%9Bial%C4%83%20(%C3%AEnlocuit%C4%83%20ulterior):**%20OCR.space%20(API%20server-side),%20motor%202%20%C8%99i%20limba",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "779059",
+        "hash": "9c6cb737",
+        "encoded": "%60rum%60.%20Dup%C4%83%20atingerea%20limitei%20de%20upload%20a%20planului%20gratuit,%20integrarea%20a%20fost%20%C3%AEnlocuit%C4%83%20cu",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "779059",
+        "hash": "d52d13d9",
+        "encoded": "Tesseract.js/WASM%20rulat%20local%20%C3%AEn%20func%C8%9Bia%20Vercel,%20cu%20traineddata%20rom%C3%A2nesc%20%60ron%60%20inclus%20%C3%AEn%20deployment.",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "779059",
+        "hash": "ce9b0df6",
+        "encoded": "-%20**Endpoint%20nou:**%20%60api/ocr.ts%60%20%E2%80%94%20func%C8%9Bie%20Vercel%20(%60@vercel/node%60),%20%60POST%20/api/ocr%60,",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "779059",
+        "hash": "feb24031",
+        "encoded": "%60multipart/form-data%60,%20f%C4%83r%C4%83%20body%20parser%20automat%20(%60bodyParser:%20false%60),%20parsare%20manual%C4%83%20cu",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

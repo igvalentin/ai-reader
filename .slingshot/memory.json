@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T20:55:28.855Z",
+  "lastUpdated": "2026-10-31T21:08:36.576Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -54,9 +54,9 @@
     },
     {
       "id": "mem_1793477934207_b96ilk",
-      "content": "Local OCR option: Tesseract.js/WASM + Romanian traineddata via provider abstraction. Vercel constraints: CPU, memory, cold starts, model bundle; 4 MiB request cap remains.",
+      "content": "Local OCR implementation complete: Tesseract.js/WASM + bundled Romanian ron model, no OCR.space key/API, 4 MiB cap. 58 tests, API tsc, build/lint, local WASM smoke pass; production deployment pending.",
       "createdAt": "2026-10-31T20:18:54.207Z",
-      "updatedAt": "2026-10-31T20:55:28.854Z",
+      "updatedAt": "2026-10-31T21:08:36.576Z",
       "isEnabled": true
     },
     {

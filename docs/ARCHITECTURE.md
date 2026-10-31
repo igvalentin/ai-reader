@@ -106,7 +106,7 @@ create policy "users read own subscription" on subscriptions for select using (a
 | ---------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------- |
 | Supabase URL + cheie anon                            | Autentificare, citire date proprii     | Client (`VITE_*`)                                                    |
 | Supabase `service_role`                              | Scriere entitlement, verificări server | Doar server (Vercel Functions), niciodată `VITE_*`                   |
-| Furnizor OCR (ex. Tesseract.js local sau API extern) | Extragere text din imagini             | Client (Tesseract.js) sau server (API extern) — decizie în etapa OCR |
+| Motor OCR local (Tesseract.js/WASM)                  | Extragere text din imagini             | Server Vercel Function, model `ron` inclus în deployment             |
 | Furnizor TTS cu voce română de calitate              | Conversie text-în-vorbire              | Server (apel API cu cheie secretă)                                   |
 | Furnizor de plăți/abonamente (ex. Stripe)            | Facturare și webhook-uri               | Server, chei secrete, webhook secret                                 |
 
@@ -148,8 +148,7 @@ create policy "users read own subscription" on subscriptions for select using (a
 - Numele aplicației în interfață a fost ales „Citește-mi” (provizoriu) — de confirmat sau înlocuit.
 - Limita de 4000 de caractere per lectură este o valoare inițială arbitrară — de confirmat înainte
   de etapa TTS, în funcție de costul furnizorului vocal.
-- Furnizorul concret de OCR și de TTS (inclusiv calitatea vocii române) nu a fost ales încă —
-  necesită decizie și, posibil, un cont/cheie API înainte de etapa 2 și 3.
+- OCR-ul este local prin Tesseract.js/WASM cu modelul românesc `ron`; nu necesită furnizor extern sau cheie OCR. Furnizorul TTS și calitatea vocii românești rămân de confirmat înainte de etapa 3.
 - Furnizorul de plăți pentru abonament nu a fost ales încă — necesar înainte de etapa 5.
 
 ## 10. Jurnal de execuție — Prompt 1 (fundația aplicației)
@@ -186,16 +185,13 @@ create policy "users read own subscription" on subscriptions for select using (a
 
 ## 11. Jurnal de execuție — Prompt 2 (încărcare imagine și OCR)
 
-- **Furnizor OCR ales:** [OCR.space](https://ocr.space/) (API server-side), motor OCR 2, limbă
-  explicită `rum` (română) — ales în locul unei biblioteci OCR în browser (ex. Tesseract.js) pentru
-  o calitate mai bună a recunoașterii diacriticelor românești și pentru a păstra cheia API strict
-  pe server, conform cerințelor de securitate.
+- **Alegere OCR inițială (înlocuită ulterior):** OCR.space (API server-side), motor 2 și limba
+  `rum`. După atingerea limitei de upload a planului gratuit, integrarea a fost înlocuită cu
+  Tesseract.js/WASM rulat local în funcția Vercel, cu traineddata românesc `ron` inclus în deployment.
 - **Endpoint nou:** `api/ocr.ts` — funcție Vercel (`@vercel/node`), `POST /api/ocr`,
   `multipart/form-data`, fără body parser automat (`bodyParser: false`), parsare manuală cu
   `busboy` direct în memorie (fără scriere pe disc).
-- **Abstracție furnizor OCR:** `src/server/ocr/ocrProvider.ts` (interfață `OcrProvider` +
-  `OcrProviderError`), implementată de `ocrSpaceProvider.ts` și instanțiată printr-o fabrică
-  (`ocrProviderFactory.ts`) — permite înlocuirea furnizorului fără a schimba handler-ul.
+- **Abstracție OCR:** `src/server/ocr/ocrProvider.ts` definește interfața `OcrProvider`; `TesseractOcrProvider` rulează motorul WASM și factory-ul îl selectează pentru `/api/ocr`. Modelul românesc este inclus explicit prin `vercel.json`.
 - **Normalizare text:** `src/server/ocr/normalizeOcrText.ts` unește liniile răzlețe din același
   paragraf (artefact comun al motoarelor OCR) și păstrează separarea în paragrafe acolo unde există
   linii goale în textul brut, păstrând diacriticele românești neschimbate.

@@ -157,7 +157,7 @@ describe('POST /api/ocr', () => {
     }
     expect(loggedEntry).toEqual({
       event: 'ocr_provider_failed',
-      provider: 'ocr.space',
+      provider: 'tesseract-local',
       providerMessage: 'Invalid [redacted]',
     })
     expect(JSON.stringify(loggedEntry)).not.toContain('private-token')

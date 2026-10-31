@@ -18,7 +18,10 @@ vi.mock('../src/server/auth/verifySupabaseUser.js', () => ({
 
 vi.mock('../src/server/entitlement/entitlement.js', () => ({
   EntitlementError: class EntitlementError extends Error {
-    constructor(public readonly code: 'PAYWALL' | 'CONFIGURATION' | 'DATABASE', message: string) {
+    constructor(
+      public readonly code: 'PAYWALL' | 'CONFIGURATION' | 'DATABASE',
+      message: string,
+    ) {
       super(message)
     }
   },
@@ -74,9 +77,9 @@ describe('POST /api/tts', () => {
       userId: null,
       anonymousId: 'anonymous-test',
     })
-    mocks.getAvailableVoices.mockReset().mockResolvedValue([
-      { name: 'test-voice', languageCode: 'ro-RO', gender: 'FEMALE' },
-    ])
+    mocks.getAvailableVoices
+      .mockReset()
+      .mockResolvedValue([{ name: 'test-voice', languageCode: 'ro-RO', gender: 'FEMALE' }])
     mocks.synthesize.mockReset().mockImplementation(async () => {
       mocks.order.push('synthesize')
       return Uint8Array.from([1, 2, 3])
@@ -140,7 +143,10 @@ describe('POST /api/tts', () => {
 
   it('does not reuse generated audio across separate requests with the same text', async () => {
     const first = createMockReqRes({ text: 'Private text for cache isolation.', language: 'en-US' })
-    const second = createMockReqRes({ text: 'Private text for cache isolation.', language: 'en-US' })
+    const second = createMockReqRes({
+      text: 'Private text for cache isolation.',
+      language: 'en-US',
+    })
 
     await handler(first.req, first.res)
     await handler(second.req, second.res)

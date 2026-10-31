@@ -46,12 +46,18 @@ afterEach(() => {
   vi.unstubAllGlobals()
   vi.restoreAllMocks()
   if (originalCreateObjectURL) {
-    Object.defineProperty(URL, 'createObjectURL', { configurable: true, value: originalCreateObjectURL })
+    Object.defineProperty(URL, 'createObjectURL', {
+      configurable: true,
+      value: originalCreateObjectURL,
+    })
   } else {
     Reflect.deleteProperty(URL, 'createObjectURL')
   }
   if (originalRevokeObjectURL) {
-    Object.defineProperty(URL, 'revokeObjectURL', { configurable: true, value: originalRevokeObjectURL })
+    Object.defineProperty(URL, 'revokeObjectURL', {
+      configurable: true,
+      value: originalRevokeObjectURL,
+    })
   } else {
     Reflect.deleteProperty(URL, 'revokeObjectURL')
   }
