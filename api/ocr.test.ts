@@ -129,14 +129,16 @@ describe('POST /api/ocr', () => {
     expect(res.jsonBody).toEqual({ error: 'Imaginea depășește limita admisă.' })
   })
 
-  it('returnează 502 când furnizorul OCR eșuează', async () => {
+  it('returnează 502 și loghează diagnostic sanitizat când furnizorul OCR eșuează', async () => {
+    const errorLog = vi.spyOn(console, 'error')
+    errorLog.mockClear()
     parseMultipartImageMock.mockResolvedValue({
       buffer: PNG_HEADER,
       declaredMimeType: 'image/png',
       fieldName: 'image',
     })
     getOcrProviderMock.mockReturnValue({
-      recognizeText: vi.fn().mockRejectedValue(new OcrProviderError('eșec furnizor')),
+      recognizeText: vi.fn().mockRejectedValue(new OcrProviderError('Invalid API key: private-token')),
     })
 
     const { req, res } = createMockReqRes()
@@ -146,6 +148,18 @@ describe('POST /api/ocr', () => {
     expect(res.jsonBody).toEqual({
       error: 'Serviciul de recunoaștere text nu a putut procesa imaginea.',
     })
+    expect(errorLog).toHaveBeenCalledTimes(1)
+    const loggedEntry = JSON.parse(errorLog.mock.calls[0][0] as string) as {
+      event: string
+      provider: string
+      providerMessage: string
+    }
+    expect(loggedEntry).toEqual({
+      event: 'ocr_provider_failed',
+      provider: 'ocr.space',
+      providerMessage: 'Invalid [redacted]',
+    })
+    expect(JSON.stringify(loggedEntry)).not.toContain('private-token')
   })
 
   it('returnează text gol când OCR nu găsește niciun text în imagine (rezultat OCR gol)', async () => {

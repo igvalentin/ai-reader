@@ -11,6 +11,14 @@ export const config = {
   },
 }
 
+function sanitizeOcrDiagnosticMessage(message: string): string {
+  return message
+    .replace(/[\r\n\t]+/g, ' ')
+    .replace(/(?:api[\s_-]?key|authorization|bearer)\s*[:=]?\s*[^\s,;]+/gi, '[redacted]')
+    .replace(/https?:\/\/\S+/gi, '[url]')
+    .slice(0, 200)
+}
+
 /**
  * Endpoint server-side pentru extragerea textului dintr-o imagine (OCR).
  *
@@ -74,7 +82,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.status(200).json({ text })
   } catch (error) {
     if (error instanceof OcrProviderError) {
-      console.error('Furnizorul OCR a eșuat procesarea cererii.')
+      console.error(JSON.stringify({
+        event: 'ocr_provider_failed',
+        provider: 'ocr.space',
+        providerMessage: sanitizeOcrDiagnosticMessage(error.message),
+      }))
       res.status(502).json({ error: 'Serviciul de recunoaștere text nu a putut procesa imaginea.' })
       return
     }

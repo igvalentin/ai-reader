@@ -1,0 +1,126 @@
+{
+  "api/ocr.ts": {
+    "filename": "ocr.ts",
+    "path": "api/ocr.ts",
+    "version": "1.2",
+    "contextFile": "3aefd4ae-context.json",
+    "chunks": {
+      "a022b0": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479538,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "bac92c16",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:45:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "7": {
+        "chunkId": "a022b0",
+        "hash": "8af6808f",
+        "encoded": "export%20const%20config%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a022b0",
+        "hash": "b508b9b1",
+        "encoded": "api:%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a022b0",
+        "hash": "f40ef4e2",
+        "encoded": "bodyParser:%20false,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "a022b0",
+        "hash": "edd993f3",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a022b0",
+        "hash": "e9a9f96c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a022b0",
+        "hash": "58021c68",
+        "encoded": "function%20sanitizeOcrDiagnosticMessage(message:%20string):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "a022b0",
+        "hash": "2192aa56",
+        "encoded": "return%20message",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a022b0",
+        "hash": "06deb405",
+        "encoded": ".replace(/%5B%5Cr%5Cn%5Ct%5D+/g,%20'%20')",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "a022b0",
+        "hash": "a739bfc1",
+        "encoded": ".replace(/(?:api%5B%5Cs_-%5D?key%7Cauthorization%7Cbearer)%5Cs*%5B:=%5D?%5Cs*%5B%5E%5Cs,;%5D+/gi,%20'%5Bredacted%5D')",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a022b0",
+        "hash": "66d7a440",
+        "encoded": ".replace(/https?:%5C/%5C/%5CS+/gi,%20'%5Burl%5D')",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "a022b0",
+        "hash": "0bd72540",
+        "encoded": ".slice(0,%20200)",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a022b0",
+        "hash": "ee39c532",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a022b0",
+        "hash": "a713c17b",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a022b0",
+        "hash": "d58db1fd",
+        "encoded": "*%20Endpoint%20server-side%20pentru%20extragerea%20textului%20dintr-o%20imagine%20(OCR).",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a022b0",
+        "hash": "494ce6b4",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "a022b0",
+        "hash": "86949569",
+        "encoded": "*%20Securitate%20%C8%99i%20confiden%C8%9Bialitate:",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
