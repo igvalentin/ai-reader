@@ -9,6 +9,7 @@ describe('signed anonymous entitlement identity', () => {
     const cookie = createAnonymousCookie()
     expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)
     expect(getAnonymousCookie(cookie.header.replace(/([a-f0-9])(; Max-Age)/, '0$2'))).toBeNull()
+    expect(getAnonymousCookie(cookie.header.replace(/\.[a-f0-9]{64}/, `.${'g'.repeat(64)}`))).toBeNull()
   })
 
   it('creates an anonymous identity without requiring registration', async () => {

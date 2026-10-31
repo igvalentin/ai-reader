@@ -1,5 +1,5 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
-import { createHmac, randomUUID } from 'node:crypto'
+import { createHmac, randomUUID, timingSafeEqual } from 'node:crypto'
 
 export const ANONYMOUS_COOKIE = 'ai_reader_anon'
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365
@@ -32,9 +32,10 @@ function parseCookieHeader(header: string | undefined): Record<string, string> {
 function validAnonymousCookie(value: string | undefined): string | null {
   if (!value) return null
   const [id, signature] = value.split('.')
-  if (!id || !signature || signature.length !== 64) return null
-  const expected = sign(id)
-  if (!Buffer.from(signature).equals(Buffer.from(expected))) return null
+  if (!id || !signature || !/^[a-f0-9]{64}$/i.test(signature)) return null
+  const signatureBytes = Buffer.from(signature, 'hex')
+  const expectedBytes = Buffer.from(sign(id), 'hex')
+  if (signatureBytes.length !== expectedBytes.length || !timingSafeEqual(signatureBytes, expectedBytes)) return null
   return id
 }
 
