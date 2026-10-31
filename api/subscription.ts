@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser'
-import { getUserSubscription, EntitlementError } from '../src/server/entitlement/entitlement'
+import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
+import { getUserSubscription, EntitlementError } from '../src/server/entitlement/entitlement.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); return res.status(405).json({ error: 'Metodă nepermisă.' }) }

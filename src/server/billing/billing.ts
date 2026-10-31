@@ -1,6 +1,6 @@
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
-import { EntitlementError, getUserSubscription } from '../entitlement/entitlement'
+import { EntitlementError, getUserSubscription } from '../entitlement/entitlement.js'
 
 let stripe: Stripe | undefined
 

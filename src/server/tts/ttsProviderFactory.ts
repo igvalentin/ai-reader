@@ -1,5 +1,5 @@
-import { GoogleCloudTtsProvider } from './googleCloudTtsProvider'
-import type { TtsProvider } from './ttsProvider'
+import { GoogleCloudTtsProvider } from './googleCloudTtsProvider.js'
+import type { TtsProvider } from './ttsProvider.js'
 
 let cachedProvider: TtsProvider | null = null
 

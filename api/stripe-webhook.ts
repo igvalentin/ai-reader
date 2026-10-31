@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import Stripe from 'stripe'
-import { getStripe, recordBillingEvent, resolveUserIdForCustomer, upsertSubscription } from '../src/server/billing/billing'
+import { getStripe, recordBillingEvent, resolveUserIdForCustomer, upsertSubscription } from '../src/server/billing/billing.js'
 
 export const config = { api: { bodyParser: false } }
 

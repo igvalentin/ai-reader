@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T20:18:10.630Z",
+  "lastUpdated": "2026-10-31T20:24:12.019Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -50,6 +50,13 @@
       "content": "Prompt 4 gates pass: npm test (39 tests), typecheck, production build, and lint.",
       "createdAt": "2026-10-31T20:18:10.630Z",
       "updatedAt": "2026-10-31T20:18:10.630Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793477934207_b96ilk",
+      "content": "Fixed Vercel ESM OCR 500: added .js suffixes to relative imports in all API/server runtime modules and transitive dependencies. npm test (39), typecheck, lint, build pass; redeploy to apply.",
+      "createdAt": "2026-10-31T20:18:54.207Z",
+      "updatedAt": "2026-10-31T20:24:12.019Z",
       "isEnabled": true
     }
   ]

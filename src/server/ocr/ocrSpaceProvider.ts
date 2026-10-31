@@ -1,4 +1,4 @@
-import { OcrProviderError, type OcrProvider } from './ocrProvider'
+import { OcrProviderError, type OcrProvider } from './ocrProvider.js'
 
 const OCR_SPACE_ENDPOINT = 'https://api.ocr.space/parse/image'
 

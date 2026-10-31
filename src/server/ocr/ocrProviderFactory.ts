@@ -1,5 +1,5 @@
-import type { OcrProvider } from './ocrProvider'
-import { OcrSpaceProvider } from './ocrSpaceProvider'
+import type { OcrProvider } from './ocrProvider.js'
+import { OcrSpaceProvider } from './ocrSpaceProvider.js'
 
 let cachedProvider: OcrProvider | null = null
 

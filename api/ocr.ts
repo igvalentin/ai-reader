@@ -1,9 +1,9 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { detectImageMimeTypeFromBytes } from '../src/lib/image/imageSignature'
-import { normalizeOcrText } from '../src/server/ocr/normalizeOcrText'
-import { getOcrProvider } from '../src/server/ocr/ocrProviderFactory'
-import { OcrProviderError } from '../src/server/ocr/ocrProvider'
-import { MultipartParseError, parseMultipartImage } from '../src/server/ocr/parseMultipartImage'
+import { detectImageMimeTypeFromBytes } from '../src/lib/image/imageSignature.js'
+import { normalizeOcrText } from '../src/server/ocr/normalizeOcrText.js'
+import { getOcrProvider } from '../src/server/ocr/ocrProviderFactory.js'
+import { OcrProviderError } from '../src/server/ocr/ocrProvider.js'
+import { MultipartParseError, parseMultipartImage } from '../src/server/ocr/parseMultipartImage.js'
 
 export const config = {
   api: {

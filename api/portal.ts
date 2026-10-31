@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser'
-import { createPortalSession, EntitlementError } from '../src/server/billing/billing'
+import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
+import { createPortalSession, EntitlementError } from '../src/server/billing/billing.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ error: 'Metodă nepermisă.' }) }

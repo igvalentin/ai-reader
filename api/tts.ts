@@ -1,11 +1,11 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { chunkText } from '../src/server/tts/chunkText'
-import { detectLanguage, normalizeLanguage } from '../src/server/tts/language'
-import { normalizeRomanianText } from '../src/server/tts/normalizeRomanianText'
-import { getTtsProvider } from '../src/server/tts/ttsProviderFactory'
-import { TtsProviderError } from '../src/server/tts/ttsProvider'
-import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser'
-import { canGenerateReading, claimSuccessfulReading, EntitlementError, resolveEntitlementIdentity } from '../src/server/entitlement/entitlement'
+import { chunkText } from '../src/server/tts/chunkText.js'
+import { detectLanguage, normalizeLanguage } from '../src/server/tts/language.js'
+import { normalizeRomanianText } from '../src/server/tts/normalizeRomanianText.js'
+import { getTtsProvider } from '../src/server/tts/ttsProviderFactory.js'
+import { TtsProviderError } from '../src/server/tts/ttsProvider.js'
+import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
+import { canGenerateReading, claimSuccessfulReading, EntitlementError, resolveEntitlementIdentity } from '../src/server/entitlement/entitlement.js'
 
 const MAX_CHARACTERS = 4000
 const cache = new Map<string, { expiresAt: number; chunks: string[]; language: string; voice: { name: string; languageCode: string; gender?: string } }>()

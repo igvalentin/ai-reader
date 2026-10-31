@@ -1,6 +1,6 @@
 import Busboy from 'busboy'
 import type { IncomingMessage } from 'node:http'
-import { MAX_IMAGE_SIZE_BYTES } from '../../lib/image/imageSignature'
+import { MAX_IMAGE_SIZE_BYTES } from '../../lib/image/imageSignature.js'
 
 export class MultipartParseError extends Error {
   constructor(

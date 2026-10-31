@@ -1,6 +1,6 @@
-import { detectLanguage, type SupportedTtsLanguage } from './language'
-import type { SynthesizeOptions, TtsProvider, TtsVoice } from './ttsProvider'
-import { TtsProviderError } from './ttsProvider'
+import { detectLanguage, type SupportedTtsLanguage } from './language.js'
+import type { SynthesizeOptions, TtsProvider, TtsVoice } from './ttsProvider.js'
+import { TtsProviderError } from './ttsProvider.js'
 
 const VOICES: Record<SupportedTtsLanguage, readonly TtsVoice[]> = {
   'ro-RO': [{ name: 'ro-RO-Standard-A', languageCode: 'ro-RO', gender: 'FEMALE' }],
