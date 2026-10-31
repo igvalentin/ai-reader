@@ -1,0 +1,15 @@
+{
+  "filename": "client.ts",
+  "path": "src/integrations/supabase/client.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "bd2c3a0f": {
+      "value": "managed to get files from the other repo.\nFix nuild errors"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}
