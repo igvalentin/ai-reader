@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-10-31T16:47:29.496Z",
+  "user_memory": [],
+  "slingshot_memory": [
+    {
+      "id": "mem_1793465249494_p2q24t",
+      "content": "ai-reader: React19+TS+Vite, Tailwind v4, Supabase anon-only client. Pin typescript ~5.6.2; remove erasableSyntaxOnly from tsconfig (TS5023).",
+      "createdAt": "2026-10-31T16:47:29.494Z",
+      "updatedAt": "2026-10-31T16:47:29.494Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793465249496_2d2yvp",
+      "content": "ai-reader: Romanian UI, Atomic Design in src/components. Docs in ai-reader/docs/ARCHITECTURE.md. Vercel+Supabase linked, no staging env.",
+      "createdAt": "2026-10-31T16:47:29.496Z",
+      "updatedAt": "2026-10-31T16:47:29.496Z",
+      "isEnabled": true
+    }
+  ]
+}
