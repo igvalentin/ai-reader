@@ -1,1 +1,0 @@
-REVOKE EXECUTE ON FUNCTION public.log_salary_tax_rule_change() FROM PUBLIC, anon, authenticated;
