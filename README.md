@@ -1,75 +1,89 @@
-# React + TypeScript + Vite
+# Citește-mi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicație web instalabilă (PWA), mobile-first, care permite utilizatorilor să lipească/scrie text,
+să încarce imagini cu text (OCR — în curând) și să asculte textul citit cu voce tare, în română și
+alte limbi (text-to-speech — în curând). Prima lectură este gratuită, apoi este necesar un abonament.
 
-Currently, two official plugins are available:
+> Această versiune conține doar fundația aplicației (Prompt 1): structură, UI și configurare.
+> OCR, text-to-speech, facturarea și impunerea abonamentului vor fi adăugate în etape ulterioare.
+> Detalii complete despre arhitectură și planul de implementare: [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack tehnic
 
-## React Compiler
+- **React 19 + TypeScript**, construit cu **Vite**
+- **Tailwind CSS v4** pentru stilizare (sistem de design restrâns prin variabile de temă)
+- **React Router** pentru rutare
+- **Supabase** (`@supabase/supabase-js`) pentru autentificare/date, folosind doar cheia publică anon în client
+- **Vitest** + **React Testing Library** pentru testare
+- **ESLint** + **Prettier** pentru calitate și formatare cod
+- Deploy pe **Vercel**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cerințe
 
-## Expanding the ESLint configuration
+- Node.js 20+
+- npm (vine cu Node.js)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Configurare locală
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Instalează dependențele:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Copiază fișierul de variabile de mediu și completează valorile publice Supabase:
 
-```
+   ```bash
+   cp .env.example .env
+   ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+   Variabile necesare (valori publice/anon, sigure pentru client):
+   - `VITE_EXTERNAL_SUPABASE_URL`
+   - `VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   > Nu adăuga niciodată cheia `service_role` Supabase sau alte secrete în fișiere cu prefixul
+   > `VITE_` — acestea sunt expuse în codul client. Secretele de server vor fi configurate direct în
+   > variabilele de mediu ale proiectului Vercel, în etapele următoare (OCR/TTS/facturare).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. Pornește serverul de dezvoltare:
 
-```
+   ```bash
+   npm run dev
+   ```
+
+   Aplicația va fi disponibilă la adresa afișată în terminal (implicit `http://localhost:5173`).
+
+## Scripturi disponibile
+
+| Comandă | Descriere |
+| --- | --- |
+| `npm run dev` | Pornește serverul de dezvoltare Vite |
+| `npm run build` | Verifică tipurile și construiește aplicația pentru producție |
+| `npm run preview` | Previzualizează local build-ul de producție |
+| `npm run lint` | Rulează ESLint |
+| `npm run format` | Formatează codul cu Prettier |
+| `npm run format:check` | Verifică formatarea fără a modifica fișierele |
+| `npm run typecheck` | Verifică tipurile TypeScript fără a genera build |
+| `npm test` | Rulează testele cu Vitest |
+
+## Deploy pe Vercel
+
+Proiectul este deja legat la Vercel (`ai-reader-lac.vercel.app`). Fiecare push pe branch-ul principal
+va declanșa automat un build (`npm run build`, ieșire statică Vite servită ca SPA, vezi `vercel.json`).
+
+Variabile de mediu necesare în proiectul Vercel (Production):
+
+- `VITE_EXTERNAL_SUPABASE_URL`
+- `VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY`
+
+> Nu există un mediu de staging — conform cerințelor de producție, se folosește doar proiectul
+> Vercel și Supabase de producție existente, fără duplicate.
+
+## Configurări rămase (de documentat, nu de inventat)
+
+- Furnizorul de OCR (ex. Tesseract.js sau API extern) — neales încă.
+- Furnizorul de text-to-speech cu voce română de calitate — neales încă.
+- Furnizorul de plăți/abonamente — neales încă.
+- Iconițe PWA reale (192x192, 512x512, maskable) — momentan se folosește doar `favicon.svg` ca
+  placeholder în `manifest.webmanifest`.
+- Schema de bază de date Supabase descrisă în `docs/ARCHITECTURE.md` nu a fost încă aplicată.
