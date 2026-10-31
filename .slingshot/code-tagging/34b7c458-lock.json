@@ -1,0 +1,187 @@
+{
+  "index.html": {
+    "filename": "index.html",
+    "path": "index.html",
+    "version": "1.2",
+    "contextFile": "34b7c458-context.json",
+    "chunks": {
+      "a1d98b": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478492,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "1fb8089c",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "22f006": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478844,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "0bb534cb",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:34:04 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c0b2be": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479083,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "bb679d93"
+        },
+        "hash": "e1abadce",
+        "messageId": "system_aadbfeb0-d56a-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:38:03 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "3": {
+        "chunkId": "c0b2be",
+        "hash": "ee79ad4c",
+        "encoded": "%3Cmeta%20charset=%22UTF-8%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "c0b2be",
+        "hash": "dffe7baf",
+        "encoded": "%3Clink%20rel=%22icon%22%20type=%22image/svg+xml%22%20href=%22/favicon.svg%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c0b2be",
+        "hash": "cd695b03",
+        "encoded": "%3Clink%20rel=%22manifest%22%20href=%22/manifest.webmanifest%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c0b2be",
+        "hash": "ebfae5ab",
+        "encoded": "%3Clink%20rel=%22apple-touch-icon%22%20href=%22/icons/app-icon-192.png%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c0b2be",
+        "hash": "0a6ad43c",
+        "encoded": "%3Cmeta%20name=%22viewport%22%20content=%22width=device-width,%20initial-scale=1.0,%20viewport-fit=cover%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c0b2be",
+        "hash": "54d363d5",
+        "encoded": "%3Cmeta%20name=%22theme-color%22%20content=%22#1f5f5b%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c0b2be",
+        "hash": "fe217518",
+        "encoded": "%3Cmeta%20name=%22mobile-web-app-capable%22%20content=%22yes%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a1d98b",
+        "hash": "47f26e47",
+        "encoded": "%3Clink%20rel=%22manifest%22%20href=%22/manifest.webmanifest%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "a1d98b",
+        "hash": "679c6520",
+        "encoded": "%3Clink%20rel=%22apple-touch-icon%22%20href=%22/icons/app-icon.svg%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a1d98b",
+        "hash": "4fe61eea",
+        "encoded": "%3Cmeta%20name=%22viewport%22%20content=%22width=device-width,%20initial-scale=1.0,%20viewport-fit=cover%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "22f006",
+        "hash": "bbd1a0f8",
+        "encoded": "%3Cmeta%20name=%22theme-color%22%20content=%22#1f5f5b%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "22f006",
+        "hash": "f8cab7a6",
+        "encoded": "%3Cmeta%20name=%22mobile-web-app-capable%22%20content=%22yes%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "22f006",
+        "hash": "455a6426",
+        "encoded": "%3Cmeta%20name=%22apple-mobile-web-app-capable%22%20content=%22yes%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "22f006",
+        "hash": "e54222a8",
+        "encoded": "%3Cmeta%20name=%22apple-mobile-web-app-status-bar-style%22%20content=%22default%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "22f006",
+        "hash": "ed046c07",
+        "encoded": "%3Cmeta",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "22f006",
+        "hash": "741a8820",
+        "encoded": "name=%22description%22",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a1d98b",
+        "hash": "00e99999",
+        "encoded": "%3Cmeta%20name=%22apple-mobile-web-app-capable%22%20content=%22yes%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a1d98b",
+        "hash": "c167b2f8",
+        "encoded": "%3Cmeta%20name=%22apple-mobile-web-app-status-bar-style%22%20content=%22default%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a1d98b",
+        "hash": "4f3da4ea",
+        "encoded": "%3Cmeta",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a1d98b",
+        "hash": "8b77ef6b",
+        "encoded": "name=%22description%22",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 24
+  }
+}

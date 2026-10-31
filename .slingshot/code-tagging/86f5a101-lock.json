@@ -1,0 +1,127 @@
+{
+  "src/components/molecules/InstallHelp.tsx": {
+    "filename": "InstallHelp.tsx",
+    "path": "src/components/molecules/InstallHelp.tsx",
+    "version": "1.2",
+    "contextFile": "86f5a101-context.json",
+    "chunks": {
+      "cc4821": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478527,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "de5dd4dd",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c4298b": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478845,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "e50887b8",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:34:05 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "11": {
+        "chunkId": "cc4821",
+        "hash": "df538a49",
+        "encoded": "function%20isStandalone():%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "cc4821",
+        "hash": "339cd110",
+        "encoded": "const%20standaloneNavigator%20=%20navigator%20as%20Navigator%20&%20%7B%20standalone?:%20boolean%20%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "cc4821",
+        "hash": "334ced4a",
+        "encoded": "return%20standaloneNavigator.standalone%20===%20true%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "cc4821",
+        "hash": "66c25954",
+        "encoded": "window.matchMedia?.('(display-mode:%20standalone)')?.matches%20===%20true",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "cc4821",
+        "hash": "c8f9d1c3",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "cc4821",
+        "hash": "40beda43",
+        "encoded": "function%20detectPlatform():%20InstallPlatform%20%7B",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "c4298b",
+        "hash": "d9968c0d",
+        "encoded": "const%20%5Bplatform%5D%20=%20useState(detectPlatform)",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "c4298b",
+        "hash": "e0843f24",
+        "encoded": "const%20%5BisInstalled,%20setIsInstalled%5D%20=%20useState(isStandalone)",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "c4298b",
+        "hash": "da2ea69b",
+        "encoded": "const%20%5BisDismissed,%20setIsDismissed%5D%20=%20useState(wasDismissed)",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "c4298b",
+        "hash": "190a9bb9",
+        "encoded": "const%20%5BinstallPrompt,%20setInstallPrompt%5D%20=%20useState%3CInstallPromptEvent%20%7C%20null%3E(null)",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "c4298b",
+        "hash": "0c10d4c1",
+        "encoded": "const%20%5BinstallError,%20setInstallError%5D%20=%20useState(false)",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "c4298b",
+        "hash": "aab19f81",
+        "encoded": "useEffect(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "c4298b",
+        "hash": "1f91aef4",
+        "encoded": "const%20handleBeforeInstallPrompt",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 139
+  }
+}

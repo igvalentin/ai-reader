@@ -1,0 +1,102 @@
+{
+  "src/main.tsx": {
+    "filename": "main.tsx",
+    "path": "src/main.tsx",
+    "version": "1.2",
+    "contextFile": "929103ee-context.json",
+    "chunks": {
+      "5fd953": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478492,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "62774b59",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "2": {
+        "chunkId": "5fd953",
+        "hash": "66bc48d0",
+        "encoded": "import%20%7B%20BrowserRouter%20%7D%20from%20'react-router-dom'",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "5fd953",
+        "hash": "1b0ce5c3",
+        "encoded": "import%20App%20from%20'./App.tsx'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "5fd953",
+        "hash": "6ce6f3e2",
+        "encoded": "import%20'./index.css'",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "5fd953",
+        "hash": "14a0ce60",
+        "encoded": "if%20(import.meta.env.PROD%20&&%20'serviceWorker'%20in%20navigator)%20%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "5fd953",
+        "hash": "ff765d4e",
+        "encoded": "window.addEventListener('load',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "5fd953",
+        "hash": "0a5d6728",
+        "encoded": "navigator.serviceWorker.register('/sw.js').catch(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "5fd953",
+        "hash": "0d22aa95",
+        "encoded": "console.warn('Service%20worker%20registration%20failed.')",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "5fd953",
+        "hash": "fc9a0b8c",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "5fd953",
+        "hash": "3ee2f097",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "5fd953",
+        "hash": "6a3f2143",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "5fd953",
+        "hash": "808210e7",
+        "encoded": "const%20rootElement%20=%20document.getElementById('root')",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "5fd953",
+        "hash": "79a0150c",
+        "encoded": "if%20(!rootElement)%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

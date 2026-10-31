@@ -1,0 +1,234 @@
+{
+  "src/index.css": {
+    "filename": "index.css",
+    "path": "src/index.css",
+    "version": "1.2",
+    "contextFile": "70832d4a-context.json",
+    "chunks": {
+      "43b675": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478492,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "9324fa5e",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "2fff2c": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478719,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "20587354",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:31:59 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "27": {
+        "chunkId": "43b675",
+        "hash": "c0002175",
+        "encoded": "body%20%7B",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "43b675",
+        "hash": "f3b1aec2",
+        "encoded": "min-height:%20100vh;",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "43b675",
+        "hash": "fc3c66ea",
+        "encoded": "margin:%200;",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "43b675",
+        "hash": "3d671715",
+        "encoded": "padding:%20env(safe-area-inset-top)%20env(safe-area-inset-right)%20env(safe-area-inset-bottom)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "43b675",
+        "hash": "0ca7c2ad",
+        "encoded": "env(safe-area-inset-left);",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "43b675",
+        "hash": "4ba87534",
+        "encoded": "font-family:%20var(--font-sans);",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "43b675",
+        "hash": "fc39ed3e",
+        "encoded": "background-color:%20var(--color-paper);",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "43b675",
+        "hash": "15710a56",
+        "encoded": "color:%20var(--color-ink);",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "43b675",
+        "hash": "dd37afe0",
+        "encoded": "-webkit-font-smoothing:%20antialiased;",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "43b675",
+        "hash": "1ad0964f",
+        "encoded": "text-rendering:%20optimizeLegibility;",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "43b675",
+        "hash": "880eeeff",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "2fff2c",
+        "hash": "c1f40c2f",
+        "encoded": "button,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "2fff2c",
+        "hash": "ef8faac0",
+        "encoded": "input%5Btype='button'%5D,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "2fff2c",
+        "hash": "74b983fc",
+        "encoded": "input%5Btype='submit'%5D,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "2fff2c",
+        "hash": "1eb74677",
+        "encoded": "input%5Btype='range'%5D,",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "2fff2c",
+        "hash": "03991719",
+        "encoded": "select%20%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "2fff2c",
+        "hash": "6c2146ad",
+        "encoded": "min-height:%2044px;",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "2fff2c",
+        "hash": "8b687a61",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "2fff2c",
+        "hash": "c3eee553",
+        "encoded": "nav%20a%20%7B",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "2fff2c",
+        "hash": "ada1f6d4",
+        "encoded": "display:%20inline-flex;",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "2fff2c",
+        "hash": "6680b08d",
+        "encoded": "min-height:%2044px;",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "2fff2c",
+        "hash": "81a9291d",
+        "encoded": "align-items:%20center;",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "2fff2c",
+        "hash": "38b604dc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "2fff2c",
+        "hash": "b620511c",
+        "encoded": "h1,",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "2fff2c",
+        "hash": "9a61476f",
+        "encoded": "h2,",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "2fff2c",
+        "hash": "e01d22d4",
+        "encoded": "h3%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "43b675",
+        "hash": "35b41923",
+        "encoded": "input%5Btype='button'%5D,",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "43b675",
+        "hash": "2d1ed489",
+        "encoded": "input%5Btype='submit'%5D%20%7B",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "43b675",
+        "hash": "8bb075e5",
+        "encoded": "min-height:%2044px;",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "43b675",
+        "hash": "309dd352",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "43b675",
+        "hash": "dc8329b8",
+        "encoded": "h1,",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

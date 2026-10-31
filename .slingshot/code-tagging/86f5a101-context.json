@@ -1,0 +1,15 @@
+{
+  "filename": "InstallHelp.tsx",
+  "path": "src/components/molecules/InstallHelp.tsx",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "c940cefe": {
+      "value": "acum apare:\nOct 31 22:26:29.71\nPOST\n500\nai-reader-lac.vercel.app\n/api/ocr\nEroare neprevăzută la procesarea OCR.\n\nE vreo compinenta externa pentru OCR, neconfigurata? cum se face OCR?"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

@@ -22,201 +22,292 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:16:16 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6809b6": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478492,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "4c278a7c",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a5b67b": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478492,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "f0beda00",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "099337",
+        "chunkId": "6809b6",
         "hash": "7ecd5600",
         "encoded": "import%20%7B%20MainScreenLayout%20%7D%20from%20'../components/templates/MainScreenLayout'",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "099337",
+        "chunkId": "6809b6",
         "hash": "58407445",
         "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "099337",
+        "chunkId": "6809b6",
         "hash": "a3538586",
         "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
         "prevChunkIds": []
       },
-      "4": {
-        "chunkId": "099337",
-        "hash": "032b94cf",
-        "encoded": "export%20default%20function%20HomePage()%20%7B",
+      "3": {
+        "chunkId": "6809b6",
+        "hash": "b7308be7",
+        "encoded": "import%20%7B%20InstallHelp%20%7D%20from%20'../components/molecules/InstallHelp'",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "099337",
-        "hash": "a6d325bc",
-        "encoded": "return%20(",
-        "prevChunkIds": []
-      },
-      "6": {
-        "chunkId": "099337",
-        "hash": "fdb200f2",
-        "encoded": "%3CMainScreenLayout%3E",
+        "chunkId": "6809b6",
+        "hash": "92529108",
+        "encoded": "export%20default%20function%20HomePage()%20%7B",
         "prevChunkIds": []
       },
       "7": {
         "chunkId": "099337",
-        "hash": "f2a093ad",
-        "encoded": "%3Csection%20id=%22cum-functioneaza%22%20className=%22flex%20flex-col%20gap-3%20text-center%20sm:text-left%22%3E",
+        "hash": "90e8feae",
+        "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
         "prevChunkIds": []
       },
       "8": {
         "chunkId": "099337",
-        "hash": "c229e6b4",
-        "encoded": "%3Ch1%20className=%22font-display%20text-3xl%20leading-tight%20sm:text-4xl%22%3E",
-        "prevChunkIds": []
-      },
-      "9": {
-        "chunkId": "099337",
-        "hash": "c7f03333",
-        "encoded": "Ascult%C4%83%20orice%20text,%20cu%20propria%20ta%20voce%20digital%C4%83",
+        "hash": "1d7850a8",
+        "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
         "prevChunkIds": []
       },
       "10": {
         "chunkId": "099337",
-        "hash": "bedc7ab9",
-        "encoded": "%3C/h1%3E",
+        "hash": "326a159a",
+        "encoded": "export%20default%20function%20HomePage()%20%7B",
         "prevChunkIds": []
       },
       "11": {
         "chunkId": "099337",
-        "hash": "e8db46da",
-        "encoded": "%3Cp%20className=%22text-base%20text-ink-muted%22%3E",
+        "hash": "588b7e4f",
+        "encoded": "return%20(",
         "prevChunkIds": []
       },
       "12": {
         "chunkId": "099337",
-        "hash": "382dadbd",
-        "encoded": "Scrie,%20lipe%C8%99te%20sau%20%C3%AEncarc%C4%83%20o%20imagine%20cu%20text,%20iar%20Cite%C8%99te-mi%20%C8%9Bi-l%20cite%C8%99te%20cu%20voce%20tare,%20%C3%AEn",
+        "hash": "19b50fe2",
+        "encoded": "%3CMainScreenLayout%3E",
         "prevChunkIds": []
       },
       "13": {
         "chunkId": "099337",
-        "hash": "faef9aa5",
-        "encoded": "rom%C3%A2n%C4%83%20sau%20%C3%AEn%20alte%20limbi.",
+        "hash": "f009a7ee",
+        "encoded": "%3Csection%20id=%22cum-functioneaza%22%20className=%22flex%20flex-col%20gap-3%20text-center%20sm:text-left%22%3E",
         "prevChunkIds": []
       },
       "14": {
         "chunkId": "099337",
-        "hash": "f5a5009b",
-        "encoded": "%3C/p%3E",
+        "hash": "bb97c0f5",
+        "encoded": "%3Ch1%20className=%22font-display%20text-3xl%20leading-tight%20sm:text-4xl%22%3E",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "099337",
+        "chunkId": "a5b67b",
         "hash": "1b2938af",
         "encoded": "%3C/section%3E",
         "prevChunkIds": []
       },
       "17": {
-        "chunkId": "099337",
+        "chunkId": "a5b67b",
         "hash": "eb320485",
         "encoded": "%3CAuthPanel%20/%3E",
         "prevChunkIds": []
       },
       "18": {
-        "chunkId": "099337",
+        "chunkId": "a5b67b",
         "hash": "22eb2d07",
         "encoded": "%3CReaderCard%20/%3E",
         "prevChunkIds": []
       },
-      "20": {
-        "chunkId": "099337",
-        "hash": "dfa62e8a",
-        "encoded": "%3Csection",
+      "19": {
+        "chunkId": "a5b67b",
+        "hash": "c305d642",
+        "encoded": "%3CInstallHelp%20/%3E",
         "prevChunkIds": []
       },
       "21": {
-        "chunkId": "099337",
-        "hash": "0ae3b41e",
-        "encoded": "id=%22abonament%22",
+        "chunkId": "a5b67b",
+        "hash": "5ba57afc",
+        "encoded": "%3Csection",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "099337",
-        "hash": "a39cb434",
-        "encoded": "className=%22rounded-2xl%20border%20border-border%20bg-surface%20p-5%20text-sm%20text-ink-muted%20sm:p-6%22",
+        "chunkId": "a5b67b",
+        "hash": "1adc6fb1",
+        "encoded": "id=%22abonament%22",
         "prevChunkIds": []
       },
       "23": {
         "chunkId": "099337",
-        "hash": "d53abf98",
-        "encoded": "%3E",
+        "hash": "71bdcc5a",
+        "encoded": "%3C/h1%3E",
         "prevChunkIds": []
       },
       "24": {
         "chunkId": "099337",
-        "hash": "574e1309",
-        "encoded": "%3Ch2%20className=%22mb-2%20font-display%20text-lg%20text-ink%22%3EDespre%20abonament%3C/h2%3E",
+        "hash": "33c242e1",
+        "encoded": "%3Cp%20className=%22text-base%20text-ink-muted%22%3E",
         "prevChunkIds": []
       },
       "25": {
         "chunkId": "099337",
-        "hash": "2f7ef926",
-        "encoded": "%3Cp%3E",
+        "hash": "4998c89f",
+        "encoded": "Scrie,%20lipe%C8%99te%20sau%20%C3%AEncarc%C4%83%20o%20imagine%20cu%20text,%20iar%20Cite%C8%99te-mi%20%C8%9Bi-l%20cite%C8%99te%20cu%20voce%20tare,%20%C3%AEn",
         "prevChunkIds": []
       },
       "26": {
         "chunkId": "099337",
-        "hash": "8d95bd2e",
-        "encoded": "Prima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83,%20f%C4%83r%C4%83%20%C3%AEnregistrare.%20Dup%C4%83%20aceea,%20abonamentul%20ofer%C4%83",
+        "hash": "64a81b50",
+        "encoded": "rom%C3%A2n%C4%83%20sau%20%C3%AEn%20alte%20limbi.",
         "prevChunkIds": []
       },
       "27": {
         "chunkId": "099337",
-        "hash": "d37014b5",
-        "encoded": "lecturi%20audio%20nelimitate%20%C3%AEn%20limbile%20disponibile.%20Pre%C8%9Bul%20%C8%99i%20intervalul%20de%20facturare%20sunt",
+        "hash": "6853b743",
+        "encoded": "%3C/p%3E",
         "prevChunkIds": []
       },
       "28": {
         "chunkId": "099337",
-        "hash": "c66b1f30",
-        "encoded": "configurabile%20%C8%99i%20afi%C8%99ate%20de%20Stripe%20%C3%AEnainte%20de%20confirmare.%20Autentific%C4%83-te%20pentru%20a%20activa,",
-        "prevChunkIds": []
-      },
-      "29": {
-        "chunkId": "099337",
-        "hash": "c7f061a2",
-        "encoded": "restaura%20sau%20anula%20abonamentul.",
+        "hash": "a6ec2c09",
+        "encoded": "%3C/section%3E",
         "prevChunkIds": []
       },
       "30": {
         "chunkId": "099337",
-        "hash": "3769c456",
-        "encoded": "%3C/p%3E",
+        "hash": "50d19682",
+        "encoded": "%3CAuthPanel%20/%3E",
         "prevChunkIds": []
       },
       "31": {
         "chunkId": "099337",
-        "hash": "cea5d71e",
-        "encoded": "%3C/section%3E",
-        "prevChunkIds": []
-      },
-      "32": {
-        "chunkId": "099337",
-        "hash": "ec2315f3",
-        "encoded": "%3C/MainScreenLayout%3E",
+        "hash": "317ed9f8",
+        "encoded": "%3CReaderCard%20/%3E",
         "prevChunkIds": []
       },
       "33": {
         "chunkId": "099337",
-        "hash": "c835f273",
-        "encoded": ")",
+        "hash": "9cf3f175",
+        "encoded": "%3Csection",
         "prevChunkIds": []
       },
       "34": {
         "chunkId": "099337",
-        "hash": "b8d59d8e",
+        "hash": "dbc01d23",
+        "encoded": "id=%22abonament%22",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "099337",
+        "hash": "3fa009f9",
+        "encoded": "className=%22rounded-2xl%20border%20border-border%20bg-surface%20p-5%20text-sm%20text-ink-muted%20sm:p-6%22",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "099337",
+        "hash": "b8ad02af",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "099337",
+        "hash": "1a65e0cb",
+        "encoded": "%3Ch2%20className=%22mb-2%20font-display%20text-lg%20text-ink%22%3EDespre%20abonament%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "099337",
+        "hash": "8c89f1f5",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "099337",
+        "hash": "5be84d83",
+        "encoded": "Prima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83,%20f%C4%83r%C4%83%20%C3%AEnregistrare.%20Dup%C4%83%20aceea,%20abonamentul%20ofer%C4%83",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "099337",
+        "hash": "3dfdfbf8",
+        "encoded": "lecturi%20audio%20nelimitate%20%C3%AEn%20limbile%20disponibile.%20Pre%C8%9Bul%20%C8%99i%20intervalul%20de%20facturare%20sunt",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "099337",
+        "hash": "de879835",
+        "encoded": "configurabile%20%C8%99i%20afi%C8%99ate%20de%20Stripe%20%C3%AEnainte%20de%20confirmare.%20Autentific%C4%83-te%20pentru%20a%20activa,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "099337",
+        "hash": "7cc38107",
+        "encoded": "restaura%20sau%20anula%20abonamentul.",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "099337",
+        "hash": "53446680",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "099337",
+        "hash": "4d88b199",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "099337",
+        "hash": "830936a0",
+        "encoded": "%3C/MainScreenLayout%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "099337",
+        "hash": "e31e659a",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "099337",
+        "hash": "57c5213d",
         "encoded": "%7D",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 38
   }
 }

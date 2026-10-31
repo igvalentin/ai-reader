@@ -1,0 +1,18 @@
+{
+  "filename": "manifest.webmanifest",
+  "path": "public/manifest.webmanifest",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "c940cefe": {
+      "value": "acum apare:\nOct 31 22:26:29.71\nPOST\n500\nai-reader-lac.vercel.app\n/api/ocr\nEroare neprevăzută la procesarea OCR.\n\nE vreo compinenta externa pentru OCR, neconfigurata? cum se face OCR?"
+    },
+    "bb679d93": {
+      "value": "sunt ceva erori la build, le verifici?\n\nRunning build in Washington, D.C., USA (East) – iad1\nBuild machine configuration: 2 cores, 8 GB\nCloning github.com/igvalentin/ai-reader (Branch: main, Commit: c3252a6)\nSkipping build cache, deployment was triggered without cache.\nCloning completed: 840.000ms\nRunning \"vercel build\"\nVercel CLI 65.4.0\nInstalling dependencies...\nnpm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported "
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

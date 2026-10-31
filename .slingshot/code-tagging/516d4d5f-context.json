@@ -1,0 +1,18 @@
+{
+  "filename": "sw.js",
+  "path": "public/sw.js",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "bb679d93": {
+      "value": "sunt ceva erori la build, le verifici?\n\nRunning build in Washington, D.C., USA (East) – iad1\nBuild machine configuration: 2 cores, 8 GB\nCloning github.com/igvalentin/ai-reader (Branch: main, Commit: c3252a6)\nSkipping build cache, deployment was triggered without cache.\nCloning completed: 840.000ms\nRunning \"vercel build\"\nVercel CLI 65.4.0\nInstalling dependencies...\nnpm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported "
+    },
+    "1a3e069e": {
+      "value": "aici\n\n✓ built in 702ms\nUsing TypeScript 5.6.3 (local user-provided)\napi/checkout.ts(4,33): error TS2459: Module '\"../src/server/billing/billing.js\"' declares 'EntitlementError' locally, but it is not exported."
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

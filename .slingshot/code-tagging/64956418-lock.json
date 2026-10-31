@@ -1,0 +1,96 @@
+{
+  "src/components/molecules/InstallHelp.test.tsx": {
+    "filename": "InstallHelp.test.tsx",
+    "path": "src/components/molecules/InstallHelp.test.tsx",
+    "version": "1.2",
+    "contextFile": "64956418-context.json",
+    "chunks": {
+      "86417b": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478850,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "394d1d23"
+        },
+        "hash": "68b0736e",
+        "messageId": "system_4d7a2950-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:34:10 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "45": {
+        "chunkId": "86417b",
+        "hash": "39358531",
+        "encoded": "installEvent.prompt%20=%20prompt",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "86417b",
+        "hash": "abdbd630",
+        "encoded": "installEvent.userChoice%20=%20Promise.resolve(%7B%20outcome:%20'accepted',%20platform:%20'web'%20%7D)",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "86417b",
+        "hash": "a6a23669",
+        "encoded": "render(%3CInstallHelp%20/%3E)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "86417b",
+        "hash": "d43d7752",
+        "encoded": "fireEvent(window,%20installEvent)",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "86417b",
+        "hash": "52a7d2d5",
+        "encoded": "const%20installButton%20=%20await%20screen.findByRole('button',%20%7B%20name:%20'Instaleaz%C4%83%20aplica%C8%9Bia'%20%7D)",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "86417b",
+        "hash": "c4eb4102",
+        "encoded": "const%20%7B%20act%20%7D%20=%20await%20import('@testing-library/react')",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "86417b",
+        "hash": "a8af6ebd",
+        "encoded": "await%20act(async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "86417b",
+        "hash": "d4967aa9",
+        "encoded": "fireEvent.click(installButton)",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "86417b",
+        "hash": "60117bb9",
+        "encoded": "await%20installEvent.userChoice",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "86417b",
+        "hash": "8d20d64c",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "86417b",
+        "hash": "5856f12c",
+        "encoded": "expect(prompt).toHaveBeenCalledOnce()",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

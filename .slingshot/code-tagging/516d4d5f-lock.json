@@ -1,0 +1,180 @@
+{
+  "public/sw.js": {
+    "filename": "sw.js",
+    "path": "public/sw.js",
+    "version": "1.2",
+    "contextFile": "516d4d5f-context.json",
+    "chunks": {
+      "dacc93": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479083,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "bb679d93"
+        },
+        "hash": "5167db4a",
+        "messageId": "system_aadbfeb0-d56a-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:38:03 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "abc6f2": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479108,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a3e069e"
+        },
+        "hash": "655da2bd",
+        "messageId": "system_fdbc6cf0-d56a-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:38:28 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "abc6f2",
+        "hash": "ddb11518",
+        "encoded": "const%20CACHE_NAME%20=%20'ai-reader-shell-v1'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "abc6f2",
+        "hash": "da771edf",
+        "encoded": "const%20APP_SHELL%20=%20%5B'/',%20'/manifest.webmanifest',%20'/favicon.svg',%20'/icons/app-icon.svg'%5D",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "abc6f2",
+        "hash": "25ececca",
+        "encoded": "self.addEventListener('install',%20(event)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "abc6f2",
+        "hash": "fe875f4b",
+        "encoded": "event.waitUntil(",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "abc6f2",
+        "hash": "577fc0ec",
+        "encoded": "caches.open(CACHE_NAME).then((cache)%20=%3E%20cache.addAll(%5B",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "abc6f2",
+        "hash": "138c5529",
+        "encoded": "...APP_SHELL,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "abc6f2",
+        "hash": "b95e6ff9",
+        "encoded": "'/icons/app-icon-192.png',",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "abc6f2",
+        "hash": "7c1d418c",
+        "encoded": "'/icons/app-icon-512.png',",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "abc6f2",
+        "hash": "6cd2c917",
+        "encoded": "%5D)).then(()%20=%3E%20self.skipWaiting()),",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "abc6f2",
+        "hash": "761efe4d",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "abc6f2",
+        "hash": "3ee2f097",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "abc6f2",
+        "hash": "546bfd05",
+        "encoded": "self.addEventListener('activate',%20(event)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "abc6f2",
+        "hash": "ea7eb368",
+        "encoded": "event.waitUntil(",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "abc6f2",
+        "hash": "48e4d674",
+        "encoded": "caches.keys()",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "dacc93",
+        "hash": "aef2f732",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "dacc93",
+        "hash": "74d95ded",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "dacc93",
+        "hash": "57c5213d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "dacc93",
+        "hash": "2f761705",
+        "encoded": "const%20isAppShellAsset%20=%20APP_SHELL.includes(url.pathname)%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "dacc93",
+        "hash": "37220f60",
+        "encoded": "url.pathname%20===%20'/icons/app-icon-192.png'%20%7C%7C%20url.pathname%20===%20'/icons/app-icon-512.png'",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "dacc93",
+        "hash": "42ec8147",
+        "encoded": "const%20isBuiltAsset%20=%20url.pathname.startsWith('/assets/')%20&&",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "dacc93",
+        "hash": "874a98b5",
+        "encoded": "%5B'script',%20'style',%20'font',%20'image'%5D.includes(request.destination)",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "dacc93",
+        "hash": "106b6df4",
+        "encoded": "if%20(!isAppShellAsset%20&&%20!isBuiltAsset)%20return",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T20:24:12.019Z",
+  "lastUpdated": "2026-10-31T20:40:04.907Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -54,9 +54,16 @@
     },
     {
       "id": "mem_1793477934207_b96ilk",
-      "content": "Fixed Vercel ESM OCR 500: added .js suffixes to relative imports in all API/server runtime modules and transitive dependencies. npm test (39), typecheck, lint, build pass; redeploy to apply.",
+      "content": "Fixed Vercel TS2459: checkout and portal now import EntitlementError from entitlement, not billing. All API TypeScript compiles; 42 tests, build, lint pass.",
       "createdAt": "2026-10-31T20:18:54.207Z",
-      "updatedAt": "2026-10-31T20:24:12.019Z",
+      "updatedAt": "2026-10-31T20:39:04.614Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793479204907_fwsw9f",
+      "content": "ai-reader PWA: standalone manifest, 192/512 PNG + SVG icons, static-only SW excludes APIs/audio, device-specific install help, safe-area/touch CSS; 42 tests/build passed, not deployed.",
+      "createdAt": "2026-10-31T20:40:04.907Z",
+      "updatedAt": "2026-10-31T20:40:04.907Z",
       "isEnabled": true
     }
   ]

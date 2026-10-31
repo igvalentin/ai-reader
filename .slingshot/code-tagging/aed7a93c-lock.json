@@ -1,0 +1,228 @@
+{
+  "public/manifest.webmanifest": {
+    "filename": "manifest.webmanifest",
+    "path": "public/manifest.webmanifest",
+    "version": "1.2",
+    "contextFile": "aed7a93c-context.json",
+    "chunks": {
+      "1ab7c5": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478492,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "3d4581fc",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "fefe07": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479083,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "bb679d93"
+        },
+        "hash": "6c9e1ceb",
+        "messageId": "system_aadbfeb0-d56a-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:38:03 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "7": {
+        "chunkId": "1ab7c5",
+        "hash": "7aa84f3e",
+        "encoded": "%22theme_color%22:%20%22#1F5F5B%22,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "1ab7c5",
+        "hash": "2b44d1b9",
+        "encoded": "%22lang%22:%20%22ro%22,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "1ab7c5",
+        "hash": "817d6fec",
+        "encoded": "%22icons%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "fefe07",
+        "hash": "190a3676",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "fefe07",
+        "hash": "2b305da3",
+        "encoded": "%22src%22:%20%22/icons/app-icon-192.png%22,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "fefe07",
+        "hash": "dca4977c",
+        "encoded": "%22sizes%22:%20%22192x192%22,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "fefe07",
+        "hash": "48c3a5ae",
+        "encoded": "%22type%22:%20%22image/png%22,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "fefe07",
+        "hash": "9900e16c",
+        "encoded": "%22purpose%22:%20%22any%22",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "fefe07",
+        "hash": "e682a066",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "fefe07",
+        "hash": "f06cfb55",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "fefe07",
+        "hash": "c70f674f",
+        "encoded": "%22src%22:%20%22/icons/app-icon-512.png%22,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "fefe07",
+        "hash": "a375fd62",
+        "encoded": "%22sizes%22:%20%22512x512%22,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "fefe07",
+        "hash": "dcef4893",
+        "encoded": "%22type%22:%20%22image/png%22,",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "fefe07",
+        "hash": "59a49f80",
+        "encoded": "%22purpose%22:%20%22any%20maskable%22",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "fefe07",
+        "hash": "044c21b3",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "fefe07",
+        "hash": "2ce76d4f",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "fefe07",
+        "hash": "ab5be120",
+        "encoded": "%22src%22:%20%22/icons/app-icon.svg%22,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "fefe07",
+        "hash": "7c8a51ea",
+        "encoded": "%22sizes%22:%20%22any%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "fefe07",
+        "hash": "d8ae45c3",
+        "encoded": "%22type%22:%20%22image/svg+xml%22,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "fefe07",
+        "hash": "b648c318",
+        "encoded": "%22purpose%22:%20%22any%22",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "fefe07",
+        "hash": "a7947416",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "fefe07",
+        "hash": "3d303d91",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "fefe07",
+        "hash": "10f36d30",
+        "encoded": "%22categories%22:%20%5B%22education%22,%20%22productivity%22%5D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "1ab7c5",
+        "hash": "7e6670ce",
+        "encoded": "%22src%22:%20%22/icons/app-icon.svg%22,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "1ab7c5",
+        "hash": "437aa6c6",
+        "encoded": "%22sizes%22:%20%22any%22,",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "1ab7c5",
+        "hash": "d101c5a9",
+        "encoded": "%22type%22:%20%22image/svg+xml%22,",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "1ab7c5",
+        "hash": "c55fd855",
+        "encoded": "%22purpose%22:%20%22any%20maskable%22",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "1ab7c5",
+        "hash": "b8d59d8e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "1ab7c5",
+        "hash": "fa5198d2",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "1ab7c5",
+        "hash": "c8ffb47c",
+        "encoded": "%22categories%22:%20%5B%22education%22,%20%22productivity%22%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

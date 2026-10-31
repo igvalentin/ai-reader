@@ -1,0 +1,15 @@
+{
+  "filename": "InstallHelp.test.tsx",
+  "path": "src/components/molecules/InstallHelp.test.tsx",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "394d1d23": {
+      "value": "Prompt 5 — PWA, Mobile Installation, and Browser Instructions\n\nMake AI Reader installable as a Progressive Web App.\n\nPWA requirements\n\nAdd a valid web app manifest.\n\nAdd application icons and appropriate theme colors.\n\nConfigure service worker behavior.\n\nProvide an install prompt when supported.\n\nEnsure the application works when opened from the home screen.\n\nAvoid caching private user content or generated audio in a way that exposes it to other users of the device.\n\nDo not cache authenticated A"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

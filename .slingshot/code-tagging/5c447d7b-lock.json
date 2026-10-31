@@ -1,0 +1,72 @@
+{
+  "src/pages/HomePage.test.tsx": {
+    "filename": "HomePage.test.tsx",
+    "path": "src/pages/HomePage.test.tsx",
+    "version": "1.2",
+    "contextFile": "5c447d7b-context.json",
+    "chunks": {
+      "73338a": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793478844,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c940cefe"
+        },
+        "hash": "526b1633",
+        "messageId": "system_963df040-d569-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:34:04 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "32": {
+        "chunkId": "73338a",
+        "hash": "3fa8fc0e",
+        "encoded": "const%20user%20=%20userEvent.setup()",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "73338a",
+        "hash": "5d44d3b8",
+        "encoded": "const%20textarea%20=%20screen.getByLabelText(/textul%20t%C4%83u/i)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "73338a",
+        "hash": "9328be59",
+        "encoded": "await%20user.type(textarea,%20'Salut!')",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "73338a",
+        "hash": "d6eb6071",
+        "encoded": "await%20user.clear(textarea)",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "73338a",
+        "hash": "b8aad4fd",
+        "encoded": "await%20user.click(textarea)",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "73338a",
+        "hash": "fca23523",
+        "encoded": "await%20user.paste('Text%20lipit')",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "73338a",
+        "hash": "1e5b7202",
+        "encoded": "expect(screen.getByText('10%20caractere')).toBeInTheDocument()",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

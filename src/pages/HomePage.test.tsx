@@ -34,7 +34,10 @@ describe('HomePage', () => {
     const textarea = screen.getByLabelText(/textul tău/i)
 
     await user.type(textarea, 'Salut!')
+    await user.clear(textarea)
+    await user.click(textarea)
+    await user.paste('Text lipit')
 
-    expect(screen.getByText('6 caractere')).toBeInTheDocument()
+    expect(screen.getByText('10 caractere')).toBeInTheDocument()
   })
 })

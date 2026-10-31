@@ -1,6 +1,7 @@
 import { MainScreenLayout } from '../components/templates/MainScreenLayout'
 import { ReaderCard } from '../components/organisms/ReaderCard'
 import { AuthPanel } from '../components/molecules/AuthPanel'
+import { InstallHelp } from '../components/molecules/InstallHelp'
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
 
       <AuthPanel />
       <ReaderCard />
+      <InstallHelp />
 
       <section
         id="abonament"
