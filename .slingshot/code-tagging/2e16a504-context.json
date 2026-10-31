@@ -1,0 +1,15 @@
+{
+  "filename": "vercel.json",
+  "path": "vercel.json",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "40b18f70": {
+      "value": "ma refer la laternative la google speech synthesys"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}
