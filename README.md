@@ -1,11 +1,13 @@
 # Citește-mi
 
 Aplicație web instalabilă (PWA), mobile-first, care permite utilizatorilor să lipească/scrie text,
-să încarce imagini cu text (OCR — în curând) și să asculte textul citit cu voce tare, în română și
-alte limbi (text-to-speech — în curând). Prima lectură este gratuită, apoi este necesar un abonament.
+să încarce imagini cu text și să-l extragă prin OCR și să asculte textul citit cu voce tare, în
+română și alte limbi (text-to-speech — în curând). Prima lectură este gratuită, apoi este necesar
+un abonament.
 
-> Această versiune conține doar fundația aplicației (Prompt 1): structură, UI și configurare.
-> OCR, text-to-speech, facturarea și impunerea abonamentului vor fi adăugate în etape ulterioare.
+> Această versiune conține fundația aplicației (Prompt 1) și încărcarea de imagini cu extragere de
+> text prin OCR (Prompt 2). Text-to-speech, facturarea și impunerea abonamentului vor fi adăugate în
+> etape ulterioare.
 > Detalii complete despre arhitectură și planul de implementare: [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
 
 ## Stack tehnic
@@ -79,11 +81,25 @@ Variabile de mediu necesare în proiectul Vercel (Production):
 > Nu există un mediu de staging — conform cerințelor de producție, se folosește doar proiectul
 > Vercel și Supabase de producție existente, fără duplicate.
 
+## OCR (extragere text din imagini)
+
+- Imaginea este trimisă din browser către funcția server `api/ocr.ts` (Vercel Function) prin
+  `multipart/form-data`; furnizorul OCR configurat este [OCR.space](https://ocr.space/) (motor 2,
+  limbă română), ales pentru suport bun al diacriticelor și cost redus pentru un MVP.
+- Cheia API (`OCR_SPACE_API_KEY`) rămâne exclusiv pe server — nu este niciodată expusă clientului.
+- Imaginea este validată după conținutul binar real (semnătura/magic bytes), nu doar după
+  extensie sau `Content-Type`; este procesată integral în memorie și nu este niciodată scrisă pe
+  disc sau stocată — este eliminată imediat după generarea răspunsului.
+- Limita de dimensiune este de 4 MB; tipurile acceptate sunt JPEG, PNG și WebP.
+- **Variabilă de mediu necesară (doar pe server, în Vercel):** `OCR_SPACE_API_KEY`.
+- Impunerea autentificării obligatorii pe acest endpoint este planificată pentru etapa de
+  entitlement/abonament (vezi `docs/ARCHITECTURE.md`), când va exista și un ecran de login.
+
 ## Configurări rămase (de documentat, nu de inventat)
 
-- Furnizorul de OCR (ex. Tesseract.js sau API extern) — neales încă.
 - Furnizorul de text-to-speech cu voce română de calitate — neales încă.
 - Furnizorul de plăți/abonamente — neales încă.
+- Ecranul de autentificare (login cu Google prin Supabase) — neconstruit încă în interfață.
 - Iconițe PWA reale (192x192, 512x512, maskable) — momentan se folosește doar `favicon.svg` ca
   placeholder în `manifest.webmanifest`.
 - Schema de bază de date Supabase descrisă în `docs/ARCHITECTURE.md` nu a fost încă aplicată.

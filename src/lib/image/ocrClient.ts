@@ -44,20 +44,23 @@ export function uploadImageForOcr(
     }
 
     xhr.onload = () => {
-      let payload: unknown = null
+      const parseResponseBody = (): unknown =>
+        xhr.responseText ? JSON.parse(xhr.responseText) : null
+
+      let parsedPayload: unknown
       try {
-        payload = xhr.responseText ? JSON.parse(xhr.responseText) : null
+        parsedPayload = parseResponseBody()
       } catch {
         reject(new OcrRequestError('Răspuns invalid de la serverul de recunoaștere text.'))
         return
       }
 
       if (xhr.status >= 200 && xhr.status < 300) {
-        resolve(payload as OcrSuccessResponse)
+        resolve(parsedPayload as OcrSuccessResponse)
         return
       }
 
-      const errorPayload = payload as OcrErrorResponse | null
+      const errorPayload = parsedPayload as OcrErrorResponse | null
       reject(new OcrRequestError(errorPayload?.error ?? DEFAULT_ERROR_MESSAGE))
     }
 

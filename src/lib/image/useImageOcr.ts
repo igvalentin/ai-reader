@@ -4,13 +4,7 @@ import { validateImageFile } from './validateImageFile'
 import { uploadImageForOcr } from './ocrClient'
 
 export type ImageOcrStatus =
-  | 'idle'
-  | 'invalid'
-  | 'ready'
-  | 'uploading'
-  | 'processing'
-  | 'success'
-  | 'error'
+  'idle' | 'invalid' | 'ready' | 'uploading' | 'processing' | 'success' | 'error'
 
 export interface UseImageOcrOptions {
   onTextExtracted: (text: string) => void
@@ -101,18 +95,15 @@ export function useImageOcr({ onTextExtracted }: UseImageOcrOptions): UseImageOc
     setUploadProgress(0)
 
     try {
+      // Trimitem token-ul de sesiune dacă există deja (pregătit pentru etapa de entitlement),
+      // dar nu îl impunem încă — autentificarea obligatorie va fi activată odată cu ecranul de
+      // login și contorizarea lecturii gratuite (docs/ARCHITECTURE.md, secțiunea 7).
       const {
         data: { session },
       } = await supabase.auth.getSession()
 
-      if (!session?.access_token) {
-        setStatus('error')
-        setErrorMessage('Trebuie să fii autentificat pentru a extrage text dintr-o imagine.')
-        return
-      }
-
       const result = await uploadImageForOcr(file, {
-        accessToken: session.access_token,
+        accessToken: session?.access_token ?? null,
         onUploadProgress: (percent) => {
           setUploadProgress(percent)
           if (percent >= 100) {

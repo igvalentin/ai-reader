@@ -4,7 +4,6 @@ import { normalizeOcrText } from '../src/server/ocr/normalizeOcrText'
 import { getOcrProvider } from '../src/server/ocr/ocrProviderFactory'
 import { OcrProviderError } from '../src/server/ocr/ocrProvider'
 import { MultipartParseError, parseMultipartImage } from '../src/server/ocr/parseMultipartImage'
-import { UnauthorizedError, verifySupabaseUser } from '../src/server/auth/verifySupabaseUser'
 
 export const config = {
   api: {
@@ -16,8 +15,13 @@ export const config = {
  * Endpoint server-side pentru extragerea textului dintr-o imagine (OCR).
  *
  * Securitate și confidențialitate:
- * - cere o sesiune Supabase validă (antet `Authorization: Bearer <token>`), astfel încât
- *   rezultatul este livrat exclusiv utilizatorului care a inițiat cererea;
+ * - răspunsul este returnat sincron, direct către solicitant, și nu este niciodată stocat sau
+ *   accesibil altui utilizator — nu există nicio formă de persistență sau partajare;
+ *   NOTĂ: impunerea autentificării obligatorii (sesiune Supabase) pe acest endpoint este
+ *   planificată pentru etapa de contorizare a lecturii gratuite / entitlement (vezi
+ *   `docs/ARCHITECTURE.md`, secțiunea 7, pasul 4), când ecranul de autentificare va exista și
+ *   în interfață; helper-ul `verifySupabaseUser` este deja pregătit în `src/server/auth/` pentru
+ *   acel moment;
  * - acceptă doar un fișier încărcat direct în corpul cererii (`multipart/form-data`) — nu există
  *   niciun parametru de tip URL care ar putea fi folosit pentru a prelua o resursă arbitrară
  *   (prevenirea SSRF);
@@ -32,18 +36,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
     res.status(405).json({ error: 'Metodă nepermisă.' })
-    return
-  }
-
-  try {
-    await verifySupabaseUser(req.headers.authorization)
-  } catch (error) {
-    if (error instanceof UnauthorizedError) {
-      res.status(401).json({ error: 'Autentificare necesară pentru extragerea textului.' })
-      return
-    }
-    console.error('Configurare server OCR invalidă (verificare utilizator).')
-    res.status(500).json({ error: 'Eroare de configurare a serverului.' })
     return
   }
 
@@ -88,9 +80,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
     console.error('Eroare neprevăzută la procesarea OCR.')
     res.status(500).json({ error: 'A apărut o eroare la procesarea imaginii.' })
-  } finally {
-    // Eliminăm referința explicit pentru a nu păstra conținutul imaginii în memorie mai mult
-    // decât durata strict necesară a cererii.
-    imageBuffer = Buffer.alloc(0)
   }
+  // Nicio referință la `imageBuffer` nu este păstrată dincolo de acest handler — imaginea nu este
+  // niciodată scrisă pe disc sau stocată, fiind eligibilă pentru colectarea gunoiului imediat
+  // după trimiterea răspunsului.
 }

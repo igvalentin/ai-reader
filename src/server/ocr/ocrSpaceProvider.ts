@@ -67,8 +67,6 @@ export class OcrSpaceProvider implements OcrProvider {
     }
 
     const parsedResults = payload.ParsedResults ?? []
-    return parsedResults
-      .map((result) => result.ParsedText ?? '')
-      .join('\n\n')
+    return parsedResults.map((result) => result.ParsedText ?? '').join('\n\n')
   }
 }

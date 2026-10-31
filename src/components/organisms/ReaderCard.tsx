@@ -1,9 +1,10 @@
-import { useId, useState, type FormEvent } from 'react'
+import { useCallback, useId, useState, type FormEvent } from 'react'
 import { Button } from '../atoms/Button'
 import { AudioPlayerPlaceholder } from '../molecules/AudioPlayerPlaceholder'
 import { FreeTrialNotice } from '../molecules/FreeTrialNotice'
 import { ImageUploadControl } from '../molecules/ImageUploadControl'
 import { LanguageSelector } from '../molecules/LanguageSelector'
+import { useImageOcr } from '../../lib/image/useImageOcr'
 
 const MAX_CHARACTERS = 4000
 
@@ -12,6 +13,24 @@ export function ReaderCard() {
   const [error, setError] = useState<string | null>(null)
   const textareaId = useId()
   const errorId = useId()
+
+  const handleTextExtracted = useCallback((extractedText: string) => {
+    setText((current) => {
+      const trimmedCurrent = current.trim()
+      return trimmedCurrent.length > 0 ? `${trimmedCurrent}\n\n${extractedText}` : extractedText
+    })
+    setError(null)
+  }, [])
+
+  const {
+    previewUrl,
+    status: ocrStatus,
+    errorMessage: ocrErrorMessage,
+    uploadProgress,
+    selectFile,
+    removeImage,
+    startOcr,
+  } = useImageOcr({ onTextExtracted: handleTextExtracted })
 
   const characterCount = text.length
   const isOverLimit = characterCount > MAX_CHARACTERS
@@ -76,7 +95,15 @@ export function ReaderCard() {
         ) : null}
       </div>
 
-      <ImageUploadControl />
+      <ImageUploadControl
+        previewUrl={previewUrl}
+        status={ocrStatus}
+        errorMessage={ocrErrorMessage}
+        uploadProgress={uploadProgress}
+        onFileSelected={selectFile}
+        onRemove={removeImage}
+        onStartOcr={startOcr}
+      />
 
       <LanguageSelector />
 

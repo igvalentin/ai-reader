@@ -183,3 +183,55 @@ create policy "users read own subscription" on subscriptions for select using (a
   Vitest + React Testing Library pentru `HomePage`.
 - **Nu s-a atins:** OCR, TTS, facturare, impunerea abonamentului, schema Supabase din secțiunea 5,
   crearea unui mediu de staging sau orice operațiune pe datele de producție Supabase.
+
+## 11. Jurnal de execuție — Prompt 2 (încărcare imagine și OCR)
+
+- **Furnizor OCR ales:** [OCR.space](https://ocr.space/) (API server-side), motor OCR 2, limbă
+  explicită `rum` (română) — ales în locul unei biblioteci OCR în browser (ex. Tesseract.js) pentru
+  o calitate mai bună a recunoașterii diacriticelor românești și pentru a păstra cheia API strict
+  pe server, conform cerințelor de securitate.
+- **Endpoint nou:** `api/ocr.ts` — funcție Vercel (`@vercel/node`), `POST /api/ocr`,
+  `multipart/form-data`, fără body parser automat (`bodyParser: false`), parsare manuală cu
+  `busboy` direct în memorie (fără scriere pe disc).
+- **Abstracție furnizor OCR:** `src/server/ocr/ocrProvider.ts` (interfață `OcrProvider` +
+  `OcrProviderError`), implementată de `ocrSpaceProvider.ts` și instanțiată printr-o fabrică
+  (`ocrProviderFactory.ts`) — permite înlocuirea furnizorului fără a schimba handler-ul.
+- **Normalizare text:** `src/server/ocr/normalizeOcrText.ts` unește liniile răzlețe din același
+  paragraf (artefact comun al motoarelor OCR) și păstrează separarea în paragrafe acolo unde există
+  linii goale în textul brut, păstrând diacriticele românești neschimbate.
+- **Securitate și confidențialitate:**
+  - validare în două straturi a imaginii: client (`src/lib/image/validateImageFile.ts`, folosit de
+    `useImageOcr`) și server (`api/ocr.ts`), ambele verificând semnătura binară reală (magic
+    bytes) din `src/lib/image/imageSignature.ts`, nu doar extensia sau `Content-Type`-ul declarat;
+  - limită de dimensiune de 4 MB impusă atât client-side cât și prin limita `fileSize` a `busboy`
+    pe server (respinsă cu status 413, fără a consuma restul fluxului);
+  - parserul multipart acceptă exclusiv un câmp de fișier (`image`) și ignoră explicit orice alt
+    câmp — nu există niciun parametru de tip URL care ar putea fi folosit pentru a prelua o
+    resursă arbitrară (prevenirea SSRF);
+  - imaginea este păstrată doar în memorie, pe durata cererii, și nu este niciodată stocată (nici
+    pe disc, nici într-un bucket Supabase) — eliminată imediat după generarea răspunsului;
+  - nu se loghează conținutul imaginii, textul extras sau alte date cu caracter personal; erorile
+    sunt logate doar ca mesaje tehnice generice;
+  - rezultatul OCR este livrat sincron, exclusiv solicitantului — fără nicio formă de stocare sau
+    partajare între utilizatori, deci nu există risc de acces încrucișat între conturi;
+  - a fost pregătit un helper de verificare a sesiunii Supabase
+    (`src/server/auth/verifySupabaseUser.ts`) pentru etapa viitoare de entitlement, când
+    autentificarea va deveni obligatorie pe acest endpoint și va exista un ecran de login în
+    interfață; **decizie explicită, aprobată de utilizator**, de a nu impune încă autentificarea
+    obligatorie în această etapă, dat fiind că nu există stocare și deci niciun risc de expunere
+    între utilizatori.
+- **UI client:** `ImageUploadControl` a fost transformat dintr-un control static în unul complet
+  funcțional (selectare prin click sau drag & drop, previzualizare, stare de încărcare cu bară de
+  progres, stare de procesare OCR, eliminare/înlocuire imagine), orchestrat de hook-ul
+  `useImageOcr` (`src/lib/image/useImageOcr.ts`) care gestionează ciclul de viață al URL-ului de
+  previzualizare (`URL.createObjectURL`/`revokeObjectURL`, cu curățare la demontare). Textul extras
+  este adăugat în zona de text existentă din `ReaderCard`, rămânând complet editabil înainte de
+  citirea cu voce tare.
+- **Teste adăugate:** detectarea semnăturii binare (JPEG/PNG/WebP + conținut nevalid), validarea
+  fișierului (tip, dimensiune, fișier gol, conținut fals), normalizarea textului OCR (diacritice
+  românești, păstrarea paragrafelor, CRLF), și handler-ul `/api/ocr` (încărcare validă, metodă
+  nepermisă, Content-Type invalid, imagine falsificată, depășire dimensiune, eșec furnizor OCR,
+  rezultat OCR gol, eroare neprevăzută).
+- **Nu s-a atins:** TTS, facturare, impunerea abonamentului/autentificării, schema Supabase din
+  secțiunea 5, ecran de login, crearea unui mediu de staging sau orice operațiune pe datele de
+  producție Supabase.
