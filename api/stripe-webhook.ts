@@ -18,7 +18,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (!secret) return res.status(500).json({ error: 'Configurarea webhook-ului lipsește.' })
   try {
     const event = getStripe().webhooks.constructEvent(await readRawBody(req), req.headers['stripe-signature'] as string, secret)
-    if (!(await recordBillingEvent(event))) return res.status(200).json({ received: true, duplicate: true })
     if (event.type === 'checkout.session.completed') {
       const session = event.data.object as Stripe.Checkout.Session
       const userId = session.client_reference_id ?? session.metadata?.app_user_id
@@ -31,6 +30,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const userId = await resolveUserIdForCustomer(typeof subscription.customer === 'string' ? subscription.customer : subscription.customer.id)
       if (userId) await upsertSubscription(userId, subscription)
     }
+    if (!(await recordBillingEvent(event))) return res.status(200).json({ received: true, duplicate: true })
     return res.status(200).json({ received: true })
   } catch (error) {
     console.error(JSON.stringify({ event: 'stripe_webhook_failed', reason: error instanceof Stripe.errors.StripeSignatureVerificationError ? 'invalid_signature' : 'processing_error' }))

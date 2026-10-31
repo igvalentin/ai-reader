@@ -1,0 +1,15 @@
+{
+  "filename": "portal.ts",
+  "path": "api/portal.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "790f5c1e": {
+      "value": "31 22:47:10.35\n/api/ocr\n{\"event\":\"ocr_provider_failed\",\"provider\":\"ocr.space\",\"providerMessage\":\"Serviciul OCR a răspuns cu starea 413.\"}\nOct"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

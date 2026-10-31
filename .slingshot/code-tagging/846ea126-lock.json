@@ -1,0 +1,150 @@
+{
+  "api/stripe-webhook.test.ts": {
+    "filename": "stripe-webhook.test.ts",
+    "path": "api/stripe-webhook.test.ts",
+    "version": "1.2",
+    "contextFile": "846ea126-context.json",
+    "chunks": {
+      "91ca91": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480203,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "b9e35b5a",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:56:43 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "95": {
+        "chunkId": "91ca91",
+        "hash": "dcf01984",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "91ca91",
+        "hash": "c60f57c5",
+        "encoded": "expect(res.statusCode).toBe(200)",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "91ca91",
+        "hash": "aeb4f92d",
+        "encoded": "expect(mocks.constructEvent).toHaveBeenCalledWith(",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "91ca91",
+        "hash": "c8ae8586",
+        "encoded": "Buffer.from('verified-event-body'),",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "91ca91",
+        "hash": "0943c510",
+        "encoded": "'test-signature',",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "91ca91",
+        "hash": "9c221b48",
+        "encoded": "'test-webhook-secret',",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "91ca91",
+        "hash": "4d09c37f",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "91ca91",
+        "hash": "5b9ae42f",
+        "encoded": "expect(mocks.calls).toEqual(%5B'resolve-user',%20'upsert-subscription',%20'record-event'%5D)",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "91ca91",
+        "hash": "00d41f0f",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "91ca91",
+        "hash": "9e678f14",
+        "encoded": "it('rejects%20an%20invalid%20Stripe%20signature%20before%20writing%20billing%20state',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "91ca91",
+        "hash": "2fc98e58",
+        "encoded": "const%20signatureError%20=%20new%20Error('invalid%20signature')",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "91ca91",
+        "hash": "0943d0a2",
+        "encoded": "Object.setPrototypeOf(signatureError,%20Stripe.errors.StripeSignatureVerificationError.prototype)",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "91ca91",
+        "hash": "01b629a5",
+        "encoded": "mocks.constructEvent.mockImplementation(()%20=%3E%20%7B%20throw%20signatureError%20%7D)",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "91ca91",
+        "hash": "b76af6d2",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "91ca91",
+        "hash": "4ae5b0e6",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "91ca91",
+        "hash": "0f2f110a",
+        "encoded": "expect(res.statusCode).toBe(400)",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "91ca91",
+        "hash": "9b25079b",
+        "encoded": "expect(mocks.recordBillingEvent).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "91ca91",
+        "hash": "9fcbecd2",
+        "encoded": "expect(mocks.upsertSubscription).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "91ca91",
+        "hash": "655a84f6",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "91ca91",
+        "hash": "12b2bcbc",
+        "encoded": "it('does%20not%20mark%20an%20event%20processed%20when%20the%20database%20update%20fails,%20allowing%20Stripe%20to%20retry',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

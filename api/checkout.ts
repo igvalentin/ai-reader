@@ -4,6 +4,7 @@ import { associateAnonymousUsage, EntitlementError } from '../src/server/entitle
 import { createCheckoutSession } from '../src/server/billing/billing.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  res.setHeader('Cache-Control', 'private, no-store')
   if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ error: 'Metodă nepermisă.' }) }
   try {
     const userId = await verifySupabaseUser(req.headers.authorization)

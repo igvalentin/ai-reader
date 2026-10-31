@@ -10,10 +10,17 @@ export function useAudioPlayer() {
   useEffect(() => () => { audioRef.current?.pause(); if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current) }, [])
 
   const loadChunks = useCallback(async (chunks: string[]) => {
-    setState((current) => ({ ...current, status: 'loading', error: null, playing: false }))
+    setState((current) => ({ ...current, status: 'loading', error: null, playing: false, currentTime: 0, duration: 0 }))
     try {
-      const bytes = chunks.flatMap((chunk) => Array.from(Uint8Array.from(atob(chunk), (character) => character.charCodeAt(0))))
-      const url = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: 'audio/mpeg' }))
+      const decodedChunks = chunks.map((chunk) => Uint8Array.from(atob(chunk), (character) => character.charCodeAt(0)))
+      const totalLength = decodedChunks.reduce((total, chunk) => total + chunk.length, 0)
+      const bytes = new Uint8Array(totalLength)
+      let offset = 0
+      for (const chunk of decodedChunks) {
+        bytes.set(chunk, offset)
+        offset += chunk.length
+      }
+      const url = URL.createObjectURL(new Blob([bytes], { type: 'audio/mpeg' }))
       if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current)
       objectUrlRef.current = url
       const audio = audioRef.current ?? new Audio()
@@ -36,7 +43,21 @@ export function useAudioPlayer() {
     return () => { audio.removeEventListener('timeupdate', update); audio.removeEventListener('play', update); audio.removeEventListener('pause', update); audio.removeEventListener('ended', ended) }
   }, [state.status])
 
-  const toggle = useCallback(async () => { const audio = audioRef.current; if (!audio) return; if (audio.paused) await audio.play(); else audio.pause() }, [])
+  const toggle = useCallback(async () => {
+    const audio = audioRef.current
+    if (!audio) return
+    try {
+      if (audio.paused) await audio.play()
+      else audio.pause()
+    } catch (error) {
+      setState((current) => ({
+        ...current,
+        status: 'error',
+        playing: false,
+        error: error instanceof Error ? error.message : 'Redarea audio a eșuat.',
+      }))
+    }
+  }, [])
   const seek = useCallback((time: number) => { if (audioRef.current) audioRef.current.currentTime = time }, [])
   const setPlaybackRate = useCallback((rate: number) => { if (audioRef.current) audioRef.current.playbackRate = rate }, [])
   return { state, loadChunks, toggle, seek, setPlaybackRate }

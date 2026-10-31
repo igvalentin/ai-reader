@@ -1,0 +1,144 @@
+{
+  "src/lib/tts/useAudioPlayer.test.tsx": {
+    "filename": "useAudioPlayer.test.tsx",
+    "path": "src/lib/tts/useAudioPlayer.test.tsx",
+    "version": "1.2",
+    "contextFile": "240f52f5-context.json",
+    "chunks": {
+      "a236dd": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480082,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "8c9a6b02",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:54:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c0340e": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480112,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "c851d34c",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:55:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "16": {
+        "chunkId": "a236dd",
+        "hash": "22a52bf7",
+        "encoded": "constructor()%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a236dd",
+        "hash": "77e7143e",
+        "encoded": "super()",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "a236dd",
+        "hash": "a3fbaf7b",
+        "encoded": "audioInstances.push(this)",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a236dd",
+        "hash": "ee39c532",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a236dd",
+        "hash": "5dcdb112",
+        "encoded": "load()%20%7B",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a236dd",
+        "hash": "0f5d6aa8",
+        "encoded": "queueMicrotask(()%20=%3E%20this.onloadedmetadata?.())",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a236dd",
+        "hash": "7b3531ab",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "a236dd",
+        "hash": "8cfeacf4",
+        "encoded": "async%20play()%20%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "a236dd",
+        "hash": "a7a81a1d",
+        "encoded": "if%20(this.failNextPlay)%20%7B",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "c0340e",
+        "hash": "58ea735c",
+        "encoded": "const%20%7B%20result%20%7D%20=%20renderHook(()%20=%3E%20useAudioPlayer())",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "c0340e",
+        "hash": "5b8e0dee",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.loadChunks(%5B'QQ=='%5D))",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "c0340e",
+        "hash": "e16986d7",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "c0340e",
+        "hash": "fbfb86de",
+        "encoded": "audioInstances%5B0%5D.failNextPlay%20=%20true",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "c0340e",
+        "hash": "e0f092d4",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "c0340e",
+        "hash": "9f1b3a16",
+        "encoded": "expect(result.current.state).toMatchObject(%7B",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "c0340e",
+        "hash": "a16bea50",
+        "encoded": "status:%20'error',",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

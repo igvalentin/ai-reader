@@ -1,0 +1,342 @@
+{
+  "src/server/ocr/parseMultipartImage.ts": {
+    "filename": "parseMultipartImage.ts",
+    "path": "src/server/ocr/parseMultipartImage.ts",
+    "version": "1.2",
+    "contextFile": "a487e617-context.json",
+    "chunks": {
+      "27f7f6": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480333,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "4e6a4de8",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:58:53 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6c6dc8": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480333,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "ff813335",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:58:53 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3907ba": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480333,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "096345ef",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:58:53 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "d40614": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480333,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "852ece39",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:58:53 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "4a1655": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480333,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "ff813335",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:58:53 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e92444": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480333,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "a223e5a3",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:58:53 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "36": {
+        "chunkId": "e92444",
+        "hash": "230dbbc7",
+        "encoded": "busboy%20=%20Busboy(%7B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "e92444",
+        "hash": "87085b3c",
+        "encoded": "headers:%20%7B%20'content-type':%20contentType%20%7D,",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "e92444",
+        "hash": "e5c0a14c",
+        "encoded": "limits:%20%7B%20fileSize:%20MAX_IMAGE_SIZE_BYTES,%20files:%201,%20fields:%200,%20parts:%201%20%7D,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "e92444",
+        "hash": "f76267be",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "27f7f6",
+        "hash": "a02e7e5b",
+        "encoded": "limits:%20%7B%20fileSize:%20MAX_IMAGE_SIZE_BYTES,%20files:%201,%20fields:%200,%20parts:%202%20%7D,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "27f7f6",
+        "hash": "06d52893",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "27f7f6",
+        "hash": "b8fce397",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "4a1655",
+        "hash": "bab2aba7",
+        "encoded": "let%20fileFound%20=%20false",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "4a1655",
+        "hash": "b847853c",
+        "encoded": "let%20sizeLimitExceeded%20=%20false",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "4a1655",
+        "hash": "ca10a4c2",
+        "encoded": "let%20multipartLimitExceeded%20=%20false",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "4a1655",
+        "hash": "3d190288",
+        "encoded": "const%20chunks:%20Buffer%5B%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "4a1655",
+        "hash": "daf33998",
+        "encoded": "let%20declaredMimeType%20=%20''",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "4a1655",
+        "hash": "1b035fab",
+        "encoded": "let%20fieldName%20=%20''",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "4a1655",
+        "hash": "e2f43a3b",
+        "encoded": "busboy.on('file',%20(name,%20stream,%20info)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "6c6dc8",
+        "hash": "eb321cfe",
+        "encoded": "let%20sizeLimitExceeded%20=%20false",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "6c6dc8",
+        "hash": "2cee0a96",
+        "encoded": "let%20multipartLimitExceeded%20=%20false",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "6c6dc8",
+        "hash": "3d81af20",
+        "encoded": "const%20chunks:%20Buffer%5B%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "6c6dc8",
+        "hash": "5cd6f8c4",
+        "encoded": "let%20declaredMimeType%20=%20''",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "6c6dc8",
+        "hash": "7ddef0e8",
+        "encoded": "let%20fieldName%20=%20''",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "6c6dc8",
+        "hash": "40697d96",
+        "encoded": "busboy.on('file',%20(name,%20stream,%20info)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "d40614",
+        "hash": "fc512276",
+        "encoded": "busboy.on('field',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "d40614",
+        "hash": "556b01e3",
+        "encoded": "//%20Ignor%C4%83m%20explicit%20orice%20alte%20c%C3%A2mpuri%20(ex.%20URL-uri)%20pentru%20a%20preveni%20SSRF%20prin%20preluarea",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "d40614",
+        "hash": "d0b0757f",
+        "encoded": "//%20unei%20resurse%20de%20la%20o%20adres%C4%83%20furnizat%C4%83%20de%20client.",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "d40614",
+        "hash": "3b474759",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "d40614",
+        "hash": "1d840f9a",
+        "encoded": "busboy.on('filesLimit',%20()%20=%3E%20%7B%20multipartLimitExceeded%20=%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "d40614",
+        "hash": "d8829ce8",
+        "encoded": "busboy.on('fieldsLimit',%20()%20=%3E%20%7B%20multipartLimitExceeded%20=%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "d40614",
+        "hash": "676086a1",
+        "encoded": "busboy.on('partsLimit',%20()%20=%3E%20%7B%20multipartLimitExceeded%20=%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "d40614",
+        "hash": "6112ba3d",
+        "encoded": "busboy.on('error',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "3907ba",
+        "hash": "dd91cd05",
+        "encoded": "if%20(sizeLimitExceeded)%20%7B",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "3907ba",
+        "hash": "90f8c627",
+        "encoded": "reject(new%20MultipartParseError('Imaginea%20dep%C4%83%C8%99e%C8%99te%20limita%20admis%C4%83.',%20413))",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "3907ba",
+        "hash": "60bba73c",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "3907ba",
+        "hash": "34001782",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "3907ba",
+        "hash": "37f42907",
+        "encoded": "if%20(multipartLimitExceeded%20%7C%7C%20(fileFound%20&&%20fieldName%20!==%20'image'))%20%7B",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "3907ba",
+        "hash": "2d707a9d",
+        "encoded": "reject(new%20MultipartParseError('Cererea%20trebuie%20s%C4%83%20con%C8%9Bin%C4%83%20o%20singur%C4%83%20imagine%20%C3%AEn%20c%C3%A2mpul%20image.',%20400))",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "3907ba",
+        "hash": "5e9d6d7b",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "3907ba",
+        "hash": "c146bd79",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "3907ba",
+        "hash": "5eeffbb5",
+        "encoded": "if%20(!fileFound%20%7C%7C%20chunks.length%20===%200)%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

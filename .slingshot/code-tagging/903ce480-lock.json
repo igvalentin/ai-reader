@@ -1,0 +1,96 @@
+{
+  "api/stripe-webhook.ts": {
+    "filename": "stripe-webhook.ts",
+    "path": "api/stripe-webhook.ts",
+    "version": "1.2",
+    "contextFile": "903ce480-context.json",
+    "chunks": {
+      "d2dba9": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "790f5c1e"
+        },
+        "hash": "5911333e",
+        "messageId": "system_608a0bc0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a213f8": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "790f5c1e"
+        },
+        "hash": "ead12305",
+        "messageId": "system_608a0bc0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "18": {
+        "chunkId": "a213f8",
+        "hash": "2d6382cd",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a213f8",
+        "hash": "27f6b77a",
+        "encoded": "const%20event%20=%20getStripe().webhooks.constructEvent(await%20readRawBody(req),%20req.headers%5B'stripe-signature'%5D%20as%20string,%20secret)",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a213f8",
+        "hash": "b103eec9",
+        "encoded": "if%20(event.type%20===%20'checkout.session.completed')%20%7B",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "d2dba9",
+        "hash": "bf4acae0",
+        "encoded": "if%20(userId)%20await%20upsertSubscription(userId,%20subscription)",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "d2dba9",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "d2dba9",
+        "hash": "478364ba",
+        "encoded": "if%20(!(await%20recordBillingEvent(event)))%20return%20res.status(200).json(%7B%20received:%20true,%20duplicate:%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "d2dba9",
+        "hash": "5e6e28d0",
+        "encoded": "return%20res.status(200).json(%7B%20received:%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "d2dba9",
+        "hash": "770fb1cf",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

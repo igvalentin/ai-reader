@@ -5,6 +5,24 @@
     "version": "1.2",
     "contextFile": "66301aaf-context.json",
     "chunks": {
+      "760725": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "790f5c1e"
+        },
+        "hash": "97de5141",
+        "messageId": "system_608a0bc0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
       "23baac": {
         "user": "Valentin Ion",
         "model": "claude-sonnet-4-5@20250929",
@@ -58,118 +76,310 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:58 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b250f7": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "790f5c1e"
+        },
+        "hash": "c22ce732",
+        "messageId": "system_608a0bc0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "de9417": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "790f5c1e"
+        },
+        "hash": "90d9d79b",
+        "messageId": "system_608a0bc0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "75": {
-        "chunkId": "23baac",
-        "hash": "4a266d46",
-        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+      "32": {
+        "chunkId": "760725",
+        "hash": "a8651d1e",
+        "encoded": "export%20async%20function%20createCheckoutSession(userId:%20string,%20email?:%20string)%20%7B",
         "prevChunkIds": []
       },
-      "76": {
-        "chunkId": "23baac",
-        "hash": "4d939c6b",
+      "33": {
+        "chunkId": "760725",
+        "hash": "0323a8ac",
         "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
-      "77": {
-        "chunkId": "23baac",
-        "hash": "62cc6740",
-        "encoded": "const%20%7B%20data%20%7D%20=%20await%20client.from('subscriptions').select('user_id').eq('provider_customer_id',%20customerId).maybeSingle()",
+      "34": {
+        "chunkId": "760725",
+        "hash": "380a1d83",
+        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client.from('subscriptions').select('provider_customer_id').eq('user_id',%20userId).maybeSingle()",
         "prevChunkIds": []
       },
-      "78": {
-        "chunkId": "23baac",
-        "hash": "49e752d4",
-        "encoded": "if%20(data?.user_id)%20return%20data.user_id%20as%20string",
+      "35": {
+        "chunkId": "760725",
+        "hash": "ee760a75",
+        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
         "prevChunkIds": []
       },
-      "79": {
-        "chunkId": "338b87",
-        "hash": "f4676400",
-        "encoded": "const%20customer%20=%20await%20getStripe().customers.retrieve(customerId)%20as%20unknown%20as%20Stripe.Customer%20%7C%20Stripe.DeletedCustomer",
+      "36": {
+        "chunkId": "760725",
+        "hash": "20b0ad0f",
+        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
         "prevChunkIds": []
       },
-      "80": {
-        "chunkId": "338b87",
-        "hash": "1efa06d3",
-        "encoded": "if%20(customer.deleted%20%7C%7C%20!('metadata'%20in%20customer))%20return%20null",
+      "37": {
+        "chunkId": "760725",
+        "hash": "6159289e",
+        "encoded": "if%20(!customerId)%20%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "760725",
+        "hash": "e1f0ab40",
+        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "760725",
+        "hash": "bab968f5",
+        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "760725",
+        "hash": "cdd9f31b",
+        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "760725",
+        "hash": "fce7b66c",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "760725",
+        "hash": "d1381036",
+        "encoded": "customerId%20=%20customer.id",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "760725",
+        "hash": "87687156",
+        "encoded": "const%20%7B%20error:%20writeError%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B%20user_id:%20userId,%20provider_customer_id:%20customerId,%20status:%20'none',%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "760725",
+        "hash": "364536ff",
+        "encoded": "if%20(writeError)%20throw%20new%20EntitlementError('DATABASE',%20'Datele%20clientului%20de%20facturare%20nu%20au%20putut%20fi%20salvate.')",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "760725",
+        "hash": "8b687a61",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "760725",
+        "hash": "6a7bb639",
+        "encoded": "const%20session%20=%20await%20getStripe().checkout.sessions.create(%7B",
         "prevChunkIds": []
       },
       "81": {
-        "chunkId": "338b87",
-        "hash": "7afd0970",
-        "encoded": "if%20(typeof%20customer.metadata.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "chunkId": "de9417",
+        "hash": "dcb0438e",
+        "encoded": "export%20async%20function%20upsertSubscription(userId:%20string,%20subscription:%20Stripe.Subscription,%20customerId?:%20string)%20%7B",
         "prevChunkIds": []
       },
       "82": {
-        "chunkId": "338b87",
-        "hash": "36258adb",
-        "encoded": "return%20null",
+        "chunkId": "de9417",
+        "hash": "fad76409",
+        "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
       "83": {
-        "chunkId": "338b87",
-        "hash": "e4b921c6",
-        "encoded": "%7D",
+        "chunkId": "de9417",
+        "hash": "c479394b",
+        "encoded": "const%20%7B%20error%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B",
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "a6b37c",
-        "hash": "e6468bd9",
-        "encoded": "if%20(customer.deleted)%20return%20null",
+        "chunkId": "de9417",
+        "hash": "203be648",
+        "encoded": "user_id:%20userId,",
         "prevChunkIds": []
       },
       "85": {
-        "chunkId": "a6b37c",
-        "hash": "36bc5561",
-        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
-        "prevChunkIds": []
-      },
-      "86": {
-        "chunkId": "a6b37c",
-        "hash": "bca5c922",
-        "encoded": "return%20null",
-        "prevChunkIds": []
-      },
-      "87": {
-        "chunkId": "a6b37c",
-        "hash": "f4ff50cd",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "88": {
-        "chunkId": "23baac",
-        "hash": "dd710bdc",
-        "encoded": "if%20(customer.deleted)%20return%20null",
-        "prevChunkIds": []
-      },
-      "89": {
-        "chunkId": "23baac",
-        "hash": "88471377",
-        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
-        "prevChunkIds": []
-      },
-      "90": {
-        "chunkId": "23baac",
-        "hash": "6f311c50",
-        "encoded": "return%20null",
-        "prevChunkIds": []
-      },
-      "91": {
-        "chunkId": "23baac",
-        "hash": "70416dc1",
-        "encoded": "%7D",
+        "chunkId": "de9417",
+        "hash": "2ed3a6b3",
+        "encoded": "status:%20subscription.status,",
         "prevChunkIds": []
       },
       "93": {
+        "chunkId": "b250f7",
+        "hash": "e4b1e3fb",
+        "encoded": "cancel_at_period_end:%20subscription.cancel_at_period_end,",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "b250f7",
+        "hash": "05cec903",
+        "encoded": "updated_at:%20new%20Date().toISOString(),",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "b250f7",
+        "hash": "b39135dd",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "b250f7",
+        "hash": "a5cbe410",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "b250f7",
+        "hash": "21cc0f70",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "b250f7",
+        "hash": "5440b948",
+        "encoded": "export%20async%20function%20resolveUserIdForCustomer",
+        "prevChunkIds": []
+      },
+      "105": {
         "chunkId": "23baac",
-        "hash": "bb300961",
+        "hash": "ce001d00",
+        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "23baac",
+        "hash": "710daf92",
+        "encoded": "const%20client%20=%20getAdmin()",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "23baac",
+        "hash": "0ae39c09",
+        "encoded": "const%20%7B%20data%20%7D%20=%20await%20client.from('subscriptions').select('user_id').eq('provider_customer_id',%20customerId).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "23baac",
+        "hash": "43842637",
+        "encoded": "if%20(data?.user_id)%20return%20data.user_id%20as%20string",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "338b87",
+        "hash": "eaf9e8c8",
+        "encoded": "const%20customer%20=%20await%20getStripe().customers.retrieve(customerId)%20as%20unknown%20as%20Stripe.Customer%20%7C%20Stripe.DeletedCustomer",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "338b87",
+        "hash": "43451446",
+        "encoded": "if%20(customer.deleted%20%7C%7C%20!('metadata'%20in%20customer))%20return%20null",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "338b87",
+        "hash": "5ec369db",
+        "encoded": "if%20(typeof%20customer.metadata.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "338b87",
+        "hash": "3de7e590",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "338b87",
+        "hash": "fd8e1155",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "a6b37c",
+        "hash": "9dafbfb4",
+        "encoded": "if%20(customer.deleted)%20return%20null",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "a6b37c",
+        "hash": "a5aca7e7",
+        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "a6b37c",
+        "hash": "99f31042",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "a6b37c",
+        "hash": "056477bc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "23baac",
+        "hash": "d0519959",
+        "encoded": "if%20(customer.deleted)%20return%20null",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "23baac",
+        "hash": "dec1e3ef",
+        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "23baac",
+        "hash": "1664f112",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "23baac",
+        "hash": "7b145d98",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "23baac",
+        "hash": "7c7e5146",
         "encoded": "export%20async%20function%20recordBillingEvent(event:%20Stripe.Event):%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 93
+    "_prevLineCount": 99
   }
 }

@@ -1,0 +1,102 @@
+{
+  "src/lib/tts/useAudioPlayer.ts": {
+    "filename": "useAudioPlayer.ts",
+    "path": "src/lib/tts/useAudioPlayer.ts",
+    "version": "1.2",
+    "contextFile": "42f9850a-context.json",
+    "chunks": {
+      "f9897c": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480086,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "46e90bcf",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:54:46 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "12": {
+        "chunkId": "f9897c",
+        "hash": "aa5c615d",
+        "encoded": "setState((current)%20=%3E%20(%7B%20...current,%20status:%20'loading',%20error:%20null,%20playing:%20false,%20currentTime:%200,%20duration:%200%20%7D))",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "f9897c",
+        "hash": "21d840b5",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "f9897c",
+        "hash": "78b6b9ff",
+        "encoded": "const%20decodedChunks%20=%20chunks.map((chunk)%20=%3E%20Uint8Array.from(atob(chunk),%20(character)%20=%3E%20character.charCodeAt(0)))",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "f9897c",
+        "hash": "a89deb5a",
+        "encoded": "const%20totalLength%20=%20decodedChunks.reduce((total,%20chunk)%20=%3E%20total%20+%20chunk.length,%200)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "f9897c",
+        "hash": "8b6e6d60",
+        "encoded": "const%20bytes%20=%20new%20Uint8Array(totalLength)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "f9897c",
+        "hash": "b9d669be",
+        "encoded": "let%20offset%20=%200",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "f9897c",
+        "hash": "62ccf931",
+        "encoded": "for%20(const%20chunk%20of%20decodedChunks)%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "f9897c",
+        "hash": "d9512c80",
+        "encoded": "bytes.set(chunk,%20offset)",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "f9897c",
+        "hash": "83011105",
+        "encoded": "offset%20+=%20chunk.length",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "f9897c",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "f9897c",
+        "hash": "4b79880a",
+        "encoded": "const%20url%20=%20URL.createObjectURL(new%20Blob(%5Bbytes%5D,%20%7B%20type:%20'audio/mpeg'%20%7D))",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "f9897c",
+        "hash": "11131bd0",
+        "encoded": "if%20(objectUrlRef.current)%20URL.revokeObjectURL(objectUrlRef.current)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

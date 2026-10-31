@@ -6,6 +6,9 @@
   "promptMessage": {
     "fdde6987": {
       "value": "Prompt 6 — Production Readiness and Final QA\n\nPerform a complete production-readiness review of AI Reader.\n\nFunctional QA\n\nTest the complete user journey:\n\nOpen the application on mobile.\n\nPaste Romanian text.\n\nGenerate audio.\n\nConfirm the free entitlement is consumed only after successful generation.\n\nReload the page.\n\nAttempt another reading.\n\nConfirm the paywall appears.\n\nComplete a test subscription using the configured billing test workflow, if available.\n\nConfirm the subscription unlocks r"
+    },
+    "790f5c1e": {
+      "value": "31 22:47:10.35\n/api/ocr\n{\"event\":\"ocr_provider_failed\",\"provider\":\"ocr.space\",\"providerMessage\":\"Serviciul OCR a răspuns cu starea 413.\"}\nOct"
     }
   },
   "localPrompts": {},

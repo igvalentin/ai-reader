@@ -22,6 +22,42 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:45:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "840dd9": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "790f5c1e"
+        },
+        "hash": "016a6266",
+        "messageId": "system_608a0bc0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "aad2d5": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793479885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "2dafbc18",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -120,7 +156,140 @@
         "hash": "86949569",
         "encoded": "*%20Securitate%20%C8%99i%20confiden%C8%9Bialitate:",
         "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "840dd9",
+        "hash": "7d51fbe2",
+        "encoded": "*%20eliberat%C4%83%20dup%C4%83%20trimiterea%20r%C4%83spunsului.",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "840dd9",
+        "hash": "ac7fba9c",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "840dd9",
+        "hash": "b290ce80",
+        "encoded": "export%20default%20async%20function%20handler(req:%20VercelRequest,%20res:%20VercelResponse)%20%7B",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "840dd9",
+        "hash": "2ac00c2c",
+        "encoded": "res.setHeader('Cache-Control',%20'private,%20no-store')",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "840dd9",
+        "hash": "8505fc48",
+        "encoded": "if%20(req.method%20!==%20'POST')%20%7B",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "840dd9",
+        "hash": "d3a415b9",
+        "encoded": "res.setHeader('Allow',%20'POST')",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "aad2d5",
+        "hash": "431a4975",
+        "encoded": "const%20text%20=%20normalizeOcrText(rawText)",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "aad2d5",
+        "hash": "6091f98b",
+        "encoded": "res.status(200).json(%7B%20text%20%7D)",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "aad2d5",
+        "hash": "42b24150",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "aad2d5",
+        "hash": "39649fb3",
+        "encoded": "if%20(error%20instanceof%20OcrProviderError)%20%7B",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "aad2d5",
+        "hash": "f4fde40b",
+        "encoded": "console.error(JSON.stringify(%7B",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "aad2d5",
+        "hash": "90face3f",
+        "encoded": "event:%20'ocr_provider_failed',",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "aad2d5",
+        "hash": "439907a9",
+        "encoded": "provider:%20'ocr.space',",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "aad2d5",
+        "hash": "aa03b322",
+        "encoded": "providerMessage:%20sanitizeOcrDiagnosticMessage(error.message),",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "aad2d5",
+        "hash": "a671e853",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "aad2d5",
+        "hash": "380dc743",
+        "encoded": "res.status(502).json(%7B%20error:%20'Serviciul%20de%20recunoa%C8%99tere%20text%20nu%20a%20putut%20procesa%20imaginea.'%20%7D)",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "aad2d5",
+        "hash": "0981a565",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "aad2d5",
+        "hash": "70416dc1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "aad2d5",
+        "hash": "91af300d",
+        "encoded": "console.error('Eroare%20neprev%C4%83zut%C4%83%20la%20procesarea%20OCR.')",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "aad2d5",
+        "hash": "a4dbc2e2",
+        "encoded": "res.status(500).json(%7B%20error:%20'A%20ap%C4%83rut%20o%20eroare%20la%20procesarea%20imaginii.'%20%7D)",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "aad2d5",
+        "hash": "db89230b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "aad2d5",
+        "hash": "d5d63f11",
+        "encoded": "//%20Nicio%20referin%C8%9B%C4%83%20la%20%60imageBuffer%60%20nu%20este%20p%C4%83strat%C4%83%20dincolo%20de%20acest%20handler%20%E2%80%94%20imaginea%20nu%20este",
+        "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 101
   }
 }

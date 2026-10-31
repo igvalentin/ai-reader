@@ -1,0 +1,120 @@
+{
+  "src/server/tts/chunkText.test.ts": {
+    "filename": "chunkText.test.ts",
+    "path": "src/server/tts/chunkText.test.ts",
+    "version": "1.2",
+    "contextFile": "37844b6b-context.json",
+    "chunks": {
+      "6315e4": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480031,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "7c87a4ea",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:53:51 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "6315e4",
+        "hash": "f2c6bf12",
+        "encoded": "import%20%7B%20describe,%20expect,%20it%20%7D%20from%20'vitest'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "6315e4",
+        "hash": "2659c0ba",
+        "encoded": "import%20%7B%20chunkText%20%7D%20from%20'./chunkText'",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "6315e4",
+        "hash": "613b8e6d",
+        "encoded": "describe('chunkText',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "6315e4",
+        "hash": "a61e0b53",
+        "encoded": "it('p%C4%83streaz%C4%83%20paragrafele%20%C3%AEn%20aceea%C8%99i%20ordine%20%C8%99i%20limiteaz%C4%83%20fragmentele',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "6315e4",
+        "hash": "60e0e9de",
+        "encoded": "const%20chunks%20=%20chunkText('Primul%20paragraf.%5Cn%5CnAl%20doilea%20paragraf.',%2020)",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "6315e4",
+        "hash": "8aa706de",
+        "encoded": "expect(chunks.join('%20')).toContain('Primul%20paragraf.')",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "6315e4",
+        "hash": "d2ce0a78",
+        "encoded": "const%20paragraphs%20=%20Array.from(%7B%20length:%20400%20%7D,%20(_,%20index)%20=%3E%20%60p$%7Bindex%7D%60).join('%5Cn%5Cn')",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "6315e4",
+        "hash": "33673087",
+        "encoded": "const%20packed%20=%20chunkText(paragraphs,%20100)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "6315e4",
+        "hash": "32aded06",
+        "encoded": "expect(packed.length).toBeLessThan(50)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "6315e4",
+        "hash": "be02427c",
+        "encoded": "expect(packed.every((chunk)%20=%3E%20chunk.length%20%3C=%20100)).toBe(true)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "6315e4",
+        "hash": "a04db9dd",
+        "encoded": "expect(packed.join('').replace(/%5Cn/g,%20'')).toBe(paragraphs.replace(/%5Cn/g,%20''))",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "6315e4",
+        "hash": "ca6647b2",
+        "encoded": "expect(chunks.join('%20')).toContain('Al%20doilea%20paragraf.')",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "6315e4",
+        "hash": "44572d4d",
+        "encoded": "expect(chunks.every((chunk)%20=%3E%20chunk.length%20%3C=%2020)).toBe(true)",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "6315e4",
+        "hash": "cb7fe319",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "6315e4",
+        "hash": "e5f24929",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -32,12 +32,17 @@ export function getConfiguredPriceId(): string {
 
 export async function createCheckoutSession(userId: string, email?: string) {
   const client = getAdmin()
-  const { data: existing } = await client.from('subscriptions').select('provider_customer_id').eq('user_id', userId).maybeSingle()
+  const { data: existing, error: readError } = await client.from('subscriptions').select('provider_customer_id').eq('user_id', userId).maybeSingle()
+  if (readError) throw new EntitlementError('DATABASE', 'Nu am putut verifica datele de facturare.')
   let customerId = existing?.provider_customer_id as string | null | undefined
   if (!customerId) {
-    const customer = await getStripe().customers.create({ email, metadata: { app_user_id: userId } })
+    const customer = await getStripe().customers.create(
+      { email, metadata: { app_user_id: userId } },
+      { idempotencyKey: `ai-reader-customer-${userId}` },
+    )
     customerId = customer.id
-    await client.from('subscriptions').upsert({ user_id: userId, provider_customer_id: customerId, status: 'none', updated_at: new Date().toISOString() })
+    const { error: writeError } = await client.from('subscriptions').upsert({ user_id: userId, provider_customer_id: customerId, status: 'none', updated_at: new Date().toISOString() })
+    if (writeError) throw new EntitlementError('DATABASE', 'Datele clientului de facturare nu au putut fi salvate.')
   }
   const session = await getStripe().checkout.sessions.create({
     mode: 'subscription',
@@ -62,7 +67,7 @@ export async function createPortalSession(userId: string) {
 
 export async function upsertSubscription(userId: string, subscription: Stripe.Subscription, customerId?: string) {
   const client = getAdmin()
-  await client.from('subscriptions').upsert({
+  const { error } = await client.from('subscriptions').upsert({
     user_id: userId,
     status: subscription.status,
     provider_customer_id: customerId ?? (typeof subscription.customer === 'string' ? subscription.customer : subscription.customer.id),
@@ -71,6 +76,7 @@ export async function upsertSubscription(userId: string, subscription: Stripe.Su
     cancel_at_period_end: subscription.cancel_at_period_end,
     updated_at: new Date().toISOString(),
   })
+  if (error) throw new EntitlementError('DATABASE', 'Abonamentul nu a putut fi actualizat.')
 }
 
 export async function resolveUserIdForCustomer(customerId: string): Promise<string | null> {

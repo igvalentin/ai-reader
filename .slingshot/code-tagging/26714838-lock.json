@@ -1,0 +1,342 @@
+{
+  "src/server/tts/chunkText.ts": {
+    "filename": "chunkText.ts",
+    "path": "src/server/tts/chunkText.ts",
+    "version": "1.2",
+    "contextFile": "26714838-context.json",
+    "chunks": {
+      "804223": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480162,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "360b6a39",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:56:02 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3a8a64": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480031,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "fdde6987"
+        },
+        "hash": "024ece2c",
+        "messageId": "system_03eaf4b0-d56c-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:53:51 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "85480b": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480162,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "85005c00",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:56:02 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "24e6a4": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793480162,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "a47d6d32"
+        },
+        "hash": "6d777c9b",
+        "messageId": "system_4aa3db00-d56d-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:56:02 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "804223",
+        "hash": "eb0851b3",
+        "encoded": "const%20DEFAULT_MAX_CHARACTERS%20=%204500",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "804223",
+        "hash": "942c344e",
+        "encoded": "function%20splitSentences(text:%20string):%20string%5B%5D%20%7B",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "804223",
+        "hash": "a5d9f744",
+        "encoded": "return%20text.match(/%5B%5E.!?%E2%80%A6%5D+%5B.!?%E2%80%A6%5D+%7C%5B%5E.!?%E2%80%A6%5D+$/g)?.map((part)%20=%3E%20part.trim()).filter(Boolean)%20??%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "804223",
+        "hash": "22b977f0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "804223",
+        "hash": "8a1c7477",
+        "encoded": "function%20splitByUtf8Bytes(text:%20string,%20maxBytes:%20number):%20string%5B%5D%20%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "804223",
+        "hash": "57b14a6b",
+        "encoded": "const%20chunks:%20string%5B%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "804223",
+        "hash": "35f7d05d",
+        "encoded": "let%20current%20=%20''",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "804223",
+        "hash": "1409ad79",
+        "encoded": "let%20currentBytes%20=%200",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "804223",
+        "hash": "914491d7",
+        "encoded": "for%20(const%20character%20of%20text)%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "804223",
+        "hash": "d7aa4ab0",
+        "encoded": "const%20characterBytes%20=%20Buffer.byteLength(character,%20'utf8')",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "804223",
+        "hash": "afabbdae",
+        "encoded": "if%20(currentBytes%20+%20characterBytes%20%3E%20maxBytes%20&&%20current)%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "804223",
+        "hash": "108fd594",
+        "encoded": "chunks.push(current)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "804223",
+        "hash": "86f4edee",
+        "encoded": "current%20=%20''",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "804223",
+        "hash": "7fa8a47c",
+        "encoded": "currentBytes%20=%200",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "804223",
+        "hash": "76477189",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "804223",
+        "hash": "9d008d63",
+        "encoded": "current%20+=%20character",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "804223",
+        "hash": "6666af64",
+        "encoded": "currentBytes%20+=%20characterBytes",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "804223",
+        "hash": "acbf036f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "804223",
+        "hash": "90bff1c9",
+        "encoded": "if%20(current)%20chunks.push(current)",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "804223",
+        "hash": "21680849",
+        "encoded": "return%20chunks",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "804223",
+        "hash": "71870443",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "804223",
+        "hash": "86a99063",
+        "encoded": "export%20function%20chunkText(text:%20string,%20maxCharacters%20=%20DEFAULT_MAX_CHARACTERS):%20string%5B%5D%20%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "804223",
+        "hash": "f9815494",
+        "encoded": "if%20(!Number.isInteger(maxCharacters)%20%7C%7C%20maxCharacters%20%3C%201)%20throw%20new%20Error('Dimensiune%20invalid%C4%83%20pentru%20fragment.')",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "804223",
+        "hash": "00733f2e",
+        "encoded": "return%20text",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "3a8a64",
+        "hash": "f2b3dc60",
+        "encoded": "export%20function%20chunkText(text:%20string,%20maxCharacters%20=%20DEFAULT_MAX_CHARACTERS):%20string%5B%5D%20%7B",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "3a8a64",
+        "hash": "909eddae",
+        "encoded": "if%20(!Number.isInteger(maxCharacters)%20%7C%7C%20maxCharacters%20%3C%201)%20throw%20new%20Error('Dimensiune%20invalid%C4%83%20pentru%20fragment.')",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "3a8a64",
+        "hash": "bd5de21e",
+        "encoded": "return%20text",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "3a8a64",
+        "hash": "20b07ac8",
+        "encoded": ".replace(/%5Cn%5Cs*%5Cn/g,%20'%5Cn')",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "3a8a64",
+        "hash": "0633317f",
+        "encoded": ".split(/%5Cn%5Cs*%5Cn/)",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "3a8a64",
+        "hash": "dd6ff67e",
+        "encoded": ".map((paragraph)%20=%3E%20paragraph.trim())",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "3a8a64",
+        "hash": "e5ca464f",
+        "encoded": ".filter(Boolean)",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "3a8a64",
+        "hash": "e5b91c69",
+        "encoded": ".flatMap((paragraph)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "24e6a4",
+        "hash": "6d509e67",
+        "encoded": "let%20current%20=%20''",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "24e6a4",
+        "hash": "e33c729a",
+        "encoded": "for%20(const%20sentence%20of%20sentences.length%20%3E%200%20?%20sentences%20:%20%5Bparagraph%5D)%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "24e6a4",
+        "hash": "0bd9ab6f",
+        "encoded": "if%20(Buffer.byteLength(sentence,%20'utf8')%20%3E%20maxCharacters)%20%7B",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "24e6a4",
+        "hash": "3c66226a",
+        "encoded": "if%20(current)%20chunks.push(current)",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "24e6a4",
+        "hash": "7501eed2",
+        "encoded": "chunks.push(...splitByUtf8Bytes(sentence,%20maxCharacters))",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "24e6a4",
+        "hash": "48097de1",
+        "encoded": "current%20=%20''",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "24e6a4",
+        "hash": "e2612291",
+        "encoded": "%7D%20else%20if%20(!current)%20current%20=%20sentence",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "85480b",
+        "hash": "2e0f63a8",
+        "encoded": "%7D%20else%20if%20(!current)%20current%20=%20sentence",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "85480b",
+        "hash": "f26efd4d",
+        "encoded": "else%20if%20(Buffer.byteLength(%60$%7Bcurrent%7D%20$%7Bsentence%7D%60,%20'utf8')%20%3C=%20maxCharacters)%20current%20+=%20%60%20$%7Bsentence%7D%60",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "85480b",
+        "hash": "00db2328",
+        "encoded": "else%20%7B",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "85480b",
+        "hash": "ca7978d0",
+        "encoded": "chunks.push(current)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

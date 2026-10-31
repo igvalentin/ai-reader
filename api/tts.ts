@@ -8,24 +8,24 @@ import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verify
 import { canGenerateReading, claimSuccessfulReading, EntitlementError, resolveEntitlementIdentity } from '../src/server/entitlement/entitlement.js'
 
 const MAX_CHARACTERS = 4000
-const cache = new Map<string, { expiresAt: number; chunks: string[]; language: string; voice: { name: string; languageCode: string; gender?: string } }>()
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  res.setHeader('Cache-Control', 'private, no-store')
   if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ error: 'Metodă nepermisă.' }) }
-  const body = req.body as { text?: unknown; language?: unknown }
+  const body = req.body as { text?: unknown; language?: unknown } | null
   if (typeof body?.text !== 'string' || body.text.trim().length === 0 || body.text.length > MAX_CHARACTERS) return res.status(400).json({ error: `Textul trebuie să aibă între 1 și ${MAX_CHARACTERS} de caractere.` })
-  const language = body.language ? normalizeLanguage(body.language) : detectLanguage(body.text)
+  const requestedLanguage = body.language
+  const supportedLanguages = ['ro', 'ro-RO', 'en-US', 'en-GB']
+  if (requestedLanguage !== undefined && requestedLanguage !== '' &&
+    (typeof requestedLanguage !== 'string' || !supportedLanguages.includes(requestedLanguage))) {
+    return res.status(400).json({ error: 'Limba selectată nu este acceptată.' })
+  }
+  const language = requestedLanguage ? normalizeLanguage(requestedLanguage) : detectLanguage(body.text)
   const normalized = normalizeRomanianText(body.text, language)
+  if (!normalized.trim()) return res.status(400).json({ error: 'Textul nu conține conținut care poate fi citit.' })
   try {
     const entitlement = await resolveEntitlementIdentity(req.headers.authorization, req.headers.cookie, verifySupabaseUser)
     if (!(await canGenerateReading(entitlement))) return res.status(402).json({ code: 'PAYWALL', error: 'Lectura gratuită a fost folosită. Activează un abonament pentru a continua.' })
-    const cacheKey = `${language}:${normalized}`
-    const cached = cache.get(cacheKey)
-    if (cached && cached.expiresAt > Date.now()) {
-      await claimSuccessfulReading(entitlement)
-      if (entitlement.setCookie) res.setHeader('Set-Cookie', entitlement.setCookie)
-      return res.status(200).json({ ...cached, characterCount: body.text.length })
-    }
     const provider = getTtsProvider()
     const voices = await provider.getAvailableVoices(language)
     const voice = voices[0]
@@ -33,7 +33,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const chunks = await Promise.all(chunkText(normalized).map(async (chunk) => Buffer.from(await provider.synthesize(chunk, voice)).toString('base64')))
     await claimSuccessfulReading(entitlement)
     const payload = { language, voice, chunks, characterCount: body.text.length }
-    cache.set(cacheKey, { ...payload, expiresAt: Date.now() + 15 * 60 * 1000 })
     if (entitlement.setCookie) res.setHeader('Set-Cookie', entitlement.setCookie)
     console.info(JSON.stringify({ event: 'tts_synthesis_succeeded', language, chunks: chunks.length, characters: body.text.length }))
     return res.status(200).json(payload)

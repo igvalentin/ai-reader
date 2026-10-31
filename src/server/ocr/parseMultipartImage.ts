@@ -36,7 +36,7 @@ export function parseMultipartImage(
     try {
       busboy = Busboy({
         headers: { 'content-type': contentType },
-        limits: { fileSize: MAX_IMAGE_SIZE_BYTES, files: 1 },
+        limits: { fileSize: MAX_IMAGE_SIZE_BYTES, files: 1, fields: 0, parts: 2 },
       })
     } catch {
       reject(new MultipartParseError('Cerere multipart invalidă.', 400))
@@ -45,6 +45,7 @@ export function parseMultipartImage(
 
     let fileFound = false
     let sizeLimitExceeded = false
+    let multipartLimitExceeded = false
     const chunks: Buffer[] = []
     let declaredMimeType = ''
     let fieldName = ''
@@ -69,6 +70,10 @@ export function parseMultipartImage(
       // unei resurse de la o adresă furnizată de client.
     })
 
+    busboy.on('filesLimit', () => { multipartLimitExceeded = true })
+    busboy.on('fieldsLimit', () => { multipartLimitExceeded = true })
+    busboy.on('partsLimit', () => { multipartLimitExceeded = true })
+
     busboy.on('error', () => {
       reject(new MultipartParseError('Nu s-a putut citi cererea.', 400))
     })
@@ -76,6 +81,11 @@ export function parseMultipartImage(
     busboy.on('finish', () => {
       if (sizeLimitExceeded) {
         reject(new MultipartParseError('Imaginea depășește limita admisă.', 413))
+        return
+      }
+
+      if (multipartLimitExceeded || (fileFound && fieldName !== 'image')) {
+        reject(new MultipartParseError('Cererea trebuie să conțină o singură imagine în câmpul image.', 400))
         return
       }
 

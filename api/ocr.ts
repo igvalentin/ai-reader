@@ -20,27 +20,17 @@ function sanitizeOcrDiagnosticMessage(message: string): string {
 }
 
 /**
- * Endpoint server-side pentru extragerea textului dintr-o imagine (OCR).
+ * Server-side OCR for the anonymous reading flow.
  *
- * Securitate și confidențialitate:
- * - răspunsul este returnat sincron, direct către solicitant, și nu este niciodată stocat sau
- *   accesibil altui utilizator — nu există nicio formă de persistență sau partajare;
- *   NOTĂ: impunerea autentificării obligatorii (sesiune Supabase) pe acest endpoint este
- *   planificată pentru etapa de contorizare a lecturii gratuite / entitlement (vezi
- *   `docs/ARCHITECTURE.md`, secțiunea 7, pasul 4), când ecranul de autentificare va exista și
- *   în interfață; helper-ul `verifySupabaseUser` este deja pregătit în `src/server/auth/` pentru
- *   acel moment;
- * - acceptă doar un fișier încărcat direct în corpul cererii (`multipart/form-data`) — nu există
- *   niciun parametru de tip URL care ar putea fi folosit pentru a prelua o resursă arbitrară
- *   (prevenirea SSRF);
- * - validează conținutul real al fișierului după semnătura binară (magic bytes), nu după
- *   extensia sau `Content-Type`-ul declarat de client;
- * - imaginea este păstrată doar în memorie, pe durata cererii, și nu este niciodată scrisă pe
- *   disc sau stocată într-un serviciu extern — este eliminată odată cu răspunsul;
- * - nu se loghează conținutul imaginii, textul extras sau alte date cu caracter personal; în caz
- *   de eroare se loghează doar un mesaj tehnic generic, fără payload.
+ * The endpoint validates image magic bytes, accepts no user-supplied URL, and keeps the upload
+ * in memory rather than persisting it. The image is forwarded over HTTPS to OCR.space for
+ * recognition; the provider's retention and processing terms are outside this application and
+ * must be reviewed separately. OCR is intentionally unauthenticated for guest access and no
+ * distributed rate limit is configured here, so production deployment requires an external
+ * abuse/cost control. Response bodies are no-store and logs exclude image and extracted text.
  */
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  res.setHeader('Cache-Control', 'private, no-store')
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
     res.status(405).json({ error: 'Metodă nepermisă.' })
