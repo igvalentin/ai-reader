@@ -95,6 +95,7 @@ describe('POST /api/ocr', () => {
     await handler(req, res)
 
     expect(res.statusCode).toBe(200)
+    expect(res.headers['Cache-Control']).toBe('private, no-store')
     expect(res.jsonBody).toEqual({
       text: 'Bună ziua! A doua linie.\n\nAl doilea paragraf.',
     })
