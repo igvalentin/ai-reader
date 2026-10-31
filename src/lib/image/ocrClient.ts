@@ -9,6 +9,7 @@ interface OcrErrorResponse {
 export interface UploadImageForOcrOptions {
   onUploadProgress?: (percent: number) => void
   signal?: AbortSignal
+  accessToken?: string | null
 }
 
 export class OcrRequestError extends Error {}
@@ -24,7 +25,7 @@ export function uploadImageForOcr(
   file: File,
   options: UploadImageForOcrOptions = {},
 ): Promise<OcrSuccessResponse> {
-  const { onUploadProgress, signal } = options
+  const { onUploadProgress, signal, accessToken } = options
 
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest()
@@ -32,6 +33,9 @@ export function uploadImageForOcr(
     formData.append('image', file)
 
     xhr.open('POST', '/api/ocr')
+    if (accessToken) {
+      xhr.setRequestHeader('Authorization', `Bearer ${accessToken}`)
+    }
 
     xhr.upload.onprogress = (event) => {
       if (event.lengthComputable && onUploadProgress) {

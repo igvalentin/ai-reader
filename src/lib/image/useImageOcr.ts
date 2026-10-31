@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { supabase } from '../supabaseClient'
 import { validateImageFile } from './validateImageFile'
 import { uploadImageForOcr } from './ocrClient'
 
@@ -100,7 +101,18 @@ export function useImageOcr({ onTextExtracted }: UseImageOcrOptions): UseImageOc
     setUploadProgress(0)
 
     try {
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
+
+      if (!session?.access_token) {
+        setStatus('error')
+        setErrorMessage('Trebuie să fii autentificat pentru a extrage text dintr-o imagine.')
+        return
+      }
+
       const result = await uploadImageForOcr(file, {
+        accessToken: session.access_token,
         onUploadProgress: (percent) => {
           setUploadProgress(percent)
           if (percent >= 100) {
