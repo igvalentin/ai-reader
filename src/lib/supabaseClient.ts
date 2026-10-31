@@ -4,7 +4,6 @@ const supabaseUrl = import.meta.env.VITE_EXTERNAL_SUPABASE_URL
 const supabaseAnonKey = import.meta.env.VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY
 
 if (!supabaseUrl || !supabaseAnonKey) {
-  // eslint-disable-next-line no-console
   console.error(
     'Configurare Supabase lipsă. Verifică variabilele VITE_EXTERNAL_SUPABASE_URL și ' +
       'VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY din fișierul .env.',
