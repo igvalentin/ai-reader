@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T21:20:30.751Z",
+  "lastUpdated": "2026-10-31T21:26:59.143Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -54,9 +54,9 @@
     },
     {
       "id": "mem_1793477934207_b96ilk",
-      "content": "Fixed Tesseract Vercel ENOENT by including `node_modules/tesseract.js-core/*.wasm` alongside Romanian traineddata in function config. 58 tests, build, lint and API tsc pass; redeploy required.",
+      "content": "Vercel includeFiles uses one brace-glob string for ron model + Tesseract WASM sidecars; glob matches relaxed-SIMD file. Tests, build and lint pass.",
       "createdAt": "2026-10-31T20:18:54.207Z",
-      "updatedAt": "2026-10-31T21:20:30.751Z",
+      "updatedAt": "2026-10-31T21:26:59.143Z",
       "isEnabled": true
     },
     {
