@@ -9,8 +9,8 @@ export default function HomePage() {
           Ascultă orice text, cu propria ta voce digitală
         </h1>
         <p className="text-base text-ink-muted">
-          Scrie, lipește sau încarcă o imagine cu text, iar Citește-mi ți-l citește cu voce tare,
-          în română sau în alte limbi.
+          Scrie, lipește sau încarcă o imagine cu text, iar Citește-mi ți-l citește cu voce tare, în
+          română sau în alte limbi.
         </p>
       </section>
 
@@ -22,8 +22,8 @@ export default function HomePage() {
       >
         <h2 className="mb-2 font-display text-lg text-ink">Despre abonament</h2>
         <p>
-          Prima lectură este gratuită. După ce o asculti integral, continuarea serviciului
-          necesită un abonament activ.
+          Prima lectură este gratuită. După ce o asculti integral, continuarea serviciului necesită
+          un abonament activ.
         </p>
       </section>
     </MainScreenLayout>

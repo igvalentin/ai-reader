@@ -11,7 +11,14 @@ export function ImageUploadControl() {
         <span aria-hidden="true">🖼️</span>
         <span>Trage o imagine aici sau apasă pentru a o selecta</span>
       </label>
-      <input id="image-upload" name="image" type="file" accept="image/*" disabled className="sr-only" />
+      <input
+        id="image-upload"
+        name="image"
+        type="file"
+        accept="image/*"
+        disabled
+        className="sr-only"
+      />
       <span className="text-xs text-ink-muted">
         Disponibil în curând: extragerea automată a textului din imagini.
       </span>

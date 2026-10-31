@@ -55,16 +55,16 @@ alte limbi (text-to-speech — în curând). Prima lectură este gratuită, apoi
 
 ## Scripturi disponibile
 
-| Comandă | Descriere |
-| --- | --- |
-| `npm run dev` | Pornește serverul de dezvoltare Vite |
-| `npm run build` | Verifică tipurile și construiește aplicația pentru producție |
-| `npm run preview` | Previzualizează local build-ul de producție |
-| `npm run lint` | Rulează ESLint |
-| `npm run format` | Formatează codul cu Prettier |
-| `npm run format:check` | Verifică formatarea fără a modifica fișierele |
-| `npm run typecheck` | Verifică tipurile TypeScript fără a genera build |
-| `npm test` | Rulează testele cu Vitest |
+| Comandă                | Descriere                                                    |
+| ---------------------- | ------------------------------------------------------------ |
+| `npm run dev`          | Pornește serverul de dezvoltare Vite                         |
+| `npm run build`        | Verifică tipurile și construiește aplicația pentru producție |
+| `npm run preview`      | Previzualizează local build-ul de producție                  |
+| `npm run lint`         | Rulează ESLint                                               |
+| `npm run format`       | Formatează codul cu Prettier                                 |
+| `npm run format:check` | Verifică formatarea fără a modifica fișierele                |
+| `npm run typecheck`    | Verifică tipurile TypeScript fără a genera build             |
+| `npm test`             | Rulează testele cu Vitest                                    |
 
 ## Deploy pe Vercel
 

@@ -22,22 +22,22 @@ aplicație efectivă implementată. Concluzie: proiect greenfield, fără niciun
 
 ## 3. Stack tehnic ales și motivație
 
-| Decizie | Alegere | Motivație |
-| --- | --- | --- |
-| Framework | React 19 + TypeScript | Ecosistem matur, tipări statice pentru fiabilitate, suport excelent pe Vercel |
-| Bundler | Vite | Pornire și build rapide, configurare minimă, integrare nativă cu Vitest |
-| Manager de pachete | npm | Standard, fără dependințe suplimentare de instalat |
-| Stilizare | Tailwind CSS v4 | Sistem de design restrâns prin variabile de temă, fără CSS redundant, accesibil |
-| Rutare | React Router v7 | Nevoi simple de rutare (pagină principală + 404), API matur |
-| Backend-as-a-service | Supabase | Deja legat la proiect; oferă Postgres, autentificare (Google) și storage într-un singur serviciu |
-| Foundăie | Vercel | Deja legat la repository; build static Vite fără configurare suplimentară |
-| Teste | Vitest + React Testing Library | Integrare nativă cu Vite, API familiar (Jest-like) |
-| Calitate cod | ESLint + Prettier + `tsc` | Standard în ecosistemul React/TypeScript |
+| Decizie              | Alegere                        | Motivație                                                                                        |
+| -------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------ |
+| Framework            | React 19 + TypeScript          | Ecosistem matur, tipări statice pentru fiabilitate, suport excelent pe Vercel                    |
+| Bundler              | Vite                           | Pornire și build rapide, configurare minimă, integrare nativă cu Vitest                          |
+| Manager de pachete   | npm                            | Standard, fără dependințe suplimentare de instalat                                               |
+| Stilizare            | Tailwind CSS v4                | Sistem de design restrâns prin variabile de temă, fără CSS redundant, accesibil                  |
+| Rutare               | React Router v7                | Nevoi simple de rutare (pagină principală + 404), API matur                                      |
+| Backend-as-a-service | Supabase                       | Deja legat la proiect; oferă Postgres, autentificare (Google) și storage într-un singur serviciu |
+| Foundăie             | Vercel                         | Deja legat la repository; build static Vite fără configurare suplimentară                        |
+| Teste                | Vitest + React Testing Library | Integrare nativă cu Vite, API familiar (Jest-like)                                               |
+| Calitate cod         | ESLint + Prettier + `tsc`      | Standard în ecosistemul React/TypeScript                                                         |
 
 ## 4. Arhitectură și fluxuri de date (plan țintă)
 
 ```
-[Browser (PWA)] 
+[Browser (PWA)]
    │  paste/typing text ──────────────► stare locală (React)
    │  upload imagine ─────────────────► (etapa OCR) funcție server sau client (ex. Tesseract.js / API OCR)
    │  solicită citire cu voce tare ──► (etapa TTS) API server-side care verifică entitlement
@@ -102,13 +102,13 @@ create policy "users read own subscription" on subscriptions for select using (a
 
 ## 6. Servicii externe și secrete necesare (fără valori expuse)
 
-| Serviciu | Scop | Unde se folosește |
-| --- | --- | --- |
-| Supabase URL + cheie anon | Autentificare, citire date proprii | Client (`VITE_*`) |
-| Supabase `service_role` | Scriere entitlement, verificări server | Doar server (Vercel Functions), niciodată `VITE_*` |
-| Furnizor OCR (ex. Tesseract.js local sau API extern) | Extragere text din imagini | Client (Tesseract.js) sau server (API extern) — decizie în etapa OCR |
-| Furnizor TTS cu voce română de calitate | Conversie text-în-vorbire | Server (apel API cu cheie secretă) |
-| Furnizor de plăți/abonamente (ex. Stripe) | Facturare și webhook-uri | Server, chei secrete, webhook secret |
+| Serviciu                                             | Scop                                   | Unde se folosește                                                    |
+| ---------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------- |
+| Supabase URL + cheie anon                            | Autentificare, citire date proprii     | Client (`VITE_*`)                                                    |
+| Supabase `service_role`                              | Scriere entitlement, verificări server | Doar server (Vercel Functions), niciodată `VITE_*`                   |
+| Furnizor OCR (ex. Tesseract.js local sau API extern) | Extragere text din imagini             | Client (Tesseract.js) sau server (API extern) — decizie în etapa OCR |
+| Furnizor TTS cu voce română de calitate              | Conversie text-în-vorbire              | Server (apel API cu cheie secretă)                                   |
+| Furnizor de plăți/abonamente (ex. Stripe)            | Facturare și webhook-uri               | Server, chei secrete, webhook secret                                 |
 
 ## 7. Plan de implementare pe etape
 
