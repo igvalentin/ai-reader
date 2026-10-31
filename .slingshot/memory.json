@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T16:47:29.496Z",
+  "lastUpdated": "2026-10-31T19:11:51.504Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -15,6 +15,20 @@
       "content": "ai-reader: Romanian UI, Atomic Design in src/components. Docs in ai-reader/docs/ARCHITECTURE.md. Vercel+Supabase linked, no staging env.",
       "createdAt": "2026-10-31T16:47:29.496Z",
       "updatedAt": "2026-10-31T16:47:29.496Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793473911501_mchqt2",
+      "content": "ai-reader: OCR via OCR.space (server-side, OCR_SPACE_API_KEY). /api/ocr uses busboy in-memory, no auth yet (approved).",
+      "createdAt": "2026-10-31T19:11:51.501Z",
+      "updatedAt": "2026-10-31T19:11:51.501Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793473911504_ahwft3",
+      "content": "ai-reader: useImageOcr hook + ImageUploadControl functional. normalizeOcrText keeps RO diacritics/paragraphs. 33 tests pass.",
+      "createdAt": "2026-10-31T19:11:51.504Z",
+      "updatedAt": "2026-10-31T19:11:51.504Z",
       "isEnabled": true
     }
   ]
