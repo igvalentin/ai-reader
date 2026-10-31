@@ -6,6 +6,9 @@
   "promptMessage": {
     "40b18f70": {
       "value": "ma refer la laternative la google speech synthesys"
+    },
+    "7a172d6e": {
+      "value": "am build failed acum:Build Failed\nThe `vercel.json` schema validation failed with the following message: `functions.api/ocr.ts.includeFiles` should be string"
     }
   },
   "localPrompts": {},
