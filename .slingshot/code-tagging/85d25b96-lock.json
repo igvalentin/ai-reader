@@ -1,0 +1,174 @@
+{
+  "docs/TTS.md": {
+    "filename": "TTS.md",
+    "path": "docs/TTS.md",
+    "version": "1.2",
+    "contextFile": "85d25b96-context.json",
+    "chunks": {
+      "2a3d45": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483681,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "be4a1ca1"
+        },
+        "hash": "0c40729a",
+        "messageId": "system_eda6a4c0-d574-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:54:41 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "2a3d45",
+        "hash": "d0d8fec8",
+        "encoded": "#%20Text-to-speech%20cu%20Azure%20AI%20Speech",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "2a3d45",
+        "hash": "91fc3e08",
+        "encoded": "%60POST%20/api/tts%60%20p%C4%83streaz%C4%83%20autentificarea%20%C8%99i%20entitlement-ul%20server-side,%20sintetizeaz%C4%83%20prin%20%60TtsProvider%60%20%C8%99i%20returneaz%C4%83%20fragmente%20MP3%20%C3%AEn%20JSON.%20Browserul%20apeleaz%C4%83%20doar%20aplica%C8%9Bia;%20cheia%20Azure%20nu%20este%20transmis%C4%83%20clientului.%20Providerul%20Azure%20poate%20fi%20%C3%AEnlocuit%20sau%20mock-uit%20independent.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "2a3d45",
+        "hash": "e586f9a7",
+        "encoded": "##%20Configurare",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "2a3d45",
+        "hash": "b06ee04b",
+        "encoded": "Configureaz%C4%83%20aceste%20variabile%20numai%20%C3%AEn%20runtime-ul%20serverului%20local%20%C8%99i%20%C3%AEn%20Environment%20Variables%20pentru%20Vercel%20(Development,%20Preview%20%C8%99i%20Production,%20dup%C4%83%20caz):",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "2a3d45",
+        "hash": "02655e63",
+        "encoded": "%60%60%60env",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "2a3d45",
+        "hash": "2c529609",
+        "encoded": "AZURE_SPEECH_KEY=your-server-side-speech-key",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "2a3d45",
+        "hash": "793862d7",
+        "encoded": "AZURE_SPEECH_REGION=germanywestcentral",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "2a3d45",
+        "hash": "8b725fb3",
+        "encoded": "#%20Op%C8%9Bional;%20implicit%20este%20ro-RO-AlinaNeural.",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "2a3d45",
+        "hash": "f3086d69",
+        "encoded": "AZURE_SPEECH_VOICE=ro-RO-AlinaNeural",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "2a3d45",
+        "hash": "585a461f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "2a3d45",
+        "hash": "d5c6bb67",
+        "encoded": "Valorile%20de%20mai%20sus%20sunt%20exemple-placeholder,%20nu%20chei.%20Nu%20ad%C4%83uga%20prefixul%20%60VITE_%60,%20nu%20pune%20cheia%20%C3%AEn%20frontend%20%C8%99i%20nu%20o%20comite%20%C3%AEn%20repository.%20Pentru%20dezvoltare%20local%C4%83,%20ruleaz%C4%83%20func%C8%9Bia%20API%20cu%20Vercel%20CLI%20(%60npx%20vercel%20dev%60)%20%C8%99i%20furnizeaz%C4%83%20variabilele%20%C3%AEn%20mediul%20local%20securizat%20ori%20cu%20mecanismul%20%60vercel%20env%20pull%60;%20%60npm%20run%20dev%60%20porne%C8%99te%20doar%20Vite%20%C8%99i%20nu%20serve%C8%99te%20func%C8%9Biile%20%60/api%60.%20%C3%8En%20deployment,%20seteaz%C4%83%20variabilele%20%C3%AEn%20configurarea%20proiectului%20Vercel%20%C8%99i%20redeployeaz%C4%83%20func%C8%9Biile%20dup%C4%83%20actualizare.",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "2a3d45",
+        "hash": "9e508335",
+        "encoded": "Nu%20este%20necesar%C4%83%20o%20variabil%C4%83%20endpoint.%20Endpoint-ul%20TTS%20REST%20este%20derivat%20din%20regiunea%20resursei:",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "2a3d45",
+        "hash": "a260be11",
+        "encoded": "%60https://%7BAZURE_SPEECH_REGION%7D.tts.speech.microsoft.com/cognitiveservices/v1%60",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "2a3d45",
+        "hash": "61d16be3",
+        "encoded": "Pentru%20Germania%20West%20Central,%20valoarea%20este%20%60https://germanywestcentral.tts.speech.microsoft.com/cognitiveservices/v1%60.%20Endpoint-ul%20afi%C8%99at%20pentru%20resurs%C4%83%20(%60https://germanywestcentral.api.cognitive.microsoft.com/%60)%20nu%20este%20endpoint-ul%20final%20de%20sintez%C4%83%20TTS.",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "2a3d45",
+        "hash": "4ed5e18b",
+        "encoded": "##%20Voci%20%C8%99i%20format",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "2a3d45",
+        "hash": "2c06b8ac",
+        "encoded": "Vocea%20rom%C3%A2n%C4%83%20implicit%C4%83%20este%20%60ro-RO-AlinaNeural%60;%20%60ro-RO-EmilNeural%60%20poate%20fi%20setat%C4%83%20prin%20%60AZURE_SPEECH_VOICE%60.%20Sunt%20configurate%20%C8%99i%20vocile%20%60en-US-JennyNeural%60%20%C8%99i%20%60en-GB-SoniaNeural%60.%20Verific%C4%83%20disponibilitatea%20vocilor%20%C8%99i%20tarifele%20pentru%20regiunea%20%C8%99i%20abonamentul%20Azure%20%C3%AEnainte%20de%20lansare.",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "2a3d45",
+        "hash": "19e51558",
+        "encoded": "Serverul%20trimite%20SSML%20cu%20escaping%20XML%20pentru%20textul%20utilizatorului%20%C8%99i%20cere%20%60audio-24khz-48kbitrate-mono-mp3%60.%20R%C4%83spunsul%20JSON%20include%20%60audioContentType:%20%22audio/mpeg%22%60,%20iar%20clientul%20valideaz%C4%83%20acest%20tip%20%C8%99i%20concateneaz%C4%83%20fragmentele%20base64%20pentru%20player.",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "2a3d45",
+        "hash": "e6d9bf54",
+        "encoded": "##%20Limite,%20erori%20%C8%99i%20confiden%C8%9Bialitate",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "2a3d45",
+        "hash": "31f5a506",
+        "encoded": "-%20Endpoint-ul%20accept%C4%83%20maximum%204.000%20de%20caractere%20de%20text;%20fragmentele%20de%20sintez%C4%83%20sunt%20limitate%20la%204.500%20de%20octe%C8%9Bi%20UTF-8.",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "2a3d45",
+        "hash": "e6f78511",
+        "encoded": "-%20Fiecare%20cerere%20Azure%20are%20timeout%20de%2015%20secunde.%20Nu%20se%20fac%20retry-uri%20automate,%20pentru%20a%20evita%20costuri%20duplicate.",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "2a3d45",
+        "hash": "4c23fbc6",
+        "encoded": "-%20Erorile%20upstream%20sunt%20transformate%20%C3%AEn%20coduri%20JSON%20stabile%20%C8%99i%20mesaje%20sigure.%20La%20indisponibilitate/timeout,%20textul%20r%C4%83m%C3%A2ne%20%C3%AEn%20textarea%20%C8%99i%20poate%20fi%20ascultat%20din%20nou%20ulterior.",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "2a3d45",
+        "hash": "a0ab0d2f",
+        "encoded": "-%20Textul%20nu%20este%20logat%20%C8%99i%20nu%20este%20p%C4%83strat%20de%20server;%20logurile%20con%C8%9Bin%20doar%20limb%C4%83,%20num%C4%83r%20de%20fragmente,%20num%C4%83r%20de%20caractere,%20codul%20erorii%20%C8%99i%20retryability.",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "2a3d45",
+        "hash": "ea8cf002",
+        "encoded": "-%20O%20lectur%C4%83%20gratuit%C4%83%20este%20contorizat%C4%83%20numai%20dup%C4%83%20sinteza%20cu%20succes.%20Erorile%20TTS%20nu%20afecteaz%C4%83%20OCR-ul%20sau%20textul%20introdus.",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "2a3d45",
+        "hash": "c952ef50",
+        "encoded": "Providerul%20este%20%C3%AEn%20%60src/server/tts/azureSpeechTtsProvider.ts%60;%20selec%C8%9Bia%20%C8%99i%20configurarea%20lui%20se%20afl%C4%83%20%C3%AEn%20%60src/server/tts/ttsProviderFactory.ts%60.%20Pentru%20alt%20furnizor,%20implementeaz%C4%83%20interfa%C8%9Ba%20%60TtsProvider%60%20%C8%99i%20schimb%C4%83%20factory-ul%20f%C4%83r%C4%83%20a%20modifica%20UI-ul%20sau%20contractul%20endpoint-ului.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

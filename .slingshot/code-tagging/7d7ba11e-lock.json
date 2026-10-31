@@ -58,6 +58,24 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:01:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e95a97": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483685,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "be4a1ca1"
+        },
+        "hash": "01cf5cd9",
+        "messageId": "system_6e0d6410-d574-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:54:45 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -151,33 +169,111 @@
         "encoded": "Variabile%20publice%20necesare%20pentru%20client:",
         "prevChunkIds": []
       },
-      "86": {
-        "chunkId": "641730",
-        "hash": "4b02dfff",
-        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_URL%60",
+      "85": {
+        "chunkId": "e95a97",
+        "hash": "c90023a0",
+        "encoded": "##%20OCR%20(extragere%20text%20din%20imagini)",
         "prevChunkIds": []
       },
       "87": {
-        "chunkId": "641730",
-        "hash": "c5bd712e",
-        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY%60",
+        "chunkId": "e95a97",
+        "hash": "09d8c99d",
+        "encoded": "-%20Browserul%20trimite%20imaginea%20prin%20%60multipart/form-data%60%20c%C4%83tre%20%60api/ocr.ts%60;%20Tesseract.js/WASM%20ruleaz%C4%83",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "e95a97",
+        "hash": "d3d167c9",
+        "encoded": "local%20%C3%AEn%20func%C8%9Bia%20Vercel,%20folosind%20traineddata%20rom%C3%A2nesc%20(%60ron%60)%20inclus%20%C3%AEn%20deployment.%20Imaginea%20nu",
         "prevChunkIds": []
       },
       "89": {
-        "chunkId": "641730",
-        "hash": "b051fccf",
-        "encoded": "Variabile%20server-only%20necesare%20pentru%20entitlement/billing:",
+        "chunkId": "e95a97",
+        "hash": "73e612e9",
+        "encoded": "este%20transmis%C4%83%20unui%20furnizor%20OCR%20extern.",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "e95a97",
+        "hash": "cc7469a2",
+        "encoded": "-%20Imaginea%20este%20validat%C4%83%20dup%C4%83%20con%C8%9Binutul%20binar%20real%20(semn%C4%83tura/magic%20bytes),%20apoi%20procesat%C4%83%20%C3%AEn",
         "prevChunkIds": []
       },
       "91": {
-        "chunkId": "641730",
-        "hash": "967016f5",
-        "encoded": "-%20%60SUPABASE_URL%60,%20%60SUPABASE_SERVICE_ROLE_KEY%60,%20%60ANONYMOUS_USAGE_SECRET%60,%20%60APP_URL%60",
+        "chunkId": "e95a97",
+        "hash": "a8c2e438",
+        "encoded": "memoria%20func%C8%9Biei%20%C8%99i%20nu%20este%20stocat%C4%83.",
         "prevChunkIds": []
       },
       "92": {
+        "chunkId": "e95a97",
+        "hash": "6d0e2fff",
+        "encoded": "-%20Limita%20aplica%C8%9Biei%20este%20de%204%20MiB;%20tipurile%20acceptate%20sunt%20JPEG,%20PNG%20%C8%99i%20WebP.%20Limita%20request-ului",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "e95a97",
+        "hash": "ca8c5986",
+        "encoded": "Vercel%20r%C4%83m%C3%A2ne%20aplicabil%C4%83.",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "e95a97",
+        "hash": "99ecf05c",
+        "encoded": "-%20OCR%20nu%20necesit%C4%83%20cheie%20API%20sau%20variabil%C4%83%20de%20mediu.",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "e95a97",
+        "hash": "ddba874e",
+        "encoded": "-%20Impunerea%20autentific%C4%83rii%20obligatorii%20pe%20acest%20endpoint%20este%20planificat%C4%83%20pentru%20etapa%20de",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "e95a97",
+        "hash": "4b078e20",
+        "encoded": "entitlement/abonament%20(vezi%20%60docs/ARCHITECTURE.md%60),%20c%C3%A2nd%20va%20exista%20%C8%99i%20un%20ecran%20de%20login.",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "e95a97",
+        "hash": "294c5b4f",
+        "encoded": "##%20Text-to-speech",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "e95a97",
+        "hash": "73d0d18b",
+        "encoded": "Pipeline-ul%20TTS%20este%20documentat%20%C3%AEn%20%5B%60docs/TTS.md%60%5D(./docs/TTS.md).%20Configureaz%C4%83%20%60GOOGLE_CLOUD_TTS_API_KEY%60%20numai%20server-side%20dup%C4%83%20ce%20verifici%20%C3%AEn%20Google%20Cloud%20disponibilitatea%20vocilor%20rom%C3%A2ne%C8%99ti%20%C8%99i%20pre%C8%9Burile.",
+        "prevChunkIds": []
+      },
+      "101": {
         "chunkId": "641730",
-        "hash": "dfd3f7c0",
+        "hash": "439dbe20",
+        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_URL%60",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "641730",
+        "hash": "595879c2",
+        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY%60",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "641730",
+        "hash": "59d9a555",
+        "encoded": "Variabile%20server-only%20necesare%20pentru%20entitlement/billing:",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "641730",
+        "hash": "ac6a4ddb",
+        "encoded": "-%20%60SUPABASE_URL%60,%20%60SUPABASE_SERVICE_ROLE_KEY%60,%20%60ANONYMOUS_USAGE_SECRET%60,%20%60APP_URL%60",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "641730",
+        "hash": "89da0040",
         "encoded": "-%20%60STRIPE_SECRET_KEY%60,%20%60STRIPE_PRICE_ID%60,%20%60STRIPE_WEBHOOK_SECRET%60",
         "prevChunkIds": []
       }

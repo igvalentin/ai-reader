@@ -1,0 +1,18 @@
+{
+  "filename": "tts.test.ts",
+  "path": "api/tts.test.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "be4a1ca1": {
+      "value": "Prompt:\n\nAct as a software architect and implement Azure AI Speech text-to-speech (TTS) in the current project.\n\nThe Azure Speech resource has been created in the Germany West Central region. Its displayed endpoint is https://germanywestcentral.api.cognitive.microsoft.com/. Before implementation, inspect the project structure, framework, existing response-generation flow, server-side API conventions, environment configuration, and test setup. Do not assume file paths or frameworks that are not p"
+    },
+    "7e994189": {
+      "value": "functioneaza acum, dar pare ca are mici erori. se poate creste nivelul de precizie?"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

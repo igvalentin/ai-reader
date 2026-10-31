@@ -1,0 +1,15 @@
+{
+  "filename": "ttsProvider.ts",
+  "path": "src/server/tts/ttsProvider.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "7e994189": {
+      "value": "functioneaza acum, dar pare ca are mici erori. se poate creste nivelul de precizie?"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

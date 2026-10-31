@@ -40,4 +40,27 @@ describe('ReaderCard entitlement journey', () => {
     ).toBeInTheDocument()
     expect(mocks.requestSpeech).toHaveBeenCalledTimes(2)
   })
+
+  it('keeps the typed text available and reports a TTS timeout separately', async () => {
+    const user = userEvent.setup()
+    mocks.requestSpeech.mockRejectedValueOnce(
+      new TtsRequestError(
+        'Generarea audio a durat prea mult. Textul este în continuare disponibil; încearcă din nou.',
+        'TTS_TIMEOUT',
+        503,
+      ),
+    )
+    render(<ReaderCard />)
+    const textArea = screen.getByLabelText('Textul tău')
+    const originalText = 'Bună ziua, acesta este textul meu.'
+
+    await user.type(textArea, originalText)
+    await user.click(screen.getByRole('button', { name: /citește cu voce tare/i }))
+
+    expect(await screen.findByRole('alert')).toHaveTextContent(
+      'Textul este în continuare disponibil',
+    )
+    expect(textArea).toHaveValue(originalText)
+    expect(textArea).toHaveAttribute('aria-invalid', 'false')
+  })
 })

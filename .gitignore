@@ -10,7 +10,14 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+coverage
+.vercel
 *.local
+
+# Local secrets and environment files. Keep the safe template tracked.
+.env
+.env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*

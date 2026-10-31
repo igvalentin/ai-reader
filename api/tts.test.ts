@@ -102,6 +102,7 @@ describe('POST /api/tts', () => {
     expect(res.jsonBody).toMatchObject({
       language: 'ro-RO',
       chunks: [Buffer.from([1, 2, 3]).toString('base64')],
+      audioContentType: 'audio/mpeg',
       characterCount: 10,
     })
     expect(mocks.order).toEqual(['synthesize', 'claim'])
@@ -115,6 +116,7 @@ describe('POST /api/tts', () => {
     await handler(req, res)
 
     expect(res.statusCode).toBe(503)
+    expect(res.jsonBody).toMatchObject({ code: 'TTS_PROVIDER_ERROR' })
     expect(mocks.claimSuccessfulReading).not.toHaveBeenCalled()
     expect(mocks.getAvailableVoices).toHaveBeenCalledWith('en-US')
   })
@@ -139,6 +141,17 @@ describe('POST /api/tts', () => {
     expect(res.statusCode).toBe(400)
     expect(mocks.getTtsProvider).not.toHaveBeenCalled()
     expect(mocks.claimSuccessfulReading).not.toHaveBeenCalled()
+  })
+
+  it('rejects empty text with a structured validation error before authentication or synthesis', async () => {
+    const { req, res } = createMockReqRes({ text: '   ' })
+
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(400)
+    expect(res.jsonBody).toMatchObject({ code: 'INVALID_TEXT' })
+    expect(mocks.getTtsProvider).not.toHaveBeenCalled()
+    expect(mocks.resolveEntitlementIdentity).not.toHaveBeenCalled()
   })
 
   it('does not reuse generated audio across separate requests with the same text', async () => {

@@ -1,0 +1,192 @@
+{
+  "src/server/tts/ttsProviderFactory.ts": {
+    "filename": "ttsProviderFactory.ts",
+    "path": "src/server/tts/ttsProviderFactory.ts",
+    "version": "1.2",
+    "contextFile": "e919b29f-context.json",
+    "chunks": {
+      "c00cce": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483530,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "0d52c56f",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:10 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b3e5a4": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483530,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "13d95233",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:10 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1fe8c5": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483530,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "e5961d0b",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:10 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "1fe8c5",
+        "hash": "5b90f1b7",
+        "encoded": "import%20%7B%20AzureSpeechTtsProvider%20%7D%20from%20'./azureSpeechTtsProvider.js'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "b3e5a4",
+        "hash": "e9e22b81",
+        "encoded": "import%20type%20%7B%20TtsProvider%20%7D%20from%20'./ttsProvider.js'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b3e5a4",
+        "hash": "d4547c0e",
+        "encoded": "import%20%7B%20TtsProviderError%20%7D%20from%20'./ttsProvider.js'",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c00cce",
+        "hash": "ddf9fdc5",
+        "encoded": "let%20cachedProvider:%20TtsProvider%20%7C%20null%20=%20null",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c00cce",
+        "hash": "5a6d3a3e",
+        "encoded": "export%20function%20getTtsProvider():%20TtsProvider%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c00cce",
+        "hash": "2e704163",
+        "encoded": "if%20(cachedProvider)%20return%20cachedProvider",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c00cce",
+        "hash": "d8dbd10a",
+        "encoded": "const%20apiKey%20=%20process.env.AZURE_SPEECH_KEY?.trim()",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "c00cce",
+        "hash": "8e7b20ef",
+        "encoded": "const%20region%20=%20process.env.AZURE_SPEECH_REGION?.trim()",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c00cce",
+        "hash": "c5e07a53",
+        "encoded": "if%20(!apiKey%20%7C%7C%20!region)%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "c00cce",
+        "hash": "826b56a4",
+        "encoded": "throw%20new%20TtsProviderError('Azure%20Speech%20is%20not%20configured%20on%20the%20server.',%20false,%20'TTS_NOT_CONFIGURED')",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c00cce",
+        "hash": "e683dcf7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "c00cce",
+        "hash": "ea5b45f8",
+        "encoded": "cachedProvider%20=%20new%20AzureSpeechTtsProvider(%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "c00cce",
+        "hash": "aad36090",
+        "encoded": "apiKey,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "c00cce",
+        "hash": "04fc54c1",
+        "encoded": "region,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "c00cce",
+        "hash": "32028793",
+        "encoded": "romanianVoice:%20process.env.AZURE_SPEECH_VOICE?.trim()%20%7C%7C%20undefined,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "c00cce",
+        "hash": "3fff8437",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "c00cce",
+        "hash": "24c6f307",
+        "encoded": "return%20cachedProvider",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "c00cce",
+        "hash": "acbf036f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "c00cce",
+        "hash": "321c3c97",
+        "encoded": "export%20function%20resetTtsProviderCacheForTests():%20void%20%7B",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "c00cce",
+        "hash": "0d318373",
+        "encoded": "cachedProvider%20=%20null",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "c00cce",
+        "hash": "71870443",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

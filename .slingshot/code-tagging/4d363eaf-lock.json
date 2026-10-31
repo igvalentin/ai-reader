@@ -1,0 +1,29 @@
+{
+  "src/server/tts/googleCloudTtsProvider.ts": {
+    "filename": "googleCloudTtsProvider.ts",
+    "path": "src/server/tts/googleCloudTtsProvider.ts",
+    "version": "1.2",
+    "contextFile": "4d363eaf-context.json",
+    "chunks": {
+      "28ded2": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793484011,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "be4a1ca1"
+        },
+        "hash": "00000000",
+        "messageId": "system_eda6a4c0-d574-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 11/1/2026, 12:00:11 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {}
+  }
+}

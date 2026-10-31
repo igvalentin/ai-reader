@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T21:26:59.143Z",
+  "lastUpdated": "2026-10-31T21:58:50.378Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -33,9 +33,9 @@
     },
     {
       "id": "mem_1793477427620_pk27dn",
-      "content": "ai-reader: TTS implemented with provider abstraction, Google /api/tts, Romanian normalization, chunking, client player, language override, docs/tests. Checks pass.",
+      "content": "ai-reader TTS now uses Azure Speech REST behind TtsProvider; server-only key/region, Romanian neural voice, JSON MP3 chunks, client retains text on failure. 65 tests/build/lint pass.",
       "createdAt": "2026-10-31T20:10:27.620Z",
-      "updatedAt": "2026-10-31T20:10:27.620Z",
+      "updatedAt": "2026-10-31T21:58:50.378Z",
       "isEnabled": true
     },
     {
@@ -54,9 +54,9 @@
     },
     {
       "id": "mem_1793477934207_b96ilk",
-      "content": "Vercel includeFiles uses one brace-glob string for ron model + Tesseract WASM sidecars; glob matches relaxed-SIMD file. Tests, build and lint pass.",
+      "content": "OCR now uses `4.0.0_best_int` and Vercel bundles its data. OCR tests, lint and API tsc pass; full suite/build blocked by unrelated Azure TTS errors.",
       "createdAt": "2026-10-31T20:18:54.207Z",
-      "updatedAt": "2026-10-31T21:26:59.143Z",
+      "updatedAt": "2026-10-31T21:53:52.253Z",
       "isEnabled": true
     },
     {

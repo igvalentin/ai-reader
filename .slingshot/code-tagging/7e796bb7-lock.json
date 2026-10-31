@@ -1,0 +1,54 @@
+{
+  "src/server/tts/azureSpeechTtsProvider.ts": {
+    "filename": "azureSpeechTtsProvider.ts",
+    "path": "src/server/tts/azureSpeechTtsProvider.ts",
+    "version": "1.2",
+    "contextFile": "7e796bb7-context.json",
+    "chunks": {
+      "9bde28": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483759,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "be4a1ca1"
+        },
+        "hash": "86e01216",
+        "messageId": "system_eda6a4c0-d574-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:55:59 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "78": {
+        "chunkId": "9bde28",
+        "hash": "9e6bc20b",
+        "encoded": "if%20(typeof%20text%20!==%20'string'%20%7C%7C%20!text.trim()%20%7C%7C%20hasUnsupportedControlCharacters(text))%20%7B",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "9bde28",
+        "hash": "165ce19a",
+        "encoded": "throw%20new%20TtsProviderError('Textul%20pentru%20sintez%C4%83%20este%20invalid.',%20false,%20'TTS_INVALID_INPUT')",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "9bde28",
+        "hash": "a2f26355",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "9bde28",
+        "hash": "4b5c665a",
+        "encoded": "if%20(Buffer.byteLength(text,%20'utf8')%20%3E%20MAX_TEXT_BYTES)%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

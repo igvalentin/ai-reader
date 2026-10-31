@@ -98,11 +98,11 @@ Variabile server-only necesare pentru entitlement/billing:
 
 ## Text-to-speech
 
-Pipeline-ul TTS este documentat în [`docs/TTS.md`](./docs/TTS.md). Configurează `GOOGLE_CLOUD_TTS_API_KEY` numai server-side după ce verifici în Google Cloud disponibilitatea vocilor românești și prețurile. Endpoint-ul `/api/tts` detectează sau primește limba, normalizează determinist textul românesc, fragmentează cererea și returnează audio MP3; cheia nu este expusă browserului. Deploy-ul în producție necesită aprobare explicită.
+Pipeline-ul TTS cu Azure AI Speech este documentat în [`docs/TTS.md`](./docs/TTS.md). Configurează `AZURE_SPEECH_KEY` și `AZURE_SPEECH_REGION=germanywestcentral` numai server-side; `AZURE_SPEECH_VOICE` este opțional. Endpoint-ul `/api/tts` detectează sau primește limba, păstrează diacriticele românești și returnează audio MP3. Cheia nu este expusă browserului, iar textul rămâne disponibil dacă sinteza eșuează. Deploy-ul în producție necesită aprobare explicită.
 
 ## Configurări rămase (de documentat, nu de inventat)
 
-- Verificarea prețurilor și aprobarea furnizorului Google Cloud TTS înainte de deploy.
+- Verificarea prețurilor și disponibilității vocilor Azure AI Speech înainte de deploy.
 - Furnizorul de plăți/abonamente — neales încă.
 - Ecranul de autentificare (login cu Google prin Supabase) — neconstruit încă în interfață.
 - Iconițe PWA reale (192x192, 512x512, maskable) — momentan se folosește doar `favicon.svg` ca

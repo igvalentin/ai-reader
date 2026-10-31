@@ -22,6 +22,24 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:11 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "de3fc5": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483661,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "c688b8d3",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:54:21 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -86,29 +104,60 @@
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "134347",
-        "hash": "33bec7c4",
-        "encoded": "#%20OCR%20(server-side%20only%20%E2%80%94%20used%20by%20the%20/api/ocr%20Vercel%20Function,%20never%20exposed%20to%20the%20client).",
+        "chunkId": "de3fc5",
+        "hash": "53c09d1b",
+        "encoded": "#%20OCR%20runs%20locally%20with%20Tesseract.js%20and%20the%20Romanian%20model;%20no%20OCR%20API%20key%20is%20required.",
         "prevChunkIds": []
       },
-      "17": {
-        "chunkId": "134347",
-        "hash": "6f453ac6",
-        "encoded": "#%20OCR_SPACE_API_KEY=your-ocr-space-api-key",
+      "18": {
+        "chunkId": "de3fc5",
+        "hash": "21a525cb",
+        "encoded": "#%20Azure%20AI%20Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix;%20do%20not%20commit%20real%20values).",
         "prevChunkIds": []
       },
       "19": {
-        "chunkId": "134347",
-        "hash": "104fcf75",
-        "encoded": "#%20Google%20Cloud%20Text-to-Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix).",
+        "chunkId": "de3fc5",
+        "hash": "9417c87e",
+        "encoded": "#%20AZURE_SPEECH_KEY=your-azure-speech-key",
         "prevChunkIds": []
       },
       "20": {
+        "chunkId": "de3fc5",
+        "hash": "bff8777a",
+        "encoded": "#%20AZURE_SPEECH_REGION=germanywestcentral",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "de3fc5",
+        "hash": "19b372c4",
+        "encoded": "#%20Optional%20Romanian%20neural%20voice%20(default:%20ro-RO-AlinaNeural).",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "de3fc5",
+        "hash": "cf7a3beb",
+        "encoded": "#%20AZURE_SPEECH_VOICE=ro-RO-AlinaNeural",
+        "prevChunkIds": []
+      },
+      "23": {
         "chunkId": "134347",
-        "hash": "faaed3a1",
+        "hash": "9e064999",
+        "encoded": "#%20OCR_SPACE_API_KEY=your-ocr-space-api-key",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "134347",
+        "hash": "88c3342a",
+        "encoded": "#%20Google%20Cloud%20Text-to-Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix).",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "134347",
+        "hash": "bf36d434",
         "encoded": "#%20GOOGLE_CLOUD_TTS_API_KEY=your-google-cloud-tts-api-key",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 24
   }
 }

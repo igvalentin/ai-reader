@@ -18,10 +18,12 @@ export interface TtsProvider {
 
 export class TtsProviderError extends Error {
   readonly retryable: boolean
+  readonly code: string
 
-  constructor(message: string, retryable = false) {
+  constructor(message: string, retryable = false, code = 'TTS_PROVIDER_ERROR') {
     super(message)
     this.name = 'TtsProviderError'
     this.retryable = retryable
+    this.code = code
   }
 }

@@ -1,25 +1,38 @@
-# Configurarea text-to-speech
+# Text-to-speech cu Azure AI Speech
 
-Aplicația folosește un contract `TtsProvider` server-side, astfel încât playerul și endpoint-ul nu depind de furnizorul concret. Implementarea inițială este `GoogleCloudTtsProvider`, apelată numai din funcția Vercel `/api/tts`.
+`POST /api/tts` păstrează autentificarea și entitlement-ul server-side, sintetizează prin `TtsProvider` și returnează fragmente MP3 în JSON. Browserul apelează doar aplicația; cheia Azure nu este transmisă clientului. Providerul Azure poate fi înlocuit sau mock-uit independent.
 
-## Variabile de mediu
+## Configurare
 
-Adaugă în mediul serverului (local `.env`, Vercel Environment Variables):
+Configurează aceste variabile numai în runtime-ul serverului local și în Environment Variables pentru Vercel (Development, Preview și Production, după caz):
 
 ```env
-GOOGLE_CLOUD_TTS_API_KEY=cheia-server-side
+AZURE_SPEECH_KEY=your-server-side-speech-key
+AZURE_SPEECH_REGION=germanywestcentral
+# Opțional; implicit este ro-RO-AlinaNeural.
+AZURE_SPEECH_VOICE=ro-RO-AlinaNeural
 ```
 
-Nu folosi prefixul `VITE_`; cheia nu trebuie ajunsă în bundle-ul browserului. Activează Cloud Text-to-Speech în proiectul Google Cloud și verifică în consola Google Cloud prețurile și disponibilitatea vocilor `ro-RO-Standard-A`, `en-US-Neural2-C` și `en-GB-Neural2-A` înainte de producție. Nu se face deploy fără aprobare.
+Valorile de mai sus sunt exemple-placeholder, nu chei. Nu adăuga prefixul `VITE_`, nu pune cheia în frontend și nu o comite în repository. Pentru dezvoltare locală, rulează funcția API cu Vercel CLI (`npx vercel dev`) și furnizează variabilele în mediul local securizat ori cu mecanismul `vercel env pull`; `npm run dev` pornește doar Vite și nu servește funcțiile `/api`. În deployment, setează variabilele în configurarea proiectului Vercel și redeployează funcțiile după actualizare.
 
-## Flux și limite
+Nu este necesară o variabilă endpoint. Endpoint-ul TTS REST este derivat din regiunea resursei:
 
-`POST /api/tts` primește `{ text, language? }`, detectează limba dacă nu există override, normalizează determinist textul românesc, păstrează limitele de 4.000 de caractere și împarte textul pe paragrafe/propoziții în cereri de cel mult 4.500 de caractere. Răspunsul conține fragmente MP3 base64, care sunt concatenate local pentru player.
+`https://{AZURE_SPEECH_REGION}.tts.speech.microsoft.com/cognitiveservices/v1`
 
-Răspunsurile sunt memorate în cache doar în memoria procesului server, timp de 15 minute, după text și limbă. Nu sunt persistate și nu sunt partajate între utilizatori. Evenimentele de succes/eșec raportează doar limbă, număr de fragmente, lungime și caracterul retryable; nu loghează textul.
+Pentru Germania West Central, valoarea este `https://germanywestcentral.tts.speech.microsoft.com/cognitiveservices/v1`. Endpoint-ul afișat pentru resursă (`https://germanywestcentral.api.cognitive.microsoft.com/`) nu este endpoint-ul final de sinteză TTS.
 
-Rate-limit-urile și timeout-urile furnizorului sunt mapate la 503 când pot fi retrimise. Restul erorilor sunt 502. Pentru un volum de producție, adaugă înainte de lansare un contor durabil server-side și autentificare/entitlement, aliniate cu schema Supabase din `ARCHITECTURE.md`.
+## Voci și format
 
-## Extinderea limbilor
+Vocea română implicită este `ro-RO-AlinaNeural`; `ro-RO-EmilNeural` poate fi setată prin `AZURE_SPEECH_VOICE`. Sunt configurate și vocile `en-US-JennyNeural` și `en-GB-SoniaNeural`. Verifică disponibilitatea vocilor și tarifele pentru regiunea și abonamentul Azure înainte de lansare.
 
-Adaugă limba în configurația `VOICES` a providerului și în lista UI din `src/constants/languages.ts`. Playerul nu trebuie modificat. Pentru alt furnizor, implementează `TtsProvider` și schimbă doar fabrica.
+Serverul trimite SSML cu escaping XML pentru textul utilizatorului și cere `audio-24khz-48kbitrate-mono-mp3`. Răspunsul JSON include `audioContentType: "audio/mpeg"`, iar clientul validează acest tip și concatenează fragmentele base64 pentru player.
+
+## Limite, erori și confidențialitate
+
+- Endpoint-ul acceptă maximum 4.000 de caractere de text; fragmentele de sinteză sunt limitate la 4.500 de octeți UTF-8.
+- Fiecare cerere Azure are timeout de 15 secunde. Nu se fac retry-uri automate, pentru a evita costuri duplicate.
+- Erorile upstream sunt transformate în coduri JSON stabile și mesaje sigure. La indisponibilitate/timeout, textul rămâne în textarea și poate fi ascultat din nou ulterior.
+- Textul nu este logat și nu este păstrat de server; logurile conțin doar limbă, număr de fragmente, număr de caractere, codul erorii și retryability.
+- O lectură gratuită este contorizată numai după sinteza cu succes. Erorile TTS nu afectează OCR-ul sau textul introdus.
+
+Providerul este în `src/server/tts/azureSpeechTtsProvider.ts`; selecția și configurarea lui se află în `src/server/tts/ttsProviderFactory.ts`. Pentru alt furnizor, implementează interfața `TtsProvider` și schimbă factory-ul fără a modifica UI-ul sau contractul endpoint-ului.

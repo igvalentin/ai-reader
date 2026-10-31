@@ -1,0 +1,120 @@
+{
+  "src/server/tts/ttsProvider.ts": {
+    "filename": "ttsProvider.ts",
+    "path": "src/server/tts/ttsProvider.ts",
+    "version": "1.2",
+    "contextFile": "3c120991-context.json",
+    "chunks": {
+      "9541a0": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483530,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "a8c16a93",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:10 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "12": {
+        "chunkId": "9541a0",
+        "hash": "f6c06b67",
+        "encoded": "export%20interface%20TtsProvider%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "9541a0",
+        "hash": "ce3a34d8",
+        "encoded": "detectLanguage(text:%20string):%20Promise%3Cstring%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "9541a0",
+        "hash": "3f115a08",
+        "encoded": "getAvailableVoices(language:%20string):%20Promise%3Creadonly%20TtsVoice%5B%5D%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "9541a0",
+        "hash": "8140f146",
+        "encoded": "synthesize(text:%20string,%20voice:%20TtsVoice,%20options?:%20SynthesizeOptions):%20Promise%3CUint8Array%3E",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "9541a0",
+        "hash": "0a373349",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "9541a0",
+        "hash": "c6810460",
+        "encoded": "export%20class%20TtsProviderError%20extends%20Error%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "9541a0",
+        "hash": "d2359ad0",
+        "encoded": "readonly%20retryable:%20boolean",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "9541a0",
+        "hash": "986954f4",
+        "encoded": "readonly%20code:%20string",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "9541a0",
+        "hash": "40247ac3",
+        "encoded": "constructor(message:%20string,%20retryable%20=%20false,%20code%20=%20'TTS_PROVIDER_ERROR')%20%7B",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "9541a0",
+        "hash": "66a47225",
+        "encoded": "super(message)",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "9541a0",
+        "hash": "483d0b05",
+        "encoded": "this.name%20=%20'TtsProviderError'",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "9541a0",
+        "hash": "4ef01fae",
+        "encoded": "this.retryable%20=%20retryable",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "9541a0",
+        "hash": "1d8a5aa4",
+        "encoded": "this.code%20=%20code",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "9541a0",
+        "hash": "a7947416",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "9541a0",
+        "hash": "46b23985",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

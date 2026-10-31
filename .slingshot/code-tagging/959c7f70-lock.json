@@ -1,0 +1,186 @@
+{
+  "api/tts.test.ts": {
+    "filename": "tts.test.ts",
+    "path": "api/tts.test.ts",
+    "version": "1.2",
+    "contextFile": "959c7f70-context.json",
+    "chunks": {
+      "976b5e": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483574,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "be4a1ca1"
+        },
+        "hash": "fb5e8e7d",
+        "messageId": "system_eda6a4c0-d574-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:54 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "d32d65": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483574,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "0c8b6848",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:54 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "d36e04": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793483574,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7e994189"
+        },
+        "hash": "181c18d5",
+        "messageId": "system_10a89690-d575-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:52:54 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "101": {
+        "chunkId": "d36e04",
+        "hash": "cae92691",
+        "encoded": "expect(res.jsonBody).toMatchObject(%7B",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "d36e04",
+        "hash": "ba1d4b2d",
+        "encoded": "language:%20'ro-RO',",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "d36e04",
+        "hash": "8ad72ae8",
+        "encoded": "chunks:%20%5BBuffer.from(%5B1,%202,%203%5D).toString('base64')%5D,",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "d36e04",
+        "hash": "45fcc89f",
+        "encoded": "audioContentType:%20'audio/mpeg',",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "d36e04",
+        "hash": "d89e1c94",
+        "encoded": "characterCount:%2010,",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "d36e04",
+        "hash": "84cede80",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "d32d65",
+        "hash": "60a52e7f",
+        "encoded": "expect(res.statusCode).toBe(503)",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "d32d65",
+        "hash": "25197557",
+        "encoded": "expect(res.jsonBody).toMatchObject(%7B%20code:%20'TTS_PROVIDER_ERROR'%20%7D)",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "d32d65",
+        "hash": "f8271556",
+        "encoded": "expect(mocks.claimSuccessfulReading).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "976b5e",
+        "hash": "930816a0",
+        "encoded": "it('rejects%20empty%20text%20with%20a%20structured%20validation%20error%20before%20authentication%20or%20synthesis',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "976b5e",
+        "hash": "e5428871",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes(%7B%20text:%20'%20%20%20'%20%7D)",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "976b5e",
+        "hash": "8c587075",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "976b5e",
+        "hash": "b48734be",
+        "encoded": "expect(res.statusCode).toBe(400)",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "976b5e",
+        "hash": "322fa42f",
+        "encoded": "expect(res.jsonBody).toMatchObject(%7B%20code:%20'INVALID_TEXT'%20%7D)",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "976b5e",
+        "hash": "c1c35783",
+        "encoded": "expect(mocks.getTtsProvider).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "976b5e",
+        "hash": "9eca5f12",
+        "encoded": "expect(mocks.resolveEntitlementIdentity).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "976b5e",
+        "hash": "6075ec3f",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "976b5e",
+        "hash": "0b1efd26",
+        "encoded": "it('does%20not%20reuse%20generated%20audio%20across%20separate%20requests%20with%20the%20same%20text',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "976b5e",
+        "hash": "531c70c0",
+        "encoded": "const%20first%20=%20createMockReqRes(%7B%20text:%20'Private%20text%20for%20cache%20isolation.',%20language:%20'en-US'%20%7D)",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "976b5e",
+        "hash": "3a83d406",
+        "encoded": "const%20second%20=%20createMockReqRes(%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

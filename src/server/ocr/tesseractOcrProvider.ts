@@ -1,4 +1,5 @@
 import { createRequire } from 'node:module'
+import { dirname, join } from 'node:path'
 import { OcrProviderError, type OcrProvider } from './ocrProvider.js'
 
 export interface LocalOcrWorker {
@@ -28,7 +29,7 @@ function createRomanianWorker(): Promise<LocalOcrWorker> {
   const languageData = require('@tesseract.js-data/ron') as RomanianLanguageData
 
   return tesseract.createWorker(languageData.code, undefined, {
-    langPath: languageData.langPath,
+    langPath: join(dirname(languageData.langPath), '4.0.0_best_int'),
     gzip: languageData.gzip,
     cachePath: '/tmp/ai-reader-tesseract',
   })

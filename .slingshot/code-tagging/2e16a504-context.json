@@ -9,6 +9,9 @@
     },
     "7a172d6e": {
       "value": "am build failed acum:Build Failed\nThe `vercel.json` schema validation failed with the following message: `functions.api/ocr.ts.includeFiles` should be string"
+    },
+    "7e994189": {
+      "value": "functioneaza acum, dar pare ca are mici erori. se poate creste nivelul de precizie?"
     }
   },
   "localPrompts": {},
