@@ -95,9 +95,13 @@ Variabile de mediu necesare în proiectul Vercel (Production):
 - Impunerea autentificării obligatorii pe acest endpoint este planificată pentru etapa de
   entitlement/abonament (vezi `docs/ARCHITECTURE.md`), când va exista și un ecran de login.
 
+## Text-to-speech
+
+Pipeline-ul TTS este documentat în [`docs/TTS.md`](./docs/TTS.md). Configurează `GOOGLE_CLOUD_TTS_API_KEY` numai server-side după ce verifici în Google Cloud disponibilitatea vocilor românești și prețurile. Endpoint-ul `/api/tts` detectează sau primește limba, normalizează determinist textul românesc, fragmentează cererea și returnează audio MP3; cheia nu este expusă browserului. Deploy-ul în producție necesită aprobare explicită.
+
 ## Configurări rămase (de documentat, nu de inventat)
 
-- Furnizorul de text-to-speech cu voce română de calitate — neales încă.
+- Verificarea prețurilor și aprobarea furnizorului Google Cloud TTS înainte de deploy.
 - Furnizorul de plăți/abonamente — neales încă.
 - Ecranul de autentificare (login cu Google prin Supabase) — neconstruit încă în interfață.
 - Iconițe PWA reale (192x192, 512x512, maskable) — momentan se folosește doar `favicon.svg` ca

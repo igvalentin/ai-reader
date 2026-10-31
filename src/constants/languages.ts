@@ -4,8 +4,8 @@ export interface SupportedLanguage {
 }
 
 export const SUPPORTED_LANGUAGES: readonly SupportedLanguage[] = [
-  { value: 'ro', label: 'Română' },
-  { value: 'en', label: 'Engleză' },
-  { value: 'fr', label: 'Franceză' },
-  { value: 'de', label: 'Germană' },
+  { value: 'auto', label: 'Detectare automată' },
+  { value: 'ro-RO', label: 'Română' },
+  { value: 'en-US', label: 'Engleză (SUA)' },
+  { value: 'en-GB', label: 'Engleză (Marea Britanie)' },
 ]
