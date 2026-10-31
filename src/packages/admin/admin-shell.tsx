@@ -1,9 +1,9 @@
 import { useMemo, useState, type ReactNode } from "react";
-import { Users, ShieldCheck, Building2, Globe, Copy } from "lucide-react";
+import { Users, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-export type AdminSection = "imobiliare" | "surse" | "duplicate" | "users" | "roles";
+export type AdminSection = "users" | "roles";
 
 interface Item {
   id: AdminSection;
@@ -12,11 +12,8 @@ interface Item {
 }
 
 const ITEMS: Item[] = [
-  { id: "imobiliare", label: "Index imobiliar", icon: Building2 },
-  { id: "surse", label: "Surse", icon: Globe },
-  { id: "duplicate", label: "Duplicate", icon: Copy },
-  { id: "users", label: "Utilizatori", icon: Users },
-  { id: "roles", label: "Roluri", icon: ShieldCheck },
+  { id: "users", label: "Users", icon: Users },
+  { id: "roles", label: "Roles", icon: ShieldCheck },
 ];
 
 interface AdminShellProps {
@@ -82,7 +79,7 @@ export function AdminShell({ section, onSectionChange, render }: AdminShellProps
 
       <div className="min-w-0 flex-1">
         <div className="mb-6 hidden lg:block">
-          <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Admin</p>
+          <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Admin Panel</p>
           <h1 className="font-display text-3xl text-foreground">{current.label}</h1>
         </div>
         {render(section)}

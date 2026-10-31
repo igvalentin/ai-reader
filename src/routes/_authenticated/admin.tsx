@@ -5,21 +5,21 @@ import { z } from "zod";
 import { Loader2 } from "lucide-react";
 
 import { buildHead } from "@/packages/seo";
-import { AdminShell, useIsAdmin, IndexHealth, SourceManager, DuplicateReview, type AdminSection } from "@/packages/admin";
+import { AdminShell, useIsAdmin, type AdminSection } from "@/packages/admin";
 import { db } from "@/packages/db";
 
 const searchSchema = z.object({
-  s: z.enum(["imobiliare", "surse", "duplicate", "users", "roles"]).optional(),
+  s: z.enum(["users", "roles"]).optional(),
 });
 
 export const Route = createFileRoute("/_authenticated/admin")({
   validateSearch: searchSchema,
   head: () =>
     buildHead({
-      title: "Administrare ImoIndex",
+      title: "Admin - AI Reader",
       path: "/admin",
       description:
-        "Starea indexului imobiliar, sursele și rulările de colectare ImoIndex.",
+        "Admin panel for AI Reader application.",
       noindex: true,
     }),
   component: AdminPage,
@@ -29,7 +29,7 @@ function AdminPage() {
   const { s } = Route.useSearch();
   const navigate = Route.useNavigate();
   const { isAdmin, loading } = useIsAdmin();
-  const section: AdminSection = s ?? "imobiliare";
+  const section: AdminSection = s ?? "users";
 
   if (loading) {
     return (
@@ -61,7 +61,7 @@ function AdminPage() {
         section={section}
         onSectionChange={(next) =>
           navigate({
-            search: next === "imobiliare" ? {} : { s: next },
+            search: next === "users" ? {} : { s: next },
             replace: true,
           })
         }
@@ -73,16 +73,12 @@ function AdminPage() {
 
 function SectionRenderer({ section }: { section: AdminSection }) {
   switch (section) {
-    case "imobiliare":
-      return <IndexHealth />;
-    case "surse":
-      return <SourceManager />;
-    case "duplicate":
-      return <DuplicateReview />;
     case "users":
       return <UsersSection />;
     case "roles":
       return <RolesSection />;
+    default:
+      return <UsersSection />;
   }
 }
 
