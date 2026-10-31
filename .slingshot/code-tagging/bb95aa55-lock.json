@@ -1,0 +1,342 @@
+{
+  "src/components/organisms/ReaderCard.tsx": {
+    "filename": "ReaderCard.tsx",
+    "path": "src/components/organisms/ReaderCard.tsx",
+    "version": "1.2",
+    "contextFile": "bb95aa55-context.json",
+    "chunks": {
+      "7cf325": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793477775,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c4ae9a5d"
+        },
+        "hash": "d5004098",
+        "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:16:15 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "7cf325",
+        "hash": "18622df2",
+        "encoded": "import%20%7B%20useCallback,%20useId,%20useState,%20type%20FormEvent%20%7D%20from%20'react'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "7cf325",
+        "hash": "f791bd17",
+        "encoded": "import%20%7B%20requestSpeech,%20TtsRequestError%20%7D%20from%20'../../lib/tts/ttsClient'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "7cf325",
+        "hash": "cb4040f8",
+        "encoded": "import%20%7B%20useAudioPlayer%20%7D%20from%20'../../lib/tts/useAudioPlayer'",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "7cf325",
+        "hash": "94773fea",
+        "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "7cf325",
+        "hash": "143f97f3",
+        "encoded": "import%20%7B%20AudioPlayer%20%7D%20from%20'../molecules/AudioPlayer'",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "7cf325",
+        "hash": "05feb40a",
+        "encoded": "import%20%7B%20FreeTrialNotice%20%7D%20from%20'../molecules/FreeTrialNotice'",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "7cf325",
+        "hash": "40df52ce",
+        "encoded": "import%20%7B%20PaywallNotice%20%7D%20from%20'../molecules/PaywallNotice'",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "7cf325",
+        "hash": "393fda2e",
+        "encoded": "import%20%7B%20ImageUploadControl%20%7D%20from%20'../molecules/ImageUploadControl'",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "7cf325",
+        "hash": "8c6fd818",
+        "encoded": "import%20%7B%20LanguageSelector%20%7D%20from%20'../molecules/LanguageSelector'",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "7cf325",
+        "hash": "b1773663",
+        "encoded": "import%20%7B%20useImageOcr%20%7D%20from%20'../../lib/image/useImageOcr'",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "7cf325",
+        "hash": "6cad8951",
+        "encoded": "const%20MAX_CHARACTERS%20=%204000",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "7cf325",
+        "hash": "be82e269",
+        "encoded": "export%20function%20ReaderCard()%20%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "7cf325",
+        "hash": "01c312d3",
+        "encoded": "const%20%5Btext,%20setText%5D%20=%20useState('')",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "7cf325",
+        "hash": "5031b2ca",
+        "encoded": "const%20%5Blanguage,%20setLanguage%5D%20=%20useState('auto')",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "7cf325",
+        "hash": "c664ad90",
+        "encoded": "const%20%5Berror,%20setError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "7cf325",
+        "hash": "1ab9857b",
+        "encoded": "const%20%5BshowPaywall,%20setShowPaywall%5D%20=%20useState(false)",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "7cf325",
+        "hash": "2c6520e0",
+        "encoded": "const%20textareaId%20=%20useId()",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "7cf325",
+        "hash": "e5514eee",
+        "encoded": "const%20errorId%20=%20useId()",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "7cf325",
+        "hash": "ca198699",
+        "encoded": "const%20%7B%20state:%20audioState,%20loadChunks,%20toggle,%20seek,%20setPlaybackRate%20%7D%20=%20useAudioPlayer()",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "7cf325",
+        "hash": "4b0905d7",
+        "encoded": "const%20handleTextExtracted%20=%20useCallback((extractedText:%20string)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "7cf325",
+        "hash": "0495d451",
+        "encoded": "setText((current)%20=%3E%20current.trim()%20?%20%60$%7Bcurrent.trim()%7D%5Cn%5Cn$%7BextractedText%7D%60%20:%20extractedText)",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "7cf325",
+        "hash": "3e00f212",
+        "encoded": "setError(null)",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "7cf325",
+        "hash": "49be0467",
+        "encoded": "%7D,%20%5B%5D)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "7cf325",
+        "hash": "cb44e62e",
+        "encoded": "const%20%7B%20previewUrl,%20status:%20ocrStatus,%20errorMessage:%20ocrErrorMessage,%20uploadProgress,%20selectFile,%20removeImage,%20startOcr%20%7D%20=%20useImageOcr(%7B%20onTextExtracted:%20handleTextExtracted%20%7D)",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "7cf325",
+        "hash": "77038a87",
+        "encoded": "const%20characterCount%20=%20text.length",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "7cf325",
+        "hash": "ad862bfb",
+        "encoded": "const%20isOverLimit%20=%20characterCount%20%3E%20MAX_CHARACTERS",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "7cf325",
+        "hash": "e2cf58e5",
+        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "7cf325",
+        "hash": "9242c71d",
+        "encoded": "event.preventDefault()",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "7cf325",
+        "hash": "c0376170",
+        "encoded": "if%20(!text.trim())%20%7B%20setError('Adaug%C4%83%20un%20text%20sau%20o%20imagine%20pentru%20a%20%C3%AEncepe%20lectura.');%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "7cf325",
+        "hash": "bdb0f787",
+        "encoded": "if%20(isOverLimit)%20%7B%20setError(%60Textul%20dep%C4%83%C8%99e%C8%99te%20limita%20de%20$%7BMAX_CHARACTERS%7D%20de%20caractere.%60);%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "7cf325",
+        "hash": "2d967bf5",
+        "encoded": "setError(null);%20setShowPaywall(false)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "7cf325",
+        "hash": "a491f054",
+        "encoded": "try%20%7B%20const%20response%20=%20await%20requestSpeech(text,%20language%20===%20'auto'%20?%20''%20:%20language);%20await%20loadChunks(response.chunks)%20%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "7cf325",
+        "hash": "3ec636ef",
+        "encoded": "catch%20(requestError)%20%7B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "7cf325",
+        "hash": "7b00abb7",
+        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B%20setShowPaywall(true);%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "7cf325",
+        "hash": "818511f0",
+        "encoded": "setError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "7cf325",
+        "hash": "4771cdac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "7cf325",
+        "hash": "792377b1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "7cf325",
+        "hash": "6bb0d77a",
+        "encoded": "return%20%3Cform%20onSubmit=%7BhandleSubmit%7D%20noValidate%20className=%22flex%20flex-col%20gap-6%20rounded-2xl%20border%20border-border%20bg-surface%20p-5%20shadow-sm%20sm:p-8%22%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "7cf325",
+        "hash": "bc071a1f",
+        "encoded": "%3CFreeTrialNotice%20/%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "7cf325",
+        "hash": "9c30a7f6",
+        "encoded": "%7BshowPaywall%20?%20%3CPaywallNotice%20/%3E%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "7cf325",
+        "hash": "414bd727",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-1.5%22%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "7cf325",
+        "hash": "ce253274",
+        "encoded": "%3Clabel%20htmlFor=%7BtextareaId%7D%20className=%22text-sm%20font-medium%20text-ink%22%3ETextul%20t%C4%83u%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "7cf325",
+        "hash": "b5f2629d",
+        "encoded": "%3Ctextarea%20id=%7BtextareaId%7D%20name=%22text%22%20rows=%7B8%7D%20value=%7Btext%7D%20onChange=%7B(event)%20=%3E%20%7B%20setText(event.target.value);%20if%20(error)%20setError(null);%20setShowPaywall(false)%20%7D%7D%20placeholder=%22Scrie%20sau%20lipe%C8%99te%20aici%20textul%20pe%20care%20vrei%20s%C4%83%20%C3%AEl%20ascul%C8%9Bi%E2%80%A6%22%20aria-invalid=%7BBoolean(error)%7D%20aria-describedby=%7Berror%20?%20errorId%20:%20undefined%7D%20className=%22min-h-40%20w-full%20resize-y%20rounded-lg%20border%20border-border%20bg-paper%20px-3%20py-2.5%20text-ink%20placeholder:text-ink-muted%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "7cf325",
+        "hash": "c38b6b38",
+        "encoded": "%3Cdiv%20className=%22flex%20items-center%20justify-between%20text-xs%20text-ink-muted%22%3E%3Cspan%3E%7Btext.length%20===%200%20?%20'Niciun%20text%20ad%C4%83ugat%20%C3%AEnc%C4%83.'%20:%20%60$%7BcharacterCount%7D%20caractere%60%7D%3C/span%3E%3Cspan%20className=%7BisOverLimit%20?%20'font-medium%20text-danger'%20:%20undefined%7D%3E%7BcharacterCount%7D%20/%20%7BMAX_CHARACTERS%7D%3C/span%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "7cf325",
+        "hash": "9a02af06",
+        "encoded": "%7Berror%20?%20%3Cp%20id=%7BerrorId%7D%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7Berror%7D%3C/p%3E%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "7cf325",
+        "hash": "0915f7af",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "7cf325",
+        "hash": "f4c6439a",
+        "encoded": "%3CImageUploadControl%20previewUrl=%7BpreviewUrl%7D%20status=%7BocrStatus%7D%20errorMessage=%7BocrErrorMessage%7D%20uploadProgress=%7BuploadProgress%7D%20onFileSelected=%7BselectFile%7D%20onRemove=%7BremoveImage%7D%20onStartOcr=%7BstartOcr%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "7cf325",
+        "hash": "2ddc9de5",
+        "encoded": "%3CLanguageSelector%20value=%7Blanguage%7D%20onChange=%7BsetLanguage%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "7cf325",
+        "hash": "5e5c8eaf",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BaudioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BaudioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D%3C/Button%3E%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "7cf325",
+        "hash": "a0e3e48a",
+        "encoded": "%3CAudioPlayer%20state=%7BaudioState%7D%20onToggle=%7B()%20=%3E%20void%20toggle()%7D%20onSeek=%7Bseek%7D%20onSpeedChange=%7BsetPlaybackRate%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "7cf325",
+        "hash": "bee1859a",
+        "encoded": "%3C/form%3E",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "7cf325",
+        "hash": "cdb7b2a0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

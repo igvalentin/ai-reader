@@ -1,0 +1,54 @@
+{
+  "src/server/entitlement/entitlement.test.ts": {
+    "filename": "entitlement.test.ts",
+    "path": "src/server/entitlement/entitlement.test.ts",
+    "version": "1.2",
+    "contextFile": "61243cd1-context.json",
+    "chunks": {
+      "11e30d": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793477864,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c4ae9a5d"
+        },
+        "hash": "6e1b736c",
+        "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:44 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "9": {
+        "chunkId": "11e30d",
+        "hash": "ffc0d182",
+        "encoded": "expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "11e30d",
+        "hash": "349f880c",
+        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/(%5Ba-f0-9%5D)(;%20Max-Age)/,%20'0$2'))).toBeNull()",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "11e30d",
+        "hash": "3ee2f097",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "11e30d",
+        "hash": "f2dfa39d",
+        "encoded": "it('creates%20an%20anonymous%20identity%20without%20requiring%20registration',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

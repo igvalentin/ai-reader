@@ -1,0 +1,114 @@
+{
+  ".env.example": {
+    "filename": ".env.example",
+    "path": ".env.example",
+    "version": "1.2",
+    "contextFile": "59a10eff-context.json",
+    "chunks": {
+      "134347": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793477831,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c4ae9a5d"
+        },
+        "hash": "5edfaed8",
+        "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:11 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "4": {
+        "chunkId": "134347",
+        "hash": "1acf41da",
+        "encoded": "#%20Server-side%20only%20secrets.%20NEVER%20prefix%20these%20with%20VITE_%20and%20NEVER%20commit%20real%20values.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "134347",
+        "hash": "1617182b",
+        "encoded": "#%20SUPABASE_SERVICE_ROLE_KEY=",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "134347",
+        "hash": "68e8e940",
+        "encoded": "#%20SUPABASE_URL=",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "134347",
+        "hash": "f538d23c",
+        "encoded": "#%20SUPABASE_ANON_KEY=",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "134347",
+        "hash": "c0c94720",
+        "encoded": "#%20ANONYMOUS_USAGE_SECRET=long-random-server-secret",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "134347",
+        "hash": "3a835244",
+        "encoded": "#%20APP_URL=https://your-approved-domain.example",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "134347",
+        "hash": "0945de87",
+        "encoded": "#%20Stripe%20test/live%20values%20are%20configured%20only%20after%20approval;%20use%20test%20mode%20first.",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "134347",
+        "hash": "a414e687",
+        "encoded": "#%20STRIPE_SECRET_KEY=sk_test_...",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "134347",
+        "hash": "de0d132e",
+        "encoded": "#%20STRIPE_PRICE_ID=price_...",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "134347",
+        "hash": "73c5ac34",
+        "encoded": "#%20STRIPE_WEBHOOK_SECRET=whsec_...",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "134347",
+        "hash": "33bec7c4",
+        "encoded": "#%20OCR%20(server-side%20only%20%E2%80%94%20used%20by%20the%20/api/ocr%20Vercel%20Function,%20never%20exposed%20to%20the%20client).",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "134347",
+        "hash": "6f453ac6",
+        "encoded": "#%20OCR_SPACE_API_KEY=your-ocr-space-api-key",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "134347",
+        "hash": "104fcf75",
+        "encoded": "#%20Google%20Cloud%20Text-to-Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix).",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "134347",
+        "hash": "faaed3a1",
+        "encoded": "#%20GOOGLE_CLOUD_TTS_API_KEY=your-google-cloud-tts-api-key",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T20:10:27.620Z",
+  "lastUpdated": "2026-10-31T20:18:10.630Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -36,6 +36,20 @@
       "content": "ai-reader: TTS implemented with provider abstraction, Google /api/tts, Romanian normalization, chunking, client player, language override, docs/tests. Checks pass.",
       "createdAt": "2026-10-31T20:10:27.620Z",
       "updatedAt": "2026-10-31T20:10:27.620Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793477890627_e6fmmn",
+      "content": "Prompt 4: Supabase schema/RLS, signed anonymous entitlement, atomic claim RPC, email magic-link auth, Stripe checkout/portal/status/webhooks, paywall UI, and server TTS enforcement added. No deploy.",
+      "createdAt": "2026-10-31T20:18:10.627Z",
+      "updatedAt": "2026-10-31T20:18:10.627Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793477890630_m5w4p2",
+      "content": "Prompt 4 gates pass: npm test (39 tests), typecheck, production build, and lint.",
+      "createdAt": "2026-10-31T20:18:10.630Z",
+      "updatedAt": "2026-10-31T20:18:10.630Z",
       "isEnabled": true
     }
   ]

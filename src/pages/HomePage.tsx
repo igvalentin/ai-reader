@@ -1,5 +1,6 @@
 import { MainScreenLayout } from '../components/templates/MainScreenLayout'
 import { ReaderCard } from '../components/organisms/ReaderCard'
+import { AuthPanel } from '../components/molecules/AuthPanel'
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         </p>
       </section>
 
+      <AuthPanel />
       <ReaderCard />
 
       <section
@@ -22,8 +24,10 @@ export default function HomePage() {
       >
         <h2 className="mb-2 font-display text-lg text-ink">Despre abonament</h2>
         <p>
-          Prima lectură este gratuită. După ce o asculti integral, continuarea serviciului necesită
-          un abonament activ.
+          Prima lectură reușită este gratuită, fără înregistrare. După aceea, abonamentul oferă
+          lecturi audio nelimitate în limbile disponibile. Prețul și intervalul de facturare sunt
+          configurabile și afișate de Stripe înainte de confirmare. Autentifică-te pentru a activa,
+          restaura sau anula abonamentul.
         </p>
       </section>
     </MainScreenLayout>

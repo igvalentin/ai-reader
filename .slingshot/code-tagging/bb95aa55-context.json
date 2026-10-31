@@ -1,0 +1,15 @@
+{
+  "filename": "ReaderCard.tsx",
+  "path": "src/components/organisms/ReaderCard.tsx",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "c4ae9a5d": {
+      "value": "Prompt 4 — Free Reading and Subscription Paywall\n\nImplement the business model.\n\nProduct rules\n\nEvery new visitor is entitled to one free successful reading.\n\nA successful reading means audio generation completed and playback was made available to the user.\n\nFailed OCR or failed audio generation must not consume the free reading.\n\nAfter the free reading is consumed, further audio generation requires an active subscription.\n\nUsers must be able to understand why they are seeing the paywall and wha"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

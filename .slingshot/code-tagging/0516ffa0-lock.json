@@ -1,0 +1,72 @@
+{
+  "src/components/molecules/FreeTrialNotice.tsx": {
+    "filename": "FreeTrialNotice.tsx",
+    "path": "src/components/molecules/FreeTrialNotice.tsx",
+    "version": "1.2",
+    "contextFile": "0516ffa0-context.json",
+    "chunks": {
+      "7858f0": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793477775,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c4ae9a5d"
+        },
+        "hash": "5e1da723",
+        "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:16:15 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "7858f0",
+        "hash": "97dc67b3",
+        "encoded": "export%20function%20FreeTrialNotice()%20%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "7858f0",
+        "hash": "e09370d4",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "7858f0",
+        "hash": "67538822",
+        "encoded": "%3Caside%20className=%22rounded-lg%20border%20border-teal-soft%20bg-teal-soft/60%20px-4%20py-3%20text-sm%20text-ink%22%20aria-label=%22Regula%20lecturii%20gratuite%22%3E",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "7858f0",
+        "hash": "bf39fb2b",
+        "encoded": "%3Cstrong%3EO%20lectur%C4%83%20gratuit%C4%83%20pentru%20%C3%AEnceput.%3C/strong%3E%20Se%20consum%C4%83%20numai%20c%C3%A2nd%20audio-ul%20este%20generat%20cu%20succes%20%C8%99i%20devine%20disponibil%20pentru%20redare.%20Lecturile%20urm%C4%83toare%20necesit%C4%83%20abonament.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "7858f0",
+        "hash": "569c2b3f",
+        "encoded": "%3C/aside%3E",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "7858f0",
+        "hash": "73715d03",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "7858f0",
+        "hash": "03469704",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -2,13 +2,10 @@
 
 Aplicație web instalabilă (PWA), mobile-first, care permite utilizatorilor să lipească/scrie text,
 să încarce imagini cu text și să-l extragă prin OCR și să asculte textul citit cu voce tare, în
-română și alte limbi (text-to-speech — în curând). Prima lectură este gratuită, apoi este necesar
-un abonament.
+română și engleză. Prima lectură audio reușită este gratuită, apoi este necesar un abonament.
 
-> Această versiune conține fundația aplicației (Prompt 1) și încărcarea de imagini cu extragere de
-> text prin OCR (Prompt 2). Text-to-speech, facturarea și impunerea abonamentului vor fi adăugate în
-> etape ulterioare.
-> Detalii complete despre arhitectură și planul de implementare: [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
+> TTS și paywall-ul sunt implementate, dar schema Supabase și configurarea Stripe trebuie aplicate
+> separat, cu aprobare explicită. Detalii despre arhitectură: [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
 
 ## Stack tehnic
 
@@ -44,8 +41,8 @@ un abonament.
    - `VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY`
 
    > Nu adăuga niciodată cheia `service_role` Supabase sau alte secrete în fișiere cu prefixul
-   > `VITE_` — acestea sunt expuse în codul client. Secretele de server vor fi configurate direct în
-   > variabilele de mediu ale proiectului Vercel, în etapele următoare (OCR/TTS/facturare).
+   > `VITE_` — acestea sunt expuse în codul client. Secretele serverului (`SUPABASE_SERVICE_ROLE_KEY`,
+   > `ANONYMOUS_USAGE_SECRET`, Stripe și furnizorii OCR/TTS) se configurează doar în runtime-ul serverului.
 
 3. Pornește serverul de dezvoltare:
 
@@ -70,16 +67,21 @@ un abonament.
 
 ## Deploy pe Vercel
 
-Proiectul este deja legat la Vercel (`ai-reader-lac.vercel.app`). Fiecare push pe branch-ul principal
-va declanșa automat un build (`npm run build`, ieșire statică Vite servită ca SPA, vezi `vercel.json`).
+Deploy-ul nu face parte din această implementare și necesită aprobare explicită. Înainte de orice
+activare, aplică [`supabase/schema.sql`](./supabase/schema.sql) într-un mediu aprobat și configurează
+valorile Stripe în test mode. Funcțiile server folosesc `api/checkout.ts`, `api/portal.ts`,
+`api/subscription.ts` și `api/stripe-webhook.ts`; nu configura chei live sau webhook-uri de producție
+fără aprobare.
 
-Variabile de mediu necesare în proiectul Vercel (Production):
+Variabile publice necesare pentru client:
 
 - `VITE_EXTERNAL_SUPABASE_URL`
 - `VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY`
 
-> Nu există un mediu de staging — conform cerințelor de producție, se folosește doar proiectul
-> Vercel și Supabase de producție existente, fără duplicate.
+Variabile server-only necesare pentru entitlement/billing:
+
+- `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `ANONYMOUS_USAGE_SECRET`, `APP_URL`
+- `STRIPE_SECRET_KEY`, `STRIPE_PRICE_ID`, `STRIPE_WEBHOOK_SECRET`
 
 ## OCR (extragere text din imagini)
 

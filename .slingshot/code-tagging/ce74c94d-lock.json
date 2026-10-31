@@ -1,0 +1,102 @@
+{
+  "api/checkout.ts": {
+    "filename": "checkout.ts",
+    "path": "api/checkout.ts",
+    "version": "1.2",
+    "contextFile": "ce74c94d-context.json",
+    "chunks": {
+      "da8276": {
+        "user": "Valentin Ion",
+        "model": "claude-sonnet-4-5@20250929",
+        "timestamp": 1793477831,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "c4ae9a5d"
+        },
+        "hash": "ae5c6ab9",
+        "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:11 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "da8276",
+        "hash": "72b40728",
+        "encoded": "import%20type%20%7B%20VercelRequest,%20VercelResponse%20%7D%20from%20'@vercel/node'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "da8276",
+        "hash": "e620b394",
+        "encoded": "import%20%7B%20verifySupabaseUser,%20UnauthorizedError%20%7D%20from%20'../src/server/auth/verifySupabaseUser'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "da8276",
+        "hash": "037236e1",
+        "encoded": "import%20%7B%20associateAnonymousUsage%20%7D%20from%20'../src/server/entitlement/entitlement'",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "da8276",
+        "hash": "3eae39e9",
+        "encoded": "import%20%7B%20createCheckoutSession,%20EntitlementError%20%7D%20from%20'../src/server/billing/billing'",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "da8276",
+        "hash": "4b3c6473",
+        "encoded": "export%20default%20async%20function%20handler(req:%20VercelRequest,%20res:%20VercelResponse)%20%7B",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "da8276",
+        "hash": "9e78b180",
+        "encoded": "if%20(req.method%20!==%20'POST')%20%7B%20res.setHeader('Allow',%20'POST');%20return%20res.status(405).json(%7B%20error:%20'Metod%C4%83%20nepermis%C4%83.'%20%7D)%20%7D",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "da8276",
+        "hash": "244f868b",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "da8276",
+        "hash": "a33a146e",
+        "encoded": "const%20userId%20=%20await%20verifySupabaseUser(req.headers.authorization)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "da8276",
+        "hash": "c67cebb3",
+        "encoded": "await%20associateAnonymousUsage(userId,%20req.headers.cookie)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "da8276",
+        "hash": "feacbd80",
+        "encoded": "const%20url%20=%20await%20createCheckoutSession(userId)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "da8276",
+        "hash": "ffdabbcb",
+        "encoded": "return%20res.status(200).json(%7B%20url%20%7D)",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "da8276",
+        "hash": "b945e345",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

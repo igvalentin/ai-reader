@@ -4,31 +4,46 @@ import { detectLanguage, normalizeLanguage } from '../src/server/tts/language'
 import { normalizeRomanianText } from '../src/server/tts/normalizeRomanianText'
 import { getTtsProvider } from '../src/server/tts/ttsProviderFactory'
 import { TtsProviderError } from '../src/server/tts/ttsProvider'
+import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser'
+import { canGenerateReading, claimSuccessfulReading, EntitlementError, resolveEntitlementIdentity } from '../src/server/entitlement/entitlement'
 
 const MAX_CHARACTERS = 4000
 const cache = new Map<string, { expiresAt: number; chunks: string[]; language: string; voice: { name: string; languageCode: string; gender?: string } }>()
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); res.status(405).json({ error: 'Metodă nepermisă.' }); return }
+  if (req.method !== 'POST') { res.setHeader('Allow', 'POST'); return res.status(405).json({ error: 'Metodă nepermisă.' }) }
   const body = req.body as { text?: unknown; language?: unknown }
-  if (typeof body?.text !== 'string' || body.text.trim().length === 0 || body.text.length > MAX_CHARACTERS) { res.status(400).json({ error: `Textul trebuie să aibă între 1 și ${MAX_CHARACTERS} de caractere.` }); return }
+  if (typeof body?.text !== 'string' || body.text.trim().length === 0 || body.text.length > MAX_CHARACTERS) return res.status(400).json({ error: `Textul trebuie să aibă între 1 și ${MAX_CHARACTERS} de caractere.` })
   const language = body.language ? normalizeLanguage(body.language) : detectLanguage(body.text)
   const normalized = normalizeRomanianText(body.text, language)
-  const cacheKey = `${language}:${normalized}`
-  const cached = cache.get(cacheKey)
-  if (cached && cached.expiresAt > Date.now()) { res.status(200).json({ ...cached, characterCount: body.text.length }); return }
   try {
+    const entitlement = await resolveEntitlementIdentity(req.headers.authorization, req.headers.cookie, verifySupabaseUser)
+    if (!(await canGenerateReading(entitlement))) return res.status(402).json({ code: 'PAYWALL', error: 'Lectura gratuită a fost folosită. Activează un abonament pentru a continua.' })
+    const cacheKey = `${language}:${normalized}`
+    const cached = cache.get(cacheKey)
+    if (cached && cached.expiresAt > Date.now()) {
+      await claimSuccessfulReading(entitlement)
+      if (entitlement.setCookie) res.setHeader('Set-Cookie', entitlement.setCookie)
+      return res.status(200).json({ ...cached, characterCount: body.text.length })
+    }
     const provider = getTtsProvider()
     const voices = await provider.getAvailableVoices(language)
     const voice = voices[0]
-    if (!voice) { res.status(422).json({ error: 'Nu există o voce configurată pentru limba selectată.' }); return }
+    if (!voice) return res.status(422).json({ error: 'Nu există o voce configurată pentru limba selectată.' })
     const chunks = await Promise.all(chunkText(normalized).map(async (chunk) => Buffer.from(await provider.synthesize(chunk, voice)).toString('base64')))
+    await claimSuccessfulReading(entitlement)
     const payload = { language, voice, chunks, characterCount: body.text.length }
     cache.set(cacheKey, { ...payload, expiresAt: Date.now() + 15 * 60 * 1000 })
+    if (entitlement.setCookie) res.setHeader('Set-Cookie', entitlement.setCookie)
     console.info(JSON.stringify({ event: 'tts_synthesis_succeeded', language, chunks: chunks.length, characters: body.text.length }))
-    res.status(200).json(payload)
+    return res.status(200).json(payload)
   } catch (error) {
+    if (error instanceof UnauthorizedError) return res.status(401).json({ code: 'UNAUTHORIZED', error: 'Sesiunea a expirat. Autentifică-te și încearcă din nou.' })
+    if (error instanceof EntitlementError) {
+      if (error.code === 'PAYWALL') return res.status(402).json({ code: 'PAYWALL', error: error.message })
+      return res.status(500).json({ code: 'ENTITLEMENT_ERROR', error: error.message })
+    }
     console.error(JSON.stringify({ event: 'tts_synthesis_failed', language, retryable: error instanceof TtsProviderError ? error.retryable : false }))
-    res.status(error instanceof TtsProviderError && error.retryable ? 503 : 502).json({ error: 'Serviciul de voce nu a putut genera lectura. Încearcă din nou.' })
+    return res.status(error instanceof TtsProviderError && error.retryable ? 503 : 502).json({ error: 'Serviciul de voce nu a putut genera lectura. Încearcă din nou.' })
   }
 }
