@@ -28,7 +28,8 @@ export async function reconcileCheckoutSession(
 ): Promise<boolean> {
   const stripe = getStripe()
   const session = await stripe.checkout.sessions.retrieve(sessionId)
-  const isPaid = session.payment_status === 'paid' || session.payment_status === 'no_payment_required'
+  const isPaid =
+    session.payment_status === 'paid' || session.payment_status === 'no_payment_required'
   if (
     session.client_reference_id !== userId ||
     session.mode !== 'subscription' ||
@@ -72,25 +73,25 @@ function getAppUrl(): string {
   return url.replace(/\/$/, '')
 }
 
-function logStripePriceMismatch(
-  planId: SubscriptionPlanId,
-  price: Stripe.Price,
-): void {
-  console.error(JSON.stringify({
-    event: 'stripe_price_configuration_mismatch',
-    planId,
-    active: price.active,
-    currency: price.currency,
-    unitAmount: price.unit_amount,
-    interval: price.recurring?.interval ?? null,
-    intervalCount: price.recurring?.interval_count ?? null,
-  }))
+function logStripePriceMismatch(planId: SubscriptionPlanId, price: Stripe.Price): void {
+  console.error(
+    JSON.stringify({
+      event: 'stripe_price_configuration_mismatch',
+      planId,
+      active: price.active,
+      currency: price.currency,
+      unitAmount: price.unit_amount,
+      interval: price.recurring?.interval ?? null,
+      intervalCount: price.recurring?.interval_count ?? null,
+    }),
+  )
 }
 
 function expectedStripePriceDescription(plan: SubscriptionPlan): string {
-  const interval = plan.id === '7-days'
-    ? 'săptămânal (week × 1) sau zilnic (day × 7)'
-    : `${plan.interval} × ${plan.intervalCount}`
+  const interval =
+    plan.id === '7-days'
+      ? 'săptămânal (week × 1) sau zilnic (day × 7)'
+      : `${plan.interval} × ${plan.intervalCount}`
   return `${plan.priceRon} RON (${plan.unitAmount} bani), ${interval}`
 }
 
@@ -143,12 +144,14 @@ async function getConfiguredPrice(planId: SubscriptionPlanId) {
     hasMore = pricePage.has_more
   }
   if (matchingPrices.length !== 1) {
-    console.error(JSON.stringify({
-      event: 'stripe_product_price_mismatch',
-      planId: plan.id,
-      activePriceCount,
-      matchingPriceCount: matchingPrices.length,
-    }))
+    console.error(
+      JSON.stringify({
+        event: 'stripe_product_price_mismatch',
+        planId: plan.id,
+        activePriceCount,
+        matchingPriceCount: matchingPrices.length,
+      }),
+    )
     throw new EntitlementError('CONFIGURATION', mismatchMessage)
   }
   return { plan, priceId: matchingPrices[0].id }

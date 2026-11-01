@@ -17,6 +17,42 @@ async function readRawBody(req: VercelRequest): Promise<Buffer> {
   return Buffer.concat(chunks)
 }
 
+async function parseVerifiedStripeEvent(
+  stripe: Stripe,
+  payload: Buffer,
+  signature: string,
+  secret: string,
+): Promise<Stripe.Event> {
+  let parsedPayload: { object?: unknown } | null = null
+  try {
+    const parsed: unknown = JSON.parse(payload.toString('utf8'))
+    if (typeof parsed === 'object' && parsed !== null) {
+      parsedPayload = parsed as { object?: unknown }
+    }
+  } catch {
+    // Snapshot webhooks are parsed and signature-verified by constructEvent below.
+  }
+
+  if (parsedPayload?.object !== 'v2.core.event') {
+    return stripe.webhooks.constructEvent(payload, signature, secret)
+  }
+
+  const notification = stripe.parseEventNotification(payload, signature, secret)
+  const created = Math.floor(Date.parse(notification.created) / 1000)
+  if (!Number.isFinite(created)) throw new Error('Stripe notification has an invalid timestamp.')
+  const notificationWithRelatedObject =
+    notification as Stripe.V2.Core.Events.UnknownEventNotification
+  const relatedObject = notificationWithRelatedObject.related_object
+    ? await notificationWithRelatedObject.fetchRelatedObject()
+    : null
+  return {
+    id: notification.id,
+    type: notification.type.startsWith('v1.') ? notification.type.slice(3) : notification.type,
+    created,
+    data: { object: relatedObject },
+  } as unknown as Stripe.Event
+}
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
@@ -25,7 +61,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET
   if (!secret) return res.status(500).json({ error: 'Configurarea webhook-ului lipsește.' })
   try {
-    const event = getStripe().webhooks.constructEvent(
+    const stripe = getStripe()
+    const event = await parseVerifiedStripeEvent(
+      stripe,
       await readRawBody(req),
       req.headers['stripe-signature'] as string,
       secret,

@@ -17,13 +17,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.setHeader('Allow', 'GET')
     return res.status(405).json({ code: 'METHOD_NOT_ALLOWED', error: 'Metodă nepermisă.' })
   }
-  const sessionId = req.query.session_id
+  const rawSessionId = req.query.session_id
   if (
-    sessionId !== undefined &&
-    (typeof sessionId !== 'string' || !/^cs_[A-Za-z0-9_]{8,255}$/.test(sessionId))
+    rawSessionId !== undefined &&
+    (typeof rawSessionId !== 'string' || !/^cs_[A-Za-z0-9_]{8,255}$/.test(rawSessionId))
   ) {
-    return res.status(400).json({ code: 'INVALID_CHECKOUT_SESSION', error: 'Sesiune Checkout invalidă.' })
+    return res
+      .status(400)
+      .json({ code: 'INVALID_CHECKOUT_SESSION', error: 'Sesiune Checkout invalidă.' })
   }
+  const sessionId = typeof rawSessionId === 'string' ? rawSessionId : undefined
 
   try {
     const userId = await verifySupabaseUser(req.headers.authorization)

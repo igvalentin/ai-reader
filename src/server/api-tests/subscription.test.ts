@@ -27,7 +27,9 @@ vi.mock('../entitlement/entitlement.js', () => ({
   hasActiveSubscription: mocks.hasActiveSubscription,
 }))
 
-vi.mock('../billing/billing.js', () => ({ reconcileCheckoutSession: mocks.reconcileCheckoutSession }))
+vi.mock('../billing/billing.js', () => ({
+  reconcileCheckoutSession: mocks.reconcileCheckoutSession,
+}))
 
 import handler from '../../../api/subscription'
 

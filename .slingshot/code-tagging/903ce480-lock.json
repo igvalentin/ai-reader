@@ -94,6 +94,60 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:31 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "8b067c": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793572285,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4327011f"
+        },
+        "hash": "77e6408f",
+        "messageId": "system_a9fea6e0-d642-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:31:25 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3387a2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793572347,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4327011f"
+        },
+        "hash": "70771544",
+        "messageId": "system_a9fea6e0-d642-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:32:27 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3c3536": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793572347,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4327011f"
+        },
+        "hash": "918be78a",
+        "messageId": "system_a9fea6e0-d642-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:32:27 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -101,465 +155,791 @@
         "chunkId": "8081d0",
         "hash": "1d21f131",
         "encoded": "import%20%7B",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8081d0"
+        ]
       },
       "3": {
         "chunkId": "8081d0",
         "hash": "759817f0",
         "encoded": "applyStripeSubscriptionEvent,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8081d0"
+        ]
       },
       "4": {
         "chunkId": "8081d0",
         "hash": "e2b0e9e4",
         "encoded": "getStripe,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8081d0"
+        ]
       },
       "5": {
         "chunkId": "8081d0",
         "hash": "0a0dd2cf",
         "encoded": "recordBillingEvent,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8081d0"
+        ]
       },
       "6": {
         "chunkId": "8081d0",
         "hash": "039cfc98",
         "encoded": "resolveUserIdForCustomer,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8081d0"
+        ]
       },
       "7": {
         "chunkId": "8081d0",
         "hash": "3b59ed41",
         "encoded": "%7D%20from%20'../src/server/billing/billing.js'",
+        "prevChunkIds": [
+          "8081d0"
+        ]
+      },
+      "11": {
+        "chunkId": "8b067c",
+        "hash": "459c15ab",
+        "encoded": "async%20function%20readRawBody(req:%20VercelRequest):%20Promise%3CBuffer%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "8b067c",
+        "hash": "4d4950e5",
+        "encoded": "if%20(Buffer.isBuffer(req.body))%20return%20req.body",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "8b067c",
+        "hash": "f3c24169",
+        "encoded": "if%20(typeof%20req.body%20===%20'string')%20return%20Buffer.from(req.body)",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "8b067c",
+        "hash": "2ec3189a",
+        "encoded": "const%20chunks:%20Buffer%5B%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "8b067c",
+        "hash": "4377457e",
+        "encoded": "for%20await%20(const%20chunk%20of%20req)%20chunks.push(Buffer.isBuffer(chunk)%20?%20chunk%20:%20Buffer.from(chunk))",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "8b067c",
+        "hash": "e88a2e70",
+        "encoded": "return%20Buffer.concat(chunks)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "8b067c",
+        "hash": "76477189",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "8b067c",
+        "hash": "381dc3bd",
+        "encoded": "async%20function%20parseVerifiedStripeEvent(",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "8b067c",
+        "hash": "6f29d8e7",
+        "encoded": "stripe:%20Stripe,",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "8b067c",
+        "hash": "bc032117",
+        "encoded": "payload:%20Buffer,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "8b067c",
+        "hash": "9d6302a7",
+        "encoded": "signature:%20string,",
         "prevChunkIds": []
       },
       "23": {
-        "chunkId": "a213f8",
-        "hash": "ed34a8fb",
+        "chunkId": "8b067c",
+        "hash": "e1a34de3",
+        "encoded": "secret:%20string,",
+        "prevChunkIds": [
+          "a213f8"
+        ]
+      },
+      "24": {
+        "chunkId": "8b067c",
+        "hash": "15b2b34e",
+        "encoded": "):%20Promise%3CStripe.Event%3E%20%7B",
+        "prevChunkIds": [
+          "a213f8"
+        ]
+      },
+      "25": {
+        "chunkId": "8b067c",
+        "hash": "fc265b40",
+        "encoded": "let%20parsedPayload:%20%7B%20object?:%20unknown%20%7D%20%7C%20null%20=%20null",
+        "prevChunkIds": [
+          "a213f8"
+        ]
+      },
+      "26": {
+        "chunkId": "8b067c",
+        "hash": "341bf252",
         "encoded": "try%20%7B",
         "prevChunkIds": []
       },
-      "24": {
-        "chunkId": "a213f8",
-        "hash": "f4f31d48",
-        "encoded": "const%20event%20=%20getStripe().webhooks.constructEvent(await%20readRawBody(req),%20req.headers%5B'stripe-signature'%5D%20as%20string,%20secret)",
+      "27": {
+        "chunkId": "8b067c",
+        "hash": "775ef5c2",
+        "encoded": "const%20parsed:%20unknown%20=%20JSON.parse(payload.toString('utf8'))",
         "prevChunkIds": []
       },
-      "25": {
-        "chunkId": "a213f8",
-        "hash": "4da37603",
-        "encoded": "if%20(event.type%20===%20'checkout.session.completed')%20%7B",
+      "28": {
+        "chunkId": "8b067c",
+        "hash": "1a66b6c5",
+        "encoded": "if%20(typeof%20parsed%20===%20'object'%20&&%20parsed%20!==%20null)%20%7B",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "8b067c",
+        "hash": "8d941154",
+        "encoded": "parsedPayload%20=%20parsed%20as%20%7B%20object?:%20unknown%20%7D",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "cceb99",
-        "hash": "a50b1c89",
-        "encoded": "let%20processed%20=%20false",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "31": {
-        "chunkId": "cceb99",
-        "hash": "60302f0b",
-        "encoded": "if%20(event.type%20===%20'checkout.session.completed')%20%7B",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "7681360e",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "32": {
-        "chunkId": "cceb99",
-        "hash": "879c29dd",
-        "encoded": "const%20session%20=%20event.data.object%20as%20Stripe.Checkout.Session",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "4d3dfec3",
+        "encoded": "//%20Snapshot%20webhooks%20are%20parsed%20and%20signature-verified%20by%20constructEvent%20below.",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "33": {
-        "chunkId": "cceb99",
-        "hash": "02799a5b",
-        "encoded": "const%20userId%20=%20session.client_reference_id%20??%20session.metadata?.app_user_id",
-        "prevChunkIds": []
-      },
-      "34": {
-        "chunkId": "cceb99",
-        "hash": "a6bd5e75",
-        "encoded": "if%20(userId%20&&%20session.subscription)%20%7B",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "35": {
-        "chunkId": "cceb99",
-        "hash": "20cc3593",
-        "encoded": "const%20subscription%20=%20await%20getStripe().subscriptions.retrieve(",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "fc4bd13d",
+        "encoded": "if%20(parsedPayload?.object%20!==%20'v2.core.event')%20%7B",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "36": {
-        "chunkId": "cceb99",
-        "hash": "cc8f510e",
-        "encoded": "typeof%20session.subscription%20===%20'string'%20?%20session.subscription%20:%20session.subscription.id,",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "c5e27c59",
+        "encoded": "return%20stripe.webhooks.constructEvent(payload,%20signature,%20secret)",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "37": {
-        "chunkId": "cceb99",
-        "hash": "a9a06ea1",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "38": {
-        "chunkId": "cceb99",
-        "hash": "1105ebad",
-        "encoded": "processed%20=%20await%20applyStripeSubscriptionEvent(",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "880eeeff",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "39": {
-        "chunkId": "cceb99",
-        "hash": "6422df28",
-        "encoded": "event,",
+        "chunkId": "3387a2",
+        "hash": "20b151e8",
+        "encoded": "const%20notification%20=%20stripe.parseEventNotification(payload,%20signature,%20secret)",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "cceb99",
-        "hash": "add585a4",
-        "encoded": "userId,",
+        "chunkId": "3387a2",
+        "hash": "5bcd70cb",
+        "encoded": "const%20created%20=%20Math.floor(Date.parse(notification.created)%20/%201000)",
         "prevChunkIds": []
       },
       "41": {
-        "chunkId": "cceb99",
-        "hash": "81f7b337",
-        "encoded": "subscription,",
+        "chunkId": "3387a2",
+        "hash": "0cf1c6da",
+        "encoded": "if%20(!Number.isFinite(created))%20throw%20new%20Error('Stripe%20notification%20has%20an%20invalid%20timestamp.')",
         "prevChunkIds": []
       },
       "42": {
-        "chunkId": "cceb99",
-        "hash": "c581c911",
-        "encoded": "typeof%20session.customer%20===%20'string'%20?%20session.customer%20:%20session.customer?.id,",
+        "chunkId": "3387a2",
+        "hash": "c1459837",
+        "encoded": "const%20notificationWithRelatedObject%20=",
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "cceb99",
-        "hash": "de9a7b90",
-        "encoded": ")",
+        "chunkId": "3387a2",
+        "hash": "0536a342",
+        "encoded": "notification%20as%20Stripe.V2.Core.Events.UnknownEventNotification",
         "prevChunkIds": []
       },
       "44": {
-        "chunkId": "cceb99",
-        "hash": "a738432a",
-        "encoded": "%7D%20else%20%7B",
+        "chunkId": "3387a2",
+        "hash": "3579ebb6",
+        "encoded": "const%20relatedObject%20=%20notificationWithRelatedObject.related_object",
         "prevChunkIds": []
       },
       "45": {
-        "chunkId": "cceb99",
-        "hash": "6c6ceca4",
-        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
+        "chunkId": "3387a2",
+        "hash": "c8d1da67",
+        "encoded": "?%20await%20notificationWithRelatedObject.fetchRelatedObject()",
         "prevChunkIds": []
       },
       "46": {
-        "chunkId": "cceb99",
-        "hash": "f9b2449c",
-        "encoded": "%7D",
+        "chunkId": "3387a2",
+        "hash": "5be95c80",
+        "encoded": ":%20null",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "cceb99",
-        "hash": "6fd6164d",
-        "encoded": "%7D%20else%20if%20(event.type%20===%20'customer.subscription.updated'%20%7C%7C%20event.type%20===%20'customer.subscription.deleted')%20%7B",
+        "chunkId": "3387a2",
+        "hash": "e786cf7e",
+        "encoded": "return%20%7B",
         "prevChunkIds": []
       },
       "48": {
-        "chunkId": "cceb99",
-        "hash": "fcc6e54a",
-        "encoded": "const%20subscription%20=%20event.data.object%20as%20Stripe.Subscription",
+        "chunkId": "3387a2",
+        "hash": "3ee6d22e",
+        "encoded": "id:%20notification.id,",
         "prevChunkIds": []
       },
       "49": {
-        "chunkId": "38fae3",
-        "hash": "5e61420c",
-        "encoded": "%7D%20else%20if%20(",
+        "chunkId": "3387a2",
+        "hash": "e5e2dd04",
+        "encoded": "type:%20notification.type.startsWith('v1.')%20?%20notification.type.slice(3)%20:%20notification.type,",
         "prevChunkIds": []
       },
       "50": {
-        "chunkId": "38fae3",
-        "hash": "eee18758",
-        "encoded": "event.type%20===%20'customer.subscription.updated'%20%7C%7C",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "0ada503c",
+        "encoded": "const%20created%20=%20Math.floor(Date.parse(notification.created)%20/%201000)",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "51": {
-        "chunkId": "38fae3",
-        "hash": "141cc527",
-        "encoded": "event.type%20===%20'customer.subscription.deleted'",
-        "prevChunkIds": []
-      },
-      "52": {
-        "chunkId": "38fae3",
-        "hash": "50402126",
-        "encoded": ")%20%7B",
-        "prevChunkIds": []
-      },
-      "53": {
-        "chunkId": "38fae3",
-        "hash": "7014b5a7",
-        "encoded": "const%20subscription%20=%20event.data.object%20as%20Stripe.Subscription",
-        "prevChunkIds": []
-      },
-      "54": {
-        "chunkId": "38fae3",
-        "hash": "d7d872c7",
-        "encoded": "const%20customerId%20=",
-        "prevChunkIds": []
-      },
-      "55": {
-        "chunkId": "38fae3",
-        "hash": "2b8603a9",
-        "encoded": "typeof%20subscription.customer%20===%20'string'%20?%20subscription.customer%20:%20subscription.customer.id",
-        "prevChunkIds": []
-      },
-      "56": {
-        "chunkId": "38fae3",
-        "hash": "b5a28f59",
-        "encoded": "const%20userId%20=%20await%20resolveUserIdForCustomer(customerId)",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "bf325801",
+        "encoded": "if%20(!Number.isFinite(created))%20throw%20new%20Error('Stripe%20notification%20has%20an%20invalid%20timestamp.')",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "57": {
-        "chunkId": "38fae3",
-        "hash": "1a7e8f20",
-        "encoded": "processed%20=%20userId",
+        "chunkId": "3c3536",
+        "hash": "976b2f37",
+        "encoded": "if%20(!secret)%20return%20res.status(500).json(%7B%20error:%20'Configurarea%20webhook-ului%20lipse%C8%99te.'%20%7D)",
         "prevChunkIds": []
       },
       "58": {
-        "chunkId": "38fae3",
-        "hash": "fcd05954",
-        "encoded": "?%20await%20applyStripeSubscriptionEvent(event,%20userId,%20subscription,%20customerId)",
+        "chunkId": "3c3536",
+        "hash": "30453348",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
       "59": {
-        "chunkId": "38fae3",
-        "hash": "f5a87810",
-        "encoded": ":%20await%20recordBillingEvent(event)",
+        "chunkId": "3c3536",
+        "hash": "b15b64e5",
+        "encoded": "const%20stripe%20=%20getStripe()",
         "prevChunkIds": []
       },
       "60": {
-        "chunkId": "38fae3",
-        "hash": "dbd05836",
-        "encoded": "%7D%20else%20if%20(event.type%20===%20'invoice.paid'%20%7C%7C%20event.type%20===%20'invoice.payment_failed')%20%7B",
+        "chunkId": "3c3536",
+        "hash": "34a3c9e6",
+        "encoded": "const%20event%20=%20await%20parseVerifiedStripeEvent(",
         "prevChunkIds": []
       },
       "61": {
-        "chunkId": "38fae3",
-        "hash": "e6f620a4",
-        "encoded": "const%20invoice%20=%20event.data.object%20as%20unknown%20as%20%7B",
+        "chunkId": "3c3536",
+        "hash": "0b31a70c",
+        "encoded": "stripe,",
         "prevChunkIds": []
       },
       "62": {
-        "chunkId": "38fae3",
-        "hash": "8fada35b",
-        "encoded": "subscription?:%20string%20%7C%20%7B%20id:%20string%20%7D%20%7C%20null",
+        "chunkId": "3c3536",
+        "hash": "93cd465d",
+        "encoded": "await%20readRawBody(req),",
         "prevChunkIds": []
       },
       "63": {
-        "chunkId": "38fae3",
-        "hash": "aa28010e",
-        "encoded": "parent?:%20%7B%20subscription_details?:%20%7B%20subscription?:%20string%20%7C%20%7B%20id:%20string%20%7D%20%7C%20null%20%7D%20%7C%20null%20%7D%20%7C%20null",
+        "chunkId": "3c3536",
+        "hash": "61a82f1e",
+        "encoded": "req.headers%5B'stripe-signature'%5D%20as%20string,",
         "prevChunkIds": []
       },
       "64": {
-        "chunkId": "38fae3",
-        "hash": "48dc6fe2",
-        "encoded": "%7D",
+        "chunkId": "3c3536",
+        "hash": "c677fe80",
+        "encoded": "secret,",
         "prevChunkIds": []
       },
       "65": {
-        "chunkId": "38fae3",
-        "hash": "84a11a9e",
-        "encoded": "const%20subscriptionReference%20=",
+        "chunkId": "3c3536",
+        "hash": "611dfc24",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "66": {
-        "chunkId": "38fae3",
-        "hash": "f1bd5e8c",
-        "encoded": "invoice.subscription%20??%20invoice.parent?.subscription_details?.subscription",
+        "chunkId": "3c3536",
+        "hash": "4411cbca",
+        "encoded": "let%20processed%20=%20false",
         "prevChunkIds": []
       },
       "67": {
-        "chunkId": "38fae3",
-        "hash": "dbc12e48",
-        "encoded": "const%20subscriptionId%20=",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "2433b33f",
+        "encoded": "id:%20notification.id,",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "68": {
-        "chunkId": "38fae3",
-        "hash": "ec05c22a",
-        "encoded": "typeof%20subscriptionReference%20===%20'string'%20?%20subscriptionReference%20:%20subscriptionReference?.id",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "65c85caf",
+        "encoded": "type:%20notification.type.startsWith('v1.')%20?%20notification.type.slice(3)%20:%20notification.type,",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "69": {
-        "chunkId": "38fae3",
-        "hash": "eafdf1d9",
-        "encoded": "if%20(!subscriptionId)%20%7B",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "da954a6d",
+        "encoded": "created,",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "70": {
-        "chunkId": "38fae3",
-        "hash": "51e54789",
-        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "f83dab3e",
+        "encoded": "data:%20%7B%20object:%20relatedObject%20%7D,",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "71": {
-        "chunkId": "38fae3",
-        "hash": "bfd87072",
-        "encoded": "%7D%20else%20%7B",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "007e3c78",
+        "encoded": "%7D%20as%20unknown%20as%20Stripe.Event",
+        "prevChunkIds": [
+          "cceb99"
+        ]
       },
       "72": {
-        "chunkId": "38fae3",
-        "hash": "231faccc",
-        "encoded": "const%20subscription%20=%20await%20getStripe().subscriptions.retrieve(subscriptionId)",
-        "prevChunkIds": []
-      },
-      "73": {
-        "chunkId": "38fae3",
-        "hash": "8fd8da2c",
-        "encoded": "const%20customerId%20=",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "ae47b750",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "38fae3"
+        ]
       },
       "74": {
-        "chunkId": "38fae3",
-        "hash": "37ba75c1",
-        "encoded": "typeof%20subscription.customer%20===%20'string'%20?%20subscription.customer%20:%20subscription.customer.id",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "f9c60b2d",
+        "encoded": "export%20default%20async%20function%20handler(req:%20VercelRequest,%20res:%20VercelResponse)%20%7B",
+        "prevChunkIds": [
+          "38fae3"
+        ]
       },
       "75": {
-        "chunkId": "38fae3",
-        "hash": "55bfdd0e",
-        "encoded": "const%20userId%20=%20await%20resolveUserIdForCustomer(customerId)",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "122c205d",
+        "encoded": "if%20(req.method%20!==%20'POST')%20%7B",
+        "prevChunkIds": [
+          "38fae3"
+        ]
       },
       "76": {
-        "chunkId": "38fae3",
-        "hash": "25e2c824",
-        "encoded": "processed%20=%20userId",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "4459447b",
+        "encoded": "res.setHeader('Allow',%20'POST')",
+        "prevChunkIds": [
+          "38fae3"
+        ]
       },
       "77": {
-        "chunkId": "38fae3",
-        "hash": "b3e4d045",
-        "encoded": "?%20await%20applyStripeSubscriptionEvent(event,%20userId,%20subscription,%20customerId)",
-        "prevChunkIds": []
+        "chunkId": "8b067c",
+        "hash": "08df26a1",
+        "encoded": "return%20res.status(405).json(%7B%20error:%20'Metod%C4%83%20nepermis%C4%83.'%20%7D)",
+        "prevChunkIds": [
+          "38fae3"
+        ]
       },
       "78": {
-        "chunkId": "38fae3",
-        "hash": "4048c7f9",
-        "encoded": ":%20await%20recordBillingEvent(event)",
-        "prevChunkIds": []
-      },
-      "79": {
-        "chunkId": "38fae3",
-        "hash": "8aac2494",
+        "chunkId": "8b067c",
+        "hash": "c46ffadb",
         "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "80": {
-        "chunkId": "38fae3",
-        "hash": "20869538",
-        "encoded": "%7D%20else%20%7B",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "38fae3"
+        ]
       },
       "81": {
-        "chunkId": "38fae3",
-        "hash": "3ec59916",
-        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
-        "prevChunkIds": []
-      },
-      "82": {
-        "chunkId": "38fae3",
-        "hash": "74977a35",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "83": {
-        "chunkId": "cceb99",
-        "hash": "cd9f34db",
-        "encoded": "?%20subscription.customer",
-        "prevChunkIds": []
-      },
-      "84": {
-        "chunkId": "cceb99",
-        "hash": "a6058503",
-        "encoded": ":%20subscription.customer.id",
-        "prevChunkIds": []
-      },
-      "85": {
-        "chunkId": "cceb99",
-        "hash": "ad6736e2",
-        "encoded": "const%20userId%20=%20await%20resolveUserIdForCustomer(customerId)",
-        "prevChunkIds": []
-      },
-      "86": {
-        "chunkId": "cceb99",
-        "hash": "682b3428",
-        "encoded": "processed%20=%20userId",
-        "prevChunkIds": []
-      },
-      "87": {
-        "chunkId": "cceb99",
-        "hash": "ddfb0381",
-        "encoded": "?%20await%20applyStripeSubscriptionEvent(event,%20userId,%20subscription,%20customerId)",
+        "chunkId": "a213f8",
+        "hash": "18c8d957",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
       "88": {
         "chunkId": "cceb99",
-        "hash": "9fd029ad",
-        "encoded": ":%20await%20recordBillingEvent(event)",
+        "hash": "7140c050",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "89": {
         "chunkId": "cceb99",
-        "hash": "c26f5f9b",
-        "encoded": "%7D%20else%20%7B",
+        "hash": "b7a519c3",
+        "encoded": "let%20processed%20=%20false",
         "prevChunkIds": []
       },
       "90": {
-        "chunkId": "cceb99",
-        "hash": "0de02641",
-        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
+        "chunkId": "a213f8",
+        "hash": "b7f99405",
+        "encoded": "if%20(event.type%20===%20'checkout.session.completed')%20%7B",
         "prevChunkIds": []
       },
       "91": {
         "chunkId": "cceb99",
-        "hash": "70416dc1",
-        "encoded": "%7D",
+        "hash": "c333d572",
+        "encoded": "const%20session%20=%20event.data.object%20as%20Stripe.Checkout.Session",
         "prevChunkIds": []
       },
       "92": {
         "chunkId": "cceb99",
-        "hash": "7543fa55",
-        "encoded": "if%20(!processed)%20return%20res.status(200).json(%7B%20received:%20true,%20duplicate:%20true%20%7D)",
+        "hash": "1a7ae591",
+        "encoded": "const%20userId%20=%20session.client_reference_id%20??%20session.metadata?.app_user_id",
         "prevChunkIds": []
       },
-      "116": {
-        "chunkId": "d2dba9",
-        "hash": "415cb3ff",
-        "encoded": "if%20(userId)%20await%20upsertSubscription(userId,%20subscription)",
+      "93": {
+        "chunkId": "cceb99",
+        "hash": "1e005e71",
+        "encoded": "if%20(userId%20&&%20session.subscription)%20%7B",
         "prevChunkIds": []
       },
-      "117": {
-        "chunkId": "d2dba9",
-        "hash": "056477bc",
+      "94": {
+        "chunkId": "cceb99",
+        "hash": "a06752bd",
+        "encoded": "const%20subscription%20=%20await%20getStripe().subscriptions.retrieve(",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "cceb99",
+        "hash": "9cae740b",
+        "encoded": "typeof%20session.subscription%20===%20'string'%20?%20session.subscription%20:%20session.subscription.id,",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "cceb99",
+        "hash": "298f4b08",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "cceb99",
+        "hash": "e963c6fb",
+        "encoded": "processed%20=%20await%20applyStripeSubscriptionEvent(",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "cceb99",
+        "hash": "87542a40",
+        "encoded": "event,",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "cceb99",
+        "hash": "20018173",
+        "encoded": "userId,",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "cceb99",
+        "hash": "390423a9",
+        "encoded": "subscription,",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "cceb99",
+        "hash": "232cdbd7",
+        "encoded": "typeof%20session.customer%20===%20'string'%20?%20session.customer%20:%20session.customer?.id,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "cceb99",
+        "hash": "5161fa08",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "cceb99",
+        "hash": "193c603a",
+        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "cceb99",
+        "hash": "c251d1dd",
         "encoded": "%7D",
         "prevChunkIds": []
       },
+      "106": {
+        "chunkId": "38fae3",
+        "hash": "c093ce24",
+        "encoded": "%7D%20else%20if%20(",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "38fae3",
+        "hash": "e2680d24",
+        "encoded": "event.type%20===%20'customer.subscription.updated'%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "38fae3",
+        "hash": "6e97bff7",
+        "encoded": "event.type%20===%20'customer.subscription.deleted'",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "38fae3",
+        "hash": "0cda10af",
+        "encoded": ")%20%7B",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "cceb99",
+        "hash": "9dd8900f",
+        "encoded": "const%20subscription%20=%20event.data.object%20as%20Stripe.Subscription",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "38fae3",
+        "hash": "3b68386b",
+        "encoded": "const%20customerId%20=",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "38fae3",
+        "hash": "a7c3fa91",
+        "encoded": "typeof%20subscription.customer%20===%20'string'%20?%20subscription.customer%20:%20subscription.customer.id",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "38fae3",
+        "hash": "79a42f4c",
+        "encoded": "const%20userId%20=%20await%20resolveUserIdForCustomer(customerId)",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "38fae3",
+        "hash": "9675c3d7",
+        "encoded": "processed%20=%20userId",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "38fae3",
+        "hash": "9b8857ce",
+        "encoded": "?%20await%20applyStripeSubscriptionEvent(event,%20userId,%20subscription,%20customerId)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "38fae3",
+        "hash": "13466698",
+        "encoded": ":%20await%20recordBillingEvent(event)",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "38fae3",
+        "hash": "bd6d26f5",
+        "encoded": "%7D%20else%20if%20(event.type%20===%20'invoice.paid'%20%7C%7C%20event.type%20===%20'invoice.payment_failed')%20%7B",
+        "prevChunkIds": []
+      },
       "118": {
-        "chunkId": "d2dba9",
-        "hash": "f81676e9",
-        "encoded": "if%20(!(await%20recordBillingEvent(event)))%20return%20res.status(200).json(%7B%20received:%20true,%20duplicate:%20true%20%7D)",
+        "chunkId": "38fae3",
+        "hash": "f98bd532",
+        "encoded": "const%20invoice%20=%20event.data.object%20as%20unknown%20as%20%7B",
         "prevChunkIds": []
       },
       "119": {
+        "chunkId": "38fae3",
+        "hash": "ea0e0bc5",
+        "encoded": "subscription?:%20string%20%7C%20%7B%20id:%20string%20%7D%20%7C%20null",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "38fae3",
+        "hash": "2bf02615",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "38fae3",
+        "hash": "4ee95c69",
+        "encoded": "const%20subscriptionReference%20=",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "38fae3",
+        "hash": "a771dc22",
+        "encoded": "invoice.subscription%20??%20invoice.parent?.subscription_details?.subscription",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "38fae3",
+        "hash": "2367c42c",
+        "encoded": "const%20subscriptionId%20=",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "38fae3",
+        "hash": "dfa890ee",
+        "encoded": "if%20(!subscriptionId)%20%7B",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "38fae3",
+        "hash": "a974ea77",
+        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "38fae3",
+        "hash": "37e4d7e6",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "38fae3",
+        "hash": "db7430cb",
+        "encoded": "const%20subscription%20=%20await%20getStripe().subscriptions.retrieve(subscriptionId)",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "38fae3",
+        "hash": "5147b2fe",
+        "encoded": "const%20customerId%20=",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "cceb99",
+        "hash": "2b5dcce4",
+        "encoded": "?%20subscription.customer",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "cceb99",
+        "hash": "596c293f",
+        "encoded": ":%20subscription.customer.id",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "38fae3",
+        "hash": "af45bb97",
+        "encoded": "const%20userId%20=%20await%20resolveUserIdForCustomer(customerId)",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "38fae3",
+        "hash": "a6c1b40d",
+        "encoded": "processed%20=%20userId",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "38fae3",
+        "hash": "48260b07",
+        "encoded": "?%20await%20applyStripeSubscriptionEvent(event,%20userId,%20subscription,%20customerId)",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "38fae3",
+        "hash": "0ac6252b",
+        "encoded": ":%20await%20recordBillingEvent(event)",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "38fae3",
+        "hash": "1b2fde43",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "38fae3",
+        "hash": "c5a10566",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "38fae3",
+        "hash": "255bd84d",
+        "encoded": "processed%20=%20await%20recordBillingEvent(event)",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "38fae3",
+        "hash": "48cab207",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "cceb99",
+        "hash": "d8ddf7fe",
+        "encoded": "if%20(!processed)%20return%20res.status(200).json(%7B%20received:%20true,%20duplicate:%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "147": {
         "chunkId": "d2dba9",
-        "hash": "20786532",
+        "hash": "3897194b",
         "encoded": "return%20res.status(200).json(%7B%20received:%20true%20%7D)",
         "prevChunkIds": []
       },
-      "120": {
+      "148": {
         "chunkId": "d2dba9",
-        "hash": "5ccd2f42",
+        "hash": "f89a7ec7",
         "encoded": "%7D%20catch%20(error)%20%7B",
         "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "cceb99",
+        "hash": "e9785117",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "38fae3"
+        ]
+      },
+      "162": {
+        "chunkId": "d2dba9",
+        "hash": "9f3096f5",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "38fae3"
+        ]
       }
     },
-    "_prevLineCount": 62
+    "_prevLineCount": 141
   }
 }

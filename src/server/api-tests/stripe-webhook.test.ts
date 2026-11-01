@@ -5,6 +5,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 const mocks = vi.hoisted(() => ({
   calls: [] as string[],
   constructEvent: vi.fn(),
+  parseEventNotification: vi.fn(),
   getStripe: vi.fn(),
   retrieveSubscription: vi.fn(),
   applyStripeSubscriptionEvent: vi.fn(),
@@ -21,11 +22,11 @@ vi.mock('../billing/billing.js', () => ({
 
 import handler from '../../../api/stripe-webhook'
 
-function createMockReqRes() {
+function createMockReqRes(body = 'verified-event-body') {
   const req = {
     method: 'POST',
     headers: { 'stripe-signature': 'test-signature' },
-    body: Buffer.from('verified-event-body'),
+    body: Buffer.from(body),
   } as unknown as VercelRequest
 
   const res = {
@@ -85,8 +86,10 @@ describe('POST /api/stripe-webhook', () => {
     mocks.calls.length = 0
     mocks.constructEvent.mockReset().mockReturnValue(subscriptionUpdatedEvent())
     mocks.retrieveSubscription.mockReset().mockResolvedValue(subscriptionUpdatedEvent().data.object)
+    mocks.parseEventNotification.mockReset()
     mocks.getStripe.mockReset().mockReturnValue({
       webhooks: { constructEvent: mocks.constructEvent },
+      parseEventNotification: mocks.parseEventNotification,
       subscriptions: { retrieve: mocks.retrieveSubscription },
     })
     mocks.recordBillingEvent.mockReset().mockImplementation(async () => {
@@ -139,6 +142,46 @@ describe('POST /api/stripe-webhook', () => {
       'cus_test_123',
     )
     expect(mocks.recordBillingEvent).not.toHaveBeenCalled()
+  })
+
+  it('verifies and processes Stripe v2 thin Checkout notifications', async () => {
+    const session = checkoutCompletedEvent().data.object as Stripe.Checkout.Session
+    const fetchRelatedObject = vi.fn().mockResolvedValue(session)
+    const notification = {
+      id: 'evt_test_thin_checkout_123',
+      object: 'v2.core.event',
+      type: 'v1.checkout.session.completed',
+      created: '2026-11-01T22:13:42.124Z',
+      related_object: {
+        id: 'cs_test_123',
+        type: 'checkout.session',
+        url: '/v1/checkout/sessions/cs_test_123',
+      },
+      fetchRelatedObject,
+    } as unknown as Stripe.V2.Core.EventNotification
+    const payload = JSON.stringify(notification)
+    mocks.parseEventNotification.mockReturnValueOnce(notification)
+    const { req, res } = createMockReqRes(payload)
+
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(200)
+    expect(mocks.parseEventNotification).toHaveBeenCalledWith(
+      Buffer.from(payload),
+      'test-signature',
+      'test-webhook-secret',
+    )
+    expect(fetchRelatedObject).toHaveBeenCalledOnce()
+    expect(mocks.applyStripeSubscriptionEvent).toHaveBeenCalledWith(
+      expect.objectContaining({
+        id: 'evt_test_thin_checkout_123',
+        type: 'checkout.session.completed',
+        created: Math.floor(Date.parse('2026-11-01T22:13:42.124Z') / 1000),
+      }),
+      'user-123',
+      subscriptionUpdatedEvent().data.object,
+      'cus_test_123',
+    )
   })
 
   it('acknowledges duplicate subscription events without applying them twice', async () => {

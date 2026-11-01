@@ -96,9 +96,9 @@ describe('reconcileCheckoutSession', () => {
       data: null,
       error: { code: 'PGRST202', message: 'private database error' },
     })
-    await expect(reconcileCheckoutSession('user-123', paidCheckoutSession.id)).rejects.toMatchObject(
-      { code: 'DATABASE' },
-    )
+    await expect(
+      reconcileCheckoutSession('user-123', paidCheckoutSession.id),
+    ).rejects.toMatchObject({ code: 'DATABASE' })
     expect(errorLog).toHaveBeenCalledWith(expect.stringContaining('PGRST202'))
     expect(JSON.stringify(errorLog.mock.calls)).not.toContain('private database error')
   })

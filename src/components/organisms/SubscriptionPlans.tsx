@@ -33,8 +33,7 @@ export function SubscriptionPlans() {
   const requestIdRef = useRef<{ planId: SubscriptionPlanId; requestId: string } | null>(null)
   const checkoutParams = new URLSearchParams(window.location.search)
   const checkoutResult = checkoutParams.get('checkout')
-  const checkoutSessionId =
-    checkoutResult === 'success' ? checkoutParams.get('session_id') : null
+  const checkoutSessionId = checkoutResult === 'success' ? checkoutParams.get('session_id') : null
 
   useEffect(() => {
     void supabase.auth.getSession().then(({ data }) => {
