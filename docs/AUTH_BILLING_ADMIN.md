@@ -56,7 +56,7 @@ Dacă ai deja configurat ID-uri **Product** (prefix `prod_`), backend-ul accept�
 - `STRIPE_PRICE_PLAN_2` — produsul pentru 30 de zile
 - `STRIPE_PRICE_PLAN_3` — produsul anual
 
-Dacă sunt setate ambele variante, `STRIPE_PRICE_ID_*` are prioritate. În modul Product ID, serverul caută în Stripe un singur Price activ care corespunde sumei, monedei RON și intervalului așteptat; zero sau mai multe potriviri înseamnă refuzarea Checkout-ului. Pentru configurația Vercel folosește valorile din Production și redeployează codul după actualizarea variabilelor. Trecerea în Live mode se face numai după aprobarea explicită și verificarea prețurilor.
+Dacă sunt setate ambele variante, `STRIPE_PRICE_ID_*` are prioritate. Pentru planul de 7 zile, backend-ul acceptă recurență `week × 1` sau echivalent `day × 7`; celelalte intervale trebuie să corespundă exact planului. În modul Product ID, serverul caută în Stripe un singur Price activ care corespunde sumei, monedei RON și intervalului așteptat; zero sau mai multe potriviri înseamnă refuzarea Checkout-ului. Pentru configurația Vercel folosește valorile din Production și redeployează codul după actualizarea variabilelor. Trecerea în Live mode se face numai după aprobarea explicită și verificarea prețurilor.
 
 În Stripe, configurează webhook-ul către `https://ai-reader-lac.vercel.app/api/stripe-webhook` și abonează-te la:
 

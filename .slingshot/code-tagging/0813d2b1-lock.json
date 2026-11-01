@@ -94,6 +94,24 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:22:24 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "54d201": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793568683,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "ea050f30"
+        },
+        "hash": "69025476",
+        "messageId": "system_34d4c590-d63b-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:31:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -200,12 +218,10 @@
         ]
       },
       "58": {
-        "chunkId": "735843",
-        "hash": "73e09c6a",
-        "encoded": "Dac%C4%83%20sunt%20setate%20ambele%20variante,%20%60STRIPE_PRICE_ID_*%60%20are%20prioritate.%20%C3%8En%20modul%20Product%20ID,%20serverul%20caut%C4%83%20%C3%AEn%20Stripe%20un%20singur%20Price%20activ%20care%20corespunde%20sumei,%20monedei%20RON%20%C8%99i%20intervalului%20a%C8%99teptat;%20zero%20sau%20mai%20multe%20potriviri%20%C3%AEnseamn%C4%83%20refuzarea%20Checkout-ului.%20Pentru%20configura%C8%9Bia%20Vercel%20folose%C8%99te%20valorile%20din%20Production%20%C8%99i%20redeployeaz%C4%83%20codul%20dup%C4%83%20actualizarea%20variabilelor.%20Trecerea%20%C3%AEn%20Live%20mode%20se%20face%20numai%20dup%C4%83%20aprobarea%20explicit%C4%83%20%C8%99i%20verificarea%20pre%C8%9Burilor.",
-        "prevChunkIds": [
-          "735843"
-        ]
+        "chunkId": "54d201",
+        "hash": "26a20191",
+        "encoded": "Dac%C4%83%20sunt%20setate%20ambele%20variante,%20%60STRIPE_PRICE_ID_*%60%20are%20prioritate.%20Pentru%20planul%20de%207%20zile,%20backend-ul%20accept%C4%83%20recuren%C8%9B%C4%83%20%60week%20%C3%97%201%60%20sau%20echivalent%20%60day%20%C3%97%207%60;%20celelalte%20intervale%20trebuie%20s%C4%83%20corespund%C4%83%20exact%20planului.%20%C3%8En%20modul%20Product%20ID,%20serverul%20caut%C4%83%20%C3%AEn%20Stripe%20un%20singur%20Price%20activ%20care%20corespunde%20sumei,%20monedei%20RON%20%C8%99i%20intervalului%20a%C8%99teptat;%20zero%20sau%20mai%20multe%20potriviri%20%C3%AEnseamn%C4%83%20refuzarea%20Checkout-ului.",
+        "prevChunkIds": []
       },
       "87": {
         "chunkId": "1441d7",

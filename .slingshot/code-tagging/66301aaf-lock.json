@@ -74,7 +74,7 @@
         "hash": "b0022270",
         "messageId": "system_1b4444d0-d568-11f1-acd8-438652602d1f",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       },
       "338b87": {
@@ -292,6 +292,24 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:19:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c32dab": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793568728,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "ea050f30"
+        },
+        "hash": "26ec1877",
+        "messageId": "system_34d4c590-d63b-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:32:08 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -361,1474 +379,1420 @@
         "encoded": "%7D%20from%20'./plans.js'",
         "prevChunkIds": []
       },
-      "13": {
-        "chunkId": "2d9dbb",
-        "hash": "39ddb1c3",
-        "encoded": "findSubscriptionPlan,",
-        "prevChunkIds": []
-      },
       "14": {
         "chunkId": "2d9dbb",
-        "hash": "c7b7a667",
-        "encoded": "stripePriceMatchesPlan,",
-        "prevChunkIds": []
-      },
-      "15": {
-        "chunkId": "2d9dbb",
-        "hash": "9aabd95a",
-        "encoded": "type%20SubscriptionPlanId,",
-        "prevChunkIds": []
-      },
-      "16": {
-        "chunkId": "2d9dbb",
-        "hash": "7c19d2d7",
-        "encoded": "%7D%20from%20'./plans.js'",
-        "prevChunkIds": []
-      },
-      "18": {
-        "chunkId": "2d9dbb",
-        "hash": "dfe1870a",
+        "hash": "2d84574b",
         "encoded": "let%20stripe:%20Stripe%20%7C%20undefined",
         "prevChunkIds": []
       },
-      "37": {
+      "21": {
         "chunkId": "ef2df5",
-        "hash": "479f2a72",
-        "encoded": "async%20function%20getConfiguredPrice(planId:%20SubscriptionPlanId)%20%7B",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ef2df5",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "e25b76",
+        "hash": "dfad4947",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "c32dab",
+        "hash": "947deb14",
+        "encoded": "function%20logStripePriceMismatch(",
         "prevChunkIds": []
       },
       "38": {
-        "chunkId": "ef2df5",
-        "hash": "fa1b06be",
-        "encoded": "const%20plan%20=%20findSubscriptionPlan(planId)",
+        "chunkId": "c32dab",
+        "hash": "a5d0b8de",
+        "encoded": "planId:%20SubscriptionPlanId,",
         "prevChunkIds": []
       },
       "39": {
-        "chunkId": "ef2df5",
-        "hash": "03062b8c",
-        "encoded": "if%20(!plan)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Planul%20selectat%20nu%20este%20disponibil.')",
+        "chunkId": "c32dab",
+        "hash": "fec483f2",
+        "encoded": "price:%20Stripe.Price,",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "ef2df5",
-        "hash": "1061a9aa",
-        "encoded": "const%20stripe%20=%20getStripe()",
+        "chunkId": "c32dab",
+        "hash": "45ccf75b",
+        "encoded": "):%20void%20%7B",
         "prevChunkIds": []
       },
       "41": {
-        "chunkId": "ef2df5",
-        "hash": "f84cf673",
-        "encoded": "const%20configuredPriceId%20=%20process.env%5Bplan.priceEnvironmentVariable%5D?.trim()",
+        "chunkId": "c32dab",
+        "hash": "e6c6e5db",
+        "encoded": "console.error(JSON.stringify(%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "c32dab",
+        "hash": "016f8165",
+        "encoded": "event:%20'stripe_price_configuration_mismatch',",
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "ef2df5",
-        "hash": "65c8de3b",
-        "encoded": "if%20(configuredPriceId)%20%7B",
+        "chunkId": "c32dab",
+        "hash": "3d678be8",
+        "encoded": "planId,",
         "prevChunkIds": []
       },
       "44": {
-        "chunkId": "ef2df5",
-        "hash": "4e7109d3",
-        "encoded": "const%20price%20=%20await%20stripe.prices.retrieve(configuredPriceId)",
+        "chunkId": "c32dab",
+        "hash": "fa5ab78b",
+        "encoded": "active:%20price.active,",
         "prevChunkIds": []
       },
       "45": {
-        "chunkId": "ef2df5",
-        "hash": "927554c8",
-        "encoded": "if%20(!stripePriceMatchesPlan(price,%20plan))%20%7B",
+        "chunkId": "c32dab",
+        "hash": "f7d330ff",
+        "encoded": "currency:%20price.currency,",
         "prevChunkIds": []
       },
       "46": {
-        "chunkId": "ef2df5",
-        "hash": "db369baa",
-        "encoded": "throw%20new%20EntitlementError(",
+        "chunkId": "c32dab",
+        "hash": "6b854168",
+        "encoded": "unitAmount:%20price.unit_amount,",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "ef2df5",
-        "hash": "75c035f0",
-        "encoded": "'CONFIGURATION',",
+        "chunkId": "c32dab",
+        "hash": "b2523a43",
+        "encoded": "interval:%20price.recurring?.interval%20??%20null,",
         "prevChunkIds": []
       },
       "48": {
-        "chunkId": "ef2df5",
-        "hash": "4fd00912",
-        "encoded": "%60Pre%C8%9Bul%20Stripe%20pentru%20planul%20$%7Bplan.id%7D%20nu%20corespunde%20sumei%20sau%20duratei%20configurate.%60,",
+        "chunkId": "c32dab",
+        "hash": "d7b064a7",
+        "encoded": "intervalCount:%20price.recurring?.interval_count%20??%20null,",
         "prevChunkIds": []
       },
       "49": {
-        "chunkId": "ef2df5",
-        "hash": "bd67edb6",
-        "encoded": ")",
+        "chunkId": "c32dab",
+        "hash": "011a716a",
+        "encoded": "%7D))",
         "prevChunkIds": []
       },
       "50": {
-        "chunkId": "ef2df5",
+        "chunkId": "c32dab",
         "hash": "6a5bdc1a",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "51": {
-        "chunkId": "ef2df5",
-        "hash": "bda00c19",
-        "encoded": "return%20%7B%20plan,%20priceId:%20price.id%20%7D",
+      "52": {
+        "chunkId": "c32dab",
+        "hash": "b81ff4c8",
+        "encoded": "function%20expectedStripePriceDescription(plan:%20ReturnType%3Ctypeof%20findSubscriptionPlan%3E%20&%20%7B%7D)%20%7B",
         "prevChunkIds": []
       },
-      "52": {
-        "chunkId": "ef2df5",
-        "hash": "88fadba2",
-        "encoded": "%7D",
+      "53": {
+        "chunkId": "c32dab",
+        "hash": "8f7ce961",
+        "encoded": "if%20(!plan)%20return%20'plan%20inexistent'",
         "prevChunkIds": []
       },
       "54": {
-        "chunkId": "ef2df5",
-        "hash": "a1bd1dbc",
-        "encoded": "const%20productId%20=%20process.env%5Bplan.productEnvironmentVariable%5D?.trim()",
+        "chunkId": "c32dab",
+        "hash": "8ae8bea4",
+        "encoded": "const%20interval%20=%20plan.id%20===%20'7-days'",
         "prevChunkIds": []
       },
       "55": {
-        "chunkId": "ef2df5",
-        "hash": "0ee1bbf6",
-        "encoded": "if%20(!productId)%20%7B",
+        "chunkId": "c32dab",
+        "hash": "bf55b6ce",
+        "encoded": "?%20's%C4%83pt%C4%83m%C3%A2nal%20(week%20%C3%97%201)%20sau%20zilnic%20(day%20%C3%97%207)'",
         "prevChunkIds": []
       },
       "56": {
-        "chunkId": "ef2df5",
-        "hash": "020a4ba4",
-        "encoded": "throw%20new%20EntitlementError(",
+        "chunkId": "c32dab",
+        "hash": "2e033f27",
+        "encoded": ":%20%60$%7Bplan.interval%7D%20%C3%97%20$%7Bplan.intervalCount%7D%60",
         "prevChunkIds": []
       },
       "57": {
-        "chunkId": "ef2df5",
-        "hash": "0c05d667",
-        "encoded": "'CONFIGURATION',",
+        "chunkId": "c32dab",
+        "hash": "8a9d84b4",
+        "encoded": "return%20%60$%7Bplan.priceRon%7D%20RON%20($%7Bplan.unitAmount%7D%20bani),%20$%7Binterval%7D%60",
         "prevChunkIds": []
       },
       "58": {
-        "chunkId": "ef2df5",
-        "hash": "f93ca640",
-        "encoded": "%60Configureaz%C4%83%20$%7Bplan.priceEnvironmentVariable%7D%20cu%20un%20Price%20ID%20sau%20$%7Bplan.productEnvironmentVariable%7D%20cu%20un%20Product%20ID%20pentru%20planul%20$%7Bplan.id%7D.%60,",
-        "prevChunkIds": []
-      },
-      "59": {
-        "chunkId": "ef2df5",
-        "hash": "86d6f6a3",
-        "encoded": ")",
+        "chunkId": "c32dab",
+        "hash": "f4e179c9",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "60": {
-        "chunkId": "ef2df5",
-        "hash": "42f7c135",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "62": {
-        "chunkId": "ef2df5",
-        "hash": "bf017550",
-        "encoded": "const%20priceList%20=%20await%20stripe.prices.list(%7B%20product:%20productId,%20active:%20true,%20limit:%20100%20%7D)",
-        "prevChunkIds": []
-      },
-      "63": {
-        "chunkId": "ef2df5",
-        "hash": "6cfb0432",
-        "encoded": "const%20matchingPrices%20=%20priceList.data.filter((price)%20=%3E%20stripePriceMatchesPlan(price,%20plan))",
-        "prevChunkIds": []
-      },
-      "64": {
-        "chunkId": "ef2df5",
-        "hash": "fe8a8eb3",
-        "encoded": "if%20(matchingPrices.length%20!==%201)%20%7B",
-        "prevChunkIds": []
-      },
-      "65": {
-        "chunkId": "ef2df5",
-        "hash": "161734c7",
-        "encoded": "throw%20new%20EntitlementError(",
-        "prevChunkIds": []
-      },
-      "66": {
-        "chunkId": "ef2df5",
-        "hash": "b0760a68",
-        "encoded": "'CONFIGURATION',",
-        "prevChunkIds": []
-      },
-      "67": {
-        "chunkId": "ef2df5",
-        "hash": "604b25b2",
-        "encoded": "%60Produsul%20Stripe%20configurat%20pentru%20planul%20$%7Bplan.id%7D%20trebuie%20s%C4%83%20aib%C4%83%20exact%20un%20Price%20activ%20cu%20suma%20%C8%99i%20durata%20a%C8%99teptate.%60,",
-        "prevChunkIds": []
-      },
-      "68": {
-        "chunkId": "ef2df5",
-        "hash": "7ddc7466",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "69": {
-        "chunkId": "ef2df5",
-        "hash": "9b4a30da",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "70": {
-        "chunkId": "ef2df5",
-        "hash": "0b5e0dc6",
-        "encoded": "return%20%7B%20plan,%20priceId:%20matchingPrices%5B0%5D.id%20%7D",
-        "prevChunkIds": []
-      },
-      "71": {
-        "chunkId": "ef2df5",
-        "hash": "f064f9d6",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "85": {
-        "chunkId": "ceed97",
-        "hash": "7a6a8a85",
+        "chunkId": "c32dab",
+        "hash": "5faea9f5",
         "encoded": "async%20function%20getConfiguredPrice(planId:%20SubscriptionPlanId)%20%7B",
         "prevChunkIds": []
       },
-      "86": {
-        "chunkId": "ceed97",
-        "hash": "0e34b8eb",
+      "61": {
+        "chunkId": "c32dab",
+        "hash": "4d9daaff",
         "encoded": "const%20plan%20=%20findSubscriptionPlan(planId)",
         "prevChunkIds": []
       },
-      "87": {
-        "chunkId": "ceed97",
-        "hash": "0f298e64",
+      "62": {
+        "chunkId": "c32dab",
+        "hash": "25dfa3a2",
         "encoded": "if%20(!plan)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Planul%20selectat%20nu%20este%20disponibil.')",
         "prevChunkIds": []
       },
-      "88": {
-        "chunkId": "ceed97",
-        "hash": "bbffa3e3",
-        "encoded": "const%20priceId%20=%20process.env%5Bplan.priceEnvironmentVariable%5D",
+      "63": {
+        "chunkId": "c32dab",
+        "hash": "debf56f2",
+        "encoded": "const%20stripe%20=%20getStripe()",
         "prevChunkIds": []
       },
-      "89": {
-        "chunkId": "ceed97",
-        "hash": "4653e0a4",
-        "encoded": "if%20(!priceId)%20%7B",
+      "64": {
+        "chunkId": "c32dab",
+        "hash": "e298f8ea",
+        "encoded": "const%20configuredPriceId%20=%20process.env%5Bplan.priceEnvironmentVariable%5D?.trim()",
         "prevChunkIds": []
       },
-      "90": {
-        "chunkId": "ceed97",
-        "hash": "e598d799",
-        "encoded": "throw%20new%20EntitlementError(",
+      "65": {
+        "chunkId": "c32dab",
+        "hash": "6d52e7eb",
+        "encoded": "const%20mismatchMessage%20=%20%60Price-ul%20planului%20$%7Bplan.label%7D%20trebuie%20s%C4%83%20fie%20activ%20%C8%99i%20s%C4%83%20corespund%C4%83:%20$%7BexpectedStripePriceDescription(plan)%7D.%60",
         "prevChunkIds": []
       },
-      "91": {
-        "chunkId": "02f563",
-        "hash": "a181ac13",
-        "encoded": "export%20async%20function%20createCheckoutSession(",
+      "67": {
+        "chunkId": "c32dab",
+        "hash": "d93f789c",
+        "encoded": "if%20(configuredPriceId)%20%7B",
         "prevChunkIds": []
       },
-      "92": {
-        "chunkId": "02f563",
-        "hash": "5746edec",
-        "encoded": "userId:%20string,",
+      "68": {
+        "chunkId": "c32dab",
+        "hash": "f28c4911",
+        "encoded": "const%20price%20=%20await%20stripe.prices.retrieve(configuredPriceId)",
         "prevChunkIds": []
       },
-      "93": {
-        "chunkId": "02f563",
-        "hash": "73cc9b75",
-        "encoded": "planId:%20SubscriptionPlanId,",
-        "prevChunkIds": []
-      },
-      "94": {
-        "chunkId": "02f563",
-        "hash": "b1717f4d",
-        "encoded": "requestId:%20string,",
-        "prevChunkIds": []
-      },
-      "95": {
-        "chunkId": "02f563",
-        "hash": "454e3f23",
-        "encoded": "email?:%20string,",
-        "prevChunkIds": []
-      },
-      "96": {
-        "chunkId": "e25b76",
-        "hash": "54ddb03b",
-        "encoded": "const%20matchingPrices:%20Stripe.Price%5B%5D%20=%20%5B%5D",
-        "prevChunkIds": []
-      },
-      "97": {
-        "chunkId": "e25b76",
-        "hash": "c3f8834d",
-        "encoded": "let%20startingAfter:%20string%20%7C%20undefined",
-        "prevChunkIds": []
-      },
-      "98": {
-        "chunkId": "e25b76",
-        "hash": "bdb13a18",
-        "encoded": "let%20hasMore%20=%20true",
-        "prevChunkIds": []
-      },
-      "99": {
-        "chunkId": "e25b76",
-        "hash": "ead6d3ad",
-        "encoded": "while%20(hasMore)%20%7B",
-        "prevChunkIds": []
-      },
-      "100": {
-        "chunkId": "e25b76",
-        "hash": "4aedfea1",
-        "encoded": "const%20pricePage%20=%20await%20stripe.prices.list(%7B",
-        "prevChunkIds": []
-      },
-      "101": {
-        "chunkId": "e25b76",
-        "hash": "792f1e62",
-        "encoded": "product:%20productId,",
-        "prevChunkIds": []
-      },
-      "102": {
-        "chunkId": "e25b76",
-        "hash": "4a527620",
-        "encoded": "active:%20true,",
-        "prevChunkIds": []
-      },
-      "103": {
-        "chunkId": "e25b76",
-        "hash": "cbd6f5b9",
-        "encoded": "limit:%20100,",
-        "prevChunkIds": []
-      },
-      "104": {
-        "chunkId": "e25b76",
-        "hash": "626fabbb",
-        "encoded": "...(startingAfter%20?%20%7B%20starting_after:%20startingAfter%20%7D%20:%20%7B%7D),",
-        "prevChunkIds": []
-      },
-      "105": {
-        "chunkId": "e25b76",
-        "hash": "97b89d43",
-        "encoded": "%7D)",
-        "prevChunkIds": []
-      },
-      "106": {
-        "chunkId": "e25b76",
-        "hash": "f1d70017",
-        "encoded": "matchingPrices.push(...pricePage.data.filter((price)%20=%3E%20stripePriceMatchesPlan(price,%20plan)))",
-        "prevChunkIds": []
-      },
-      "107": {
-        "chunkId": "e25b76",
-        "hash": "a8abf903",
-        "encoded": "if%20(matchingPrices.length%20%3E%201%20%7C%7C%20!pricePage.has_more)%20break",
-        "prevChunkIds": []
-      },
-      "108": {
-        "chunkId": "e25b76",
-        "hash": "2c69ad0a",
-        "encoded": "const%20lastPrice%20=%20pricePage.data%5BpricePage.data.length%20-%201%5D",
-        "prevChunkIds": []
-      },
-      "109": {
-        "chunkId": "e25b76",
-        "hash": "3e4cd79c",
-        "encoded": "if%20(!lastPrice)%20%7B",
-        "prevChunkIds": []
-      },
-      "110": {
-        "chunkId": "e25b76",
-        "hash": "2c9b3127",
-        "encoded": "throw%20new%20EntitlementError(",
-        "prevChunkIds": []
-      },
-      "111": {
-        "chunkId": "e25b76",
-        "hash": "03aeb828",
-        "encoded": "'CONFIGURATION',",
-        "prevChunkIds": []
-      },
-      "112": {
-        "chunkId": "e25b76",
-        "hash": "b6729207",
-        "encoded": "%60Nu%20s-au%20putut%20lista%20pre%C8%9Burile%20Stripe%20pentru%20planul%20$%7Bplan.id%7D.%60,",
-        "prevChunkIds": []
-      },
-      "113": {
-        "chunkId": "e25b76",
-        "hash": "c790c0ab",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "114": {
-        "chunkId": "e25b76",
-        "hash": "d750d26f",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "115": {
-        "chunkId": "e25b76",
-        "hash": "54ca2108",
-        "encoded": "startingAfter%20=%20lastPrice.id",
-        "prevChunkIds": []
-      },
-      "116": {
-        "chunkId": "e25b76",
-        "hash": "e2f71c2c",
-        "encoded": "hasMore%20=%20pricePage.has_more",
-        "prevChunkIds": []
-      },
-      "117": {
-        "chunkId": "e25b76",
-        "hash": "056477bc",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "118": {
-        "chunkId": "e25b76",
-        "hash": "0eda6c9b",
-        "encoded": "if%20(matchingPrices.length%20!==%201)%20%7B",
-        "prevChunkIds": []
-      },
-      "119": {
-        "chunkId": "e25b76",
-        "hash": "465f526e",
-        "encoded": "throw%20new%20EntitlementError(",
-        "prevChunkIds": []
-      },
-      "120": {
-        "chunkId": "e25b76",
-        "hash": "10dc77f4",
-        "encoded": "'CONFIGURATION',",
-        "prevChunkIds": []
-      },
-      "121": {
-        "chunkId": "e25b76",
-        "hash": "3c3a6c95",
-        "encoded": "%60Produsul%20Stripe%20configurat%20pentru%20planul%20$%7Bplan.id%7D%20trebuie%20s%C4%83%20aib%C4%83%20exact%20un%20Price%20activ%20cu%20suma%20%C8%99i%20durata%20a%C8%99teptate.%60,",
-        "prevChunkIds": []
-      },
-      "122": {
-        "chunkId": "e25b76",
-        "hash": "e7527754",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "123": {
-        "chunkId": "e25b76",
-        "hash": "2bf02615",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "124": {
-        "chunkId": "e25b76",
-        "hash": "b8f42d37",
-        "encoded": "return%20%7B%20plan,%20priceId:%20matchingPrices%5B0%5D.id%20%7D",
-        "prevChunkIds": []
-      },
-      "125": {
-        "chunkId": "02f563",
-        "hash": "d1394be6",
-        "encoded": "const%20client%20=%20getAdmin()",
-        "prevChunkIds": []
-      },
-      "138": {
-        "chunkId": "1cee15",
-        "hash": "7aaf724d",
-        "encoded": "if%20(hasActiveSubscription(existing))%20%7B",
-        "prevChunkIds": []
-      },
-      "139": {
-        "chunkId": "1cee15",
-        "hash": "7789e0d9",
-        "encoded": "throw%20new%20EntitlementError(",
-        "prevChunkIds": []
-      },
-      "140": {
-        "chunkId": "1cee15",
-        "hash": "c795f983",
-        "encoded": "'SUBSCRIPTION_ACTIVE',",
-        "prevChunkIds": []
-      },
-      "141": {
-        "chunkId": "1cee15",
-        "hash": "dca1fb1d",
-        "encoded": "'Ai%20deja%20un%20abonament%20activ.%20%C3%8El%20po%C8%9Bi%20administra%20din%20portalul%20de%20facturare.',",
-        "prevChunkIds": []
-      },
-      "142": {
-        "chunkId": "1cee15",
-        "hash": "a578af76",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "143": {
-        "chunkId": "1cee15",
-        "hash": "52c5d6be",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "144": {
-        "chunkId": "1cee15",
-        "hash": "423095e4",
-        "encoded": "const%20%7B%20plan,%20priceId%20%7D%20=%20await%20getConfiguredPrice(planId)",
-        "prevChunkIds": []
-      },
-      "146": {
-        "chunkId": "1cee15",
-        "hash": "e7bfd08b",
-        "encoded": "let%20customerId",
-        "prevChunkIds": []
-      },
-      "151": {
-        "chunkId": "ceed97",
-        "hash": "dd0d4100",
-        "encoded": "%60Lipse%C8%99te%20pre%C8%9Bul%20Stripe%20configurat%20pentru%20planul%20$%7Bplan.id%7D.%60,",
-        "prevChunkIds": []
-      },
-      "152": {
-        "chunkId": "ceed97",
-        "hash": "c84f35f5",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "153": {
-        "chunkId": "ceed97",
-        "hash": "1dd7a3a6",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "154": {
-        "chunkId": "ceed97",
-        "hash": "663ba2ac",
-        "encoded": "const%20price%20=%20await%20getStripe().prices.retrieve(priceId)",
-        "prevChunkIds": []
-      },
-      "155": {
-        "chunkId": "ceed97",
-        "hash": "ff799638",
+      "69": {
+        "chunkId": "c32dab",
+        "hash": "ecf2f71e",
         "encoded": "if%20(!stripePriceMatchesPlan(price,%20plan))%20%7B",
         "prevChunkIds": []
       },
-      "156": {
-        "chunkId": "ceed97",
-        "hash": "dec6ef15",
+      "70": {
+        "chunkId": "c32dab",
+        "hash": "7e39f0d9",
+        "encoded": "logStripePriceMismatch(plan.id,%20price)",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "c32dab",
+        "hash": "e64748b3",
+        "encoded": "throw%20new%20EntitlementError('CONFIGURATION',%20mismatchMessage)",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "c32dab",
+        "hash": "ae47b750",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "c32dab",
+        "hash": "3789f1cd",
+        "encoded": "return%20%7B%20plan,%20priceId:%20price.id%20%7D",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "c32dab",
+        "hash": "6387e751",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "c32dab",
+        "hash": "146ed143",
+        "encoded": "const%20productId%20=%20process.env%5Bplan.productEnvironmentVariable%5D?.trim()",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "c32dab",
+        "hash": "cedf7936",
+        "encoded": "if%20(!productId)%20%7B",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "c32dab",
+        "hash": "05c0e59f",
         "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
-      "157": {
-        "chunkId": "ceed97",
-        "hash": "1844301c",
+      "79": {
+        "chunkId": "c32dab",
+        "hash": "fd703271",
         "encoded": "'CONFIGURATION',",
         "prevChunkIds": []
       },
-      "158": {
-        "chunkId": "ceed97",
-        "hash": "a078fad3",
-        "encoded": "%60Pre%C8%9Bul%20Stripe%20pentru%20planul%20$%7Bplan.id%7D%20nu%20corespunde%20sumei%20sau%20duratei%20configurate.%60,",
+      "80": {
+        "chunkId": "c32dab",
+        "hash": "e8492a3b",
+        "encoded": "%60Configureaz%C4%83%20$%7Bplan.priceEnvironmentVariable%7D%20cu%20un%20Price%20ID%20sau%20$%7Bplan.productEnvironmentVariable%7D%20cu%20un%20Product%20ID%20pentru%20planul%20$%7Bplan.id%7D.%60,",
         "prevChunkIds": []
       },
-      "159": {
-        "chunkId": "ceed97",
-        "hash": "47b98f1e",
+      "81": {
+        "chunkId": "c32dab",
+        "hash": "490979b5",
         "encoded": ")",
         "prevChunkIds": []
       },
-      "160": {
-        "chunkId": "ceed97",
-        "hash": "10c4a851",
+      "82": {
+        "chunkId": "c32dab",
+        "hash": "74977a35",
         "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "c32dab",
+        "hash": "62ddafa4",
+        "encoded": "const%20matchingPrices:%20Stripe.Price%5B%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "c32dab",
+        "hash": "6838c260",
+        "encoded": "let%20startingAfter:%20string%20%7C%20undefined",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "c32dab",
+        "hash": "8b7ed031",
+        "encoded": "let%20hasMore%20=%20true",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "c32dab",
+        "hash": "ec07b058",
+        "encoded": "let%20activePriceCount%20=%200",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "c32dab",
+        "hash": "fac3a2d0",
+        "encoded": "while%20(hasMore)%20%7B",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "c32dab",
+        "hash": "a2a0be1f",
+        "encoded": "const%20pricePage%20=%20await%20stripe.prices.list(%7B",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "c32dab",
+        "hash": "0b8788cc",
+        "encoded": "product:%20productId,",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "c32dab",
+        "hash": "ef618887",
+        "encoded": "active:%20true,",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "c32dab",
+        "hash": "49efa811",
+        "encoded": "limit:%20100,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "c32dab",
+        "hash": "e11bcfa6",
+        "encoded": "...(startingAfter%20?%20%7B%20starting_after:%20startingAfter%20%7D%20:%20%7B%7D),",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "c32dab",
+        "hash": "b1a5c5c9",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "c32dab",
+        "hash": "142ce388",
+        "encoded": "activePriceCount%20+=%20pricePage.data.length",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "c32dab",
+        "hash": "d3f041fb",
+        "encoded": "matchingPrices.push(...pricePage.data.filter((price)%20=%3E%20stripePriceMatchesPlan(price,%20plan)))",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "c32dab",
+        "hash": "134b6eb3",
+        "encoded": "if%20(matchingPrices.length%20%3E%201%20%7C%7C%20!pricePage.has_more)%20break",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "c32dab",
+        "hash": "def28b22",
+        "encoded": "const%20lastPrice%20=%20pricePage.data%5BpricePage.data.length%20-%201%5D",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "c32dab",
+        "hash": "ead2204c",
+        "encoded": "if%20(!lastPrice)%20%7B",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "c32dab",
+        "hash": "ba2f0c5a",
+        "encoded": "throw%20new%20EntitlementError(",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "c32dab",
+        "hash": "6a9164f3",
+        "encoded": "'CONFIGURATION',",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "c32dab",
+        "hash": "1709967d",
+        "encoded": "%60Nu%20s-au%20putut%20lista%20pre%C8%9Burile%20Stripe%20pentru%20planul%20$%7Bplan.id%7D.%60,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "c32dab",
+        "hash": "4ed82ad8",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "c32dab",
+        "hash": "7a43bd29",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "c32dab",
+        "hash": "952d5b02",
+        "encoded": "startingAfter%20=%20lastPrice.id",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "c32dab",
+        "hash": "acf8d006",
+        "encoded": "hasMore%20=%20pricePage.has_more",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "c32dab",
+        "hash": "8c67c4cf",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "c32dab",
+        "hash": "eaba48d3",
+        "encoded": "if%20(matchingPrices.length%20!==%201)%20%7B",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "c32dab",
+        "hash": "a005da28",
+        "encoded": "console.error(JSON.stringify(%7B",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "c32dab",
+        "hash": "74a58786",
+        "encoded": "event:%20'stripe_product_price_mismatch',",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "c32dab",
+        "hash": "908b0b5f",
+        "encoded": "planId:%20plan.id,",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "c32dab",
+        "hash": "7158fee3",
+        "encoded": "activePriceCount,",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "c32dab",
+        "hash": "6112d880",
+        "encoded": "matchingPriceCount:%20matchingPrices.length,",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "c32dab",
+        "hash": "bf3f9fe8",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "c32dab",
+        "hash": "a547781d",
+        "encoded": "throw%20new%20EntitlementError('CONFIGURATION',%20mismatchMessage)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "c32dab",
+        "hash": "2de22ffd",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "c32dab",
+        "hash": "9d84d8e2",
+        "encoded": "return%20%7B%20plan,%20priceId:%20matchingPrices%5B0%5D.id%20%7D",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "c32dab",
+        "hash": "715028b0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "ef2df5",
+        "hash": "8bbd0860",
+        "encoded": "const%20plan%20=%20findSubscriptionPlan(planId)",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "ef2df5",
+        "hash": "d9f7b02d",
+        "encoded": "if%20(!plan)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Planul%20selectat%20nu%20este%20disponibil.')",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "ef2df5",
+        "hash": "1a4c419d",
+        "encoded": "const%20stripe%20=%20getStripe()",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "ef2df5",
+        "hash": "f1942670",
+        "encoded": "const%20configuredPriceId%20=%20process.env%5Bplan.priceEnvironmentVariable%5D?.trim()",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "ef2df5",
+        "hash": "359e6b00",
+        "encoded": "if%20(configuredPriceId)%20%7B",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "ef2df5",
+        "hash": "31e3adac",
+        "encoded": "const%20price%20=%20await%20stripe.prices.retrieve(configuredPriceId)",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "ef2df5",
+        "hash": "e47562eb",
+        "encoded": "if%20(!stripePriceMatchesPlan(price,%20plan))%20%7B",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "ef2df5",
+        "hash": "7b519be0",
+        "encoded": "throw%20new%20EntitlementError(",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "ef2df5",
+        "hash": "b91513d6",
+        "encoded": "'CONFIGURATION',",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "ef2df5",
+        "hash": "5bd81ccf",
+        "encoded": "%60Pre%C8%9Bul%20Stripe%20pentru%20planul%20$%7Bplan.id%7D%20nu%20corespunde%20sumei%20sau%20duratei%20configurate.%60,",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "ef2df5",
+        "hash": "b7c2cd12",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "ef2df5",
+        "hash": "c1055582",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "ef2df5",
+        "hash": "2f5e76bc",
+        "encoded": "return%20%7B%20plan,%20priceId:%20price.id%20%7D",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "ef2df5",
+        "hash": "7ebeb133",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "ef2df5",
+        "hash": "50cfcf3b",
+        "encoded": "const%20productId%20=%20process.env%5Bplan.productEnvironmentVariable%5D?.trim()",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "ef2df5",
+        "hash": "4dc541c4",
+        "encoded": "if%20(!productId)%20%7B",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "ef2df5",
+        "hash": "b3e09238",
+        "encoded": "throw%20new%20EntitlementError(",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "ef2df5",
+        "hash": "d7228d06",
+        "encoded": "'CONFIGURATION',",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "ef2df5",
+        "hash": "adbbfb08",
+        "encoded": "%60Configureaz%C4%83%20$%7Bplan.priceEnvironmentVariable%7D%20cu%20un%20Price%20ID%20sau%20$%7Bplan.productEnvironmentVariable%7D%20cu%20un%20Product%20ID%20pentru%20planul%20$%7Bplan.id%7D.%60,",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "ef2df5",
+        "hash": "587ee6e0",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "ef2df5",
+        "hash": "4e2389e2",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "e25b76",
+        "hash": "9eb440b1",
+        "encoded": "const%20matchingPrices:%20Stripe.Price%5B%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "e25b76",
+        "hash": "d28e9e28",
+        "encoded": "let%20startingAfter:%20string%20%7C%20undefined",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "e25b76",
+        "hash": "6d9111d8",
+        "encoded": "let%20hasMore%20=%20true",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "e25b76",
+        "hash": "9702c13e",
+        "encoded": "while%20(hasMore)%20%7B",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "e25b76",
+        "hash": "e9aac645",
+        "encoded": "const%20pricePage%20=%20await%20stripe.prices.list(%7B",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "e25b76",
+        "hash": "ec8b0af4",
+        "encoded": "product:%20productId,",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "e25b76",
+        "hash": "cfe08083",
+        "encoded": "active:%20true,",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "e25b76",
+        "hash": "dff2ef7b",
+        "encoded": "limit:%20100,",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "e25b76",
+        "hash": "aa58bd08",
+        "encoded": "...(startingAfter%20?%20%7B%20starting_after:%20startingAfter%20%7D%20:%20%7B%7D),",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "e25b76",
+        "hash": "571780a7",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "e25b76",
+        "hash": "b7da2c74",
+        "encoded": "matchingPrices.push(...pricePage.data.filter((price)%20=%3E%20stripePriceMatchesPlan(price,%20plan)))",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "e25b76",
+        "hash": "5609b36e",
+        "encoded": "if%20(matchingPrices.length%20%3E%201%20%7C%7C%20!pricePage.has_more)%20break",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "e25b76",
+        "hash": "a4c0893f",
+        "encoded": "const%20lastPrice%20=%20pricePage.data%5BpricePage.data.length%20-%201%5D",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "e25b76",
+        "hash": "0eacf317",
+        "encoded": "if%20(!lastPrice)%20%7B",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "ef2df5",
+        "hash": "3b4ce2dd",
+        "encoded": "throw%20new%20EntitlementError(",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "ef2df5",
+        "hash": "e27e0221",
+        "encoded": "'CONFIGURATION',",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "e25b76",
+        "hash": "02c7cf1d",
+        "encoded": "%60Nu%20s-au%20putut%20lista%20pre%C8%9Burile%20Stripe%20pentru%20planul%20$%7Bplan.id%7D.%60,",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "ef2df5",
+        "hash": "08516221",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "161": {
-        "chunkId": "ceed97",
-        "hash": "50e65692",
-        "encoded": "return%20%7B%20plan,%20priceId%20%7D",
-        "prevChunkIds": []
-      },
-      "162": {
-        "chunkId": "ceed97",
-        "hash": "9f3096f5",
+        "chunkId": "e25b76",
+        "hash": "e9785117",
         "encoded": "%7D",
         "prevChunkIds": []
       },
+      "162": {
+        "chunkId": "e25b76",
+        "hash": "583756d2",
+        "encoded": "startingAfter%20=%20lastPrice.id",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "e25b76",
+        "hash": "310c9b1c",
+        "encoded": "hasMore%20=%20pricePage.has_more",
+        "prevChunkIds": []
+      },
       "164": {
-        "chunkId": "ceed97",
-        "hash": "6cb2caee",
-        "encoded": "export%20async%20function%20createCheckoutSession(",
+        "chunkId": "e25b76",
+        "hash": "3e35702d",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "165": {
-        "chunkId": "ceed97",
-        "hash": "8f7c5acf",
-        "encoded": "userId:%20string,",
+        "chunkId": "ef2df5",
+        "hash": "e252723a",
+        "encoded": "if%20(matchingPrices.length%20!==%201)%20%7B",
         "prevChunkIds": []
       },
       "166": {
         "chunkId": "ceed97",
-        "hash": "5c10d0ce",
-        "encoded": "planId:%20SubscriptionPlanId,",
+        "hash": "37102a84",
+        "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
       "167": {
-        "chunkId": "ceed97",
-        "hash": "1129563e",
-        "encoded": "requestId:%20string,",
+        "chunkId": "e25b76",
+        "hash": "9ba93fb9",
+        "encoded": "'CONFIGURATION',",
         "prevChunkIds": []
       },
       "168": {
-        "chunkId": "ceed97",
-        "hash": "d5fc831d",
-        "encoded": "email?:%20string,",
+        "chunkId": "ef2df5",
+        "hash": "68e51252",
+        "encoded": "%60Produsul%20Stripe%20configurat%20pentru%20planul%20$%7Bplan.id%7D%20trebuie%20s%C4%83%20aib%C4%83%20exact%20un%20Price%20activ%20cu%20suma%20%C8%99i%20durata%20a%C8%99teptate.%60,",
         "prevChunkIds": []
       },
       "169": {
-        "chunkId": "ceed97",
-        "hash": "dfae1d86",
-        "encoded": ")%20%7B",
+        "chunkId": "e25b76",
+        "hash": "16ff847a",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "170": {
-        "chunkId": "ceed97",
-        "hash": "57529603",
-        "encoded": "const%20%7B%20plan,%20priceId%20%7D%20=%20await%20getConfiguredPrice(planId)",
+        "chunkId": "1cee15",
+        "hash": "2ec69243",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "171": {
-        "chunkId": "ceed97",
-        "hash": "16091e94",
-        "encoded": "const%20client%20=%20getAdmin()",
+        "chunkId": "ef2df5",
+        "hash": "144f0fd2",
+        "encoded": "return%20%7B%20plan,%20priceId:%20matchingPrices%5B0%5D.id%20%7D",
         "prevChunkIds": []
       },
       "172": {
         "chunkId": "ceed97",
-        "hash": "50eaa7b7",
-        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client",
-        "prevChunkIds": []
-      },
-      "173": {
-        "chunkId": "ceed97",
-        "hash": "e70db5a2",
-        "encoded": ".from('subscriptions')",
+        "hash": "6577ae4e",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "174": {
-        "chunkId": "ceed97",
-        "hash": "a090ec9e",
-        "encoded": ".select('provider_customer_id,status,current_period_end')",
+        "chunkId": "02f563",
+        "hash": "0748017c",
+        "encoded": "export%20async%20function%20createCheckoutSession(",
         "prevChunkIds": []
       },
       "175": {
-        "chunkId": "ceed97",
-        "hash": "bcdf7dab",
-        "encoded": ".eq('user_id',%20userId)",
+        "chunkId": "02f563",
+        "hash": "bf856035",
+        "encoded": "userId:%20string,",
         "prevChunkIds": []
       },
       "176": {
-        "chunkId": "ceed97",
-        "hash": "74d23667",
-        "encoded": ".maybeSingle()",
+        "chunkId": "02f563",
+        "hash": "136491b9",
+        "encoded": "planId:%20SubscriptionPlanId,",
         "prevChunkIds": []
       },
       "177": {
-        "chunkId": "ceed97",
-        "hash": "5c63e736",
-        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
+        "chunkId": "02f563",
+        "hash": "e83319da",
+        "encoded": "requestId:%20string,",
         "prevChunkIds": []
       },
       "178": {
-        "chunkId": "ceed97",
-        "hash": "d72e4b88",
-        "encoded": "if%20(hasActiveSubscription(existing))%20%7B",
+        "chunkId": "02f563",
+        "hash": "a2e04b64",
+        "encoded": "email?:%20string,",
         "prevChunkIds": []
       },
       "179": {
         "chunkId": "ceed97",
-        "hash": "8f39f2f3",
-        "encoded": "throw%20new%20EntitlementError(",
+        "hash": "28461d19",
+        "encoded": ")%20%7B",
         "prevChunkIds": []
       },
       "180": {
-        "chunkId": "ceed97",
-        "hash": "f6d31e19",
-        "encoded": "'SUBSCRIPTION_ACTIVE',",
+        "chunkId": "02f563",
+        "hash": "efb970a1",
+        "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
       "181": {
         "chunkId": "ceed97",
-        "hash": "46972036",
-        "encoded": "'Ai%20deja%20un%20abonament%20activ.%20%C3%8El%20po%C8%9Bi%20administra%20din%20portalul%20de%20facturare.',",
+        "hash": "6dd0b484",
+        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client",
         "prevChunkIds": []
       },
       "182": {
         "chunkId": "ceed97",
-        "hash": "61a3c320",
-        "encoded": ")",
+        "hash": "079dcf5d",
+        "encoded": ".from('subscriptions')",
         "prevChunkIds": []
       },
       "183": {
         "chunkId": "ceed97",
-        "hash": "98787a28",
-        "encoded": "%7D",
+        "hash": "6bca1a91",
+        "encoded": ".select('provider_customer_id,status,current_period_end')",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "ceed97",
+        "hash": "7f0734c0",
+        "encoded": ".eq('user_id',%20userId)",
         "prevChunkIds": []
       },
       "185": {
         "chunkId": "ceed97",
-        "hash": "50a17c0b",
-        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
+        "hash": "72b2b29e",
+        "encoded": ".maybeSingle()",
         "prevChunkIds": []
       },
       "186": {
         "chunkId": "ceed97",
-        "hash": "af638936",
-        "encoded": "if%20(!customerId)%20%7B",
+        "hash": "41bac147",
+        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
         "prevChunkIds": []
       },
       "187": {
-        "chunkId": "ceed97",
-        "hash": "77c8c1e9",
-        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
+        "chunkId": "1cee15",
+        "hash": "240bb31c",
+        "encoded": "if%20(hasActiveSubscription(existing))%20%7B",
         "prevChunkIds": []
       },
       "188": {
-        "chunkId": "ceed97",
-        "hash": "11fd07fc",
-        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
+        "chunkId": "e25b76",
+        "hash": "a05637fc",
+        "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
       "189": {
-        "chunkId": "ceed97",
-        "hash": "8721d0dc",
-        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
+        "chunkId": "1cee15",
+        "hash": "6d107f61",
+        "encoded": "'SUBSCRIPTION_ACTIVE',",
         "prevChunkIds": []
       },
       "190": {
-        "chunkId": "ceed97",
-        "hash": "88e61ca4",
-        "encoded": ")",
+        "chunkId": "1cee15",
+        "hash": "bf9678e2",
+        "encoded": "'Ai%20deja%20un%20abonament%20activ.%20%C3%8El%20po%C8%9Bi%20administra%20din%20portalul%20de%20facturare.',",
         "prevChunkIds": []
       },
       "191": {
-        "chunkId": "ceed97",
-        "hash": "3c8148c8",
-        "encoded": "customerId%20=%20customer.id",
+        "chunkId": "e25b76",
+        "hash": "ce892054",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "192": {
         "chunkId": "ceed97",
-        "hash": "c366bb30",
-        "encoded": "const%20%7B%20error:%20writeError%20%7D%20=%20await%20client",
+        "hash": "bd24004b",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "193": {
-        "chunkId": "ceed97",
-        "hash": "6bdc97c8",
-        "encoded": ".from('subscriptions')",
-        "prevChunkIds": []
-      },
-      "194": {
-        "chunkId": "ceed97",
-        "hash": "13b4171a",
-        "encoded": ".upsert(%7B%20user_id:%20userId,%20provider_customer_id:%20customerId,%20status:%20'none',%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "chunkId": "1cee15",
+        "hash": "07ca50f8",
+        "encoded": "const%20%7B%20plan,%20priceId%20%7D%20=%20await%20getConfiguredPrice(planId)",
         "prevChunkIds": []
       },
       "195": {
         "chunkId": "ceed97",
-        "hash": "f1f9862c",
-        "encoded": "if%20(writeError)%20%7B",
+        "hash": "984975be",
+        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
         "prevChunkIds": []
       },
       "196": {
         "chunkId": "ceed97",
-        "hash": "d9936774",
-        "encoded": "throw%20new%20EntitlementError('DATABASE',%20'Datele%20clientului%20de%20facturare%20nu%20au%20putut%20fi%20salvate.')",
+        "hash": "e6d40a51",
+        "encoded": "if%20(!customerId)%20%7B",
         "prevChunkIds": []
       },
       "197": {
         "chunkId": "ceed97",
-        "hash": "4ff5cbdc",
-        "encoded": "%7D",
+        "hash": "72cb8a26",
+        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
         "prevChunkIds": []
       },
       "198": {
         "chunkId": "ceed97",
-        "hash": "7cf402bb",
-        "encoded": "%7D",
+        "hash": "91de9181",
+        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "ceed97",
+        "hash": "b8705f07",
+        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
         "prevChunkIds": []
       },
       "200": {
-        "chunkId": "ceed97",
-        "hash": "f21dc87d",
-        "encoded": "const%20stripe%20=%20getStripe()",
+        "chunkId": "1cee15",
+        "hash": "10109818",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "201": {
         "chunkId": "ceed97",
-        "hash": "ba479b5a",
-        "encoded": "const%20session%20=%20await%20stripe.checkout.sessions.create(",
-        "prevChunkIds": []
-      },
-      "202": {
-        "chunkId": "ceed97",
-        "hash": "818be0f7",
-        "encoded": "%7B",
+        "hash": "0a6095a9",
+        "encoded": "customerId%20=%20customer.id",
         "prevChunkIds": []
       },
       "203": {
-        "chunkId": "ceed97",
-        "hash": "32864f24",
-        "encoded": "mode:%20'subscription',",
-        "prevChunkIds": []
-      },
-      "204": {
-        "chunkId": "ceed97",
-        "hash": "d310f949",
-        "encoded": "customer:%20customerId,",
-        "prevChunkIds": []
-      },
-      "205": {
-        "chunkId": "ceed97",
-        "hash": "18638ec1",
-        "encoded": "client_reference_id:%20userId,",
+        "chunkId": "de9417",
+        "hash": "1f6d6a7d",
+        "encoded": "user_id:%20userId,",
         "prevChunkIds": []
       },
       "206": {
-        "chunkId": "ceed97",
-        "hash": "29044c54",
-        "encoded": "line_items:%20%5B%7B%20price:%20priceId,%20quantity:%201%20%7D%5D,",
+        "chunkId": "b250f7",
+        "hash": "166e0eb5",
+        "encoded": "updated_at:%20new%20Date().toISOString(),",
         "prevChunkIds": []
       },
       "207": {
-        "chunkId": "ceed97",
-        "hash": "864662eb",
-        "encoded": "success_url:%20%60$%7BgetAppUrl()%7D/?checkout=success&session_id=%7BCHECKOUT_SESSION_ID%7D#abonament%60,",
+        "chunkId": "dae2bf",
+        "hash": "ca94c9fb",
+        "encoded": "%7D)",
         "prevChunkIds": []
       },
       "208": {
-        "chunkId": "564062",
-        "hash": "2f4d499c",
-        "encoded": "const%20rawStatus%20=%20subscription.status%20as%20string",
+        "chunkId": "ceed97",
+        "hash": "204d6f69",
+        "encoded": "if%20(writeError)%20%7B",
         "prevChunkIds": []
       },
       "209": {
-        "chunkId": "564062",
-        "hash": "002c1079",
-        "encoded": "const%20status%20=",
-        "prevChunkIds": []
-      },
-      "210": {
-        "chunkId": "564062",
-        "hash": "a39ca9d7",
-        "encoded": "rawStatus%20===%20'incomplete_expired'",
-        "prevChunkIds": []
-      },
-      "211": {
-        "chunkId": "564062",
-        "hash": "96bc7da1",
-        "encoded": "?%20'canceled'",
+        "chunkId": "e25b76",
+        "hash": "e5dc4bab",
+        "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
       "212": {
-        "chunkId": "564062",
-        "hash": "ec5ce9b2",
-        "encoded": ":%20rawStatus%20===%20'paused'",
-        "prevChunkIds": []
-      },
-      "213": {
-        "chunkId": "564062",
-        "hash": "bc302306",
-        "encoded": "?%20'past_due'",
-        "prevChunkIds": []
-      },
-      "214": {
-        "chunkId": "564062",
-        "hash": "58e7d707",
-        "encoded": ":%20rawStatus",
-        "prevChunkIds": []
-      },
-      "215": {
-        "chunkId": "564062",
-        "hash": "0003939d",
-        "encoded": "const%20metadataPlan%20=%20findSubscriptionPlan(subscription.metadata.plan_id)",
-        "prevChunkIds": []
-      },
-      "216": {
-        "chunkId": "564062",
-        "hash": "68744122",
-        "encoded": "const%20pricePlan%20=%20SUBSCRIPTION_PLANS.find(",
-        "prevChunkIds": []
-      },
-      "217": {
-        "chunkId": "564062",
-        "hash": "eff72ca6",
-        "encoded": "(plan)%20=%3E%20process.env%5Bplan.priceEnvironmentVariable%5D%20===%20firstItem?.price.id,",
-        "prevChunkIds": []
-      },
-      "218": {
-        "chunkId": "564062",
-        "hash": "db97fdf0",
+        "chunkId": "ceed97",
+        "hash": "55a30165",
         "encoded": ")",
         "prevChunkIds": []
       },
+      "213": {
+        "chunkId": "ceed97",
+        "hash": "5328d41a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "ceed97",
+        "hash": "b9f9adb8",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "ceed97",
+        "hash": "593df1f8",
+        "encoded": "const%20stripe%20=%20getStripe()",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "ceed97",
+        "hash": "25398c3b",
+        "encoded": "const%20session%20=%20await%20stripe.checkout.sessions.create(",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "ceed97",
+        "hash": "611a36e2",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
       "219": {
-        "chunkId": "564062",
-        "hash": "ca06cd3b",
-        "encoded": "const%20planId%20=%20metadataPlan?.id%20??%20pricePlan?.id%20??%20null",
+        "chunkId": "ceed97",
+        "hash": "c7b85b0c",
+        "encoded": "mode:%20'subscription',",
         "prevChunkIds": []
       },
       "220": {
-        "chunkId": "564062",
-        "hash": "30d8bd0e",
-        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20client.rpc('apply_stripe_subscription_event',%20%7B",
+        "chunkId": "ceed97",
+        "hash": "be625701",
+        "encoded": "customer:%20customerId,",
         "prevChunkIds": []
       },
       "221": {
         "chunkId": "ceed97",
-        "hash": "ff9df26a",
-        "encoded": "metadata:%20%7B%20app_user_id:%20userId,%20plan_id:%20plan.id%20%7D,",
+        "hash": "317a6a37",
+        "encoded": "client_reference_id:%20userId,",
         "prevChunkIds": []
       },
       "222": {
         "chunkId": "ceed97",
-        "hash": "8f0ad155",
-        "encoded": "subscription_data:%20%7B%20metadata:%20%7B%20app_user_id:%20userId,%20plan_id:%20plan.id%20%7D%20%7D,",
+        "hash": "90cc5d98",
+        "encoded": "line_items:%20%5B%7B%20price:%20priceId,%20quantity:%201%20%7D%5D,",
         "prevChunkIds": []
       },
       "223": {
         "chunkId": "ceed97",
-        "hash": "0ceb0474",
-        "encoded": "allow_promotion_codes:%20true,",
-        "prevChunkIds": []
-      },
-      "224": {
-        "chunkId": "ceed97",
-        "hash": "a5d5ee60",
-        "encoded": "%7D,",
+        "hash": "f2bda5bd",
+        "encoded": "success_url:%20%60$%7BgetAppUrl()%7D/?checkout=success&session_id=%7BCHECKOUT_SESSION_ID%7D#abonament%60,",
         "prevChunkIds": []
       },
       "225": {
         "chunkId": "ceed97",
-        "hash": "ae0a9890",
-        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-checkout-$%7BuserId%7D-$%7BrequestId%7D%60%20%7D,",
+        "hash": "7f4cd989",
+        "encoded": "metadata:%20%7B%20app_user_id:%20userId,%20plan_id:%20plan.id%20%7D,",
         "prevChunkIds": []
       },
       "226": {
         "chunkId": "ceed97",
-        "hash": "a0f1c4c5",
-        "encoded": ")",
+        "hash": "180bdf8c",
+        "encoded": "subscription_data:%20%7B%20metadata:%20%7B%20app_user_id:%20userId,%20plan_id:%20plan.id%20%7D%20%7D,",
         "prevChunkIds": []
       },
       "227": {
         "chunkId": "ceed97",
-        "hash": "9b265b92",
-        "encoded": "if%20(!session.url)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Stripe%20nu%20a%20returnat%20o%20adres%C4%83%20de%20plat%C4%83.')",
+        "hash": "4bb48a1d",
+        "encoded": "allow_promotion_codes:%20true,",
         "prevChunkIds": []
       },
       "228": {
         "chunkId": "ceed97",
-        "hash": "e7e581a2",
-        "encoded": "return%20session.url",
+        "hash": "6150dc12",
+        "encoded": "%7D,",
         "prevChunkIds": []
       },
       "229": {
         "chunkId": "ceed97",
-        "hash": "85a5304b",
-        "encoded": "%7D",
+        "hash": "977c3974",
+        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-checkout-$%7BuserId%7D-$%7BrequestId%7D%60%20%7D,",
         "prevChunkIds": []
       },
-      "236": {
-        "chunkId": "20bcd2",
-        "hash": "2885ecdb",
-        "encoded": "p_user_id:%20userId,",
-        "prevChunkIds": []
-      },
-      "237": {
-        "chunkId": "20bcd2",
-        "hash": "f1190362",
-        "encoded": "p_plan_id:%20planId,",
-        "prevChunkIds": []
-      },
-      "277": {
-        "chunkId": "760725",
-        "hash": "d3e44cd3",
-        "encoded": "export%20async%20function%20createCheckoutSession(userId:%20string,%20email?:%20string)%20%7B",
-        "prevChunkIds": []
-      },
-      "278": {
-        "chunkId": "760725",
-        "hash": "60e4e342",
-        "encoded": "const%20client%20=%20getAdmin()",
-        "prevChunkIds": []
-      },
-      "279": {
-        "chunkId": "760725",
-        "hash": "c312c7d4",
-        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client.from('subscriptions').select('provider_customer_id').eq('user_id',%20userId).maybeSingle()",
-        "prevChunkIds": []
-      },
-      "280": {
-        "chunkId": "760725",
-        "hash": "399cc26a",
-        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
-        "prevChunkIds": []
-      },
-      "281": {
-        "chunkId": "760725",
-        "hash": "cff99200",
-        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
-        "prevChunkIds": []
-      },
-      "282": {
-        "chunkId": "760725",
-        "hash": "c192bc3a",
-        "encoded": "if%20(!customerId)%20%7B",
-        "prevChunkIds": []
-      },
-      "283": {
-        "chunkId": "760725",
-        "hash": "eb90f762",
-        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
-        "prevChunkIds": []
-      },
-      "284": {
-        "chunkId": "760725",
-        "hash": "e0cfa4f3",
-        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
-        "prevChunkIds": []
-      },
-      "285": {
-        "chunkId": "760725",
-        "hash": "446f307e",
-        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
-        "prevChunkIds": []
-      },
-      "286": {
-        "chunkId": "760725",
-        "hash": "3c6a418d",
+      "230": {
+        "chunkId": "ceed97",
+        "hash": "285623f7",
         "encoded": ")",
         "prevChunkIds": []
       },
+      "233": {
+        "chunkId": "ceed97",
+        "hash": "7ba23dd8",
+        "encoded": "return%20session.url",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "ceed97",
+        "hash": "29109e1d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "b250f7",
+        "hash": "6fae3dc3",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "ceed97",
+        "hash": "71b20a14",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "dae2bf",
+        "hash": "76daca59",
+        "encoded": "export%20async%20function%20applyStripeSubscriptionEvent(",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "dae2bf",
+        "hash": "0de76d0c",
+        "encoded": "event:%20Stripe.Event,",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "ceed97",
+        "hash": "f6c3aa69",
+        "encoded": "userId:%20string,",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "dae2bf",
+        "hash": "122a7b9d",
+        "encoded": "subscription:%20Stripe.Subscription,",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "dae2bf",
+        "hash": "f4f2d730",
+        "encoded": "customerId?:%20string,",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "dae2bf",
+        "hash": "16db9197",
+        "encoded": "):%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "ceed97",
+        "hash": "86a62b21",
+        "encoded": "const%20client%20=%20getAdmin()",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "dae2bf",
+        "hash": "6ddc33c1",
+        "encoded": "const%20firstItem%20=%20subscription.items.data%5B0%5D",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "dae2bf",
+        "hash": "db5fc651",
+        "encoded": "(typeof%20subscription.customer%20===%20'string'%20?%20subscription.customer%20:%20subscription.customer.id)",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "564062",
+        "hash": "f4a4294a",
+        "encoded": "const%20rawStatus%20=%20subscription.status%20as%20string",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "564062",
+        "hash": "5ea39e75",
+        "encoded": "const%20status%20=",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "564062",
+        "hash": "90374c88",
+        "encoded": "rawStatus%20===%20'incomplete_expired'",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "564062",
+        "hash": "8681a2f7",
+        "encoded": "?%20'canceled'",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "564062",
+        "hash": "2c583d6a",
+        "encoded": ":%20rawStatus%20===%20'paused'",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "564062",
+        "hash": "a0b914fe",
+        "encoded": "?%20'past_due'",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "564062",
+        "hash": "5d1e1984",
+        "encoded": ":%20rawStatus",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "564062",
+        "hash": "3b66b5ec",
+        "encoded": "const%20metadataPlan%20=%20findSubscriptionPlan(subscription.metadata.plan_id)",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "564062",
+        "hash": "e1c972a7",
+        "encoded": "const%20pricePlan%20=%20SUBSCRIPTION_PLANS.find(",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "564062",
+        "hash": "0997b1be",
+        "encoded": "(plan)%20=%3E%20process.env%5Bplan.priceEnvironmentVariable%5D%20===%20firstItem?.price.id,",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "ceed97",
+        "hash": "7acf39df",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "564062",
+        "hash": "ccaf16ec",
+        "encoded": "const%20planId%20=%20metadataPlan?.id%20??%20pricePlan?.id%20??%20null",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "564062",
+        "hash": "7458c325",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20client.rpc('apply_stripe_subscription_event',%20%7B",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "dae2bf",
+        "hash": "0a120f1f",
+        "encoded": "p_event_id:%20event.id,",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "dae2bf",
+        "hash": "3627dc65",
+        "encoded": "p_event_type:%20event.type,",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "dae2bf",
+        "hash": "5730f8b1",
+        "encoded": "p_event_created:%20event.created,",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "20bcd2",
+        "hash": "7f987984",
+        "encoded": "p_user_id:%20userId,",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "20bcd2",
+        "hash": "b8a8ba5e",
+        "encoded": "p_plan_id:%20planId,",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "dae2bf",
+        "hash": "873a7011",
+        "encoded": "p_customer_id:%20customer,",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "dae2bf",
+        "hash": "94098544",
+        "encoded": "p_subscription_id:%20subscription.id,",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "dae2bf",
+        "hash": "470b7f81",
+        "encoded": "p_status:%20status,",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "dae2bf",
+        "hash": "beed2a48",
+        "encoded": "p_current_period_start:%20firstItem?.current_period_start",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "dae2bf",
+        "hash": "542cf0b0",
+        "encoded": "?%20new%20Date(firstItem.current_period_start%20*%201000).toISOString()",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "dae2bf",
+        "hash": "0862088d",
+        "encoded": ":%20null,",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "dae2bf",
+        "hash": "9103c9e2",
+        "encoded": "p_current_period_end:%20firstItem?.current_period_end",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "dae2bf",
+        "hash": "1902fd89",
+        "encoded": "?%20new%20Date(firstItem.current_period_end%20*%201000).toISOString()",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "dae2bf",
+        "hash": "057ec1b4",
+        "encoded": ":%20null,",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "dae2bf",
+        "hash": "33144fc2",
+        "encoded": "p_cancel_at_period_end:%20subscription.cancel_at_period_end,",
+        "prevChunkIds": []
+      },
       "287": {
-        "chunkId": "760725",
-        "hash": "d936426b",
-        "encoded": "customerId%20=%20customer.id",
+        "chunkId": "dae2bf",
+        "hash": "d475273c",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
         "prevChunkIds": []
       },
       "288": {
-        "chunkId": "760725",
-        "hash": "cd4a3f73",
-        "encoded": "const%20%7B%20error:%20writeError%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B%20user_id:%20userId,%20provider_customer_id:%20customerId,%20status:%20'none',%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "chunkId": "dae2bf",
+        "hash": "e3aba7a1",
+        "encoded": "return%20Boolean(data)",
         "prevChunkIds": []
       },
       "289": {
-        "chunkId": "760725",
-        "hash": "587b9f29",
-        "encoded": "if%20(writeError)%20throw%20new%20EntitlementError('DATABASE',%20'Datele%20clientului%20de%20facturare%20nu%20au%20putut%20fi%20salvate.')",
-        "prevChunkIds": []
-      },
-      "290": {
-        "chunkId": "760725",
-        "hash": "fbb398b5",
+        "chunkId": "ceed97",
+        "hash": "60a23551",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "291": {
+        "chunkId": "dae2bf",
+        "hash": "762b7da9",
+        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "292": {
         "chunkId": "760725",
-        "hash": "1fb45435",
-        "encoded": "const%20session%20=%20await%20getStripe().checkout.sessions.create(%7B",
+        "hash": "ee480fb0",
+        "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
-      "312": {
-        "chunkId": "dae2bf",
-        "hash": "d4dd7ddd",
-        "encoded": "export%20async%20function%20applyStripeSubscriptionEvent(",
+      "294": {
+        "chunkId": "ceed97",
+        "hash": "c92012d0",
+        "encoded": ".from('subscriptions')",
         "prevChunkIds": []
       },
-      "313": {
+      "298": {
+        "chunkId": "23baac",
+        "hash": "488ff308",
+        "encoded": "if%20(data?.user_id)%20return%20data.user_id%20as%20string",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "338b87",
+        "hash": "4a3d0811",
+        "encoded": "if%20(customer.deleted%20%7C%7C%20!('metadata'%20in%20customer))%20return%20null",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "338b87",
+        "hash": "8ef09a97",
+        "encoded": "if%20(typeof%20customer.metadata.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "338b87",
+        "hash": "db0eef64",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "760725",
+        "hash": "5caa522d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "23baac",
+        "hash": "ab0ff987",
+        "encoded": "export%20async%20function%20recordBillingEvent(event:%20Stripe.Event):%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "307": {
         "chunkId": "dae2bf",
-        "hash": "f1974b4a",
-        "encoded": "event:%20Stripe.Event,",
+        "hash": "23003c4c",
+        "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
       "314": {
         "chunkId": "dae2bf",
-        "hash": "ad14866b",
-        "encoded": "userId:%20string,",
-        "prevChunkIds": []
-      },
-      "315": {
-        "chunkId": "dae2bf",
-        "hash": "4c00dad7",
-        "encoded": "subscription:%20Stripe.Subscription,",
-        "prevChunkIds": []
-      },
-      "316": {
-        "chunkId": "dae2bf",
-        "hash": "8c460eee",
-        "encoded": "customerId?:%20string,",
-        "prevChunkIds": []
-      },
-      "317": {
-        "chunkId": "dae2bf",
-        "hash": "313d5337",
-        "encoded": "):%20Promise%3Cboolean%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "318": {
-        "chunkId": "dae2bf",
-        "hash": "621a1cd1",
-        "encoded": "const%20client%20=%20getAdmin()",
-        "prevChunkIds": []
-      },
-      "319": {
-        "chunkId": "dae2bf",
-        "hash": "37b2557f",
-        "encoded": "const%20firstItem%20=%20subscription.items.data%5B0%5D",
-        "prevChunkIds": []
-      },
-      "320": {
-        "chunkId": "dae2bf",
-        "hash": "64c89243",
-        "encoded": "const%20customer%20=%20customerId%20??",
-        "prevChunkIds": []
-      },
-      "321": {
-        "chunkId": "dae2bf",
-        "hash": "7f05be39",
-        "encoded": "(typeof%20subscription.customer%20===%20'string'%20?%20subscription.customer%20:%20subscription.customer.id)",
-        "prevChunkIds": []
-      },
-      "322": {
-        "chunkId": "dae2bf",
-        "hash": "847c5651",
-        "encoded": "const%20rawStatus%20=%20subscription.status%20as%20string",
-        "prevChunkIds": []
-      },
-      "323": {
-        "chunkId": "dae2bf",
-        "hash": "f709b5dc",
-        "encoded": "const%20status%20=%20rawStatus%20===%20'incomplete_expired'",
-        "prevChunkIds": []
-      },
-      "324": {
-        "chunkId": "dae2bf",
-        "hash": "79753618",
-        "encoded": "?%20'canceled'",
-        "prevChunkIds": []
-      },
-      "325": {
-        "chunkId": "dae2bf",
-        "hash": "b993b4f0",
-        "encoded": ":%20rawStatus%20===%20'paused'",
-        "prevChunkIds": []
-      },
-      "326": {
-        "chunkId": "dae2bf",
-        "hash": "2a7021b8",
-        "encoded": "?%20'past_due'",
-        "prevChunkIds": []
-      },
-      "327": {
-        "chunkId": "dae2bf",
-        "hash": "46113fe2",
-        "encoded": ":%20rawStatus",
-        "prevChunkIds": []
-      },
-      "328": {
-        "chunkId": "dae2bf",
-        "hash": "e7c485e5",
-        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20client.rpc('apply_stripe_subscription_event',%20%7B",
-        "prevChunkIds": []
-      },
-      "329": {
-        "chunkId": "dae2bf",
-        "hash": "3adbfcd5",
-        "encoded": "p_event_id:%20event.id,",
-        "prevChunkIds": []
-      },
-      "330": {
-        "chunkId": "dae2bf",
-        "hash": "889433ca",
-        "encoded": "p_event_type:%20event.type,",
-        "prevChunkIds": []
-      },
-      "331": {
-        "chunkId": "dae2bf",
-        "hash": "8145f3db",
-        "encoded": "p_event_created:%20event.created,",
-        "prevChunkIds": []
-      },
-      "332": {
-        "chunkId": "dae2bf",
-        "hash": "08d4c6b4",
-        "encoded": "p_user_id:%20userId,",
-        "prevChunkIds": []
-      },
-      "333": {
-        "chunkId": "dae2bf",
-        "hash": "44480236",
-        "encoded": "p_plan_id:%20subscription.metadata.plan_id%20??%20null,",
-        "prevChunkIds": []
-      },
-      "334": {
-        "chunkId": "dae2bf",
-        "hash": "6f3cc58d",
-        "encoded": "p_customer_id:%20customer,",
-        "prevChunkIds": []
-      },
-      "335": {
-        "chunkId": "dae2bf",
-        "hash": "9f01e03f",
-        "encoded": "p_subscription_id:%20subscription.id,",
-        "prevChunkIds": []
-      },
-      "336": {
-        "chunkId": "dae2bf",
-        "hash": "6f246d11",
-        "encoded": "p_status:%20status,",
-        "prevChunkIds": []
-      },
-      "337": {
-        "chunkId": "dae2bf",
-        "hash": "3bb4b913",
-        "encoded": "p_current_period_start:%20firstItem?.current_period_start",
-        "prevChunkIds": []
-      },
-      "338": {
-        "chunkId": "dae2bf",
-        "hash": "25f75af0",
-        "encoded": "?%20new%20Date(firstItem.current_period_start%20*%201000).toISOString()",
-        "prevChunkIds": []
-      },
-      "339": {
-        "chunkId": "dae2bf",
-        "hash": "39e01ef0",
-        "encoded": ":%20null,",
-        "prevChunkIds": []
-      },
-      "340": {
-        "chunkId": "dae2bf",
-        "hash": "2090cc65",
-        "encoded": "p_current_period_end:%20firstItem?.current_period_end",
-        "prevChunkIds": []
-      },
-      "341": {
-        "chunkId": "dae2bf",
-        "hash": "11f93ba2",
-        "encoded": "?%20new%20Date(firstItem.current_period_end%20*%201000).toISOString()",
-        "prevChunkIds": []
-      },
-      "342": {
-        "chunkId": "dae2bf",
-        "hash": "d7f3444a",
-        "encoded": ":%20null,",
-        "prevChunkIds": []
-      },
-      "343": {
-        "chunkId": "dae2bf",
-        "hash": "0ce420ec",
-        "encoded": "p_cancel_at_period_end:%20subscription.cancel_at_period_end,",
-        "prevChunkIds": []
-      },
-      "344": {
-        "chunkId": "dae2bf",
-        "hash": "e2aa0189",
-        "encoded": "%7D)",
-        "prevChunkIds": []
-      },
-      "345": {
-        "chunkId": "dae2bf",
-        "hash": "6acc2d2e",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
-        "prevChunkIds": []
-      },
-      "346": {
-        "chunkId": "dae2bf",
-        "hash": "9b6d2ed9",
-        "encoded": "return%20Boolean(data)",
-        "prevChunkIds": []
-      },
-      "347": {
-        "chunkId": "dae2bf",
-        "hash": "15bfe668",
+        "hash": "b31bc060",
         "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "349": {
-        "chunkId": "dae2bf",
-        "hash": "e7dafaae",
-        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "386": {
-        "chunkId": "de9417",
-        "hash": "15156daa",
-        "encoded": "export%20async%20function%20upsertSubscription(userId:%20string,%20subscription:%20Stripe.Subscription,%20customerId?:%20string)%20%7B",
-        "prevChunkIds": []
-      },
-      "387": {
-        "chunkId": "de9417",
-        "hash": "ee220c2e",
-        "encoded": "const%20client%20=%20getAdmin()",
-        "prevChunkIds": []
-      },
-      "388": {
-        "chunkId": "de9417",
-        "hash": "539d2a6c",
-        "encoded": "const%20%7B%20error%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B",
-        "prevChunkIds": []
-      },
-      "389": {
-        "chunkId": "de9417",
-        "hash": "a1208def",
-        "encoded": "user_id:%20userId,",
-        "prevChunkIds": []
-      },
-      "390": {
-        "chunkId": "de9417",
-        "hash": "7945d7da",
-        "encoded": "status:%20subscription.status,",
-        "prevChunkIds": []
-      },
-      "398": {
-        "chunkId": "b250f7",
-        "hash": "5b5c4459",
-        "encoded": "cancel_at_period_end:%20subscription.cancel_at_period_end,",
-        "prevChunkIds": []
-      },
-      "399": {
-        "chunkId": "b250f7",
-        "hash": "37aa1204",
-        "encoded": "updated_at:%20new%20Date().toISOString(),",
-        "prevChunkIds": []
-      },
-      "400": {
-        "chunkId": "b250f7",
-        "hash": "703203ac",
-        "encoded": "%7D)",
-        "prevChunkIds": []
-      },
-      "401": {
-        "chunkId": "b250f7",
-        "hash": "e3ffe1d1",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
-        "prevChunkIds": []
-      },
-      "402": {
-        "chunkId": "b250f7",
-        "hash": "5d60c9a8",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "404": {
-        "chunkId": "b250f7",
-        "hash": "24ca2fc5",
-        "encoded": "export%20async%20function%20resolveUserIdForCustomer",
-        "prevChunkIds": []
-      },
-      "410": {
-        "chunkId": "23baac",
-        "hash": "e5601f20",
-        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "411": {
-        "chunkId": "23baac",
-        "hash": "a8b7065b",
-        "encoded": "const%20client%20=%20getAdmin()",
-        "prevChunkIds": []
-      },
-      "412": {
-        "chunkId": "23baac",
-        "hash": "6e04e6b0",
-        "encoded": "const%20%7B%20data%20%7D%20=%20await%20client.from('subscriptions').select('user_id').eq('provider_customer_id',%20customerId).maybeSingle()",
-        "prevChunkIds": []
-      },
-      "413": {
-        "chunkId": "23baac",
-        "hash": "4e37af1e",
-        "encoded": "if%20(data?.user_id)%20return%20data.user_id%20as%20string",
-        "prevChunkIds": []
-      },
-      "414": {
-        "chunkId": "338b87",
-        "hash": "e0045e2e",
-        "encoded": "const%20customer%20=%20await%20getStripe().customers.retrieve(customerId)%20as%20unknown%20as%20Stripe.Customer%20%7C%20Stripe.DeletedCustomer",
-        "prevChunkIds": []
-      },
-      "415": {
-        "chunkId": "338b87",
-        "hash": "46e5a5f5",
-        "encoded": "if%20(customer.deleted%20%7C%7C%20!('metadata'%20in%20customer))%20return%20null",
-        "prevChunkIds": []
-      },
-      "416": {
-        "chunkId": "338b87",
-        "hash": "7e2392c0",
-        "encoded": "if%20(typeof%20customer.metadata.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
-        "prevChunkIds": []
-      },
-      "417": {
-        "chunkId": "338b87",
-        "hash": "b5771823",
-        "encoded": "return%20null",
-        "prevChunkIds": []
-      },
-      "418": {
-        "chunkId": "338b87",
-        "hash": "23b808fb",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "419": {
-        "chunkId": "a6b37c",
-        "hash": "0ea6a0f9",
-        "encoded": "if%20(customer.deleted)%20return%20null",
-        "prevChunkIds": []
-      },
-      "420": {
-        "chunkId": "a6b37c",
-        "hash": "4b821aeb",
-        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
-        "prevChunkIds": []
-      },
-      "421": {
-        "chunkId": "a6b37c",
-        "hash": "2d0ee6f8",
-        "encoded": "return%20null",
-        "prevChunkIds": []
-      },
-      "422": {
-        "chunkId": "a6b37c",
-        "hash": "b79e2883",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "423": {
-        "chunkId": "23baac",
-        "hash": "f1e28b13",
-        "encoded": "if%20(customer.deleted)%20return%20null",
-        "prevChunkIds": []
-      },
-      "424": {
-        "chunkId": "23baac",
-        "hash": "9ec07839",
-        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
-        "prevChunkIds": []
-      },
-      "425": {
-        "chunkId": "23baac",
-        "hash": "be6dcb0d",
-        "encoded": "return%20null",
-        "prevChunkIds": []
-      },
-      "426": {
-        "chunkId": "23baac",
-        "hash": "e26e27a0",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "428": {
-        "chunkId": "23baac",
-        "hash": "a28d39f4",
-        "encoded": "export%20async%20function%20recordBillingEvent(event:%20Stripe.Event):%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       }
     },

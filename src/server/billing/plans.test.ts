@@ -49,6 +49,28 @@ describe('subscription plans', () => {
     ])
   })
 
+  it('accepts the exact seven-day period whether Stripe represents it as a week or seven days', () => {
+    const plan = findSubscriptionPlan('7-days')
+    expect(plan).not.toBeNull()
+    for (const recurring of [
+      { interval: 'week', interval_count: 1 },
+      { interval: 'day', interval_count: 7 },
+    ]) {
+      expect(
+        stripePriceMatchesPlan(
+          { active: true, currency: 'ron', unit_amount: 500, recurring },
+          plan!,
+        ),
+      ).toBe(true)
+    }
+    expect(
+      stripePriceMatchesPlan(
+        { active: true, currency: 'ron', unit_amount: 500, recurring: null },
+        plan!,
+      ),
+    ).toBe(false)
+  })
+
   it('rejects unknown plan identifiers and Stripe prices with mismatched amount or period', () => {
     const plan = findSubscriptionPlan('30-days')
     expect(findSubscriptionPlan('custom')).toBeNull()

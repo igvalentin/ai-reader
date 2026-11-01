@@ -95,6 +95,24 @@ describe('createCheckoutSession', () => {
     )
   })
 
+  it('accepts a 7-day Price configured as a seven-day recurring interval', async () => {
+    mocks.stripeClient.prices.retrieve.mockResolvedValueOnce({
+      id: 'price_weekly_daily',
+      active: true,
+      currency: 'ron',
+      unit_amount: 500,
+      recurring: { interval: 'day', interval_count: 7 },
+    })
+
+    await expect(
+      createCheckoutSession('user-123', '7-days', '9f342980-a526-4e44-9b4d-685bd88973b1'),
+    ).resolves.toBe('https://checkout.stripe.test/session')
+    expect(mocks.stripeClient.checkout.sessions.create).toHaveBeenCalledWith(
+      expect.objectContaining({ line_items: [{ price: 'price_weekly_daily', quantity: 1 }] }),
+      expect.any(Object),
+    )
+  })
+
   it('resolves configured Stripe Product IDs to the matching active Price', async () => {
     delete process.env.STRIPE_PRICE_ID_7_DAYS
     process.env.STRIPE_PRICE_PLAN_1 = 'prod_weekly'
@@ -156,7 +174,8 @@ describe('createCheckoutSession', () => {
     expect(mocks.stripeClient.checkout.sessions.create).not.toHaveBeenCalled()
   })
 
-  it('refuses a Stripe price whose amount or duration differs from the plan', async () => {
+  it('reports safe Stripe Price details when amount or duration is mismatched', async () => {
+    const errorLog = vi.spyOn(console, 'error').mockImplementation(() => undefined)
     mocks.stripeClient.prices.retrieve.mockResolvedValueOnce({
       active: true,
       currency: 'ron',
@@ -166,7 +185,14 @@ describe('createCheckoutSession', () => {
 
     await expect(
       createCheckoutSession('user-123', '30-days', '9f342980-a526-4e44-9b4d-685bd88973b1'),
-    ).rejects.toMatchObject({ code: 'CONFIGURATION' })
+    ).rejects.toMatchObject({
+      code: 'CONFIGURATION',
+      message: expect.stringContaining('1000 bani'),
+    })
+    expect(errorLog).toHaveBeenCalledWith(
+      expect.stringContaining('stripe_price_configuration_mismatch'),
+    )
+    expect(JSON.stringify(errorLog.mock.calls)).not.toContain('price_30days')
     expect(mocks.stripeClient.checkout.sessions.create).not.toHaveBeenCalled()
   })
 

@@ -19,11 +19,14 @@ export function findSubscriptionPlan(value: unknown): SubscriptionPlan | null {
 }
 
 export function stripePriceMatchesPlan(price: StripePriceDetails, plan: SubscriptionPlan): boolean {
-  return (
-    price.active &&
-    price.currency.toLowerCase() === 'ron' &&
-    price.unit_amount === plan.unitAmount &&
-    price.recurring?.interval === plan.interval &&
-    price.recurring.interval_count === plan.intervalCount
-  )
+  if (!price.active || price.currency.toLowerCase() !== 'ron' || price.unit_amount !== plan.unitAmount) {
+    return false
+  }
+  const recurring = price.recurring
+  if (!recurring) return false
+  const exactConfiguredInterval =
+    recurring.interval === plan.interval && recurring.interval_count === plan.intervalCount
+  const exactSevenDayAlternative =
+    plan.id === '7-days' && recurring.interval === 'day' && recurring.interval_count === 7
+  return exactConfiguredInterval || exactSevenDayAlternative
 }

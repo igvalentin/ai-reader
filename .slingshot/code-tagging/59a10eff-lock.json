@@ -143,137 +143,123 @@
         "chunkId": "b690e0",
         "hash": "f0db9a92",
         "encoded": "#%20Stripe:%20create%20recurring%20RON%20Prices%20in%20Stripe%20Test%20mode%20first.%20Do%20not%20use%20live%20values%20until%20approved.",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
       "16": {
         "chunkId": "b690e0",
         "hash": "655b2eb4",
         "encoded": "#%20STRIPE_SECRET_KEY=your-stripe-test-secret-key",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
       "17": {
-        "chunkId": "b690e0",
-        "hash": "4c31da00",
-        "encoded": "#%20STRIPE_PRICE_ID_7_DAYS=price_for_5_ron_every_7_days",
-        "prevChunkIds": []
+        "chunkId": "143010",
+        "hash": "cac2e542",
+        "encoded": "#%20Preferred:%20exact%20Price%20IDs%20(price_...)%20for%20validated%20recurring%20prices.",
+        "prevChunkIds": [
+          "143010"
+        ]
       },
       "18": {
-        "chunkId": "b690e0",
-        "hash": "dd21f2dc",
-        "encoded": "#%20STRIPE_PRICE_ID_30_DAYS=price_for_10_ron_every_30_days",
-        "prevChunkIds": []
+        "chunkId": "143010",
+        "hash": "ab9c4a01",
+        "encoded": "#%20STRIPE_PRICE_ID_7_DAYS=your-7-day-price-id",
+        "prevChunkIds": [
+          "143010"
+        ]
       },
       "19": {
-        "chunkId": "b690e0",
-        "hash": "e28cbcc5",
-        "encoded": "#%20STRIPE_PRICE_ID_1_YEAR=price_for_100_ron_per_year",
-        "prevChunkIds": []
+        "chunkId": "143010",
+        "hash": "531267c0",
+        "encoded": "#%20STRIPE_PRICE_ID_30_DAYS=your-30-day-price-id",
+        "prevChunkIds": [
+          "143010"
+        ]
       },
       "20": {
-        "chunkId": "b690e0",
-        "hash": "f51b6a44",
-        "encoded": "#%20STRIPE_WEBHOOK_SECRET=your-stripe-test-webhook-secret",
-        "prevChunkIds": []
-      },
-      "31": {
         "chunkId": "143010",
-        "hash": "a1bd5be5",
-        "encoded": "#%20Stripe:%20create%20recurring%20RON%20Prices%20in%20Stripe%20Test%20mode%20first.%20Do%20not%20use%20live%20values%20until%20approved.",
-        "prevChunkIds": []
-      },
-      "32": {
-        "chunkId": "143010",
-        "hash": "f2c21af7",
-        "encoded": "#%20STRIPE_SECRET_KEY=your-stripe-test-secret-key",
-        "prevChunkIds": []
-      },
-      "33": {
-        "chunkId": "143010",
-        "hash": "5afbdef8",
-        "encoded": "#%20Preferred:%20exact%20Price%20IDs%20(price_...)%20for%20validated%20recurring%20prices.",
-        "prevChunkIds": []
-      },
-      "34": {
-        "chunkId": "143010",
-        "hash": "d9aeea50",
-        "encoded": "#%20STRIPE_PRICE_ID_7_DAYS=your-7-day-price-id",
-        "prevChunkIds": []
-      },
-      "35": {
-        "chunkId": "143010",
-        "hash": "ccdf7732",
-        "encoded": "#%20STRIPE_PRICE_ID_30_DAYS=your-30-day-price-id",
-        "prevChunkIds": []
-      },
-      "36": {
-        "chunkId": "143010",
-        "hash": "5884a69e",
+        "hash": "dbf19f7d",
         "encoded": "#%20STRIPE_PRICE_ID_1_YEAR=your-annual-price-id",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
-      "37": {
+      "21": {
         "chunkId": "143010",
-        "hash": "b6d52c77",
+        "hash": "cc8238fd",
         "encoded": "#%20Or%20configure%20Product%20IDs%20(prod_...);%20backend%20resolves%20a%20unique%20matching%20active%20Price.",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
-      "38": {
+      "22": {
         "chunkId": "143010",
-        "hash": "7e66286e",
+        "hash": "4e6dc455",
         "encoded": "#%20STRIPE_PRICE_PLAN_1=your-7-day-product-id",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
-      "39": {
+      "23": {
         "chunkId": "143010",
-        "hash": "13af2665",
+        "hash": "e6d505aa",
         "encoded": "#%20STRIPE_PRICE_PLAN_2=your-30-day-product-id",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
-      "40": {
+      "24": {
         "chunkId": "143010",
-        "hash": "161de55e",
+        "hash": "4830c65e",
         "encoded": "#%20STRIPE_PRICE_PLAN_3=your-annual-product-id",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
-      "41": {
-        "chunkId": "143010",
-        "hash": "6a47f1dc",
+      "25": {
+        "chunkId": "b690e0",
+        "hash": "99e94d16",
         "encoded": "#%20STRIPE_WEBHOOK_SECRET=your-stripe-test-webhook-secret",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "143010"
+        ]
       },
-      "53": {
+      "27": {
         "chunkId": "de3fc5",
-        "hash": "9284de4a",
+        "hash": "89e15fb0",
         "encoded": "#%20OCR%20runs%20locally%20with%20Tesseract.js%20and%20the%20Romanian%20model;%20no%20OCR%20API%20key%20is%20required.",
         "prevChunkIds": []
       },
-      "55": {
+      "29": {
         "chunkId": "de3fc5",
-        "hash": "f3712a61",
+        "hash": "237c372f",
         "encoded": "#%20Azure%20AI%20Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix;%20do%20not%20commit%20real%20values).",
         "prevChunkIds": []
       },
-      "56": {
+      "30": {
         "chunkId": "de3fc5",
-        "hash": "d254395e",
+        "hash": "09da58bf",
         "encoded": "#%20AZURE_SPEECH_KEY=your-azure-speech-key",
         "prevChunkIds": []
       },
-      "57": {
+      "31": {
         "chunkId": "de3fc5",
-        "hash": "2a130659",
+        "hash": "4ca2b282",
         "encoded": "#%20AZURE_SPEECH_REGION=germanywestcentral",
         "prevChunkIds": []
       },
-      "58": {
+      "32": {
         "chunkId": "de3fc5",
-        "hash": "bc1bcc0d",
+        "hash": "ccb3d78d",
         "encoded": "#%20Optional%20Romanian%20neural%20voice%20(default:%20ro-RO-AlinaNeural).",
         "prevChunkIds": []
       },
-      "59": {
+      "33": {
         "chunkId": "de3fc5",
-        "hash": "c4b027db",
+        "hash": "50a872b4",
         "encoded": "#%20AZURE_SPEECH_VOICE=ro-RO-AlinaNeural",
         "prevChunkIds": []
       }

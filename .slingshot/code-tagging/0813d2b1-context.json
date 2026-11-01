@@ -12,6 +12,9 @@
     },
     "23f4c44c": {
       "value": "am configurat in vercel si stripe product 7 zile, Stripe zice ca il are functional, dar aplicatia primeste 500 la checkput si eroarea\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Lipsește prețul Stripe configurat pentru planul 7-days.\"\n}\nCorecteaza!\n\nEnv: \nSTRIPE_PRICE_PLAN_1\nprod_VYC2JbIvqbGhdf\nProduction\nAdded \n18m ago\nSTRIPE_PRICE_PLAN_2\nprod_VYC3Fdt3hArxsg\nProduction\nAdded \n18m ago\nSTRIPE_PRICE_PLAN_3\nprod_VYC3q9jqTSeEpZ\nProduction\nAdded \n18m ago\nStripe info\nLogs\nPOST /v1/produ"
+    },
+    "ea050f30": {
+      "value": "Am eroarea 500:\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Prețul Stripe pentru planul 7-days nu corespunde sumei sau duratei configurate.\"\n}\n\nasta am in env Vercel:\nSTRIPE_PRICE_ID_7_DAYS\n\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nProduction\nAdded \n8m ago\n\n\nSTRIPE_PRICE_ID_30_DAYS\n\n\nprice_1UX5fHFSLE8IP7Ts4KoKL45O\nProduction\nAdded \n8m ago\n\n\nSTRIPE_PRICE_ID_1_YEAR\n\n\nprice_1UX5fbFSLE8IP7TsaMOzy6Tu\nProduction\nAdded \n8m ago\n\n\nSTRIPE_WEBHOOK_SECRET\nProduction\nUpdated \n18m ago\n\n\nSTRIPE_PRICE_PLA"
     }
   },
   "localPrompts": {},
