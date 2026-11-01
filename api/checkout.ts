@@ -51,7 +51,28 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       console.error(JSON.stringify({ event: 'checkout_session_failed', code }))
       return res.status(500).json({ code, error: error.message })
     }
-    console.error(JSON.stringify({ event: 'checkout_session_failed' }))
+    const stripeError =
+      typeof error === 'object' && error !== null ? (error as Record<string, unknown>) : {}
+    console.error(
+      JSON.stringify({
+        event: 'checkout_session_failed',
+        planId: plan.id,
+        errorType:
+          typeof stripeError.type === 'string'
+            ? stripeError.type
+            : error instanceof Error
+              ? error.name
+              : 'unknown',
+        ...(typeof stripeError.code === 'string' ? { stripeCode: stripeError.code } : {}),
+        ...(typeof stripeError.statusCode === 'number'
+          ? { statusCode: stripeError.statusCode }
+          : {}),
+        ...(typeof stripeError.requestId === 'string'
+          ? { stripeRequestId: stripeError.requestId }
+          : {}),
+        ...(typeof stripeError.param === 'string' ? { stripeParameter: stripeError.param } : {}),
+      }),
+    )
     return res.status(502).json({
       code: 'CHECKOUT_UNAVAILABLE',
       error: 'Checkout-ul nu a putut fi inițiat. Încearcă din nou.',

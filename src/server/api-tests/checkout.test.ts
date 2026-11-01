@@ -94,6 +94,36 @@ describe('POST /api/checkout', () => {
       'ai_reader_anon=signed-id',
     )
     expect(mocks.createCheckoutSession).toHaveBeenCalledWith('user-123', '30-days', requestId)
+
+    const errorLog = vi.spyOn(console, 'error').mockImplementation(() => undefined)
+    const rawError = Object.assign(new Error('must-not-be-logged'), {
+      type: 'StripeInvalidRequestError',
+      code: 'resource_missing',
+      statusCode: 400,
+      requestId: 'req_safe_123',
+      param: 'line_items[0][price]',
+    })
+    mocks.createCheckoutSession.mockRejectedValueOnce(rawError)
+    const failed = createMockReqRes({ planId: '1-year', requestId })
+    await handler(failed.req, failed.res)
+
+    expect(failed.res.statusCode).toBe(502)
+    expect(failed.res.jsonBody).toMatchObject({ code: 'CHECKOUT_UNAVAILABLE' })
+    const loggedDiagnostic = JSON.parse(String(errorLog.mock.calls[0][0])) as Record<
+      string,
+      unknown
+    >
+    expect(loggedDiagnostic).toMatchObject({
+      event: 'checkout_session_failed',
+      planId: '1-year',
+      errorType: 'StripeInvalidRequestError',
+      stripeCode: 'resource_missing',
+      statusCode: 400,
+      stripeRequestId: 'req_safe_123',
+      stripeParameter: 'line_items[0][price]',
+    })
+    expect(JSON.stringify(loggedDiagnostic)).not.toContain(rawError.message)
+    errorLog.mockRestore()
   })
 
   it('returns authentication and already-subscribed states distinctly', async () => {

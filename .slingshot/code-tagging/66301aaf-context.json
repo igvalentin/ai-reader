@@ -21,6 +21,9 @@
     },
     "ea050f30": {
       "value": "Am eroarea 500:\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Prețul Stripe pentru planul 7-days nu corespunde sumei sau duratei configurate.\"\n}\n\nasta am in env Vercel:\nSTRIPE_PRICE_ID_7_DAYS\n\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nProduction\nAdded \n8m ago\n\n\nSTRIPE_PRICE_ID_30_DAYS\n\n\nprice_1UX5fHFSLE8IP7Ts4KoKL45O\nProduction\nAdded \n8m ago\n\n\nSTRIPE_PRICE_ID_1_YEAR\n\n\nprice_1UX5fbFSLE8IP7TsaMOzy6Tu\nProduction\nAdded \n8m ago\n\n\nSTRIPE_WEBHOOK_SECRET\nProduction\nUpdated \n18m ago\n\n\nSTRIPE_PRICE_PLA"
+    },
+    "b689a106": {
+      "value": "tot 500 da, eroarea asta:\n\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Price-ul planului 7 zile trebuie să fie activ și să corespundă: 5 RON (500 bani), săptămânal (week × 1) sau zilnic (day × 7).\"\n}\n\nAsa e definitia in Stripe:\nPrice\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nPrice for 7 days subscription\n\nEdit\n\nMore options\nProduct\n7 days subscription\nUnit price\nRON 5.00\nMetadata\nUse metadata to store custom additional information. View docs\n\nEdit metadata\nNo metadata\nPricing\nCurrency\nRON\nI"
     }
   },
   "localPrompts": {},

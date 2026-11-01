@@ -6,6 +6,9 @@
   "promptMessage": {
     "668ceaef": {
       "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
+    },
+    "fabc164a": {
+      "value": "am facut plata test cu card 4242... si in stripe apare cu success.\nDar in site spune ca nu e activ:\n\n\"Planuri de lectură\nPrima lectură audio reușită este gratuită. După aceea, alege perioada potrivită.\n\nAdministrează abonamentul\nNu ai un plan activ. Lectura gratuită se aplică doar dacă nu a fost folosită.\n\nPlata este în curs de confirmare. Accesul se activează numai după confirmarea Stripe.\n\nVerifică statusul\nSe verifică abonamentul…\"\n\nDe asemenea\n- pentru 30 zile am eroare: \"Price-ul planului 3"
     }
   },
   "localPrompts": {},

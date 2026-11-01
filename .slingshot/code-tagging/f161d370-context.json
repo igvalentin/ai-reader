@@ -6,6 +6,9 @@
   "promptMessage": {
     "1a2951f9": {
       "value": "am jail build pe Vercel, cu eroarea asta:\nBuild Failed\nNo more than 12 Serverless Functions can be added to a Deployment on the Hobby plan. Create a team (Pro plan) to deploy more.\n\nCare sunt cele 12 serverless functions?"
+    },
+    "b689a106": {
+      "value": "tot 500 da, eroarea asta:\n\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Price-ul planului 7 zile trebuie să fie activ și să corespundă: 5 RON (500 bani), săptămânal (week × 1) sau zilnic (day × 7).\"\n}\n\nAsa e definitia in Stripe:\nPrice\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nPrice for 7 days subscription\n\nEdit\n\nMore options\nProduct\n7 days subscription\nUnit price\nRON 5.00\nMetadata\nUse metadata to store custom additional information. View docs\n\nEdit metadata\nNo metadata\nPricing\nCurrency\nRON\nI"
     }
   },
   "localPrompts": {},

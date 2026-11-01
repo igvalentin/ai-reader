@@ -5,6 +5,24 @@
     "version": "1.2",
     "contextFile": "f161d370-context.json",
     "chunks": {
+      "186825": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793570864,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b689a106"
+        },
+        "hash": "57645557",
+        "messageId": "system_cf1cf7c0-d63c-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:07:44 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
       "ca7576": {
         "user": "Valentin Ion",
         "model": "gpt-6-luna",
@@ -22,6 +40,42 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:37:49 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "7defe2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793570864,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b689a106"
+        },
+        "hash": "195bb64a",
+        "messageId": "system_cf1cf7c0-d63c-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:07:44 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "cccc1e": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793570864,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b689a106"
+        },
+        "hash": "369ce2ea",
+        "messageId": "system_cf1cf7c0-d63c-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:07:44 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -30,7 +84,38 @@
         "hash": "26f24f30",
         "encoded": "vi.mock('../auth/verifySupabaseUser.js',%20()%20=%3E%20(%7B",
         "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "186825",
+        "hash": "5a42fbf9",
+        "encoded": "vi.mock('../entitlement/entitlement.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "cccc1e",
+        "hash": "ad120e91",
+        "encoded": "vi.mock('../billing/billing.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "7defe2",
+        "hash": "05f6377b",
+        "encoded": "import%20handler%20from%20'../../../api/checkout'",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "7defe2",
+        "hash": "5dd44255",
+        "encoded": "import%20%7B%20UnauthorizedError%20%7D%20from%20'../auth/verifySupabaseUser.js'",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "7defe2",
+        "hash": "a359593c",
+        "encoded": "import%20%7B%20EntitlementError%20%7D%20from%20'../entitlement/entitlement.js'",
+        "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 148
   }
 }

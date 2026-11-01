@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-01T21:23:49.998Z",
+  "lastUpdated": "2026-11-01T22:10:00.021Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -64,6 +64,13 @@
       "content": "ai-reader PWA: standalone manifest, 192/512 PNG + SVG icons, static-only SW excludes APIs/audio, device-specific install help, safe-area/touch CSS; 42 tests/build passed, not deployed.",
       "createdAt": "2026-10-31T20:40:04.907Z",
       "updatedAt": "2026-10-31T20:40:04.907Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793571000021_yvc4yg",
+      "content": "ai-reader Stripe: checkout polls every 1.5s (30s max); generic Stripe errors log safe metadata. Test webhook secrets and Supabase billing RPC migration require manual setup.",
+      "createdAt": "2026-11-01T22:10:00.021Z",
+      "updatedAt": "2026-11-01T22:10:00.021Z",
       "isEnabled": true
     }
   ]

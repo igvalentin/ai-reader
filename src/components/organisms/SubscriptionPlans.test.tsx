@@ -27,7 +27,10 @@ vi.mock('../../lib/billing/billingClient', () => ({
 
 import { SubscriptionPlans } from './SubscriptionPlans'
 
-afterEach(() => cleanup())
+afterEach(() => {
+  cleanup()
+  window.history.replaceState({}, '', '/')
+})
 
 beforeEach(() => {
   mocks.getSession.mockReset().mockReturnValue(new Promise(() => undefined))
@@ -57,10 +60,11 @@ describe('SubscriptionPlans', () => {
     ).toBe(true)
   })
 
-  it('shows the server-confirmed plan and expiry only when the status API returns an active entitlement', async () => {
+  it('polls for Stripe webhook confirmation and shows only the confirmed entitlement', async () => {
     const expiry = '2026-12-01T12:00:00.000Z'
+    window.history.replaceState({}, '', '/?checkout=success')
     mocks.getSession.mockResolvedValue({ data: { session: { access_token: 'test-token' } } })
-    mocks.requestSubscriptionStatus.mockResolvedValue({
+    mocks.requestSubscriptionStatus.mockResolvedValueOnce(null).mockResolvedValueOnce({
       active: true,
       status: 'active',
       planId: '30-days',
@@ -71,10 +75,12 @@ describe('SubscriptionPlans', () => {
     })
     render(<SubscriptionPlans />)
 
-    expect(await screen.findByText('1 decembrie 2026')).toBeInTheDocument()
+    expect(await screen.findByText('1 decembrie 2026', {}, { timeout: 5_000 })).toBeInTheDocument()
     expect(screen.getAllByText('30 de zile')).toHaveLength(2)
     expect(screen.getByText(/Reînnoire automată activă/)).toBeInTheDocument()
+    expect(mocks.requestSubscriptionStatus).toHaveBeenCalledTimes(2)
     expect(mocks.requestSubscriptionStatus).toHaveBeenCalledWith('test-token')
+    expect(screen.queryByText(/Plata este în curs de confirmare/)).not.toBeInTheDocument()
     expect(
       screen
         .getAllByRole('button', { name: 'Alege planul' })

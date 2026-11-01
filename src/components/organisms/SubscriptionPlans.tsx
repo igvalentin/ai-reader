@@ -59,27 +59,34 @@ export function SubscriptionPlans() {
     }
 
     let active = true
-    void requestSubscriptionStatus(accessToken)
-      .then((currentSubscription) => {
+    let retryTimeout: number | undefined
+    const loadSubscription = async (attempt = 0) => {
+      try {
+        const currentSubscription = await requestSubscriptionStatus(accessToken)
         if (!active) return
         setSubscription(currentSubscription)
         setError(null)
-      })
-      .catch((requestError: unknown) => {
+        if (checkoutResult === 'success' && !currentSubscription?.active && attempt < 20) {
+          retryTimeout = window.setTimeout(() => void loadSubscription(attempt + 1), 1_500)
+        }
+      } catch (requestError: unknown) {
         if (!active) return
         setError(
           requestError instanceof Error
             ? requestError.message
             : 'Statusul abonamentului nu s-a încărcat.',
         )
-      })
-      .finally(() => {
+      } finally {
         if (active) setLoadingStatus(false)
-      })
+      }
+    }
+
+    void loadSubscription()
     return () => {
       active = false
+      if (retryTimeout !== undefined) window.clearTimeout(retryTimeout)
     }
-  }, [accessToken])
+  }, [accessToken, checkoutResult])
 
   const refreshSubscription = useCallback(async () => {
     if (!accessToken) return
@@ -186,7 +193,7 @@ export function SubscriptionPlans() {
           )}
         </div>
       ) : null}
-      {checkoutResult === 'success' ? (
+      {checkoutResult === 'success' && !subscription?.active ? (
         <div className="mt-3 flex flex-wrap items-center gap-3" role="status">
           <p className="text-sm text-ink-muted">
             Plata este în curs de confirmare. Accesul se activează numai după confirmarea Stripe.
