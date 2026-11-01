@@ -6,18 +6,18 @@ const mocks = vi.hoisted(() => ({
   getAdminUsers: vi.fn(),
 }))
 
-vi.mock('../src/server/auth/verifySupabaseUser.js', () => ({
+vi.mock('../auth/verifySupabaseUser.js', () => ({
   AuthConfigurationError: class AuthConfigurationError extends Error {},
   UnauthorizedError: class UnauthorizedError extends Error {},
   verifySupabaseUser: mocks.verifySupabaseUser,
 }))
 
-vi.mock('../src/server/admin/adminUsers.js', () => ({
+vi.mock('../admin/adminUsers.js', () => ({
   getAdminUsers: mocks.getAdminUsers,
 }))
 
-import handler from './admin/users'
-import { UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
+import handler from '../../../api/admin/users'
+import { UnauthorizedError } from '../auth/verifySupabaseUser.js'
 
 function createMockReqRes(query: Record<string, string> = {}) {
   const req = {

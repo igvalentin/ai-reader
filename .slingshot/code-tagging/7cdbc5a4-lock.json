@@ -1,0 +1,150 @@
+{
+  "src/server/api-tests/tts.test.ts": {
+    "filename": "tts.test.ts",
+    "path": "src/server/api-tests/tts.test.ts",
+    "version": "1.2",
+    "contextFile": "7cdbc5a4-context.json",
+    "chunks": {
+      "90e4af": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "9369dfd8",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "45975a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "1db11472",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "76d519": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "dce1738f",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "156ac3": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "57645557",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "30f41f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "a8e5b040",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "15": {
+        "chunkId": "30f41f",
+        "hash": "d9045500",
+        "encoded": "vi.mock('../auth/verifySupabaseUser.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "156ac3",
+        "hash": "a507d777",
+        "encoded": "vi.mock('../entitlement/entitlement.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "76d519",
+        "hash": "0e4db972",
+        "encoded": "vi.mock('../tts/ttsProviderFactory.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "45975a",
+        "hash": "1dbb6d1a",
+        "encoded": "vi.mock('../usage/usageMetrics.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "90e4af",
+        "hash": "964dcd7a",
+        "encoded": "import%20handler%20from%20'../../../api/tts'",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "90e4af",
+        "hash": "b26b8100",
+        "encoded": "import%20%7B%20TtsProviderError%20%7D%20from%20'../tts/ttsProvider.js'",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "90e4af",
+        "hash": "9d36274b",
+        "encoded": "import%20%7B%20EntitlementError%20%7D%20from%20'../entitlement/entitlement.js'",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "90e4af",
+        "hash": "7e0094f6",
+        "encoded": "import%20%7B%20AuthConfigurationError,%20UnauthorizedError%20%7D%20from%20'../auth/verifySupabaseUser.js'",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

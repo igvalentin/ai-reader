@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-10-31T21:58:50.378Z",
+  "lastUpdated": "2026-11-01T13:43:36.111Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -40,9 +40,9 @@
     },
     {
       "id": "mem_1793477890627_e6fmmn",
-      "content": "Prompt 4: Supabase schema/RLS, signed anonymous entitlement, atomic claim RPC, email magic-link auth, Stripe checkout/portal/status/webhooks, paywall UI, and server TTS enforcement added. No deploy.",
+      "content": "ai-reader: OTP lock/cooldown; auth-config errors separate from Azure 503. 3 recurring RON plans, atomic entitlements/webhooks, admin allowlist+metrics. 8 Vercel handlers; tests outside api.",
       "createdAt": "2026-10-31T20:18:10.627Z",
-      "updatedAt": "2026-10-31T20:18:10.627Z",
+      "updatedAt": "2026-11-01T13:43:36.111Z",
       "isEnabled": true
     },
     {

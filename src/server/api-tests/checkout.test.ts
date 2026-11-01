@@ -7,13 +7,13 @@ const mocks = vi.hoisted(() => ({
   createCheckoutSession: vi.fn(),
 }))
 
-vi.mock('../src/server/auth/verifySupabaseUser.js', () => ({
+vi.mock('../auth/verifySupabaseUser.js', () => ({
   AuthConfigurationError: class AuthConfigurationError extends Error {},
   UnauthorizedError: class UnauthorizedError extends Error {},
   verifySupabaseUser: mocks.verifySupabaseUser,
 }))
 
-vi.mock('../src/server/entitlement/entitlement.js', () => ({
+vi.mock('../entitlement/entitlement.js', () => ({
   EntitlementError: class EntitlementError extends Error {
     constructor(
       public readonly code: string,
@@ -25,13 +25,13 @@ vi.mock('../src/server/entitlement/entitlement.js', () => ({
   associateAnonymousUsage: mocks.associateAnonymousUsage,
 }))
 
-vi.mock('../src/server/billing/billing.js', () => ({
+vi.mock('../billing/billing.js', () => ({
   createCheckoutSession: mocks.createCheckoutSession,
 }))
 
-import handler from './checkout'
-import { UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
-import { EntitlementError } from '../src/server/entitlement/entitlement.js'
+import handler from '../../../api/checkout'
+import { UnauthorizedError } from '../auth/verifySupabaseUser.js'
+import { EntitlementError } from '../entitlement/entitlement.js'
 
 function createMockReqRes(body: unknown, method = 'POST') {
   const req = {

@@ -6,6 +6,9 @@
   "promptMessage": {
     "668ceaef": {
       "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
+    },
+    "1a2951f9": {
+      "value": "am jail build pe Vercel, cu eroarea asta:\nBuild Failed\nNo more than 12 Serverless Functions can be added to a Deployment on the Hobby plan. Create a team (Pro plan) to deploy more.\n\nCare sunt cele 12 serverless functions?"
     }
   },
   "localPrompts": {},

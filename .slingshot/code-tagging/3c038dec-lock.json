@@ -1,0 +1,60 @@
+{
+  "src/server/api-tests/stripe-webhook.test.ts": {
+    "filename": "stripe-webhook.test.ts",
+    "path": "src/server/api-tests/stripe-webhook.test.ts",
+    "version": "1.2",
+    "contextFile": "3c038dec-context.json",
+    "chunks": {
+      "77628c": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "563beca6",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "56ee06": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540423,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "369ce2ea",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:40:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "14": {
+        "chunkId": "56ee06",
+        "hash": "000ffbae",
+        "encoded": "vi.mock('../billing/billing.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "77628c",
+        "hash": "6725544d",
+        "encoded": "import%20handler%20from%20'../../../api/stripe-webhook'",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

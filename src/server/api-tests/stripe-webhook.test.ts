@@ -12,14 +12,14 @@ const mocks = vi.hoisted(() => ({
   resolveUserIdForCustomer: vi.fn(),
 }))
 
-vi.mock('../src/server/billing/billing.js', () => ({
+vi.mock('../billing/billing.js', () => ({
   applyStripeSubscriptionEvent: mocks.applyStripeSubscriptionEvent,
   getStripe: mocks.getStripe,
   recordBillingEvent: mocks.recordBillingEvent,
   resolveUserIdForCustomer: mocks.resolveUserIdForCustomer,
 }))
 
-import handler from './stripe-webhook'
+import handler from '../../../api/stripe-webhook'
 
 function createMockReqRes() {
   const req = {

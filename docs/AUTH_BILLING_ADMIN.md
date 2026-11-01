@@ -2,6 +2,8 @@
 
 Acest document descrie configurarea externă necesară pentru funcțiile de autentificare, Stripe și dashboard-ul admin. Codul nu configurează automat proiectele Supabase/Stripe și nu a fost aplicat/deployat în producție.
 
+Testele API sunt în `src/server/api-tests/`, în afara directorului `api/` folosit pentru funcții Vercel. Acum există **8 funcții runtime**, sub plafonul Hobby de 12.
+
 ## Supabase Auth și OTP
 
 În proiectul Supabase folosit de `VITE_EXTERNAL_SUPABASE_URL`:

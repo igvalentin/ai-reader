@@ -13,13 +13,13 @@ const mocks = vi.hoisted(() => ({
   recordAudioAttempt: vi.fn(),
 }))
 
-vi.mock('../src/server/auth/verifySupabaseUser.js', () => ({
+vi.mock('../auth/verifySupabaseUser.js', () => ({
   AuthConfigurationError: class AuthConfigurationError extends Error {},
   UnauthorizedError: class UnauthorizedError extends Error {},
   verifySupabaseUser: vi.fn(),
 }))
 
-vi.mock('../src/server/entitlement/entitlement.js', () => ({
+vi.mock('../entitlement/entitlement.js', () => ({
   EntitlementError: class EntitlementError extends Error {
     constructor(
       public readonly code: 'PAYWALL' | 'SUBSCRIPTION_ACTIVE' | 'CONFIGURATION' | 'DATABASE',
@@ -34,18 +34,18 @@ vi.mock('../src/server/entitlement/entitlement.js', () => ({
   resolveEntitlementIdentity: mocks.resolveEntitlementIdentity,
 }))
 
-vi.mock('../src/server/tts/ttsProviderFactory.js', () => ({
+vi.mock('../tts/ttsProviderFactory.js', () => ({
   getTtsProvider: mocks.getTtsProvider,
 }))
 
-vi.mock('../src/server/usage/usageMetrics.js', () => ({
+vi.mock('../usage/usageMetrics.js', () => ({
   recordAudioAttempt: mocks.recordAudioAttempt,
 }))
 
-import handler from './tts'
-import { TtsProviderError } from '../src/server/tts/ttsProvider.js'
-import { EntitlementError } from '../src/server/entitlement/entitlement.js'
-import { AuthConfigurationError, UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
+import handler from '../../../api/tts'
+import { TtsProviderError } from '../tts/ttsProvider.js'
+import { EntitlementError } from '../entitlement/entitlement.js'
+import { AuthConfigurationError, UnauthorizedError } from '../auth/verifySupabaseUser.js'
 
 function createMockReqRes(body: unknown, method = 'POST') {
   const req = {

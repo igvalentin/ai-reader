@@ -12,20 +12,20 @@ const activityMocks = vi.hoisted(() => ({
   recordOcrAttempt: vi.fn(),
 }))
 
-vi.mock('../src/server/entitlement/entitlement.js', async () => {
-  const actual = await vi.importActual<typeof import('../src/server/entitlement/entitlement.js')>(
-    '../src/server/entitlement/entitlement.js',
+vi.mock('../entitlement/entitlement.js', async () => {
+  const actual = await vi.importActual<typeof import('../entitlement/entitlement.js')>(
+    '../entitlement/entitlement.js',
   )
   return { ...actual, resolveEntitlementIdentity: activityMocks.resolveEntitlementIdentity }
 })
 
-vi.mock('../src/server/usage/usageMetrics.js', () => ({
+vi.mock('../usage/usageMetrics.js', () => ({
   recordOcrAttempt: activityMocks.recordOcrAttempt,
 }))
 
-vi.mock('../src/server/ocr/parseMultipartImage', async () => {
-  const actual = await vi.importActual<typeof import('../src/server/ocr/parseMultipartImage')>(
-    '../src/server/ocr/parseMultipartImage',
+vi.mock('../ocr/parseMultipartImage', async () => {
+  const actual = await vi.importActual<typeof import('../ocr/parseMultipartImage')>(
+    '../ocr/parseMultipartImage',
   )
   return {
     ...actual,
@@ -33,13 +33,13 @@ vi.mock('../src/server/ocr/parseMultipartImage', async () => {
   }
 })
 
-vi.mock('../src/server/ocr/ocrProviderFactory', () => ({
+vi.mock('../ocr/ocrProviderFactory', () => ({
   getOcrProvider: getOcrProviderMock,
 }))
 
-import handler from './ocr'
-import { MultipartParseError } from '../src/server/ocr/parseMultipartImage'
-import { OcrProviderError } from '../src/server/ocr/ocrProvider'
+import handler from '../../../api/ocr'
+import { MultipartParseError } from '../ocr/parseMultipartImage'
+import { OcrProviderError } from '../ocr/ocrProvider'
 
 const PNG_HEADER = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0x00])
 

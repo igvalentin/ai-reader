@@ -1,0 +1,15 @@
+{
+  "filename": "stripe-webhook.test.ts",
+  "path": "src/server/api-tests/stripe-webhook.test.ts",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "1a2951f9": {
+      "value": "am jail build pe Vercel, cu eroarea asta:\nBuild Failed\nNo more than 12 Serverless Functions can be added to a Deployment on the Hobby plan. Create a team (Pro plan) to deploy more.\n\nCare sunt cele 12 serverless functions?"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

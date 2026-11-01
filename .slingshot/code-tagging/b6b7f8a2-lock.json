@@ -1,0 +1,36 @@
+{
+  "src/server/api-tests/admin-users.test.ts": {
+    "filename": "admin-users.test.ts",
+    "path": "src/server/api-tests/admin-users.test.ts",
+    "version": "1.2",
+    "contextFile": "b6b7f8a2-context.json",
+    "chunks": {
+      "94524b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793540263,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1a2951f9"
+        },
+        "hash": "a8e5b040",
+        "messageId": "system_c24ae550-d5f8-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:37:43 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "8": {
+        "chunkId": "94524b",
+        "hash": "ab48d3aa",
+        "encoded": "vi.mock('../auth/verifySupabaseUser.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

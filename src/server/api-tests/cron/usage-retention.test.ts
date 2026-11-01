@@ -7,11 +7,11 @@ const mocks = vi.hoisted(() => ({
   lt: vi.fn(),
 }))
 
-vi.mock('../../src/server/entitlement/entitlement.js', () => ({
+vi.mock('../../entitlement/entitlement.js', () => ({
   getSupabaseAdmin: () => ({ from: mocks.from }),
 }))
 
-import handler from './usage-retention'
+import handler from '../../../../api/cron/usage-retention'
 
 function createMockReqRes(method = 'GET', authorization?: string) {
   const req = { method, headers: { authorization } } as unknown as VercelRequest
