@@ -4,16 +4,48 @@ import { findSubscriptionPlan, stripePriceMatchesPlan, SUBSCRIPTION_PLANS } from
 describe('subscription plans', () => {
   it('defines the three RON recurring plans with the requested durations', () => {
     expect(
-      SUBSCRIPTION_PLANS.map(({ id, priceRon, interval, intervalCount }) => ({
-        id,
-        priceRon,
-        interval,
-        intervalCount,
-      })),
+      SUBSCRIPTION_PLANS.map(
+        ({
+          id,
+          priceRon,
+          interval,
+          intervalCount,
+          priceEnvironmentVariable,
+          productEnvironmentVariable,
+        }) => ({
+          id,
+          priceRon,
+          interval,
+          intervalCount,
+          priceEnvironmentVariable,
+          productEnvironmentVariable,
+        }),
+      ),
     ).toEqual([
-      { id: '7-days', priceRon: 5, interval: 'week', intervalCount: 1 },
-      { id: '30-days', priceRon: 10, interval: 'day', intervalCount: 30 },
-      { id: '1-year', priceRon: 100, interval: 'year', intervalCount: 1 },
+      {
+        id: '7-days',
+        priceRon: 5,
+        interval: 'week',
+        intervalCount: 1,
+        priceEnvironmentVariable: 'STRIPE_PRICE_ID_7_DAYS',
+        productEnvironmentVariable: 'STRIPE_PRICE_PLAN_1',
+      },
+      {
+        id: '30-days',
+        priceRon: 10,
+        interval: 'day',
+        intervalCount: 30,
+        priceEnvironmentVariable: 'STRIPE_PRICE_ID_30_DAYS',
+        productEnvironmentVariable: 'STRIPE_PRICE_PLAN_2',
+      },
+      {
+        id: '1-year',
+        priceRon: 100,
+        interval: 'year',
+        intervalCount: 1,
+        priceEnvironmentVariable: 'STRIPE_PRICE_ID_1_YEAR',
+        productEnvironmentVariable: 'STRIPE_PRICE_PLAN_3',
+      },
     ])
   })
 

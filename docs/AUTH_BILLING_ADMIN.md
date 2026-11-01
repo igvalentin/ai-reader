@@ -36,19 +36,27 @@ Integrarea existentă Stripe folosea `mode: subscription`, Billing Portal și we
 
 În **Stripe Dashboard → Test mode → Product catalog**, creează câte un produs și un preț recurring:
 
-| Produs                  |       Sumă | Interval Stripe exact |
-| ----------------------- | ---------: | --------------------- |
-| Citește-mi — 7 zile     |    500 RON | `week`, count `1`     |
-| Citește-mi — 30 de zile |  1.000 RON | `day`, count `30`     |
-| Citește-mi — 1 an       | 10.000 RON | `year`, count `1`     |
+| Produs                  | Sumă    | Interval Stripe exact |
+| ----------------------- | ------- | --------------------- |
+| Citește-mi — 7 zile     | 5 RON   | `week`, count `1`     |
+| Citește-mi — 30 de zile | 10 RON  | `day`, count `30`     |
+| Citește-mi — 1 an       | 100 RON | `year`, count `1`     |
 
-Configurează ID-urile Price în Vercel server-side:
+Stripe stochează `unit_amount` în bani: valorile așteptate sunt `500`, `1000` și `10000`.
+
+Varianta recomandată este să configurezi în Vercel ID-urile **Price** (prefix `price_`):
 
 - `STRIPE_PRICE_ID_7_DAYS`
 - `STRIPE_PRICE_ID_30_DAYS`
 - `STRIPE_PRICE_ID_1_YEAR`
 
-Serverul verifică pentru fiecare ID că prețul este activ și are suma, moneda RON și intervalul așteptat; un ID greșit nu deschide Checkout. Trecerea în Live mode se face numai după aprobarea explicită și verificarea prețurilor.
+Dacă ai deja configurat ID-uri **Product** (prefix `prod_`), backend-ul acceptă și:
+
+- `STRIPE_PRICE_PLAN_1` — produsul pentru 7 zile
+- `STRIPE_PRICE_PLAN_2` — produsul pentru 30 de zile
+- `STRIPE_PRICE_PLAN_3` — produsul anual
+
+Dacă sunt setate ambele variante, `STRIPE_PRICE_ID_*` are prioritate. În modul Product ID, serverul caută în Stripe un singur Price activ care corespunde sumei, monedei RON și intervalului așteptat; zero sau mai multe potriviri înseamnă refuzarea Checkout-ului. Pentru configurația Vercel folosește valorile din Production și redeployează codul după actualizarea variabilelor. Trecerea în Live mode se face numai după aprobarea explicită și verificarea prețurilor.
 
 În Stripe, configurează webhook-ul către `https://ai-reader-lac.vercel.app/api/stripe-webhook` și abonează-te la:
 

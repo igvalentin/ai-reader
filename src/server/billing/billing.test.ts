@@ -8,7 +8,7 @@ const mocks = vi.hoisted(() => {
     upsert: vi.fn(),
   }
   const stripeClient = {
-    prices: { retrieve: vi.fn() },
+    prices: { retrieve: vi.fn(), list: vi.fn() },
     customers: { create: vi.fn() },
     checkout: { sessions: { create: vi.fn() } },
     billingPortal: { sessions: { create: vi.fn() } },
@@ -40,6 +40,9 @@ afterEach(() => {
   delete process.env.STRIPE_PRICE_ID_7_DAYS
   delete process.env.STRIPE_PRICE_ID_30_DAYS
   delete process.env.STRIPE_PRICE_ID_1_YEAR
+  delete process.env.STRIPE_PRICE_PLAN_1
+  delete process.env.STRIPE_PRICE_PLAN_2
+  delete process.env.STRIPE_PRICE_PLAN_3
   vi.restoreAllMocks()
 })
 
@@ -64,6 +67,7 @@ beforeEach(() => {
     unit_amount: 1_000,
     recurring: { interval: 'day', interval_count: 30 },
   })
+  mocks.stripeClient.prices.list.mockReset().mockResolvedValue({ data: [] })
   mocks.stripeClient.customers.create.mockReset().mockResolvedValue({ id: 'cus_test' })
   mocks.stripeClient.checkout.sessions.create.mockReset().mockResolvedValue({
     url: 'https://checkout.stripe.test/session',
@@ -89,6 +93,67 @@ describe('createCheckoutSession', () => {
       }),
       { idempotencyKey: 'ai-reader-checkout-user-123-9f342980-a526-4e44-9b4d-685bd88973b1' },
     )
+  })
+
+  it('resolves configured Stripe Product IDs to the matching active Price', async () => {
+    delete process.env.STRIPE_PRICE_ID_7_DAYS
+    process.env.STRIPE_PRICE_PLAN_1 = 'prod_weekly'
+    mocks.stripeClient.prices.list.mockResolvedValueOnce({
+      data: [
+        {
+          id: 'price_weekly',
+          active: true,
+          currency: 'ron',
+          unit_amount: 500,
+          recurring: { interval: 'week', interval_count: 1 },
+        },
+      ],
+    })
+
+    const url = await createCheckoutSession(
+      'user-123',
+      '7-days',
+      '9f342980-a526-4e44-9b4d-685bd88973b1',
+    )
+
+    expect(url).toBe('https://checkout.stripe.test/session')
+    expect(mocks.stripeClient.prices.list).toHaveBeenCalledWith({
+      product: 'prod_weekly',
+      active: true,
+      limit: 100,
+    })
+    expect(mocks.stripeClient.checkout.sessions.create).toHaveBeenCalledWith(
+      expect.objectContaining({ line_items: [{ price: 'price_weekly', quantity: 1 }] }),
+      expect.objectContaining({
+        idempotencyKey: expect.stringContaining('9f342980-a526-4e44-9b4d-685bd88973b1'),
+      }),
+    )
+  })
+
+  it('rejects an ambiguous product with multiple matching active Prices across pages', async () => {
+    delete process.env.STRIPE_PRICE_ID_7_DAYS
+    process.env.STRIPE_PRICE_PLAN_1 = 'prod_weekly'
+    const matchingPrice = {
+      active: true,
+      currency: 'ron',
+      unit_amount: 500,
+      recurring: { interval: 'week', interval_count: 1 },
+    }
+    mocks.stripeClient.prices.list
+      .mockResolvedValueOnce({
+        data: [{ ...matchingPrice, id: 'price_weekly_1' }],
+        has_more: true,
+      })
+      .mockResolvedValueOnce({
+        data: [{ ...matchingPrice, id: 'price_weekly_2' }],
+        has_more: false,
+      })
+
+    await expect(
+      createCheckoutSession('user-123', '7-days', '9f342980-a526-4e44-9b4d-685bd88973b1'),
+    ).rejects.toMatchObject({ code: 'CONFIGURATION' })
+    expect(mocks.stripeClient.prices.list).toHaveBeenCalledTimes(2)
+    expect(mocks.stripeClient.checkout.sessions.create).not.toHaveBeenCalled()
   })
 
   it('refuses a Stripe price whose amount or duration differs from the plan', async () => {

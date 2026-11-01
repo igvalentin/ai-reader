@@ -1,0 +1,148 @@
+{
+  "src/constants/subscriptionPlans.ts": {
+    "filename": "subscriptionPlans.ts",
+    "path": "src/constants/subscriptionPlans.ts",
+    "version": "1.2",
+    "contextFile": "30e234a8-context.json",
+    "chunks": {
+      "8b254f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793567704,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "017c9632",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:15:04 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6c5bb4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793567704,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "54b02264",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:15:04 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b448f5": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793567704,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "0bcada59",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:15:04 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "7": {
+        "chunkId": "b448f5",
+        "hash": "32f3c58e",
+        "encoded": "intervalCount:%201,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b448f5",
+        "hash": "317d4903",
+        "encoded": "priceEnvironmentVariable:%20'STRIPE_PRICE_ID_7_DAYS',",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "b448f5",
+        "hash": "c9a55db5",
+        "encoded": "productEnvironmentVariable:%20'STRIPE_PRICE_PLAN_1',",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "b448f5",
+        "hash": "559c81f9",
+        "encoded": "renewalCopy:%20'Se%20re%C3%AEnnoie%C8%99te%20automat%20la%20fiecare%207%20zile.',",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "6c5bb4",
+        "hash": "811b8d22",
+        "encoded": "intervalCount:%2030,",
+        "prevChunkIds": [
+          "6c5bb4"
+        ]
+      },
+      "19": {
+        "chunkId": "6c5bb4",
+        "hash": "34a4006c",
+        "encoded": "priceEnvironmentVariable:%20'STRIPE_PRICE_ID_30_DAYS',",
+        "prevChunkIds": [
+          "6c5bb4"
+        ]
+      },
+      "20": {
+        "chunkId": "6c5bb4",
+        "hash": "5c1d12b6",
+        "encoded": "productEnvironmentVariable:%20'STRIPE_PRICE_PLAN_2',",
+        "prevChunkIds": [
+          "6c5bb4"
+        ]
+      },
+      "21": {
+        "chunkId": "6c5bb4",
+        "hash": "989f7b19",
+        "encoded": "renewalCopy:%20'Se%20re%C3%AEnnoie%C8%99te%20automat%20la%20fiecare%2030%20de%20zile.',",
+        "prevChunkIds": [
+          "6c5bb4"
+        ]
+      },
+      "29": {
+        "chunkId": "8b254f",
+        "hash": "cf3d74cd",
+        "encoded": "intervalCount:%201,",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "8b254f",
+        "hash": "d4bfab7e",
+        "encoded": "priceEnvironmentVariable:%20'STRIPE_PRICE_ID_1_YEAR',",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "8b254f",
+        "hash": "fdca20d7",
+        "encoded": "productEnvironmentVariable:%20'STRIPE_PRICE_PLAN_3',",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "8b254f",
+        "hash": "455bcb15",
+        "encoded": "renewalCopy:%20'Se%20re%C3%AEnnoie%C8%99te%20automat%20anual.',",
+        "prevChunkIds": [
+          "8b254f"
+        ]
+      }
+    }
+  }
+}

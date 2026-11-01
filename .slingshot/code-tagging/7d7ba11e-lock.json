@@ -41,6 +41,24 @@
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:01:38 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       },
+      "737291": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793568079,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "a9471b40",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:21:19 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
       "ad4caa": {
         "user": "Valentin Ion",
         "model": "claude-sonnet-4-5@20250929",
@@ -349,6 +367,12 @@
         "encoded": "orice%20activare;%20pa%C8%99ii%20sunt%20%C3%AEn%20%5B%60docs/AUTH_BILLING_ADMIN.md%60%5D(./docs/AUTH_BILLING_ADMIN.md).",
         "prevChunkIds": []
       },
+      "86": {
+        "chunkId": "737291",
+        "hash": "7c48db20",
+        "encoded": "-%20%60STRIPE_SECRET_KEY%60,%20%60STRIPE_WEBHOOK_SECRET%60%20%C8%99i%20fie%20%60STRIPE_PRICE_ID_7_DAYS%60%20/%20%60STRIPE_PRICE_ID_30_DAYS%60%20/%20%60STRIPE_PRICE_ID_1_YEAR%60,%20fie%20aliasurile%20%60STRIPE_PRICE_PLAN_1%60%20/%20%60STRIPE_PRICE_PLAN_2%60%20/%20%60STRIPE_PRICE_PLAN_3%60%20(Product%20IDs)",
+        "prevChunkIds": []
+      },
       "90": {
         "chunkId": "641730",
         "hash": "39d93f5b",
@@ -583,6 +607,7 @@
         "encoded": "-%20%60STRIPE_SECRET_KEY%60,%20%60STRIPE_PRICE_ID%60,%20%60STRIPE_WEBHOOK_SECRET%60",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 117
   }
 }

@@ -7,6 +7,7 @@ export const SUBSCRIPTION_PLANS = [
     interval: 'week',
     intervalCount: 1,
     priceEnvironmentVariable: 'STRIPE_PRICE_ID_7_DAYS',
+    productEnvironmentVariable: 'STRIPE_PRICE_PLAN_1',
     renewalCopy: 'Se reînnoiește automat la fiecare 7 zile.',
   },
   {
@@ -17,6 +18,7 @@ export const SUBSCRIPTION_PLANS = [
     interval: 'day',
     intervalCount: 30,
     priceEnvironmentVariable: 'STRIPE_PRICE_ID_30_DAYS',
+    productEnvironmentVariable: 'STRIPE_PRICE_PLAN_2',
     renewalCopy: 'Se reînnoiește automat la fiecare 30 de zile.',
   },
   {
@@ -27,6 +29,7 @@ export const SUBSCRIPTION_PLANS = [
     interval: 'year',
     intervalCount: 1,
     priceEnvironmentVariable: 'STRIPE_PRICE_ID_1_YEAR',
+    productEnvironmentVariable: 'STRIPE_PRICE_PLAN_3',
     renewalCopy: 'Se reînnoiește automat anual.',
   },
 ] as const

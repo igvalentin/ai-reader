@@ -23,6 +23,24 @@
         "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:11 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       },
+      "143010": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793567963,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "5a3803bf",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:19:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
       "de3fc5": {
         "user": "Valentin Ion",
         "model": "claude-sonnet-4-5@20250929",
@@ -40,46 +58,226 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:54:21 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b690e0": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793567963,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "3a95671b",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:19:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "22": {
+      "4": {
+        "chunkId": "b690e0",
+        "hash": "776b5e83",
+        "encoded": "#%20Server-side-only%20settings%20and%20keys.%20NEVER%20prefix%20secrets%20with%20VITE_%20or%20commit%20real%20values.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b690e0",
+        "hash": "3e70882e",
+        "encoded": "#%20SUPABASE_SERVICE_ROLE_KEY=your-server-service-role-key",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "b690e0",
+        "hash": "c1755fa6",
+        "encoded": "#%20SUPABASE_URL=https://your-project.supabase.co",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "b690e0",
+        "hash": "fbd2fc1b",
+        "encoded": "#%20Required%20by%20server-side%20bearer-token%20validation;%20use%20the%20anon/publishable%20key%20for%20the%20same%20project.",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b690e0",
+        "hash": "7cead9a3",
+        "encoded": "#%20SUPABASE_ANON_KEY=your-project-anon-key",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "b690e0",
+        "hash": "9efabb86",
+        "encoded": "#%20ANONYMOUS_USAGE_SECRET=generate-a-long-random-server-secret",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "b690e0",
+        "hash": "c36c2b85",
+        "encoded": "#%20APP_URL=https://your-deployed-domain.example",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "b690e0",
+        "hash": "e856905a",
+        "encoded": "#%20Comma-separated%20Supabase%20auth%20user%20IDs;%20never%20accept%20roles%20from%20client%20input.",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "b690e0",
+        "hash": "dac52311",
+        "encoded": "#%20ADMIN_USER_IDS=trusted-user-uuid",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "b690e0",
+        "hash": "e19dc1ff",
+        "encoded": "#%20CRON_SECRET=generate-a-separate-long-random-secret",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "b690e0",
+        "hash": "f0db9a92",
+        "encoded": "#%20Stripe:%20create%20recurring%20RON%20Prices%20in%20Stripe%20Test%20mode%20first.%20Do%20not%20use%20live%20values%20until%20approved.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "b690e0",
+        "hash": "655b2eb4",
+        "encoded": "#%20STRIPE_SECRET_KEY=your-stripe-test-secret-key",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "b690e0",
+        "hash": "4c31da00",
+        "encoded": "#%20STRIPE_PRICE_ID_7_DAYS=price_for_5_ron_every_7_days",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "b690e0",
+        "hash": "dd21f2dc",
+        "encoded": "#%20STRIPE_PRICE_ID_30_DAYS=price_for_10_ron_every_30_days",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "b690e0",
+        "hash": "e28cbcc5",
+        "encoded": "#%20STRIPE_PRICE_ID_1_YEAR=price_for_100_ron_per_year",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "b690e0",
+        "hash": "f51b6a44",
+        "encoded": "#%20STRIPE_WEBHOOK_SECRET=your-stripe-test-webhook-secret",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "143010",
+        "hash": "a1bd5be5",
+        "encoded": "#%20Stripe:%20create%20recurring%20RON%20Prices%20in%20Stripe%20Test%20mode%20first.%20Do%20not%20use%20live%20values%20until%20approved.",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "143010",
+        "hash": "f2c21af7",
+        "encoded": "#%20STRIPE_SECRET_KEY=your-stripe-test-secret-key",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "143010",
+        "hash": "5afbdef8",
+        "encoded": "#%20Preferred:%20exact%20Price%20IDs%20(price_...)%20for%20validated%20recurring%20prices.",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "143010",
+        "hash": "d9aeea50",
+        "encoded": "#%20STRIPE_PRICE_ID_7_DAYS=your-7-day-price-id",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "143010",
+        "hash": "ccdf7732",
+        "encoded": "#%20STRIPE_PRICE_ID_30_DAYS=your-30-day-price-id",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "143010",
+        "hash": "5884a69e",
+        "encoded": "#%20STRIPE_PRICE_ID_1_YEAR=your-annual-price-id",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "143010",
+        "hash": "b6d52c77",
+        "encoded": "#%20Or%20configure%20Product%20IDs%20(prod_...);%20backend%20resolves%20a%20unique%20matching%20active%20Price.",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "143010",
+        "hash": "7e66286e",
+        "encoded": "#%20STRIPE_PRICE_PLAN_1=your-7-day-product-id",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "143010",
+        "hash": "13af2665",
+        "encoded": "#%20STRIPE_PRICE_PLAN_2=your-30-day-product-id",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "143010",
+        "hash": "161de55e",
+        "encoded": "#%20STRIPE_PRICE_PLAN_3=your-annual-product-id",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "143010",
+        "hash": "6a47f1dc",
+        "encoded": "#%20STRIPE_WEBHOOK_SECRET=your-stripe-test-webhook-secret",
+        "prevChunkIds": []
+      },
+      "53": {
         "chunkId": "de3fc5",
-        "hash": "b781f580",
+        "hash": "9284de4a",
         "encoded": "#%20OCR%20runs%20locally%20with%20Tesseract.js%20and%20the%20Romanian%20model;%20no%20OCR%20API%20key%20is%20required.",
         "prevChunkIds": []
       },
-      "24": {
+      "55": {
         "chunkId": "de3fc5",
-        "hash": "c5ac77cb",
+        "hash": "f3712a61",
         "encoded": "#%20Azure%20AI%20Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix;%20do%20not%20commit%20real%20values).",
         "prevChunkIds": []
       },
-      "25": {
+      "56": {
         "chunkId": "de3fc5",
-        "hash": "4b2b88db",
+        "hash": "d254395e",
         "encoded": "#%20AZURE_SPEECH_KEY=your-azure-speech-key",
         "prevChunkIds": []
       },
-      "26": {
+      "57": {
         "chunkId": "de3fc5",
-        "hash": "9bb3f73b",
+        "hash": "2a130659",
         "encoded": "#%20AZURE_SPEECH_REGION=germanywestcentral",
         "prevChunkIds": []
       },
-      "27": {
+      "58": {
         "chunkId": "de3fc5",
-        "hash": "d4536ac4",
+        "hash": "bc1bcc0d",
         "encoded": "#%20Optional%20Romanian%20neural%20voice%20(default:%20ro-RO-AlinaNeural).",
         "prevChunkIds": []
       },
-      "28": {
+      "59": {
         "chunkId": "de3fc5",
-        "hash": "1712807c",
+        "hash": "c4b027db",
         "encoded": "#%20AZURE_SPEECH_VOICE=ro-RO-AlinaNeural",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 30
+    "_prevLineCount": 35
   }
 }

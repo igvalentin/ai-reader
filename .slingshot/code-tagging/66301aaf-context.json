@@ -15,6 +15,9 @@
     },
     "668ceaef": {
       "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
+    },
+    "23f4c44c": {
+      "value": "am configurat in vercel si stripe product 7 zile, Stripe zice ca il are functional, dar aplicatia primeste 500 la checkput si eroarea\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Lipsește prețul Stripe configurat pentru planul 7-days.\"\n}\nCorecteaza!\n\nEnv: \nSTRIPE_PRICE_PLAN_1\nprod_VYC2JbIvqbGhdf\nProduction\nAdded \n18m ago\nSTRIPE_PRICE_PLAN_2\nprod_VYC3Fdt3hArxsg\nProduction\nAdded \n18m ago\nSTRIPE_PRICE_PLAN_3\nprod_VYC3q9jqTSeEpZ\nProduction\nAdded \n18m ago\nStripe info\nLogs\nPOST /v1/produ"
     }
   },
   "localPrompts": {},

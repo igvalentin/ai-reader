@@ -38,21 +38,57 @@ function getAppUrl(): string {
 async function getConfiguredPrice(planId: SubscriptionPlanId) {
   const plan = findSubscriptionPlan(planId)
   if (!plan) throw new EntitlementError('CONFIGURATION', 'Planul selectat nu este disponibil.')
-  const priceId = process.env[plan.priceEnvironmentVariable]
-  if (!priceId) {
+  const stripe = getStripe()
+  const configuredPriceId = process.env[plan.priceEnvironmentVariable]?.trim()
+
+  if (configuredPriceId) {
+    const price = await stripe.prices.retrieve(configuredPriceId)
+    if (!stripePriceMatchesPlan(price, plan)) {
+      throw new EntitlementError(
+        'CONFIGURATION',
+        `Prețul Stripe pentru planul ${plan.id} nu corespunde sumei sau duratei configurate.`,
+      )
+    }
+    return { plan, priceId: price.id }
+  }
+
+  const productId = process.env[plan.productEnvironmentVariable]?.trim()
+  if (!productId) {
     throw new EntitlementError(
       'CONFIGURATION',
-      `Lipsește prețul Stripe configurat pentru planul ${plan.id}.`,
+      `Configurează ${plan.priceEnvironmentVariable} cu un Price ID sau ${plan.productEnvironmentVariable} cu un Product ID pentru planul ${plan.id}.`,
     )
   }
-  const price = await getStripe().prices.retrieve(priceId)
-  if (!stripePriceMatchesPlan(price, plan)) {
+
+  const matchingPrices: Stripe.Price[] = []
+  let startingAfter: string | undefined
+  let hasMore = true
+  while (hasMore) {
+    const pricePage = await stripe.prices.list({
+      product: productId,
+      active: true,
+      limit: 100,
+      ...(startingAfter ? { starting_after: startingAfter } : {}),
+    })
+    matchingPrices.push(...pricePage.data.filter((price) => stripePriceMatchesPlan(price, plan)))
+    if (matchingPrices.length > 1 || !pricePage.has_more) break
+    const lastPrice = pricePage.data[pricePage.data.length - 1]
+    if (!lastPrice) {
+      throw new EntitlementError(
+        'CONFIGURATION',
+        `Nu s-au putut lista prețurile Stripe pentru planul ${plan.id}.`,
+      )
+    }
+    startingAfter = lastPrice.id
+    hasMore = pricePage.has_more
+  }
+  if (matchingPrices.length !== 1) {
     throw new EntitlementError(
       'CONFIGURATION',
-      `Prețul Stripe pentru planul ${plan.id} nu corespunde sumei sau duratei configurate.`,
+      `Produsul Stripe configurat pentru planul ${plan.id} trebuie să aibă exact un Price activ cu suma și durata așteptate.`,
     )
   }
-  return { plan, priceId }
+  return { plan, priceId: matchingPrices[0].id }
 }
 
 export async function createCheckoutSession(

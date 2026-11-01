@@ -1,0 +1,102 @@
+{
+  "src/server/billing/plans.test.ts": {
+    "filename": "plans.test.ts",
+    "path": "src/server/billing/plans.test.ts",
+    "version": "1.2",
+    "contextFile": "6ff96e08-context.json",
+    "chunks": {
+      "28f911": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793567963,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "23f4c44c"
+        },
+        "hash": "6c55beb7",
+        "messageId": "system_0d89a340-d639-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 11:19:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "6": {
+        "chunkId": "28f911",
+        "hash": "3ca99d92",
+        "encoded": "SUBSCRIPTION_PLANS.map((%7B%20id,%20priceRon,%20interval,%20intervalCount,%20priceEnvironmentVariable,%20productEnvironmentVariable%20%7D)%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "28f911",
+        "hash": "6b396fd6",
+        "encoded": "id,",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "28f911",
+        "hash": "40068879",
+        "encoded": "priceRon,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "28f911",
+        "hash": "02d3d467",
+        "encoded": "interval,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "28f911",
+        "hash": "b2fc7ea4",
+        "encoded": "intervalCount,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "28f911",
+        "hash": "1d0334b2",
+        "encoded": "priceEnvironmentVariable,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "28f911",
+        "hash": "e619ef4b",
+        "encoded": "productEnvironmentVariable,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "28f911",
+        "hash": "f2cbfd19",
+        "encoded": "%7D)),",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "28f911",
+        "hash": "56dae57f",
+        "encoded": ").toEqual(%5B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "28f911",
+        "hash": "71e11ef9",
+        "encoded": "%7B%20id:%20'7-days',%20priceRon:%205,%20interval:%20'week',%20intervalCount:%201,%20priceEnvironmentVariable:%20'STRIPE_PRICE_ID_7_DAYS',%20productEnvironmentVariable:%20'STRIPE_PRICE_PLAN_1'%20%7D,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "28f911",
+        "hash": "55f4745e",
+        "encoded": "%7B%20id:%20'30-days',%20priceRon:%2010,%20interval:%20'day',%20intervalCount:%2030,%20priceEnvironmentVariable:%20'STRIPE_PRICE_ID_30_DAYS',%20productEnvironmentVariable:%20'STRIPE_PRICE_PLAN_2'%20%7D,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "28f911",
+        "hash": "144a51f3",
+        "encoded": "%7B%20id:%20'1-year',%20priceRon:%20100,%20interval:%20'year',%20intervalCount:%201,%20priceEnvironmentVariable:%20'STRIPE_PRICE_ID_1_YEAR',%20productEnvironmentVariable:%20'STRIPE_PRICE_PLAN_3'%20%7D,",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
