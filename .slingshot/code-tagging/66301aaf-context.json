@@ -24,6 +24,9 @@
     },
     "b689a106": {
       "value": "tot 500 da, eroarea asta:\n\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Price-ul planului 7 zile trebuie să fie activ și să corespundă: 5 RON (500 bani), săptămânal (week × 1) sau zilnic (day × 7).\"\n}\n\nAsa e definitia in Stripe:\nPrice\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nPrice for 7 days subscription\n\nEdit\n\nMore options\nProduct\n7 days subscription\nUnit price\nRON 5.00\nMetadata\nUse metadata to store custom additional information. View docs\n\nEdit metadata\nNo metadata\nPricing\nCurrency\nRON\nI"
+    },
+    "4327011f": {
+      "value": "subscrierea nu e activa, desi platile sunt ok.\nThe FetchEvent for \"https://ai-reader-lac.vercel.app/?checkout=success&session_id=cs_test_b10Pgpa2UPyZkNJyCNJpXdR5hSDLTExpBnFk10KUpTO0rCGE8irFowi0Dw#abonament\" resulted in a network error response: the promise was rejected.\n\n{\n    \"subscription\": {\n        \"active\": false,\n        \"status\": \"none\",\n        \"planId\": null,\n        \"currentPeriodStart\": null,\n        \"currentPeriodEnd\": null,\n        \"cancelAtPeriodEnd\": false,\n        \"hasBillingAcco"
     }
   },
   "localPrompts": {},

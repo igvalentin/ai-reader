@@ -9,6 +9,7 @@ import {
   getUserSubscription,
   hasActiveSubscription,
 } from '../src/server/entitlement/entitlement.js'
+import { reconcileCheckoutSession } from '../src/server/billing/billing.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Cache-Control', 'private, no-store')
@@ -16,8 +17,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.setHeader('Allow', 'GET')
     return res.status(405).json({ code: 'METHOD_NOT_ALLOWED', error: 'Metodă nepermisă.' })
   }
+  const sessionId = req.query.session_id
+  if (
+    sessionId !== undefined &&
+    (typeof sessionId !== 'string' || !/^cs_[A-Za-z0-9_]{8,255}$/.test(sessionId))
+  ) {
+    return res.status(400).json({ code: 'INVALID_CHECKOUT_SESSION', error: 'Sesiune Checkout invalidă.' })
+  }
+
   try {
     const userId = await verifySupabaseUser(req.headers.authorization)
+    if (sessionId) await reconcileCheckoutSession(userId, sessionId)
     const row = await getUserSubscription(userId)
     if (!row) return res.status(200).json({ subscription: null })
     const active = hasActiveSubscription(row)

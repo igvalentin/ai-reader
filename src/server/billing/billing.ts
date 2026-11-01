@@ -22,6 +22,42 @@ export function getStripe(): Stripe {
   return stripe
 }
 
+export async function reconcileCheckoutSession(
+  userId: string,
+  sessionId: string,
+): Promise<boolean> {
+  const stripe = getStripe()
+  const session = await stripe.checkout.sessions.retrieve(sessionId)
+  const isPaid = session.payment_status === 'paid' || session.payment_status === 'no_payment_required'
+  if (
+    session.client_reference_id !== userId ||
+    session.mode !== 'subscription' ||
+    session.status !== 'complete' ||
+    !isPaid ||
+    !session.subscription
+  ) {
+    return false
+  }
+
+  const subscriptionId =
+    typeof session.subscription === 'string' ? session.subscription : session.subscription.id
+  const subscription = await stripe.subscriptions.retrieve(subscriptionId)
+  if (subscription.status !== 'active' && subscription.status !== 'trialing') return false
+
+  const checkoutEvent = {
+    id: `checkout_reconciled_${session.id}`,
+    type: 'checkout.session.completed',
+    created: session.created,
+    data: { object: session },
+  } as unknown as Stripe.Event
+  return applyStripeSubscriptionEvent(
+    checkoutEvent,
+    userId,
+    subscription,
+    typeof session.customer === 'string' ? session.customer : session.customer?.id,
+  )
+}
+
 function getAdmin() {
   const url = process.env.SUPABASE_URL
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -231,7 +267,16 @@ export async function applyStripeSubscriptionEvent(
       : null,
     p_cancel_at_period_end: subscription.cancel_at_period_end,
   })
-  if (error) throw new EntitlementError('DATABASE', 'Abonamentul nu a putut fi actualizat.')
+  if (error) {
+    console.error(
+      JSON.stringify({
+        event: 'stripe_subscription_persist_failed',
+        rpc: 'apply_stripe_subscription_event',
+        databaseCode: error.code || 'unknown',
+      }),
+    )
+    throw new EntitlementError('DATABASE', 'Abonamentul nu a putut fi actualizat.')
+  }
   return Boolean(data)
 }
 

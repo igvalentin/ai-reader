@@ -1,0 +1,138 @@
+{
+  "src/server/billing/billing.reconcile.test.ts": {
+    "filename": "billing.reconcile.test.ts",
+    "path": "src/server/billing/billing.reconcile.test.ts",
+    "version": "1.2",
+    "contextFile": "e47333d8-context.json",
+    "chunks": {
+      "259618": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793572111,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4327011f"
+        },
+        "hash": "b3d2737b",
+        "messageId": "system_a9fea6e0-d642-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:28:31 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "87": {
+        "chunkId": "259618",
+        "hash": "b1a096e1",
+        "encoded": "p_customer_id:%20'cus_test_123',",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "259618",
+        "hash": "ef81333f",
+        "encoded": "p_subscription_id:%20'sub_test_123',",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "259618",
+        "hash": "b6d80f9b",
+        "encoded": "p_status:%20'active',",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "259618",
+        "hash": "0793a6fe",
+        "encoded": "%7D),",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "259618",
+        "hash": "f71fc212",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "259618",
+        "hash": "e1d157bb",
+        "encoded": "const%20errorLog%20=%20vi.spyOn(console,%20'error').mockImplementation(()%20=%3E%20undefined)",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "259618",
+        "hash": "e5f1a11b",
+        "encoded": "mocks.rpc.mockResolvedValueOnce(%7B",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "259618",
+        "hash": "28468c85",
+        "encoded": "data:%20null,",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "259618",
+        "hash": "beb7369c",
+        "encoded": "error:%20%7B%20code:%20'PGRST202',%20message:%20'private%20database%20error'%20%7D,",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "259618",
+        "hash": "012ea1c7",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "259618",
+        "hash": "09500e33",
+        "encoded": "await%20expect(reconcileCheckoutSession('user-123',%20paidCheckoutSession.id)).rejects.toMatchObject(",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "259618",
+        "hash": "e09cdf51",
+        "encoded": "%7B%20code:%20'DATABASE'%20%7D,",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "259618",
+        "hash": "b2a74a31",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "259618",
+        "hash": "ae28567e",
+        "encoded": "expect(errorLog).toHaveBeenCalledWith(expect.stringContaining('PGRST202'))",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "259618",
+        "hash": "e5c916a2",
+        "encoded": "expect(JSON.stringify(errorLog.mock.calls)).not.toContain('private%20database%20error')",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "259618",
+        "hash": "50122822",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "259618",
+        "hash": "8d0be818",
+        "encoded": "it('does%20not%20persist%20incomplete,%20unpaid,%20or%20another%20user%E2%80%99s%20Checkout%20session',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "259618",
+        "hash": "e9624579",
+        "encoded": "mocks.retrieveCheckoutSession",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

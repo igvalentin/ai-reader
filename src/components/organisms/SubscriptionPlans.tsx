@@ -31,7 +31,10 @@ export function SubscriptionPlans() {
   const [loadingAction, setLoadingAction] = useState<SubscriptionPlanId | 'portal' | null>(null)
   const [error, setError] = useState<string | null>(null)
   const requestIdRef = useRef<{ planId: SubscriptionPlanId; requestId: string } | null>(null)
-  const checkoutResult = new URLSearchParams(window.location.search).get('checkout')
+  const checkoutParams = new URLSearchParams(window.location.search)
+  const checkoutResult = checkoutParams.get('checkout')
+  const checkoutSessionId =
+    checkoutResult === 'success' ? checkoutParams.get('session_id') : null
 
   useEffect(() => {
     void supabase.auth.getSession().then(({ data }) => {
@@ -62,7 +65,10 @@ export function SubscriptionPlans() {
     let retryTimeout: number | undefined
     const loadSubscription = async (attempt = 0) => {
       try {
-        const currentSubscription = await requestSubscriptionStatus(accessToken)
+        const currentSubscription =
+          attempt === 0 && checkoutSessionId
+            ? await requestSubscriptionStatus(accessToken, checkoutSessionId)
+            : await requestSubscriptionStatus(accessToken)
         if (!active) return
         setSubscription(currentSubscription)
         setError(null)
@@ -86,13 +92,17 @@ export function SubscriptionPlans() {
       active = false
       if (retryTimeout !== undefined) window.clearTimeout(retryTimeout)
     }
-  }, [accessToken, checkoutResult])
+  }, [accessToken, checkoutResult, checkoutSessionId])
 
   const refreshSubscription = useCallback(async () => {
     if (!accessToken) return
     setLoadingStatus(true)
     try {
-      setSubscription(await requestSubscriptionStatus(accessToken))
+      setSubscription(
+        checkoutSessionId
+          ? await requestSubscriptionStatus(accessToken, checkoutSessionId)
+          : await requestSubscriptionStatus(accessToken),
+      )
       setError(null)
     } catch (requestError) {
       setError(
@@ -103,7 +113,7 @@ export function SubscriptionPlans() {
     } finally {
       setLoadingStatus(false)
     }
-  }, [accessToken])
+  }, [accessToken, checkoutSessionId])
 
   const startCheckout = async (planId: SubscriptionPlanId) => {
     if (!accessToken || loadingAction) {

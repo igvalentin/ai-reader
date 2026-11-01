@@ -60,9 +60,9 @@ describe('SubscriptionPlans', () => {
     ).toBe(true)
   })
 
-  it('polls for Stripe webhook confirmation and shows only the confirmed entitlement', async () => {
+  it('reconciles the returned Checkout session before polling for webhook confirmation', async () => {
     const expiry = '2026-12-01T12:00:00.000Z'
-    window.history.replaceState({}, '', '/?checkout=success')
+    window.history.replaceState({}, '', '/?checkout=success&session_id=cs_test_checkout123456')
     mocks.getSession.mockResolvedValue({ data: { session: { access_token: 'test-token' } } })
     mocks.requestSubscriptionStatus.mockResolvedValueOnce(null).mockResolvedValueOnce({
       active: true,
@@ -79,7 +79,12 @@ describe('SubscriptionPlans', () => {
     expect(screen.getAllByText('30 de zile')).toHaveLength(2)
     expect(screen.getByText(/Reînnoire automată activă/)).toBeInTheDocument()
     expect(mocks.requestSubscriptionStatus).toHaveBeenCalledTimes(2)
-    expect(mocks.requestSubscriptionStatus).toHaveBeenCalledWith('test-token')
+    expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(
+      1,
+      'test-token',
+      'cs_test_checkout123456',
+    )
+    expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(2, 'test-token')
     expect(screen.queryByText(/Plata este în curs de confirmare/)).not.toBeInTheDocument()
     expect(
       screen

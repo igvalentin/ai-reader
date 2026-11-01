@@ -70,9 +70,14 @@ export async function requestBillingPortal(token: string): Promise<string> {
   return payload.url
 }
 
-export async function requestSubscriptionStatus(token: string): Promise<SubscriptionStatus | null> {
+export async function requestSubscriptionStatus(
+  token: string,
+  checkoutSessionId?: string,
+): Promise<SubscriptionStatus | null> {
   const payload = await requestJson<{ subscription: SubscriptionStatus | null }>(
-    '/api/subscription',
+    checkoutSessionId
+      ? '/api/subscription?session_id=' + encodeURIComponent(checkoutSessionId)
+      : '/api/subscription',
     token,
     'GET',
   )
