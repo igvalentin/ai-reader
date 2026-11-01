@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-01T22:10:00.021Z",
+  "lastUpdated": "2026-11-01T22:33:37.612Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -71,6 +71,13 @@
       "content": "ai-reader Stripe: checkout polls every 1.5s (30s max); generic Stripe errors log safe metadata. Test webhook secrets and Supabase billing RPC migration require manual setup.",
       "createdAt": "2026-11-01T22:10:00.021Z",
       "updatedAt": "2026-11-01T22:10:00.021Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793572417612_e541sf",
+      "content": "ai-reader Stripe webhook supports thin and snapshot formats; authenticated status can reconcile paid Checkout sessions. Supabase billing RPC migration remains manual.",
+      "createdAt": "2026-11-01T22:33:37.612Z",
+      "updatedAt": "2026-11-01T22:33:37.612Z",
       "isEnabled": true
     }
   ]
