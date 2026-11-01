@@ -20,7 +20,7 @@
         "hash": "5edfaed8",
         "messageId": "system_4ccbabc0-d567-11f1-acd8-438652602d1f",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:17:11 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       },
       "de3fc5": {
@@ -43,121 +43,43 @@
       }
     },
     "lines": {
-      "4": {
-        "chunkId": "134347",
-        "hash": "1acf41da",
-        "encoded": "#%20Server-side%20only%20secrets.%20NEVER%20prefix%20these%20with%20VITE_%20and%20NEVER%20commit%20real%20values.",
-        "prevChunkIds": []
-      },
-      "5": {
-        "chunkId": "134347",
-        "hash": "1617182b",
-        "encoded": "#%20SUPABASE_SERVICE_ROLE_KEY=",
-        "prevChunkIds": []
-      },
-      "6": {
-        "chunkId": "134347",
-        "hash": "68e8e940",
-        "encoded": "#%20SUPABASE_URL=",
-        "prevChunkIds": []
-      },
-      "7": {
-        "chunkId": "134347",
-        "hash": "f538d23c",
-        "encoded": "#%20SUPABASE_ANON_KEY=",
-        "prevChunkIds": []
-      },
-      "8": {
-        "chunkId": "134347",
-        "hash": "c0c94720",
-        "encoded": "#%20ANONYMOUS_USAGE_SECRET=long-random-server-secret",
-        "prevChunkIds": []
-      },
-      "9": {
-        "chunkId": "134347",
-        "hash": "3a835244",
-        "encoded": "#%20APP_URL=https://your-approved-domain.example",
-        "prevChunkIds": []
-      },
-      "11": {
-        "chunkId": "134347",
-        "hash": "0945de87",
-        "encoded": "#%20Stripe%20test/live%20values%20are%20configured%20only%20after%20approval;%20use%20test%20mode%20first.",
-        "prevChunkIds": []
-      },
-      "12": {
-        "chunkId": "134347",
-        "hash": "a414e687",
-        "encoded": "#%20STRIPE_SECRET_KEY=sk_test_...",
-        "prevChunkIds": []
-      },
-      "13": {
-        "chunkId": "134347",
-        "hash": "de0d132e",
-        "encoded": "#%20STRIPE_PRICE_ID=price_...",
-        "prevChunkIds": []
-      },
-      "14": {
-        "chunkId": "134347",
-        "hash": "73c5ac34",
-        "encoded": "#%20STRIPE_WEBHOOK_SECRET=whsec_...",
-        "prevChunkIds": []
-      },
-      "16": {
+      "22": {
         "chunkId": "de3fc5",
-        "hash": "53c09d1b",
+        "hash": "b781f580",
         "encoded": "#%20OCR%20runs%20locally%20with%20Tesseract.js%20and%20the%20Romanian%20model;%20no%20OCR%20API%20key%20is%20required.",
         "prevChunkIds": []
       },
-      "18": {
+      "24": {
         "chunkId": "de3fc5",
-        "hash": "21a525cb",
+        "hash": "c5ac77cb",
         "encoded": "#%20Azure%20AI%20Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix;%20do%20not%20commit%20real%20values).",
         "prevChunkIds": []
       },
-      "19": {
+      "25": {
         "chunkId": "de3fc5",
-        "hash": "9417c87e",
+        "hash": "4b2b88db",
         "encoded": "#%20AZURE_SPEECH_KEY=your-azure-speech-key",
         "prevChunkIds": []
       },
-      "20": {
+      "26": {
         "chunkId": "de3fc5",
-        "hash": "bff8777a",
+        "hash": "9bb3f73b",
         "encoded": "#%20AZURE_SPEECH_REGION=germanywestcentral",
         "prevChunkIds": []
       },
-      "21": {
+      "27": {
         "chunkId": "de3fc5",
-        "hash": "19b372c4",
+        "hash": "d4536ac4",
         "encoded": "#%20Optional%20Romanian%20neural%20voice%20(default:%20ro-RO-AlinaNeural).",
         "prevChunkIds": []
       },
-      "22": {
+      "28": {
         "chunkId": "de3fc5",
-        "hash": "cf7a3beb",
+        "hash": "1712807c",
         "encoded": "#%20AZURE_SPEECH_VOICE=ro-RO-AlinaNeural",
-        "prevChunkIds": []
-      },
-      "23": {
-        "chunkId": "134347",
-        "hash": "9e064999",
-        "encoded": "#%20OCR_SPACE_API_KEY=your-ocr-space-api-key",
-        "prevChunkIds": []
-      },
-      "25": {
-        "chunkId": "134347",
-        "hash": "88c3342a",
-        "encoded": "#%20Google%20Cloud%20Text-to-Speech%20(server-side%20only%20%E2%80%94%20never%20use%20a%20VITE_%20prefix).",
-        "prevChunkIds": []
-      },
-      "26": {
-        "chunkId": "134347",
-        "hash": "bf36d434",
-        "encoded": "#%20GOOGLE_CLOUD_TTS_API_KEY=your-google-cloud-tts-api-key",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 24
+    "_prevLineCount": 30
   }
 }

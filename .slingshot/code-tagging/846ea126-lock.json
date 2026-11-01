@@ -22,129 +22,790 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:56:43 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "94c250": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535437,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ff39f055",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:17:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "494e90": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535437,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "b3c03e61",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:17:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "51cebe": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535437,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "8a7a9e73",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:17:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "045ae5": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535437,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "671e6ce7",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:17:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "010ce2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535437,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ea0a1872",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:17:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b0cd77": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535437,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ceeecc07",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:17:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "9c342c": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "199478c9",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a3c2bd": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "6f364da8",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "01e2bd": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "6a5aa088",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1b338a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "2e2c11b8",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "98098d": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "549296d1",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "95": {
-        "chunkId": "91ca91",
-        "hash": "dcf01984",
-        "encoded": "await%20handler(req,%20res)",
+      "7": {
+        "chunkId": "98098d",
+        "hash": "be9e420e",
+        "encoded": "getStripe:%20vi.fn(),",
         "prevChunkIds": []
       },
-      "97": {
-        "chunkId": "91ca91",
-        "hash": "c60f57c5",
-        "encoded": "expect(res.statusCode).toBe(200)",
+      "8": {
+        "chunkId": "98098d",
+        "hash": "779903c1",
+        "encoded": "retrieveSubscription:%20vi.fn(),",
         "prevChunkIds": []
       },
-      "98": {
-        "chunkId": "91ca91",
-        "hash": "aeb4f92d",
-        "encoded": "expect(mocks.constructEvent).toHaveBeenCalledWith(",
+      "9": {
+        "chunkId": "98098d",
+        "hash": "759a6494",
+        "encoded": "applyStripeSubscriptionEvent:%20vi.fn(),",
         "prevChunkIds": []
       },
-      "99": {
-        "chunkId": "91ca91",
-        "hash": "c8ae8586",
-        "encoded": "Buffer.from('verified-event-body'),",
+      "11": {
+        "chunkId": "b0cd77",
+        "hash": "f3cc4425",
+        "encoded": "applyStripeSubscriptionEvent:%20vi.fn(),",
         "prevChunkIds": []
       },
-      "100": {
-        "chunkId": "91ca91",
-        "hash": "0943c510",
-        "encoded": "'test-signature',",
+      "12": {
+        "chunkId": "b0cd77",
+        "hash": "2a864473",
+        "encoded": "recordBillingEvent:%20vi.fn(),",
         "prevChunkIds": []
       },
-      "101": {
-        "chunkId": "91ca91",
-        "hash": "9c221b48",
-        "encoded": "'test-webhook-secret',",
+      "13": {
+        "chunkId": "b0cd77",
+        "hash": "632b55ea",
+        "encoded": "resolveUserIdForCustomer:%20vi.fn(),",
         "prevChunkIds": []
       },
-      "102": {
-        "chunkId": "91ca91",
-        "hash": "4d09c37f",
-        "encoded": ")",
+      "18": {
+        "chunkId": "010ce2",
+        "hash": "4528664a",
+        "encoded": "vi.mock('../src/server/billing/billing.js',%20()%20=%3E%20(%7B",
         "prevChunkIds": []
       },
-      "103": {
-        "chunkId": "91ca91",
-        "hash": "5b9ae42f",
-        "encoded": "expect(mocks.calls).toEqual(%5B'resolve-user',%20'upsert-subscription',%20'record-event'%5D)",
+      "19": {
+        "chunkId": "010ce2",
+        "hash": "859fd3d0",
+        "encoded": "applyStripeSubscriptionEvent:%20mocks.applyStripeSubscriptionEvent,",
         "prevChunkIds": []
       },
-      "104": {
-        "chunkId": "91ca91",
-        "hash": "00d41f0f",
-        "encoded": "%7D)",
+      "20": {
+        "chunkId": "010ce2",
+        "hash": "23600873",
+        "encoded": "getStripe:%20mocks.getStripe,",
         "prevChunkIds": []
       },
-      "106": {
-        "chunkId": "91ca91",
-        "hash": "9e678f14",
-        "encoded": "it('rejects%20an%20invalid%20Stripe%20signature%20before%20writing%20billing%20state',%20async%20()%20=%3E%20%7B",
+      "21": {
+        "chunkId": "010ce2",
+        "hash": "9b177cee",
+        "encoded": "recordBillingEvent:%20mocks.recordBillingEvent,",
         "prevChunkIds": []
       },
-      "107": {
-        "chunkId": "91ca91",
-        "hash": "2fc98e58",
-        "encoded": "const%20signatureError%20=%20new%20Error('invalid%20signature')",
+      "22": {
+        "chunkId": "010ce2",
+        "hash": "6960828f",
+        "encoded": "resolveUserIdForCustomer:%20mocks.resolveUserIdForCustomer,",
         "prevChunkIds": []
       },
-      "108": {
-        "chunkId": "91ca91",
-        "hash": "0943d0a2",
-        "encoded": "Object.setPrototypeOf(signatureError,%20Stripe.errors.StripeSignatureVerificationError.prototype)",
+      "23": {
+        "chunkId": "010ce2",
+        "hash": "8e6c62ca",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "1b338a",
+        "hash": "61fb5a39",
+        "encoded": "function%20subscriptionUpdatedEvent():%20Stripe.Event%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "1b338a",
+        "hash": "88790d5b",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "1b338a",
+        "hash": "64c84a12",
+        "encoded": "id:%20'evt_test_123',",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "01e2bd",
+        "hash": "07c5c030",
+        "encoded": "%7D%20as%20Stripe.Event",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "01e2bd",
+        "hash": "bf862585",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "01e2bd",
+        "hash": "42e1268f",
+        "encoded": "function%20checkoutCompletedEvent():%20Stripe.Event%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "01e2bd",
+        "hash": "6fde9739",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "01e2bd",
+        "hash": "1762edab",
+        "encoded": "id:%20'evt_checkout_123',",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "01e2bd",
+        "hash": "adcef8c0",
+        "encoded": "type:%20'checkout.session.completed',",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "01e2bd",
+        "hash": "da7515f9",
+        "encoded": "data:%20%7B",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "01e2bd",
+        "hash": "d313b48d",
+        "encoded": "object:%20%7B",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "01e2bd",
+        "hash": "86676b8c",
+        "encoded": "id:%20'cs_test_123',",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "01e2bd",
+        "hash": "38773756",
+        "encoded": "client_reference_id:%20'user-123',",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "01e2bd",
+        "hash": "c06a06ad",
+        "encoded": "customer:%20'cus_test_123',",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "01e2bd",
+        "hash": "d1a84240",
+        "encoded": "subscription:%20'sub_test_123',",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "01e2bd",
+        "hash": "25cecd19",
+        "encoded": "metadata:%20%7B%20app_user_id:%20'user-123',%20plan_id:%20'7-days'%20%7D,",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "01e2bd",
+        "hash": "a5d48af3",
+        "encoded": "%7D%20as%20unknown%20as%20Stripe.Checkout.Session,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "01e2bd",
+        "hash": "b33ec0a5",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "01e2bd",
+        "hash": "8d6adbae",
+        "encoded": "%7D%20as%20Stripe.Event",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "01e2bd",
+        "hash": "e4b921c6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "01e2bd",
+        "hash": "7853b939",
+        "encoded": "describe('POST%20/api/stripe-webhook',%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "109": {
-        "chunkId": "91ca91",
-        "hash": "01b629a5",
-        "encoded": "mocks.constructEvent.mockImplementation(()%20=%3E%20%7B%20throw%20signatureError%20%7D)",
+        "chunkId": "a3c2bd",
+        "hash": "f6fd7d40",
+        "encoded": "mocks.retrieveSubscription.mockReset().mockResolvedValue(subscriptionUpdatedEvent().data.object)",
         "prevChunkIds": []
       },
       "110": {
-        "chunkId": "91ca91",
-        "hash": "b76af6d2",
-        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "chunkId": "a3c2bd",
+        "hash": "c6390a9c",
+        "encoded": "mocks.getStripe.mockReset().mockReturnValue(%7B",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "a3c2bd",
+        "hash": "7436dacd",
+        "encoded": "webhooks:%20%7B%20constructEvent:%20mocks.constructEvent%20%7D,",
         "prevChunkIds": []
       },
       "112": {
-        "chunkId": "91ca91",
-        "hash": "4ae5b0e6",
-        "encoded": "await%20handler(req,%20res)",
+        "chunkId": "a3c2bd",
+        "hash": "cefb1de2",
+        "encoded": "subscriptions:%20%7B%20retrieve:%20mocks.retrieveSubscription%20%7D,",
         "prevChunkIds": []
       },
-      "114": {
-        "chunkId": "91ca91",
-        "hash": "0f2f110a",
-        "encoded": "expect(res.statusCode).toBe(400)",
-        "prevChunkIds": []
-      },
-      "115": {
-        "chunkId": "91ca91",
-        "hash": "9b25079b",
-        "encoded": "expect(mocks.recordBillingEvent).not.toHaveBeenCalled()",
-        "prevChunkIds": []
-      },
-      "116": {
-        "chunkId": "91ca91",
-        "hash": "9fcbecd2",
-        "encoded": "expect(mocks.upsertSubscription).not.toHaveBeenCalled()",
-        "prevChunkIds": []
-      },
-      "117": {
-        "chunkId": "91ca91",
-        "hash": "655a84f6",
+      "113": {
+        "chunkId": "a3c2bd",
+        "hash": "08d4a419",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
-      "119": {
+      "129": {
+        "chunkId": "045ae5",
+        "hash": "f7e91f11",
+        "encoded": "mocks.resolveUserIdForCustomer.mockReset().mockImplementation(async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "045ae5",
+        "hash": "0d8765cf",
+        "encoded": "mocks.calls.push('resolve-user')",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "045ae5",
+        "hash": "1207b33b",
+        "encoded": "return%20'user-123'",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "045ae5",
+        "hash": "81eeaae4",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "045ae5",
+        "hash": "28f53c13",
+        "encoded": "mocks.applyStripeSubscriptionEvent.mockReset().mockImplementation(async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "045ae5",
+        "hash": "59c02b70",
+        "encoded": "mocks.calls.push('apply-subscription-event')",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "045ae5",
+        "hash": "a1d117f2",
+        "encoded": "return%20true",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "045ae5",
+        "hash": "32a5df60",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "9c342c",
+        "hash": "81f66da4",
+        "encoded": "it('activates%20only%20from%20a%20verified%20Checkout%20event%20and%20the%20retrieved%20Stripe%20subscription',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "9c342c",
+        "hash": "ae184f1e",
+        "encoded": "const%20event%20=%20checkoutCompletedEvent()",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "9c342c",
+        "hash": "09bd8041",
+        "encoded": "mocks.constructEvent.mockReturnValueOnce(event)",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "9c342c",
+        "hash": "7aa6663e",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "9c342c",
+        "hash": "dfa285ec",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "9c342c",
+        "hash": "bb20a768",
+        "encoded": "expect(res.statusCode).toBe(200)",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "9c342c",
+        "hash": "45f63106",
+        "encoded": "expect(mocks.retrieveSubscription).toHaveBeenCalledWith('sub_test_123')",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "9c342c",
+        "hash": "22c4fe00",
+        "encoded": "expect(mocks.applyStripeSubscriptionEvent).toHaveBeenCalledWith(",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "9c342c",
+        "hash": "52b49dab",
+        "encoded": "event,",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "9c342c",
+        "hash": "2a59670a",
+        "encoded": "'user-123',",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "9c342c",
+        "hash": "565ad383",
+        "encoded": "subscriptionUpdatedEvent().data.object,",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "9c342c",
+        "hash": "3d88a4d1",
+        "encoded": "'cus_test_123',",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "9c342c",
+        "hash": "1ea95003",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "9c342c",
+        "hash": "31385552",
+        "encoded": "expect(mocks.recordBillingEvent).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "9c342c",
+        "hash": "aeb3fb8e",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "9c342c",
+        "hash": "9acecf8e",
+        "encoded": "it('acknowledges%20duplicate%20subscription%20events%20without%20applying%20them%20twice',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "9c342c",
+        "hash": "9dcba853",
+        "encoded": "mocks.applyStripeSubscriptionEvent.mockResolvedValueOnce(false)",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "9c342c",
+        "hash": "e770a703",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "9c342c",
+        "hash": "f4aa3016",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "9c342c",
+        "hash": "555e2a19",
+        "encoded": "expect(res.statusCode).toBe(200)",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "9c342c",
+        "hash": "6d359559",
+        "encoded": "expect(res.jsonBody).toMatchObject(%7B%20received:%20true,%20duplicate:%20true%20%7D)",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "9c342c",
+        "hash": "3a635b3a",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "9c342c",
+        "hash": "400ae7ab",
+        "encoded": "it('rejects%20an%20invalid%20Stripe%20signature%20before%20writing%20billing%20state',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "211": {
         "chunkId": "91ca91",
-        "hash": "12b2bcbc",
+        "hash": "74d8e25f",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "91ca91",
+        "hash": "b9b4ad5c",
+        "encoded": "expect(res.statusCode).toBe(200)",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "91ca91",
+        "hash": "65294f2a",
+        "encoded": "expect(mocks.constructEvent).toHaveBeenCalledWith(",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "91ca91",
+        "hash": "12f387c7",
+        "encoded": "Buffer.from('verified-event-body'),",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "91ca91",
+        "hash": "9f98be51",
+        "encoded": "'test-signature',",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "91ca91",
+        "hash": "5882a56d",
+        "encoded": "'test-webhook-secret',",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "91ca91",
+        "hash": "db97fdf0",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "51cebe",
+        "hash": "ec0d4118",
+        "encoded": "expect(mocks.calls).toEqual(%5B'resolve-user',%20'apply-subscription-event'%5D)",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "91ca91",
+        "hash": "b03508fb",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "91ca91",
+        "hash": "b68d7e63",
+        "encoded": "it('rejects%20an%20invalid%20Stripe%20signature%20before%20writing%20billing%20state',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "91ca91",
+        "hash": "2a34fc8c",
+        "encoded": "const%20signatureError%20=%20new%20Error('invalid%20signature')",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "91ca91",
+        "hash": "c02811bf",
+        "encoded": "Object.setPrototypeOf(signatureError,%20Stripe.errors.StripeSignatureVerificationError.prototype)",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "91ca91",
+        "hash": "9264c922",
+        "encoded": "mocks.constructEvent.mockImplementation(()%20=%3E%20%7B%20throw%20signatureError%20%7D)",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "91ca91",
+        "hash": "de21fd79",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "91ca91",
+        "hash": "7afb5b91",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "91ca91",
+        "hash": "b1a7b1a5",
+        "encoded": "expect(res.statusCode).toBe(400)",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "91ca91",
+        "hash": "22d751a6",
+        "encoded": "expect(mocks.recordBillingEvent).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "91ca91",
+        "hash": "9ce22096",
+        "encoded": "expect(mocks.upsertSubscription).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "494e90",
+        "hash": "3fa75036",
+        "encoded": "expect(mocks.recordBillingEvent).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "494e90",
+        "hash": "332be9e4",
+        "encoded": "expect(mocks.applyStripeSubscriptionEvent).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "91ca91",
+        "hash": "5856748d",
         "encoded": "it('does%20not%20mark%20an%20event%20processed%20when%20the%20database%20update%20fails,%20allowing%20Stripe%20to%20retry',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "94c250",
+        "hash": "8c6aa22b",
+        "encoded": "it('does%20not%20acknowledge%20an%20event%20when%20its%20atomic%20subscription%20transaction%20fails',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "94c250",
+        "hash": "d3f4af22",
+        "encoded": "mocks.applyStripeSubscriptionEvent.mockRejectedValue(new%20Error('database%20unavailable'))",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "94c250",
+        "hash": "2959d305",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "94c250",
+        "hash": "f6953c51",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "94c250",
+        "hash": "26a9f199",
+        "encoded": "expect(res.statusCode).toBe(500)",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "94c250",
+        "hash": "03626ab0",
+        "encoded": "expect(mocks.recordBillingEvent).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "94c250",
+        "hash": "b59f44c1",
+        "encoded": "%7D)",
+        "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 179
   }
 }

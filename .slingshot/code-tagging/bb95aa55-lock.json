@@ -76,6 +76,24 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:53:33 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e1e694": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535142,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "93958293",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:22 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -398,234 +416,312 @@
         "prevChunkIds": []
       },
       "57": {
-        "chunkId": "83bf73",
-        "hash": "e8a4a391",
-        "encoded": "setShowPaywall(true)",
+        "chunkId": "e1e694",
+        "hash": "c55b482c",
+        "encoded": "%7D%20catch%20(requestError)%20%7B",
         "prevChunkIds": []
       },
       "58": {
-        "chunkId": "83bf73",
-        "hash": "15d237e6",
-        "encoded": "return",
+        "chunkId": "e1e694",
+        "hash": "61f1ade3",
+        "encoded": "if%20(",
         "prevChunkIds": []
       },
       "59": {
-        "chunkId": "83bf73",
-        "hash": "309dd352",
-        "encoded": "%7D",
+        "chunkId": "e1e694",
+        "hash": "7dc92165",
+        "encoded": "requestError%20instanceof%20TtsRequestError%20&&",
         "prevChunkIds": []
       },
       "60": {
-        "chunkId": "83bf73",
-        "hash": "e673dde4",
-        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "chunkId": "e1e694",
+        "hash": "aea2db55",
+        "encoded": "(requestError.code%20===%20'SUBSCRIPTION_REQUIRED'%20%7C%7C%20requestError.code%20===%20'PAYWALL')",
         "prevChunkIds": []
       },
       "61": {
-        "chunkId": "83bf73",
-        "hash": "52dad92a",
-        "encoded": "%7D%20finally%20%7B",
+        "chunkId": "e1e694",
+        "hash": "3079fd3f",
+        "encoded": ")%20%7B",
         "prevChunkIds": []
       },
       "62": {
-        "chunkId": "83bf73",
-        "hash": "f752ed11",
-        "encoded": "setIsSubmitting(false)",
+        "chunkId": "e1e694",
+        "hash": "da24a463",
+        "encoded": "setShowPaywall(true)",
         "prevChunkIds": []
       },
       "63": {
-        "chunkId": "83bf73",
-        "hash": "78db855a",
-        "encoded": "%7D",
+        "chunkId": "e1e694",
+        "hash": "833d117a",
+        "encoded": "return",
         "prevChunkIds": []
       },
       "64": {
-        "chunkId": "83bf73",
+        "chunkId": "e1e694",
         "hash": "48dc6fe2",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "65": {
-        "chunkId": "7cf325",
-        "hash": "a7e1eade",
-        "encoded": "if%20(isOverLimit)%20%7B%20setError(%60Textul%20dep%C4%83%C8%99e%C8%99te%20limita%20de%20$%7BMAX_CHARACTERS%7D%20de%20caractere.%60);%20return%20%7D",
+        "chunkId": "e1e694",
+        "hash": "cccc593f",
+        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'AUTHENTICATION_REQUIRED')%20%7B",
         "prevChunkIds": []
       },
       "66": {
-        "chunkId": "7cf325",
-        "hash": "69c7715d",
-        "encoded": "setError(null);%20setShowPaywall(false)",
+        "chunkId": "e1e694",
+        "hash": "58da2f9e",
+        "encoded": "setTtsError('Sesiunea%20a%20expirat.%20Cere%20un%20link%20de%20conectare%20nou%20%C8%99i%20autentific%C4%83-te%20din%20nou.')",
         "prevChunkIds": []
       },
       "67": {
-        "chunkId": "7cf325",
-        "hash": "f26597d3",
-        "encoded": "try%20%7B%20const%20response%20=%20await%20requestSpeech(text,%20language%20===%20'auto'%20?%20''%20:%20language);%20await%20loadChunks(response.chunks)%20%7D",
+        "chunkId": "e1e694",
+        "hash": "8c4bc1fd",
+        "encoded": "return",
         "prevChunkIds": []
       },
       "68": {
-        "chunkId": "7cf325",
-        "hash": "118c7e06",
-        "encoded": "catch%20(requestError)%20%7B",
+        "chunkId": "e1e694",
+        "hash": "e4d82fa4",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "69": {
-        "chunkId": "7cf325",
-        "hash": "79d61bd6",
-        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B%20setShowPaywall(true);%20return%20%7D",
+        "chunkId": "e1e694",
+        "hash": "002fe9ea",
+        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
         "prevChunkIds": []
       },
       "70": {
+        "chunkId": "e1e694",
+        "hash": "b0a23c43",
+        "encoded": "%7D%20finally%20%7B",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "83bf73",
+        "hash": "76fef3f2",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "83bf73",
+        "hash": "a6adb000",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "83bf73",
+        "hash": "32797d69",
+        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "83bf73",
+        "hash": "b85d1b20",
+        "encoded": "%7D%20finally%20%7B",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "83bf73",
+        "hash": "2ee25644",
+        "encoded": "setIsSubmitting(false)",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "83bf73",
+        "hash": "bbf48fdf",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "83bf73",
+        "hash": "1dd7a3a6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "154": {
         "chunkId": "7cf325",
-        "hash": "fa996a03",
+        "hash": "1b702bc9",
+        "encoded": "if%20(isOverLimit)%20%7B%20setError(%60Textul%20dep%C4%83%C8%99e%C8%99te%20limita%20de%20$%7BMAX_CHARACTERS%7D%20de%20caractere.%60);%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "7cf325",
+        "hash": "ad9a2990",
+        "encoded": "setError(null);%20setShowPaywall(false)",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "7cf325",
+        "hash": "bd9e6d39",
+        "encoded": "try%20%7B%20const%20response%20=%20await%20requestSpeech(text,%20language%20===%20'auto'%20?%20''%20:%20language);%20await%20loadChunks(response.chunks)%20%7D",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "7cf325",
+        "hash": "7e575fce",
+        "encoded": "catch%20(requestError)%20%7B",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "7cf325",
+        "hash": "272326f5",
+        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B%20setShowPaywall(true);%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "7cf325",
+        "hash": "4885f67a",
         "encoded": "setError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
         "prevChunkIds": []
       },
-      "71": {
+      "160": {
         "chunkId": "7cf325",
-        "hash": "f064f9d6",
+        "hash": "10c4a851",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "72": {
+      "161": {
         "chunkId": "7cf325",
-        "hash": "ae47b750",
+        "hash": "e9785117",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "74": {
+      "163": {
         "chunkId": "7cf325",
-        "hash": "af05facd",
+        "hash": "c7e49135",
         "encoded": "return%20%3Cform%20onSubmit=%7BhandleSubmit%7D%20noValidate%20className=%22flex%20flex-col%20gap-6%20rounded-2xl%20border%20border-border%20bg-surface%20p-5%20shadow-sm%20sm:p-8%22%3E",
         "prevChunkIds": []
       },
-      "75": {
+      "164": {
         "chunkId": "7cf325",
-        "hash": "fa09582b",
+        "hash": "a6d93274",
         "encoded": "%3CFreeTrialNotice%20/%3E",
         "prevChunkIds": []
       },
-      "76": {
+      "165": {
         "chunkId": "7cf325",
-        "hash": "f1d6ffdb",
+        "hash": "8303d309",
         "encoded": "%7BshowPaywall%20?%20%3CPaywallNotice%20/%3E%20:%20null%7D",
         "prevChunkIds": []
       },
-      "77": {
+      "166": {
         "chunkId": "7cf325",
-        "hash": "25091fd4",
+        "hash": "3ddd23c2",
         "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-1.5%22%3E",
         "prevChunkIds": []
       },
-      "78": {
+      "167": {
         "chunkId": "7cf325",
-        "hash": "93fa7c0b",
+        "hash": "69faff21",
         "encoded": "%3Clabel%20htmlFor=%7BtextareaId%7D%20className=%22text-sm%20font-medium%20text-ink%22%3ETextul%20t%C4%83u%3C/label%3E",
         "prevChunkIds": []
       },
-      "79": {
+      "168": {
         "chunkId": "7cf325",
-        "hash": "f136eb46",
+        "hash": "456553ee",
         "encoded": "%3Ctextarea%20id=%7BtextareaId%7D%20name=%22text%22%20rows=%7B8%7D%20value=%7Btext%7D%20onChange=%7B(event)%20=%3E%20%7B%20setText(event.target.value);%20if%20(error)%20setError(null);%20setShowPaywall(false)%20%7D%7D%20placeholder=%22Scrie%20sau%20lipe%C8%99te%20aici%20textul%20pe%20care%20vrei%20s%C4%83%20%C3%AEl%20ascul%C8%9Bi%E2%80%A6%22%20aria-invalid=%7BBoolean(error)%7D%20aria-describedby=%7Berror%20?%20errorId%20:%20undefined%7D%20className=%22min-h-40%20w-full%20resize-y%20rounded-lg%20border%20border-border%20bg-paper%20px-3%20py-2.5%20text-ink%20placeholder:text-ink-muted%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%22%20/%3E",
         "prevChunkIds": []
       },
-      "80": {
+      "169": {
         "chunkId": "7cf325",
-        "hash": "bf5c83d9",
+        "hash": "2fbe4ac4",
         "encoded": "%3Cdiv%20className=%22flex%20items-center%20justify-between%20text-xs%20text-ink-muted%22%3E%3Cspan%3E%7Btext.length%20===%200%20?%20'Niciun%20text%20ad%C4%83ugat%20%C3%AEnc%C4%83.'%20:%20%60$%7BcharacterCount%7D%20caractere%60%7D%3C/span%3E%3Cspan%20className=%7BisOverLimit%20?%20'font-medium%20text-danger'%20:%20undefined%7D%3E%7BcharacterCount%7D%20/%20%7BMAX_CHARACTERS%7D%3C/span%3E%3C/div%3E",
         "prevChunkIds": []
       },
-      "81": {
+      "170": {
         "chunkId": "7cf325",
-        "hash": "ec7f9d6c",
+        "hash": "1d83059c",
         "encoded": "%7Berror%20?%20%3Cp%20id=%7BerrorId%7D%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7Berror%7D%3C/p%3E%20:%20null%7D",
         "prevChunkIds": []
       },
-      "82": {
+      "171": {
         "chunkId": "7cf325",
-        "hash": "d3893ad2",
+        "hash": "84d15a15",
         "encoded": "%3C/div%3E",
         "prevChunkIds": []
       },
-      "83": {
+      "172": {
         "chunkId": "7cf325",
-        "hash": "07c9cff7",
+        "hash": "1cd7714b",
         "encoded": "%3CImageUploadControl%20previewUrl=%7BpreviewUrl%7D%20status=%7BocrStatus%7D%20errorMessage=%7BocrErrorMessage%7D%20uploadProgress=%7BuploadProgress%7D%20onFileSelected=%7BselectFile%7D%20onRemove=%7BremoveImage%7D%20onStartOcr=%7BstartOcr%7D%20/%3E",
         "prevChunkIds": []
       },
-      "84": {
+      "173": {
         "chunkId": "7cf325",
-        "hash": "df2168db",
+        "hash": "77f3c172",
         "encoded": "%3CLanguageSelector%20value=%7Blanguage%7D%20onChange=%7BsetLanguage%7D%20/%3E",
         "prevChunkIds": []
       },
-      "85": {
+      "174": {
         "chunkId": "7cf325",
-        "hash": "dcfb1853",
+        "hash": "b88283db",
         "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BaudioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BaudioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D%3C/Button%3E%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E%3C/div%3E",
         "prevChunkIds": []
       },
-      "86": {
+      "175": {
         "chunkId": "7cf325",
-        "hash": "56d041f0",
+        "hash": "9b55eb52",
         "encoded": "%3CAudioPlayer%20state=%7BaudioState%7D%20onToggle=%7B()%20=%3E%20void%20toggle()%7D%20onSeek=%7Bseek%7D%20onSpeedChange=%7BsetPlaybackRate%7D%20/%3E",
         "prevChunkIds": []
       },
-      "87": {
+      "176": {
         "chunkId": "7cf325",
-        "hash": "824621e4",
+        "hash": "2370173c",
         "encoded": "%3C/form%3E",
         "prevChunkIds": []
       },
-      "88": {
+      "177": {
         "chunkId": "7cf325",
-        "hash": "726efa75",
+        "hash": "5efbcd97",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "103": {
+      "192": {
         "chunkId": "ce4634",
-        "hash": "78793160",
+        "hash": "85e8a55c",
         "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E",
         "prevChunkIds": []
       },
-      "104": {
+      "193": {
         "chunkId": "ce4634",
-        "hash": "d4b1f00c",
+        "hash": "10e1279f",
         "encoded": "%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E",
         "prevChunkIds": []
       },
-      "105": {
+      "194": {
         "chunkId": "ce4634",
-        "hash": "387c20ac",
+        "hash": "1f70533c",
         "encoded": "%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D",
         "prevChunkIds": []
       },
-      "106": {
+      "195": {
         "chunkId": "ce4634",
-        "hash": "66e3fe67",
+        "hash": "863b0517",
         "encoded": "%3C/Button%3E",
         "prevChunkIds": []
       },
-      "107": {
+      "196": {
         "chunkId": "ce4634",
-        "hash": "4d558ed4",
+        "hash": "aa8f761f",
         "encoded": "%7BttsError%20?%20%3Cp%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7BttsError%7D%3C/p%3E%20:%20null%7D",
         "prevChunkIds": []
       },
-      "108": {
+      "197": {
         "chunkId": "ce4634",
-        "hash": "dc4b45fe",
+        "hash": "315892d6",
         "encoded": "%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E",
         "prevChunkIds": []
       },
-      "109": {
+      "198": {
         "chunkId": "ce4634",
-        "hash": "32a49628",
+        "hash": "3973dda1",
         "encoded": "%3C/div%3E",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 82
+    "_prevLineCount": 158
   }
 }

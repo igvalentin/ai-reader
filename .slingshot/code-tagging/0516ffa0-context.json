@@ -6,6 +6,9 @@
   "promptMessage": {
     "c4ae9a5d": {
       "value": "Prompt 4 — Free Reading and Subscription Paywall\n\nImplement the business model.\n\nProduct rules\n\nEvery new visitor is entitled to one free successful reading.\n\nA successful reading means audio generation completed and playback was made available to the user.\n\nFailed OCR or failed audio generation must not consume the free reading.\n\nAfter the free reading is consumed, further audio generation requires an active subscription.\n\nUsers must be able to understand why they are seeing the paywall and wha"
+    },
+    "668ceaef": {
+      "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
     }
   },
   "localPrompts": {},

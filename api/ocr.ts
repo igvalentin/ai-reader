@@ -4,6 +4,12 @@ import { normalizeOcrText } from '../src/server/ocr/normalizeOcrText.js'
 import { getOcrProvider } from '../src/server/ocr/ocrProviderFactory.js'
 import { OcrProviderError } from '../src/server/ocr/ocrProvider.js'
 import { MultipartParseError, parseMultipartImage } from '../src/server/ocr/parseMultipartImage.js'
+import { verifySupabaseUser } from '../src/server/auth/verifySupabaseUser.js'
+import {
+  associateAnonymousUsage,
+  resolveEntitlementIdentity,
+} from '../src/server/entitlement/entitlement.js'
+import { recordOcrAttempt } from '../src/server/usage/usageMetrics.js'
 
 export const config = {
   api: {
@@ -43,6 +49,41 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return
   }
 
+  let activityIdentity = null
+  try {
+    activityIdentity = await resolveEntitlementIdentity(
+      req.headers.authorization,
+      req.headers.cookie,
+      verifySupabaseUser,
+    )
+  } catch {
+    try {
+      activityIdentity = await resolveEntitlementIdentity(
+        undefined,
+        req.headers.cookie,
+        verifySupabaseUser,
+      )
+    } catch {
+      console.error(JSON.stringify({ event: 'ocr_activity_identity_failed' }))
+    }
+  }
+  if (activityIdentity?.setCookie) res.setHeader('Set-Cookie', activityIdentity.setCookie)
+  if (activityIdentity?.userId) {
+    try {
+      await associateAnonymousUsage(activityIdentity.userId, req.headers.cookie)
+    } catch {
+      console.error(JSON.stringify({ event: 'ocr_usage_association_failed' }))
+    }
+  }
+  if (activityIdentity) {
+    try {
+      await recordOcrAttempt(activityIdentity)
+    } catch {
+      // Analytics must not block OCR or expose image/text data in logs.
+      console.error(JSON.stringify({ event: 'ocr_activity_metric_failed' }))
+    }
+  }
+
   let imageBuffer: Buffer
   try {
     const parsed = await parseMultipartImage(req, contentType)
@@ -72,11 +113,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.status(200).json({ text })
   } catch (error) {
     if (error instanceof OcrProviderError) {
-      console.error(JSON.stringify({
-        event: 'ocr_provider_failed',
-        provider: 'tesseract-local',
-        providerMessage: sanitizeOcrDiagnosticMessage(error.message),
-      }))
+      console.error(
+        JSON.stringify({
+          event: 'ocr_provider_failed',
+          provider: 'tesseract-local',
+          providerMessage: sanitizeOcrDiagnosticMessage(error.message),
+        }),
+      )
       res.status(502).json({ error: 'Serviciul de recunoaștere text nu a putut procesa imaginea.' })
       return
     }

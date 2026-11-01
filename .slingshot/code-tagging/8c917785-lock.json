@@ -1,0 +1,90 @@
+{
+  "api/admin-users.test.ts": {
+    "filename": "admin-users.test.ts",
+    "path": "api/admin-users.test.ts",
+    "version": "1.2",
+    "contextFile": "8c917785-context.json",
+    "chunks": {
+      "70535f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "96375f68",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "655b52": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "9f0d4f3c",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "fe21f2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "fa25ee9f",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "8": {
+        "chunkId": "fe21f2",
+        "hash": "7c16ff86",
+        "encoded": "vi.mock('../src/server/auth/verifySupabaseUser.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "655b52",
+        "hash": "148c638b",
+        "encoded": "vi.mock('../src/server/admin/adminUsers.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "70535f",
+        "hash": "aae7d561",
+        "encoded": "import%20handler%20from%20'./admin/users'",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "70535f",
+        "hash": "18b2f8a5",
+        "encoded": "import%20%7B%20UnauthorizedError%20%7D%20from%20'../src/server/auth/verifySupabaseUser.js'",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

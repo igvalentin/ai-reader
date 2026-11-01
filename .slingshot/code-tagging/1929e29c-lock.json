@@ -1,0 +1,162 @@
+{
+  "src/components/molecules/PaywallNotice.tsx": {
+    "filename": "PaywallNotice.tsx",
+    "path": "src/components/molecules/PaywallNotice.tsx",
+    "version": "1.2",
+    "contextFile": "1929e29c-context.json",
+    "chunks": {
+      "94f754": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535737,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "442fbb04",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:22:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "94f754",
+        "hash": "5100869c",
+        "encoded": "export%20function%20PaywallNotice()%20%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "94f754",
+        "hash": "e09370d4",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "94f754",
+        "hash": "73d2341b",
+        "encoded": "%3Csection",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "94f754",
+        "hash": "d8b3dc96",
+        "encoded": "aria-labelledby=%22paywall-title%22",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "94f754",
+        "hash": "6b5b8588",
+        "encoded": "className=%22rounded-xl%20border%20border-accent/60%20bg-accent/10%20p-4%22",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "94f754",
+        "hash": "ef679ed9",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "94f754",
+        "hash": "35d766f7",
+        "encoded": "%3Ch2%20id=%22paywall-title%22%20className=%22font-display%20text-xl%22%3E",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "94f754",
+        "hash": "f6265c4b",
+        "encoded": "Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "94f754",
+        "hash": "7d90adcc",
+        "encoded": "%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "94f754",
+        "hash": "fc487602",
+        "encoded": "%3Cp%20className=%22mt-2%20text-sm%20text-ink-muted%22%3E",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "94f754",
+        "hash": "59044d32",
+        "encoded": "Pentru%20a%20genera%20alte%20lecturi,%20alege%20un%20plan.%20Accesul%20este%20verificat%20de%20server%20%C8%99i%20se%20activeaz%C4%83",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "94f754",
+        "hash": "a5dde128",
+        "encoded": "dup%C4%83%20confirmarea%20pl%C4%83%C8%9Bii%20de%20c%C4%83tre%20Stripe.",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "94f754",
+        "hash": "e663ca55",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "94f754",
+        "hash": "a8befc3d",
+        "encoded": "%3Ca",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "94f754",
+        "hash": "3bf82445",
+        "encoded": "href=%22#abonament%22",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "94f754",
+        "hash": "43725b23",
+        "encoded": "className=%22mt-4%20inline-flex%20min-h-11%20items-center%20rounded-lg%20bg-accent%20px-5%20py-3%20text-base%20font-medium%20text-ink%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%22",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "94f754",
+        "hash": "672fb30a",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "94f754",
+        "hash": "f397f646",
+        "encoded": "Vezi%20planurile%20%C8%99i%20pre%C8%9Burile",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "94f754",
+        "hash": "d4530ee1",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "94f754",
+        "hash": "6d5c2b1a",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "94f754",
+        "hash": "35725881",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "94f754",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

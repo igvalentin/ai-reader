@@ -1,0 +1,42 @@
+{
+  "src/components/organisms/SubscriptionPlans.test.tsx": {
+    "filename": "SubscriptionPlans.test.tsx",
+    "path": "src/components/organisms/SubscriptionPlans.test.tsx",
+    "version": "1.2",
+    "contextFile": "a6e5f3b7-context.json",
+    "chunks": {
+      "31cacf": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "5c3ee32b",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "73": {
+        "chunkId": "31cacf",
+        "hash": "d07c5b05",
+        "encoded": "expect(await%20screen.findByText('1%20decembrie%202026')).toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "31cacf",
+        "hash": "6871a537",
+        "encoded": "expect(screen.getAllByText('30%20de%20zile')).toHaveLength(2)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

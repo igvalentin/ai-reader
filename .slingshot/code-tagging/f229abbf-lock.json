@@ -1,0 +1,36 @@
+{
+  "src/server/usage/usageMetrics.test.ts": {
+    "filename": "usageMetrics.test.ts",
+    "path": "src/server/usage/usageMetrics.test.ts",
+    "version": "1.2",
+    "contextFile": "f229abbf-context.json",
+    "chunks": {
+      "47efcd": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536677,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "64951b37",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:37:57 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "16": {
+        "chunkId": "47efcd",
+        "hash": "36fc0bfc",
+        "encoded": "import%20%7B%20recordAudioAttempt,%20recordOcrAttempt%20%7D%20from%20'./usageMetrics'",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

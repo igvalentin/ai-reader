@@ -22,48 +22,138 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:16:15 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6d2e1c": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536591,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "1cfcc0ee",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:31 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "7858f0",
+        "chunkId": "6d2e1c",
         "hash": "97dc67b3",
         "encoded": "export%20function%20FreeTrialNotice()%20%7B",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "7858f0",
+        "chunkId": "6d2e1c",
         "hash": "e09370d4",
         "encoded": "return%20(",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "7858f0",
-        "hash": "67538822",
-        "encoded": "%3Caside%20className=%22rounded-lg%20border%20border-teal-soft%20bg-teal-soft/60%20px-4%20py-3%20text-sm%20text-ink%22%20aria-label=%22Regula%20lecturii%20gratuite%22%3E",
+        "chunkId": "6d2e1c",
+        "hash": "d924936b",
+        "encoded": "%3Caside",
         "prevChunkIds": []
       },
       "3": {
-        "chunkId": "7858f0",
-        "hash": "bf39fb2b",
-        "encoded": "%3Cstrong%3EO%20lectur%C4%83%20gratuit%C4%83%20pentru%20%C3%AEnceput.%3C/strong%3E%20Se%20consum%C4%83%20numai%20c%C3%A2nd%20audio-ul%20este%20generat%20cu%20succes%20%C8%99i%20devine%20disponibil%20pentru%20redare.%20Lecturile%20urm%C4%83toare%20necesit%C4%83%20abonament.",
+        "chunkId": "6d2e1c",
+        "hash": "42bed37b",
+        "encoded": "className=%22rounded-lg%20border%20border-teal-soft%20bg-teal-soft/60%20px-4%20py-3%20text-sm%20text-ink%22",
         "prevChunkIds": []
       },
       "4": {
-        "chunkId": "7858f0",
-        "hash": "569c2b3f",
-        "encoded": "%3C/aside%3E",
+        "chunkId": "6d2e1c",
+        "hash": "30d77b41",
+        "encoded": "aria-label=%22Regula%20lecturii%20gratuite%20%C8%99i%20confiden%C8%9Bialitate%22",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "7858f0",
-        "hash": "73715d03",
-        "encoded": ")",
+        "chunkId": "6d2e1c",
+        "hash": "ef679ed9",
+        "encoded": "%3E",
         "prevChunkIds": []
       },
       "6": {
+        "chunkId": "6d2e1c",
+        "hash": "7dcb237f",
+        "encoded": "%3Cstrong%3EO%20lectur%C4%83%20gratuit%C4%83%20pentru%20%C3%AEnceput.%3C/strong%3E%20Se%20consum%C4%83%20numai%20dup%C4%83%20ce%20serverul%20genereaz%C4%83",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "6d2e1c",
+        "hash": "a11492a5",
+        "encoded": "audio%20cu%20succes.%20Lecturile%20urm%C4%83toare%20necesit%C4%83%20un%20abonament.%20Pentru%20vizitatorii%20anonimi%20folosim",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "6d2e1c",
+        "hash": "b8c16cb0",
+        "encoded": "un%20cookie%20securizat%20%C8%99i%20un%20identificator%20pseudonimizat%20pentru%20a%20p%C4%83stra%20limita%20gratuit%C4%83%20%C8%99i",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "6d2e1c",
+        "hash": "bc500bb7",
+        "encoded": "contoarele%20de%20utilizare;%20nu%20stoc%C4%83m%20textul%20introdus,%20imaginile%20sau%20fi%C8%99ierele%20audio.",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "6d2e1c",
+        "hash": "55b47d26",
+        "encoded": "%3C/aside%3E",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "6d2e1c",
+        "hash": "395c59e2",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "6d2e1c",
+        "hash": "6a3f2143",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "13": {
         "chunkId": "7858f0",
-        "hash": "03469704",
+        "hash": "96210720",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "7858f0",
+        "hash": "5a61f8b8",
+        "encoded": "%3Caside%20className=%22rounded-lg%20border%20border-teal-soft%20bg-teal-soft/60%20px-4%20py-3%20text-sm%20text-ink%22%20aria-label=%22Regula%20lecturii%20gratuite%22%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "7858f0",
+        "hash": "453d108d",
+        "encoded": "%3Cstrong%3EO%20lectur%C4%83%20gratuit%C4%83%20pentru%20%C3%AEnceput.%3C/strong%3E%20Se%20consum%C4%83%20numai%20c%C3%A2nd%20audio-ul%20este%20generat%20cu%20succes%20%C8%99i%20devine%20disponibil%20pentru%20redare.%20Lecturile%20urm%C4%83toare%20necesit%C4%83%20abonament.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "7858f0",
+        "hash": "7a6a5aa6",
+        "encoded": "%3C/aside%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "7858f0",
+        "hash": "8affb987",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "7858f0",
+        "hash": "ee20bc2a",
         "encoded": "%7D",
         "prevChunkIds": []
       }

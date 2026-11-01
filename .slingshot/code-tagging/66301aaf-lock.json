@@ -5,6 +5,24 @@
     "version": "1.2",
     "contextFile": "66301aaf-context.json",
     "chunks": {
+      "564062": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793537119,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "2ec9443c",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:45:19 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
       "760725": {
         "user": "Valentin Ion",
         "model": "claude-sonnet-4-5@20250929",
@@ -112,274 +130,1312 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:51:25 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "dae2bf": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "b4f289b1",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ceed97": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "75479ac3",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "2d9dbb": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "59e0f6d7",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1cee15": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "8198aab7",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "02f563": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "e6186f3e",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "20bcd2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793537119,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "a90651e1",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:45:19 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "785f13": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793537119,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ffecf109",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:45:19 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "32": {
-        "chunkId": "760725",
-        "hash": "a8651d1e",
-        "encoded": "export%20async%20function%20createCheckoutSession(userId:%20string,%20email?:%20string)%20%7B",
+      "2": {
+        "chunkId": "2d9dbb",
+        "hash": "1d21f131",
+        "encoded": "import%20%7B",
         "prevChunkIds": []
       },
-      "33": {
-        "chunkId": "760725",
-        "hash": "0323a8ac",
+      "3": {
+        "chunkId": "2d9dbb",
+        "hash": "d0ac6b4f",
+        "encoded": "EntitlementError,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "2d9dbb",
+        "hash": "b54e52c8",
+        "encoded": "getUserSubscription,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "2d9dbb",
+        "hash": "08070e9b",
+        "encoded": "hasActiveSubscription,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "2d9dbb",
+        "hash": "d3f3abf7",
+        "encoded": "%7D%20from%20'../entitlement/entitlement.js'",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "785f13",
+        "hash": "9eb0320b",
+        "encoded": "import%20%7B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "785f13",
+        "hash": "9ba51bfd",
+        "encoded": "findSubscriptionPlan,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "785f13",
+        "hash": "97143348",
+        "encoded": "stripePriceMatchesPlan,",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "785f13",
+        "hash": "edc8ad93",
+        "encoded": "SUBSCRIPTION_PLANS,",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "785f13",
+        "hash": "c62bdc5b",
+        "encoded": "type%20SubscriptionPlanId,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "785f13",
+        "hash": "08f752a3",
+        "encoded": "%7D%20from%20'./plans.js'",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "2d9dbb",
+        "hash": "39ddb1c3",
+        "encoded": "findSubscriptionPlan,",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "2d9dbb",
+        "hash": "c7b7a667",
+        "encoded": "stripePriceMatchesPlan,",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "2d9dbb",
+        "hash": "9aabd95a",
+        "encoded": "type%20SubscriptionPlanId,",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "2d9dbb",
+        "hash": "7c19d2d7",
+        "encoded": "%7D%20from%20'./plans.js'",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "2d9dbb",
+        "hash": "dfe1870a",
+        "encoded": "let%20stripe:%20Stripe%20%7C%20undefined",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "ceed97",
+        "hash": "ca53c4eb",
+        "encoded": "async%20function%20getConfiguredPrice(planId:%20SubscriptionPlanId)%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "ceed97",
+        "hash": "83c937b4",
+        "encoded": "const%20plan%20=%20findSubscriptionPlan(planId)",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "ceed97",
+        "hash": "e92fe58b",
+        "encoded": "if%20(!plan)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Planul%20selectat%20nu%20este%20disponibil.')",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "ceed97",
+        "hash": "3a363743",
+        "encoded": "const%20priceId%20=%20process.env%5Bplan.priceEnvironmentVariable%5D",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "ceed97",
+        "hash": "d60868f6",
+        "encoded": "if%20(!priceId)%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "ceed97",
+        "hash": "020a4ba4",
+        "encoded": "throw%20new%20EntitlementError(",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "02f563",
+        "hash": "deec5fba",
+        "encoded": "export%20async%20function%20createCheckoutSession(",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "02f563",
+        "hash": "c3abf4d4",
+        "encoded": "userId:%20string,",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "02f563",
+        "hash": "3cc7a928",
+        "encoded": "planId:%20SubscriptionPlanId,",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "02f563",
+        "hash": "a44a6412",
+        "encoded": "requestId:%20string,",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "02f563",
+        "hash": "53d8eb65",
+        "encoded": "email?:%20string,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "02f563",
+        "hash": "eb0511e4",
+        "encoded": ")%20%7B",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "02f563",
+        "hash": "55ab7f71",
         "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
-      "34": {
-        "chunkId": "760725",
-        "hash": "380a1d83",
-        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client.from('subscriptions').select('provider_customer_id').eq('user_id',%20userId).maybeSingle()",
+      "76": {
+        "chunkId": "1cee15",
+        "hash": "a7b32972",
+        "encoded": "if%20(hasActiveSubscription(existing))%20%7B",
         "prevChunkIds": []
       },
-      "35": {
-        "chunkId": "760725",
-        "hash": "ee760a75",
-        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
+      "77": {
+        "chunkId": "1cee15",
+        "hash": "8a04cc1a",
+        "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
-      "36": {
-        "chunkId": "760725",
-        "hash": "20b0ad0f",
-        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
+      "78": {
+        "chunkId": "1cee15",
+        "hash": "97a7c37a",
+        "encoded": "'SUBSCRIPTION_ACTIVE',",
         "prevChunkIds": []
       },
-      "37": {
-        "chunkId": "760725",
-        "hash": "6159289e",
-        "encoded": "if%20(!customerId)%20%7B",
+      "79": {
+        "chunkId": "1cee15",
+        "hash": "bc6f2758",
+        "encoded": "'Ai%20deja%20un%20abonament%20activ.%20%C3%8El%20po%C8%9Bi%20administra%20din%20portalul%20de%20facturare.',",
         "prevChunkIds": []
       },
-      "38": {
-        "chunkId": "760725",
-        "hash": "e1f0ab40",
-        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "760725",
-        "hash": "bab968f5",
-        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
-        "prevChunkIds": []
-      },
-      "40": {
-        "chunkId": "760725",
-        "hash": "cdd9f31b",
-        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
-        "prevChunkIds": []
-      },
-      "41": {
-        "chunkId": "760725",
-        "hash": "fce7b66c",
+      "80": {
+        "chunkId": "1cee15",
+        "hash": "399f595c",
         "encoded": ")",
         "prevChunkIds": []
       },
-      "42": {
-        "chunkId": "760725",
-        "hash": "d1381036",
-        "encoded": "customerId%20=%20customer.id",
-        "prevChunkIds": []
-      },
-      "43": {
-        "chunkId": "760725",
-        "hash": "87687156",
-        "encoded": "const%20%7B%20error:%20writeError%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B%20user_id:%20userId,%20provider_customer_id:%20customerId,%20status:%20'none',%20updated_at:%20new%20Date().toISOString()%20%7D)",
-        "prevChunkIds": []
-      },
-      "44": {
-        "chunkId": "760725",
-        "hash": "364536ff",
-        "encoded": "if%20(writeError)%20throw%20new%20EntitlementError('DATABASE',%20'Datele%20clientului%20de%20facturare%20nu%20au%20putut%20fi%20salvate.')",
-        "prevChunkIds": []
-      },
-      "45": {
-        "chunkId": "760725",
-        "hash": "8b687a61",
+      "81": {
+        "chunkId": "1cee15",
+        "hash": "d6938858",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "46": {
-        "chunkId": "760725",
-        "hash": "6a7bb639",
-        "encoded": "const%20session%20=%20await%20getStripe().checkout.sessions.create(%7B",
-        "prevChunkIds": []
-      },
-      "81": {
-        "chunkId": "de9417",
-        "hash": "dcb0438e",
-        "encoded": "export%20async%20function%20upsertSubscription(userId:%20string,%20subscription:%20Stripe.Subscription,%20customerId?:%20string)%20%7B",
-        "prevChunkIds": []
-      },
       "82": {
-        "chunkId": "de9417",
-        "hash": "fad76409",
-        "encoded": "const%20client%20=%20getAdmin()",
-        "prevChunkIds": []
-      },
-      "83": {
-        "chunkId": "de9417",
-        "hash": "c479394b",
-        "encoded": "const%20%7B%20error%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B",
+        "chunkId": "1cee15",
+        "hash": "7af55822",
+        "encoded": "const%20%7B%20plan,%20priceId%20%7D%20=%20await%20getConfiguredPrice(planId)",
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "de9417",
-        "hash": "203be648",
-        "encoded": "user_id:%20userId,",
+        "chunkId": "1cee15",
+        "hash": "84923899",
+        "encoded": "let%20customerId",
         "prevChunkIds": []
       },
-      "85": {
-        "chunkId": "de9417",
-        "hash": "2ed3a6b3",
-        "encoded": "status:%20subscription.status,",
+      "89": {
+        "chunkId": "ceed97",
+        "hash": "cdb7f232",
+        "encoded": "%60Lipse%C8%99te%20pre%C8%9Bul%20Stripe%20configurat%20pentru%20planul%20$%7Bplan.id%7D.%60,",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "ceed97",
+        "hash": "38dfec5d",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "ceed97",
+        "hash": "70416dc1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "ceed97",
+        "hash": "6775127c",
+        "encoded": "const%20price%20=%20await%20getStripe().prices.retrieve(priceId)",
         "prevChunkIds": []
       },
       "93": {
-        "chunkId": "b250f7",
-        "hash": "e4b1e3fb",
-        "encoded": "cancel_at_period_end:%20subscription.cancel_at_period_end,",
+        "chunkId": "ceed97",
+        "hash": "ac0d90f1",
+        "encoded": "if%20(!stripePriceMatchesPlan(price,%20plan))%20%7B",
         "prevChunkIds": []
       },
       "94": {
-        "chunkId": "b250f7",
-        "hash": "05cec903",
-        "encoded": "updated_at:%20new%20Date().toISOString(),",
+        "chunkId": "ceed97",
+        "hash": "b4556037",
+        "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
       "95": {
-        "chunkId": "b250f7",
-        "hash": "b39135dd",
-        "encoded": "%7D)",
+        "chunkId": "ceed97",
+        "hash": "86e0cfda",
+        "encoded": "'CONFIGURATION',",
         "prevChunkIds": []
       },
       "96": {
-        "chunkId": "b250f7",
-        "hash": "a5cbe410",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
+        "chunkId": "ceed97",
+        "hash": "f0be06f3",
+        "encoded": "%60Pre%C8%9Bul%20Stripe%20pentru%20planul%20$%7Bplan.id%7D%20nu%20corespunde%20sumei%20sau%20duratei%20configurate.%60,",
         "prevChunkIds": []
       },
       "97": {
-        "chunkId": "b250f7",
-        "hash": "21cc0f70",
+        "chunkId": "ceed97",
+        "hash": "9973c4bc",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "ceed97",
+        "hash": "998d938c",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "99": {
-        "chunkId": "b250f7",
-        "hash": "5440b948",
-        "encoded": "export%20async%20function%20resolveUserIdForCustomer",
+        "chunkId": "ceed97",
+        "hash": "371e555b",
+        "encoded": "return%20%7B%20plan,%20priceId%20%7D",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "ceed97",
+        "hash": "020d2fe1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "ceed97",
+        "hash": "70d78c79",
+        "encoded": "export%20async%20function%20createCheckoutSession(",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "ceed97",
+        "hash": "dd409707",
+        "encoded": "userId:%20string,",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "ceed97",
+        "hash": "8e5ce3eb",
+        "encoded": "planId:%20SubscriptionPlanId,",
         "prevChunkIds": []
       },
       "105": {
-        "chunkId": "23baac",
-        "hash": "ce001d00",
-        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+        "chunkId": "ceed97",
+        "hash": "510574a3",
+        "encoded": "requestId:%20string,",
         "prevChunkIds": []
       },
       "106": {
-        "chunkId": "23baac",
-        "hash": "710daf92",
-        "encoded": "const%20client%20=%20getAdmin()",
+        "chunkId": "ceed97",
+        "hash": "9c3f4d16",
+        "encoded": "email?:%20string,",
         "prevChunkIds": []
       },
       "107": {
-        "chunkId": "23baac",
-        "hash": "0ae39c09",
-        "encoded": "const%20%7B%20data%20%7D%20=%20await%20client.from('subscriptions').select('user_id').eq('provider_customer_id',%20customerId).maybeSingle()",
+        "chunkId": "ceed97",
+        "hash": "f48128b9",
+        "encoded": ")%20%7B",
         "prevChunkIds": []
       },
       "108": {
-        "chunkId": "23baac",
-        "hash": "43842637",
-        "encoded": "if%20(data?.user_id)%20return%20data.user_id%20as%20string",
+        "chunkId": "ceed97",
+        "hash": "6b34423a",
+        "encoded": "const%20%7B%20plan,%20priceId%20%7D%20=%20await%20getConfiguredPrice(planId)",
         "prevChunkIds": []
       },
       "109": {
-        "chunkId": "338b87",
-        "hash": "eaf9e8c8",
-        "encoded": "const%20customer%20=%20await%20getStripe().customers.retrieve(customerId)%20as%20unknown%20as%20Stripe.Customer%20%7C%20Stripe.DeletedCustomer",
+        "chunkId": "ceed97",
+        "hash": "d2706881",
+        "encoded": "const%20client%20=%20getAdmin()",
         "prevChunkIds": []
       },
       "110": {
-        "chunkId": "338b87",
-        "hash": "43451446",
-        "encoded": "if%20(customer.deleted%20%7C%7C%20!('metadata'%20in%20customer))%20return%20null",
+        "chunkId": "ceed97",
+        "hash": "38a07e36",
+        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client",
         "prevChunkIds": []
       },
       "111": {
-        "chunkId": "338b87",
-        "hash": "5ec369db",
-        "encoded": "if%20(typeof%20customer.metadata.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "chunkId": "ceed97",
+        "hash": "fb9292a2",
+        "encoded": ".from('subscriptions')",
         "prevChunkIds": []
       },
       "112": {
-        "chunkId": "338b87",
-        "hash": "3de7e590",
-        "encoded": "return%20null",
+        "chunkId": "ceed97",
+        "hash": "c659c2b0",
+        "encoded": ".select('provider_customer_id,status,current_period_end')",
         "prevChunkIds": []
       },
       "113": {
-        "chunkId": "338b87",
-        "hash": "fd8e1155",
-        "encoded": "%7D",
+        "chunkId": "ceed97",
+        "hash": "30284a9e",
+        "encoded": ".eq('user_id',%20userId)",
         "prevChunkIds": []
       },
       "114": {
-        "chunkId": "a6b37c",
-        "hash": "9dafbfb4",
-        "encoded": "if%20(customer.deleted)%20return%20null",
+        "chunkId": "ceed97",
+        "hash": "68424b59",
+        "encoded": ".maybeSingle()",
         "prevChunkIds": []
       },
       "115": {
-        "chunkId": "a6b37c",
-        "hash": "a5aca7e7",
-        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "chunkId": "ceed97",
+        "hash": "3530c507",
+        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
         "prevChunkIds": []
       },
       "116": {
-        "chunkId": "a6b37c",
-        "hash": "99f31042",
-        "encoded": "return%20null",
+        "chunkId": "ceed97",
+        "hash": "d66040d8",
+        "encoded": "if%20(hasActiveSubscription(existing))%20%7B",
         "prevChunkIds": []
       },
       "117": {
-        "chunkId": "a6b37c",
-        "hash": "056477bc",
-        "encoded": "%7D",
+        "chunkId": "ceed97",
+        "hash": "f45908b3",
+        "encoded": "throw%20new%20EntitlementError(",
         "prevChunkIds": []
       },
       "118": {
-        "chunkId": "23baac",
-        "hash": "d0519959",
-        "encoded": "if%20(customer.deleted)%20return%20null",
+        "chunkId": "ceed97",
+        "hash": "233a7dd9",
+        "encoded": "'SUBSCRIPTION_ACTIVE',",
         "prevChunkIds": []
       },
       "119": {
-        "chunkId": "23baac",
-        "hash": "dec1e3ef",
-        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "chunkId": "ceed97",
+        "hash": "d25a3e78",
+        "encoded": "'Ai%20deja%20un%20abonament%20activ.%20%C3%8El%20po%C8%9Bi%20administra%20din%20portalul%20de%20facturare.',",
         "prevChunkIds": []
       },
       "120": {
-        "chunkId": "23baac",
-        "hash": "1664f112",
-        "encoded": "return%20null",
+        "chunkId": "ceed97",
+        "hash": "1d508846",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "121": {
-        "chunkId": "23baac",
+        "chunkId": "ceed97",
         "hash": "7b145d98",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "123": {
+        "chunkId": "ceed97",
+        "hash": "ee977966",
+        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "ceed97",
+        "hash": "7a0ac23b",
+        "encoded": "if%20(!customerId)%20%7B",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "ceed97",
+        "hash": "35e02d00",
+        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "ceed97",
+        "hash": "512eb6b4",
+        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "ceed97",
+        "hash": "39740e43",
+        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "ceed97",
+        "hash": "8f0425be",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "ceed97",
+        "hash": "2d19cf39",
+        "encoded": "customerId%20=%20customer.id",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "ceed97",
+        "hash": "c2114875",
+        "encoded": "const%20%7B%20error:%20writeError%20%7D%20=%20await%20client",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "ceed97",
+        "hash": "06676843",
+        "encoded": ".from('subscriptions')",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "ceed97",
+        "hash": "b85a39cc",
+        "encoded": ".upsert(%7B%20user_id:%20userId,%20provider_customer_id:%20customerId,%20status:%20'none',%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "ceed97",
+        "hash": "a325eb0d",
+        "encoded": "if%20(writeError)%20%7B",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "ceed97",
+        "hash": "d137f90f",
+        "encoded": "throw%20new%20EntitlementError('DATABASE',%20'Datele%20clientului%20de%20facturare%20nu%20au%20putut%20fi%20salvate.')",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "ceed97",
+        "hash": "a1243e02",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "ceed97",
+        "hash": "dc65d51e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "ceed97",
+        "hash": "74d7e5da",
+        "encoded": "const%20stripe%20=%20getStripe()",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "ceed97",
+        "hash": "16dd7bb5",
+        "encoded": "const%20session%20=%20await%20stripe.checkout.sessions.create(",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "ceed97",
+        "hash": "1d7b5920",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "ceed97",
+        "hash": "53eeb5e8",
+        "encoded": "mode:%20'subscription',",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "ceed97",
+        "hash": "1dc016f4",
+        "encoded": "customer:%20customerId,",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "ceed97",
+        "hash": "f790f47c",
+        "encoded": "client_reference_id:%20userId,",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "ceed97",
+        "hash": "74e1b7f6",
+        "encoded": "line_items:%20%5B%7B%20price:%20priceId,%20quantity:%201%20%7D%5D,",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "ceed97",
+        "hash": "b916aa4c",
+        "encoded": "success_url:%20%60$%7BgetAppUrl()%7D/?checkout=success&session_id=%7BCHECKOUT_SESSION_ID%7D#abonament%60,",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "564062",
+        "hash": "55f4289d",
+        "encoded": "const%20rawStatus%20=%20subscription.status%20as%20string",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "564062",
+        "hash": "7b010594",
+        "encoded": "const%20status%20=",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "564062",
+        "hash": "a3052502",
+        "encoded": "rawStatus%20===%20'incomplete_expired'",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "564062",
+        "hash": "394c9a39",
+        "encoded": "?%20'canceled'",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "564062",
+        "hash": "29f44a86",
+        "encoded": ":%20rawStatus%20===%20'paused'",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "564062",
+        "hash": "2e20685d",
+        "encoded": "?%20'past_due'",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "564062",
+        "hash": "c0314334",
+        "encoded": ":%20rawStatus",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "564062",
+        "hash": "c21cc647",
+        "encoded": "const%20metadataPlan%20=%20findSubscriptionPlan(subscription.metadata.plan_id)",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "564062",
+        "hash": "d2f37044",
+        "encoded": "const%20pricePlan%20=%20SUBSCRIPTION_PLANS.find(",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "564062",
+        "hash": "6f310a4f",
+        "encoded": "(plan)%20=%3E%20process.env%5Bplan.priceEnvironmentVariable%5D%20===%20firstItem?.price.id,",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "564062",
+        "hash": "b64c4b34",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "564062",
+        "hash": "021b4730",
+        "encoded": "const%20planId%20=%20metadataPlan?.id%20??%20pricePlan?.id%20??%20null",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "564062",
+        "hash": "e4ffa25b",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20client.rpc('apply_stripe_subscription_event',%20%7B",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "ceed97",
+        "hash": "81f449ae",
+        "encoded": "metadata:%20%7B%20app_user_id:%20userId,%20plan_id:%20plan.id%20%7D,",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "ceed97",
+        "hash": "abd114df",
+        "encoded": "subscription_data:%20%7B%20metadata:%20%7B%20app_user_id:%20userId,%20plan_id:%20plan.id%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "ceed97",
+        "hash": "dc2ba38c",
+        "encoded": "allow_promotion_codes:%20true,",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "ceed97",
+        "hash": "04d7501f",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "ceed97",
+        "hash": "ce756512",
+        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-checkout-$%7BuserId%7D-$%7BrequestId%7D%60%20%7D,",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "ceed97",
+        "hash": "35abd5a4",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "ceed97",
+        "hash": "398e209c",
+        "encoded": "if%20(!session.url)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Stripe%20nu%20a%20returnat%20o%20adres%C4%83%20de%20plat%C4%83.')",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "ceed97",
+        "hash": "9c7fbfe5",
+        "encoded": "return%20session.url",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "ceed97",
+        "hash": "73b8c9b4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "20bcd2",
+        "hash": "c7a86f8f",
+        "encoded": "p_user_id:%20userId,",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "20bcd2",
+        "hash": "fdacd996",
+        "encoded": "p_plan_id:%20planId,",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "760725",
+        "hash": "5d3b8cf4",
+        "encoded": "export%20async%20function%20createCheckoutSession(userId:%20string,%20email?:%20string)%20%7B",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "760725",
+        "hash": "f8c377a5",
+        "encoded": "const%20client%20=%20getAdmin()",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "760725",
+        "hash": "44fb01ba",
+        "encoded": "const%20%7B%20data:%20existing,%20error:%20readError%20%7D%20=%20await%20client.from('subscriptions').select('provider_customer_id').eq('user_id',%20userId).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "760725",
+        "hash": "ee2b61ab",
+        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20datele%20de%20facturare.')",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "760725",
+        "hash": "dca58e9d",
+        "encoded": "let%20customerId%20=%20existing?.provider_customer_id%20as%20string%20%7C%20null%20%7C%20undefined",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "760725",
+        "hash": "04cb9387",
+        "encoded": "if%20(!customerId)%20%7B",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "760725",
+        "hash": "311a0730",
+        "encoded": "const%20customer%20=%20await%20getStripe().customers.create(",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "760725",
+        "hash": "d285bbb0",
+        "encoded": "%7B%20email,%20metadata:%20%7B%20app_user_id:%20userId%20%7D%20%7D,",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "760725",
+        "hash": "cde823f3",
+        "encoded": "%7B%20idempotencyKey:%20%60ai-reader-customer-$%7BuserId%7D%60%20%7D,",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "760725",
+        "hash": "7ce3e01f",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "760725",
+        "hash": "109c888d",
+        "encoded": "customerId%20=%20customer.id",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "760725",
+        "hash": "4a544497",
+        "encoded": "const%20%7B%20error:%20writeError%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B%20user_id:%20userId,%20provider_customer_id:%20customerId,%20status:%20'none',%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "760725",
+        "hash": "8d65b7f5",
+        "encoded": "if%20(writeError)%20throw%20new%20EntitlementError('DATABASE',%20'Datele%20clientului%20de%20facturare%20nu%20au%20putut%20fi%20salvate.')",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "760725",
+        "hash": "6993302a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "760725",
+        "hash": "f80dc524",
+        "encoded": "const%20session%20=%20await%20getStripe().checkout.sessions.create(%7B",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "dae2bf",
+        "hash": "a5ed3764",
+        "encoded": "export%20async%20function%20applyStripeSubscriptionEvent(",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "dae2bf",
+        "hash": "4bedd01f",
+        "encoded": "event:%20Stripe.Event,",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "dae2bf",
+        "hash": "3b5365c1",
+        "encoded": "userId:%20string,",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "dae2bf",
+        "hash": "3bca3909",
+        "encoded": "subscription:%20Stripe.Subscription,",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "dae2bf",
+        "hash": "08f7472b",
+        "encoded": "customerId?:%20string,",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "dae2bf",
+        "hash": "d9763bbc",
+        "encoded": "):%20Promise%3Cboolean%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "dae2bf",
+        "hash": "3dbd1bc8",
+        "encoded": "const%20client%20=%20getAdmin()",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "dae2bf",
+        "hash": "74a1105a",
+        "encoded": "const%20firstItem%20=%20subscription.items.data%5B0%5D",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "dae2bf",
+        "hash": "7c721c82",
+        "encoded": "const%20customer%20=%20customerId%20??",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "dae2bf",
+        "hash": "9d2bdb63",
+        "encoded": "(typeof%20subscription.customer%20===%20'string'%20?%20subscription.customer%20:%20subscription.customer.id)",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "dae2bf",
+        "hash": "4d3704d7",
+        "encoded": "const%20rawStatus%20=%20subscription.status%20as%20string",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "dae2bf",
+        "hash": "a26d2b7a",
+        "encoded": "const%20status%20=%20rawStatus%20===%20'incomplete_expired'",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "dae2bf",
+        "hash": "1371e472",
+        "encoded": "?%20'canceled'",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "dae2bf",
+        "hash": "8172ca74",
+        "encoded": ":%20rawStatus%20===%20'paused'",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "dae2bf",
+        "hash": "fe0a735e",
+        "encoded": "?%20'past_due'",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "dae2bf",
+        "hash": "e8ea024a",
+        "encoded": ":%20rawStatus",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "dae2bf",
+        "hash": "68b55a75",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20client.rpc('apply_stripe_subscription_event',%20%7B",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "dae2bf",
+        "hash": "e55225b5",
+        "encoded": "p_event_id:%20event.id,",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "dae2bf",
+        "hash": "fd04ac71",
+        "encoded": "p_event_type:%20event.type,",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "dae2bf",
+        "hash": "0f3b1ef2",
+        "encoded": "p_event_created:%20event.created,",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "dae2bf",
+        "hash": "935296ef",
+        "encoded": "p_user_id:%20userId,",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "dae2bf",
+        "hash": "6f59a3ce",
+        "encoded": "p_plan_id:%20subscription.metadata.plan_id%20??%20null,",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "dae2bf",
+        "hash": "216469cb",
+        "encoded": "p_customer_id:%20customer,",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "dae2bf",
+        "hash": "ba961ea6",
+        "encoded": "p_subscription_id:%20subscription.id,",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "dae2bf",
+        "hash": "8cc5e5cc",
+        "encoded": "p_status:%20status,",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "dae2bf",
+        "hash": "98d732d3",
+        "encoded": "p_current_period_start:%20firstItem?.current_period_start",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "dae2bf",
+        "hash": "c040e317",
+        "encoded": "?%20new%20Date(firstItem.current_period_start%20*%201000).toISOString()",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "dae2bf",
+        "hash": "ceb9dedb",
+        "encoded": ":%20null,",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "dae2bf",
+        "hash": "a1a3db8a",
+        "encoded": "p_current_period_end:%20firstItem?.current_period_end",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "dae2bf",
+        "hash": "8f9d7dcb",
+        "encoded": "?%20new%20Date(firstItem.current_period_end%20*%201000).toISOString()",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "dae2bf",
+        "hash": "ec94d1e3",
+        "encoded": ":%20null,",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "dae2bf",
+        "hash": "89760c3f",
+        "encoded": "p_cancel_at_period_end:%20subscription.cancel_at_period_end,",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "dae2bf",
+        "hash": "d86b430a",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "dae2bf",
+        "hash": "cc2ca400",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "dae2bf",
+        "hash": "82f58f80",
+        "encoded": "return%20Boolean(data)",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "dae2bf",
+        "hash": "43651e39",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "dae2bf",
+        "hash": "c428fa10",
+        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "de9417",
+        "hash": "db884fce",
+        "encoded": "export%20async%20function%20upsertSubscription(userId:%20string,%20subscription:%20Stripe.Subscription,%20customerId?:%20string)%20%7B",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "de9417",
+        "hash": "e1e1b0e5",
+        "encoded": "const%20client%20=%20getAdmin()",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "de9417",
+        "hash": "a2bd079a",
+        "encoded": "const%20%7B%20error%20%7D%20=%20await%20client.from('subscriptions').upsert(%7B",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "de9417",
+        "hash": "a1475f2d",
+        "encoded": "user_id:%20userId,",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "de9417",
+        "hash": "a04c5116",
+        "encoded": "status:%20subscription.status,",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "b250f7",
+        "hash": "4bb6a31f",
+        "encoded": "cancel_at_period_end:%20subscription.cancel_at_period_end,",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "b250f7",
+        "hash": "4c9b89ae",
+        "encoded": "updated_at:%20new%20Date().toISOString(),",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "b250f7",
+        "hash": "0f976994",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "b250f7",
+        "hash": "536047d7",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Abonamentul%20nu%20a%20putut%20fi%20actualizat.')",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "b250f7",
+        "hash": "5d666166",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "b250f7",
+        "hash": "702598c7",
+        "encoded": "export%20async%20function%20resolveUserIdForCustomer",
+        "prevChunkIds": []
+      },
+      "348": {
         "chunkId": "23baac",
-        "hash": "7c7e5146",
+        "hash": "8be913ed",
+        "encoded": "export%20async%20function%20resolveUserIdForCustomer(customerId:%20string):%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "23baac",
+        "hash": "20925d45",
+        "encoded": "const%20client%20=%20getAdmin()",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "23baac",
+        "hash": "ceb0fa42",
+        "encoded": "const%20%7B%20data%20%7D%20=%20await%20client.from('subscriptions').select('user_id').eq('provider_customer_id',%20customerId).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "23baac",
+        "hash": "71e90990",
+        "encoded": "if%20(data?.user_id)%20return%20data.user_id%20as%20string",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "338b87",
+        "hash": "8692dcdf",
+        "encoded": "const%20customer%20=%20await%20getStripe().customers.retrieve(customerId)%20as%20unknown%20as%20Stripe.Customer%20%7C%20Stripe.DeletedCustomer",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "338b87",
+        "hash": "3784fce0",
+        "encoded": "if%20(customer.deleted%20%7C%7C%20!('metadata'%20in%20customer))%20return%20null",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "338b87",
+        "hash": "5d999b04",
+        "encoded": "if%20(typeof%20customer.metadata.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "338b87",
+        "hash": "d6be4501",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "338b87",
+        "hash": "82776490",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "a6b37c",
+        "hash": "d45bbaaf",
+        "encoded": "if%20(customer.deleted)%20return%20null",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "a6b37c",
+        "hash": "034a0301",
+        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "a6b37c",
+        "hash": "2455a362",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "a6b37c",
+        "hash": "65468654",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "23baac",
+        "hash": "a30855b5",
+        "encoded": "if%20(customer.deleted)%20return%20null",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "23baac",
+        "hash": "2da030fd",
+        "encoded": "if%20(typeof%20customer.metadata?.app_user_id%20===%20'string')%20return%20customer.metadata.app_user_id",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "23baac",
+        "hash": "67d4ad49",
+        "encoded": "return%20null",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "23baac",
+        "hash": "8f29d5d7",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "23baac",
+        "hash": "73b92a3f",
         "encoded": "export%20async%20function%20recordBillingEvent(event:%20Stripe.Event):%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 99
+    "_prevLineCount": 189
   }
 }

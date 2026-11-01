@@ -3,15 +3,18 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 
 const mocks = vi.hoisted(() => ({
   order: [] as string[],
+  associateAnonymousUsage: vi.fn(),
   canGenerateReading: vi.fn(),
   claimSuccessfulReading: vi.fn(),
   resolveEntitlementIdentity: vi.fn(),
   getTtsProvider: vi.fn(),
   getAvailableVoices: vi.fn(),
   synthesize: vi.fn(),
+  recordAudioAttempt: vi.fn(),
 }))
 
 vi.mock('../src/server/auth/verifySupabaseUser.js', () => ({
+  AuthConfigurationError: class AuthConfigurationError extends Error {},
   UnauthorizedError: class UnauthorizedError extends Error {},
   verifySupabaseUser: vi.fn(),
 }))
@@ -19,12 +22,13 @@ vi.mock('../src/server/auth/verifySupabaseUser.js', () => ({
 vi.mock('../src/server/entitlement/entitlement.js', () => ({
   EntitlementError: class EntitlementError extends Error {
     constructor(
-      public readonly code: 'PAYWALL' | 'CONFIGURATION' | 'DATABASE',
+      public readonly code: 'PAYWALL' | 'SUBSCRIPTION_ACTIVE' | 'CONFIGURATION' | 'DATABASE',
       message: string,
     ) {
       super(message)
     }
   },
+  associateAnonymousUsage: mocks.associateAnonymousUsage,
   canGenerateReading: mocks.canGenerateReading,
   claimSuccessfulReading: mocks.claimSuccessfulReading,
   resolveEntitlementIdentity: mocks.resolveEntitlementIdentity,
@@ -34,8 +38,14 @@ vi.mock('../src/server/tts/ttsProviderFactory.js', () => ({
   getTtsProvider: mocks.getTtsProvider,
 }))
 
+vi.mock('../src/server/usage/usageMetrics.js', () => ({
+  recordAudioAttempt: mocks.recordAudioAttempt,
+}))
+
 import handler from './tts'
 import { TtsProviderError } from '../src/server/tts/ttsProvider.js'
+import { EntitlementError } from '../src/server/entitlement/entitlement.js'
+import { AuthConfigurationError, UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
 
 function createMockReqRes(body: unknown, method = 'POST') {
   const req = {
@@ -68,6 +78,8 @@ function createMockReqRes(body: unknown, method = 'POST') {
 describe('POST /api/tts', () => {
   beforeEach(() => {
     mocks.order.length = 0
+    mocks.associateAnonymousUsage.mockReset().mockResolvedValue(undefined)
+    mocks.recordAudioAttempt.mockReset().mockResolvedValue(undefined)
     mocks.canGenerateReading.mockReset().mockResolvedValue(true)
     mocks.claimSuccessfulReading.mockReset().mockImplementation(async () => {
       mocks.order.push('claim')
@@ -116,21 +128,81 @@ describe('POST /api/tts', () => {
     await handler(req, res)
 
     expect(res.statusCode).toBe(503)
-    expect(res.jsonBody).toMatchObject({ code: 'TTS_PROVIDER_ERROR' })
+    expect(res.jsonBody).toMatchObject({ code: 'TTS_PROVIDER_UNAVAILABLE' })
+    expect(mocks.recordAudioAttempt).toHaveBeenCalledTimes(1)
     expect(mocks.claimSuccessfulReading).not.toHaveBeenCalled()
     expect(mocks.getAvailableVoices).toHaveBeenCalledWith('en-US')
   })
 
-  it('shows the paywall before calling the TTS provider when free usage is already consumed', async () => {
-    mocks.canGenerateReading.mockResolvedValue(false)
-    const { req, res } = createMockReqRes({ text: 'Another reading.', language: 'en-US' })
+  it('associates prior anonymous usage for the verified authenticated user before checking entitlement', async () => {
+    mocks.resolveEntitlementIdentity.mockResolvedValueOnce({
+      userId: 'user-123',
+      anonymousId: null,
+    })
+    const { req, res } = createMockReqRes({ text: 'Text autentificat.', language: 'ro-RO' })
+    req.headers.authorization = 'Bearer valid-session'
+    req.headers.cookie = 'ai_reader_anon=signed-cookie'
+
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(200)
+    expect(mocks.associateAnonymousUsage).toHaveBeenCalledWith(
+      'user-123',
+      'ai_reader_anon=signed-cookie',
+    )
+    expect(mocks.canGenerateReading).toHaveBeenCalledWith({ userId: 'user-123', anonymousId: null })
+  })
+
+  it('rejects a concurrent free-use race after synthesis without returning audio', async () => {
+    mocks.claimSuccessfulReading.mockRejectedValueOnce(
+      new EntitlementError('PAYWALL', 'Lectura gratuită deja folosită.'),
+    )
+    const { req, res } = createMockReqRes({ text: 'Lectură concurentă.', language: 'ro-RO' })
 
     await handler(req, res)
 
     expect(res.statusCode).toBe(402)
-    expect(res.jsonBody).toMatchObject({ code: 'PAYWALL' })
+    expect(res.jsonBody).toMatchObject({ code: 'SUBSCRIPTION_REQUIRED' })
+    expect(mocks.order).toEqual(['synthesize'])
+  })
+
+  it('shows the subscription-required response based on server entitlement, ignoring client flags', async () => {
+    mocks.canGenerateReading.mockResolvedValue(false)
+    const { req, res } = createMockReqRes({
+      text: 'Another reading.',
+      language: 'en-US',
+      freeReadingUsed: false,
+      subscriptionActive: true,
+    })
+
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(402)
+    expect(res.jsonBody).toMatchObject({ code: 'SUBSCRIPTION_REQUIRED' })
     expect(mocks.getTtsProvider).not.toHaveBeenCalled()
     expect(mocks.claimSuccessfulReading).not.toHaveBeenCalled()
+  })
+
+  it('returns a distinct authentication-required response for an invalid session', async () => {
+    mocks.resolveEntitlementIdentity.mockRejectedValueOnce(new UnauthorizedError())
+    const { req, res } = createMockReqRes({ text: 'Salut.', language: 'en-US' })
+
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(401)
+    expect(res.jsonBody).toMatchObject({ code: 'AUTHENTICATION_REQUIRED' })
+    expect(mocks.getTtsProvider).not.toHaveBeenCalled()
+  })
+
+  it('does not misreport a missing Supabase auth key as an Azure 503', async () => {
+    mocks.resolveEntitlementIdentity.mockRejectedValueOnce(new AuthConfigurationError())
+    const { req, res } = createMockReqRes({ text: 'Salut.', language: 'en-US' })
+
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(500)
+    expect(res.jsonBody).toMatchObject({ code: 'AUTH_CONFIGURATION_ERROR' })
+    expect(mocks.getTtsProvider).not.toHaveBeenCalled()
   })
 
   it('rejects unsupported language codes instead of silently selecting a voice', async () => {

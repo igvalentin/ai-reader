@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
 export class UnauthorizedError extends Error {}
+export class AuthConfigurationError extends Error {}
 
 function extractBearerToken(authorizationHeader: string | undefined): string | null {
   if (!authorizationHeader) return null
@@ -26,7 +27,9 @@ export async function verifySupabaseUser(authorizationHeader: string | undefined
   const supabaseAnonKey = process.env.SUPABASE_ANON_KEY
 
   if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error('Configurare Supabase server-side lipsă (SUPABASE_URL / SUPABASE_ANON_KEY).')
+    throw new AuthConfigurationError(
+      'Configurare Supabase server-side lipsă (SUPABASE_URL / SUPABASE_ANON_KEY).',
+    )
   }
 
   const supabase = createClient(supabaseUrl, supabaseAnonKey, {

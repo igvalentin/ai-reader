@@ -1,0 +1,48 @@
+{
+  "src/lib/billing/billingClient.ts": {
+    "filename": "billingClient.ts",
+    "path": "src/lib/billing/billingClient.ts",
+    "version": "1.2",
+    "contextFile": "11233eaf-context.json",
+    "chunks": {
+      "4f518b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793539564,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ecfec21f",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 3:26:04 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "4f518b",
+        "hash": "1d1828cc",
+        "encoded": "import%20type%20%7B%20SubscriptionPlanId%20%7D%20from%20'../../constants/subscriptionPlans'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "4f518b",
+        "hash": "3cd4c1bd",
+        "encoded": "export%20type%20%7B%20SubscriptionPlanId%20%7D",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "4f518b",
+        "hash": "a7e95a7c",
+        "encoded": "export%20interface%20SubscriptionStatus%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

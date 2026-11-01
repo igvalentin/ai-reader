@@ -1,0 +1,48 @@
+{
+  "src/pages/AdminUsersPage.test.tsx": {
+    "filename": "AdminUsersPage.test.tsx",
+    "path": "src/pages/AdminUsersPage.test.tsx",
+    "version": "1.2",
+    "contextFile": "2d2f5bd9-context.json",
+    "chunks": {
+      "d9fdd1": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793537119,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "217e0398",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:45:19 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "d9fdd1",
+        "hash": "1985ecd4",
+        "encoded": "import%20%7B%20afterEach,%20describe,%20expect,%20it,%20vi%20%7D%20from%20'vitest'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "d9fdd1",
+        "hash": "7f7d8763",
+        "encoded": "import%20type%20%7B%20ReactNode%20%7D%20from%20'react'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "d9fdd1",
+        "hash": "78e383ef",
+        "encoded": "import%20%7B%20cleanup,%20render,%20screen%20%7D%20from%20'@testing-library/react'",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

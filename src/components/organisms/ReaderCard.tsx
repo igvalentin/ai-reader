@@ -56,8 +56,18 @@ export function ReaderCard() {
       const response = await requestSpeech(text, language === 'auto' ? '' : language)
       await loadChunks(response.chunks, response.audioContentType)
     } catch (requestError) {
-      if (requestError instanceof TtsRequestError && requestError.code === 'PAYWALL') {
+      if (
+        requestError instanceof TtsRequestError &&
+        (requestError.code === 'SUBSCRIPTION_REQUIRED' || requestError.code === 'PAYWALL')
+      ) {
         setShowPaywall(true)
+        return
+      }
+      if (
+        requestError instanceof TtsRequestError &&
+        requestError.code === 'AUTHENTICATION_REQUIRED'
+      ) {
+        setTtsError('Sesiunea a expirat. Cere un link de conectare nou și autentifică-te din nou.')
         return
       }
       setTtsError(requestError instanceof Error ? requestError.message : 'Generarea audio a eșuat.')

@@ -9,6 +9,9 @@
     },
     "fdde6987": {
       "value": "Prompt 6 — Production Readiness and Final QA\n\nPerform a complete production-readiness review of AI Reader.\n\nFunctional QA\n\nTest the complete user journey:\n\nOpen the application on mobile.\n\nPaste Romanian text.\n\nGenerate audio.\n\nConfirm the free entitlement is consumed only after successful generation.\n\nReload the page.\n\nAttempt another reading.\n\nConfirm the paywall appears.\n\nComplete a test subscription using the configured billing test workflow, if available.\n\nConfirm the subscription unlocks r"
+    },
+    "668ceaef": {
+      "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
     }
   },
   "localPrompts": {},

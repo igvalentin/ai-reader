@@ -4,13 +4,19 @@ import { detectLanguage, normalizeLanguage } from '../src/server/tts/language.js
 import { normalizeRomanianText } from '../src/server/tts/normalizeRomanianText.js'
 import { getTtsProvider } from '../src/server/tts/ttsProviderFactory.js'
 import { TtsProviderError } from '../src/server/tts/ttsProvider.js'
-import { verifySupabaseUser, UnauthorizedError } from '../src/server/auth/verifySupabaseUser.js'
 import {
+  AuthConfigurationError,
+  verifySupabaseUser,
+  UnauthorizedError,
+} from '../src/server/auth/verifySupabaseUser.js'
+import {
+  associateAnonymousUsage,
   canGenerateReading,
   claimSuccessfulReading,
   EntitlementError,
   resolveEntitlementIdentity,
 } from '../src/server/entitlement/entitlement.js'
+import { recordAudioAttempt } from '../src/server/usage/usageMetrics.js'
 
 const MAX_CHARACTERS = 4000
 
@@ -57,10 +63,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       req.headers.cookie,
       verifySupabaseUser,
     )
+    if (entitlement.setCookie) res.setHeader('Set-Cookie', entitlement.setCookie)
+    try {
+      await recordAudioAttempt(entitlement)
+    } catch {
+      console.error(JSON.stringify({ event: 'tts_activity_metric_failed' }))
+    }
+    if (entitlement.userId) {
+      await associateAnonymousUsage(entitlement.userId, req.headers.cookie)
+    }
     if (!(await canGenerateReading(entitlement))) {
       return res.status(402).json({
-        code: 'PAYWALL',
-        error: 'Lectura gratuită a fost folosită. Activează un abonament pentru a continua.',
+        code: 'SUBSCRIPTION_REQUIRED',
+        error: 'Lectura gratuită a fost folosită. Alege un abonament pentru a continua.',
       })
     }
     const provider = getTtsProvider()
@@ -90,7 +105,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       audioContentType: 'audio/mpeg',
       characterCount: body.text.length,
     }
-    if (entitlement.setCookie) res.setHeader('Set-Cookie', entitlement.setCookie)
     console.info(
       JSON.stringify({
         event: 'tts_synthesis_succeeded',
@@ -103,29 +117,48 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   } catch (error) {
     if (error instanceof UnauthorizedError) {
       return res.status(401).json({
-        code: 'UNAUTHORIZED',
+        code: 'AUTHENTICATION_REQUIRED',
         error: 'Sesiunea a expirat. Autentifică-te și încearcă din nou.',
       })
     }
+    if (error instanceof AuthConfigurationError) {
+      console.error(JSON.stringify({ event: 'tts_auth_configuration_failed' }))
+      return res.status(500).json({
+        code: 'AUTH_CONFIGURATION_ERROR',
+        error: 'Autentificarea nu este configurată complet pe server. Încearcă din nou mai târziu.',
+      })
+    }
     if (error instanceof EntitlementError) {
-      if (error.code === 'PAYWALL')
-        return res.status(402).json({ code: 'PAYWALL', error: error.message })
+      if (error.code === 'PAYWALL') {
+        return res.status(402).json({
+          code: 'SUBSCRIPTION_REQUIRED',
+          error: 'Lectura gratuită a fost folosită. Alege un abonament pentru a continua.',
+        })
+      }
+      console.error(JSON.stringify({ event: 'tts_entitlement_failed', code: error.code }))
       return res.status(500).json({ code: 'ENTITLEMENT_ERROR', error: error.message })
     }
-    const providerError = error instanceof TtsProviderError ? error : null
-    const errorCode = providerError?.code ?? 'TTS_UNAVAILABLE'
-    const retryable = providerError?.retryable ?? true
-    const status =
-      errorCode === 'TTS_TIMEOUT' || errorCode === 'TTS_NOT_CONFIGURED' || retryable ? 503 : 502
-    console.error(
-      JSON.stringify({ event: 'tts_synthesis_failed', language, code: errorCode, retryable }),
-    )
-    return res.status(status).json({
-      code: errorCode,
-      error:
-        errorCode === 'TTS_TIMEOUT'
-          ? 'Generarea audio a durat prea mult. Textul este în continuare disponibil; încearcă din nou.'
-          : 'Generarea audio nu este disponibilă momentan. Textul este în continuare disponibil.',
+    if (error instanceof TtsProviderError) {
+      console.error(
+        JSON.stringify({
+          event: 'tts_synthesis_failed',
+          language,
+          providerCode: error.code,
+          retryable: error.retryable,
+        }),
+      )
+      return res.status(503).json({
+        code: 'TTS_PROVIDER_UNAVAILABLE',
+        error:
+          error.code === 'TTS_TIMEOUT'
+            ? 'Generarea audio a durat prea mult. Textul rămâne disponibil; încearcă din nou.'
+            : 'Serviciul audio nu este disponibil momentan. Textul rămâne disponibil; încearcă din nou.',
+      })
+    }
+    console.error(JSON.stringify({ event: 'tts_unexpected_failure', language }))
+    return res.status(500).json({
+      code: 'INTERNAL_ERROR',
+      error: 'A apărut o eroare neașteptată. Textul rămâne disponibil; încearcă din nou.',
     })
   }
 }

@@ -1,0 +1,174 @@
+{
+  "src/lib/auth/authClient.ts": {
+    "filename": "authClient.ts",
+    "path": "src/lib/auth/authClient.ts",
+    "version": "1.2",
+    "contextFile": "d63503fc-context.json",
+    "chunks": {
+      "fd0f3b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793534912,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "0646e3e5",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:08:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "fd0f3b",
+        "hash": "9f1d2b2b",
+        "encoded": "import%20%7B%20supabase%20%7D%20from%20'../supabaseClient'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "fd0f3b",
+        "hash": "02c0f761",
+        "encoded": "interface%20SupabaseAuthFailure%20%7B",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "fd0f3b",
+        "hash": "4f83c5cf",
+        "encoded": "readonly%20code?:%20unknown",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "fd0f3b",
+        "hash": "c9295fb5",
+        "encoded": "readonly%20status?:%20unknown",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "fd0f3b",
+        "hash": "299b6809",
+        "encoded": "readonly%20message?:%20unknown",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "fd0f3b",
+        "hash": "03469704",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "fd0f3b",
+        "hash": "91331181",
+        "encoded": "export%20function%20isMagicLinkRateLimitError(error:%20unknown):%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "fd0f3b",
+        "hash": "5f48a7f1",
+        "encoded": "if%20(!error%20%7C%7C%20typeof%20error%20!==%20'object')%20return%20false",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "fd0f3b",
+        "hash": "435afb5e",
+        "encoded": "const%20failure%20=%20error%20as%20SupabaseAuthFailure",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "fd0f3b",
+        "hash": "588b7e4f",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "fd0f3b",
+        "hash": "e59f1d2d",
+        "encoded": "failure.code%20===%20'over_email_send_rate_limit'%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "fd0f3b",
+        "hash": "6898272f",
+        "encoded": "failure.status%20===%20429%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "fd0f3b",
+        "hash": "abcca7de",
+        "encoded": "(typeof%20failure.message%20===%20'string'%20&&",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "fd0f3b",
+        "hash": "1dd91fa5",
+        "encoded": "/over_email_send_rate_limit%7Cemail.*rate.?limit%7Ctoo%20many%20requests/i.test(failure.message))",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "fd0f3b",
+        "hash": "ef2d8a73",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "fd0f3b",
+        "hash": "76477189",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "fd0f3b",
+        "hash": "79ba1d8b",
+        "encoded": "export%20async%20function%20sendMagicLink(email:%20string):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "fd0f3b",
+        "hash": "0d5b326d",
+        "encoded": "const%20%7B%20error%20%7D%20=%20await%20supabase.auth.signInWithOtp(%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "fd0f3b",
+        "hash": "3d333a98",
+        "encoded": "email,",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "fd0f3b",
+        "hash": "28fad57d",
+        "encoded": "options:%20%7B%20emailRedirectTo:%20window.location.origin%20%7D,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "fd0f3b",
+        "hash": "d91e2961",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "fd0f3b",
+        "hash": "31877077",
+        "encoded": "if%20(error)%20throw%20error",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "fd0f3b",
+        "hash": "840004ae",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "fd0f3b",
+        "hash": "488f56a3",
+        "encoded": "export%20async%20function%20getAccessToken():%20Promise%3Cstring%20%7C%20null%3E%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -6,6 +6,9 @@
   "promptMessage": {
     "a47d6d32": {
       "value": "pare ca e 1mb pentru planul free al ocr.space. dar nu se poate implementa ocr local in vercel?"
+    },
+    "668ceaef": {
+      "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
     }
   },
   "localPrompts": {},

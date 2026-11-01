@@ -7,6 +7,21 @@ const { parseMultipartImageMock } = vi.hoisted(() => ({
 const { getOcrProviderMock } = vi.hoisted(() => ({
   getOcrProviderMock: vi.fn(),
 }))
+const activityMocks = vi.hoisted(() => ({
+  resolveEntitlementIdentity: vi.fn(),
+  recordOcrAttempt: vi.fn(),
+}))
+
+vi.mock('../src/server/entitlement/entitlement.js', async () => {
+  const actual = await vi.importActual<typeof import('../src/server/entitlement/entitlement.js')>(
+    '../src/server/entitlement/entitlement.js',
+  )
+  return { ...actual, resolveEntitlementIdentity: activityMocks.resolveEntitlementIdentity }
+})
+
+vi.mock('../src/server/usage/usageMetrics.js', () => ({
+  recordOcrAttempt: activityMocks.recordOcrAttempt,
+}))
 
 vi.mock('../src/server/ocr/parseMultipartImage', async () => {
   const actual = await vi.importActual<typeof import('../src/server/ocr/parseMultipartImage')>(
@@ -61,6 +76,11 @@ describe('POST /api/ocr', () => {
   beforeEach(() => {
     parseMultipartImageMock.mockReset()
     getOcrProviderMock.mockReset()
+    activityMocks.resolveEntitlementIdentity.mockReset().mockResolvedValue({
+      userId: null,
+      anonymousId: 'anonymous-test',
+    })
+    activityMocks.recordOcrAttempt.mockReset().mockResolvedValue(undefined)
     vi.spyOn(console, 'error').mockImplementation(() => undefined)
   })
 
@@ -99,6 +119,28 @@ describe('POST /api/ocr', () => {
     expect(res.jsonBody).toEqual({
       text: 'Bună ziua! A doua linie.\n\nAl doilea paragraf.',
     })
+    expect(activityMocks.recordOcrAttempt).toHaveBeenCalledTimes(1)
+  })
+
+  it('nu blochează OCR-ul dacă metricile de activitate nu pot fi salvate', async () => {
+    activityMocks.recordOcrAttempt.mockRejectedValueOnce(new Error('database unavailable'))
+    parseMultipartImageMock.mockResolvedValue({
+      buffer: PNG_HEADER,
+      declaredMimeType: 'image/png',
+      fieldName: 'image',
+    })
+    getOcrProviderMock.mockReturnValue({
+      recognizeText: vi.fn().mockResolvedValue('Text OCR valid.'),
+    })
+
+    const { req, res } = createMockReqRes()
+    await handler(req, res)
+
+    expect(res.statusCode).toBe(200)
+    expect(res.jsonBody).toEqual({ text: 'Text OCR valid.' })
+    expect(console.error).toHaveBeenCalledWith(
+      JSON.stringify({ event: 'ocr_activity_metric_failed' }),
+    )
   })
 
   it('respinge conținut care nu este o imagine reală (semnătură binară invalidă)', async () => {
@@ -139,7 +181,9 @@ describe('POST /api/ocr', () => {
       fieldName: 'image',
     })
     getOcrProviderMock.mockReturnValue({
-      recognizeText: vi.fn().mockRejectedValue(new OcrProviderError('Invalid API key: private-token')),
+      recognizeText: vi
+        .fn()
+        .mockRejectedValue(new OcrProviderError('Invalid API key: private-token')),
     })
 
     const { req, res } = createMockReqRes()

@@ -76,6 +76,132 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:54:45 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "fac9f6": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "bc8fb8c0",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ff0e6a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "76d63b95",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e0ace4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "19566921",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b94dd9": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "0738d1f6",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "bceed9": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "7e80617b",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c790b7": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "a71b0179",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "bd5971": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "b4184daf",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -98,182 +224,362 @@
         "prevChunkIds": []
       },
       "6": {
-        "chunkId": "ad4caa",
-        "hash": "c6f098a2",
-        "encoded": "%3E%20TTS%20%C8%99i%20paywall-ul%20sunt%20implementate,%20dar%20schema%20Supabase%20%C8%99i%20configurarea%20Stripe%20trebuie%20aplicate",
+        "chunkId": "bd5971",
+        "hash": "9c33dc99",
+        "encoded": "%3E%20TTS,%20entitlement%20%C8%99i%20Stripe%20Checkout/Portal%20sunt%20implementate.%20Schema%20de%20baz%C4%83%20%C8%99i%20migrarea%20aditiv%C4%83,",
         "prevChunkIds": []
       },
       "7": {
+        "chunkId": "bd5971",
+        "hash": "ef9e4d4e",
+        "encoded": "%3E%20pre%C8%9Burile%20Stripe%20%C8%99i%20set%C4%83rile%20Auth%20se%20aplic%C4%83/configureaz%C4%83%20manual;%20nu%20se%20fac%20deploy-uri%20sau%20schimb%C4%83ri",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "bd5971",
+        "hash": "66ad272c",
+        "encoded": "%3E%20%C3%AEn%20produc%C8%9Bie%20f%C4%83r%C4%83%20aprobare.%20Vezi%20%5B%60docs/AUTH_BILLING_ADMIN.md%60%5D(./docs/AUTH_BILLING_ADMIN.md)%20%C8%99i",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "bd5971",
+        "hash": "9fe4bb0e",
+        "encoded": "%3E%20%5B%60docs/ARCHITECTURE.md%60%5D(./docs/ARCHITECTURE.md).",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "ff0e6a",
+        "hash": "12d021e7",
+        "encoded": "%3E%20manual;%20migrarea%20aditiv%C4%83%20nou%C4%83,%20pre%C8%9Burile%20Stripe%20%C8%99i%20set%C4%83rile%20Auth%20r%C4%83m%C3%A2n%20pa%C8%99i%20manuali.%20Nu%20se%20fac",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "ff0e6a",
+        "hash": "eee8e830",
+        "encoded": "%3E%20deploy-uri%20sau%20schimb%C4%83ri%20%C3%AEn%20produc%C8%9Bie%20f%C4%83r%C4%83%20aprobare.%20Vezi",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "ff0e6a",
+        "hash": "62f2a3c4",
+        "encoded": "%3E%20%5B%60docs/AUTH_BILLING_ADMIN.md%60%5D(./docs/AUTH_BILLING_ADMIN.md)%20%C8%99i%20%5B%60docs/ARCHITECTURE.md%60%5D(./docs/ARCHITECTURE.md).",
+        "prevChunkIds": []
+      },
+      "13": {
         "chunkId": "ad4caa",
-        "hash": "f4f5ff60",
+        "hash": "97c23c6e",
         "encoded": "%3E%20separat,%20cu%20aprobare%20explicit%C4%83.%20Detalii%20despre%20arhitectur%C4%83:%20%5B%60docs/ARCHITECTURE.md%60%5D(./docs/ARCHITECTURE.md).",
         "prevChunkIds": []
       },
-      "48": {
+      "54": {
         "chunkId": "236847",
-        "hash": "4686a049",
+        "hash": "d2bc484e",
         "encoded": "%3E%20Nu%20ad%C4%83uga%20niciodat%C4%83%20cheia%20%60service_role%60%20Supabase%20sau%20alte%20secrete%20%C3%AEn%20fi%C8%99iere%20cu%20prefixul",
         "prevChunkIds": []
       },
-      "49": {
+      "55": {
         "chunkId": "236847",
-        "hash": "1ae47dde",
+        "hash": "d8353c23",
         "encoded": "%3E%20%60VITE_%60%20%E2%80%94%20acestea%20sunt%20expuse%20%C3%AEn%20codul%20client.%20Secretele%20serverului%20(%60SUPABASE_SERVICE_ROLE_KEY%60,",
         "prevChunkIds": []
       },
-      "50": {
+      "56": {
         "chunkId": "236847",
-        "hash": "2c638845",
+        "hash": "ea281269",
         "encoded": "%3E%20%60ANONYMOUS_USAGE_SECRET%60,%20Stripe%20%C8%99i%20furnizorii%20OCR/TTS)%20se%20configureaz%C4%83%20doar%20%C3%AEn%20runtime-ul%20serverului.",
         "prevChunkIds": []
       },
+      "74": {
+        "chunkId": "c790b7",
+        "hash": "d79c52eb",
+        "encoded": "Nu%20s-a%20f%C4%83cut%20deploy%20%C8%99i%20nu%20s-au%20aplicat%20migra%C8%9Bii%20%C3%AEn%20produc%C8%9Bie.%20Aplic%C4%83%20mai%20%C3%AEnt%C3%A2i%20schema%20de%20baz%C4%83",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "c790b7",
+        "hash": "ac01c656",
+        "encoded": "%5B%60supabase/schema.sql%60%5D(./supabase/schema.sql),%20apoi%20migrarea%20aditiv%C4%83",
+        "prevChunkIds": []
+      },
       "76": {
-        "chunkId": "641730",
-        "hash": "b66995ce",
-        "encoded": "##%20Deploy%20pe%20Vercel",
+        "chunkId": "c790b7",
+        "hash": "c4987328",
+        "encoded": "%5B%60supabase/migrations/20261101000000_billing_usage_admin.sql%60%5D(./supabase/migrations/20261101000000_billing_usage_admin.sql)",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "c790b7",
+        "hash": "f4895b28",
+        "encoded": "%C3%AEntr-un%20mediu%20de%20test.%20Configureaz%C4%83%20produsele/pre%C8%9Burile%20%C8%99i%20webhook-ul%20Stripe%20%C3%AEn%20Test%20mode%20%C3%AEnainte%20de",
         "prevChunkIds": []
       },
       "78": {
-        "chunkId": "641730",
-        "hash": "644cf9d5",
-        "encoded": "Deploy-ul%20nu%20face%20parte%20din%20aceast%C4%83%20implementare%20%C8%99i%20necesit%C4%83%20aprobare%20explicit%C4%83.%20%C3%8Enainte%20de%20orice",
-        "prevChunkIds": []
-      },
-      "79": {
-        "chunkId": "641730",
-        "hash": "f55d58c3",
-        "encoded": "activare,%20aplic%C4%83%20%5B%60supabase/schema.sql%60%5D(./supabase/schema.sql)%20%C3%AEntr-un%20mediu%20aprobat%20%C8%99i%20configureaz%C4%83",
-        "prevChunkIds": []
-      },
-      "80": {
-        "chunkId": "641730",
-        "hash": "e8ea7c6a",
-        "encoded": "valorile%20Stripe%20%C3%AEn%20test%20mode.%20Func%C8%9Biile%20server%20folosesc%20%60api/checkout.ts%60,%20%60api/portal.ts%60,",
+        "chunkId": "c790b7",
+        "hash": "e6a40c8a",
+        "encoded": "orice%20activare;%20pa%C8%99ii%20sunt%20%C3%AEn%20%5B%60docs/AUTH_BILLING_ADMIN.md%60%5D(./docs/AUTH_BILLING_ADMIN.md).",
         "prevChunkIds": []
       },
       "81": {
-        "chunkId": "641730",
-        "hash": "a90572bb",
-        "encoded": "%60api/subscription.ts%60%20%C8%99i%20%60api/stripe-webhook.ts%60;%20nu%20configura%20chei%20live%20sau%20webhook-uri%20de%20produc%C8%9Bie",
+        "chunkId": "fac9f6",
+        "hash": "b156203e",
+        "encoded": "Nu%20s-a%20f%C4%83cut%20deploy%20%C8%99i%20nu%20s-a%20aplicat%20migrarea%20nou%C4%83%20%C3%AEn%20produc%C8%9Bie.%20Schema%20de%20baz%C4%83",
         "prevChunkIds": []
       },
       "82": {
-        "chunkId": "641730",
-        "hash": "cfa60831",
-        "encoded": "f%C4%83r%C4%83%20aprobare.",
+        "chunkId": "fac9f6",
+        "hash": "d284bac5",
+        "encoded": "%5B%60supabase/schema.sql%60%5D(./supabase/schema.sql)%20a%20fost%20aplicat%C4%83%20manual;%20testeaz%C4%83%20acum%20migrarea%20aditiv%C4%83",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "fac9f6",
+        "hash": "8077be3a",
+        "encoded": "%5B%60supabase/migrations/20261101000000_billing_usage_admin.sql%60%5D(./supabase/migrations/20261101000000_billing_usage_admin.sql)",
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "641730",
-        "hash": "03d0f563",
-        "encoded": "Variabile%20publice%20necesare%20pentru%20client:",
+        "chunkId": "fac9f6",
+        "hash": "47cab140",
+        "encoded": "%C3%AEntr-un%20mediu%20aprobat.%20Configureaz%C4%83%20produsele/pre%C8%9Burile%20%C8%99i%20webhook-ul%20Stripe%20%C3%AEn%20Test%20mode%20%C3%AEnainte%20de",
         "prevChunkIds": []
       },
       "85": {
-        "chunkId": "e95a97",
-        "hash": "c90023a0",
-        "encoded": "##%20OCR%20(extragere%20text%20din%20imagini)",
-        "prevChunkIds": []
-      },
-      "87": {
-        "chunkId": "e95a97",
-        "hash": "09d8c99d",
-        "encoded": "-%20Browserul%20trimite%20imaginea%20prin%20%60multipart/form-data%60%20c%C4%83tre%20%60api/ocr.ts%60;%20Tesseract.js/WASM%20ruleaz%C4%83",
-        "prevChunkIds": []
-      },
-      "88": {
-        "chunkId": "e95a97",
-        "hash": "d3d167c9",
-        "encoded": "local%20%C3%AEn%20func%C8%9Bia%20Vercel,%20folosind%20traineddata%20rom%C3%A2nesc%20(%60ron%60)%20inclus%20%C3%AEn%20deployment.%20Imaginea%20nu",
-        "prevChunkIds": []
-      },
-      "89": {
-        "chunkId": "e95a97",
-        "hash": "73e612e9",
-        "encoded": "este%20transmis%C4%83%20unui%20furnizor%20OCR%20extern.",
+        "chunkId": "fac9f6",
+        "hash": "fb90d658",
+        "encoded": "orice%20activare;%20pa%C8%99ii%20sunt%20%C3%AEn%20%5B%60docs/AUTH_BILLING_ADMIN.md%60%5D(./docs/AUTH_BILLING_ADMIN.md).",
         "prevChunkIds": []
       },
       "90": {
-        "chunkId": "e95a97",
-        "hash": "cc7469a2",
-        "encoded": "-%20Imaginea%20este%20validat%C4%83%20dup%C4%83%20con%C8%9Binutul%20binar%20real%20(semn%C4%83tura/magic%20bytes),%20apoi%20procesat%C4%83%20%C3%AEn",
+        "chunkId": "641730",
+        "hash": "39d93f5b",
+        "encoded": "##%20Deploy%20pe%20Vercel",
         "prevChunkIds": []
       },
       "91": {
-        "chunkId": "e95a97",
-        "hash": "a8c2e438",
-        "encoded": "memoria%20func%C8%9Biei%20%C8%99i%20nu%20este%20stocat%C4%83.",
+        "chunkId": "bceed9",
+        "hash": "ac997dc7",
+        "encoded": "-%20%60SUPABASE_URL%60,%20%60SUPABASE_ANON_KEY%60,%20%60SUPABASE_SERVICE_ROLE_KEY%60,%20%60ANONYMOUS_USAGE_SECRET%60,%20%60APP_URL%60",
         "prevChunkIds": []
       },
       "92": {
-        "chunkId": "e95a97",
-        "hash": "6d0e2fff",
-        "encoded": "-%20Limita%20aplica%C8%9Biei%20este%20de%204%20MiB;%20tipurile%20acceptate%20sunt%20JPEG,%20PNG%20%C8%99i%20WebP.%20Limita%20request-ului",
+        "chunkId": "bceed9",
+        "hash": "6cac8f3a",
+        "encoded": "-%20%60AZURE_SPEECH_KEY%60,%20%60AZURE_SPEECH_REGION%60,%20%60AZURE_SPEECH_VOICE%60%20(op%C8%9Bional)",
         "prevChunkIds": []
       },
       "93": {
-        "chunkId": "e95a97",
-        "hash": "ca8c5986",
-        "encoded": "Vercel%20r%C4%83m%C3%A2ne%20aplicabil%C4%83.",
+        "chunkId": "bceed9",
+        "hash": "d95004ad",
+        "encoded": "-%20%60STRIPE_SECRET_KEY%60,%20%60STRIPE_PRICE_ID_7_DAYS%60,%20%60STRIPE_PRICE_ID_30_DAYS%60,%20%60STRIPE_PRICE_ID_1_YEAR%60,%20%60STRIPE_WEBHOOK_SECRET%60",
         "prevChunkIds": []
       },
       "94": {
-        "chunkId": "e95a97",
-        "hash": "99ecf05c",
-        "encoded": "-%20OCR%20nu%20necesit%C4%83%20cheie%20API%20sau%20variabil%C4%83%20de%20mediu.",
+        "chunkId": "bceed9",
+        "hash": "db2a6377",
+        "encoded": "-%20%60ADMIN_USER_IDS%60%20(UUID-uri%20autorizate)%20%C8%99i%20%60CRON_SECRET%60",
         "prevChunkIds": []
       },
       "95": {
-        "chunkId": "e95a97",
-        "hash": "ddba874e",
-        "encoded": "-%20Impunerea%20autentific%C4%83rii%20obligatorii%20pe%20acest%20endpoint%20este%20planificat%C4%83%20pentru%20etapa%20de",
+        "chunkId": "641730",
+        "hash": "b87c26d5",
+        "encoded": "Deploy-ul%20nu%20face%20parte%20din%20aceast%C4%83%20implementare%20%C8%99i%20necesit%C4%83%20aprobare%20explicit%C4%83.%20%C3%8Enainte%20de%20orice",
         "prevChunkIds": []
       },
       "96": {
-        "chunkId": "e95a97",
-        "hash": "4b078e20",
-        "encoded": "entitlement/abonament%20(vezi%20%60docs/ARCHITECTURE.md%60),%20c%C3%A2nd%20va%20exista%20%C8%99i%20un%20ecran%20de%20login.",
+        "chunkId": "641730",
+        "hash": "17cf5dda",
+        "encoded": "activare,%20aplic%C4%83%20%5B%60supabase/schema.sql%60%5D(./supabase/schema.sql)%20%C3%AEntr-un%20mediu%20aprobat%20%C8%99i%20configureaz%C4%83",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "641730",
+        "hash": "b2de8b83",
+        "encoded": "valorile%20Stripe%20%C3%AEn%20test%20mode.%20Func%C8%9Biile%20server%20folosesc%20%60api/checkout.ts%60,%20%60api/portal.ts%60,",
         "prevChunkIds": []
       },
       "98": {
-        "chunkId": "e95a97",
-        "hash": "294c5b4f",
-        "encoded": "##%20Text-to-speech",
+        "chunkId": "641730",
+        "hash": "55baef9c",
+        "encoded": "%60api/subscription.ts%60%20%C8%99i%20%60api/stripe-webhook.ts%60;%20nu%20configura%20chei%20live%20sau%20webhook-uri%20de%20produc%C8%9Bie",
         "prevChunkIds": []
       },
-      "100": {
-        "chunkId": "e95a97",
-        "hash": "73d0d18b",
-        "encoded": "Pipeline-ul%20TTS%20este%20documentat%20%C3%AEn%20%5B%60docs/TTS.md%60%5D(./docs/TTS.md).%20Configureaz%C4%83%20%60GOOGLE_CLOUD_TTS_API_KEY%60%20numai%20server-side%20dup%C4%83%20ce%20verifici%20%C3%AEn%20Google%20Cloud%20disponibilitatea%20vocilor%20rom%C3%A2ne%C8%99ti%20%C8%99i%20pre%C8%9Burile.",
+      "99": {
+        "chunkId": "641730",
+        "hash": "cc12750f",
+        "encoded": "f%C4%83r%C4%83%20aprobare.",
         "prevChunkIds": []
       },
       "101": {
         "chunkId": "641730",
-        "hash": "439dbe20",
-        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_URL%60",
+        "hash": "9d4a25f1",
+        "encoded": "Variabile%20publice%20necesare%20pentru%20client:",
         "prevChunkIds": []
       },
       "102": {
-        "chunkId": "641730",
-        "hash": "595879c2",
-        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY%60",
+        "chunkId": "e95a97",
+        "hash": "b72957cc",
+        "encoded": "##%20OCR%20(extragere%20text%20din%20imagini)",
         "prevChunkIds": []
       },
       "104": {
-        "chunkId": "641730",
-        "hash": "59d9a555",
-        "encoded": "Variabile%20server-only%20necesare%20pentru%20entitlement/billing:",
+        "chunkId": "e95a97",
+        "hash": "5f2a2da8",
+        "encoded": "-%20Browserul%20trimite%20imaginea%20prin%20%60multipart/form-data%60%20c%C4%83tre%20%60api/ocr.ts%60;%20Tesseract.js/WASM%20ruleaz%C4%83",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "e95a97",
+        "hash": "d5afcef0",
+        "encoded": "local%20%C3%AEn%20func%C8%9Bia%20Vercel,%20folosind%20traineddata%20rom%C3%A2nesc%20(%60ron%60)%20inclus%20%C3%AEn%20deployment.%20Imaginea%20nu",
         "prevChunkIds": []
       },
       "106": {
-        "chunkId": "641730",
-        "hash": "ac6a4ddb",
-        "encoded": "-%20%60SUPABASE_URL%60,%20%60SUPABASE_SERVICE_ROLE_KEY%60,%20%60ANONYMOUS_USAGE_SECRET%60,%20%60APP_URL%60",
+        "chunkId": "e95a97",
+        "hash": "9f7f9d4b",
+        "encoded": "este%20transmis%C4%83%20unui%20furnizor%20OCR%20extern.",
         "prevChunkIds": []
       },
       "107": {
+        "chunkId": "e95a97",
+        "hash": "51dc8e70",
+        "encoded": "-%20Imaginea%20este%20validat%C4%83%20dup%C4%83%20con%C8%9Binutul%20binar%20real%20(semn%C4%83tura/magic%20bytes),%20apoi%20procesat%C4%83%20%C3%AEn",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "e95a97",
+        "hash": "580206b4",
+        "encoded": "memoria%20func%C8%9Biei%20%C8%99i%20nu%20este%20stocat%C4%83.",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "b94dd9",
+        "hash": "1db2d0c1",
+        "encoded": "-%20OCR%20r%C4%83m%C3%A2ne%20accesibil%20%C8%99i%20vizitatorilor%20anonimi;%20c%C3%A2nd%20exist%C4%83%20o%20sesiune%20valid%C4%83,%20serverul%20asociaz%C4%83",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "b94dd9",
+        "hash": "e08a1bf2",
+        "encoded": "%C3%AEncercarea%20cu%20utilizatorul%20verificat.%20Contoarele%20nu%20includ%20imaginea%20sau%20textul%20extras.",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "e95a97",
+        "hash": "aaac17ca",
+        "encoded": "Vercel%20r%C4%83m%C3%A2ne%20aplicabil%C4%83.",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "e95a97",
+        "hash": "fce943c2",
+        "encoded": "-%20OCR%20nu%20necesit%C4%83%20cheie%20API%20sau%20variabil%C4%83%20de%20mediu.",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "e95a97",
+        "hash": "27180d28",
+        "encoded": "-%20Impunerea%20autentific%C4%83rii%20obligatorii%20pe%20acest%20endpoint%20este%20planificat%C4%83%20pentru%20etapa%20de",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "e95a97",
+        "hash": "bc75d109",
+        "encoded": "entitlement/abonament%20(vezi%20%60docs/ARCHITECTURE.md%60),%20c%C3%A2nd%20va%20exista%20%C8%99i%20un%20ecran%20de%20login.",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "e95a97",
+        "hash": "76b1f151",
+        "encoded": "##%20Text-to-speech",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "e0ace4",
+        "hash": "bff51a46",
+        "encoded": "##%20Pa%C8%99i%20manuali%20%C3%AEnainte%20de%20produc%C8%9Bie",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "e0ace4",
+        "hash": "f66634c3",
+        "encoded": "-%20Configureaz%C4%83%20Supabase%20Auth%20URL/redirect%20allowlist,%20limita%20email%20OTP%20%C8%99i%20SMTP%20conform",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "e0ace4",
+        "hash": "5dd4cf31",
+        "encoded": "%5B%60docs/AUTH_BILLING_ADMIN.md%60%5D(./docs/AUTH_BILLING_ADMIN.md).",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "e0ace4",
+        "hash": "c3e1e81a",
+        "encoded": "-%20Creeaz%C4%83%20cele%20trei%20pre%C8%9Buri%20recurring%20%C3%AEn%20Stripe%20Test%20mode%20%C8%99i%20seteaz%C4%83%20ID-urile%20%C3%AEn%20Vercel;%20webhook-ul",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "e0ace4",
+        "hash": "178bae02",
+        "encoded": "trebuie%20s%C4%83%20fie%20activ%20%C8%99i%20semn%C4%83tura%20validat%C4%83%20%C3%AEnainte%20de%20a%20testa%20entitlement-ul%20pl%C4%83tit.",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "e0ace4",
+        "hash": "302531ec",
+        "encoded": "-%20Adaug%C4%83%20UUID-urile%20administratorilor%20%C3%AEn%20%60ADMIN_USER_IDS%60;%20f%C4%83r%C4%83%20allowlist%20configurat,%20admin%20API",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "e0ace4",
+        "hash": "f8fd68ab",
+        "encoded": "refuz%C4%83%20accesul%20pentru%20to%C8%9Bi.",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "e0ace4",
+        "hash": "52ca7e46",
+        "encoded": "-%20Aplic%C4%83%20migrarea%20aditiv%C4%83%20numai%20dup%C4%83%20backup%20%C8%99i%20aprobare.%20Nu%20s-a%20f%C4%83cut%20deploy%20sau%20opera%C8%9Biune%20%C3%AEn",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "e0ace4",
+        "hash": "4a21380c",
+        "encoded": "mediul%20de%20produc%C8%9Bie.",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "e95a97",
+        "hash": "af3c0bfa",
+        "encoded": "Pipeline-ul%20TTS%20este%20documentat%20%C3%AEn%20%5B%60docs/TTS.md%60%5D(./docs/TTS.md).%20Configureaz%C4%83%20%60GOOGLE_CLOUD_TTS_API_KEY%60%20numai%20server-side%20dup%C4%83%20ce%20verifici%20%C3%AEn%20Google%20Cloud%20disponibilitatea%20vocilor%20rom%C3%A2ne%C8%99ti%20%C8%99i%20pre%C8%9Burile.",
+        "prevChunkIds": []
+      },
+      "128": {
         "chunkId": "641730",
-        "hash": "89da0040",
+        "hash": "da2b46d2",
+        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_URL%60",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "641730",
+        "hash": "11839ae8",
+        "encoded": "-%20%60VITE_EXTERNAL_SUPABASE_PUBLISHABLE_KEY%60",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "641730",
+        "hash": "8db3a504",
+        "encoded": "Variabile%20server-only%20necesare%20pentru%20entitlement/billing:",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "641730",
+        "hash": "ee59eff9",
+        "encoded": "-%20%60SUPABASE_URL%60,%20%60SUPABASE_SERVICE_ROLE_KEY%60,%20%60ANONYMOUS_USAGE_SECRET%60,%20%60APP_URL%60",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "641730",
+        "hash": "538e355b",
         "encoded": "-%20%60STRIPE_SECRET_KEY%60,%20%60STRIPE_PRICE_ID%60,%20%60STRIPE_WEBHOOK_SECRET%60",
         "prevChunkIds": []
       }

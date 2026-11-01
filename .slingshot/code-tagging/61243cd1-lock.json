@@ -58,81 +58,274 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:02:15 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "4e671f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535143,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "33f987f2",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "8a6ff0": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535143,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "cdec3aa4",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "8": {
-        "chunkId": "b30b00",
-        "hash": "b57353b8",
-        "encoded": "const%20cookie%20=%20createAnonymousCookie()",
+      "0": {
+        "chunkId": "8a6ff0",
+        "hash": "da492079",
+        "encoded": "import%20%7B%20afterEach,%20describe,%20expect,%20it%20%7D%20from%20'vitest'",
         "prevChunkIds": []
       },
-      "9": {
-        "chunkId": "b30b00",
-        "hash": "ffc0d182",
-        "encoded": "expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)",
+      "1": {
+        "chunkId": "8a6ff0",
+        "hash": "fc9127f7",
+        "encoded": "import%20%7B",
         "prevChunkIds": []
       },
-      "10": {
-        "chunkId": "b30b00",
-        "hash": "349f880c",
-        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/(%5Ba-f0-9%5D)(;%20Max-Age)/,%20'0$2'))).toBeNull()",
+      "2": {
+        "chunkId": "8a6ff0",
+        "hash": "fdde9d94",
+        "encoded": "createAnonymousCookie,",
         "prevChunkIds": []
       },
-      "11": {
-        "chunkId": "b30b00",
-        "hash": "41cb9fd0",
-        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/%5C.%5Ba-f0-9%5D%7B64%7D/,%20%60.$%7B'g'.repeat(64)%7D%60))).toBeNull()",
+      "3": {
+        "chunkId": "8a6ff0",
+        "hash": "32455175",
+        "encoded": "getAnonymousCookie,",
         "prevChunkIds": []
       },
-      "12": {
-        "chunkId": "b30b00",
-        "hash": "8a40929d",
-        "encoded": "%7D)",
+      "4": {
+        "chunkId": "8a6ff0",
+        "hash": "35974b72",
+        "encoded": "hasActiveSubscription,",
         "prevChunkIds": []
       },
-      "13": {
-        "chunkId": "38c2b7",
-        "hash": "3e639e65",
-        "encoded": "expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)",
+      "5": {
+        "chunkId": "8a6ff0",
+        "hash": "ecc76d29",
+        "encoded": "resolveEntitlementIdentity,",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "8a6ff0",
+        "hash": "ffc6e74a",
+        "encoded": "%7D%20from%20'./entitlement'",
         "prevChunkIds": []
       },
       "14": {
-        "chunkId": "38c2b7",
-        "hash": "0bdd4895",
-        "encoded": "expect(getAnonymousCookie(cookie.header.replace(cookie.id,%20%60$%7Bcookie.id%7Dx%60))).toBeNull()",
+        "chunkId": "b30b00",
+        "hash": "60138215",
+        "encoded": "const%20cookie%20=%20createAnonymousCookie()",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "38c2b7",
-        "hash": "dce8f5c5",
-        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/%5C.%5Ba-f0-9%5D%7B64%7D/,%20%60.$%7B'g'.repeat(64)%7D%60))).toBeNull()",
-        "prevChunkIds": []
-      },
-      "16": {
-        "chunkId": "11e30d",
-        "hash": "db08b8bb",
+        "chunkId": "b30b00",
+        "hash": "774d339f",
         "encoded": "expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)",
         "prevChunkIds": []
       },
-      "17": {
-        "chunkId": "11e30d",
-        "hash": "f95160e3",
+      "16": {
+        "chunkId": "b30b00",
+        "hash": "13fb4457",
         "encoded": "expect(getAnonymousCookie(cookie.header.replace(/(%5Ba-f0-9%5D)(;%20Max-Age)/,%20'0$2'))).toBeNull()",
         "prevChunkIds": []
       },
+      "17": {
+        "chunkId": "b30b00",
+        "hash": "342e7efc",
+        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/%5C.%5Ba-f0-9%5D%7B64%7D/,%20%60.$%7B'g'.repeat(64)%7D%60))).toBeNull()",
+        "prevChunkIds": []
+      },
       "18": {
-        "chunkId": "11e30d",
+        "chunkId": "b30b00",
         "hash": "3fff8437",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
+      "19": {
+        "chunkId": "38c2b7",
+        "hash": "09346d00",
+        "encoded": "expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)",
+        "prevChunkIds": []
+      },
       "20": {
+        "chunkId": "38c2b7",
+        "hash": "ad12d51d",
+        "encoded": "expect(getAnonymousCookie(cookie.header.replace(cookie.id,%20%60$%7Bcookie.id%7Dx%60))).toBeNull()",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "38c2b7",
+        "hash": "640d3ffd",
+        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/%5C.%5Ba-f0-9%5D%7B64%7D/,%20%60.$%7B'g'.repeat(64)%7D%60))).toBeNull()",
+        "prevChunkIds": []
+      },
+      "22": {
         "chunkId": "11e30d",
-        "hash": "ce06f1ef",
+        "hash": "9aa8db07",
+        "encoded": "expect(getAnonymousCookie(cookie.header)).toBe(cookie.id)",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "11e30d",
+        "hash": "da046142",
+        "encoded": "expect(getAnonymousCookie(cookie.header.replace(/(%5Ba-f0-9%5D)(;%20Max-Age)/,%20'0$2'))).toBeNull()",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "11e30d",
+        "hash": "a913eaef",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "11e30d",
+        "hash": "a6317d5c",
         "encoded": "it('creates%20an%20anonymous%20identity%20without%20requiring%20registration',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "4e671f",
+        "hash": "80e95274",
+        "encoded": "it('treats%20an%20expired%20or%20undated%20subscription%20as%20inactive',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "4e671f",
+        "hash": "03a7c137",
+        "encoded": "const%20now%20=%20new%20Date('2026-11-01T00:00:00.000Z')",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "4e671f",
+        "hash": "b957ec0d",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "4e671f",
+        "hash": "07cfe456",
+        "encoded": "hasActiveSubscription(",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "4e671f",
+        "hash": "4d3174e6",
+        "encoded": "%7B%20status:%20'active',%20current_period_end:%20'2026-10-31T23:59:59.000Z'%20%7D,",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "4e671f",
+        "hash": "d59a50fc",
+        "encoded": "now,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "4e671f",
+        "hash": "ad6f7430",
+        "encoded": "),",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "4e671f",
+        "hash": "d21dc4ca",
+        "encoded": ").toBe(false)",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "4e671f",
+        "hash": "4e52b85f",
+        "encoded": "expect(hasActiveSubscription(%7B%20status:%20'active',%20current_period_end:%20null%20%7D,%20now)).toBe(false)",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "4e671f",
+        "hash": "4dbce703",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "4e671f",
+        "hash": "c793400f",
+        "encoded": "hasActiveSubscription(",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "4e671f",
+        "hash": "01c8a9b1",
+        "encoded": "%7B%20status:%20'active',%20current_period_end:%20'2026-11-08T00:00:00.000Z'%20%7D,",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "4e671f",
+        "hash": "5562fb31",
+        "encoded": "now,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "4e671f",
+        "hash": "2573174b",
+        "encoded": "),",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "4e671f",
+        "hash": "27549e6a",
+        "encoded": ").toBe(true)",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "4e671f",
+        "hash": "cab2dd02",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "4e671f",
+        "hash": "811ef19f",
+        "encoded": "it('uses%20the%20verified%20bearer%20identity%20when%20supplied',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "4e671f",
+        "hash": "6f88e740",
+        "encoded": "process.env.ANONYMOUS_USAGE_SECRET%20=%20'test-secret'",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "4e671f",
+        "hash": "c358ff8f",
+        "encoded": "const%20identity%20=%20await%20resolveEntitlementIdentity('Bearer%20token',%20undefined,%20async%20(header)%20=%3E%20%7B",
+        "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 55
   }
 }

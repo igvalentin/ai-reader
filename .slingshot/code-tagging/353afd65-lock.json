@@ -76,6 +76,150 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:59:48 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3378a2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793534998,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "e6fedd2d",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:09:58 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ba5ae4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793534998,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "df86d12e",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:09:58 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "2e5c9d": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "382e7774",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "5b7b26": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "d284017b",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "87b21f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "1eb5a25a",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c8edac": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "462639d0",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "85496a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "f6dd4ac6",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a7784a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536591,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "1af11620",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:31 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -85,367 +229,895 @@
         "encoded": "import%20%7B%20createHmac,%20randomUUID,%20timingSafeEqual%20%7D%20from%20'node:crypto'",
         "prevChunkIds": []
       },
-      "31": {
-        "chunkId": "d7efd2",
-        "hash": "45ef8ad4",
-        "encoded": "function%20validAnonymousCookie(value:%20string%20%7C%20undefined):%20string%20%7C%20null%20%7B",
+      "8": {
+        "chunkId": "2e5c9d",
+        "hash": "ba5d1685",
+        "encoded": "export%20class%20EntitlementError%20extends%20Error%20%7B",
         "prevChunkIds": []
       },
-      "32": {
-        "chunkId": "d7efd2",
-        "hash": "df24d862",
-        "encoded": "if%20(!value)%20return%20null",
+      "9": {
+        "chunkId": "2e5c9d",
+        "hash": "47e5c74d",
+        "encoded": "constructor(",
         "prevChunkIds": []
       },
-      "33": {
-        "chunkId": "d7efd2",
-        "hash": "82df3434",
-        "encoded": "const%20%5Bid,%20signature%5D%20=%20value.split('.')",
+      "10": {
+        "chunkId": "2e5c9d",
+        "hash": "e1b02f33",
+        "encoded": "public%20readonly%20code:%20'PAYWALL'%20%7C%20'SUBSCRIPTION_ACTIVE'%20%7C%20'CONFIGURATION'%20%7C%20'DATABASE',",
         "prevChunkIds": []
       },
-      "34": {
-        "chunkId": "d7efd2",
-        "hash": "d0b6ff74",
-        "encoded": "if%20(!id%20%7C%7C%20!signature%20%7C%7C%20!/%5E%5Ba-f0-9%5D%7B64%7D$/i.test(signature))%20return%20null",
+      "11": {
+        "chunkId": "2e5c9d",
+        "hash": "7ec9f311",
+        "encoded": "message:%20string,",
         "prevChunkIds": []
       },
-      "35": {
-        "chunkId": "d7efd2",
-        "hash": "31f14e7f",
-        "encoded": "const%20signatureBytes%20=%20Buffer.from(signature,%20'hex')",
+      "12": {
+        "chunkId": "2e5c9d",
+        "hash": "69ea01fd",
+        "encoded": ")%20%7B",
         "prevChunkIds": []
       },
-      "36": {
-        "chunkId": "d7efd2",
-        "hash": "2e97daa3",
-        "encoded": "const%20expectedBytes%20=%20Buffer.from(sign(id),%20'hex')",
+      "13": {
+        "chunkId": "2e5c9d",
+        "hash": "9accc972",
+        "encoded": "super(message)",
         "prevChunkIds": []
       },
-      "37": {
-        "chunkId": "d7efd2",
-        "hash": "5d62841e",
-        "encoded": "if%20(signatureBytes.length%20!==%20expectedBytes.length%20%7C%7C%20!timingSafeEqual(signatureBytes,%20expectedBytes))%20return%20null",
-        "prevChunkIds": []
-      },
-      "38": {
-        "chunkId": "d7efd2",
-        "hash": "e4d23d7f",
-        "encoded": "return%20id",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "d7efd2",
-        "hash": "4771cdac",
+      "14": {
+        "chunkId": "2e5c9d",
+        "hash": "66d45cc1",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "41": {
-        "chunkId": "d7efd2",
-        "hash": "e35ce79d",
-        "encoded": "export%20function%20getAnonymousCookie(header:%20string%20%7C%20undefined):%20string%20%7C%20null%20%7B",
+      "15": {
+        "chunkId": "2e5c9d",
+        "hash": "c8f9d1c3",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "85496a",
+        "hash": "e6a534e9",
+        "encoded": "export%20function%20hasActiveSubscription(",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "85496a",
+        "hash": "35bd50bb",
+        "encoded": "subscription:%20%7B%20status?:%20string%20%7C%20null;%20current_period_end?:%20string%20%7C%20null%20%7D%20%7C%20null%20%7C%20undefined,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "85496a",
+        "hash": "1a4fb895",
+        "encoded": "now%20=%20new%20Date(),",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "85496a",
+        "hash": "98ae2a1a",
+        "encoded": "):%20boolean%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "85496a",
+        "hash": "73bc54c2",
+        "encoded": "if%20(subscription?.status%20!==%20'active'%20&&%20subscription?.status%20!==%20'trialing')%20return%20false",
         "prevChunkIds": []
       },
       "65": {
-        "chunkId": "b84797",
-        "hash": "6b7ddf8f",
-        "encoded": "export%20async%20function%20canGenerateReading(entitlement:%20Entitlement):%20Promise%3Cboolean%3E%20%7B",
+        "chunkId": "85496a",
+        "hash": "fcd4577b",
+        "encoded": "if%20(!subscription.current_period_end)%20return%20false",
         "prevChunkIds": []
       },
       "66": {
-        "chunkId": "b84797",
-        "hash": "e632ce27",
-        "encoded": "if%20(!entitlement.userId%20&&%20!entitlement.anonymousId)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Identitatea%20lecturii%20lipse%C8%99te.')",
+        "chunkId": "85496a",
+        "hash": "a8e1a877",
+        "encoded": "const%20expiry%20=%20Date.parse(subscription.current_period_end)",
         "prevChunkIds": []
       },
       "67": {
-        "chunkId": "b84797",
-        "hash": "cf625226",
-        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "chunkId": "85496a",
+        "hash": "2ec7b800",
+        "encoded": "return%20Number.isFinite(expiry)%20&&%20expiry%20%3E%20now.getTime()",
         "prevChunkIds": []
       },
       "68": {
-        "chunkId": "b84797",
-        "hash": "7c456f41",
-        "encoded": "if%20(entitlement.userId)%20%7B",
-        "prevChunkIds": []
-      },
-      "69": {
-        "chunkId": "b84797",
-        "hash": "df5611bd",
-        "encoded": "const%20%5B%7B%20data:%20subscription,%20error:%20subscriptionError%20%7D,%20%7B%20data:%20usage,%20error:%20usageError%20%7D%5D%20=%20await%20Promise.all(%5B",
+        "chunkId": "85496a",
+        "hash": "e4d82fa4",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "70": {
-        "chunkId": "b84797",
-        "hash": "11c87c18",
-        "encoded": "supabase.from('subscriptions').select('status').eq('user_id',%20entitlement.userId).maybeSingle(),",
+        "chunkId": "85496a",
+        "hash": "fb0a4b73",
+        "encoded": "export%20async%20function%20canGenerateReading(entitlement:%20Entitlement):%20Promise%3Cboolean%3E%20%7B",
         "prevChunkIds": []
       },
       "71": {
-        "chunkId": "b84797",
-        "hash": "288376ab",
-        "encoded": "supabase.from('reading_usage').select('free_reading_used').eq('user_id',%20entitlement.userId).maybeSingle(),",
+        "chunkId": "85496a",
+        "hash": "fb4aec40",
+        "encoded": "if%20(!entitlement.userId%20&&%20!entitlement.anonymousId)%20%7B",
         "prevChunkIds": []
       },
       "72": {
-        "chunkId": "b84797",
-        "hash": "8f563d5d",
-        "encoded": "%5D)",
+        "chunkId": "85496a",
+        "hash": "4de04357",
+        "encoded": "throw%20new%20EntitlementError('CONFIGURATION',%20'Identitatea%20lecturii%20lipse%C8%99te.')",
         "prevChunkIds": []
       },
       "73": {
-        "chunkId": "b84797",
-        "hash": "5f734743",
-        "encoded": "if%20(subscriptionError%20%7C%7C%20usageError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20dreptul%20de%20lectur%C4%83.')",
+        "chunkId": "85496a",
+        "hash": "3654c6d8",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "74": {
-        "chunkId": "b84797",
-        "hash": "901d6628",
-        "encoded": "if%20(subscription?.status%20===%20'active'%20%7C%7C%20subscription?.status%20===%20'trialing')%20return%20true",
+        "chunkId": "85496a",
+        "hash": "538a9a8b",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
         "prevChunkIds": []
       },
       "75": {
-        "chunkId": "b84797",
-        "hash": "a87d6e8a",
-        "encoded": "return%20usage?.free_reading_used%20!==%20true",
+        "chunkId": "85496a",
+        "hash": "5f53bb38",
+        "encoded": "if%20(entitlement.userId)%20%7B",
         "prevChunkIds": []
       },
       "76": {
-        "chunkId": "b84797",
-        "hash": "88f18366",
-        "encoded": "%7D",
+        "chunkId": "85496a",
+        "hash": "aa121c96",
+        "encoded": "const%20%5B%7B%20data:%20subscription,%20error:%20subscriptionError%20%7D,%20%7B%20data:%20usage,%20error:%20usageError%20%7D%5D%20=",
         "prevChunkIds": []
       },
       "77": {
-        "chunkId": "b84797",
-        "hash": "08d25b23",
-        "encoded": "const%20identifierHash%20=%20createHmac('sha256',%20getSigningSecret()).update(entitlement.anonymousId%20as%20string).digest('hex')",
+        "chunkId": "85496a",
+        "hash": "53fdde1c",
+        "encoded": "await%20Promise.all(%5B",
         "prevChunkIds": []
       },
       "78": {
-        "chunkId": "b84797",
-        "hash": "1f811fc4",
-        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.from('anonymous_reading_usage').select('identifier_hash').eq('identifier_hash',%20identifierHash).maybeSingle()",
+        "chunkId": "85496a",
+        "hash": "1d7fe86e",
+        "encoded": "supabase",
         "prevChunkIds": []
       },
       "79": {
-        "chunkId": "b84797",
-        "hash": "6b5b9ff7",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20dreptul%20de%20lectur%C4%83.')",
+        "chunkId": "85496a",
+        "hash": "746f3a75",
+        "encoded": ".from('subscriptions')",
         "prevChunkIds": []
       },
       "80": {
-        "chunkId": "b84797",
-        "hash": "4a5ddacf",
-        "encoded": "return%20!data",
+        "chunkId": "85496a",
+        "hash": "4bad8d06",
+        "encoded": ".select('status,current_period_end')",
         "prevChunkIds": []
       },
       "81": {
-        "chunkId": "b84797",
-        "hash": "d6938858",
-        "encoded": "%7D",
+        "chunkId": "85496a",
+        "hash": "88ca41d2",
+        "encoded": ".eq('user_id',%20entitlement.userId)",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "85496a",
+        "hash": "fc0674ba",
+        "encoded": ".maybeSingle(),",
         "prevChunkIds": []
       },
       "83": {
-        "chunkId": "b84797",
-        "hash": "707055f9",
-        "encoded": "export%20async%20function%20claimSuccessfulReading(entitlement:%20Entitlement):%20Promise%3C%7B%20subscription:%20boolean%20%7D%3E%20%7B",
+        "chunkId": "85496a",
+        "hash": "dd70dbe9",
+        "encoded": "supabase",
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "b84797",
-        "hash": "7fe665ff",
-        "encoded": "if%20(!entitlement.userId%20&&%20!entitlement.anonymousId)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Identitatea%20lecturii%20lipse%C8%99te.')",
+        "chunkId": "85496a",
+        "hash": "6418146a",
+        "encoded": ".from('reading_usage')",
         "prevChunkIds": []
       },
       "85": {
-        "chunkId": "b84797",
-        "hash": "b4e6455d",
-        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "chunkId": "85496a",
+        "hash": "7e889b1a",
+        "encoded": ".select('free_reading_used')",
         "prevChunkIds": []
       },
       "86": {
-        "chunkId": "b84797",
-        "hash": "310aea0e",
-        "encoded": "const%20identifierHash%20=%20entitlement.anonymousId%20?%20createHmac('sha256',%20getSigningSecret()).update(entitlement.anonymousId).digest('hex')%20:%20null",
+        "chunkId": "85496a",
+        "hash": "e78cbc77",
+        "encoded": ".eq('user_id',%20entitlement.userId)",
         "prevChunkIds": []
       },
       "87": {
-        "chunkId": "b84797",
-        "hash": "69b26ae8",
-        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.rpc('claim_free_reading',%20%7B%20p_user_id:%20entitlement.userId,%20p_anonymous_hash:%20identifierHash%20%7D)",
+        "chunkId": "85496a",
+        "hash": "18eec23d",
+        "encoded": ".maybeSingle(),",
         "prevChunkIds": []
       },
       "88": {
-        "chunkId": "b84797",
-        "hash": "e46c93ae",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20confirma%20lectura.')",
+        "chunkId": "85496a",
+        "hash": "2ca2cb85",
+        "encoded": "%5D)",
         "prevChunkIds": []
       },
       "89": {
-        "chunkId": "b84797",
-        "hash": "d9144427",
-        "encoded": "const%20result%20=%20data%20as%20%7B%20allowed?:%20boolean;%20subscription?:%20boolean%20%7D%20%7C%20null",
+        "chunkId": "85496a",
+        "hash": "a461909c",
+        "encoded": "if%20(subscriptionError%20%7C%7C%20usageError)%20%7B",
         "prevChunkIds": []
       },
       "90": {
-        "chunkId": "b84797",
-        "hash": "18e8b421",
-        "encoded": "if%20(!result?.allowed)%20throw%20new%20EntitlementError('PAYWALL',%20'Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83.%20Activeaz%C4%83%20un%20abonament%20pentru%20a%20continua.')",
+        "chunkId": "85496a",
+        "hash": "5279f6d8",
+        "encoded": "throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20dreptul%20de%20lectur%C4%83.')",
         "prevChunkIds": []
       },
       "91": {
-        "chunkId": "b84797",
-        "hash": "c0626694",
-        "encoded": "return%20%7B%20subscription:%20Boolean(result.subscription)%20%7D",
+        "chunkId": "85496a",
+        "hash": "70416dc1",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "92": {
-        "chunkId": "b84797",
-        "hash": "06a855c2",
-        "encoded": "%7D",
+        "chunkId": "85496a",
+        "hash": "fa10a650",
+        "encoded": "if%20(hasActiveSubscription(subscription))%20return%20true",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "85496a",
+        "hash": "06d7b456",
+        "encoded": "return%20usage?.free_reading_used%20!==%20true",
         "prevChunkIds": []
       },
       "94": {
-        "chunkId": "c5178b",
-        "hash": "310b22cc",
-        "encoded": "export%20async%20function%20associateAnonymousUsage(userId:%20string,%20cookieHeader:%20string%20%7C%20undefined):%20Promise%3Cvoid%3E%20%7B",
+        "chunkId": "85496a",
+        "hash": "db89230b",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "95": {
-        "chunkId": "c5178b",
-        "hash": "2d3b29b4",
-        "encoded": "const%20anonymousId%20=%20getAnonymousCookie(cookieHeader)",
+        "chunkId": "85496a",
+        "hash": "2494d44f",
+        "encoded": "const%20identifierHash%20=%20hashAnonymousId(entitlement.anonymousId%20as%20string)",
         "prevChunkIds": []
       },
       "96": {
-        "chunkId": "c5178b",
-        "hash": "927e81be",
-        "encoded": "if%20(!anonymousId)%20return",
+        "chunkId": "85496a",
+        "hash": "00f95dcb",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase",
         "prevChunkIds": []
       },
       "97": {
-        "chunkId": "c5178b",
-        "hash": "9b8b17bf",
-        "encoded": "const%20identifierHash%20=%20createHmac('sha256',%20getSigningSecret()).update(anonymousId).digest('hex')",
+        "chunkId": "85496a",
+        "hash": "6f59e9b0",
+        "encoded": ".from('anonymous_reading_usage')",
         "prevChunkIds": []
       },
       "98": {
-        "chunkId": "c5178b",
-        "hash": "970d2508",
-        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "chunkId": "85496a",
+        "hash": "aec1ad88",
+        "encoded": ".select('identifier_hash')",
         "prevChunkIds": []
       },
       "99": {
-        "chunkId": "c5178b",
-        "hash": "3fd82e66",
-        "encoded": "const%20%7B%20data:%20anonymousUsage,%20error:%20readError%20%7D%20=%20await%20supabase.from('anonymous_reading_usage').select('identifier_hash').eq('identifier_hash',%20identifierHash).maybeSingle()",
+        "chunkId": "85496a",
+        "hash": "dbb84765",
+        "encoded": ".eq('identifier_hash',%20identifierHash)",
         "prevChunkIds": []
       },
       "100": {
-        "chunkId": "c5178b",
-        "hash": "d7b8bf8b",
-        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Utilizarea%20anonim%C4%83%20nu%20a%20putut%20fi%20asociat%C4%83%20contului.')",
+        "chunkId": "85496a",
+        "hash": "699f14dd",
+        "encoded": ".maybeSingle()",
         "prevChunkIds": []
       },
       "101": {
-        "chunkId": "c5178b",
-        "hash": "2bd1793f",
-        "encoded": "if%20(anonymousUsage)%20%7B",
+        "chunkId": "85496a",
+        "hash": "9c4841d7",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20dreptul%20de%20lectur%C4%83.')",
         "prevChunkIds": []
       },
       "102": {
-        "chunkId": "c5178b",
-        "hash": "59c5933d",
-        "encoded": "const%20%7B%20error%20%7D%20=%20await%20supabase.from('reading_usage').upsert(%7B%20user_id:%20userId,%20free_reading_used:%20true,%20free_reading_used_at:%20new%20Date().toISOString(),%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "chunkId": "85496a",
+        "hash": "ad2e3d64",
+        "encoded": "return%20!data",
         "prevChunkIds": []
       },
       "103": {
-        "chunkId": "c5178b",
-        "hash": "b0be12a0",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Utilizarea%20anonim%C4%83%20nu%20a%20putut%20fi%20asociat%C4%83%20contului.')",
-        "prevChunkIds": []
-      },
-      "104": {
-        "chunkId": "c5178b",
-        "hash": "7a43bd29",
+        "chunkId": "85496a",
+        "hash": "34001782",
         "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "105": {
-        "chunkId": "c5178b",
-        "hash": "c251d1dd",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "107": {
-        "chunkId": "c5178b",
-        "hash": "15114ba4",
-        "encoded": "export%20async%20function%20getUserSubscription(userId:%20string)%20%7B",
-        "prevChunkIds": []
-      },
-      "108": {
-        "chunkId": "c5178b",
-        "hash": "1049b1af",
-        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
-        "prevChunkIds": []
-      },
-      "109": {
-        "chunkId": "c5178b",
-        "hash": "5a55129d",
-        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.from('subscriptions').select('status,current_period_end,cancel_at_period_end,provider_customer_id').eq('user_id',%20userId).maybeSingle()",
-        "prevChunkIds": []
-      },
-      "110": {
-        "chunkId": "c5178b",
-        "hash": "61b70248",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20abonamentul.')",
-        "prevChunkIds": []
-      },
-      "111": {
-        "chunkId": "c5178b",
-        "hash": "4a0f6692",
-        "encoded": "return%20data",
-        "prevChunkIds": []
-      },
-      "112": {
-        "chunkId": "c5178b",
-        "hash": "3674f723",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "114": {
-        "chunkId": "b84797",
-        "hash": "b6bb91ec",
-        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
-        "prevChunkIds": []
-      },
-      "115": {
-        "chunkId": "b84797",
-        "hash": "8dcf93b5",
-        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.from('subscriptions').select('status,current_period_end,cancel_at_period_end,provider_customer_id').eq('user_id',%20userId).maybeSingle()",
         "prevChunkIds": []
       },
       "116": {
-        "chunkId": "b84797",
-        "hash": "45bf32a5",
-        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20abonamentul.')",
-        "prevChunkIds": []
-      },
-      "117": {
-        "chunkId": "b84797",
-        "hash": "fa53a2d1",
-        "encoded": "return%20data",
+        "chunkId": "3378a2",
+        "hash": "d92930c1",
+        "encoded": "function%20sign(id:%20string):%20string%20%7B%20return%20createHmac('sha256',%20getSigningSecret()).update(id).digest('hex')%20%7D",
         "prevChunkIds": []
       },
       "118": {
+        "chunkId": "3378a2",
+        "hash": "4e4e8386",
+        "encoded": "export%20function%20hashAnonymousId(id:%20string):%20string%20%7B",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "3378a2",
+        "hash": "f328bcf7",
+        "encoded": "return%20createHmac('sha256',%20getSigningSecret()).update(id).digest('hex')",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "3378a2",
+        "hash": "0ca73160",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "3378a2",
+        "hash": "c72dfb96",
+        "encoded": "function%20parseCookieHeader(header:%20string%20%7C%20undefined):%20Record%3Cstring,%20string%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "d7efd2",
+        "hash": "3abc988d",
+        "encoded": "function%20validAnonymousCookie(value:%20string%20%7C%20undefined):%20string%20%7C%20null%20%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "d7efd2",
+        "hash": "3e6baf20",
+        "encoded": "if%20(!value)%20return%20null",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "d7efd2",
+        "hash": "343729b6",
+        "encoded": "const%20%5Bid,%20signature%5D%20=%20value.split('.')",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "d7efd2",
+        "hash": "bd55b57c",
+        "encoded": "if%20(!id%20%7C%7C%20!signature%20%7C%7C%20!/%5E%5Ba-f0-9%5D%7B64%7D$/i.test(signature))%20return%20null",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "d7efd2",
+        "hash": "adaa78c5",
+        "encoded": "const%20signatureBytes%20=%20Buffer.from(signature,%20'hex')",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "d7efd2",
+        "hash": "1cd343d1",
+        "encoded": "const%20expectedBytes%20=%20Buffer.from(sign(id),%20'hex')",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "d7efd2",
+        "hash": "9a5238e6",
+        "encoded": "if%20(signatureBytes.length%20!==%20expectedBytes.length%20%7C%7C%20!timingSafeEqual(signatureBytes,%20expectedBytes))%20return%20null",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "d7efd2",
+        "hash": "a039406c",
+        "encoded": "return%20id",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "d7efd2",
+        "hash": "be05556d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "d7efd2",
+        "hash": "600e34dd",
+        "encoded": "export%20function%20getAnonymousCookie(header:%20string%20%7C%20undefined):%20string%20%7C%20null%20%7B",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "c8edac",
+        "hash": "460ed258",
+        "encoded": "export%20async%20function%20claimSuccessfulReading(entitlement:%20Entitlement):%20Promise%3C%7B%20subscription:%20boolean%20%7D%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "c8edac",
+        "hash": "e0a3d00e",
+        "encoded": "if%20(!entitlement.userId%20&&%20!entitlement.anonymousId)%20%7B",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "c8edac",
+        "hash": "f4c9131e",
+        "encoded": "throw%20new%20EntitlementError('CONFIGURATION',%20'Identitatea%20lecturii%20lipse%C8%99te.')",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "c8edac",
+        "hash": "5a35ac4c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "c8edac",
+        "hash": "f357642b",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "c8edac",
+        "hash": "e2c93199",
+        "encoded": "const%20identifierHash%20=%20entitlement.anonymousId%20?%20hashAnonymousId(entitlement.anonymousId)%20:%20null",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "c8edac",
+        "hash": "6488a04d",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.rpc('claim_free_reading',%20%7B",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "c8edac",
+        "hash": "e9bb5263",
+        "encoded": "p_user_id:%20entitlement.userId,",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "c8edac",
+        "hash": "d1747468",
+        "encoded": "p_anonymous_hash:%20identifierHash,",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "c8edac",
+        "hash": "918e6f40",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "87b21f",
+        "hash": "a78e46ef",
+        "encoded": "export%20async%20function%20associateAnonymousUsage(userId:%20string,%20cookieHeader:%20string%20%7C%20undefined):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "87b21f",
+        "hash": "e91899c8",
+        "encoded": "const%20anonymousId%20=%20getAnonymousCookie(cookieHeader)",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "87b21f",
+        "hash": "e0d95663",
+        "encoded": "if%20(!anonymousId)%20return",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "87b21f",
+        "hash": "08327652",
+        "encoded": "const%20identifierHash%20=%20hashAnonymousId(anonymousId)",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "a7784a",
+        "hash": "f76caf8a",
+        "encoded": "if%20(error)",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "a7784a",
+        "hash": "7f97100e",
+        "encoded": "throw%20new%20EntitlementError('DATABASE',%20'Utilizarea%20anonim%C4%83%20nu%20a%20putut%20fi%20asociat%C4%83%20contului.')",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "a7784a",
+        "hash": "b42e774a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "a7784a",
+        "hash": "81741279",
+        "encoded": "const%20%7B%20error:%20metricsError%20%7D%20=%20await%20supabase.rpc('merge_anonymous_usage_metrics',%20%7B",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "a7784a",
+        "hash": "40599e78",
+        "encoded": "p_user_id:%20userId,",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "a7784a",
+        "hash": "bd108ad8",
+        "encoded": "p_anonymous_hash:%20identifierHash,",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "a7784a",
+        "hash": "c28f90e2",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "a7784a",
+        "hash": "7a628579",
+        "encoded": "if%20(metricsError)%20%7B",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "a7784a",
+        "hash": "7307dbb3",
+        "encoded": "throw%20new%20EntitlementError('DATABASE',%20'Metricile%20anonime%20nu%20au%20putut%20fi%20asociate%20contului.')",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "a7784a",
+        "hash": "aab5eeb9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "a7784a",
+        "hash": "acd7fbb9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "a7784a",
+        "hash": "e2535de7",
+        "encoded": "export%20async%20function%20getUserSubscription(userId:%20string)%20%7B",
+        "prevChunkIds": []
+      },
+      "191": {
         "chunkId": "b84797",
-        "hash": "715028b0",
+        "hash": "505f1cce",
+        "encoded": "if%20(!entitlement.userId%20&&%20!entitlement.anonymousId)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Identitatea%20lecturii%20lipse%C8%99te.')",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "b84797",
+        "hash": "45e6466c",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "b84797",
+        "hash": "a4afdd60",
+        "encoded": "if%20(entitlement.userId)%20%7B",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "b84797",
+        "hash": "f8bdd553",
+        "encoded": "const%20%5B%7B%20data:%20subscription,%20error:%20subscriptionError%20%7D,%20%7B%20data:%20usage,%20error:%20usageError%20%7D%5D%20=%20await%20Promise.all(%5B",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "b84797",
+        "hash": "6b59b0ca",
+        "encoded": "supabase.from('subscriptions').select('status').eq('user_id',%20entitlement.userId).maybeSingle(),",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "b84797",
+        "hash": "b1bc8d50",
+        "encoded": "supabase.from('reading_usage').select('free_reading_used').eq('user_id',%20entitlement.userId).maybeSingle(),",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "b84797",
+        "hash": "4e3460a5",
+        "encoded": "%5D)",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "b84797",
+        "hash": "d66e4f5c",
+        "encoded": "if%20(subscriptionError%20%7C%7C%20usageError)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20dreptul%20de%20lectur%C4%83.')",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "b84797",
+        "hash": "2c14037c",
+        "encoded": "if%20(subscription?.status%20===%20'active'%20%7C%7C%20subscription?.status%20===%20'trialing')%20return%20true",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "b84797",
+        "hash": "7f3ea31b",
+        "encoded": "return%20usage?.free_reading_used%20!==%20true",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "5b7b26",
+        "hash": "d277f89b",
+        "encoded": "export%20async%20function%20getUserSubscription(userId:%20string)%20%7B",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "5b7b26",
+        "hash": "63151f20",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "5b7b26",
+        "hash": "f467c61e",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "5b7b26",
+        "hash": "f3cb65ab",
+        "encoded": ".from('subscriptions')",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "5b7b26",
+        "hash": "eca9395f",
+        "encoded": ".select('status,plan_id,current_period_start,current_period_end,cancel_at_period_end,provider_customer_id')",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "5b7b26",
+        "hash": "161f2896",
+        "encoded": ".eq('user_id',%20userId)",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "5b7b26",
+        "hash": "4d6596a3",
+        "encoded": ".maybeSingle()",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "5b7b26",
+        "hash": "9722ef7b",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20abonamentul.')",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "b84797",
+        "hash": "76f33634",
+        "encoded": "const%20identifierHash%20=%20createHmac('sha256',%20getSigningSecret()).update(entitlement.anonymousId%20as%20string).digest('hex')",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "b84797",
+        "hash": "2244560e",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.from('anonymous_reading_usage').select('identifier_hash').eq('identifier_hash',%20identifierHash).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "b84797",
+        "hash": "93f60265",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20dreptul%20de%20lectur%C4%83.')",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "b84797",
+        "hash": "1fb5124d",
+        "encoded": "return%20!data",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "b84797",
+        "hash": "5328d41a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "b84797",
+        "hash": "edbef60a",
+        "encoded": "export%20async%20function%20claimSuccessfulReading(entitlement:%20Entitlement):%20Promise%3C%7B%20subscription:%20boolean%20%7D%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "b84797",
+        "hash": "b5efa6ab",
+        "encoded": "if%20(!entitlement.userId%20&&%20!entitlement.anonymousId)%20throw%20new%20EntitlementError('CONFIGURATION',%20'Identitatea%20lecturii%20lipse%C8%99te.')",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "b84797",
+        "hash": "6ef601cf",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "b84797",
+        "hash": "a4b028cf",
+        "encoded": "const%20identifierHash%20=%20entitlement.anonymousId%20?%20createHmac('sha256',%20getSigningSecret()).update(entitlement.anonymousId).digest('hex')%20:%20null",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "b84797",
+        "hash": "23127e11",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.rpc('claim_free_reading',%20%7B%20p_user_id:%20entitlement.userId,%20p_anonymous_hash:%20identifierHash%20%7D)",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "b84797",
+        "hash": "36bb7bfd",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20confirma%20lectura.')",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "b84797",
+        "hash": "23b52770",
+        "encoded": "const%20result%20=%20data%20as%20%7B%20allowed?:%20boolean;%20subscription?:%20boolean%20%7D%20%7C%20null",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "b84797",
+        "hash": "6d1356ac",
+        "encoded": "if%20(!result?.allowed)%20throw%20new%20EntitlementError('PAYWALL',%20'Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83.%20Activeaz%C4%83%20un%20abonament%20pentru%20a%20continua.')",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "b84797",
+        "hash": "58e4f654",
+        "encoded": "return%20%7B%20subscription:%20Boolean(result.subscription)%20%7D",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "b84797",
+        "hash": "4bec1b99",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "c5178b",
+        "hash": "71af88c9",
+        "encoded": "export%20async%20function%20associateAnonymousUsage(userId:%20string,%20cookieHeader:%20string%20%7C%20undefined):%20Promise%3Cvoid%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "c5178b",
+        "hash": "4a943a6f",
+        "encoded": "const%20anonymousId%20=%20getAnonymousCookie(cookieHeader)",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "c5178b",
+        "hash": "312a3f6b",
+        "encoded": "if%20(!anonymousId)%20return",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "c5178b",
+        "hash": "1531a672",
+        "encoded": "const%20identifierHash%20=%20createHmac('sha256',%20getSigningSecret()).update(anonymousId).digest('hex')",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "c5178b",
+        "hash": "a727a744",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "c5178b",
+        "hash": "7a482383",
+        "encoded": "const%20%7B%20data:%20anonymousUsage,%20error:%20readError%20%7D%20=%20await%20supabase.from('anonymous_reading_usage').select('identifier_hash').eq('identifier_hash',%20identifierHash).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "c5178b",
+        "hash": "2137f288",
+        "encoded": "if%20(readError)%20throw%20new%20EntitlementError('DATABASE',%20'Utilizarea%20anonim%C4%83%20nu%20a%20putut%20fi%20asociat%C4%83%20contului.')",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "c5178b",
+        "hash": "ad3a162f",
+        "encoded": "if%20(anonymousUsage)%20%7B",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "c5178b",
+        "hash": "8fc44492",
+        "encoded": "const%20%7B%20error%20%7D%20=%20await%20supabase.from('reading_usage').upsert(%7B%20user_id:%20userId,%20free_reading_used:%20true,%20free_reading_used_at:%20new%20Date().toISOString(),%20updated_at:%20new%20Date().toISOString()%20%7D)",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "c5178b",
+        "hash": "4879ddba",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Utilizarea%20anonim%C4%83%20nu%20a%20putut%20fi%20asociat%C4%83%20contului.')",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "c5178b",
+        "hash": "0c95109b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "c5178b",
+        "hash": "58b80ca9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "c5178b",
+        "hash": "6b9f03f1",
+        "encoded": "export%20async%20function%20getUserSubscription(userId:%20string)%20%7B",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "c5178b",
+        "hash": "46378461",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "c5178b",
+        "hash": "bd1e9d9c",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.from('subscriptions').select('status,current_period_end,cancel_at_period_end,provider_customer_id').eq('user_id',%20userId).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "c5178b",
+        "hash": "8cb9701c",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20abonamentul.')",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "c5178b",
+        "hash": "78a5951e",
+        "encoded": "return%20data",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "c5178b",
+        "hash": "1f1b2746",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "b84797",
+        "hash": "920c8fe9",
+        "encoded": "const%20supabase%20=%20getSupabaseAdmin()",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "b84797",
+        "hash": "1bfdca24",
+        "encoded": "const%20%7B%20data,%20error%20%7D%20=%20await%20supabase.from('subscriptions').select('status,current_period_end,cancel_at_period_end,provider_customer_id').eq('user_id',%20userId).maybeSingle()",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "b84797",
+        "hash": "b5535bca",
+        "encoded": "if%20(error)%20throw%20new%20EntitlementError('DATABASE',%20'Nu%20am%20putut%20verifica%20abonamentul.')",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "b84797",
+        "hash": "5b73184c",
+        "encoded": "return%20data",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "b84797",
+        "hash": "8381033a",
         "encoded": "%7D",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 105
+    "_prevLineCount": 150
   }
 }

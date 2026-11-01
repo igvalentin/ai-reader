@@ -5,6 +5,24 @@
     "version": "1.2",
     "contextFile": "2aef2f6f-context.json",
     "chunks": {
+      "324481": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "94d38fe8",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
       "b50119": {
         "user": "Valentin Ion",
         "model": "claude-sonnet-4-5@20250929",
@@ -40,261 +58,646 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:59:40 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "5d255a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "5be2dc6b",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "4d393f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "41f98b1c",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1e5266": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535287,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "1cfcddd1",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:14:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "93": {
-        "chunkId": "b50119",
-        "hash": "d2343c7f",
-        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+      "6": {
+        "chunkId": "1e5266",
+        "hash": "d908ee30",
+        "encoded": "const%20%7B%20getOcrProviderMock%20%7D%20=%20vi.hoisted(()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "1e5266",
+        "hash": "ac9bebf5",
+        "encoded": "getOcrProviderMock:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "1e5266",
+        "hash": "f34446f8",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "1e5266",
+        "hash": "86253890",
+        "encoded": "const%20activityMocks%20=%20vi.hoisted(()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "1e5266",
+        "hash": "88f36a92",
+        "encoded": "resolveEntitlementIdentity:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "1e5266",
+        "hash": "08650bbe",
+        "encoded": "recordOcrAttempt:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "1e5266",
+        "hash": "7cba055e",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "1e5266",
+        "hash": "9f25677d",
+        "encoded": "vi.mock('../src/server/entitlement/entitlement.js',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "1e5266",
+        "hash": "03511069",
+        "encoded": "const%20actual%20=%20await%20vi.importActual%3Ctypeof%20import('../src/server/entitlement/entitlement.js')%3E(",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "1e5266",
+        "hash": "11af4f8a",
+        "encoded": "'../src/server/entitlement/entitlement.js',",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "1e5266",
+        "hash": "8affb987",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "1e5266",
+        "hash": "e0199c39",
+        "encoded": "return%20%7B%20...actual,%20resolveEntitlementIdentity:%20activityMocks.resolveEntitlementIdentity%20%7D",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "1e5266",
+        "hash": "d0bcb3f1",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "1e5266",
+        "hash": "c997b9b0",
+        "encoded": "vi.mock('../src/server/usage/usageMetrics.js',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "1e5266",
+        "hash": "3e71f313",
+        "encoded": "recordOcrAttempt:%20activityMocks.recordOcrAttempt,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "1e5266",
+        "hash": "8e6c62ca",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "1e5266",
+        "hash": "35ff51cf",
+        "encoded": "vi.mock('../src/server/ocr/parseMultipartImage',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "94": {
-        "chunkId": "b50119",
-        "hash": "e82ae929",
-        "encoded": "await%20handler(req,%20res)",
+        "chunkId": "4d393f",
+        "hash": "53fd1257",
+        "encoded": "beforeEach(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "4d393f",
+        "hash": "eca604ef",
+        "encoded": "parseMultipartImageMock.mockReset()",
         "prevChunkIds": []
       },
       "96": {
-        "chunkId": "b50119",
-        "hash": "894914e9",
-        "encoded": "expect(res.statusCode).toBe(200)",
+        "chunkId": "4d393f",
+        "hash": "8199b360",
+        "encoded": "getOcrProviderMock.mockReset()",
         "prevChunkIds": []
       },
       "97": {
-        "chunkId": "b50119",
-        "hash": "3fdb6043",
-        "encoded": "expect(res.headers%5B'Cache-Control'%5D).toBe('private,%20no-store')",
+        "chunkId": "4d393f",
+        "hash": "ffa63b6c",
+        "encoded": "activityMocks.resolveEntitlementIdentity.mockReset().mockResolvedValue(%7B",
         "prevChunkIds": []
       },
       "98": {
-        "chunkId": "b50119",
-        "hash": "7b49c7a6",
-        "encoded": "expect(res.jsonBody).toEqual(%7B",
+        "chunkId": "4d393f",
+        "hash": "7815569a",
+        "encoded": "userId:%20null,",
         "prevChunkIds": []
       },
       "99": {
-        "chunkId": "b50119",
-        "hash": "985a477c",
+        "chunkId": "4d393f",
+        "hash": "dd813d2e",
+        "encoded": "anonymousId:%20'anonymous-test',",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "4d393f",
+        "hash": "da5274fe",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "4d393f",
+        "hash": "f9b49851",
+        "encoded": "activityMocks.recordOcrAttempt.mockReset().mockResolvedValue(undefined)",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "4d393f",
+        "hash": "a1b04a9f",
+        "encoded": "vi.spyOn(console,%20'error').mockImplementation(()%20=%3E%20undefined)",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "4d393f",
+        "hash": "50122822",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "324481",
+        "hash": "79544a14",
+        "encoded": "expect(res.jsonBody).toEqual(%7B",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "324481",
+        "hash": "35f632e3",
         "encoded": "text:%20'Bun%C4%83%20ziua!%20A%20doua%20linie.%5Cn%5CnAl%20doilea%20paragraf.',",
         "prevChunkIds": []
       },
+      "120": {
+        "chunkId": "324481",
+        "hash": "b06c4b4d",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "324481",
+        "hash": "7eeb31da",
+        "encoded": "expect(activityMocks.recordOcrAttempt).toHaveBeenCalledTimes(1)",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "324481",
+        "hash": "a566e4fe",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "324481",
+        "hash": "041d2a9c",
+        "encoded": "it('nu%20blocheaz%C4%83%20OCR-ul%20dac%C4%83%20metricile%20de%20activitate%20nu%20pot%20fi%20salvate',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "324481",
+        "hash": "80410bf9",
+        "encoded": "activityMocks.recordOcrAttempt.mockRejectedValueOnce(new%20Error('database%20unavailable'))",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "324481",
+        "hash": "a9a2a678",
+        "encoded": "parseMultipartImageMock.mockResolvedValue(%7B",
+        "prevChunkIds": []
+      },
       "127": {
-        "chunkId": "46ad3e",
-        "hash": "74c9c63e",
-        "encoded": "expect(res.statusCode).toBe(413)",
+        "chunkId": "324481",
+        "hash": "4d8731b0",
+        "encoded": "buffer:%20PNG_HEADER,",
         "prevChunkIds": []
       },
       "128": {
-        "chunkId": "46ad3e",
-        "hash": "966eb336",
-        "encoded": "expect(res.jsonBody).toEqual(%7B%20error:%20'Imaginea%20dep%C4%83%C8%99e%C8%99te%20limita%20admis%C4%83.'%20%7D)",
+        "chunkId": "324481",
+        "hash": "7bc488ab",
+        "encoded": "declaredMimeType:%20'image/png',",
         "prevChunkIds": []
       },
       "129": {
-        "chunkId": "46ad3e",
-        "hash": "426e989c",
+        "chunkId": "324481",
+        "hash": "1ae9288b",
+        "encoded": "fieldName:%20'image',",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "324481",
+        "hash": "7e2ee577",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
       "131": {
-        "chunkId": "46ad3e",
-        "hash": "60719551",
-        "encoded": "it('returneaz%C4%83%20502%20%C8%99i%20logheaz%C4%83%20diagnostic%20sanitizat%20c%C3%A2nd%20furnizorul%20OCR%20e%C8%99ueaz%C4%83',%20async%20()%20=%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "132": {
-        "chunkId": "46ad3e",
-        "hash": "0509770b",
-        "encoded": "const%20errorLog%20=%20vi.spyOn(console,%20'error')",
-        "prevChunkIds": []
-      },
-      "133": {
-        "chunkId": "46ad3e",
-        "hash": "9fd65253",
-        "encoded": "errorLog.mockClear()",
-        "prevChunkIds": []
-      },
-      "134": {
-        "chunkId": "46ad3e",
-        "hash": "7b1c820f",
-        "encoded": "parseMultipartImageMock.mockResolvedValue(%7B",
-        "prevChunkIds": []
-      },
-      "135": {
-        "chunkId": "46ad3e",
-        "hash": "0f6fec01",
-        "encoded": "buffer:%20PNG_HEADER,",
-        "prevChunkIds": []
-      },
-      "136": {
-        "chunkId": "46ad3e",
-        "hash": "87f6f399",
-        "encoded": "declaredMimeType:%20'image/png',",
-        "prevChunkIds": []
-      },
-      "137": {
-        "chunkId": "46ad3e",
-        "hash": "588ba6ef",
-        "encoded": "fieldName:%20'image',",
-        "prevChunkIds": []
-      },
-      "138": {
-        "chunkId": "46ad3e",
-        "hash": "39779a16",
-        "encoded": "%7D)",
-        "prevChunkIds": []
-      },
-      "139": {
-        "chunkId": "46ad3e",
-        "hash": "7bb876fa",
+        "chunkId": "324481",
+        "hash": "86b20113",
         "encoded": "getOcrProviderMock.mockReturnValue(%7B",
         "prevChunkIds": []
       },
-      "140": {
-        "chunkId": "46ad3e",
-        "hash": "83874c04",
-        "encoded": "recognizeText:%20vi.fn().mockRejectedValue(new%20OcrProviderError('Invalid%20API%20key:%20private-token')),",
+      "132": {
+        "chunkId": "324481",
+        "hash": "83e6e365",
+        "encoded": "recognizeText:%20vi.fn().mockResolvedValue('Text%20OCR%20valid.'),",
         "prevChunkIds": []
       },
-      "141": {
-        "chunkId": "46ad3e",
-        "hash": "ada9d4c6",
+      "133": {
+        "chunkId": "324481",
+        "hash": "f37695e7",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
-      "143": {
-        "chunkId": "46ad3e",
-        "hash": "f53cba2a",
+      "135": {
+        "chunkId": "324481",
+        "hash": "4ef22465",
         "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
         "prevChunkIds": []
       },
-      "144": {
-        "chunkId": "46ad3e",
-        "hash": "375e0c77",
+      "136": {
+        "chunkId": "324481",
+        "hash": "456753a7",
         "encoded": "await%20handler(req,%20res)",
         "prevChunkIds": []
       },
-      "146": {
-        "chunkId": "46ad3e",
-        "hash": "2eed940b",
-        "encoded": "expect(res.statusCode).toBe(502)",
+      "138": {
+        "chunkId": "324481",
+        "hash": "5062c969",
+        "encoded": "expect(res.statusCode).toBe(200)",
         "prevChunkIds": []
       },
-      "147": {
-        "chunkId": "46ad3e",
-        "hash": "462dd5b7",
+      "139": {
+        "chunkId": "324481",
+        "hash": "c71bb914",
+        "encoded": "expect(res.jsonBody).toEqual(%7B%20text:%20'Text%20OCR%20valid.'%20%7D)",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "324481",
+        "hash": "96118ce9",
+        "encoded": "expect(console.error).toHaveBeenCalledWith(",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "324481",
+        "hash": "00222c50",
+        "encoded": "JSON.stringify(%7B%20event:%20'ocr_activity_metric_failed'%20%7D),",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "324481",
+        "hash": "a578af76",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "324481",
+        "hash": "0acb6cd1",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "324481",
+        "hash": "d3209c0b",
+        "encoded": "it('respinge%20con%C8%9Binut%20care%20nu%20este%20o%20imagine%20real%C4%83%20(semn%C4%83tur%C4%83%20binar%C4%83%20invalid%C4%83)',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "b50119",
+        "hash": "30814dd9",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "b50119",
+        "hash": "34bb3b6b",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "b50119",
+        "hash": "efe4c1b2",
+        "encoded": "expect(res.statusCode).toBe(200)",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "b50119",
+        "hash": "1fce010d",
+        "encoded": "expect(res.headers%5B'Cache-Control'%5D).toBe('private,%20no-store')",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "b50119",
+        "hash": "c79138ae",
         "encoded": "expect(res.jsonBody).toEqual(%7B",
         "prevChunkIds": []
       },
-      "148": {
-        "chunkId": "46ad3e",
-        "hash": "e1283bf8",
-        "encoded": "error:%20'Serviciul%20de%20recunoa%C8%99tere%20text%20nu%20a%20putut%20procesa%20imaginea.',",
+      "177": {
+        "chunkId": "b50119",
+        "hash": "6ee5d69e",
+        "encoded": "text:%20'Bun%C4%83%20ziua!%20A%20doua%20linie.%5Cn%5CnAl%20doilea%20paragraf.',",
         "prevChunkIds": []
       },
-      "149": {
-        "chunkId": "46ad3e",
-        "hash": "3724e63c",
+      "196": {
+        "chunkId": "5d255a",
+        "hash": "dd89af10",
+        "encoded": "expect(res.jsonBody).toEqual(%7B",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "5d255a",
+        "hash": "1e69215c",
+        "encoded": "text:%20'Bun%C4%83%20ziua!%20A%20doua%20linie.%5Cn%5CnAl%20doilea%20paragraf.',",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "5d255a",
+        "hash": "119bb9a9",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
-      "150": {
-        "chunkId": "46ad3e",
-        "hash": "97461f2b",
-        "encoded": "expect(errorLog).toHaveBeenCalledTimes(1)",
+      "199": {
+        "chunkId": "5d255a",
+        "hash": "5535041a",
+        "encoded": "expect(activityMocks.recordOcrAttempt).toHaveBeenCalledTimes(1)",
         "prevChunkIds": []
       },
-      "151": {
+      "209": {
         "chunkId": "46ad3e",
-        "hash": "66caed43",
-        "encoded": "const%20loggedEntry%20=%20JSON.parse(errorLog.mock.calls%5B0%5D%5B0%5D%20as%20string)%20as%20%7B",
+        "hash": "cf26605d",
+        "encoded": "expect(res.statusCode).toBe(413)",
         "prevChunkIds": []
       },
-      "152": {
+      "210": {
         "chunkId": "46ad3e",
-        "hash": "68b80d35",
-        "encoded": "event:%20string",
+        "hash": "e76105c7",
+        "encoded": "expect(res.jsonBody).toEqual(%7B%20error:%20'Imaginea%20dep%C4%83%C8%99e%C8%99te%20limita%20admis%C4%83.'%20%7D)",
         "prevChunkIds": []
       },
-      "153": {
+      "211": {
         "chunkId": "46ad3e",
-        "hash": "2384f1c6",
-        "encoded": "provider:%20string",
-        "prevChunkIds": []
-      },
-      "154": {
-        "chunkId": "46ad3e",
-        "hash": "c3428c58",
-        "encoded": "providerMessage:%20string",
-        "prevChunkIds": []
-      },
-      "155": {
-        "chunkId": "46ad3e",
-        "hash": "0b3cc65a",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "156": {
-        "chunkId": "46ad3e",
-        "hash": "14dbe924",
-        "encoded": "expect(loggedEntry).toEqual(%7B",
-        "prevChunkIds": []
-      },
-      "157": {
-        "chunkId": "46ad3e",
-        "hash": "7145c917",
-        "encoded": "event:%20'ocr_provider_failed',",
-        "prevChunkIds": []
-      },
-      "158": {
-        "chunkId": "46ad3e",
-        "hash": "f7aafa24",
-        "encoded": "provider:%20'ocr.space',",
-        "prevChunkIds": []
-      },
-      "159": {
-        "chunkId": "46ad3e",
-        "hash": "73ae6328",
-        "encoded": "providerMessage:%20'Invalid%20%5Bredacted%5D',",
-        "prevChunkIds": []
-      },
-      "160": {
-        "chunkId": "46ad3e",
-        "hash": "83d43c17",
+        "hash": "dc9c2674",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
-      "161": {
+      "213": {
         "chunkId": "46ad3e",
-        "hash": "12078cd4",
-        "encoded": "expect(JSON.stringify(loggedEntry)).not.toContain('private-token')",
+        "hash": "1b2031dc",
+        "encoded": "it('returneaz%C4%83%20502%20%C8%99i%20logheaz%C4%83%20diagnostic%20sanitizat%20c%C3%A2nd%20furnizorul%20OCR%20e%C8%99ueaz%C4%83',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "162": {
+      "214": {
         "chunkId": "46ad3e",
-        "hash": "cf35058c",
-        "encoded": "%7D)",
+        "hash": "fa365fe9",
+        "encoded": "const%20errorLog%20=%20vi.spyOn(console,%20'error')",
         "prevChunkIds": []
       },
-      "164": {
+      "215": {
         "chunkId": "46ad3e",
-        "hash": "57dd7d0c",
-        "encoded": "it('returneaz%C4%83%20text%20gol%20c%C3%A2nd%20OCR%20nu%20g%C4%83se%C8%99te%20niciun%20text%20%C3%AEn%20imagine%20(rezultat%20OCR%20gol)',%20async%20()%20=%3E%20%7B",
+        "hash": "1087aff4",
+        "encoded": "errorLog.mockClear()",
         "prevChunkIds": []
       },
-      "165": {
+      "216": {
         "chunkId": "46ad3e",
-        "hash": "c0cc09fd",
+        "hash": "be7ae8fe",
         "encoded": "parseMultipartImageMock.mockResolvedValue(%7B",
         "prevChunkIds": []
       },
-      "166": {
+      "217": {
         "chunkId": "46ad3e",
-        "hash": "f2943083",
+        "hash": "9a33e603",
+        "encoded": "buffer:%20PNG_HEADER,",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "46ad3e",
+        "hash": "fe323cf3",
+        "encoded": "declaredMimeType:%20'image/png',",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "46ad3e",
+        "hash": "7890e565",
+        "encoded": "fieldName:%20'image',",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "46ad3e",
+        "hash": "b03508fb",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "46ad3e",
+        "hash": "9c21011e",
+        "encoded": "getOcrProviderMock.mockReturnValue(%7B",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "46ad3e",
+        "hash": "5ee3105b",
+        "encoded": "recognizeText:%20vi.fn().mockRejectedValue(new%20OcrProviderError('Invalid%20API%20key:%20private-token')),",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "46ad3e",
+        "hash": "0dc1d323",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "46ad3e",
+        "hash": "3f9fb120",
+        "encoded": "const%20%7B%20req,%20res%20%7D%20=%20createMockReqRes()",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "46ad3e",
+        "hash": "5980be28",
+        "encoded": "await%20handler(req,%20res)",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "46ad3e",
+        "hash": "cd03b402",
+        "encoded": "expect(res.statusCode).toBe(502)",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "46ad3e",
+        "hash": "2c80cac3",
+        "encoded": "expect(res.jsonBody).toEqual(%7B",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "46ad3e",
+        "hash": "468d5e40",
+        "encoded": "error:%20'Serviciul%20de%20recunoa%C8%99tere%20text%20nu%20a%20putut%20procesa%20imaginea.',",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "46ad3e",
+        "hash": "da0b77b7",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "46ad3e",
+        "hash": "3ac9a297",
+        "encoded": "expect(errorLog).toHaveBeenCalledTimes(1)",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "46ad3e",
+        "hash": "b4970714",
+        "encoded": "const%20loggedEntry%20=%20JSON.parse(errorLog.mock.calls%5B0%5D%5B0%5D%20as%20string)%20as%20%7B",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "46ad3e",
+        "hash": "9b61e777",
+        "encoded": "event:%20string",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "46ad3e",
+        "hash": "2722ba8a",
+        "encoded": "provider:%20string",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "46ad3e",
+        "hash": "124652f7",
+        "encoded": "providerMessage:%20string",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "46ad3e",
+        "hash": "58b80ca9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "46ad3e",
+        "hash": "c1623a10",
+        "encoded": "expect(loggedEntry).toEqual(%7B",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "46ad3e",
+        "hash": "17d84806",
+        "encoded": "event:%20'ocr_provider_failed',",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "46ad3e",
+        "hash": "ac2af35f",
+        "encoded": "provider:%20'ocr.space',",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "46ad3e",
+        "hash": "e8c8e7bb",
+        "encoded": "providerMessage:%20'Invalid%20%5Bredacted%5D',",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "46ad3e",
+        "hash": "e3b2db9d",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "46ad3e",
+        "hash": "b7e1c5b6",
+        "encoded": "expect(JSON.stringify(loggedEntry)).not.toContain('private-token')",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "46ad3e",
+        "hash": "d7303898",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "46ad3e",
+        "hash": "fab47c5d",
+        "encoded": "it('returneaz%C4%83%20text%20gol%20c%C3%A2nd%20OCR%20nu%20g%C4%83se%C8%99te%20niciun%20text%20%C3%AEn%20imagine%20(rezultat%20OCR%20gol)',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "46ad3e",
+        "hash": "a155c8f6",
+        "encoded": "parseMultipartImageMock.mockResolvedValue(%7B",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "46ad3e",
+        "hash": "157b546f",
         "encoded": "buffer:%20PNG_HEADER,",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 244
   }
 }

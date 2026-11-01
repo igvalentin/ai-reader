@@ -1,0 +1,108 @@
+{
+  "src/server/auth/verifySupabaseUser.ts": {
+    "filename": "verifySupabaseUser.ts",
+    "path": "src/server/auth/verifySupabaseUser.ts",
+    "version": "1.2",
+    "contextFile": "747b09a7-context.json",
+    "chunks": {
+      "46d4e3": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535142,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "34b59732",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:22 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b0a0cc": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535142,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "c5b75945",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:22 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "b0a0cc",
+        "hash": "2f219853",
+        "encoded": "import%20%7B%20createClient%20%7D%20from%20'@supabase/supabase-js'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b0a0cc",
+        "hash": "84ad4bd2",
+        "encoded": "export%20class%20UnauthorizedError%20extends%20Error%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "b0a0cc",
+        "hash": "2d7af7cf",
+        "encoded": "export%20class%20AuthConfigurationError%20extends%20Error%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b0a0cc",
+        "hash": "cf30f742",
+        "encoded": "function%20extractBearerToken(authorizationHeader:%20string%20%7C%20undefined):%20string%20%7C%20null%20%7B",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "46d4e3",
+        "hash": "b03de8e3",
+        "encoded": "if%20(!supabaseUrl%20%7C%7C%20!supabaseAnonKey)%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "46d4e3",
+        "hash": "7f959229",
+        "encoded": "throw%20new%20AuthConfigurationError(",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "46d4e3",
+        "hash": "704ea4d2",
+        "encoded": "'Configurare%20Supabase%20server-side%20lips%C4%83%20(SUPABASE_URL%20/%20SUPABASE_ANON_KEY).',",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "46d4e3",
+        "hash": "124ba173",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "46d4e3",
+        "hash": "880eeeff",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "46d4e3",
+        "hash": "6cc4723f",
+        "encoded": "const%20supabase%20=%20createClient(supabaseUrl,%20supabaseAnonKey,%20%7B",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

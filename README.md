@@ -4,8 +4,10 @@ Aplicație web instalabilă (PWA), mobile-first, care permite utilizatorilor să
 să încarce imagini cu text și să-l extragă prin OCR și să asculte textul citit cu voce tare, în
 română și engleză. Prima lectură audio reușită este gratuită, apoi este necesar un abonament.
 
-> TTS și paywall-ul sunt implementate, dar schema Supabase și configurarea Stripe trebuie aplicate
-> separat, cu aprobare explicită. Detalii despre arhitectură: [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
+> TTS, entitlement și Stripe Checkout/Portal sunt implementate. Schema de bază a fost aplicată
+> manual; migrarea aditivă nouă, prețurile Stripe și setările Auth rămân pași manuali. Nu se fac
+> deploy-uri sau schimbări în producție fără aprobare. Vezi
+> [`docs/AUTH_BILLING_ADMIN.md`](./docs/AUTH_BILLING_ADMIN.md) și [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
 
 ## Stack tehnic
 
@@ -67,11 +69,11 @@ română și engleză. Prima lectură audio reușită este gratuită, apoi este 
 
 ## Deploy pe Vercel
 
-Deploy-ul nu face parte din această implementare și necesită aprobare explicită. Înainte de orice
-activare, aplică [`supabase/schema.sql`](./supabase/schema.sql) într-un mediu aprobat și configurează
-valorile Stripe în test mode. Funcțiile server folosesc `api/checkout.ts`, `api/portal.ts`,
-`api/subscription.ts` și `api/stripe-webhook.ts`; nu configura chei live sau webhook-uri de producție
-fără aprobare.
+Nu s-a făcut deploy și nu s-a aplicat migrarea nouă în producție. Schema de bază
+[`supabase/schema.sql`](./supabase/schema.sql) a fost aplicată manual; testează acum migrarea aditivă
+[`supabase/migrations/20261101000000_billing_usage_admin.sql`](./supabase/migrations/20261101000000_billing_usage_admin.sql)
+într-un mediu aprobat. Configurează produsele/prețurile și webhook-ul Stripe în Test mode înainte de
+orice activare; pașii sunt în [`docs/AUTH_BILLING_ADMIN.md`](./docs/AUTH_BILLING_ADMIN.md).
 
 Variabile publice necesare pentru client:
 
@@ -80,8 +82,10 @@ Variabile publice necesare pentru client:
 
 Variabile server-only necesare pentru entitlement/billing:
 
-- `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `ANONYMOUS_USAGE_SECRET`, `APP_URL`
-- `STRIPE_SECRET_KEY`, `STRIPE_PRICE_ID`, `STRIPE_WEBHOOK_SECRET`
+- `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ANONYMOUS_USAGE_SECRET`, `APP_URL`
+- `AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `AZURE_SPEECH_VOICE` (opțional)
+- `STRIPE_SECRET_KEY`, `STRIPE_PRICE_ID_7_DAYS`, `STRIPE_PRICE_ID_30_DAYS`, `STRIPE_PRICE_ID_1_YEAR`, `STRIPE_WEBHOOK_SECRET`
+- `ADMIN_USER_IDS` (UUID-uri autorizate) și `CRON_SECRET`
 
 ## OCR (extragere text din imagini)
 
@@ -93,18 +97,20 @@ Variabile server-only necesare pentru entitlement/billing:
 - Limita aplicației este de 4 MiB; tipurile acceptate sunt JPEG, PNG și WebP. Limita request-ului
   Vercel rămâne aplicabilă.
 - OCR nu necesită cheie API sau variabilă de mediu.
-- Impunerea autentificării obligatorii pe acest endpoint este planificată pentru etapa de
-  entitlement/abonament (vezi `docs/ARCHITECTURE.md`), când va exista și un ecran de login.
+- OCR rămâne accesibil și vizitatorilor anonimi; când există o sesiune validă, serverul asociază
+  încercarea cu utilizatorul verificat. Contoarele nu includ imaginea sau textul extras.
 
 ## Text-to-speech
 
 Pipeline-ul TTS cu Azure AI Speech este documentat în [`docs/TTS.md`](./docs/TTS.md). Configurează `AZURE_SPEECH_KEY` și `AZURE_SPEECH_REGION=germanywestcentral` numai server-side; `AZURE_SPEECH_VOICE` este opțional. Endpoint-ul `/api/tts` detectează sau primește limba, păstrează diacriticele românești și returnează audio MP3. Cheia nu este expusă browserului, iar textul rămâne disponibil dacă sinteza eșuează. Deploy-ul în producție necesită aprobare explicită.
 
-## Configurări rămase (de documentat, nu de inventat)
+## Pași manuali înainte de producție
 
-- Verificarea prețurilor și disponibilității vocilor Azure AI Speech înainte de deploy.
-- Furnizorul de plăți/abonamente — neales încă.
-- Ecranul de autentificare (login cu Google prin Supabase) — neconstruit încă în interfață.
-- Iconițe PWA reale (192x192, 512x512, maskable) — momentan se folosește doar `favicon.svg` ca
-  placeholder în `manifest.webmanifest`.
-- Schema de bază de date Supabase descrisă în `docs/ARCHITECTURE.md` nu a fost încă aplicată.
+- Configurează Supabase Auth URL/redirect allowlist, limita email OTP și SMTP conform
+  [`docs/AUTH_BILLING_ADMIN.md`](./docs/AUTH_BILLING_ADMIN.md).
+- Creează cele trei prețuri recurring în Stripe Test mode și setează ID-urile în Vercel; webhook-ul
+  trebuie să fie activ și semnătura validată înainte de a testa entitlement-ul plătit.
+- Adaugă UUID-urile administratorilor în `ADMIN_USER_IDS`; fără allowlist configurat, admin API
+  refuză accesul pentru toți.
+- Aplică migrarea aditivă numai după backup și aprobare. Nu s-a făcut deploy sau operațiune în
+  mediul de producție.

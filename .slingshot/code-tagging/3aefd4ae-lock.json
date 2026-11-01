@@ -130,442 +130,796 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 11:04:11 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "04ced8": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535143,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "eb90c1aa",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6a0bad": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793535143,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "149c536b",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:23 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "74f7aa": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ff072090",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "4d1a82": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536592,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "eb9e8090",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:32 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
+      "5": {
+        "chunkId": "6a0bad",
+        "hash": "d39a5167",
+        "encoded": "import%20%7B%20MultipartParseError,%20parseMultipartImage%20%7D%20from%20'../src/server/ocr/parseMultipartImage.js'",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "4d1a82",
+        "hash": "e3c84f47",
+        "encoded": "import%20%7B%20verifySupabaseUser%20%7D%20from%20'../src/server/auth/verifySupabaseUser.js'",
+        "prevChunkIds": []
+      },
       "7": {
-        "chunkId": "a022b0",
-        "hash": "8af6808f",
-        "encoded": "export%20const%20config%20=%20%7B",
+        "chunkId": "4d1a82",
+        "hash": "9eb0320b",
+        "encoded": "import%20%7B",
         "prevChunkIds": []
       },
       "8": {
-        "chunkId": "a022b0",
-        "hash": "b508b9b1",
-        "encoded": "api:%20%7B",
+        "chunkId": "4d1a82",
+        "hash": "20d3207d",
+        "encoded": "associateAnonymousUsage,",
         "prevChunkIds": []
       },
       "9": {
-        "chunkId": "a022b0",
-        "hash": "f40ef4e2",
-        "encoded": "bodyParser:%20false,",
+        "chunkId": "4d1a82",
+        "hash": "b9bbc6de",
+        "encoded": "resolveEntitlementIdentity,",
         "prevChunkIds": []
       },
       "10": {
-        "chunkId": "a022b0",
-        "hash": "edd993f3",
-        "encoded": "%7D,",
+        "chunkId": "4d1a82",
+        "hash": "2f9c543f",
+        "encoded": "%7D%20from%20'../src/server/entitlement/entitlement.js'",
         "prevChunkIds": []
       },
       "11": {
-        "chunkId": "a022b0",
-        "hash": "e9a9f96c",
-        "encoded": "%7D",
+        "chunkId": "4d1a82",
+        "hash": "64f14884",
+        "encoded": "import%20%7B%20recordOcrAttempt%20%7D%20from%20'../src/server/usage/usageMetrics.js'",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "6a0bad",
+        "hash": "3c0abe52",
+        "encoded": "import%20%7B%20resolveEntitlementIdentity%20%7D%20from%20'../src/server/entitlement/entitlement.js'",
         "prevChunkIds": []
       },
       "13": {
-        "chunkId": "a022b0",
-        "hash": "58021c68",
-        "encoded": "function%20sanitizeOcrDiagnosticMessage(message:%20string):%20string%20%7B",
-        "prevChunkIds": []
-      },
-      "14": {
-        "chunkId": "a022b0",
-        "hash": "2192aa56",
-        "encoded": "return%20message",
+        "chunkId": "6a0bad",
+        "hash": "a731c1d0",
+        "encoded": "import%20%7B%20recordOcrAttempt%20%7D%20from%20'../src/server/usage/usageMetrics.js'",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "a022b0",
-        "hash": "06deb405",
-        "encoded": ".replace(/%5B%5Cr%5Cn%5Ct%5D+/g,%20'%20')",
+        "chunkId": "6a0bad",
+        "hash": "38999e73",
+        "encoded": "export%20const%20config%20=%20%7B",
         "prevChunkIds": []
       },
-      "16": {
+      "20": {
         "chunkId": "a022b0",
-        "hash": "a739bfc1",
-        "encoded": ".replace(/(?:api%5B%5Cs_-%5D?key%7Cauthorization%7Cbearer)%5Cs*%5B:=%5D?%5Cs*%5B%5E%5Cs,;%5D+/gi,%20'%5Bredacted%5D')",
-        "prevChunkIds": []
-      },
-      "17": {
-        "chunkId": "a022b0",
-        "hash": "66d7a440",
-        "encoded": ".replace(/https?:%5C/%5C/%5CS+/gi,%20'%5Burl%5D')",
-        "prevChunkIds": []
-      },
-      "18": {
-        "chunkId": "a022b0",
-        "hash": "0bd72540",
-        "encoded": ".slice(0,%20200)",
-        "prevChunkIds": []
-      },
-      "19": {
-        "chunkId": "28a03e",
-        "hash": "ee39c532",
-        "encoded": "%7D",
+        "hash": "5b99831f",
+        "encoded": "export%20const%20config%20=%20%7B",
         "prevChunkIds": []
       },
       "21": {
-        "chunkId": "28a03e",
-        "hash": "a713c17b",
-        "encoded": "/**",
+        "chunkId": "a022b0",
+        "hash": "887860cb",
+        "encoded": "api:%20%7B",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "28a03e",
-        "hash": "c9b487a7",
-        "encoded": "*%20Server-side%20OCR%20for%20the%20anonymous%20reading%20flow.",
+        "chunkId": "a022b0",
+        "hash": "25293ad3",
+        "encoded": "bodyParser:%20false,",
         "prevChunkIds": []
       },
       "23": {
-        "chunkId": "28a03e",
-        "hash": "494ce6b4",
-        "encoded": "*",
+        "chunkId": "a022b0",
+        "hash": "ae69351d",
+        "encoded": "%7D,",
         "prevChunkIds": []
       },
       "24": {
-        "chunkId": "749a31",
-        "hash": "e89ffe90",
-        "encoded": "*%20The%20endpoint%20validates%20image%20magic%20bytes,%20accepts%20no%20user-supplied%20URL,%20and%20keeps%20the%20upload",
-        "prevChunkIds": []
-      },
-      "25": {
-        "chunkId": "749a31",
-        "hash": "054afb58",
-        "encoded": "*%20in%20memory%20rather%20than%20persisting%20it.%20Recognition%20uses%20a%20local%20Tesseract.js/WASM%20engine%20with",
+        "chunkId": "a022b0",
+        "hash": "71870443",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "749a31",
-        "hash": "e1f7d10b",
-        "encoded": "*%20bundled%20Romanian%20traineddata;%20the%20image%20is%20not%20forwarded%20to%20a%20third-party%20OCR%20API.%20OCR%20is",
+        "chunkId": "a022b0",
+        "hash": "9edb09d9",
+        "encoded": "function%20sanitizeOcrDiagnosticMessage(message:%20string):%20string%20%7B",
         "prevChunkIds": []
       },
       "27": {
-        "chunkId": "749a31",
-        "hash": "9d75a3db",
-        "encoded": "*%20intentionally%20unauthenticated%20for%20guest%20access%20and%20no%20distributed%20rate%20limit%20is%20configured",
+        "chunkId": "a022b0",
+        "hash": "559bc97a",
+        "encoded": "return%20message",
         "prevChunkIds": []
       },
       "28": {
-        "chunkId": "749a31",
-        "hash": "1b7e18cf",
-        "encoded": "*%20here,%20so%20production%20deployment%20requires%20an%20external%20abuse/cost%20control.%20Response%20bodies%20are",
+        "chunkId": "a022b0",
+        "hash": "b39ebffd",
+        "encoded": ".replace(/%5B%5Cr%5Cn%5Ct%5D+/g,%20'%20')",
         "prevChunkIds": []
       },
       "29": {
-        "chunkId": "749a31",
-        "hash": "b9f19f94",
-        "encoded": "*%20no-store%20and%20logs%20exclude%20image%20and%20extracted%20text.",
+        "chunkId": "a022b0",
+        "hash": "3bf62216",
+        "encoded": ".replace(/(?:api%5B%5Cs_-%5D?key%7Cauthorization%7Cbearer)%5Cs*%5B:=%5D?%5Cs*%5B%5E%5Cs,;%5D+/gi,%20'%5Bredacted%5D')",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "28a03e",
-        "hash": "74826067",
-        "encoded": "*%20in%20memory%20rather%20than%20persisting%20it.%20The%20image%20is%20forwarded%20over%20HTTPS%20to%20OCR.space%20for",
+        "chunkId": "a022b0",
+        "hash": "0dea8a35",
+        "encoded": ".replace(/https?:%5C/%5C/%5CS+/gi,%20'%5Burl%5D')",
         "prevChunkIds": []
       },
       "31": {
-        "chunkId": "28a03e",
-        "hash": "9c47ad4e",
-        "encoded": "*%20recognition;%20the%20provider's%20retention%20and%20processing%20terms%20are%20outside%20this%20application%20and",
+        "chunkId": "a022b0",
+        "hash": "f30250fa",
+        "encoded": ".slice(0,%20200)",
         "prevChunkIds": []
       },
       "32": {
         "chunkId": "28a03e",
-        "hash": "0b24f355",
-        "encoded": "*%20must%20be%20reviewed%20separately.%20OCR%20is%20intentionally%20unauthenticated%20for%20guest%20access%20and%20no",
-        "prevChunkIds": []
-      },
-      "33": {
-        "chunkId": "28a03e",
-        "hash": "1b42f54b",
-        "encoded": "*%20distributed%20rate%20limit%20is%20configured%20here,%20so%20production%20deployment%20requires%20an%20external",
+        "hash": "699fd80f",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "34": {
         "chunkId": "28a03e",
-        "hash": "79aa8b44",
-        "encoded": "*%20abuse/cost%20control.%20Response%20bodies%20are%20no-store%20and%20logs%20exclude%20image%20and%20extracted%20text.",
+        "hash": "af8dad32",
+        "encoded": "/**",
         "prevChunkIds": []
       },
       "35": {
         "chunkId": "28a03e",
-        "hash": "75d5d983",
-        "encoded": "*/",
+        "hash": "4ed3c1fe",
+        "encoded": "*%20Server-side%20OCR%20for%20the%20anonymous%20reading%20flow.",
         "prevChunkIds": []
       },
       "36": {
         "chunkId": "28a03e",
-        "hash": "612aa9fd",
-        "encoded": "export%20default%20async%20function%20handler(req:%20VercelRequest,%20res:%20VercelResponse)%20%7B",
-        "prevChunkIds": []
-      },
-      "37": {
-        "chunkId": "28a03e",
-        "hash": "80765bba",
-        "encoded": "res.setHeader('Cache-Control',%20'private,%20no-store')",
-        "prevChunkIds": []
-      },
-      "38": {
-        "chunkId": "28a03e",
-        "hash": "6378119f",
-        "encoded": "if%20(req.method%20!==%20'POST')%20%7B",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "28a03e",
-        "hash": "fd69b8ad",
-        "encoded": "res.setHeader('Allow',%20'POST')",
-        "prevChunkIds": []
-      },
-      "40": {
-        "chunkId": "28a03e",
-        "hash": "d3bcbfe8",
-        "encoded": "res.status(405).json(%7B%20error:%20'Metod%C4%83%20nepermis%C4%83.'%20%7D)",
-        "prevChunkIds": []
-      },
-      "42": {
-        "chunkId": "a022b0",
-        "hash": "6599f70a",
-        "encoded": "/**",
-        "prevChunkIds": []
-      },
-      "43": {
-        "chunkId": "a022b0",
-        "hash": "32745788",
-        "encoded": "*%20Endpoint%20server-side%20pentru%20extragerea%20textului%20dintr-o%20imagine%20(OCR).",
-        "prevChunkIds": []
-      },
-      "44": {
-        "chunkId": "a022b0",
-        "hash": "29654f29",
+        "hash": "d4c8e3d0",
         "encoded": "*",
         "prevChunkIds": []
       },
+      "37": {
+        "chunkId": "749a31",
+        "hash": "883b605d",
+        "encoded": "*%20The%20endpoint%20validates%20image%20magic%20bytes,%20accepts%20no%20user-supplied%20URL,%20and%20keeps%20the%20upload",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "749a31",
+        "hash": "4ae937e6",
+        "encoded": "*%20in%20memory%20rather%20than%20persisting%20it.%20Recognition%20uses%20a%20local%20Tesseract.js/WASM%20engine%20with",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "749a31",
+        "hash": "d2effcb9",
+        "encoded": "*%20bundled%20Romanian%20traineddata;%20the%20image%20is%20not%20forwarded%20to%20a%20third-party%20OCR%20API.%20OCR%20is",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "749a31",
+        "hash": "ee0cea5d",
+        "encoded": "*%20intentionally%20unauthenticated%20for%20guest%20access%20and%20no%20distributed%20rate%20limit%20is%20configured",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "749a31",
+        "hash": "ff089052",
+        "encoded": "*%20here,%20so%20production%20deployment%20requires%20an%20external%20abuse/cost%20control.%20Response%20bodies%20are",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "749a31",
+        "hash": "ee302f90",
+        "encoded": "*%20no-store%20and%20logs%20exclude%20image%20and%20extracted%20text.",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "28a03e",
+        "hash": "d5f5cdd0",
+        "encoded": "*%20in%20memory%20rather%20than%20persisting%20it.%20The%20image%20is%20forwarded%20over%20HTTPS%20to%20OCR.space%20for",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "28a03e",
+        "hash": "5b2377a9",
+        "encoded": "*%20recognition;%20the%20provider's%20retention%20and%20processing%20terms%20are%20outside%20this%20application%20and",
+        "prevChunkIds": []
+      },
       "45": {
-        "chunkId": "a022b0",
-        "hash": "bf601380",
-        "encoded": "*%20Securitate%20%C8%99i%20confiden%C8%9Bialitate:",
+        "chunkId": "28a03e",
+        "hash": "7384be73",
+        "encoded": "*%20must%20be%20reviewed%20separately.%20OCR%20is%20intentionally%20unauthenticated%20for%20guest%20access%20and%20no",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "28a03e",
+        "hash": "716597a7",
+        "encoded": "*%20distributed%20rate%20limit%20is%20configured%20here,%20so%20production%20deployment%20requires%20an%20external",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "de4da6",
-        "hash": "dda42ac8",
-        "encoded": "*%20recognition%20with%20a%20local%20Tesseract.js/WASM%20engine%20and%20bundled%20Romanian%20traineddata.%20The%20image%20is",
-        "prevChunkIds": []
-      },
-      "48": {
-        "chunkId": "de4da6",
-        "hash": "ee2468c7",
-        "encoded": "*%20not%20forwarded%20to%20a%20third-party%20OCR%20API.%20OCR%20is%20intentionally%20unauthenticated%20for%20guest%20access",
-        "prevChunkIds": []
-      },
-      "49": {
-        "chunkId": "de4da6",
-        "hash": "56368c44",
-        "encoded": "*%20and%20no%20distributed%20rate%20limit%20is%20configured%20here,%20so%20production%20deployment%20requires%20an%20external",
-        "prevChunkIds": []
-      },
-      "50": {
-        "chunkId": "de4da6",
-        "hash": "b2961beb",
+        "chunkId": "28a03e",
+        "hash": "fcb051ec",
         "encoded": "*%20abuse/cost%20control.%20Response%20bodies%20are%20no-store%20and%20logs%20exclude%20image%20and%20extracted%20text.",
         "prevChunkIds": []
       },
-      "53": {
-        "chunkId": "840dd9",
-        "hash": "655628f8",
-        "encoded": "*%20eliberat%C4%83%20dup%C4%83%20trimiterea%20r%C4%83spunsului.",
-        "prevChunkIds": []
-      },
-      "54": {
-        "chunkId": "840dd9",
-        "hash": "43449f3f",
+      "48": {
+        "chunkId": "28a03e",
+        "hash": "d02f616b",
         "encoded": "*/",
         "prevChunkIds": []
       },
-      "55": {
-        "chunkId": "840dd9",
-        "hash": "d2fa15c4",
+      "49": {
+        "chunkId": "28a03e",
+        "hash": "23acc19d",
         "encoded": "export%20default%20async%20function%20handler(req:%20VercelRequest,%20res:%20VercelResponse)%20%7B",
         "prevChunkIds": []
       },
-      "56": {
-        "chunkId": "840dd9",
-        "hash": "ea28f481",
+      "50": {
+        "chunkId": "28a03e",
+        "hash": "a4f44d10",
         "encoded": "res.setHeader('Cache-Control',%20'private,%20no-store')",
         "prevChunkIds": []
       },
-      "57": {
-        "chunkId": "840dd9",
-        "hash": "fc77d181",
+      "51": {
+        "chunkId": "28a03e",
+        "hash": "28045e92",
         "encoded": "if%20(req.method%20!==%20'POST')%20%7B",
         "prevChunkIds": []
       },
-      "58": {
-        "chunkId": "840dd9",
-        "hash": "b65232c8",
+      "52": {
+        "chunkId": "28a03e",
+        "hash": "c0511153",
         "encoded": "res.setHeader('Allow',%20'POST')",
         "prevChunkIds": []
       },
-      "73": {
-        "chunkId": "71dc28",
-        "hash": "183e2961",
-        "encoded": "if%20(error%20instanceof%20OcrProviderError)%20%7B",
+      "53": {
+        "chunkId": "04ced8",
+        "hash": "8c5c9baa",
+        "encoded": "if%20(!contentType%20%7C%7C%20!contentType.includes('multipart/form-data'))%20%7B",
         "prevChunkIds": []
       },
-      "74": {
-        "chunkId": "71dc28",
-        "hash": "852766b7",
-        "encoded": "console.error(JSON.stringify(%7B",
+      "54": {
+        "chunkId": "04ced8",
+        "hash": "212c4db2",
+        "encoded": "res.status(400).json(%7B%20error:%20'Cererea%20trebuie%20s%C4%83%20fie%20de%20tip%20multipart/form-data.'%20%7D)",
         "prevChunkIds": []
       },
-      "75": {
-        "chunkId": "71dc28",
-        "hash": "640704fe",
-        "encoded": "event:%20'ocr_provider_failed',",
-        "prevChunkIds": []
-      },
-      "76": {
-        "chunkId": "71dc28",
-        "hash": "cbaf66d8",
-        "encoded": "provider:%20'tesseract-local',",
-        "prevChunkIds": []
-      },
-      "77": {
-        "chunkId": "71dc28",
-        "hash": "ad6a3ef7",
-        "encoded": "providerMessage:%20sanitizeOcrDiagnosticMessage(error.message),",
-        "prevChunkIds": []
-      },
-      "78": {
-        "chunkId": "71dc28",
-        "hash": "713ef70b",
-        "encoded": "%7D))",
-        "prevChunkIds": []
-      },
-      "79": {
-        "chunkId": "71dc28",
-        "hash": "5e2607d2",
-        "encoded": "res.status(502).json(%7B%20error:%20'Serviciul%20de%20recunoa%C8%99tere%20text%20nu%20a%20putut%20procesa%20imaginea.'%20%7D)",
-        "prevChunkIds": []
-      },
-      "80": {
-        "chunkId": "71dc28",
-        "hash": "34bd9a67",
+      "55": {
+        "chunkId": "04ced8",
+        "hash": "a9b10c90",
         "encoded": "return",
         "prevChunkIds": []
       },
+      "56": {
+        "chunkId": "04ced8",
+        "hash": "cdb7b2a0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "04ced8",
+        "hash": "0ee0af76",
+        "encoded": "let%20activityIdentity%20=%20null",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "04ced8",
+        "hash": "b997b71a",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "04ced8",
+        "hash": "34de21f5",
+        "encoded": "activityIdentity%20=%20await%20resolveEntitlementIdentity(",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "04ced8",
+        "hash": "a6d3af3f",
+        "encoded": "req.headers.authorization,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "04ced8",
+        "hash": "d3730b5c",
+        "encoded": "req.headers.cookie,",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "04ced8",
+        "hash": "73a5cf23",
+        "encoded": "verifySupabaseUser,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "04ced8",
+        "hash": "d7021adc",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "04ced8",
+        "hash": "d8b4ab91",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "04ced8",
+        "hash": "ba4efec9",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "04ced8",
+        "hash": "645cf05e",
+        "encoded": "activityIdentity%20=%20await%20resolveEntitlementIdentity(undefined,%20req.headers.cookie,%20verifySupabaseUser)",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "04ced8",
+        "hash": "50e95c0e",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "04ced8",
+        "hash": "e231cda0",
+        "encoded": "console.error(JSON.stringify(%7B%20event:%20'ocr_activity_identity_failed'%20%7D))",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "04ced8",
+        "hash": "352e9b23",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "04ced8",
+        "hash": "f064f9d6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "04ced8",
+        "hash": "b9c44c4f",
+        "encoded": "if%20(activityIdentity?.setCookie)%20res.setHeader('Set-Cookie',%20activityIdentity.setCookie)",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "04ced8",
+        "hash": "84abd821",
+        "encoded": "if%20(activityIdentity)%20%7B",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "74f7aa",
+        "hash": "705fea1e",
+        "encoded": "if%20(activityIdentity?.setCookie)%20res.setHeader('Set-Cookie',%20activityIdentity.setCookie)",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "74f7aa",
+        "hash": "0f869e67",
+        "encoded": "if%20(activityIdentity?.userId)%20%7B",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "74f7aa",
+        "hash": "6a9a9943",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "74f7aa",
+        "hash": "6cb7a059",
+        "encoded": "await%20associateAnonymousUsage(activityIdentity.userId,%20req.headers.cookie)",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "74f7aa",
+        "hash": "0c5c3470",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "74f7aa",
+        "hash": "a96ce122",
+        "encoded": "console.error(JSON.stringify(%7B%20event:%20'ocr_usage_association_failed'%20%7D))",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "74f7aa",
+        "hash": "a2f26355",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
       "81": {
-        "chunkId": "71dc28",
+        "chunkId": "74f7aa",
         "hash": "d6938858",
         "encoded": "%7D",
         "prevChunkIds": []
       },
       "82": {
+        "chunkId": "74f7aa",
+        "hash": "f34dfdd8",
+        "encoded": "if%20(activityIdentity)%20%7B",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "74f7aa",
+        "hash": "cc116f02",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "74f7aa",
+        "hash": "5f11bf10",
+        "encoded": "await%20recordOcrAttempt(activityIdentity)",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "04ced8",
+        "hash": "1f2e4551",
+        "encoded": "await%20recordOcrAttempt(activityIdentity)",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "04ced8",
+        "hash": "e575ad04",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "04ced8",
+        "hash": "dda20b02",
+        "encoded": "//%20Analytics%20must%20not%20block%20OCR%20or%20expose%20image/text%20data%20in%20logs.",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "04ced8",
+        "hash": "acfabf36",
+        "encoded": "console.error(JSON.stringify(%7B%20event:%20'ocr_activity_metric_failed'%20%7D))",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "04ced8",
+        "hash": "9b477039",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "04ced8",
+        "hash": "1a9d363f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "04ced8",
+        "hash": "a0a8bf76",
+        "encoded": "let%20imageBuffer:%20Buffer",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "a022b0",
+        "hash": "6dcc7c80",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "a022b0",
+        "hash": "a8e2b52c",
+        "encoded": "*%20Endpoint%20server-side%20pentru%20extragerea%20textului%20dintr-o%20imagine%20(OCR).",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "a022b0",
+        "hash": "bb60044e",
+        "encoded": "*",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "a022b0",
+        "hash": "12525234",
+        "encoded": "*%20Securitate%20%C8%99i%20confiden%C8%9Bialitate:",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "de4da6",
+        "hash": "65d1ac46",
+        "encoded": "*%20recognition%20with%20a%20local%20Tesseract.js/WASM%20engine%20and%20bundled%20Romanian%20traineddata.%20The%20image%20is",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "de4da6",
+        "hash": "f4cccc49",
+        "encoded": "*%20not%20forwarded%20to%20a%20third-party%20OCR%20API.%20OCR%20is%20intentionally%20unauthenticated%20for%20guest%20access",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "de4da6",
+        "hash": "d5670955",
+        "encoded": "*%20and%20no%20distributed%20rate%20limit%20is%20configured%20here,%20so%20production%20deployment%20requires%20an%20external",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "de4da6",
+        "hash": "d0155a23",
+        "encoded": "*%20abuse/cost%20control.%20Response%20bodies%20are%20no-store%20and%20logs%20exclude%20image%20and%20extracted%20text.",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "840dd9",
+        "hash": "3636d2c3",
+        "encoded": "*%20eliberat%C4%83%20dup%C4%83%20trimiterea%20r%C4%83spunsului.",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "840dd9",
+        "hash": "b1879481",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "840dd9",
+        "hash": "81c50ec2",
+        "encoded": "export%20default%20async%20function%20handler(req:%20VercelRequest,%20res:%20VercelResponse)%20%7B",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "840dd9",
+        "hash": "df54a58a",
+        "encoded": "res.setHeader('Cache-Control',%20'private,%20no-store')",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "840dd9",
+        "hash": "829c009a",
+        "encoded": "if%20(req.method%20!==%20'POST')%20%7B",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "840dd9",
+        "hash": "82d9a055",
+        "encoded": "res.setHeader('Allow',%20'POST')",
+        "prevChunkIds": []
+      },
+      "149": {
         "chunkId": "71dc28",
-        "hash": "60f1789b",
-        "encoded": "console.error('Eroare%20neprev%C4%83zut%C4%83%20la%20procesarea%20OCR.')",
-        "prevChunkIds": []
-      },
-      "102": {
-        "chunkId": "aad2d5",
-        "hash": "e0269201",
-        "encoded": "const%20text%20=%20normalizeOcrText(rawText)",
-        "prevChunkIds": []
-      },
-      "103": {
-        "chunkId": "aad2d5",
-        "hash": "7b629ae9",
-        "encoded": "res.status(200).json(%7B%20text%20%7D)",
-        "prevChunkIds": []
-      },
-      "104": {
-        "chunkId": "aad2d5",
-        "hash": "53829caf",
-        "encoded": "%7D%20catch%20(error)%20%7B",
-        "prevChunkIds": []
-      },
-      "105": {
-        "chunkId": "aad2d5",
-        "hash": "96335169",
+        "hash": "5a4b39e5",
         "encoded": "if%20(error%20instanceof%20OcrProviderError)%20%7B",
         "prevChunkIds": []
       },
-      "106": {
-        "chunkId": "aad2d5",
-        "hash": "9f26cf3d",
+      "150": {
+        "chunkId": "71dc28",
+        "hash": "edbbb9d8",
         "encoded": "console.error(JSON.stringify(%7B",
         "prevChunkIds": []
       },
-      "107": {
-        "chunkId": "aad2d5",
-        "hash": "a6afb082",
+      "151": {
+        "chunkId": "71dc28",
+        "hash": "c8b7f6d1",
         "encoded": "event:%20'ocr_provider_failed',",
         "prevChunkIds": []
       },
-      "108": {
-        "chunkId": "aad2d5",
-        "hash": "f20f133c",
-        "encoded": "provider:%20'ocr.space',",
+      "152": {
+        "chunkId": "71dc28",
+        "hash": "2d034783",
+        "encoded": "provider:%20'tesseract-local',",
         "prevChunkIds": []
       },
-      "109": {
-        "chunkId": "aad2d5",
-        "hash": "bccd1877",
+      "153": {
+        "chunkId": "71dc28",
+        "hash": "10132005",
         "encoded": "providerMessage:%20sanitizeOcrDiagnosticMessage(error.message),",
         "prevChunkIds": []
       },
-      "110": {
-        "chunkId": "aad2d5",
-        "hash": "cd666552",
+      "154": {
+        "chunkId": "71dc28",
+        "hash": "05746f2d",
         "encoded": "%7D))",
         "prevChunkIds": []
       },
-      "111": {
-        "chunkId": "aad2d5",
-        "hash": "e71d4ea2",
+      "155": {
+        "chunkId": "71dc28",
+        "hash": "9f9ed170",
         "encoded": "res.status(502).json(%7B%20error:%20'Serviciul%20de%20recunoa%C8%99tere%20text%20nu%20a%20putut%20procesa%20imaginea.'%20%7D)",
         "prevChunkIds": []
       },
-      "112": {
-        "chunkId": "aad2d5",
-        "hash": "80b289e0",
+      "156": {
+        "chunkId": "71dc28",
+        "hash": "4dd5e0a8",
         "encoded": "return",
         "prevChunkIds": []
       },
-      "113": {
-        "chunkId": "aad2d5",
-        "hash": "fd8e1155",
+      "157": {
+        "chunkId": "71dc28",
+        "hash": "d8893271",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "114": {
-        "chunkId": "aad2d5",
-        "hash": "087464b9",
+      "158": {
+        "chunkId": "71dc28",
+        "hash": "14e3d621",
         "encoded": "console.error('Eroare%20neprev%C4%83zut%C4%83%20la%20procesarea%20OCR.')",
         "prevChunkIds": []
       },
-      "115": {
+      "178": {
         "chunkId": "aad2d5",
-        "hash": "d1ab32fd",
-        "encoded": "res.status(500).json(%7B%20error:%20'A%20ap%C4%83rut%20o%20eroare%20la%20procesarea%20imaginii.'%20%7D)",
+        "hash": "228ba7d9",
+        "encoded": "const%20text%20=%20normalizeOcrText(rawText)",
         "prevChunkIds": []
       },
-      "116": {
+      "179": {
         "chunkId": "aad2d5",
-        "hash": "2de22ffd",
+        "hash": "77e00aed",
+        "encoded": "res.status(200).json(%7B%20text%20%7D)",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "aad2d5",
+        "hash": "89e2166a",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "aad2d5",
+        "hash": "6607a86e",
+        "encoded": "if%20(error%20instanceof%20OcrProviderError)%20%7B",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "aad2d5",
+        "hash": "69269d0b",
+        "encoded": "console.error(JSON.stringify(%7B",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "aad2d5",
+        "hash": "d29ebe24",
+        "encoded": "event:%20'ocr_provider_failed',",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "aad2d5",
+        "hash": "02eb9334",
+        "encoded": "provider:%20'ocr.space',",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "aad2d5",
+        "hash": "1bbe9e4c",
+        "encoded": "providerMessage:%20sanitizeOcrDiagnosticMessage(error.message),",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "aad2d5",
+        "hash": "b39c9681",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "aad2d5",
+        "hash": "47f6ac68",
+        "encoded": "res.status(502).json(%7B%20error:%20'Serviciul%20de%20recunoa%C8%99tere%20text%20nu%20a%20putut%20procesa%20imaginea.'%20%7D)",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "aad2d5",
+        "hash": "16b12200",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "aad2d5",
+        "hash": "00c06a24",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "117": {
+      "190": {
         "chunkId": "aad2d5",
-        "hash": "ebb46282",
+        "hash": "6a17301f",
+        "encoded": "console.error('Eroare%20neprev%C4%83zut%C4%83%20la%20procesarea%20OCR.')",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "aad2d5",
+        "hash": "d5fa036a",
+        "encoded": "res.status(500).json(%7B%20error:%20'A%20ap%C4%83rut%20o%20eroare%20la%20procesarea%20imaginii.'%20%7D)",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "aad2d5",
+        "hash": "bd24004b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "aad2d5",
+        "hash": "1ae732b5",
         "encoded": "//%20Nicio%20referin%C8%9B%C4%83%20la%20%60imageBuffer%60%20nu%20este%20p%C4%83strat%C4%83%20dincolo%20de%20acest%20handler%20%E2%80%94%20imaginea%20nu%20este",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 90
+    "_prevLineCount": 117
   }
 }

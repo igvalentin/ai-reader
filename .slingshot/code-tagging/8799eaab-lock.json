@@ -1,0 +1,288 @@
+{
+  "src/server/admin/adminUsers.test.ts": {
+    "filename": "adminUsers.test.ts",
+    "path": "src/server/admin/adminUsers.test.ts",
+    "version": "1.2",
+    "contextFile": "8799eaab-context.json",
+    "chunks": {
+      "701271": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "8f282cbe",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "92ad61": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "31dc68ec",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "84e3c2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "5120f1fe",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3fc04a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "09a92a04",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "03a096": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "72a47f6a",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "48": {
+        "chunkId": "03a096",
+        "hash": "963dd7dc",
+        "encoded": "ocr_attempts:%203,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "03a096",
+        "hash": "0e93d2b4",
+        "encoded": "audio_attempts:%205,",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "03a096",
+        "hash": "cd9c59ae",
+        "encoded": "successful_audio_generations:%204,",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "3fc04a",
+        "hash": "69fab71c",
+        "encoded": "ocr_attempts:%202,",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "3fc04a",
+        "hash": "f5a7a9ae",
+        "encoded": "audio_attempts:%203,",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "3fc04a",
+        "hash": "69bbeddc",
+        "encoded": "successful_audio_generations:%201,",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "84e3c2",
+        "hash": "562bbbed",
+        "encoded": "providerCustomerId:%20'cus_private_admin_only',",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "84e3c2",
+        "hash": "aea09fc9",
+        "encoded": "audioAttempts:%205,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "84e3c2",
+        "hash": "9839bbf6",
+        "encoded": "successfulAudioGenerations:%204,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "701271",
+        "hash": "8c136b92",
+        "encoded": "anonymousId:%20'hash-anonymous',",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "701271",
+        "hash": "64d67d60",
+        "encoded": "category:%20'anonymous',",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "701271",
+        "hash": "09559193",
+        "encoded": "ocrAttempts:%202,",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "701271",
+        "hash": "857072a1",
+        "encoded": "audioAttempts:%203,",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "701271",
+        "hash": "73944558",
+        "encoded": "successfulAudioGenerations:%201,",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "92ad61",
+        "hash": "a78efd1e",
+        "encoded": "it('filters%20by%20category%20and%20case-insensitive%20email%20before%20paging',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "92ad61",
+        "hash": "20a8de9d",
+        "encoded": "rowsByTable.subscriptions%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "92ad61",
+        "hash": "7d4d34bc",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "92ad61",
+        "hash": "429d2359",
+        "encoded": "user_id:%20'user-subscriber',",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "92ad61",
+        "hash": "a44892f7",
+        "encoded": "status:%20'active',",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "92ad61",
+        "hash": "320f3eda",
+        "encoded": "plan_id:%20'7-days',",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "92ad61",
+        "hash": "ebc4afb3",
+        "encoded": "current_period_start:%20'2026-10-01T00:00:00.000Z',",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "92ad61",
+        "hash": "988018e7",
+        "encoded": "current_period_end:%20new%20Date(Date.now()%20+%2086400000).toISOString(),",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "92ad61",
+        "hash": "e95ee5e5",
+        "encoded": "cancel_at_period_end:%20false,",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "92ad61",
+        "hash": "00d9f4a7",
+        "encoded": "provider_customer_id:%20'cus_test',",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "92ad61",
+        "hash": "99c7da3d",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "92ad61",
+        "hash": "429f24bb",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "92ad61",
+        "hash": "92fff8e6",
+        "encoded": "const%20result%20=%20await%20getAdminUsers('PAID@EXAMPLE.COM',%20'subscribers',%201,%2010)",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "92ad61",
+        "hash": "42e78e1b",
+        "encoded": "expect(result.rows).toHaveLength(1)",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "92ad61",
+        "hash": "637b9350",
+        "encoded": "expect(result.rows%5B0%5D.email).toBe('paid@example.com')",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "92ad61",
+        "hash": "ce59aca5",
+        "encoded": "expect(result.total).toBe(1)",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "92ad61",
+        "hash": "f37695e7",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

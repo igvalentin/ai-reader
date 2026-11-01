@@ -1,0 +1,36 @@
+{
+  "docs/AUTH_BILLING_ADMIN.md": {
+    "filename": "AUTH_BILLING_ADMIN.md",
+    "path": "docs/AUTH_BILLING_ADMIN.md",
+    "version": "1.2",
+    "contextFile": "0813d2b1-context.json",
+    "chunks": {
+      "1441d7": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793536934,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "668ceaef"
+        },
+        "hash": "ab318853",
+        "messageId": "system_20299430-d5ec-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:42:14 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "77": {
+        "chunkId": "1441d7",
+        "hash": "d9d3b351",
+        "encoded": "Pentru%20utilizatorii%20anonimi%20se%20folose%C8%99te%20cookie-ul%20first-party%20semnat%20%60ai_reader_anon%60%20(valabil%20365%20de%20zile).%20%C3%8En%20tabele%20se%20p%C4%83streaz%C4%83%20hash-ul%20HMAC%20%C8%99i%20contoare/timestamp-uri:%20%C3%AEncerc%C4%83ri%20OCR,%20%C3%AEncerc%C4%83ri%20audio,%20genera%C8%9Bii%20audio%20reu%C8%99ite,%20prima/ultima%20activitate%20%C8%99i%20consumul%20lecturii%20gratuite.%20Metricile%20de%20attempt%20%C8%99i%20succes%20sunt%20distincte.%20Nu%20se%20stocheaz%C4%83%20text,%20imagini%20sau%20audio.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
