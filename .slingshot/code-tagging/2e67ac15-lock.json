@@ -58,666 +58,840 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:36:31 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6d59c4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573241,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "55f3e5c9",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:21 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "5a9af9": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573241,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "ea3946ba",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:21 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "89773d",
+        "chunkId": "5a9af9",
         "hash": "85222c6b",
         "encoded": "import%20%7B%20useEffect,%20useRef,%20useState,%20type%20FormEvent%20%7D%20from%20'react'",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "89773d",
+        "chunkId": "5a9af9",
         "hash": "d1ce1cfb",
         "encoded": "import%20%7B%20supabase%20%7D%20from%20'../../lib/supabaseClient'",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "742a59",
+        "chunkId": "5a9af9",
         "hash": "f624d3a3",
         "encoded": "import%20%7B%20isMagicLinkRateLimitError,%20sendMagicLink%20%7D%20from%20'../../lib/auth/authClient'",
         "prevChunkIds": []
       },
       "3": {
-        "chunkId": "742a59",
+        "chunkId": "5a9af9",
         "hash": "4cbdb036",
         "encoded": "import%20%7B%20AdminNavLink%20%7D%20from%20'./AdminNavLink'",
         "prevChunkIds": []
       },
       "4": {
-        "chunkId": "742a59",
+        "chunkId": "5a9af9",
         "hash": "c00d3fc7",
         "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
         "prevChunkIds": []
       },
-      "5": {
-        "chunkId": "89773d",
-        "hash": "e32cdff6",
-        "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
-        "prevChunkIds": []
-      },
-      "7": {
-        "chunkId": "89773d",
-        "hash": "a708ef85",
+      "6": {
+        "chunkId": "5a9af9",
+        "hash": "3a29abf3",
         "encoded": "const%20RESEND_COOLDOWN_SECONDS%20=%2060",
         "prevChunkIds": []
       },
+      "8": {
+        "chunkId": "5a9af9",
+        "hash": "39a6bc5c",
+        "encoded": "interface%20AuthPanelProps%20%7B",
+        "prevChunkIds": []
+      },
       "9": {
-        "chunkId": "89773d",
-        "hash": "d27cc2c8",
-        "encoded": "export%20function%20AuthPanel()%20%7B",
+        "chunkId": "5a9af9",
+        "hash": "564276c2",
+        "encoded": "onUserChange?:%20(email:%20string%20%7C%20null)%20=%3E%20void",
         "prevChunkIds": []
       },
       "10": {
-        "chunkId": "89773d",
-        "hash": "fde006f0",
-        "encoded": "const%20%5Bemail,%20setEmail%5D%20=%20useState('')",
-        "prevChunkIds": []
-      },
-      "11": {
-        "chunkId": "89773d",
-        "hash": "b3b309be",
-        "encoded": "const%20%5BuserEmail,%20setUserEmail%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
+        "chunkId": "5a9af9",
+        "hash": "c2f1edd6",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "12": {
-        "chunkId": "89773d",
-        "hash": "3cedcc61",
-        "encoded": "const%20%5Bmessage,%20setMessage%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
+        "chunkId": "5a9af9",
+        "hash": "8ed9f36a",
+        "encoded": "export%20function%20AuthPanel(%7B%20onUserChange%20%7D:%20AuthPanelProps%20=%20%7B%7D)%20%7B",
         "prevChunkIds": []
       },
       "13": {
         "chunkId": "89773d",
-        "hash": "434476f6",
-        "encoded": "const%20%5Bloading,%20setLoading%5D%20=%20useState(false)",
+        "hash": "76a39a63",
+        "encoded": "import%20%7B%20supabase%20%7D%20from%20'../../lib/supabaseClient'",
         "prevChunkIds": []
       },
       "14": {
-        "chunkId": "89773d",
-        "hash": "e9a0ad78",
-        "encoded": "const%20%5BcooldownSeconds,%20setCooldownSeconds%5D%20=%20useState(0)",
+        "chunkId": "742a59",
+        "hash": "ac7d2679",
+        "encoded": "import%20%7B%20isMagicLinkRateLimitError,%20sendMagicLink%20%7D%20from%20'../../lib/auth/authClient'",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "89773d",
-        "hash": "fbc69aa1",
-        "encoded": "const%20requestInFlight%20=%20useRef(false)",
+        "chunkId": "742a59",
+        "hash": "2b9ae291",
+        "encoded": "import%20%7B%20AdminNavLink%20%7D%20from%20'./AdminNavLink'",
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "89773d",
-        "hash": "fa47bd6e",
-        "encoded": "const%20coolingDown%20=%20cooldownSeconds%20%3E%200",
+        "chunkId": "742a59",
+        "hash": "609b97cf",
+        "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
         "prevChunkIds": []
       },
-      "18": {
+      "17": {
         "chunkId": "89773d",
-        "hash": "e22c6916",
-        "encoded": "useEffect(()%20=%3E%20%7B",
+        "hash": "c65b9dc5",
+        "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
         "prevChunkIds": []
       },
       "19": {
         "chunkId": "89773d",
-        "hash": "48b85a03",
-        "encoded": "void%20supabase.auth.getUser().then((%7B%20data%20%7D)%20=%3E%20setUserEmail(data.user?.email%20??%20null))",
-        "prevChunkIds": []
-      },
-      "20": {
-        "chunkId": "89773d",
-        "hash": "eb7da7a0",
-        "encoded": "const%20%7B%20data%20%7D%20=%20supabase.auth.onAuthStateChange((_event,%20session)%20=%3E",
+        "hash": "b726bff0",
+        "encoded": "const%20RESEND_COOLDOWN_SECONDS%20=%2060",
         "prevChunkIds": []
       },
       "21": {
         "chunkId": "89773d",
-        "hash": "4674adf8",
-        "encoded": "setUserEmail(session?.user?.email%20??%20null),",
+        "hash": "890140ad",
+        "encoded": "export%20function%20AuthPanel()%20%7B",
         "prevChunkIds": []
       },
       "22": {
         "chunkId": "89773d",
-        "hash": "cb5d9511",
-        "encoded": ")",
+        "hash": "99f429a5",
+        "encoded": "const%20%5Bemail,%20setEmail%5D%20=%20useState('')",
         "prevChunkIds": []
       },
       "23": {
         "chunkId": "89773d",
-        "hash": "7c3aa938",
-        "encoded": "return%20()%20=%3E%20data.subscription.unsubscribe()",
+        "hash": "a6d7df85",
+        "encoded": "const%20%5BuserEmail,%20setUserEmail%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
         "prevChunkIds": []
       },
       "24": {
         "chunkId": "89773d",
-        "hash": "7597d12a",
-        "encoded": "%7D,%20%5B%5D)",
+        "hash": "a5a25535",
+        "encoded": "const%20%5Bmessage,%20setMessage%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "89773d",
+        "hash": "1bc887c0",
+        "encoded": "const%20%5Bloading,%20setLoading%5D%20=%20useState(false)",
         "prevChunkIds": []
       },
       "26": {
         "chunkId": "89773d",
-        "hash": "e40ded0a",
-        "encoded": "useEffect(()%20=%3E%20%7B",
+        "hash": "96fcdf67",
+        "encoded": "const%20%5BcooldownSeconds,%20setCooldownSeconds%5D%20=%20useState(0)",
         "prevChunkIds": []
       },
       "27": {
         "chunkId": "89773d",
-        "hash": "f675e52c",
-        "encoded": "if%20(!coolingDown)%20return",
+        "hash": "436cb4b6",
+        "encoded": "const%20requestInFlight%20=%20useRef(false)",
         "prevChunkIds": []
       },
       "28": {
         "chunkId": "89773d",
-        "hash": "c99a2ba6",
-        "encoded": "const%20interval%20=%20window.setInterval(()%20=%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "29": {
-        "chunkId": "89773d",
-        "hash": "87dcf4d9",
-        "encoded": "setCooldownSeconds((remaining)%20=%3E%20Math.max(0,%20remaining%20-%201))",
+        "hash": "b7eb028b",
+        "encoded": "const%20coolingDown%20=%20cooldownSeconds%20%3E%200",
         "prevChunkIds": []
       },
       "30": {
         "chunkId": "89773d",
-        "hash": "4e32f259",
-        "encoded": "%7D,%201000)",
+        "hash": "71dc6424",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "31": {
-        "chunkId": "89773d",
-        "hash": "d7e6a522",
-        "encoded": "return%20()%20=%3E%20window.clearInterval(interval)",
+        "chunkId": "6d59c4",
+        "hash": "ff7e43ae",
+        "encoded": "const%20coolingDown%20=%20cooldownSeconds%20%3E%200",
         "prevChunkIds": []
       },
-      "32": {
-        "chunkId": "89773d",
-        "hash": "2afb8821",
-        "encoded": "%7D,%20%5BcoolingDown%5D)",
+      "33": {
+        "chunkId": "6d59c4",
+        "hash": "43341b25",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "34": {
-        "chunkId": "89773d",
-        "hash": "61ab0f7a",
-        "encoded": "const%20submit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
+        "chunkId": "6d59c4",
+        "hash": "80b0a37d",
+        "encoded": "void%20supabase.auth.getUser().then((%7B%20data%20%7D)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "35": {
-        "chunkId": "89773d",
-        "hash": "08a42693",
-        "encoded": "event.preventDefault()",
+        "chunkId": "6d59c4",
+        "hash": "005a6e65",
+        "encoded": "const%20nextEmail%20=%20data.user?.email%20??%20null",
         "prevChunkIds": []
       },
       "36": {
-        "chunkId": "89773d",
-        "hash": "09a2e107",
-        "encoded": "if%20(requestInFlight.current%20%7C%7C%20loading%20%7C%7C%20coolingDown)%20return",
+        "chunkId": "6d59c4",
+        "hash": "e5b96925",
+        "encoded": "setUserEmail(nextEmail)",
         "prevChunkIds": []
       },
       "37": {
-        "chunkId": "89773d",
-        "hash": "956980be",
-        "encoded": "if%20(!email.trim())%20%7B",
+        "chunkId": "6d59c4",
+        "hash": "d1ddfc09",
+        "encoded": "onUserChange?.(nextEmail)",
         "prevChunkIds": []
       },
       "38": {
-        "chunkId": "89773d",
-        "hash": "129d1774",
-        "encoded": "setMessage('Introdu%20adresa%20de%20email%20pentru%20a%20primi%20linkul%20de%20conectare.')",
+        "chunkId": "6d59c4",
+        "hash": "410641e8",
+        "encoded": "%7D)",
         "prevChunkIds": []
       },
       "39": {
-        "chunkId": "89773d",
-        "hash": "539a771a",
-        "encoded": "return",
+        "chunkId": "6d59c4",
+        "hash": "083a44b4",
+        "encoded": "const%20%7B%20data%20%7D%20=%20supabase.auth.onAuthStateChange((_event,%20session)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "89773d",
-        "hash": "792377b1",
-        "encoded": "%7D",
+        "chunkId": "6d59c4",
+        "hash": "8898ce7b",
+        "encoded": "const%20nextEmail%20=%20session?.user?.email%20??%20null",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "6d59c4",
+        "hash": "f84fa7d0",
+        "encoded": "setUserEmail(nextEmail)",
         "prevChunkIds": []
       },
       "42": {
-        "chunkId": "89773d",
-        "hash": "15cb3a99",
-        "encoded": "requestInFlight.current%20=%20true",
+        "chunkId": "6d59c4",
+        "hash": "ffce33c9",
+        "encoded": "onUserChange?.(nextEmail)",
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "89773d",
-        "hash": "711935bd",
-        "encoded": "setLoading(true)",
+        "chunkId": "6d59c4",
+        "hash": "693dfaa1",
+        "encoded": "%7D)",
         "prevChunkIds": []
       },
       "44": {
-        "chunkId": "89773d",
-        "hash": "a8c08ac5",
-        "encoded": "setMessage(null)",
+        "chunkId": "6d59c4",
+        "hash": "6bb3e698",
+        "encoded": "return%20()%20=%3E%20data.subscription.unsubscribe()",
         "prevChunkIds": []
       },
       "45": {
-        "chunkId": "89773d",
-        "hash": "f42648a5",
-        "encoded": "try%20%7B",
-        "prevChunkIds": []
-      },
-      "46": {
-        "chunkId": "89773d",
-        "hash": "0e842b90",
-        "encoded": "await%20sendMagicLink(email.trim())",
+        "chunkId": "6d59c4",
+        "hash": "5b3a95de",
+        "encoded": "%7D,%20%5BonUserChange%5D)",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "89773d",
-        "hash": "f9c0d4a1",
-        "encoded": "setCooldownSeconds(RESEND_COOLDOWN_SECONDS)",
+        "chunkId": "6d59c4",
+        "hash": "0ab3fcf4",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "48": {
         "chunkId": "89773d",
-        "hash": "88909397",
-        "encoded": "setMessage('Dac%C4%83%20emailul%20nu%20apare,%20verific%C4%83%20dosarul%20spam.%20Po%C8%9Bi%20cere%20un%20link%20nou%20dup%C4%83%20expirarea%20cronometrului.')",
+        "hash": "b907f368",
+        "encoded": "const%20%7B%20data%20%7D%20=%20supabase.auth.onAuthStateChange((_event,%20session)%20=%3E",
         "prevChunkIds": []
       },
       "49": {
         "chunkId": "89773d",
-        "hash": "7b6b6c53",
-        "encoded": "%7D%20catch%20(error)%20%7B",
+        "hash": "3cbb90b0",
+        "encoded": "setUserEmail(session?.user?.email%20??%20null),",
         "prevChunkIds": []
       },
       "50": {
         "chunkId": "89773d",
-        "hash": "8923eb61",
-        "encoded": "if%20(isMagicLinkRateLimitError(error))%20%7B",
+        "hash": "00f5570a",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "51": {
         "chunkId": "89773d",
-        "hash": "5c06c56a",
-        "encoded": "setCooldownSeconds(RESEND_COOLDOWN_SECONDS)",
+        "hash": "a969f62f",
+        "encoded": "return%20()%20=%3E%20data.subscription.unsubscribe()",
         "prevChunkIds": []
       },
       "52": {
         "chunkId": "89773d",
-        "hash": "5bbf408e",
-        "encoded": "setMessage('Supabase%20limiteaz%C4%83%20temporar%20trimiterea.%20A%C8%99teapt%C4%83%20cronometrul%20%C3%AEnainte%20s%C4%83%20retrimi%C8%9Bi%20linkul;%20verific%C4%83%20%C8%99i%20dosarul%20spam.')",
-        "prevChunkIds": []
-      },
-      "53": {
-        "chunkId": "89773d",
-        "hash": "80a51d02",
-        "encoded": "%7D%20else%20%7B",
+        "hash": "a762b978",
+        "encoded": "%7D,%20%5B%5D)",
         "prevChunkIds": []
       },
       "54": {
         "chunkId": "89773d",
-        "hash": "ed850f76",
-        "encoded": "setMessage('Linkul%20nu%20a%20putut%20fi%20trimis.%20Verific%C4%83%20adresa%20de%20email%20%C8%99i%20%C3%AEncearc%C4%83%20din%20nou%20peste%20c%C3%A2teva%20momente.')",
+        "hash": "727a09a9",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "55": {
         "chunkId": "89773d",
-        "hash": "2ef1d392",
-        "encoded": "%7D",
+        "hash": "d379ee51",
+        "encoded": "if%20(!coolingDown)%20return",
         "prevChunkIds": []
       },
       "56": {
         "chunkId": "89773d",
-        "hash": "492e74fd",
-        "encoded": "%7D%20finally%20%7B",
+        "hash": "c6db7d55",
+        "encoded": "const%20interval%20=%20window.setInterval(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "57": {
         "chunkId": "89773d",
-        "hash": "4f3714c4",
-        "encoded": "requestInFlight.current%20=%20false",
+        "hash": "b0bfd2ed",
+        "encoded": "setCooldownSeconds((remaining)%20=%3E%20Math.max(0,%20remaining%20-%201))",
         "prevChunkIds": []
       },
       "58": {
         "chunkId": "89773d",
-        "hash": "910f101b",
-        "encoded": "setLoading(false)",
+        "hash": "2687f9ec",
+        "encoded": "%7D,%201000)",
         "prevChunkIds": []
       },
       "59": {
         "chunkId": "89773d",
-        "hash": "309dd352",
-        "encoded": "%7D",
+        "hash": "3797950a",
+        "encoded": "return%20()%20=%3E%20window.clearInterval(interval)",
         "prevChunkIds": []
       },
       "60": {
         "chunkId": "89773d",
-        "hash": "42f7c135",
-        "encoded": "%7D",
+        "hash": "ca9fc2c6",
+        "encoded": "%7D,%20%5BcoolingDown%5D)",
         "prevChunkIds": []
       },
       "62": {
         "chunkId": "89773d",
-        "hash": "f8342ca9",
-        "encoded": "if%20(userEmail)%20%7B",
+        "hash": "8d921857",
+        "encoded": "const%20submit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "63": {
         "chunkId": "89773d",
-        "hash": "46745b04",
-        "encoded": "return%20(",
+        "hash": "58882013",
+        "encoded": "event.preventDefault()",
         "prevChunkIds": []
       },
       "64": {
         "chunkId": "89773d",
-        "hash": "76c6f37b",
-        "encoded": "%3Cdiv%20className=%22flex%20flex-wrap%20items-center%20justify-between%20gap-3%20rounded-lg%20border%20border-border%20bg-surface%20px-4%20py-3%20text-sm%22%3E",
+        "hash": "736f06fd",
+        "encoded": "if%20(requestInFlight.current%20%7C%7C%20loading%20%7C%7C%20coolingDown)%20return",
         "prevChunkIds": []
       },
       "65": {
         "chunkId": "89773d",
-        "hash": "b67b52c1",
-        "encoded": "%3Cspan%3E",
+        "hash": "1b4fe5b2",
+        "encoded": "if%20(!email.trim())%20%7B",
         "prevChunkIds": []
       },
       "66": {
         "chunkId": "89773d",
-        "hash": "c358c42f",
-        "encoded": "Autentificat%20ca%20%3Cstrong%3E%7BuserEmail%7D%3C/strong%3E",
+        "hash": "01b94d69",
+        "encoded": "setMessage('Introdu%20adresa%20de%20email%20pentru%20a%20primi%20linkul%20de%20conectare.')",
         "prevChunkIds": []
       },
       "67": {
         "chunkId": "89773d",
-        "hash": "aaf0d1ee",
-        "encoded": "%3C/span%3E",
+        "hash": "8c4bc1fd",
+        "encoded": "return",
         "prevChunkIds": []
       },
       "68": {
         "chunkId": "89773d",
-        "hash": "af7beab7",
-        "encoded": "%3CButton%20type=%22button%22%20variant=%22ghost%22%20onClick=%7B()%20=%3E%20void%20supabase.auth.signOut()%7D%3E",
-        "prevChunkIds": []
-      },
-      "69": {
-        "chunkId": "89773d",
-        "hash": "ea6ac1df",
-        "encoded": "Deconecteaz%C4%83-te",
+        "hash": "e4d82fa4",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "70": {
         "chunkId": "89773d",
-        "hash": "e6bf55e0",
-        "encoded": "%3C/Button%3E",
+        "hash": "747be3d4",
+        "encoded": "requestInFlight.current%20=%20true",
         "prevChunkIds": []
       },
       "71": {
         "chunkId": "89773d",
-        "hash": "5a943922",
-        "encoded": "%3C/div%3E",
+        "hash": "e478f9e5",
+        "encoded": "setLoading(true)",
         "prevChunkIds": []
       },
       "72": {
-        "chunkId": "ca6952",
-        "hash": "cb295563",
-        "encoded": "%3Cspan%3E",
+        "chunkId": "89773d",
+        "hash": "4ba3ee42",
+        "encoded": "setMessage(null)",
         "prevChunkIds": []
       },
       "73": {
-        "chunkId": "ca6952",
-        "hash": "bd9e4c6c",
-        "encoded": "Autentificat%20ca%20%3Cstrong%3E%7BuserEmail%7D%3C/strong%3E",
+        "chunkId": "89773d",
+        "hash": "34fd4d8b",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
       "74": {
-        "chunkId": "ca6952",
-        "hash": "88ce714e",
-        "encoded": "%3C/span%3E",
+        "chunkId": "89773d",
+        "hash": "edc3cabb",
+        "encoded": "await%20sendMagicLink(email.trim())",
         "prevChunkIds": []
       },
       "75": {
-        "chunkId": "ca6952",
-        "hash": "696914aa",
-        "encoded": "%3CAdminNavLink%20/%3E",
+        "chunkId": "89773d",
+        "hash": "ac81ab38",
+        "encoded": "setCooldownSeconds(RESEND_COOLDOWN_SECONDS)",
         "prevChunkIds": []
       },
       "76": {
-        "chunkId": "ca6952",
-        "hash": "bca089dd",
-        "encoded": "%3CButton%20type=%22button%22%20variant=%22ghost%22%20onClick=%7B()%20=%3E%20void%20supabase.auth.signOut()%7D%3E",
+        "chunkId": "89773d",
+        "hash": "45621de2",
+        "encoded": "setMessage('Dac%C4%83%20emailul%20nu%20apare,%20verific%C4%83%20dosarul%20spam.%20Po%C8%9Bi%20cere%20un%20link%20nou%20dup%C4%83%20expirarea%20cronometrului.')",
         "prevChunkIds": []
       },
       "77": {
         "chunkId": "89773d",
-        "hash": "20d59727",
-        "encoded": "%7D",
+        "hash": "545fa94e",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "89773d",
+        "hash": "1b879fd9",
+        "encoded": "if%20(isMagicLinkRateLimitError(error))%20%7B",
         "prevChunkIds": []
       },
       "79": {
         "chunkId": "89773d",
-        "hash": "e21e754f",
-        "encoded": "return%20(",
+        "hash": "2585766d",
+        "encoded": "setCooldownSeconds(RESEND_COOLDOWN_SECONDS)",
         "prevChunkIds": []
       },
       "80": {
         "chunkId": "89773d",
-        "hash": "132eeabd",
-        "encoded": "%3Cform",
+        "hash": "23893775",
+        "encoded": "setMessage('Supabase%20limiteaz%C4%83%20temporar%20trimiterea.%20A%C8%99teapt%C4%83%20cronometrul%20%C3%AEnainte%20s%C4%83%20retrimi%C8%9Bi%20linkul;%20verific%C4%83%20%C8%99i%20dosarul%20spam.')",
         "prevChunkIds": []
       },
       "81": {
         "chunkId": "89773d",
-        "hash": "896f70f2",
-        "encoded": "onSubmit=%7B(event)%20=%3E%20void%20submit(event)%7D",
+        "hash": "1bedf649",
+        "encoded": "%7D%20else%20%7B",
         "prevChunkIds": []
       },
       "82": {
         "chunkId": "89773d",
-        "hash": "5f9d2bac",
-        "encoded": "className=%22rounded-lg%20border%20border-border%20bg-surface%20p-4%22",
+        "hash": "5d085d64",
+        "encoded": "setMessage('Linkul%20nu%20a%20putut%20fi%20trimis.%20Verific%C4%83%20adresa%20de%20email%20%C8%99i%20%C3%AEncearc%C4%83%20din%20nou%20peste%20c%C3%A2teva%20momente.')",
         "prevChunkIds": []
       },
       "83": {
         "chunkId": "89773d",
-        "hash": "b94265bc",
-        "encoded": "%3E",
+        "hash": "e4b921c6",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "84": {
         "chunkId": "89773d",
-        "hash": "aa108d32",
-        "encoded": "%3Cp%20className=%22mb-3%20text-sm%20text-ink-muted%22%3E",
+        "hash": "0b8a9ee9",
+        "encoded": "%7D%20finally%20%7B",
         "prevChunkIds": []
       },
       "85": {
         "chunkId": "89773d",
-        "hash": "7c323e12",
-        "encoded": "Autentificarea%20este%20necesar%C4%83%20pentru%20abonament%20%C8%99i%20pentru%20a-l%20putea%20administra%20de%20pe%20orice%20dispozitiv.",
+        "hash": "6a4eb683",
+        "encoded": "requestInFlight.current%20=%20false",
         "prevChunkIds": []
       },
       "86": {
         "chunkId": "89773d",
-        "hash": "3fd9885a",
-        "encoded": "%3C/p%3E",
+        "hash": "b62dad90",
+        "encoded": "setLoading(false)",
         "prevChunkIds": []
       },
       "87": {
         "chunkId": "89773d",
-        "hash": "674c2d51",
-        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%20sm:flex-row%22%3E",
+        "hash": "f4ff50cd",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "88": {
         "chunkId": "89773d",
-        "hash": "cc7ed62e",
-        "encoded": "%3Clabel%20htmlFor=%22auth-email%22%20className=%22sr-only%22%3E",
-        "prevChunkIds": []
-      },
-      "89": {
-        "chunkId": "89773d",
-        "hash": "cf689bc5",
-        "encoded": "Adresa%20de%20email",
+        "hash": "726efa75",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "90": {
         "chunkId": "89773d",
-        "hash": "00074f7f",
-        "encoded": "%3C/label%3E",
+        "hash": "f0d87b0f",
+        "encoded": "if%20(userEmail)%20%7B",
         "prevChunkIds": []
       },
       "91": {
         "chunkId": "89773d",
-        "hash": "1c086f5a",
-        "encoded": "%3Cinput",
+        "hash": "e1d2e1e4",
+        "encoded": "return%20(",
         "prevChunkIds": []
       },
       "92": {
         "chunkId": "89773d",
-        "hash": "a599abd4",
-        "encoded": "id=%22auth-email%22",
+        "hash": "05b224d3",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-wrap%20items-center%20justify-between%20gap-3%20rounded-lg%20border%20border-border%20bg-surface%20px-4%20py-3%20text-sm%22%3E",
         "prevChunkIds": []
       },
       "93": {
         "chunkId": "89773d",
-        "hash": "e671a05c",
-        "encoded": "type=%22email%22",
+        "hash": "e5f41dd2",
+        "encoded": "%3Cspan%3E",
         "prevChunkIds": []
       },
       "94": {
         "chunkId": "89773d",
-        "hash": "24daa08b",
-        "encoded": "required",
+        "hash": "13f31909",
+        "encoded": "Autentificat%20ca%20%3Cstrong%3E%7BuserEmail%7D%3C/strong%3E",
         "prevChunkIds": []
       },
       "95": {
         "chunkId": "89773d",
-        "hash": "2cc9fafb",
-        "encoded": "autoComplete=%22email%22",
+        "hash": "cc66660b",
+        "encoded": "%3C/span%3E",
         "prevChunkIds": []
       },
       "96": {
         "chunkId": "89773d",
-        "hash": "e423b35a",
-        "encoded": "value=%7Bemail%7D",
+        "hash": "7dd5723f",
+        "encoded": "%3CButton%20type=%22button%22%20variant=%22ghost%22%20onClick=%7B()%20=%3E%20void%20supabase.auth.signOut()%7D%3E",
         "prevChunkIds": []
       },
       "97": {
         "chunkId": "89773d",
-        "hash": "065c558a",
-        "encoded": "onChange=%7B(event)%20=%3E%20setEmail(event.target.value)%7D",
+        "hash": "e51de32a",
+        "encoded": "Deconecteaz%C4%83-te",
         "prevChunkIds": []
       },
       "98": {
         "chunkId": "89773d",
-        "hash": "4c9b5f9a",
-        "encoded": "placeholder=%22email@exemplu.ro%22",
+        "hash": "51ade90d",
+        "encoded": "%3C/Button%3E",
         "prevChunkIds": []
       },
       "99": {
         "chunkId": "89773d",
-        "hash": "cc659c18",
-        "encoded": "className=%22min-w-0%20flex-1%20rounded-lg%20border%20border-border%20bg-paper%20px-3%20py-2.5%20text-ink%22",
+        "hash": "182897f5",
+        "encoded": "%3C/div%3E",
         "prevChunkIds": []
       },
       "100": {
-        "chunkId": "89773d",
-        "hash": "b5557100",
-        "encoded": "/%3E",
+        "chunkId": "ca6952",
+        "hash": "31a10a96",
+        "encoded": "%3Cspan%3E",
         "prevChunkIds": []
       },
       "101": {
-        "chunkId": "89773d",
-        "hash": "02c97cb4",
-        "encoded": "%3CButton%20type=%22submit%22%20variant=%22secondary%22%20disabled=%7Bloading%20%7C%7C%20coolingDown%7D%3E",
+        "chunkId": "ca6952",
+        "hash": "cb0f4bee",
+        "encoded": "Autentificat%20ca%20%3Cstrong%3E%7BuserEmail%7D%3C/strong%3E",
         "prevChunkIds": []
       },
       "102": {
-        "chunkId": "89773d",
-        "hash": "4dbd29b0",
-        "encoded": "%7Bloading",
+        "chunkId": "ca6952",
+        "hash": "dd351bca",
+        "encoded": "%3C/span%3E",
         "prevChunkIds": []
       },
       "103": {
-        "chunkId": "89773d",
-        "hash": "54e43a18",
-        "encoded": "?%20'Trimit%E2%80%A6'",
+        "chunkId": "ca6952",
+        "hash": "fa8ed31c",
+        "encoded": "%3CAdminNavLink%20/%3E",
         "prevChunkIds": []
       },
       "104": {
-        "chunkId": "89773d",
-        "hash": "7d9425af",
-        "encoded": ":%20coolingDown",
+        "chunkId": "ca6952",
+        "hash": "55f288aa",
+        "encoded": "%3CButton%20type=%22button%22%20variant=%22ghost%22%20onClick=%7B()%20=%3E%20void%20supabase.auth.signOut()%7D%3E",
         "prevChunkIds": []
       },
       "105": {
         "chunkId": "89773d",
-        "hash": "948894ad",
-        "encoded": "?%20%60Retrimite%20%C3%AEn%20$%7BcooldownSeconds%7D%20s%60",
-        "prevChunkIds": []
-      },
-      "106": {
-        "chunkId": "89773d",
-        "hash": "dbe2f0b2",
-        "encoded": ":%20'Prime%C8%99te%20link%20de%20conectare'%7D",
+        "hash": "c251d1dd",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "107": {
         "chunkId": "89773d",
-        "hash": "03a3ac51",
-        "encoded": "%3C/Button%3E",
+        "hash": "444c766b",
+        "encoded": "return%20(",
         "prevChunkIds": []
       },
       "108": {
         "chunkId": "89773d",
-        "hash": "8052e42b",
-        "encoded": "%3C/div%3E",
+        "hash": "72404556",
+        "encoded": "%3Cform",
         "prevChunkIds": []
       },
       "109": {
         "chunkId": "89773d",
-        "hash": "33be979d",
-        "encoded": "%7Bmessage%20?%20(",
+        "hash": "5b59064b",
+        "encoded": "onSubmit=%7B(event)%20=%3E%20void%20submit(event)%7D",
         "prevChunkIds": []
       },
       "110": {
         "chunkId": "89773d",
-        "hash": "afda0160",
-        "encoded": "%3Cp%20role=%22status%22%20aria-live=%22polite%22%20className=%22mt-2%20text-sm%20text-ink-muted%22%3E",
+        "hash": "5f0d07c7",
+        "encoded": "className=%22rounded-lg%20border%20border-border%20bg-surface%20p-4%22",
         "prevChunkIds": []
       },
       "111": {
         "chunkId": "89773d",
-        "hash": "61356ac5",
-        "encoded": "%7Bmessage%7D",
+        "hash": "dca10f80",
+        "encoded": "%3E",
         "prevChunkIds": []
       },
       "112": {
         "chunkId": "89773d",
-        "hash": "9a0d2f4a",
-        "encoded": "%7BcoolingDown%20?%20%60%20Mai%20a%C8%99teapt%C4%83%20$%7BcooldownSeconds%7D%20secunde.%60%20:%20''%7D",
+        "hash": "8202a8e1",
+        "encoded": "%3Cp%20className=%22mb-3%20text-sm%20text-ink-muted%22%3E",
         "prevChunkIds": []
       },
       "113": {
         "chunkId": "89773d",
-        "hash": "fe9e7b48",
-        "encoded": "%3C/p%3E",
+        "hash": "8d2dbdcf",
+        "encoded": "Autentificarea%20este%20necesar%C4%83%20pentru%20abonament%20%C8%99i%20pentru%20a-l%20putea%20administra%20de%20pe%20orice%20dispozitiv.",
         "prevChunkIds": []
       },
       "114": {
         "chunkId": "89773d",
-        "hash": "78c62b40",
-        "encoded": ")%20:%20null%7D",
+        "hash": "e80dd384",
+        "encoded": "%3C/p%3E",
         "prevChunkIds": []
       },
       "115": {
         "chunkId": "89773d",
-        "hash": "570da051",
-        "encoded": "%3C/form%3E",
+        "hash": "17724394",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%20sm:flex-row%22%3E",
         "prevChunkIds": []
       },
       "116": {
         "chunkId": "89773d",
-        "hash": "62fea089",
-        "encoded": ")",
+        "hash": "e6c8794c",
+        "encoded": "%3Clabel%20htmlFor=%22auth-email%22%20className=%22sr-only%22%3E",
         "prevChunkIds": []
       },
       "117": {
         "chunkId": "89773d",
-        "hash": "056477bc",
+        "hash": "b5671de5",
+        "encoded": "Adresa%20de%20email",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "89773d",
+        "hash": "ca20fc2b",
+        "encoded": "%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "89773d",
+        "hash": "0def7516",
+        "encoded": "%3Cinput",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "89773d",
+        "hash": "8d159d51",
+        "encoded": "id=%22auth-email%22",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "89773d",
+        "hash": "e73e51c1",
+        "encoded": "type=%22email%22",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "89773d",
+        "hash": "d0847e2d",
+        "encoded": "required",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "89773d",
+        "hash": "5f1aef96",
+        "encoded": "autoComplete=%22email%22",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "89773d",
+        "hash": "e56df0c8",
+        "encoded": "value=%7Bemail%7D",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "89773d",
+        "hash": "a2c7d892",
+        "encoded": "onChange=%7B(event)%20=%3E%20setEmail(event.target.value)%7D",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "89773d",
+        "hash": "eb9c4f19",
+        "encoded": "placeholder=%22email@exemplu.ro%22",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "89773d",
+        "hash": "51b9422d",
+        "encoded": "className=%22min-w-0%20flex-1%20rounded-lg%20border%20border-border%20bg-paper%20px-3%20py-2.5%20text-ink%22",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "89773d",
+        "hash": "9f2210e5",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "89773d",
+        "hash": "113c582d",
+        "encoded": "%3CButton%20type=%22submit%22%20variant=%22secondary%22%20disabled=%7Bloading%20%7C%7C%20coolingDown%7D%3E",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "89773d",
+        "hash": "bfa0030a",
+        "encoded": "%7Bloading",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "89773d",
+        "hash": "6564df8a",
+        "encoded": "?%20'Trimit%E2%80%A6'",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "89773d",
+        "hash": "1ac95e41",
+        "encoded": ":%20coolingDown",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "89773d",
+        "hash": "57889bbd",
+        "encoded": "?%20%60Retrimite%20%C3%AEn%20$%7BcooldownSeconds%7D%20s%60",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "89773d",
+        "hash": "b212ebcc",
+        "encoded": ":%20'Prime%C8%99te%20link%20de%20conectare'%7D",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "89773d",
+        "hash": "2ba0bfac",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "89773d",
+        "hash": "ce7890bc",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "89773d",
+        "hash": "38a90bfa",
+        "encoded": "%7Bmessage%20?%20(",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "89773d",
+        "hash": "82ae1c86",
+        "encoded": "%3Cp%20role=%22status%22%20aria-live=%22polite%22%20className=%22mt-2%20text-sm%20text-ink-muted%22%3E",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "89773d",
+        "hash": "3beea08e",
+        "encoded": "%7Bmessage%7D",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "89773d",
+        "hash": "7d9d3774",
+        "encoded": "%7BcoolingDown%20?%20%60%20Mai%20a%C8%99teapt%C4%83%20$%7BcooldownSeconds%7D%20secunde.%60%20:%20''%7D",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "89773d",
+        "hash": "bdd6f3ac",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "89773d",
+        "hash": "4ed41f08",
+        "encoded": ")%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "89773d",
+        "hash": "7fa1e29d",
+        "encoded": "%3C/form%3E",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "89773d",
+        "hash": "ca70e784",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "89773d",
+        "hash": "48cab207",
         "encoded": "%7D",
         "prevChunkIds": []
       }

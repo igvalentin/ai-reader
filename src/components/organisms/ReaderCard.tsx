@@ -1,4 +1,4 @@
-import { useCallback, useId, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useId, useState, type FormEvent } from 'react'
 import { requestSpeech, TtsRequestError } from '../../lib/tts/ttsClient'
 import { useAudioPlayer } from '../../lib/tts/useAudioPlayer'
 import { Button } from '../atoms/Button'
@@ -11,7 +11,12 @@ import { useImageOcr } from '../../lib/image/useImageOcr'
 
 const MAX_CHARACTERS = 4000
 
-export function ReaderCard() {
+interface ReaderCardProps {
+  onPaywallChange?: (required: boolean) => void
+  subscriptionActive?: boolean
+}
+
+export function ReaderCard({ onPaywallChange, subscriptionActive = false }: ReaderCardProps = {}) {
   const [text, setText] = useState('')
   const [language, setLanguage] = useState('auto')
   const [error, setError] = useState<string | null>(null)
@@ -37,6 +42,10 @@ export function ReaderCard() {
   } = useImageOcr({ onTextExtracted: handleTextExtracted })
   const characterCount = text.length
   const isOverLimit = characterCount > MAX_CHARACTERS
+
+  useEffect(() => {
+    onPaywallChange?.(showPaywall)
+  }, [onPaywallChange, showPaywall])
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -80,31 +89,30 @@ export function ReaderCard() {
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="flex flex-col gap-6 rounded-2xl border border-border bg-surface p-5 shadow-sm sm:p-8"
+      className="flex flex-col gap-5 rounded-2xl border border-border bg-surface p-4 shadow-sm sm:gap-6 sm:p-7"
     >
       <FreeTrialNotice />
-      {showPaywall ? <PaywallNotice /> : null}
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor={textareaId} className="text-sm font-medium text-ink">
-          Textul tău
+      {showPaywall && !subscriptionActive ? <PaywallNotice /> : null}
+      <div className="flex flex-col gap-2">
+        <label htmlFor={textareaId} className="text-base font-semibold text-ink">
+          Lipește sau scrie textul
         </label>
         <textarea
           id={textareaId}
           name="text"
-          rows={8}
+          rows={6}
           value={text}
           onChange={(event) => {
             setText(event.target.value)
             if (error) setError(null)
             setTtsError(null)
-            setShowPaywall(false)
           }}
           placeholder="Scrie sau lipește aici textul pe care vrei să îl asculți…"
           aria-invalid={Boolean(error)}
           aria-describedby={error ? errorId : undefined}
-          className="min-h-40 w-full resize-y rounded-lg border border-border bg-paper px-3 py-2.5 text-ink placeholder:text-ink-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+          className="min-h-36 w-full resize-y rounded-xl border border-border bg-paper px-4 py-3 text-base leading-relaxed text-ink placeholder:text-ink-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
         />
-        <div className="flex items-center justify-between text-xs text-ink-muted">
+        <div className="flex items-center justify-between text-sm text-ink-muted">
           <span>
             {text.length === 0 ? 'Niciun text adăugat încă.' : `${characterCount} caractere`}
           </span>
@@ -116,6 +124,16 @@ export function ReaderCard() {
           <p id={errorId} role="alert" className="text-sm font-medium text-danger">
             {error}
           </p>
+        ) : null}
+        {text.trim() ? (
+          <details className="rounded-lg bg-paper/70 px-3 py-2">
+            <summary className="flex min-h-11 cursor-pointer items-center text-sm font-medium text-teal">
+              Previzualizează textul pregătit
+            </summary>
+            <pre className="max-h-40 overflow-auto whitespace-pre-wrap break-words pb-2 text-sm leading-relaxed text-ink">
+              {text}
+            </pre>
+          </details>
         ) : null}
       </div>
       <ImageUploadControl
@@ -132,13 +150,22 @@ export function ReaderCard() {
         <Button
           type="submit"
           variant="primary"
-          disabled={isSubmitting || audioState.status === 'loading' || isOverLimit || !text.trim()}
-          className="w-full sm:w-auto"
+          disabled={
+            isSubmitting ||
+            audioState.status === 'loading' ||
+            isOverLimit ||
+            !text.trim() ||
+            (showPaywall && !subscriptionActive)
+          }
+          aria-busy={isSubmitting || audioState.status === 'loading'}
+          className="min-h-14 w-full text-lg sm:w-auto"
         >
           <span aria-hidden="true">🔊</span>
           {isSubmitting || audioState.status === 'loading'
             ? 'Generez audio…'
-            : 'Citește cu voce tare'}
+            : showPaywall && !subscriptionActive
+              ? 'Abonament necesar pentru a continua'
+              : 'Citește cu voce tare'}
         </Button>
         {ttsError ? (
           <p role="alert" className="text-sm font-medium text-danger">
@@ -149,12 +176,19 @@ export function ReaderCard() {
           Prima lectură reușită este gratuită. După aceea, este necesar un abonament.
         </p>
       </div>
-      <AudioPlayer
-        state={audioState}
-        onToggle={() => void toggle()}
-        onSeek={seek}
-        onSpeedChange={setPlaybackRate}
-      />
+      {audioState.status !== 'idle' ? (
+        <section aria-labelledby="audio-heading" className="rounded-2xl bg-teal-soft/60 p-4 sm:p-5">
+          <h2 id="audio-heading" className="mb-3 font-display text-xl text-ink">
+            Redarea audio
+          </h2>
+          <AudioPlayer
+            state={audioState}
+            onToggle={() => void toggle()}
+            onSeek={seek}
+            onSpeedChange={setPlaybackRate}
+          />
+        </section>
+      ) : null}
     </form>
   )
 }

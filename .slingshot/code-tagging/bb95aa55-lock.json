@@ -94,630 +94,1638 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/1/2026, 2:12:22 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "d9146a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "8e690423",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "875ae3": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "d7dc2129",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e716d4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "9f122a34",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "076c69": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "7e30a58f",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "68b3a5": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "7df09944",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "5fd8c2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "46985181",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ac7c61": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "39016d47",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "7d2720": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "8346883f",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "d717f2": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "a394a1c0",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a4c50a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "547a2ab0",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "48f9f0": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "d47b6281",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a6ecda": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "f69b326a",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "9c2bde": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "25fb9f99",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1b941d": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "9aee4a7c",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "18b6dd": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793604580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "1a39f1c5",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 9:29:40 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "33b7d9": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793604580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "f69b326a",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 9:29:40 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "7cf325",
-        "hash": "18622df2",
-        "encoded": "import%20%7B%20useCallback,%20useId,%20useState,%20type%20FormEvent%20%7D%20from%20'react'",
+        "chunkId": "1b941d",
+        "hash": "2be98009",
+        "encoded": "import%20%7B%20useCallback,%20useEffect,%20useId,%20useState,%20type%20FormEvent%20%7D%20from%20'react'",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "7cf325",
+        "chunkId": "1b941d",
         "hash": "f791bd17",
         "encoded": "import%20%7B%20requestSpeech,%20TtsRequestError%20%7D%20from%20'../../lib/tts/ttsClient'",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "7cf325",
+        "chunkId": "1b941d",
         "hash": "cb4040f8",
         "encoded": "import%20%7B%20useAudioPlayer%20%7D%20from%20'../../lib/tts/useAudioPlayer'",
         "prevChunkIds": []
       },
       "3": {
-        "chunkId": "7cf325",
+        "chunkId": "1b941d",
         "hash": "94773fea",
         "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
         "prevChunkIds": []
       },
       "4": {
         "chunkId": "7cf325",
-        "hash": "143f97f3",
-        "encoded": "import%20%7B%20AudioPlayer%20%7D%20from%20'../molecules/AudioPlayer'",
+        "hash": "c1bbb4f8",
+        "encoded": "import%20%7B%20requestSpeech,%20TtsRequestError%20%7D%20from%20'../../lib/tts/ttsClient'",
         "prevChunkIds": []
       },
       "5": {
         "chunkId": "7cf325",
-        "hash": "05feb40a",
-        "encoded": "import%20%7B%20FreeTrialNotice%20%7D%20from%20'../molecules/FreeTrialNotice'",
+        "hash": "755473eb",
+        "encoded": "import%20%7B%20useAudioPlayer%20%7D%20from%20'../../lib/tts/useAudioPlayer'",
         "prevChunkIds": []
       },
       "6": {
         "chunkId": "7cf325",
-        "hash": "40df52ce",
-        "encoded": "import%20%7B%20PaywallNotice%20%7D%20from%20'../molecules/PaywallNotice'",
+        "hash": "0dea4009",
+        "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
         "prevChunkIds": []
       },
       "7": {
         "chunkId": "7cf325",
-        "hash": "393fda2e",
-        "encoded": "import%20%7B%20ImageUploadControl%20%7D%20from%20'../molecules/ImageUploadControl'",
+        "hash": "0b6feea2",
+        "encoded": "import%20%7B%20AudioPlayer%20%7D%20from%20'../molecules/AudioPlayer'",
         "prevChunkIds": []
       },
       "8": {
         "chunkId": "7cf325",
-        "hash": "8c6fd818",
-        "encoded": "import%20%7B%20LanguageSelector%20%7D%20from%20'../molecules/LanguageSelector'",
+        "hash": "aabc14b5",
+        "encoded": "import%20%7B%20FreeTrialNotice%20%7D%20from%20'../molecules/FreeTrialNotice'",
         "prevChunkIds": []
       },
       "9": {
         "chunkId": "7cf325",
-        "hash": "b1773663",
-        "encoded": "import%20%7B%20useImageOcr%20%7D%20from%20'../../lib/image/useImageOcr'",
+        "hash": "18ad49f8",
+        "encoded": "import%20%7B%20PaywallNotice%20%7D%20from%20'../molecules/PaywallNotice'",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "7cf325",
+        "hash": "9c0367e4",
+        "encoded": "import%20%7B%20ImageUploadControl%20%7D%20from%20'../molecules/ImageUploadControl'",
         "prevChunkIds": []
       },
       "11": {
         "chunkId": "7cf325",
-        "hash": "6cad8951",
-        "encoded": "const%20MAX_CHARACTERS%20=%204000",
+        "hash": "38522a71",
+        "encoded": "import%20%7B%20LanguageSelector%20%7D%20from%20'../molecules/LanguageSelector'",
         "prevChunkIds": []
       },
-      "13": {
+      "12": {
         "chunkId": "7cf325",
-        "hash": "be82e269",
-        "encoded": "export%20function%20ReaderCard()%20%7B",
+        "hash": "ee7c95b0",
+        "encoded": "import%20%7B%20useImageOcr%20%7D%20from%20'../../lib/image/useImageOcr'",
         "prevChunkIds": []
       },
       "14": {
-        "chunkId": "86ca4f",
-        "hash": "01c312d3",
-        "encoded": "const%20%5Btext,%20setText%5D%20=%20useState('')",
-        "prevChunkIds": []
-      },
-      "15": {
-        "chunkId": "86ca4f",
-        "hash": "5031b2ca",
-        "encoded": "const%20%5Blanguage,%20setLanguage%5D%20=%20useState('auto')",
+        "chunkId": "9c2bde",
+        "hash": "772558bf",
+        "encoded": "const%20MAX_CHARACTERS%20=%204000",
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "86ca4f",
-        "hash": "c664ad90",
-        "encoded": "const%20%5Berror,%20setError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
+        "chunkId": "9c2bde",
+        "hash": "3e6bdde6",
+        "encoded": "interface%20ReaderCardProps%20%7B",
         "prevChunkIds": []
       },
       "17": {
-        "chunkId": "86ca4f",
-        "hash": "459f61f0",
-        "encoded": "const%20%5BttsError,%20setTtsError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
+        "chunkId": "9c2bde",
+        "hash": "6184e705",
+        "encoded": "onPaywallChange?:%20(required:%20boolean)%20=%3E%20void",
         "prevChunkIds": []
       },
       "18": {
-        "chunkId": "86ca4f",
-        "hash": "524ecd79",
-        "encoded": "const%20%5BisSubmitting,%20setIsSubmitting%5D%20=%20useState(false)",
-        "prevChunkIds": []
-      },
-      "19": {
-        "chunkId": "86ca4f",
-        "hash": "b2e3c43c",
-        "encoded": "const%20%5BshowPaywall,%20setShowPaywall%5D%20=%20useState(false)",
+        "chunkId": "9c2bde",
+        "hash": "ee20bc2a",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "20": {
-        "chunkId": "86ca4f",
-        "hash": "697a86f5",
-        "encoded": "const%20textareaId%20=%20useId()",
+        "chunkId": "9c2bde",
+        "hash": "766a73a7",
+        "encoded": "export%20function%20ReaderCard(%7B%20onPaywallChange%20%7D:%20ReaderCardProps%20=%20%7B%7D)%20%7B",
         "prevChunkIds": []
       },
       "21": {
-        "chunkId": "7cf325",
-        "hash": "1dbc9244",
-        "encoded": "const%20%5Blanguage,%20setLanguage%5D%20=%20useState('auto')",
+        "chunkId": "9c2bde",
+        "hash": "5a5c52cb",
+        "encoded": "const%20%5Btext,%20setText%5D%20=%20useState('')",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "7cf325",
-        "hash": "22c51b32",
-        "encoded": "const%20%5Berror,%20setError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
-        "prevChunkIds": []
-      },
-      "23": {
-        "chunkId": "7cf325",
-        "hash": "eac0a5ad",
-        "encoded": "const%20%5BshowPaywall,%20setShowPaywall%5D%20=%20useState(false)",
+        "chunkId": "9c2bde",
+        "hash": "0828b403",
+        "encoded": "const%20%5Blanguage,%20setLanguage%5D%20=%20useState('auto')",
         "prevChunkIds": []
       },
       "24": {
-        "chunkId": "7cf325",
-        "hash": "98fb940f",
-        "encoded": "const%20textareaId%20=%20useId()",
+        "chunkId": "076c69",
+        "hash": "75f84db8",
+        "encoded": "interface%20ReaderCardProps%20%7B",
         "prevChunkIds": []
       },
       "25": {
-        "chunkId": "7cf325",
-        "hash": "afb7705b",
-        "encoded": "const%20errorId%20=%20useId()",
+        "chunkId": "076c69",
+        "hash": "53dd808f",
+        "encoded": "onPaywallChange?:%20(required:%20boolean)%20=%3E%20void",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "7cf325",
-        "hash": "04651cfd",
-        "encoded": "const%20%7B%20state:%20audioState,%20loadChunks,%20toggle,%20seek,%20setPlaybackRate%20%7D%20=%20useAudioPlayer()",
+        "chunkId": "076c69",
+        "hash": "4e01d0fc",
+        "encoded": "subscriptionActive?:%20boolean",
         "prevChunkIds": []
       },
-      "28": {
-        "chunkId": "7cf325",
-        "hash": "89568008",
-        "encoded": "const%20handleTextExtracted%20=%20useCallback((extractedText:%20string)%20=%3E%20%7B",
+      "27": {
+        "chunkId": "076c69",
+        "hash": "a7947416",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "29": {
-        "chunkId": "7cf325",
-        "hash": "09f9076f",
-        "encoded": "setText((current)%20=%3E%20current.trim()%20?%20%60$%7Bcurrent.trim()%7D%5Cn%5Cn$%7BextractedText%7D%60%20:%20extractedText)",
+        "chunkId": "076c69",
+        "hash": "9a24fd47",
+        "encoded": "export%20function%20ReaderCard(%7B%20onPaywallChange,%20subscriptionActive%20=%20false%20%7D:%20ReaderCardProps%20=%20%7B%7D)%20%7B",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "7cf325",
-        "hash": "6e4b9636",
-        "encoded": "setError(null)",
+        "chunkId": "86ca4f",
+        "hash": "c7f5d6c7",
+        "encoded": "const%20%5Btext,%20setText%5D%20=%20useState('')",
         "prevChunkIds": []
       },
       "31": {
-        "chunkId": "7cf325",
-        "hash": "e09d3d95",
-        "encoded": "%7D,%20%5B%5D)",
+        "chunkId": "86ca4f",
+        "hash": "07ec87bf",
+        "encoded": "const%20%5Blanguage,%20setLanguage%5D%20=%20useState('auto')",
         "prevChunkIds": []
       },
       "32": {
-        "chunkId": "7cf325",
-        "hash": "b33611f5",
-        "encoded": "const%20%7B%20previewUrl,%20status:%20ocrStatus,%20errorMessage:%20ocrErrorMessage,%20uploadProgress,%20selectFile,%20removeImage,%20startOcr%20%7D%20=%20useImageOcr(%7B%20onTextExtracted:%20handleTextExtracted%20%7D)",
+        "chunkId": "86ca4f",
+        "hash": "858d1725",
+        "encoded": "const%20%5Berror,%20setError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
         "prevChunkIds": []
       },
       "33": {
-        "chunkId": "7cf325",
-        "hash": "901ebf3b",
-        "encoded": "const%20characterCount%20=%20text.length",
+        "chunkId": "86ca4f",
+        "hash": "e992b7f0",
+        "encoded": "const%20%5BttsError,%20setTtsError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
         "prevChunkIds": []
       },
       "34": {
-        "chunkId": "7cf325",
-        "hash": "fcc01f7a",
-        "encoded": "const%20isOverLimit%20=%20characterCount%20%3E%20MAX_CHARACTERS",
+        "chunkId": "86ca4f",
+        "hash": "93b90f1b",
+        "encoded": "const%20%5BisSubmitting,%20setIsSubmitting%5D%20=%20useState(false)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "86ca4f",
+        "hash": "363a39ae",
+        "encoded": "const%20%5BshowPaywall,%20setShowPaywall%5D%20=%20useState(false)",
         "prevChunkIds": []
       },
       "36": {
-        "chunkId": "7cf325",
-        "hash": "6e2d5eea",
-        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
+        "chunkId": "86ca4f",
+        "hash": "3dc0e773",
+        "encoded": "const%20textareaId%20=%20useId()",
         "prevChunkIds": []
       },
       "37": {
         "chunkId": "7cf325",
-        "hash": "b5fb8ac8",
-        "encoded": "event.preventDefault()",
+        "hash": "c6107950",
+        "encoded": "const%20%5Blanguage,%20setLanguage%5D%20=%20useState('auto')",
         "prevChunkIds": []
       },
       "38": {
-        "chunkId": "83bf73",
-        "hash": "0d090153",
-        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
+        "chunkId": "7cf325",
+        "hash": "7990f6cf",
+        "encoded": "const%20%5Berror,%20setError%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
         "prevChunkIds": []
       },
       "39": {
-        "chunkId": "83bf73",
-        "hash": "f8bd5df3",
-        "encoded": "event.preventDefault()",
+        "chunkId": "7cf325",
+        "hash": "22954762",
+        "encoded": "const%20%5BshowPaywall,%20setShowPaywall%5D%20=%20useState(false)",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "83bf73",
-        "hash": "2e762ec3",
-        "encoded": "if%20(!text.trim())%20%7B",
+        "chunkId": "7cf325",
+        "hash": "d7eb1912",
+        "encoded": "const%20textareaId%20=%20useId()",
         "prevChunkIds": []
       },
       "41": {
-        "chunkId": "83bf73",
-        "hash": "c40a39aa",
-        "encoded": "setError('Adaug%C4%83%20un%20text%20sau%20o%20imagine%20pentru%20a%20%C3%AEncepe%20lectura.')",
+        "chunkId": "7cf325",
+        "hash": "d8b0ad2d",
+        "encoded": "const%20errorId%20=%20useId()",
         "prevChunkIds": []
       },
       "42": {
-        "chunkId": "83bf73",
-        "hash": "f3e1a0fd",
-        "encoded": "return",
+        "chunkId": "33b7d9",
+        "hash": "bbed12ff",
+        "encoded": "const%20characterCount%20=%20text.length",
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "83bf73",
-        "hash": "d6071ac7",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "44": {
-        "chunkId": "83bf73",
-        "hash": "b3a42084",
-        "encoded": "if%20(isOverLimit)%20%7B",
+        "chunkId": "33b7d9",
+        "hash": "9e83a424",
+        "encoded": "const%20isOverLimit%20=%20characterCount%20%3E%20MAX_CHARACTERS",
         "prevChunkIds": []
       },
       "45": {
-        "chunkId": "83bf73",
-        "hash": "09cff06f",
-        "encoded": "setError(%60Textul%20dep%C4%83%C8%99e%C8%99te%20limita%20de%20$%7BMAX_CHARACTERS%7D%20de%20caractere.%60)",
+        "chunkId": "33b7d9",
+        "hash": "f74346e1",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "46": {
-        "chunkId": "83bf73",
-        "hash": "74d95ded",
-        "encoded": "return",
+        "chunkId": "33b7d9",
+        "hash": "6c22262e",
+        "encoded": "onPaywallChange?.(showPaywall)",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "83bf73",
-        "hash": "57c5213d",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "48": {
-        "chunkId": "83bf73",
-        "hash": "db3f683b",
-        "encoded": "setError(null)",
+        "chunkId": "33b7d9",
+        "hash": "6c5e5935",
+        "encoded": "%7D,%20%5BonPaywallChange,%20showPaywall%5D)",
         "prevChunkIds": []
       },
       "49": {
-        "chunkId": "83bf73",
-        "hash": "6a614f3c",
-        "encoded": "setTtsError(null)",
+        "chunkId": "33b7d9",
+        "hash": "316ff86e",
+        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "50": {
-        "chunkId": "83bf73",
-        "hash": "a5cb5690",
-        "encoded": "setShowPaywall(false)",
-        "prevChunkIds": []
-      },
-      "51": {
-        "chunkId": "83bf73",
-        "hash": "2a11a711",
-        "encoded": "setIsSubmitting(true)",
+        "chunkId": "33b7d9",
+        "hash": "08243759",
+        "encoded": "event.preventDefault()",
         "prevChunkIds": []
       },
       "52": {
-        "chunkId": "83bf73",
-        "hash": "aaf8f6a1",
-        "encoded": "try%20%7B",
+        "chunkId": "7cf325",
+        "hash": "8bbf48be",
+        "encoded": "const%20handleTextExtracted%20=%20useCallback((extractedText:%20string)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "53": {
-        "chunkId": "83bf73",
-        "hash": "8652c7de",
-        "encoded": "const%20response%20=%20await%20requestSpeech(text,%20language%20===%20'auto'%20?%20''%20:%20language)",
+        "chunkId": "7cf325",
+        "hash": "34f82c04",
+        "encoded": "setText((current)%20=%3E%20current.trim()%20?%20%60$%7Bcurrent.trim()%7D%5Cn%5Cn$%7BextractedText%7D%60%20:%20extractedText)",
         "prevChunkIds": []
       },
       "54": {
-        "chunkId": "83bf73",
-        "hash": "723b2c2a",
-        "encoded": "await%20loadChunks(response.chunks,%20response.audioContentType)",
+        "chunkId": "7cf325",
+        "hash": "3d219716",
+        "encoded": "setError(null)",
         "prevChunkIds": []
       },
       "55": {
-        "chunkId": "83bf73",
-        "hash": "3313f9c5",
-        "encoded": "%7D%20catch%20(requestError)%20%7B",
+        "chunkId": "7cf325",
+        "hash": "90547ef8",
+        "encoded": "%7D,%20%5B%5D)",
         "prevChunkIds": []
       },
       "56": {
-        "chunkId": "83bf73",
-        "hash": "c50626f3",
-        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B",
+        "chunkId": "7cf325",
+        "hash": "2f3310c6",
+        "encoded": "const%20%7B%20previewUrl,%20status:%20ocrStatus,%20errorMessage:%20ocrErrorMessage,%20uploadProgress,%20selectFile,%20removeImage,%20startOcr%20%7D%20=%20useImageOcr(%7B%20onTextExtracted:%20handleTextExtracted%20%7D)",
         "prevChunkIds": []
       },
       "57": {
-        "chunkId": "e1e694",
-        "hash": "c55b482c",
-        "encoded": "%7D%20catch%20(requestError)%20%7B",
+        "chunkId": "7cf325",
+        "hash": "a2b15dc9",
+        "encoded": "const%20characterCount%20=%20text.length",
         "prevChunkIds": []
       },
       "58": {
-        "chunkId": "e1e694",
-        "hash": "61f1ade3",
-        "encoded": "if%20(",
-        "prevChunkIds": []
-      },
-      "59": {
-        "chunkId": "e1e694",
-        "hash": "7dc92165",
-        "encoded": "requestError%20instanceof%20TtsRequestError%20&&",
+        "chunkId": "7cf325",
+        "hash": "211998f0",
+        "encoded": "const%20isOverLimit%20=%20characterCount%20%3E%20MAX_CHARACTERS",
         "prevChunkIds": []
       },
       "60": {
-        "chunkId": "e1e694",
-        "hash": "aea2db55",
-        "encoded": "(requestError.code%20===%20'SUBSCRIPTION_REQUIRED'%20%7C%7C%20requestError.code%20===%20'PAYWALL')",
+        "chunkId": "a6ecda",
+        "hash": "72be1081",
+        "encoded": "const%20characterCount%20=%20text.length",
         "prevChunkIds": []
       },
       "61": {
-        "chunkId": "e1e694",
-        "hash": "3079fd3f",
-        "encoded": ")%20%7B",
-        "prevChunkIds": []
-      },
-      "62": {
-        "chunkId": "e1e694",
-        "hash": "da24a463",
-        "encoded": "setShowPaywall(true)",
+        "chunkId": "a6ecda",
+        "hash": "3246c858",
+        "encoded": "const%20isOverLimit%20=%20characterCount%20%3E%20MAX_CHARACTERS",
         "prevChunkIds": []
       },
       "63": {
-        "chunkId": "e1e694",
-        "hash": "833d117a",
-        "encoded": "return",
+        "chunkId": "a6ecda",
+        "hash": "80917193",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "64": {
-        "chunkId": "e1e694",
-        "hash": "48dc6fe2",
-        "encoded": "%7D",
+        "chunkId": "a6ecda",
+        "hash": "127e3820",
+        "encoded": "onPaywallChange?.(showPaywall)",
         "prevChunkIds": []
       },
       "65": {
-        "chunkId": "e1e694",
-        "hash": "cccc593f",
-        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'AUTHENTICATION_REQUIRED')%20%7B",
-        "prevChunkIds": []
-      },
-      "66": {
-        "chunkId": "e1e694",
-        "hash": "58da2f9e",
-        "encoded": "setTtsError('Sesiunea%20a%20expirat.%20Cere%20un%20link%20de%20conectare%20nou%20%C8%99i%20autentific%C4%83-te%20din%20nou.')",
+        "chunkId": "a6ecda",
+        "hash": "93c617f2",
+        "encoded": "%7D,%20%5BonPaywallChange,%20showPaywall%5D)",
         "prevChunkIds": []
       },
       "67": {
-        "chunkId": "e1e694",
-        "hash": "8c4bc1fd",
-        "encoded": "return",
+        "chunkId": "a6ecda",
+        "hash": "ac77f46a",
+        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "68": {
-        "chunkId": "e1e694",
-        "hash": "e4d82fa4",
-        "encoded": "%7D",
+        "chunkId": "a6ecda",
+        "hash": "82e9c06b",
+        "encoded": "event.preventDefault()",
         "prevChunkIds": []
       },
       "69": {
-        "chunkId": "e1e694",
-        "hash": "002fe9ea",
-        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "chunkId": "7cf325",
+        "hash": "be7466c5",
+        "encoded": "event.preventDefault()",
         "prevChunkIds": []
       },
       "70": {
-        "chunkId": "e1e694",
-        "hash": "b0a23c43",
-        "encoded": "%7D%20finally%20%7B",
+        "chunkId": "83bf73",
+        "hash": "a92f5ec6",
+        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "147": {
+      "71": {
         "chunkId": "83bf73",
-        "hash": "76fef3f2",
+        "hash": "85827349",
+        "encoded": "event.preventDefault()",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "83bf73",
+        "hash": "d507076a",
+        "encoded": "if%20(!text.trim())%20%7B",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "83bf73",
+        "hash": "209abc96",
+        "encoded": "setError('Adaug%C4%83%20un%20text%20sau%20o%20imagine%20pentru%20a%20%C3%AEncepe%20lectura.')",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "83bf73",
+        "hash": "538c7448",
         "encoded": "return",
         "prevChunkIds": []
       },
-      "148": {
+      "75": {
         "chunkId": "83bf73",
-        "hash": "a6adb000",
+        "hash": "5250e31e",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "149": {
+      "76": {
         "chunkId": "83bf73",
-        "hash": "32797d69",
-        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "hash": "e525effd",
+        "encoded": "if%20(isOverLimit)%20%7B",
         "prevChunkIds": []
       },
-      "150": {
-        "chunkId": "83bf73",
-        "hash": "b85d1b20",
-        "encoded": "%7D%20finally%20%7B",
+      "77": {
+        "chunkId": "e716d4",
+        "hash": "f7a469bc",
+        "encoded": "useEffect(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "151": {
-        "chunkId": "83bf73",
-        "hash": "2ee25644",
-        "encoded": "setIsSubmitting(false)",
+      "78": {
+        "chunkId": "e716d4",
+        "hash": "bb951953",
+        "encoded": "onPaywallChange?.(showPaywall)",
         "prevChunkIds": []
       },
-      "152": {
+      "79": {
+        "chunkId": "e716d4",
+        "hash": "151c08b5",
+        "encoded": "%7D,%20%5BonPaywallChange,%20showPaywall%5D)",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "e716d4",
+        "hash": "642b16b5",
+        "encoded": "useEffect(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "e716d4",
+        "hash": "df902db4",
+        "encoded": "if%20(subscriptionActive)%20setShowPaywall(false)",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "e716d4",
+        "hash": "c097ba9b",
+        "encoded": "%7D,%20%5BsubscriptionActive%5D)",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "e716d4",
+        "hash": "85eb03a3",
+        "encoded": "const%20handleSubmit%20=%20async%20(event:%20FormEvent%3CHTMLFormElement%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "86": {
         "chunkId": "83bf73",
-        "hash": "bbf48fdf",
+        "hash": "126bc23c",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "83bf73",
+        "hash": "f4ff50cd",
         "encoded": "%7D",
         "prevChunkIds": []
       },
-      "153": {
+      "88": {
         "chunkId": "83bf73",
-        "hash": "1dd7a3a6",
-        "encoded": "%7D",
+        "hash": "5217fc75",
+        "encoded": "setError(null)",
         "prevChunkIds": []
       },
-      "154": {
-        "chunkId": "7cf325",
-        "hash": "1b702bc9",
-        "encoded": "if%20(isOverLimit)%20%7B%20setError(%60Textul%20dep%C4%83%C8%99e%C8%99te%20limita%20de%20$%7BMAX_CHARACTERS%7D%20de%20caractere.%60);%20return%20%7D",
+      "89": {
+        "chunkId": "83bf73",
+        "hash": "496a6d3a",
+        "encoded": "setTtsError(null)",
         "prevChunkIds": []
       },
-      "155": {
-        "chunkId": "7cf325",
-        "hash": "ad9a2990",
-        "encoded": "setError(null);%20setShowPaywall(false)",
+      "90": {
+        "chunkId": "83bf73",
+        "hash": "95b1548a",
+        "encoded": "setShowPaywall(false)",
         "prevChunkIds": []
       },
-      "156": {
-        "chunkId": "7cf325",
-        "hash": "bd9e6d39",
-        "encoded": "try%20%7B%20const%20response%20=%20await%20requestSpeech(text,%20language%20===%20'auto'%20?%20''%20:%20language);%20await%20loadChunks(response.chunks)%20%7D",
+      "91": {
+        "chunkId": "83bf73",
+        "hash": "18591c86",
+        "encoded": "setIsSubmitting(true)",
         "prevChunkIds": []
       },
-      "157": {
-        "chunkId": "7cf325",
-        "hash": "7e575fce",
-        "encoded": "catch%20(requestError)%20%7B",
+      "92": {
+        "chunkId": "83bf73",
+        "hash": "ab5c248b",
+        "encoded": "try%20%7B",
         "prevChunkIds": []
       },
-      "158": {
-        "chunkId": "7cf325",
-        "hash": "272326f5",
-        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B%20setShowPaywall(true);%20return%20%7D",
+      "93": {
+        "chunkId": "83bf73",
+        "hash": "f5ab1312",
+        "encoded": "const%20response%20=%20await%20requestSpeech(text,%20language%20===%20'auto'%20?%20''%20:%20language)",
         "prevChunkIds": []
       },
-      "159": {
-        "chunkId": "7cf325",
-        "hash": "4885f67a",
-        "encoded": "setError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+      "94": {
+        "chunkId": "83bf73",
+        "hash": "4bf232e6",
+        "encoded": "await%20loadChunks(response.chunks,%20response.audioContentType)",
         "prevChunkIds": []
       },
-      "160": {
-        "chunkId": "7cf325",
-        "hash": "10c4a851",
-        "encoded": "%7D",
+      "95": {
+        "chunkId": "83bf73",
+        "hash": "ec888246",
+        "encoded": "%7D%20catch%20(requestError)%20%7B",
         "prevChunkIds": []
       },
-      "161": {
-        "chunkId": "7cf325",
-        "hash": "e9785117",
-        "encoded": "%7D",
+      "96": {
+        "chunkId": "83bf73",
+        "hash": "45362b07",
+        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B",
         "prevChunkIds": []
       },
-      "163": {
-        "chunkId": "7cf325",
-        "hash": "c7e49135",
-        "encoded": "return%20%3Cform%20onSubmit=%7BhandleSubmit%7D%20noValidate%20className=%22flex%20flex-col%20gap-6%20rounded-2xl%20border%20border-border%20bg-surface%20p-5%20shadow-sm%20sm:p-8%22%3E",
+      "97": {
+        "chunkId": "e1e694",
+        "hash": "e3a1794a",
+        "encoded": "%7D%20catch%20(requestError)%20%7B",
         "prevChunkIds": []
       },
-      "164": {
-        "chunkId": "7cf325",
-        "hash": "a6d93274",
+      "98": {
+        "chunkId": "e1e694",
+        "hash": "861e8a3b",
+        "encoded": "if%20(",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "e1e694",
+        "hash": "909ceade",
+        "encoded": "requestError%20instanceof%20TtsRequestError%20&&",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "18b6dd",
+        "hash": "9c06e9a3",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "18b6dd",
+        "hash": "b1a1bddd",
         "encoded": "%3CFreeTrialNotice%20/%3E",
         "prevChunkIds": []
       },
-      "165": {
-        "chunkId": "7cf325",
-        "hash": "8303d309",
-        "encoded": "%7BshowPaywall%20?%20%3CPaywallNotice%20/%3E%20:%20null%7D",
+      "102": {
+        "chunkId": "18b6dd",
+        "hash": "ebb1addf",
+        "encoded": "%7BshowPaywall%20&&%20!subscriptionActive%20?%20%3CPaywallNotice%20/%3E%20:%20null%7D",
         "prevChunkIds": []
       },
-      "166": {
-        "chunkId": "7cf325",
-        "hash": "3ddd23c2",
-        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-1.5%22%3E",
-        "prevChunkIds": []
-      },
-      "167": {
-        "chunkId": "7cf325",
-        "hash": "69faff21",
-        "encoded": "%3Clabel%20htmlFor=%7BtextareaId%7D%20className=%22text-sm%20font-medium%20text-ink%22%3ETextul%20t%C4%83u%3C/label%3E",
-        "prevChunkIds": []
-      },
-      "168": {
-        "chunkId": "7cf325",
-        "hash": "456553ee",
-        "encoded": "%3Ctextarea%20id=%7BtextareaId%7D%20name=%22text%22%20rows=%7B8%7D%20value=%7Btext%7D%20onChange=%7B(event)%20=%3E%20%7B%20setText(event.target.value);%20if%20(error)%20setError(null);%20setShowPaywall(false)%20%7D%7D%20placeholder=%22Scrie%20sau%20lipe%C8%99te%20aici%20textul%20pe%20care%20vrei%20s%C4%83%20%C3%AEl%20ascul%C8%9Bi%E2%80%A6%22%20aria-invalid=%7BBoolean(error)%7D%20aria-describedby=%7Berror%20?%20errorId%20:%20undefined%7D%20className=%22min-h-40%20w-full%20resize-y%20rounded-lg%20border%20border-border%20bg-paper%20px-3%20py-2.5%20text-ink%20placeholder:text-ink-muted%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%22%20/%3E",
-        "prevChunkIds": []
-      },
-      "169": {
-        "chunkId": "7cf325",
-        "hash": "2fbe4ac4",
-        "encoded": "%3Cdiv%20className=%22flex%20items-center%20justify-between%20text-xs%20text-ink-muted%22%3E%3Cspan%3E%7Btext.length%20===%200%20?%20'Niciun%20text%20ad%C4%83ugat%20%C3%AEnc%C4%83.'%20:%20%60$%7BcharacterCount%7D%20caractere%60%7D%3C/span%3E%3Cspan%20className=%7BisOverLimit%20?%20'font-medium%20text-danger'%20:%20undefined%7D%3E%7BcharacterCount%7D%20/%20%7BMAX_CHARACTERS%7D%3C/span%3E%3C/div%3E",
-        "prevChunkIds": []
-      },
-      "170": {
-        "chunkId": "7cf325",
-        "hash": "1d83059c",
-        "encoded": "%7Berror%20?%20%3Cp%20id=%7BerrorId%7D%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7Berror%7D%3C/p%3E%20:%20null%7D",
-        "prevChunkIds": []
-      },
-      "171": {
-        "chunkId": "7cf325",
-        "hash": "84d15a15",
-        "encoded": "%3C/div%3E",
-        "prevChunkIds": []
-      },
-      "172": {
-        "chunkId": "7cf325",
-        "hash": "1cd7714b",
-        "encoded": "%3CImageUploadControl%20previewUrl=%7BpreviewUrl%7D%20status=%7BocrStatus%7D%20errorMessage=%7BocrErrorMessage%7D%20uploadProgress=%7BuploadProgress%7D%20onFileSelected=%7BselectFile%7D%20onRemove=%7BremoveImage%7D%20onStartOcr=%7BstartOcr%7D%20/%3E",
-        "prevChunkIds": []
-      },
-      "173": {
-        "chunkId": "7cf325",
-        "hash": "77f3c172",
-        "encoded": "%3CLanguageSelector%20value=%7Blanguage%7D%20onChange=%7BsetLanguage%7D%20/%3E",
-        "prevChunkIds": []
-      },
-      "174": {
-        "chunkId": "7cf325",
-        "hash": "b88283db",
-        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BaudioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BaudioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D%3C/Button%3E%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E%3C/div%3E",
-        "prevChunkIds": []
-      },
-      "175": {
-        "chunkId": "7cf325",
-        "hash": "9b55eb52",
-        "encoded": "%3CAudioPlayer%20state=%7BaudioState%7D%20onToggle=%7B()%20=%3E%20void%20toggle()%7D%20onSeek=%7Bseek%7D%20onSpeedChange=%7BsetPlaybackRate%7D%20/%3E",
-        "prevChunkIds": []
-      },
-      "176": {
-        "chunkId": "7cf325",
-        "hash": "2370173c",
-        "encoded": "%3C/form%3E",
-        "prevChunkIds": []
-      },
-      "177": {
-        "chunkId": "7cf325",
-        "hash": "5efbcd97",
-        "encoded": "%7D",
-        "prevChunkIds": []
-      },
-      "192": {
-        "chunkId": "ce4634",
-        "hash": "85e8a55c",
+      "103": {
+        "chunkId": "18b6dd",
+        "hash": "78793160",
         "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E",
         "prevChunkIds": []
       },
+      "104": {
+        "chunkId": "e1e694",
+        "hash": "9e51bbd9",
+        "encoded": ")%20%7B",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "e1e694",
+        "hash": "c170f36d",
+        "encoded": "setShowPaywall(true)",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "e1e694",
+        "hash": "6a8ff784",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "e1e694",
+        "hash": "8c67c4cf",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "e1e694",
+        "hash": "7a392e82",
+        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'AUTHENTICATION_REQUIRED')%20%7B",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "e1e694",
+        "hash": "8cd88d5b",
+        "encoded": "setTtsError('Sesiunea%20a%20expirat.%20Cere%20un%20link%20de%20conectare%20nou%20%C8%99i%20autentific%C4%83-te%20din%20nou.')",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "e1e694",
+        "hash": "3bee2954",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "e1e694",
+        "hash": "367981c3",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "e1e694",
+        "hash": "ea1c3b17",
+        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "e1e694",
+        "hash": "dd3d4122",
+        "encoded": "%7D%20finally%20%7B",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "a4c50a",
+        "hash": "8261068c",
+        "encoded": "%3Cform",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "a4c50a",
+        "hash": "3420fba2",
+        "encoded": "onSubmit=%7BhandleSubmit%7D",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "a4c50a",
+        "hash": "2de2c636",
+        "encoded": "noValidate",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "a4c50a",
+        "hash": "24c340ef",
+        "encoded": "className=%22flex%20flex-col%20gap-5%20rounded-2xl%20border%20border-border%20bg-surface%20p-4%20shadow-sm%20sm:gap-6%20sm:p-7%22",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "a4c50a",
+        "hash": "86ce749d",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "48f9f0",
+        "hash": "e1cdf118",
+        "encoded": "%3CFreeTrialNotice%20/%3E",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "48f9f0",
+        "hash": "d7a55efc",
+        "encoded": "%7BshowPaywall%20?%20%3CPaywallNotice%20/%3E%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "48f9f0",
+        "hash": "17e78c19",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "48f9f0",
+        "hash": "2c3ce8fd",
+        "encoded": "%3Clabel%20htmlFor=%7BtextareaId%7D%20className=%22text-base%20font-semibold%20text-ink%22%3E",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "48f9f0",
+        "hash": "9702adc9",
+        "encoded": "Lipe%C8%99te%20sau%20scrie%20textul",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "48f9f0",
+        "hash": "c8583904",
+        "encoded": "%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "7d2720",
+        "hash": "f71912b5",
+        "encoded": "%3Ctextarea",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "d717f2",
+        "hash": "2b81c1d5",
+        "encoded": "id=%7BtextareaId%7D",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "d717f2",
+        "hash": "7a129f04",
+        "encoded": "name=%22text%22",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "d717f2",
+        "hash": "4833fe1c",
+        "encoded": "rows=%7B6%7D",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "d717f2",
+        "hash": "091c19e4",
+        "encoded": "value=%7Btext%7D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "7d2720",
+        "hash": "9feafcfb",
+        "encoded": "name=%22text%22",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "7d2720",
+        "hash": "cbdfc69b",
+        "encoded": "rows=%7B6%7D",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "7d2720",
+        "hash": "4ba0a3fe",
+        "encoded": "value=%7Btext%7D",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "7d2720",
+        "hash": "8938a9c5",
+        "encoded": "onChange=%7B(event)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "7d2720",
+        "hash": "253b54af",
+        "encoded": "setText(event.target.value)",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "7d2720",
+        "hash": "d0c3f251",
+        "encoded": "if%20(error)%20setError(null)",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "7d2720",
+        "hash": "6a1f1382",
+        "encoded": "setTtsError(null)",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "7d2720",
+        "hash": "dc6c6b21",
+        "encoded": "setShowPaywall(false)",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "7d2720",
+        "hash": "09069386",
+        "encoded": "%7D%7D",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "7d2720",
+        "hash": "4fc695fa",
+        "encoded": "placeholder=%22Scrie%20sau%20lipe%C8%99te%20aici%20textul%20pe%20care%20vrei%20s%C4%83%20%C3%AEl%20ascul%C8%9Bi%E2%80%A6%22",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "7d2720",
+        "hash": "e334608d",
+        "encoded": "aria-invalid=%7BBoolean(error)%7D",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "7d2720",
+        "hash": "cb590e9f",
+        "encoded": "aria-describedby=%7Berror%20?%20errorId%20:%20undefined%7D",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "7d2720",
+        "hash": "780f87f3",
+        "encoded": "className=%22min-h-36%20w-full%20resize-y%20rounded-xl%20border%20border-border%20bg-paper%20px-4%20py-3%20text-base%20leading-relaxed%20text-ink%20placeholder:text-ink-muted%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%22",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "7d2720",
+        "hash": "2aeaef14",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "7d2720",
+        "hash": "edcc895c",
+        "encoded": "%3Cdiv%20className=%22flex%20items-center%20justify-between%20text-sm%20text-ink-muted%22%3E",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "875ae3",
+        "hash": "7ad8684f",
+        "encoded": "onChange=%7B(event)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "ac7c61",
+        "hash": "e21c4bf4",
+        "encoded": "%7Berror%20?%20(",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "ac7c61",
+        "hash": "ec0fb7db",
+        "encoded": "%3Cp%20id=%7BerrorId%7D%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "ac7c61",
+        "hash": "2ab560ab",
+        "encoded": "%7Berror%7D",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "ac7c61",
+        "hash": "dee0edf5",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "ac7c61",
+        "hash": "630b8ff8",
+        "encoded": ")%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "ac7c61",
+        "hash": "d169e904",
+        "encoded": "%7Btext.trim()%20?%20(",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "ac7c61",
+        "hash": "299eefd1",
+        "encoded": "%3Cdetails%20className=%22rounded-lg%20bg-paper/70%20px-3%20py-2%22%3E",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "ac7c61",
+        "hash": "24a4084c",
+        "encoded": "%3Csummary%20className=%22flex%20min-h-11%20cursor-pointer%20items-center%20text-sm%20font-medium%20text-teal%22%3E",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "ac7c61",
+        "hash": "a5f67080",
+        "encoded": "Previzualizeaz%C4%83%20textul%20preg%C4%83tit",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "ac7c61",
+        "hash": "46e81198",
+        "encoded": "%3C/summary%3E",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "ac7c61",
+        "hash": "36cbdbf0",
+        "encoded": "%3Cpre%20className=%22max-h-40%20overflow-auto%20whitespace-pre-wrap%20break-words%20pb-2%20text-sm%20leading-relaxed%20text-ink%22%3E",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "ac7c61",
+        "hash": "f07b4dd7",
+        "encoded": "%7Btext%7D",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "ac7c61",
+        "hash": "24fced77",
+        "encoded": "%3C/pre%3E",
+        "prevChunkIds": []
+      },
       "193": {
-        "chunkId": "ce4634",
-        "hash": "10e1279f",
-        "encoded": "%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E",
+        "chunkId": "ac7c61",
+        "hash": "cb1e5ed5",
+        "encoded": "%3C/details%3E",
         "prevChunkIds": []
       },
       "194": {
-        "chunkId": "ce4634",
-        "hash": "1f70533c",
-        "encoded": "%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D",
+        "chunkId": "ac7c61",
+        "hash": "7daf5f25",
+        "encoded": ")%20:%20null%7D",
         "prevChunkIds": []
       },
       "195": {
-        "chunkId": "ce4634",
-        "hash": "863b0517",
-        "encoded": "%3C/Button%3E",
+        "chunkId": "ac7c61",
+        "hash": "1c304c3c",
+        "encoded": "%3C/div%3E",
         "prevChunkIds": []
       },
       "196": {
-        "chunkId": "ce4634",
-        "hash": "aa8f761f",
-        "encoded": "%7BttsError%20?%20%3Cp%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7BttsError%7D%3C/p%3E%20:%20null%7D",
+        "chunkId": "ac7c61",
+        "hash": "ca9b22df",
+        "encoded": "%3CImageUploadControl",
         "prevChunkIds": []
       },
       "197": {
-        "chunkId": "ce4634",
-        "hash": "315892d6",
-        "encoded": "%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E",
+        "chunkId": "875ae3",
+        "hash": "06a196d0",
+        "encoded": "if%20(error)%20setError(null)",
         "prevChunkIds": []
       },
       "198": {
+        "chunkId": "875ae3",
+        "hash": "714b1caf",
+        "encoded": "setTtsError(null)",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "875ae3",
+        "hash": "39f8f330",
+        "encoded": "%7D%7D",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "875ae3",
+        "hash": "a845e108",
+        "encoded": "placeholder=%22Scrie%20sau%20lipe%C8%99te%20aici%20textul%20pe%20care%20vrei%20s%C4%83%20%C3%AEl%20ascul%C8%9Bi%E2%80%A6%22",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "5fd8c2",
+        "hash": "d338e366",
+        "encoded": "type=%22submit%22",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "5fd8c2",
+        "hash": "87139d65",
+        "encoded": "variant=%22primary%22",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "5fd8c2",
+        "hash": "aab2d6de",
+        "encoded": "disabled=%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "5fd8c2",
+        "hash": "d11c52df",
+        "encoded": "aria-busy=%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%7D",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "5fd8c2",
+        "hash": "491f5ee2",
+        "encoded": "className=%22min-h-14%20w-full%20text-lg%20sm:w-auto%22",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "5fd8c2",
+        "hash": "e4da7485",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "83bf73",
+        "hash": "5643c947",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "83bf73",
+        "hash": "71b20a14",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "83bf73",
+        "hash": "25833e14",
+        "encoded": "setTtsError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "83bf73",
+        "hash": "ed8be8b6",
+        "encoded": "%7D%20finally%20%7B",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "83bf73",
+        "hash": "14c47d91",
+        "encoded": "setIsSubmitting(false)",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "68b3a5",
+        "hash": "15577bf7",
+        "encoded": "%7BaudioState.status%20!==%20'idle'%20?%20(",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "68b3a5",
+        "hash": "8e1bd3e9",
+        "encoded": "%3Csection%20aria-labelledby=%22audio-heading%22%20className=%22rounded-2xl%20bg-teal-soft/60%20p-4%20sm:p-5%22%3E",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "68b3a5",
+        "hash": "6f198117",
+        "encoded": "%3Ch2%20id=%22audio-heading%22%20className=%22mb-3%20font-display%20text-xl%20text-ink%22%3E",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "68b3a5",
+        "hash": "85ada37d",
+        "encoded": "Redarea%20audio",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "68b3a5",
+        "hash": "3029e0ea",
+        "encoded": "%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "68b3a5",
+        "hash": "a30629dc",
+        "encoded": "%3CAudioPlayer",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "68b3a5",
+        "hash": "9a5ed083",
+        "encoded": "state=%7BaudioState%7D",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "68b3a5",
+        "hash": "d90ca682",
+        "encoded": "onToggle=%7B()%20=%3E%20void%20toggle()%7D",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "68b3a5",
+        "hash": "cfd226df",
+        "encoded": "onSeek=%7Bseek%7D",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "68b3a5",
+        "hash": "e362adc7",
+        "encoded": "onSpeedChange=%7BsetPlaybackRate%7D",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "68b3a5",
+        "hash": "cc7b70e4",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "68b3a5",
+        "hash": "a285d523",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "68b3a5",
+        "hash": "51ac7b1e",
+        "encoded": ")%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "83bf73",
+        "hash": "9ab1d225",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "7cf325",
+        "hash": "d290f7c5",
+        "encoded": "if%20(isOverLimit)%20%7B%20setError(%60Textul%20dep%C4%83%C8%99e%C8%99te%20limita%20de%20$%7BMAX_CHARACTERS%7D%20de%20caractere.%60);%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "7cf325",
+        "hash": "23c1b69e",
+        "encoded": "setError(null);%20setShowPaywall(false)",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "d9146a",
+        "hash": "4d1dccc2",
+        "encoded": "disabled=%7B",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "d9146a",
+        "hash": "5c1af051",
+        "encoded": "isSubmitting%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "d9146a",
+        "hash": "598fe3ea",
+        "encoded": "audioState.status%20===%20'loading'%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "d9146a",
+        "hash": "61e13d3f",
+        "encoded": "isOverLimit%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "d9146a",
+        "hash": "85d099d7",
+        "encoded": "!text.trim()%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "d9146a",
+        "hash": "8acf13d5",
+        "encoded": "(showPaywall%20&&%20!subscriptionActive)",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "d9146a",
+        "hash": "d63e4bb6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "d9146a",
+        "hash": "6fea469b",
+        "encoded": "aria-busy=%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%7D",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "d9146a",
+        "hash": "4cc7983e",
+        "encoded": "className=%22min-h-14%20w-full%20text-lg%20sm:w-auto%22",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "d9146a",
+        "hash": "1c9d90fa",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "d9146a",
+        "hash": "7f3d3526",
+        "encoded": "%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "d9146a",
+        "hash": "6d0e5860",
+        "encoded": "%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "d9146a",
+        "hash": "8fdd4c56",
+        "encoded": "?%20'Generez%20audio%E2%80%A6'",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "d9146a",
+        "hash": "32e46919",
+        "encoded": ":%20showPaywall%20&&%20!subscriptionActive",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "d9146a",
+        "hash": "58b2e77f",
+        "encoded": "?%20'Abonament%20necesar%20pentru%20a%20continua'",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "d9146a",
+        "hash": "eda3eeac",
+        "encoded": ":%20'Cite%C8%99te%20cu%20voce%20tare'%7D",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "7cf325",
+        "hash": "739519f8",
+        "encoded": "catch%20(requestError)%20%7B",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "7cf325",
+        "hash": "a94017f7",
+        "encoded": "if%20(requestError%20instanceof%20TtsRequestError%20&&%20requestError.code%20===%20'PAYWALL')%20%7B%20setShowPaywall(true);%20return%20%7D",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "7cf325",
+        "hash": "970f0449",
+        "encoded": "setError(requestError%20instanceof%20Error%20?%20requestError.message%20:%20'Generarea%20audio%20a%20e%C8%99uat.')",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "7cf325",
+        "hash": "74d94c65",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "7cf325",
+        "hash": "43651e39",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "7cf325",
+        "hash": "8c9a173c",
+        "encoded": "return%20%3Cform%20onSubmit=%7BhandleSubmit%7D%20noValidate%20className=%22flex%20flex-col%20gap-6%20rounded-2xl%20border%20border-border%20bg-surface%20p-5%20shadow-sm%20sm:p-8%22%3E",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "7cf325",
+        "hash": "6160e586",
+        "encoded": "%3CFreeTrialNotice%20/%3E",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "7cf325",
+        "hash": "bb251f93",
+        "encoded": "%7BshowPaywall%20?%20%3CPaywallNotice%20/%3E%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "7cf325",
+        "hash": "f6c9c4f9",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-1.5%22%3E",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "7cf325",
+        "hash": "76c2b9e4",
+        "encoded": "%3Clabel%20htmlFor=%7BtextareaId%7D%20className=%22text-sm%20font-medium%20text-ink%22%3ETextul%20t%C4%83u%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "7cf325",
+        "hash": "c8f68771",
+        "encoded": "%3Ctextarea%20id=%7BtextareaId%7D%20name=%22text%22%20rows=%7B8%7D%20value=%7Btext%7D%20onChange=%7B(event)%20=%3E%20%7B%20setText(event.target.value);%20if%20(error)%20setError(null);%20setShowPaywall(false)%20%7D%7D%20placeholder=%22Scrie%20sau%20lipe%C8%99te%20aici%20textul%20pe%20care%20vrei%20s%C4%83%20%C3%AEl%20ascul%C8%9Bi%E2%80%A6%22%20aria-invalid=%7BBoolean(error)%7D%20aria-describedby=%7Berror%20?%20errorId%20:%20undefined%7D%20className=%22min-h-40%20w-full%20resize-y%20rounded-lg%20border%20border-border%20bg-paper%20px-3%20py-2.5%20text-ink%20placeholder:text-ink-muted%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "7cf325",
+        "hash": "bf1c6225",
+        "encoded": "%3Cdiv%20className=%22flex%20items-center%20justify-between%20text-xs%20text-ink-muted%22%3E%3Cspan%3E%7Btext.length%20===%200%20?%20'Niciun%20text%20ad%C4%83ugat%20%C3%AEnc%C4%83.'%20:%20%60$%7BcharacterCount%7D%20caractere%60%7D%3C/span%3E%3Cspan%20className=%7BisOverLimit%20?%20'font-medium%20text-danger'%20:%20undefined%7D%3E%7BcharacterCount%7D%20/%20%7BMAX_CHARACTERS%7D%3C/span%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "7cf325",
+        "hash": "8a42ee82",
+        "encoded": "%7Berror%20?%20%3Cp%20id=%7BerrorId%7D%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7Berror%7D%3C/p%3E%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "7cf325",
+        "hash": "3e86d180",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "7cf325",
+        "hash": "360d3571",
+        "encoded": "%3CImageUploadControl%20previewUrl=%7BpreviewUrl%7D%20status=%7BocrStatus%7D%20errorMessage=%7BocrErrorMessage%7D%20uploadProgress=%7BuploadProgress%7D%20onFileSelected=%7BselectFile%7D%20onRemove=%7BremoveImage%7D%20onStartOcr=%7BstartOcr%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "7cf325",
+        "hash": "86adbcae",
+        "encoded": "%3CLanguageSelector%20value=%7Blanguage%7D%20onChange=%7BsetLanguage%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "7cf325",
+        "hash": "8f4319cf",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BaudioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BaudioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D%3C/Button%3E%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "7cf325",
+        "hash": "5a78789b",
+        "encoded": "%3CAudioPlayer%20state=%7BaudioState%7D%20onToggle=%7B()%20=%3E%20void%20toggle()%7D%20onSeek=%7Bseek%7D%20onSpeedChange=%7BsetPlaybackRate%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "7cf325",
+        "hash": "abd95a6b",
+        "encoded": "%3C/form%3E",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "7cf325",
+        "hash": "6a99a355",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "316": {
         "chunkId": "ce4634",
-        "hash": "3973dda1",
+        "hash": "0bdb5031",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-2%22%3E",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "ce4634",
+        "hash": "98fe3007",
+        "encoded": "%3CButton%20type=%22submit%22%20variant=%22primary%22%20disabled=%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20%7C%7C%20isOverLimit%20%7C%7C%20!text.trim()%7D%20className=%22w-full%20sm:w-auto%22%3E",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "ce4634",
+        "hash": "faa467d5",
+        "encoded": "%3Cspan%20aria-hidden=%22true%22%3E%F0%9F%94%8A%3C/span%3E%7BisSubmitting%20%7C%7C%20audioState.status%20===%20'loading'%20?%20'Generez%20audio%E2%80%A6'%20:%20'Cite%C8%99te%20cu%20voce%20tare'%7D",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "ce4634",
+        "hash": "00984626",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "ce4634",
+        "hash": "03aa8108",
+        "encoded": "%7BttsError%20?%20%3Cp%20role=%22alert%22%20className=%22text-sm%20font-medium%20text-danger%22%3E%7BttsError%7D%3C/p%3E%20:%20null%7D",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "ce4634",
+        "hash": "b0c080fa",
+        "encoded": "%3Cp%20className=%22text-xs%20text-ink-muted%22%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%20Dup%C4%83%20aceea,%20este%20necesar%20un%20abonament.%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "ce4634",
+        "hash": "c24bbe1c",
         "encoded": "%3C/div%3E",
         "prevChunkIds": []
       }

@@ -6,7 +6,11 @@ import { Button } from '../atoms/Button'
 
 const RESEND_COOLDOWN_SECONDS = 60
 
-export function AuthPanel() {
+interface AuthPanelProps {
+  onUserChange?: (email: string | null) => void
+}
+
+export function AuthPanel({ onUserChange }: AuthPanelProps = {}) {
   const [email, setEmail] = useState('')
   const [userEmail, setUserEmail] = useState<string | null>(null)
   const [message, setMessage] = useState<string | null>(null)
@@ -16,12 +20,18 @@ export function AuthPanel() {
   const coolingDown = cooldownSeconds > 0
 
   useEffect(() => {
-    void supabase.auth.getUser().then(({ data }) => setUserEmail(data.user?.email ?? null))
-    const { data } = supabase.auth.onAuthStateChange((_event, session) =>
-      setUserEmail(session?.user?.email ?? null),
-    )
+    void supabase.auth.getUser().then(({ data }) => {
+      const nextEmail = data.user?.email ?? null
+      setUserEmail(nextEmail)
+      onUserChange?.(nextEmail)
+    })
+    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
+      const nextEmail = session?.user?.email ?? null
+      setUserEmail(nextEmail)
+      onUserChange?.(nextEmail)
+    })
     return () => data.subscription.unsubscribe()
-  }, [])
+  }, [onUserChange])
 
   useEffect(() => {
     if (!coolingDown) return

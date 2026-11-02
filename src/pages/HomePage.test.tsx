@@ -43,7 +43,7 @@ describe('HomePage', () => {
   it('actualizează numărul de caractere la introducerea textului', async () => {
     renderHomePage()
     const user = userEvent.setup()
-    const textarea = screen.getByLabelText(/textul tău/i)
+    const textarea = screen.getByLabelText(/lipește sau scrie textul/i)
 
     await user.type(textarea, 'Salut!')
     await user.clear(textarea)

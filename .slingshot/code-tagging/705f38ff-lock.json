@@ -1,0 +1,54 @@
+{
+  "src/components/templates/MainScreenLayout.tsx": {
+    "filename": "MainScreenLayout.tsx",
+    "path": "src/components/templates/MainScreenLayout.tsx",
+    "version": "1.2",
+    "contextFile": "705f38ff-context.json",
+    "chunks": {
+      "d1bc77": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "2a174717",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "11": {
+        "chunkId": "d1bc77",
+        "hash": "61b32561",
+        "encoded": "%3Cmain%20className=%22mx-auto%20flex%20w-full%20max-w-3xl%20flex-1%20flex-col%20gap-5%20px-4%20py-5%20sm:gap-7%20sm:px-6%20sm:py-10%22%3E",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "d1bc77",
+        "hash": "4487ceb9",
+        "encoded": "%7Bchildren%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "d1bc77",
+        "hash": "ed969f5f",
+        "encoded": "%3C/main%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "d1bc77",
+        "hash": "e4e53850",
+        "encoded": "%3Cfooter%20className=%22border-t%20border-border%20px-4%20py-5%20text-center%20text-xs%20text-ink-muted%20sm:px-6%22%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

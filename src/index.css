@@ -23,11 +23,13 @@
 
   html {
     color-scheme: light;
+    scroll-behavior: smooth;
   }
 
   body {
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
       env(safe-area-inset-left);
     font-family: var(--font-sans);
@@ -51,6 +53,20 @@
     align-items: center;
   }
 
+  input,
+  textarea,
+  select,
+  button {
+    max-width: 100%;
+  }
+
+  textarea,
+  input,
+  button,
+  select {
+    font: inherit;
+  }
+
   h1,
   h2,
   h3 {
@@ -64,6 +80,10 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
     *,
     *::before,
     *::after {

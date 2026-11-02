@@ -58,253 +58,1093 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:28:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "afb97e": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "c974719d",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "185c5f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "84f9d280",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1b0891": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "5f97293d",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b1ea6c": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b689a106"
+        },
+        "hash": "c26b8e42",
+        "messageId": "system_cf1cf7c0-d63c-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ffaf3b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b689a106"
+        },
+        "hash": "ece19291",
+        "messageId": "system_cf1cf7c0-d63c-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e3f5cd": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793604580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "f77c18ff",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 9:29:40 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c839b4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793604580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "64db9f37",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 9:29:40 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "a4d95d": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793604580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "76bdde21",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 9:29:40 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "6809b6",
+        "chunkId": "ffaf3b",
         "hash": "7ecd5600",
         "encoded": "import%20%7B%20MainScreenLayout%20%7D%20from%20'../components/templates/MainScreenLayout'",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "6809b6",
+        "chunkId": "ffaf3b",
         "hash": "58407445",
         "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
         "prevChunkIds": []
       },
       "2": {
-        "chunkId": "6809b6",
-        "hash": "a3538586",
-        "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
+        "chunkId": "ffaf3b",
+        "hash": "120af226",
+        "encoded": "import%20%7B%20SubscriptionPlans%20%7D%20from%20'../components/organisms/SubscriptionPlans'",
         "prevChunkIds": []
       },
       "3": {
-        "chunkId": "6809b6",
-        "hash": "b7308be7",
+        "chunkId": "ffaf3b",
+        "hash": "4c132bc7",
+        "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "ffaf3b",
+        "hash": "01638dda",
         "encoded": "import%20%7B%20InstallHelp%20%7D%20from%20'../components/molecules/InstallHelp'",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "6809b6",
-        "hash": "92529108",
-        "encoded": "export%20default%20function%20HomePage()%20%7B",
+        "chunkId": "a4d95d",
+        "hash": "f074355a",
+        "encoded": "import%20%7B%20SUBSCRIPTION_PLANS%20%7D%20from%20'../constants/subscriptionPlans'",
         "prevChunkIds": []
       },
-      "7": {
-        "chunkId": "099337",
-        "hash": "90e8feae",
-        "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
-        "prevChunkIds": []
-      },
-      "8": {
-        "chunkId": "099337",
-        "hash": "1d7850a8",
+      "6": {
+        "chunkId": "a4d95d",
+        "hash": "9c6e03ee",
         "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
         "prevChunkIds": []
       },
-      "10": {
-        "chunkId": "099337",
-        "hash": "326a159a",
-        "encoded": "export%20default%20function%20HomePage()%20%7B",
+      "7": {
+        "chunkId": "a4d95d",
+        "hash": "038a9746",
+        "encoded": "import%20%7B%20InstallHelp%20%7D%20from%20'../components/molecules/InstallHelp'",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a4d95d",
+        "hash": "c9e5e381",
+        "encoded": "const%20STATUS_DATE_FORMATTER%20=%20new%20Intl.DateTimeFormat('ro-RO',%20%7B%20dateStyle:%20'long'%20%7D)",
         "prevChunkIds": []
       },
       "11": {
-        "chunkId": "099337",
-        "hash": "588b7e4f",
-        "encoded": "return%20(",
+        "chunkId": "a4d95d",
+        "hash": "7b1e43b6",
+        "encoded": "export%20default%20function%20HomePage()%20%7B",
         "prevChunkIds": []
       },
       "12": {
-        "chunkId": "099337",
-        "hash": "19b50fe2",
-        "encoded": "%3CMainScreenLayout%3E",
+        "chunkId": "1b0891",
+        "hash": "8f714ebe",
+        "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
         "prevChunkIds": []
       },
       "13": {
-        "chunkId": "099337",
-        "hash": "f009a7ee",
-        "encoded": "%3Csection%20id=%22cum-functioneaza%22%20className=%22flex%20flex-col%20gap-3%20text-center%20sm:text-left%22%3E",
+        "chunkId": "1b0891",
+        "hash": "ecd5362e",
+        "encoded": "import%20%7B%20SubscriptionPlans%20%7D%20from%20'../components/organisms/SubscriptionPlans'",
         "prevChunkIds": []
       },
       "14": {
-        "chunkId": "099337",
-        "hash": "bb97c0f5",
-        "encoded": "%3Ch1%20className=%22font-display%20text-3xl%20leading-tight%20sm:text-4xl%22%3E",
+        "chunkId": "1b0891",
+        "hash": "03bd8e32",
+        "encoded": "import%20type%20%7B%20SubscriptionStatus%20%7D%20from%20'../lib/billing/billingClient'",
         "prevChunkIds": []
       },
       "15": {
-        "chunkId": "a5b67b",
-        "hash": "1b2938af",
-        "encoded": "%3C/section%3E",
+        "chunkId": "1b0891",
+        "hash": "06894366",
+        "encoded": "import%20%7B%20SUBSCRIPTION_PLANS%20%7D%20from%20'../constants/subscriptionPlans'",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "1b0891",
+        "hash": "c0698e59",
+        "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
         "prevChunkIds": []
       },
       "17": {
-        "chunkId": "a5b67b",
-        "hash": "eb320485",
-        "encoded": "%3CAuthPanel%20/%3E",
-        "prevChunkIds": []
-      },
-      "18": {
-        "chunkId": "a5b67b",
-        "hash": "22eb2d07",
-        "encoded": "%3CReaderCard%20/%3E",
+        "chunkId": "1b0891",
+        "hash": "c91d44d4",
+        "encoded": "import%20%7B%20InstallHelp%20%7D%20from%20'../components/molecules/InstallHelp'",
         "prevChunkIds": []
       },
       "19": {
-        "chunkId": "a5b67b",
-        "hash": "c305d642",
-        "encoded": "%3CInstallHelp%20/%3E",
+        "chunkId": "1b0891",
+        "hash": "a6e44f4f",
+        "encoded": "export%20default%20function%20HomePage()%20%7B",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "1b0891",
+        "hash": "72f38232",
+        "encoded": "const%20%5BuserEmail,%20setUserEmail%5D%20=%20useState%3Cstring%20%7C%20null%3E(null)",
         "prevChunkIds": []
       },
       "21": {
-        "chunkId": "a5b67b",
-        "hash": "5ba57afc",
-        "encoded": "%3Csection",
+        "chunkId": "1b0891",
+        "hash": "b7a5a50d",
+        "encoded": "const%20%5Bsubscription,%20setSubscription%5D%20=%20useState%3CSubscriptionStatus%20%7C%20null%3E(null)",
         "prevChunkIds": []
       },
       "22": {
-        "chunkId": "a5b67b",
-        "hash": "1adc6fb1",
-        "encoded": "id=%22abonament%22",
+        "chunkId": "1b0891",
+        "hash": "601b3196",
+        "encoded": "const%20%5BsubscriptionLoading,%20setSubscriptionLoading%5D%20=%20useState(true)",
         "prevChunkIds": []
       },
       "23": {
-        "chunkId": "099337",
-        "hash": "71bdcc5a",
-        "encoded": "%3C/h1%3E",
-        "prevChunkIds": []
-      },
-      "24": {
-        "chunkId": "099337",
-        "hash": "33c242e1",
-        "encoded": "%3Cp%20className=%22text-base%20text-ink-muted%22%3E",
+        "chunkId": "1b0891",
+        "hash": "c1f943b8",
+        "encoded": "const%20%5BpaywallRequired,%20setPaywallRequired%5D%20=%20useState(false)",
         "prevChunkIds": []
       },
       "25": {
-        "chunkId": "099337",
-        "hash": "4998c89f",
-        "encoded": "Scrie,%20lipe%C8%99te%20sau%20%C3%AEncarc%C4%83%20o%20imagine%20cu%20text,%20iar%20Cite%C8%99te-mi%20%C8%9Bi-l%20cite%C8%99te%20cu%20voce%20tare,%20%C3%AEn",
+        "chunkId": "1b0891",
+        "hash": "53b24f24",
+        "encoded": "const%20handleUserChange%20=%20useCallback((email:%20string%20%7C%20null)%20=%3E%20setUserEmail(email),%20%5B%5D)",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "099337",
-        "hash": "64a81b50",
-        "encoded": "rom%C3%A2n%C4%83%20sau%20%C3%AEn%20alte%20limbi.",
+        "chunkId": "1b0891",
+        "hash": "06bcb00f",
+        "encoded": "const%20handlePaywallChange%20=%20useCallback((required:%20boolean)%20=%3E%20setPaywallRequired(required),%20%5B%5D)",
         "prevChunkIds": []
       },
       "27": {
-        "chunkId": "099337",
-        "hash": "6853b743",
-        "encoded": "%3C/p%3E",
+        "chunkId": "1b0891",
+        "hash": "146fecf9",
+        "encoded": "const%20handleSubscriptionChange%20=%20useCallback(",
         "prevChunkIds": []
       },
       "28": {
-        "chunkId": "099337",
-        "hash": "a6ec2c09",
-        "encoded": "%3C/section%3E",
+        "chunkId": "1b0891",
+        "hash": "3e5f41b4",
+        "encoded": "(nextSubscription:%20SubscriptionStatus%20%7C%20null,%20loading:%20boolean)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "1b0891",
+        "hash": "52dc8ba0",
+        "encoded": "setSubscription(nextSubscription)",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "099337",
-        "hash": "50d19682",
-        "encoded": "%3CAuthPanel%20/%3E",
+        "chunkId": "1b0891",
+        "hash": "3a82f587",
+        "encoded": "setSubscriptionLoading(loading)",
         "prevChunkIds": []
       },
       "31": {
-        "chunkId": "099337",
-        "hash": "317ed9f8",
-        "encoded": "%3CReaderCard%20/%3E",
+        "chunkId": "1b0891",
+        "hash": "7f132cc6",
+        "encoded": "if%20(nextSubscription?.active)%20setPaywallRequired(false)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "1b0891",
+        "hash": "82e603d7",
+        "encoded": "%7D,",
         "prevChunkIds": []
       },
       "33": {
-        "chunkId": "099337",
-        "hash": "9cf3f175",
-        "encoded": "%3Csection",
+        "chunkId": "b1ea6c",
+        "hash": "694d4ab3",
+        "encoded": "%3CSubscriptionPlans%20/%3E",
         "prevChunkIds": []
       },
       "34": {
-        "chunkId": "099337",
-        "hash": "dbc01d23",
-        "encoded": "id=%22abonament%22",
+        "chunkId": "c839b4",
+        "hash": "e28ffa23",
+        "encoded": "const%20activePlan%20=%20SUBSCRIPTION_PLANS.find((plan)%20=%3E%20plan.id%20===%20subscription?.planId)",
         "prevChunkIds": []
       },
       "35": {
-        "chunkId": "099337",
-        "hash": "3fa009f9",
-        "encoded": "className=%22rounded-2xl%20border%20border-border%20bg-surface%20p-5%20text-sm%20text-ink-muted%20sm:p-6%22",
+        "chunkId": "c839b4",
+        "hash": "0edc89cb",
+        "encoded": "const%20expiryTimestamp%20=%20subscription?.currentPeriodEnd",
         "prevChunkIds": []
       },
       "36": {
-        "chunkId": "099337",
-        "hash": "b8ad02af",
-        "encoded": "%3E",
+        "chunkId": "c839b4",
+        "hash": "5697dc16",
+        "encoded": "?%20Date.parse(subscription.currentPeriodEnd)",
         "prevChunkIds": []
       },
       "37": {
-        "chunkId": "099337",
-        "hash": "1a65e0cb",
-        "encoded": "%3Ch2%20className=%22mb-2%20font-display%20text-lg%20text-ink%22%3EDespre%20abonament%3C/h2%3E",
+        "chunkId": "c839b4",
+        "hash": "000663a9",
+        "encoded": ":%20Number.NaN",
         "prevChunkIds": []
       },
       "38": {
-        "chunkId": "099337",
-        "hash": "8c89f1f5",
-        "encoded": "%3Cp%3E",
+        "chunkId": "c839b4",
+        "hash": "8c131a83",
+        "encoded": "const%20expiryDate%20=%20Number.isFinite(expiryTimestamp)",
         "prevChunkIds": []
       },
       "39": {
-        "chunkId": "099337",
-        "hash": "5be84d83",
-        "encoded": "Prima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83,%20f%C4%83r%C4%83%20%C3%AEnregistrare.%20Dup%C4%83%20aceea,%20abonamentul%20ofer%C4%83",
+        "chunkId": "c839b4",
+        "hash": "0e38d9a3",
+        "encoded": "?%20STATUS_DATE_FORMATTER.format(new%20Date(expiryTimestamp))",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "099337",
-        "hash": "3dfdfbf8",
-        "encoded": "lecturi%20audio%20nelimitate%20%C3%AEn%20limbile%20disponibile.%20Pre%C8%9Bul%20%C8%99i%20intervalul%20de%20facturare%20sunt",
-        "prevChunkIds": []
-      },
-      "41": {
-        "chunkId": "099337",
-        "hash": "de879835",
-        "encoded": "configurabile%20%C8%99i%20afi%C8%99ate%20de%20Stripe%20%C3%AEnainte%20de%20confirmare.%20Autentific%C4%83-te%20pentru%20a%20activa,",
+        "chunkId": "c839b4",
+        "hash": "1afa714d",
+        "encoded": ":%20'indisponibil%C4%83'",
         "prevChunkIds": []
       },
       "42": {
-        "chunkId": "099337",
-        "hash": "7cc38107",
-        "encoded": "restaura%20sau%20anula%20abonamentul.",
-        "prevChunkIds": []
-      },
-      "43": {
-        "chunkId": "099337",
-        "hash": "53446680",
-        "encoded": "%3C/p%3E",
+        "chunkId": "c839b4",
+        "hash": "5b11091a",
+        "encoded": "return%20(",
         "prevChunkIds": []
       },
       "44": {
-        "chunkId": "099337",
-        "hash": "4d88b199",
-        "encoded": "%3C/section%3E",
+        "chunkId": "1b0891",
+        "hash": "dc77cdbd",
+        "encoded": "const%20activePlan%20=%20SUBSCRIPTION_PLANS.find((plan)%20=%3E%20plan.id%20===%20subscription?.planId)",
         "prevChunkIds": []
       },
       "45": {
-        "chunkId": "099337",
-        "hash": "830936a0",
-        "encoded": "%3C/MainScreenLayout%3E",
+        "chunkId": "1b0891",
+        "hash": "7ee602f7",
+        "encoded": "const%20expiryDate%20=%20subscription?.currentPeriodEnd",
         "prevChunkIds": []
       },
       "46": {
-        "chunkId": "099337",
-        "hash": "e31e659a",
-        "encoded": ")",
+        "chunkId": "1b0891",
+        "hash": "04b4bbdf",
+        "encoded": "?%20new%20Intl.DateTimeFormat('ro-RO',%20%7B%20dateStyle:%20'long'%20%7D).format(",
         "prevChunkIds": []
       },
       "47": {
+        "chunkId": "1b0891",
+        "hash": "96dd76ef",
+        "encoded": "new%20Date(subscription.currentPeriodEnd),",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "1b0891",
+        "hash": "c820bcfd",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "1b0891",
+        "hash": "274e2a77",
+        "encoded": ":%20'indisponibil%C4%83'",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "1b0891",
+        "hash": "824aea46",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "6809b6",
+        "hash": "654ccaaf",
+        "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "6809b6",
+        "hash": "46f19e98",
+        "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "6809b6",
+        "hash": "f13f705a",
+        "encoded": "import%20%7B%20InstallHelp%20%7D%20from%20'../components/molecules/InstallHelp'",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "6809b6",
+        "hash": "2b9a5620",
+        "encoded": "export%20default%20function%20HomePage()%20%7B",
+        "prevChunkIds": []
+      },
+      "58": {
         "chunkId": "099337",
-        "hash": "57c5213d",
+        "hash": "36902ea2",
+        "encoded": "import%20%7B%20ReaderCard%20%7D%20from%20'../components/organisms/ReaderCard'",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "099337",
+        "hash": "36ecb1d0",
+        "encoded": "import%20%7B%20AuthPanel%20%7D%20from%20'../components/molecules/AuthPanel'",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "099337",
+        "hash": "c002ecc1",
+        "encoded": "export%20default%20function%20HomePage()%20%7B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "e3f5cd",
+        "hash": "18967f4d",
+        "encoded": "%3Csection",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "e3f5cd",
+        "hash": "13c12865",
+        "encoded": "role=%22status%22",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "e3f5cd",
+        "hash": "1ce43e01",
+        "encoded": "aria-label=%22Statusul%20accesului%20la%20lectur%C4%83%22",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "e3f5cd",
+        "hash": "17ede9cf",
+        "encoded": "aria-live=%22polite%22",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "e3f5cd",
+        "hash": "b72d65f1",
+        "encoded": "className=%7B%60rounded-xl%20px-4%20py-3%20text-sm%20$%7B",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "099337",
+        "hash": "7e81ca54",
+        "encoded": "%3CMainScreenLayout%3E",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "099337",
+        "hash": "8684fcd5",
+        "encoded": "%3Csection%20id=%22cum-functioneaza%22%20className=%22flex%20flex-col%20gap-3%20text-center%20sm:text-left%22%3E",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "099337",
+        "hash": "b7e3980a",
+        "encoded": "%3Ch1%20className=%22font-display%20text-3xl%20leading-tight%20sm:text-4xl%22%3E",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "a5b67b",
+        "hash": "4bb03bb6",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "a5b67b",
+        "hash": "f0639d2f",
+        "encoded": "%3CAuthPanel%20/%3E",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "a5b67b",
+        "hash": "250cac20",
+        "encoded": "%3CReaderCard%20/%3E",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "a5b67b",
+        "hash": "0161e4c7",
+        "encoded": "%3CInstallHelp%20/%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "a5b67b",
+        "hash": "544c3d22",
+        "encoded": "%3Csection",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "a5b67b",
+        "hash": "a359d36f",
+        "encoded": "id=%22abonament%22",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "099337",
+        "hash": "e8a451f8",
+        "encoded": "%3C/h1%3E",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "099337",
+        "hash": "8b137112",
+        "encoded": "%3Cp%20className=%22text-base%20text-ink-muted%22%3E",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "099337",
+        "hash": "597a1463",
+        "encoded": "Scrie,%20lipe%C8%99te%20sau%20%C3%AEncarc%C4%83%20o%20imagine%20cu%20text,%20iar%20Cite%C8%99te-mi%20%C8%9Bi-l%20cite%C8%99te%20cu%20voce%20tare,%20%C3%AEn",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "099337",
+        "hash": "712db321",
+        "encoded": "rom%C3%A2n%C4%83%20sau%20%C3%AEn%20alte%20limbi.",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "099337",
+        "hash": "16c9e2f0",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "099337",
+        "hash": "b294ecd9",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "099337",
+        "hash": "51447268",
+        "encoded": "%3CAuthPanel%20/%3E",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "099337",
+        "hash": "7ba5461d",
+        "encoded": "%3CReaderCard%20/%3E",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "099337",
+        "hash": "4f7c9ce2",
+        "encoded": "%3Csection",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "185c5f",
+        "hash": "21666653",
+        "encoded": "%3CMainScreenLayout%3E",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "185c5f",
+        "hash": "eb827a16",
+        "encoded": "%3Csection%20id=%22cum-functioneaza%22%20className=%22flex%20flex-col%20gap-2%20text-left%22%3E",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "185c5f",
+        "hash": "2390acc2",
+        "encoded": "%3Ch1%20className=%22max-w-2xl%20font-display%20text-3xl%20leading-tight%20sm:text-4xl%22%3E",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "185c5f",
+        "hash": "3425a0f6",
+        "encoded": "Ascult%C4%83%20orice%20text,%20cu%20propria%20ta%20voce%20digital%C4%83",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "185c5f",
+        "hash": "3b90d7a3",
+        "encoded": "%3C/h1%3E",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "185c5f",
+        "hash": "dc16ef04",
+        "encoded": "%3Cp%20className=%22max-w-2xl%20text-base%20leading-relaxed%20text-ink-muted%22%3E",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "185c5f",
+        "hash": "c22dd8ae",
+        "encoded": "Lipe%C8%99te%20un%20text%20sau%20%C3%AEncarc%C4%83%20o%20imagine.%20Cite%C8%99te-mi%20%C3%AEl%20transform%C4%83%20%C3%AEn%20audio,%20%C3%AEn%20rom%C3%A2n%C4%83%20%C8%99i%20%C3%AEn",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "185c5f",
+        "hash": "c171d66c",
+        "encoded": "alte%20limbi.",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "185c5f",
+        "hash": "c6bb8880",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "185c5f",
+        "hash": "ae0df62e",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "185c5f",
+        "hash": "0f734fa0",
+        "encoded": "%3Csection",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "185c5f",
+        "hash": "b34111b1",
+        "encoded": "aria-label=%22Statusul%20accesului%20la%20lectur%C4%83%22",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "185c5f",
+        "hash": "fcb9d6f6",
+        "encoded": "aria-live=%22polite%22",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "185c5f",
+        "hash": "c392d0a6",
+        "encoded": "className=%7B%60rounded-xl%20px-4%20py-3%20text-sm%20$%7B",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "185c5f",
+        "hash": "55497c9b",
+        "encoded": "paywallRequired%20&&%20!subscription?.active",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "185c5f",
+        "hash": "63cd6160",
+        "encoded": "?%20'bg-accent/20%20text-ink'",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "185c5f",
+        "hash": "89bac1ab",
+        "encoded": ":%20subscription?.active",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "185c5f",
+        "hash": "fffa7e72",
+        "encoded": "?%20'bg-teal-soft%20text-ink'",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "185c5f",
+        "hash": "8c463cc8",
+        "encoded": ":%20'bg-surface%20text-ink-muted'",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "185c5f",
+        "hash": "b724f363",
+        "encoded": "%7D%60%7D",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "185c5f",
+        "hash": "af2cc4f0",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "185c5f",
+        "hash": "b5b9e3f4",
+        "encoded": "%7BpaywallRequired%20&&%20!subscription?.active%20?%20(",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "185c5f",
+        "hash": "57ba8ebf",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "185c5f",
+        "hash": "573bf431",
+        "encoded": "%3Cstrong%3EAbonament%20necesar.%3C/strong%3E%20Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83.%20Alege%20un%20plan%20pentru",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "185c5f",
+        "hash": "1b573a04",
+        "encoded": "a%20continua.",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "185c5f",
+        "hash": "72207b8a",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "185c5f",
+        "hash": "79de2b7d",
+        "encoded": ")%20:%20subscription?.active%20?%20(",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "185c5f",
+        "hash": "7194720d",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "185c5f",
+        "hash": "4bde94c6",
+        "encoded": "%3Cstrong%3EAbonament%20activ%20%C2%B7%20%7BactivePlan?.label%20??%20'Plan%20activ'%7D.%3C/strong%3E%20Accesul%20este",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "185c5f",
+        "hash": "87143ca2",
+        "encoded": "valabil%20p%C3%A2n%C4%83%20la%20%7BexpiryDate%7D.",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "185c5f",
+        "hash": "175ea6a3",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "185c5f",
+        "hash": "f4a5f45d",
+        "encoded": ")%20:%20userEmail%20?%20(",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "185c5f",
+        "hash": "380e1542",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "185c5f",
+        "hash": "905fd549",
+        "encoded": "%3Cstrong%3EConectat%20ca%20%7BuserEmail%7D.%3C/strong%3E%7B'%20'%7D",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "185c5f",
+        "hash": "652100e7",
+        "encoded": "%7BsubscriptionLoading",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "185c5f",
+        "hash": "5ab62ffb",
+        "encoded": "?%20'Verific%C4%83m%20statusul%20abonamentului%E2%80%A6'",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "185c5f",
+        "hash": "6ad29ffb",
+        "encoded": ":%20'Prima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83;%20accesul%20este%20verificat%20%C3%AEn%20siguran%C8%9B%C4%83%20la%20fiecare%20solicitare.'%7D",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "185c5f",
+        "hash": "fa116ef9",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "185c5f",
+        "hash": "e73e91ea",
+        "encoded": ")%20:%20(",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "185c5f",
+        "hash": "362b9e2e",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "185c5f",
+        "hash": "c92d4444",
+        "encoded": "%3Cstrong%3EPrima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83.%3C/strong%3E%20Nu%20ai%20nevoie%20de%20cont%20ca%20s%C4%83%20%C3%AEncepi.",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "185c5f",
+        "hash": "4a0be254",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "185c5f",
+        "hash": "d0cf9a4b",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "185c5f",
+        "hash": "abfecccf",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "185c5f",
+        "hash": "78e2bc98",
+        "encoded": "%3Cdiv%20className=%22flex%20flex-col%20gap-5%22%3E",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "185c5f",
+        "hash": "6e33203d",
+        "encoded": "%3Cdiv%20className=%7BpaywallRequired%20&&%20!subscription?.active%20?%20'order-2%20opacity-90'%20:%20'order-1'%7D%3E",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "185c5f",
+        "hash": "448db809",
+        "encoded": "%3CReaderCard%20onPaywallChange=%7BhandlePaywallChange%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "185c5f",
+        "hash": "d51947aa",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "185c5f",
+        "hash": "f9b19a7f",
+        "encoded": "%3Cdiv%20className=%7BpaywallRequired%20&&%20!subscription?.active%20?%20'order-1'%20:%20'order-2'%7D%3E",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "185c5f",
+        "hash": "01c0bc89",
+        "encoded": "%3CSubscriptionPlans",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "185c5f",
+        "hash": "c1497ca0",
+        "encoded": "emphasized=%7BpaywallRequired%20&&%20!subscription?.active%7D",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "185c5f",
+        "hash": "0efb4352",
+        "encoded": "onStatusChange=%7BhandleSubscriptionChange%7D",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "185c5f",
+        "hash": "9d499e20",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "185c5f",
+        "hash": "65124490",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "185c5f",
+        "hash": "612417ff",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "185c5f",
+        "hash": "7c62f9ed",
+        "encoded": "%3Csection%20id=%22cont%22%20aria-labelledby=%22account-heading%22%20className=%22flex%20flex-col%20gap-3%22%3E",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "185c5f",
+        "hash": "46230490",
+        "encoded": "%3Ch2%20id=%22account-heading%22%20className=%22font-display%20text-xl%20text-ink%22%3E",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "185c5f",
+        "hash": "75198c61",
+        "encoded": "Cont%20%C8%99i%20ajutor",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "185c5f",
+        "hash": "8c424636",
+        "encoded": "%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "185c5f",
+        "hash": "31d9da2c",
+        "encoded": "%3CAuthPanel%20onUserChange=%7BhandleUserChange%7D%20/%3E",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "185c5f",
+        "hash": "0c7bcc9a",
+        "encoded": "%3CInstallHelp%20/%3E",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "185c5f",
+        "hash": "b45d244b",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "185c5f",
+        "hash": "260485eb",
+        "encoded": "%3C/MainScreenLayout%3E",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "099337",
+        "hash": "98b1a1c0",
+        "encoded": "className=%22rounded-2xl%20border%20border-border%20bg-surface%20p-5%20text-sm%20text-ink-muted%20sm:p-6%22",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "099337",
+        "hash": "d8564e23",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "099337",
+        "hash": "fb3bc4d6",
+        "encoded": "%3Ch2%20className=%22mb-2%20font-display%20text-lg%20text-ink%22%3EDespre%20abonament%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "099337",
+        "hash": "80032c26",
+        "encoded": "%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "099337",
+        "hash": "a32581c9",
+        "encoded": "Prima%20lectur%C4%83%20reu%C8%99it%C4%83%20este%20gratuit%C4%83,%20f%C4%83r%C4%83%20%C3%AEnregistrare.%20Dup%C4%83%20aceea,%20abonamentul%20ofer%C4%83",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "099337",
+        "hash": "b50d3c02",
+        "encoded": "lecturi%20audio%20nelimitate%20%C3%AEn%20limbile%20disponibile.%20Pre%C8%9Bul%20%C8%99i%20intervalul%20de%20facturare%20sunt",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "099337",
+        "hash": "f9a7b2d3",
+        "encoded": "configurabile%20%C8%99i%20afi%C8%99ate%20de%20Stripe%20%C3%AEnainte%20de%20confirmare.%20Autentific%C4%83-te%20pentru%20a%20activa,",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "099337",
+        "hash": "7b0901fe",
+        "encoded": "restaura%20sau%20anula%20abonamentul.",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "099337",
+        "hash": "538242f8",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "099337",
+        "hash": "2d341304",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "099337",
+        "hash": "20b3ecb7",
+        "encoded": "%3C/MainScreenLayout%3E",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "099337",
+        "hash": "1ea95003",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "099337",
+        "hash": "73b8c9b4",
         "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "afb97e",
+        "hash": "25b8abbe",
+        "encoded": "%3Cdiv%20className=%7BpaywallRequired%20&&%20!subscription?.active%20?%20'order-2%20opacity-90'%20:%20'order-1'%7D%3E",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "afb97e",
+        "hash": "30c6a2f9",
+        "encoded": "%3CReaderCard",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "afb97e",
+        "hash": "a563f8af",
+        "encoded": "onPaywallChange=%7BhandlePaywallChange%7D",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "afb97e",
+        "hash": "8a263462",
+        "encoded": "subscriptionActive=%7Bsubscription?.active%20===%20true%7D",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "afb97e",
+        "hash": "cf4192e4",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "afb97e",
+        "hash": "02247b3b",
+        "encoded": "%3C/div%3E",
         "prevChunkIds": []
       }
     },

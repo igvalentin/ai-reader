@@ -9,6 +9,12 @@
     },
     "668ceaef": {
       "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
+    },
+    "4ffffd66": {
+      "value": "# Prompt — Redesign AI Reader as a Mobile-First, Context-Aware Single-Page App\n\nRedesign the existing AI Reader interface to be exceptionally mobile-friendly, intuitive, and easy to use with one hand.\n\n## Important constraints\n- Keep the existing application architecture, framework, backend, authentication, OCR, TTS, and subscription logic.\n- This is a UI/UX redesign, not a functional rewrite.\n- Keep the application as a single-page experience. Do not introduce separate pages for reading, subscr"
+    },
+    "b689a106": {
+      "value": "tot 500 da, eroarea asta:\n\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Price-ul planului 7 zile trebuie să fie activ și să corespundă: 5 RON (500 bani), săptămânal (week × 1) sau zilnic (day × 7).\"\n}\n\nAsa e definitia in Stripe:\nPrice\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nPrice for 7 days subscription\n\nEdit\n\nMore options\nProduct\n7 days subscription\nUnit price\nRON 5.00\nMetadata\nUse metadata to store custom additional information. View docs\n\nEdit metadata\nNo metadata\nPricing\nCurrency\nRON\nI"
     }
   },
   "localPrompts": {},

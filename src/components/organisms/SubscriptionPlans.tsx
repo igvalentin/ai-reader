@@ -24,16 +24,27 @@ function getPlanLabel(planId: SubscriptionPlanId | null): string {
   return SUBSCRIPTION_PLANS.find((plan) => plan.id === planId)?.label ?? 'Abonament existent'
 }
 
-export function SubscriptionPlans() {
+interface SubscriptionPlansProps {
+  emphasized?: boolean
+  onStatusChange?: (subscription: SubscriptionStatus | null, loading: boolean) => void
+}
+
+export function SubscriptionPlans({ emphasized = false, onStatusChange }: SubscriptionPlansProps = {}) {
   const [accessToken, setAccessToken] = useState<string | null | undefined>(undefined)
   const [subscription, setSubscription] = useState<SubscriptionStatus | null>(null)
   const [loadingStatus, setLoadingStatus] = useState(true)
   const [loadingAction, setLoadingAction] = useState<SubscriptionPlanId | 'portal' | null>(null)
+  const [selectedPlanId, setSelectedPlanId] = useState<SubscriptionPlanId>('30-days')
   const [error, setError] = useState<string | null>(null)
   const requestIdRef = useRef<{ planId: SubscriptionPlanId; requestId: string } | null>(null)
   const checkoutParams = new URLSearchParams(window.location.search)
   const checkoutResult = checkoutParams.get('checkout')
   const checkoutSessionId = checkoutResult === 'success' ? checkoutParams.get('session_id') : null
+  const selectedPlan = SUBSCRIPTION_PLANS.find((plan) => plan.id === selectedPlanId)!
+
+  useEffect(() => {
+    onStatusChange?.(subscription, loadingStatus)
+  }, [loadingStatus, onStatusChange, subscription])
 
   useEffect(() => {
     void supabase.auth.getSession().then(({ data }) => {
@@ -161,15 +172,17 @@ export function SubscriptionPlans() {
     <section
       id="abonament"
       aria-labelledby="subscription-heading"
-      className="rounded-2xl border border-border bg-surface p-5 sm:p-6"
+      className={`rounded-2xl border bg-surface p-5 sm:p-6 ${
+        emphasized ? 'border-accent shadow-md' : 'border-border'
+      }`}
     >
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <h2 id="subscription-heading" className="font-display text-xl text-ink">
-            Planuri de lectură
+            Abonament
           </h2>
           <p className="mt-1 max-w-prose text-sm text-ink-muted">
-            Prima lectură audio reușită este gratuită. După aceea, alege perioada potrivită.
+            Lectura audio este gratuită la început. Alege o perioadă când ai nevoie de acces complet.
           </p>
         </div>
         {subscription?.hasBillingAccount ? (
@@ -219,7 +232,7 @@ export function SubscriptionPlans() {
       ) : null}
       {!accessToken ? (
         <p className="mt-4 text-sm text-ink-muted">
-          Autentifică-te mai sus pentru a cumpăra sau administra un plan.
+          Autentifică-te din zona „Cont și ajutor” pentru a cumpăra sau administra un plan.
         </p>
       ) : null}
       {loadingStatus ? (
@@ -228,24 +241,59 @@ export function SubscriptionPlans() {
         </p>
       ) : null}
 
-      <div className="mt-5 grid gap-3 md:grid-cols-3">
-        {SUBSCRIPTION_PLANS.map((plan) => (
-          <article key={plan.id} className="flex flex-col rounded-lg border border-border p-4">
-            <h3 className="font-display text-lg text-ink">{plan.label}</h3>
-            <p className="mt-2 text-2xl font-semibold text-ink">{plan.priceRon} lei</p>
-            <p className="mt-2 flex-1 text-sm text-ink-muted">{plan.renewalCopy}</p>
-            <Button
-              type="button"
-              variant="primary"
-              className="mt-4 w-full"
-              disabled={!accessToken || Boolean(loadingAction) || Boolean(subscription?.active)}
-              onClick={() => void startCheckout(plan.id)}
-            >
-              {loadingAction === plan.id ? 'Se deschide checkout-ul…' : 'Alege planul'}
-            </Button>
-          </article>
-        ))}
-      </div>
+      <details open={emphasized} className="mt-4">
+        <summary className="flex min-h-12 cursor-pointer items-center rounded-lg px-3 py-2 text-sm font-semibold text-teal hover:bg-teal-soft/50">
+          {emphasized ? 'Alege planul potrivit' : 'Vezi planurile și prețurile'}
+        </summary>
+        <fieldset className="mt-3 grid gap-3 md:grid-cols-3">
+          <legend className="sr-only">Alege perioada abonamentului</legend>
+          {SUBSCRIPTION_PLANS.map((plan) => {
+            const selected = plan.id === selectedPlanId
+            return (
+              <label
+                key={plan.id}
+                className={`flex min-h-32 cursor-pointer flex-col rounded-xl border p-4 transition-colors ${
+                  selected
+                    ? 'border-teal bg-teal-soft/60 ring-2 ring-teal'
+                    : 'border-border hover:border-teal'
+                } ${subscription?.active ? 'cursor-not-allowed opacity-60' : ''}`}
+              >
+                <span className="flex items-start gap-3">
+                  <input
+                    type="radio"
+                    name="subscription-plan"
+                    value={plan.id}
+                    checked={selected}
+                    disabled={Boolean(loadingAction) || Boolean(subscription?.active)}
+                    onChange={() => setSelectedPlanId(plan.id)}
+                    className="mt-1 h-5 w-5 accent-teal"
+                  />
+                  <span className="min-w-0 flex-1">
+                    <h3 className="font-display text-lg font-semibold text-ink">
+                      {plan.label}
+                    </h3>
+                    <span className="mt-1 block text-2xl font-semibold text-ink">
+                      {plan.priceRon} lei
+                    </span>
+                  </span>
+                </span>
+                <span className="mt-3 text-sm text-ink-muted">{plan.renewalCopy}</span>
+              </label>
+            )
+          })}
+        </fieldset>
+        <Button
+          type="button"
+          variant="primary"
+          className="mt-4 min-h-14 w-full sm:w-auto"
+          disabled={!accessToken || Boolean(loadingAction) || Boolean(subscription?.active)}
+          onClick={() => void startCheckout(selectedPlanId)}
+        >
+          {loadingAction === selectedPlanId
+            ? 'Se deschide checkout-ul…'
+            : `Continuă cu ${selectedPlan.label} · ${selectedPlan.priceRon} lei`}
+        </Button>
+      </details>
       {error ? (
         <p role="alert" className="mt-4 text-sm font-medium text-danger">
           {error}

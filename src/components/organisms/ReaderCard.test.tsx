@@ -24,15 +24,21 @@ describe('ReaderCard entitlement journey', () => {
     const user = userEvent.setup()
     const firstRender = render(<ReaderCard />)
 
-    await user.type(screen.getByLabelText('Textul tău'), 'Text românesc pentru citire.')
+    await user.type(screen.getByLabelText('Lipește sau scrie textul'), 'Text românesc pentru citire.')
     await user.click(screen.getByRole('button', { name: /citește cu voce tare/i }))
     expect(
       await screen.findByRole('heading', { name: 'Lectura gratuită a fost folosită' }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /abonament necesar pentru a continua/i }),
+    ).toBeDisabled()
 
     firstRender.unmount()
     render(<ReaderCard />)
-    await user.type(screen.getByLabelText('Textul tău'), 'A second reading after reload.')
+    await user.type(
+      screen.getByLabelText('Lipește sau scrie textul'),
+      'A second reading after reload.',
+    )
     await user.click(screen.getByRole('button', { name: /citește cu voce tare/i }))
 
     expect(
@@ -51,7 +57,7 @@ describe('ReaderCard entitlement journey', () => {
       ),
     )
     render(<ReaderCard />)
-    const textArea = screen.getByLabelText('Textul tău')
+    const textArea = screen.getByLabelText('Lipește sau scrie textul')
     const originalText = 'Bună ziua, acesta este textul meu.'
 
     await user.type(textArea, originalText)

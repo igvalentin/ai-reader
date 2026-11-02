@@ -1,0 +1,522 @@
+{
+  "src/components/molecules/ImageUploadControl.tsx": {
+    "filename": "ImageUploadControl.tsx",
+    "path": "src/components/molecules/ImageUploadControl.tsx",
+    "version": "1.2",
+    "contextFile": "d44587ee-context.json",
+    "chunks": {
+      "dbf86d": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "4baeb896",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c7ced4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "eb7a1ba3",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "517ec7": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "59fa1e49",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "5c6807": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "0bab64a7",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e11993": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "574ede17",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "f1a2b0": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793604580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "e2a36950",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 9:29:40 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "5c6807",
+        "hash": "af644062",
+        "encoded": "import%20%7B%20useId,%20useRef,%20useState,%20type%20ChangeEvent,%20type%20DragEvent%20%7D%20from%20'react'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "5c6807",
+        "hash": "3dce3457",
+        "encoded": "import%20%7B%20Button%20%7D%20from%20'../atoms/Button'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "5c6807",
+        "hash": "b6d9e328",
+        "encoded": "import%20type%20%7B%20ImageOcrStatus%20%7D%20from%20'../../lib/image/useImageOcr'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "5c6807",
+        "hash": "09a14fc5",
+        "encoded": "interface%20ImageUploadControlProps%20%7B",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "517ec7",
+        "hash": "de163dc4",
+        "encoded": "const%20handleDrop%20=%20(event:%20DragEvent%3CHTMLButtonElement%3E)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "517ec7",
+        "hash": "85827349",
+        "encoded": "event.preventDefault()",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "517ec7",
+        "hash": "0b3cf042",
+        "encoded": "setIsDragActive(false)",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "517ec7",
+        "hash": "80a41c30",
+        "encoded": "if%20(isBusy)%20return",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "517ec7",
+        "hash": "7061ac7b",
+        "encoded": "handleFiles(event.dataTransfer.files)",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "517ec7",
+        "hash": "5250e31e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "517ec7",
+        "hash": "8bd36e1a",
+        "encoded": "return%20(",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "e11993",
+        "hash": "159ab958",
+        "encoded": ")%20:%20(",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "e11993",
+        "hash": "50c1b599",
+        "encoded": "%3Cbutton",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "e11993",
+        "hash": "e777ac4e",
+        "encoded": "type=%22button%22",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "e11993",
+        "hash": "397ecfd0",
+        "encoded": "onClick=%7B()%20=%3E%20inputRef.current?.click()%7D",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "e11993",
+        "hash": "790e2ae1",
+        "encoded": "onDragOver=%7B(event)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "e11993",
+        "hash": "e3eeaf7d",
+        "encoded": "event.preventDefault()",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "e11993",
+        "hash": "a0335fdf",
+        "encoded": "setIsDragActive(true)",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "e11993",
+        "hash": "d338a65d",
+        "encoded": "%7D%7D",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "e11993",
+        "hash": "b2114032",
+        "encoded": "onDragLeave=%7B()%20=%3E%20setIsDragActive(false)%7D",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "e11993",
+        "hash": "5831113b",
+        "encoded": "onDrop=%7BhandleDrop%7D",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "e11993",
+        "hash": "ec221d87",
+        "encoded": "className=%7B%60flex%20min-h-20%20w-full%20cursor-pointer%20flex-col%20items-center%20justify-center%20gap-1%20rounded-xl%20border%20border-dashed%20px-4%20py-4%20text-center%20transition-colors%20duration-150%20focus-visible:outline%20focus-visible:outline-2%20focus-visible:outline-offset-2%20focus-visible:outline-teal%20$%7B",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "e11993",
+        "hash": "bd17e696",
+        "encoded": "isDragActive",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "e11993",
+        "hash": "9c46887d",
+        "encoded": "?%20'border-teal%20bg-teal-soft/60%20text-ink'",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "e11993",
+        "hash": "0f20adf8",
+        "encoded": ":%20'border-border%20bg-paper%20text-ink'",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "e11993",
+        "hash": "4bfbeaeb",
+        "encoded": "%7D%60%7D",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "e11993",
+        "hash": "8e7d6584",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "e11993",
+        "hash": "fabf75c4",
+        "encoded": "%3Cspan%20className=%22font-semibold%22%3E%C3%8Encarc%C4%83%20o%20imagine%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "e11993",
+        "hash": "69851ac2",
+        "encoded": "%3Cspan%20className=%22text-sm%20text-ink-muted%22%3EAlege%20o%20fotografie%20sau%20trage-o%20aici%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "e11993",
+        "hash": "6512d1f6",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "e11993",
+        "hash": "466b77bd",
+        "encoded": ")%7D",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "e11993",
+        "hash": "60237644",
+        "encoded": "%3Cinput",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "e11993",
+        "hash": "c6d2ca75",
+        "encoded": "ref=%7BinputRef%7D",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "e11993",
+        "hash": "deee6a06",
+        "encoded": "id=%7BinputId%7D",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "e11993",
+        "hash": "15d63552",
+        "encoded": "name=%22image%22",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "e11993",
+        "hash": "35abf3fa",
+        "encoded": "type=%22file%22",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "e11993",
+        "hash": "c63bcf2c",
+        "encoded": "accept=%22image/jpeg,image/png,image/webp%22",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "e11993",
+        "hash": "a82fc0bc",
+        "encoded": "onChange=%7BhandleInputChange%7D",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "e11993",
+        "hash": "eb226392",
+        "encoded": "aria-label=%22%C3%8Encarc%C4%83%20o%20imagine%22",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "f1a2b0",
+        "hash": "ee7f109c",
+        "encoded": "onChange=%7BhandleInputChange%7D",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "f1a2b0",
+        "hash": "9cdcf8ad",
+        "encoded": "aria-hidden=%22true%22",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "f1a2b0",
+        "hash": "5862d02f",
+        "encoded": "tabIndex=%7B-1%7D",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "f1a2b0",
+        "hash": "b700fbf0",
+        "encoded": "className=%22hidden%22",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "f1a2b0",
+        "hash": "8749b684",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "f1a2b0",
+        "hash": "d99671f7",
+        "encoded": "%7BerrorMessage%20?%20(",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "e11993",
+        "hash": "5e1dfed9",
+        "encoded": "className=%22sr-only%22",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "e11993",
+        "hash": "421545eb",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "c7ced4",
+        "hash": "e828e17b",
+        "encoded": "%3CButton",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "c7ced4",
+        "hash": "886c00cb",
+        "encoded": "type=%22button%22",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "c7ced4",
+        "hash": "b56636d4",
+        "encoded": "variant=%22secondary%22",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "c7ced4",
+        "hash": "d3232b24",
+        "encoded": "onClick=%7B()%20=%3E%20inputRef.current?.click()%7D",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "c7ced4",
+        "hash": "c69abe10",
+        "encoded": "disabled=%7BisBusy%7D",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "c7ced4",
+        "hash": "bafcafad",
+        "encoded": "%3E",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "c7ced4",
+        "hash": "bd5b7b56",
+        "encoded": "%C3%8Enlocuie%C8%99te%20imaginea",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "c7ced4",
+        "hash": "2b6e0353",
+        "encoded": "%3C/Button%3E",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "c7ced4",
+        "hash": "10e61c9c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "c7ced4",
+        "hash": "2bf8c083",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "c7ced4",
+        "hash": "5b5fef8b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "c7ced4",
+        "hash": "3d85bcee",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "dbf86d",
+        "hash": "776d2af1",
+        "encoded": "type=%22file%22",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "dbf86d",
+        "hash": "5d7c847f",
+        "encoded": "accept=%22image/jpeg,image/png,image/webp%22",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "dbf86d",
+        "hash": "3363d485",
+        "encoded": "onChange=%7BhandleInputChange%7D",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "dbf86d",
+        "hash": "ce5eaf8d",
+        "encoded": "aria-hidden=%22true%22",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "dbf86d",
+        "hash": "03028912",
+        "encoded": "tabIndex=%7B-1%7D",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "dbf86d",
+        "hash": "96ff8f90",
+        "encoded": "className=%22sr-only%22",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "dbf86d",
+        "hash": "6e36df01",
+        "encoded": "/%3E",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "dbf86d",
+        "hash": "7e627992",
+        "encoded": "%7BerrorMessage%20?%20(",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

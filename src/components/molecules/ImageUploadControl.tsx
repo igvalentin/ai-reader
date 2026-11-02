@@ -64,7 +64,7 @@ export function ImageUploadControl({
     event.target.value = ''
   }
 
-  const handleDrop = (event: DragEvent<HTMLLabelElement>) => {
+  const handleDrop = (event: DragEvent<HTMLButtonElement>) => {
     event.preventDefault()
     setIsDragActive(false)
     if (isBusy) return
@@ -125,34 +125,37 @@ export function ImageUploadControl({
                 <Button type="button" variant="secondary" onClick={onRemove} disabled={isBusy}>
                   Elimină imaginea
                 </Button>
-                <label
-                  htmlFor={inputId}
-                  className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-base font-medium text-ink transition-colors duration-150 hover:border-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${isBusy ? 'pointer-events-none opacity-50' : ''}`}
+                <Button
+                  type="button"
+                  variant="secondary"
+                  onClick={() => inputRef.current?.click()}
+                  disabled={isBusy}
                 >
                   Înlocuiește imaginea
-                </label>
+                </Button>
               </div>
             </div>
           </div>
         </div>
       ) : (
-        <label
-          htmlFor={inputId}
+        <button
+          type="button"
+          onClick={() => inputRef.current?.click()}
           onDragOver={(event) => {
             event.preventDefault()
             setIsDragActive(true)
           }}
           onDragLeave={() => setIsDragActive(false)}
           onDrop={handleDrop}
-          className={`flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-dashed px-4 py-6 text-center text-sm transition-colors duration-150 ${
+          className={`flex min-h-20 w-full cursor-pointer flex-col items-center justify-center gap-1 rounded-xl border border-dashed px-4 py-4 text-center transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal ${
             isDragActive
               ? 'border-teal bg-teal-soft/60 text-ink'
-              : 'border-border bg-surface text-ink-muted'
+              : 'border-border bg-paper text-ink'
           }`}
         >
-          <span aria-hidden="true">🖼️</span>
-          <span>Trage o imagine aici sau apasă pentru a o selecta</span>
-        </label>
+          <span className="font-semibold">Încarcă o imagine</span>
+          <span className="text-sm text-ink-muted">Alege o fotografie sau trage-o aici</span>
+        </button>
       )}
 
       <input
@@ -162,8 +165,9 @@ export function ImageUploadControl({
         type="file"
         accept="image/jpeg,image/png,image/webp"
         onChange={handleInputChange}
-        aria-describedby={errorMessage ? errorId : undefined}
-        className="sr-only"
+        aria-hidden="true"
+        tabIndex={-1}
+        className="hidden"
       />
 
       {errorMessage ? (

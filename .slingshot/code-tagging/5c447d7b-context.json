@@ -9,6 +9,9 @@
     },
     "668ceaef": {
       "value": "# Prompt — Fix Authentication, Audio Entitlements, Subscriptions, and Admin User Management\n\nYou are working on the existing AI Reader application, currently deployed on Vercel and using Supabase in production.\n\nThe application already supports:\n- Text input and image upload.\n- Local Tesseract OCR.\n- Azure Text-to-Speech.\n- Email magic-link authentication.\n- A free first successful audio generation, followed by a subscription requirement.\n\n**Do not rebuild the application or replace its existing"
+    },
+    "4ffffd66": {
+      "value": "# Prompt — Redesign AI Reader as a Mobile-First, Context-Aware Single-Page App\n\nRedesign the existing AI Reader interface to be exceptionally mobile-friendly, intuitive, and easy to use with one hand.\n\n## Important constraints\n- Keep the existing application architecture, framework, backend, authentication, OCR, TTS, and subscription logic.\n- This is a UI/UX redesign, not a functional rewrite.\n- Keep the application as a single-page experience. Do not introduce separate pages for reading, subscr"
     }
   },
   "localPrompts": {},

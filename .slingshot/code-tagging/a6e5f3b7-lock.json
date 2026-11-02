@@ -94,336 +94,636 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:28:32 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "584b3b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "55f619c6",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "57a9f8": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "55f619c6",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "dcc995": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "e4656c8f",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "57884b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "f298d31a",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "2ab212": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "89970f38",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "6e6dfe": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "38f3ab1d",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "18bcda": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "bf1a5535",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "8da779": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "bbf8f01c",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "27": {
-        "chunkId": "0e70bb",
-        "hash": "3bd5f858",
-        "encoded": "import%20%7B%20SubscriptionPlans%20%7D%20from%20'./SubscriptionPlans'",
+      "0": {
+        "chunkId": "8da779",
+        "hash": "b1a7d4a5",
+        "encoded": "import%20%7B%20afterEach,%20beforeEach,%20describe,%20expect,%20it,%20vi%20%7D%20from%20'vitest'",
         "prevChunkIds": []
       },
-      "29": {
-        "chunkId": "0e70bb",
-        "hash": "34f6d138",
-        "encoded": "afterEach(()%20=%3E%20%7B",
+      "1": {
+        "chunkId": "8da779",
+        "hash": "555609d7",
+        "encoded": "import%20%7B%20cleanup,%20render,%20screen%20%7D%20from%20'@testing-library/react'",
         "prevChunkIds": []
       },
-      "30": {
-        "chunkId": "0e70bb",
-        "hash": "eb34fad2",
-        "encoded": "cleanup()",
+      "2": {
+        "chunkId": "8da779",
+        "hash": "e771ea98",
+        "encoded": "import%20userEvent%20from%20'@testing-library/user-event'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "8da779",
+        "hash": "99939ea5",
+        "encoded": "const%20mocks%20=%20vi.hoisted(()%20=%3E%20(%7B",
         "prevChunkIds": []
       },
       "31": {
         "chunkId": "0e70bb",
-        "hash": "eb23bac4",
-        "encoded": "window.history.replaceState(%7B%7D,%20'',%20'/')",
+        "hash": "45ccd3fe",
+        "encoded": "import%20%7B%20SubscriptionPlans%20%7D%20from%20'./SubscriptionPlans'",
         "prevChunkIds": []
       },
-      "32": {
+      "33": {
         "chunkId": "0e70bb",
-        "hash": "753b2967",
-        "encoded": "%7D)",
+        "hash": "a2842f25",
+        "encoded": "afterEach(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "34": {
         "chunkId": "0e70bb",
-        "hash": "bbffbfbd",
-        "encoded": "beforeEach(()%20=%3E%20%7B",
+        "hash": "22df53ae",
+        "encoded": "cleanup()",
         "prevChunkIds": []
       },
       "35": {
         "chunkId": "0e70bb",
-        "hash": "a582d6d8",
-        "encoded": "mocks.getSession.mockReset().mockReturnValue(new%20Promise(()%20=%3E%20undefined))",
+        "hash": "08b65bce",
+        "encoded": "window.history.replaceState(%7B%7D,%20'',%20'/')",
         "prevChunkIds": []
       },
       "36": {
         "chunkId": "0e70bb",
-        "hash": "0afa7b29",
+        "hash": "feb8aaba",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "0e70bb",
+        "hash": "19ac91c8",
+        "encoded": "beforeEach(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "0e70bb",
+        "hash": "436347d2",
+        "encoded": "mocks.getSession.mockReset().mockReturnValue(new%20Promise(()%20=%3E%20undefined))",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "0e70bb",
+        "hash": "bc7ca570",
         "encoded": "mocks.onAuthStateChange.mockReset().mockReturnValue(%7B",
         "prevChunkIds": []
       },
-      "62": {
-        "chunkId": "4f74b7",
-        "hash": "c5a4d44e",
-        "encoded": "it('reconciles%20the%20returned%20Checkout%20session%20before%20polling%20for%20webhook%20confirmation',%20async%20()%20=%3E%20%7B",
+      "49": {
+        "chunkId": "18bcda",
+        "hash": "51a10f48",
+        "encoded": "describe('SubscriptionPlans',%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "63": {
-        "chunkId": "4f74b7",
-        "hash": "59d10aa7",
-        "encoded": "const%20expiry%20=%20'2026-12-01T12:00:00.000Z'",
+      "50": {
+        "chunkId": "18bcda",
+        "hash": "9529cde6",
+        "encoded": "it('shows%20selectable%20RON%20plans%20and%20requires%20authentication%20before%20checkout',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "64": {
-        "chunkId": "4f74b7",
-        "hash": "cbdefc58",
-        "encoded": "window.history.replaceState(%7B%7D,%20'',%20'/?checkout=success&session_id=cs_test_checkout123456')",
+      "51": {
+        "chunkId": "18bcda",
+        "hash": "afcf77a1",
+        "encoded": "const%20user%20=%20userEvent.setup()",
         "prevChunkIds": []
       },
-      "65": {
-        "chunkId": "4f74b7",
-        "hash": "5c415825",
-        "encoded": "mocks.getSession.mockResolvedValue(%7B%20data:%20%7B%20session:%20%7B%20access_token:%20'test-token'%20%7D%20%7D%20%7D)",
+      "52": {
+        "chunkId": "18bcda",
+        "hash": "76974ee4",
+        "encoded": "render(%3CSubscriptionPlans%20/%3E)",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "18bcda",
+        "hash": "ae12cd51",
+        "encoded": "await%20user.click(screen.getByText('Vezi%20planurile%20%C8%99i%20pre%C8%9Burile'))",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "18bcda",
+        "hash": "4bcede6e",
+        "encoded": "expect(screen.getByRole('heading',%20%7B%20name:%20'7%20zile'%20%7D)).toBeInTheDocument()",
         "prevChunkIds": []
       },
       "67": {
-        "chunkId": "d3da11",
-        "hash": "782dd85b",
-        "encoded": "expect(",
+        "chunkId": "6e6dfe",
+        "hash": "15648bca",
+        "encoded": "expect(screen.getByText('Se%20re%C3%AEnnoie%C8%99te%20automat%20la%20fiecare%2030%20de%20zile.')).toBeInTheDocument()",
         "prevChunkIds": []
       },
       "68": {
-        "chunkId": "d3da11",
-        "hash": "06405a6e",
-        "encoded": "screen",
+        "chunkId": "6e6dfe",
+        "hash": "e7ab43f6",
+        "encoded": "await%20user.click(screen.getByRole('radio',%20%7B%20name:%20/7%20zile/%20%7D))",
         "prevChunkIds": []
       },
       "69": {
-        "chunkId": "d3da11",
-        "hash": "56f45444",
-        "encoded": ".getAllByRole('button',%20%7B%20name:%20'Alege%20planul'%20%7D)",
+        "chunkId": "6e6dfe",
+        "hash": "68c89625",
+        "encoded": "expect(",
         "prevChunkIds": []
       },
       "70": {
-        "chunkId": "d3da11",
-        "hash": "c948c898",
-        "encoded": ".every((button)%20=%3E%20button.hasAttribute('disabled')),",
+        "chunkId": "6e6dfe",
+        "hash": "e0709d69",
+        "encoded": "screen.getByRole('button',%20%7B%20name:%20/Continu%C4%83%20cu%207%20zile%20%C2%B7%205%20lei/%20%7D),",
         "prevChunkIds": []
       },
       "71": {
-        "chunkId": "d3da11",
-        "hash": "9e6d0187",
-        "encoded": ").toBe(true)",
+        "chunkId": "6e6dfe",
+        "hash": "52668633",
+        "encoded": ").toBeDisabled()",
         "prevChunkIds": []
       },
       "72": {
-        "chunkId": "d3da11",
+        "chunkId": "6e6dfe",
         "hash": "0eb49059",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
-      "74": {
-        "chunkId": "d3da11",
-        "hash": "5a81ba67",
-        "encoded": "it('polls%20for%20Stripe%20webhook%20confirmation%20and%20shows%20only%20the%20confirmed%20entitlement',%20async%20()%20=%3E%20%7B",
-        "prevChunkIds": []
-      },
-      "75": {
-        "chunkId": "d3da11",
-        "hash": "731ad110",
-        "encoded": "const%20expiry%20=%20'2026-12-01T12:00:00.000Z'",
-        "prevChunkIds": []
-      },
-      "76": {
-        "chunkId": "d3da11",
-        "hash": "04e9f5f5",
-        "encoded": "window.history.replaceState(%7B%7D,%20'',%20'/?checkout=success')",
-        "prevChunkIds": []
-      },
       "77": {
-        "chunkId": "d3da11",
-        "hash": "41448650",
-        "encoded": "mocks.getSession.mockResolvedValue(%7B%20data:%20%7B%20session:%20%7B%20access_token:%20'test-token'%20%7D%20%7D%20%7D)",
+        "chunkId": "4f74b7",
+        "hash": "98aaecf0",
+        "encoded": "it('reconciles%20the%20returned%20Checkout%20session%20before%20polling%20for%20webhook%20confirmation',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "78": {
-        "chunkId": "d3da11",
-        "hash": "2dc682f6",
-        "encoded": "mocks.requestSubscriptionStatus",
+        "chunkId": "4f74b7",
+        "hash": "b362642b",
+        "encoded": "const%20expiry%20=%20'2026-12-01T12:00:00.000Z'",
         "prevChunkIds": []
       },
       "79": {
-        "chunkId": "d3da11",
-        "hash": "a7651736",
-        "encoded": ".mockResolvedValueOnce(null)",
+        "chunkId": "4f74b7",
+        "hash": "698bf4ba",
+        "encoded": "window.history.replaceState(%7B%7D,%20'',%20'/?checkout=success&session_id=cs_test_checkout123456')",
         "prevChunkIds": []
       },
       "80": {
-        "chunkId": "d3da11",
-        "hash": "d6e4df7b",
-        "encoded": ".mockResolvedValueOnce(%7B",
-        "prevChunkIds": []
-      },
-      "81": {
-        "chunkId": "d3da11",
-        "hash": "fa91f455",
-        "encoded": "active:%20true,",
+        "chunkId": "4f74b7",
+        "hash": "5b327a88",
+        "encoded": "mocks.getSession.mockResolvedValue(%7B%20data:%20%7B%20session:%20%7B%20access_token:%20'test-token'%20%7D%20%7D%20%7D)",
         "prevChunkIds": []
       },
       "82": {
         "chunkId": "d3da11",
-        "hash": "25265c52",
-        "encoded": "status:%20'active',",
+        "hash": "77e62626",
+        "encoded": "expect(",
         "prevChunkIds": []
       },
       "83": {
-        "chunkId": "0b1edf",
-        "hash": "25259725",
-        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenCalledTimes(2)",
+        "chunkId": "d3da11",
+        "hash": "b8aa026f",
+        "encoded": "screen",
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "0b1edf",
-        "hash": "0e944e13",
-        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(",
+        "chunkId": "d3da11",
+        "hash": "6e533330",
+        "encoded": ".getAllByRole('button',%20%7B%20name:%20'Alege%20planul'%20%7D)",
         "prevChunkIds": []
       },
       "85": {
-        "chunkId": "0b1edf",
-        "hash": "0dea0704",
-        "encoded": "1,",
+        "chunkId": "d3da11",
+        "hash": "f8ae445d",
+        "encoded": ".every((button)%20=%3E%20button.hasAttribute('disabled')),",
         "prevChunkIds": []
       },
       "86": {
-        "chunkId": "0b1edf",
-        "hash": "5a161f38",
-        "encoded": "'test-token',",
+        "chunkId": "d3da11",
+        "hash": "ea2bebe9",
+        "encoded": ").toBe(true)",
         "prevChunkIds": []
       },
       "87": {
-        "chunkId": "0b1edf",
-        "hash": "1a3b82d0",
-        "encoded": "'cs_test_checkout123456',",
-        "prevChunkIds": []
-      },
-      "88": {
-        "chunkId": "0b1edf",
-        "hash": "7140c050",
-        "encoded": ")",
+        "chunkId": "d3da11",
+        "hash": "0a32e2a3",
+        "encoded": "%7D)",
         "prevChunkIds": []
       },
       "89": {
-        "chunkId": "0b1edf",
-        "hash": "38e10b38",
-        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(2,%20'test-token')",
+        "chunkId": "d3da11",
+        "hash": "d09ae7f0",
+        "encoded": "it('polls%20for%20Stripe%20webhook%20confirmation%20and%20shows%20only%20the%20confirmed%20entitlement',%20async%20()%20=%3E%20%7B",
         "prevChunkIds": []
       },
       "90": {
-        "chunkId": "0b1edf",
-        "hash": "7bacc162",
-        "encoded": "expect(screen.queryByText(/Plata%20este%20%C3%AEn%20curs%20de%20confirmare/)).not.toBeInTheDocument()",
+        "chunkId": "d3da11",
+        "hash": "4294750b",
+        "encoded": "const%20expiry%20=%20'2026-12-01T12:00:00.000Z'",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "d3da11",
+        "hash": "389e7dd2",
+        "encoded": "window.history.replaceState(%7B%7D,%20'',%20'/?checkout=success')",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "d3da11",
+        "hash": "4f0ecea6",
+        "encoded": "mocks.getSession.mockResolvedValue(%7B%20data:%20%7B%20session:%20%7B%20access_token:%20'test-token'%20%7D%20%7D%20%7D)",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "d3da11",
+        "hash": "6c3dde35",
+        "encoded": "mocks.requestSubscriptionStatus",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "2ab212",
+        "hash": "9c0f6f5f",
+        "encoded": "expect(await%20screen.findByText('1%20decembrie%202026',%20%7B%7D,%20%7B%20timeout:%205_000%20%7D)).toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "2ab212",
+        "hash": "3b9b453d",
+        "encoded": "expect(screen.getByText('30%20de%20zile')).toBeInTheDocument()",
         "prevChunkIds": []
       },
       "96": {
-        "chunkId": "d3da11",
-        "hash": "196cf0c1",
-        "encoded": "currentPeriodStart:%20'2026-11-01T12:00:00.000Z',",
+        "chunkId": "2ab212",
+        "hash": "6c3b54f6",
+        "encoded": "expect(screen.getByText(/Re%C3%AEnnoire%20automat%C4%83%20activ%C4%83/)).toBeInTheDocument()",
         "prevChunkIds": []
       },
       "97": {
-        "chunkId": "d3da11",
-        "hash": "2ffe4035",
-        "encoded": "currentPeriodEnd:%20expiry,",
+        "chunkId": "dcc995",
+        "hash": "81bb564e",
+        "encoded": "expect(screen.getByText('30%20de%20zile',%20%7B%20selector:%20'strong'%20%7D)).toBeInTheDocument()",
         "prevChunkIds": []
       },
       "98": {
-        "chunkId": "d3da11",
-        "hash": "0f307387",
-        "encoded": "cancelAtPeriodEnd:%20false,",
+        "chunkId": "dcc995",
+        "hash": "0bedb31d",
+        "encoded": "expect(screen.getByText(/Re%C3%AEnnoire%20automat%C4%83%20activ%C4%83/)).toBeInTheDocument()",
         "prevChunkIds": []
       },
       "99": {
         "chunkId": "d3da11",
-        "hash": "59c0bbaa",
-        "encoded": "hasBillingAccount:%20true,",
+        "hash": "deb09f9c",
+        "encoded": ".mockResolvedValueOnce(%7B",
         "prevChunkIds": []
       },
       "100": {
         "chunkId": "d3da11",
-        "hash": "da5274fe",
-        "encoded": "%7D)",
+        "hash": "150417dd",
+        "encoded": "active:%20true,",
         "prevChunkIds": []
       },
       "101": {
         "chunkId": "d3da11",
-        "hash": "d0c2368f",
-        "encoded": "render(%3CSubscriptionPlans%20/%3E)",
+        "hash": "c16af042",
+        "encoded": "status:%20'active',",
         "prevChunkIds": []
       },
-      "103": {
-        "chunkId": "d3da11",
-        "hash": "f46c8754",
-        "encoded": "expect(await%20screen.findByText('1%20decembrie%202026',%20%7B%7D,%20%7B%20timeout:%205_000%20%7D)).toBeInTheDocument()",
-        "prevChunkIds": []
-      },
-      "104": {
-        "chunkId": "d3da11",
-        "hash": "addf3538",
-        "encoded": "expect(screen.getAllByText('30%20de%20zile')).toHaveLength(2)",
-        "prevChunkIds": []
-      },
-      "105": {
-        "chunkId": "d3da11",
-        "hash": "1d29d412",
-        "encoded": "expect(screen.getByText(/Re%C3%AEnnoire%20automat%C4%83%20activ%C4%83/)).toBeInTheDocument()",
-        "prevChunkIds": []
-      },
-      "106": {
-        "chunkId": "d3da11",
-        "hash": "40c75919",
+      "102": {
+        "chunkId": "0b1edf",
+        "hash": "cabe59a0",
         "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenCalledTimes(2)",
         "prevChunkIds": []
       },
-      "107": {
-        "chunkId": "d3da11",
-        "hash": "58bdb867",
-        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenCalledWith('test-token')",
+      "103": {
+        "chunkId": "0b1edf",
+        "hash": "868a5f07",
+        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(",
         "prevChunkIds": []
       },
-      "108": {
-        "chunkId": "d3da11",
-        "hash": "aecf7970",
+      "104": {
+        "chunkId": "0b1edf",
+        "hash": "9fe9944f",
+        "encoded": "1,",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "0b1edf",
+        "hash": "f838dfcf",
+        "encoded": "'test-token',",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "57884b",
+        "hash": "97bbaa36",
         "encoded": "expect(screen.queryByText(/Plata%20este%20%C3%AEn%20curs%20de%20confirmare/)).not.toBeInTheDocument()",
         "prevChunkIds": []
       },
+      "107": {
+        "chunkId": "57884b",
+        "hash": "953ce707",
+        "encoded": "expect(screen.queryByRole('button',%20%7B%20name:%20/Continu%C4%83%20cu/%20%7D)).not.toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "57884b",
+        "hash": "983c03b8",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
       "109": {
-        "chunkId": "d3da11",
-        "hash": "3f257d91",
-        "encoded": "expect(",
+        "chunkId": "57a9f8",
+        "hash": "9539edf6",
+        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(2,%20'test-token')",
         "prevChunkIds": []
       },
       "110": {
-        "chunkId": "d3da11",
-        "hash": "326eb486",
-        "encoded": "screen",
+        "chunkId": "57a9f8",
+        "hash": "dc258e5f",
+        "encoded": "expect(screen.queryByText(/Plata%20este%20%C3%AEn%20curs%20de%20confirmare/)).not.toBeInTheDocument()",
         "prevChunkIds": []
       },
       "111": {
-        "chunkId": "d3da11",
-        "hash": "15abb425",
-        "encoded": ".getAllByRole('button',%20%7B%20name:%20'Alege%20planul'%20%7D)",
+        "chunkId": "57a9f8",
+        "hash": "9ba8cee0",
+        "encoded": "expect(screen.getByRole('button',%20%7B%20name:%20/Continu%C4%83%20cu/%20%7D)).toBeDisabled()",
         "prevChunkIds": []
       },
       "112": {
-        "chunkId": "d3da11",
-        "hash": "77dd0d15",
-        "encoded": ".every((button)%20=%3E%20button.hasAttribute('disabled')),",
+        "chunkId": "584b3b",
+        "hash": "be747ee8",
+        "encoded": "expect(screen.queryByText(/Plata%20este%20%C3%AEn%20curs%20de%20confirmare/)).not.toBeInTheDocument()",
         "prevChunkIds": []
       },
       "113": {
-        "chunkId": "d3da11",
-        "hash": "2146952d",
-        "encoded": ").toBe(true)",
+        "chunkId": "584b3b",
+        "hash": "bcc5e43c",
+        "encoded": "expect(screen.getByRole('button',%20%7B%20name:%20/Continu%C4%83%20cu/%20%7D)).toBeDisabled()",
         "prevChunkIds": []
       },
       "114": {
-        "chunkId": "d3da11",
-        "hash": "0f28bcbc",
-        "encoded": "%7D)",
+        "chunkId": "0b1edf",
+        "hash": "d6449432",
+        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(2,%20'test-token')",
         "prevChunkIds": []
       },
       "115": {
+        "chunkId": "0b1edf",
+        "hash": "e9e51279",
+        "encoded": "expect(screen.queryByText(/Plata%20este%20%C3%AEn%20curs%20de%20confirmare/)).not.toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "121": {
         "chunkId": "d3da11",
-        "hash": "5cb0410e",
+        "hash": "e81c1875",
+        "encoded": "currentPeriodStart:%20'2026-11-01T12:00:00.000Z',",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "d3da11",
+        "hash": "54f580b3",
+        "encoded": "currentPeriodEnd:%20expiry,",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "d3da11",
+        "hash": "60571659",
+        "encoded": "cancelAtPeriodEnd:%20false,",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "d3da11",
+        "hash": "43728bf2",
+        "encoded": "hasBillingAccount:%20true,",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "d3da11",
+        "hash": "c15f5ec4",
         "encoded": "%7D)",
         "prevChunkIds": []
       },
+      "126": {
+        "chunkId": "d3da11",
+        "hash": "912f4fda",
+        "encoded": "render(%3CSubscriptionPlans%20/%3E)",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "d3da11",
+        "hash": "433d0875",
+        "encoded": "expect(await%20screen.findByText('1%20decembrie%202026',%20%7B%7D,%20%7B%20timeout:%205_000%20%7D)).toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "d3da11",
+        "hash": "b88fb418",
+        "encoded": "expect(screen.getAllByText('30%20de%20zile')).toHaveLength(2)",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "d3da11",
+        "hash": "efc3c062",
+        "encoded": "expect(screen.getByText(/Re%C3%AEnnoire%20automat%C4%83%20activ%C4%83/)).toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "d3da11",
+        "hash": "8e9853b5",
+        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenCalledTimes(2)",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "d3da11",
+        "hash": "4edd1d48",
+        "encoded": "expect(mocks.requestSubscriptionStatus).toHaveBeenCalledWith('test-token')",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "d3da11",
+        "hash": "0928779e",
+        "encoded": "expect(screen.queryByText(/Plata%20este%20%C3%AEn%20curs%20de%20confirmare/)).not.toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "d3da11",
+        "hash": "9c305cb1",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "d3da11",
+        "hash": "14d6a934",
+        "encoded": "screen",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "d3da11",
+        "hash": "7abba720",
+        "encoded": ".getAllByRole('button',%20%7B%20name:%20'Alege%20planul'%20%7D)",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "d3da11",
+        "hash": "312f751a",
+        "encoded": ".every((button)%20=%3E%20button.hasAttribute('disabled')),",
+        "prevChunkIds": []
+      },
       "138": {
+        "chunkId": "d3da11",
+        "hash": "a7121172",
+        "encoded": ").toBe(true)",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "d3da11",
+        "hash": "6bab4c61",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "d3da11",
+        "hash": "978bb77b",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "163": {
         "chunkId": "31cacf",
-        "hash": "37f23740",
+        "hash": "a5bc29ae",
         "encoded": "expect(screen.getAllByText('30%20de%20zile')).toHaveLength(2)",
         "prevChunkIds": []
       }

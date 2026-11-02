@@ -1,0 +1,15 @@
+{
+  "filename": "ReaderCard.test.tsx",
+  "path": "src/components/organisms/ReaderCard.test.tsx",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "4ffffd66": {
+      "value": "# Prompt — Redesign AI Reader as a Mobile-First, Context-Aware Single-Page App\n\nRedesign the existing AI Reader interface to be exceptionally mobile-friendly, intuitive, and easy to use with one hand.\n\n## Important constraints\n- Keep the existing application architecture, framework, backend, authentication, OCR, TTS, and subscription logic.\n- This is a UI/UX redesign, not a functional rewrite.\n- Keep the application as a single-page experience. Do not introduce separate pages for reading, subscr"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

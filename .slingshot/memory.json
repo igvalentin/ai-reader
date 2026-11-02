@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-01T22:33:37.612Z",
+  "lastUpdated": "2026-11-01T23:56:37.972Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -78,6 +78,13 @@
       "content": "ai-reader Stripe webhook supports thin and snapshot formats; authenticated status can reconcile paid Checkout sessions. Supabase billing RPC migration remains manual.",
       "createdAt": "2026-11-01T22:33:37.612Z",
       "updatedAt": "2026-11-01T22:33:37.612Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793577397972_od7x8f",
+      "content": "ai-reader UI: `/api/subscription` reports plan status only, not free-use entitlement. UI safely promotes plans after authoritative TTS 402; do not infer unused free usage without server data.",
+      "createdAt": "2026-11-01T23:56:37.972Z",
+      "updatedAt": "2026-11-01T23:56:37.972Z",
       "isEnabled": true
     }
   ]

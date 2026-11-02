@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { cleanup, render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 
 const mocks = vi.hoisted(() => ({
   getSession: vi.fn(),
@@ -43,8 +44,10 @@ beforeEach(() => {
 })
 
 describe('SubscriptionPlans', () => {
-  it('shows all three RON plans with explicit renewal terms and requires authentication', () => {
+  it('shows selectable RON plans and requires authentication before checkout', async () => {
+    const user = userEvent.setup()
     render(<SubscriptionPlans />)
+    await user.click(screen.getByText('Vezi planurile și prețurile'))
 
     expect(screen.getByRole('heading', { name: '7 zile' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: '30 de zile' })).toBeInTheDocument()
@@ -53,11 +56,10 @@ describe('SubscriptionPlans', () => {
     expect(screen.getByText('10 lei')).toBeInTheDocument()
     expect(screen.getByText('100 lei')).toBeInTheDocument()
     expect(screen.getByText('Se reînnoiește automat la fiecare 30 de zile.')).toBeInTheDocument()
+    await user.click(screen.getByRole('radio', { name: /7 zile/ }))
     expect(
-      screen
-        .getAllByRole('button', { name: 'Alege planul' })
-        .every((button) => button.hasAttribute('disabled')),
-    ).toBe(true)
+      screen.getByRole('button', { name: /Continuă cu 7 zile · 5 lei/ }),
+    ).toBeDisabled()
   })
 
   it('reconciles the returned Checkout session before polling for webhook confirmation', async () => {
@@ -76,7 +78,7 @@ describe('SubscriptionPlans', () => {
     render(<SubscriptionPlans />)
 
     expect(await screen.findByText('1 decembrie 2026', {}, { timeout: 5_000 })).toBeInTheDocument()
-    expect(screen.getAllByText('30 de zile')).toHaveLength(2)
+    expect(screen.getByText('30 de zile', { selector: 'strong' })).toBeInTheDocument()
     expect(screen.getByText(/Reînnoire automată activă/)).toBeInTheDocument()
     expect(mocks.requestSubscriptionStatus).toHaveBeenCalledTimes(2)
     expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(
@@ -86,10 +88,6 @@ describe('SubscriptionPlans', () => {
     )
     expect(mocks.requestSubscriptionStatus).toHaveBeenNthCalledWith(2, 'test-token')
     expect(screen.queryByText(/Plata este în curs de confirmare/)).not.toBeInTheDocument()
-    expect(
-      screen
-        .getAllByRole('button', { name: 'Alege planul' })
-        .every((button) => button.hasAttribute('disabled')),
-    ).toBe(true)
+    expect(screen.getByRole('button', { name: /Continuă cu/ })).toBeDisabled()
   })
 })

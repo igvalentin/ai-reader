@@ -1,0 +1,192 @@
+{
+  "src/components/organisms/ReaderCard.test.tsx": {
+    "filename": "ReaderCard.test.tsx",
+    "path": "src/components/organisms/ReaderCard.test.tsx",
+    "version": "1.2",
+    "contextFile": "24cd544d-context.json",
+    "chunks": {
+      "7254ef": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "f6254939",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e8e66a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "d461f3d9",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "497b89": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "a0dec230",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "19fbd0": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793573242,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "4ffffd66"
+        },
+        "hash": "13ab73bc",
+        "messageId": "system_b69e1690-d644-11f1-8f4e-15c834ea2ab4",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "24": {
+        "chunkId": "19fbd0",
+        "hash": "0d51e4a3",
+        "encoded": "const%20firstRender%20=%20render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "19fbd0",
+        "hash": "2d384b69",
+        "encoded": "await%20user.type(screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul'),%20'Text%20rom%C3%A2nesc%20pentru%20citire.')",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "7254ef",
+        "hash": "979be939",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "7254ef",
+        "hash": "6ecf3d6e",
+        "encoded": "await%20screen.findByRole('heading',%20%7B%20name:%20'Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83'%20%7D),",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "7254ef",
+        "hash": "35ba6789",
+        "encoded": ").toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "7254ef",
+        "hash": "fbc29fe2",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "497b89",
+        "hash": "57b51a12",
+        "encoded": "firstRender.unmount()",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "497b89",
+        "hash": "87408a6e",
+        "encoded": "render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "497b89",
+        "hash": "5daf7ea3",
+        "encoded": "await%20user.type(",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "497b89",
+        "hash": "31236a87",
+        "encoded": "screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul'),",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "497b89",
+        "hash": "82fac61c",
+        "encoded": "'A%20second%20reading%20after%20reload.',",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "497b89",
+        "hash": "7af89168",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "7254ef",
+        "hash": "d3b7ef37",
+        "encoded": ").toBeDisabled()",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "7254ef",
+        "hash": "fa684e80",
+        "encoded": "firstRender.unmount()",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "e8e66a",
+        "hash": "6ee75845",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "e8e66a",
+        "hash": "b37217bf",
+        "encoded": "render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "e8e66a",
+        "hash": "0b1c8396",
+        "encoded": "const%20textArea%20=%20screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul')",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "e8e66a",
+        "hash": "96376249",
+        "encoded": "const%20originalText%20=%20'Bun%C4%83%20ziua,%20acesta%20este%20textul%20meu.'",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
