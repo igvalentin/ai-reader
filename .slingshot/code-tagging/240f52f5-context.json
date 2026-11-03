@@ -6,6 +6,9 @@
   "promptMessage": {
     "a47d6d32": {
       "value": "pare ca e 1mb pentru planul free al ocr.space. dar nu se poate implementa ocr local in vercel?"
+    },
+    "2e6ba678": {
+      "value": "Actualizează interfața pasului de plată a abonamentului:\n\nReordonează secțiunile astfel încât să apară în această ordine: Abonament → Cont și Ajutor → OCR&TTS. Secțiunea Cont și Ajutor trebuie să fie între Abonament și cardul OCR&TTS, pentru a face mai intuitiv faptul că utilizatorul trebuie să introducă adresa de email.\nÎn cardul OCR&TTS, adaugă deasupra câmpului „Limba lecturii” o opțiune radio „Autoplay”, selectată implicit. Când este activată, redarea audio pornește automat după finalizarea "
     }
   },
   "localPrompts": {},

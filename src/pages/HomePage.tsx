@@ -33,6 +33,41 @@ export default function HomePage() {
   const expiryDate = Number.isFinite(expiryTimestamp)
     ? STATUS_DATE_FORMATTER.format(new Date(expiryTimestamp))
     : 'indisponibilă'
+  const isPaymentStep = paywallRequired && !subscription?.active
+
+  const readerSection = (
+    <div key="reader">
+      <ReaderCard
+        onPaywallChange={handlePaywallChange}
+        subscriptionActive={subscription?.active === true}
+      />
+    </div>
+  )
+  const subscriptionSection = (
+    <div key="subscription">
+      <SubscriptionPlans
+        emphasized={isPaymentStep}
+        onStatusChange={handleSubscriptionChange}
+      />
+    </div>
+  )
+  const accountSection = (
+    <section
+      key="account"
+      id="cont"
+      aria-labelledby="account-heading"
+      className="flex flex-col gap-3"
+    >
+      <h2 id="account-heading" className="font-display text-xl text-ink">
+        Cont și ajutor
+      </h2>
+      <AuthPanel onUserChange={handleUserChange} />
+      <InstallHelp />
+    </section>
+  )
+  const orderedSections = isPaymentStep
+    ? [subscriptionSection, accountSection, readerSection]
+    : [readerSection, subscriptionSection, accountSection]
 
   return (
     <MainScreenLayout>
@@ -82,28 +117,7 @@ export default function HomePage() {
         )}
       </section>
 
-      <div className="flex flex-col gap-5">
-        <div className={paywallRequired && !subscription?.active ? 'order-2 opacity-90' : 'order-1'}>
-          <ReaderCard
-            onPaywallChange={handlePaywallChange}
-            subscriptionActive={subscription?.active === true}
-          />
-        </div>
-        <div className={paywallRequired && !subscription?.active ? 'order-1' : 'order-2'}>
-          <SubscriptionPlans
-            emphasized={paywallRequired && !subscription?.active}
-            onStatusChange={handleSubscriptionChange}
-          />
-        </div>
-      </div>
-
-      <section id="cont" aria-labelledby="account-heading" className="flex flex-col gap-3">
-        <h2 id="account-heading" className="font-display text-xl text-ink">
-          Cont și ajutor
-        </h2>
-        <AuthPanel onUserChange={handleUserChange} />
-        <InstallHelp />
-      </section>
+      <div className="flex flex-col gap-5">{orderedSections}</div>
     </MainScreenLayout>
   )
 }

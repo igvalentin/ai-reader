@@ -76,114 +76,654 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/2/2026, 12:47:22 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b07f6a": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743264,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "f77a8ee4",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:04 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "2370f3": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743264,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "61155f92",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:04 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c12c2f": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743264,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "5986c5f3",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:04 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "b61782": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743264,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "a1cbbf55",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:04 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
+      "0": {
+        "chunkId": "b61782",
+        "hash": "540d80a5",
+        "encoded": "import%20%7B%20act,%20beforeEach,%20describe,%20expect,%20it,%20vi,%20waitFor%20%7D%20from%20'vitest'",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "b61782",
+        "hash": "555609d7",
+        "encoded": "import%20%7B%20cleanup,%20render,%20screen%20%7D%20from%20'@testing-library/react'",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b61782",
+        "hash": "e771ea98",
+        "encoded": "import%20userEvent%20from%20'@testing-library/user-event'",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "b61782",
+        "hash": "99939ea5",
+        "encoded": "const%20mocks%20=%20vi.hoisted(()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b61782",
+        "hash": "a843ed32",
+        "encoded": "requestSpeech:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "b61782",
+        "hash": "37d6901a",
+        "encoded": "loadChunks:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "b61782",
+        "hash": "d221d3fb",
+        "encoded": "onTextExtracted:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b61782",
+        "hash": "51ba7050",
+        "encoded": "useImageOcr:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "b61782",
+        "hash": "ceb98c0a",
+        "encoded": "%7D))",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "b61782",
+        "hash": "5f34738a",
+        "encoded": "vi.mock('../../lib/tts/ttsClient',%20async%20(importOriginal)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "b61782",
+        "hash": "c6d7c32e",
+        "encoded": "const%20actual%20=%20await%20importOriginal%3Ctypeof%20import('../../lib/tts/ttsClient')%3E()",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "b61782",
+        "hash": "fbde30dd",
+        "encoded": "return%20%7B%20...actual,%20requestSpeech:%20mocks.requestSpeech%20%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "b61782",
+        "hash": "cb7fe319",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "b61782",
+        "hash": "cb63695e",
+        "encoded": "vi.mock('../../lib/tts/useAudioPlayer',%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "b61782",
+        "hash": "6652517b",
+        "encoded": "useAudioPlayer:%20()%20=%3E%20(%7B",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "b61782",
+        "hash": "2d718df9",
+        "encoded": "state:%20%7B%20status:%20'idle',%20error:%20null,%20currentTime:%200,%20duration:%200,%20playing:%20false%20%7D,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "b61782",
+        "hash": "94a96ad0",
+        "encoded": "loadChunks:%20mocks.loadChunks,",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "b61782",
+        "hash": "e427143a",
+        "encoded": "toggle:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "b61782",
+        "hash": "0417f4b5",
+        "encoded": "seek:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "b61782",
+        "hash": "13acba17",
+        "encoded": "setPlaybackRate:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "b61782",
+        "hash": "149595d0",
+        "encoded": "%7D),",
+        "prevChunkIds": []
+      },
       "24": {
-        "chunkId": "19fbd0",
-        "hash": "0d51e4a3",
-        "encoded": "const%20firstRender%20=%20render(%3CReaderCard%20/%3E)",
+        "chunkId": "b61782",
+        "hash": "874b769f",
+        "encoded": "%7D))",
         "prevChunkIds": []
       },
       "26": {
-        "chunkId": "19fbd0",
-        "hash": "2d384b69",
-        "encoded": "await%20user.type(screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul'),%20'Text%20rom%C3%A2nesc%20pentru%20citire.')",
+        "chunkId": "b61782",
+        "hash": "6b139e36",
+        "encoded": "vi.mock('../../lib/image/useImageOcr',%20()%20=%3E%20(%7B%20useImageOcr:%20mocks.useImageOcr%20%7D))",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "b61782",
+        "hash": "803cdfcb",
+        "encoded": "import%20%7B%20TtsRequestError%20%7D",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "b07f6a",
+        "hash": "98e390fa",
+        "encoded": "import%20%7B%20act,%20cleanup,%20render,%20screen,%20waitFor%20%7D%20from%20'@testing-library/react'",
         "prevChunkIds": []
       },
       "30": {
-        "chunkId": "7254ef",
-        "hash": "979be939",
-        "encoded": "expect(",
-        "prevChunkIds": []
-      },
-      "31": {
-        "chunkId": "7254ef",
-        "hash": "6ecf3d6e",
-        "encoded": "await%20screen.findByRole('heading',%20%7B%20name:%20'Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83'%20%7D),",
+        "chunkId": "b07f6a",
+        "hash": "fd911308",
+        "encoded": "import%20userEvent%20from%20'@testing-library/user-event'",
         "prevChunkIds": []
       },
       "32": {
-        "chunkId": "7254ef",
-        "hash": "35ba6789",
-        "encoded": ").toBeInTheDocument()",
+        "chunkId": "b07f6a",
+        "hash": "dd77a53e",
+        "encoded": "const%20mocks%20=%20vi.hoisted(()%20=%3E%20(%7B",
         "prevChunkIds": []
       },
-      "33": {
-        "chunkId": "7254ef",
-        "hash": "fbc29fe2",
-        "encoded": "expect(",
+      "56": {
+        "chunkId": "19fbd0",
+        "hash": "3a063272",
+        "encoded": "const%20firstRender%20=%20render(%3CReaderCard%20/%3E)",
         "prevChunkIds": []
       },
-      "34": {
-        "chunkId": "497b89",
-        "hash": "57b51a12",
-        "encoded": "firstRender.unmount()",
+      "58": {
+        "chunkId": "19fbd0",
+        "hash": "8f24bac9",
+        "encoded": "await%20user.type(screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul'),%20'Text%20rom%C3%A2nesc%20pentru%20citire.')",
         "prevChunkIds": []
       },
-      "35": {
-        "chunkId": "497b89",
-        "hash": "87408a6e",
-        "encoded": "render(%3CReaderCard%20/%3E)",
+      "59": {
+        "chunkId": "c12c2f",
+        "hash": "0fab0fd9",
+        "encoded": "beforeEach(()%20=%3E%20%7B",
         "prevChunkIds": []
       },
-      "36": {
-        "chunkId": "497b89",
-        "hash": "5daf7ea3",
-        "encoded": "await%20user.type(",
-        "prevChunkIds": []
-      },
-      "37": {
-        "chunkId": "497b89",
-        "hash": "31236a87",
-        "encoded": "screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul'),",
-        "prevChunkIds": []
-      },
-      "38": {
-        "chunkId": "497b89",
-        "hash": "82fac61c",
-        "encoded": "'A%20second%20reading%20after%20reload.',",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "497b89",
-        "hash": "7af89168",
-        "encoded": ")",
-        "prevChunkIds": []
-      },
-      "40": {
-        "chunkId": "7254ef",
-        "hash": "d3b7ef37",
-        "encoded": ").toBeDisabled()",
-        "prevChunkIds": []
-      },
-      "42": {
-        "chunkId": "7254ef",
-        "hash": "fa684e80",
-        "encoded": "firstRender.unmount()",
+      "60": {
+        "chunkId": "c12c2f",
+        "hash": "1e8ea646",
+        "encoded": "cleanup()",
         "prevChunkIds": []
       },
       "61": {
-        "chunkId": "e8e66a",
-        "hash": "6ee75845",
-        "encoded": ")",
+        "chunkId": "c12c2f",
+        "hash": "b538dd4a",
+        "encoded": "mocks.requestSpeech",
         "prevChunkIds": []
       },
       "62": {
-        "chunkId": "e8e66a",
-        "hash": "b37217bf",
-        "encoded": "render(%3CReaderCard%20/%3E)",
+        "chunkId": "c12c2f",
+        "hash": "63a5e179",
+        "encoded": ".mockReset()",
         "prevChunkIds": []
       },
       "63": {
-        "chunkId": "e8e66a",
-        "hash": "0b1c8396",
-        "encoded": "const%20textArea%20=%20screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul')",
+        "chunkId": "c12c2f",
+        "hash": "0dd92a29",
+        "encoded": ".mockRejectedValue(new%20TtsRequestError('Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83.',%20'PAYWALL',%20402))",
         "prevChunkIds": []
       },
       "64": {
+        "chunkId": "c12c2f",
+        "hash": "ea0f3692",
+        "encoded": "mocks.loadChunks.mockReset().mockResolvedValue(undefined)",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "c12c2f",
+        "hash": "5897d69d",
+        "encoded": "mocks.onTextExtracted.mockReset()",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "c12c2f",
+        "hash": "32ab8762",
+        "encoded": "mocks.useImageOcr.mockReset().mockImplementation((%7B%20onTextExtracted%20%7D)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "c12c2f",
+        "hash": "80fa352d",
+        "encoded": "mocks.onTextExtracted.mockImplementation(onTextExtracted)",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "c12c2f",
+        "hash": "ea493d28",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "c12c2f",
+        "hash": "1e8ee466",
+        "encoded": "previewUrl:%20null,",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "c12c2f",
+        "hash": "d1d6ed07",
+        "encoded": "status:%20'idle',",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "c12c2f",
+        "hash": "40bbbf5b",
+        "encoded": "errorMessage:%20null,",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "c12c2f",
+        "hash": "f02f9f39",
+        "encoded": "uploadProgress:%200,",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "c12c2f",
+        "hash": "c2993ece",
+        "encoded": "selectFile:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "c12c2f",
+        "hash": "fc172443",
+        "encoded": "removeImage:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "c12c2f",
+        "hash": "8d030c50",
+        "encoded": "startOcr:%20vi.fn(),",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "c12c2f",
+        "hash": "88f18366",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "c12c2f",
+        "hash": "c6474e74",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "c12c2f",
+        "hash": "25437bb5",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "c12c2f",
+        "hash": "fd7c5857",
+        "encoded": "describe('ReaderCard%20entitlement%20journey',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "7254ef",
+        "hash": "5264be4f",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "7254ef",
+        "hash": "c579df87",
+        "encoded": "await%20screen.findByRole('heading',%20%7B%20name:%20'Lectura%20gratuit%C4%83%20a%20fost%20folosit%C4%83'%20%7D),",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "7254ef",
+        "hash": "a34dcd20",
+        "encoded": ").toBeInTheDocument()",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "7254ef",
+        "hash": "9451f78e",
+        "encoded": "expect(",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "497b89",
+        "hash": "458d5241",
+        "encoded": "firstRender.unmount()",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "497b89",
+        "hash": "a4897b67",
+        "encoded": "render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "497b89",
+        "hash": "26a7352a",
+        "encoded": "await%20user.type(",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "497b89",
+        "hash": "bc497060",
+        "encoded": "screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul'),",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "497b89",
+        "hash": "5e342b3a",
+        "encoded": "'A%20second%20reading%20after%20reload.',",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "497b89",
+        "hash": "287dc73e",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "7254ef",
+        "hash": "bfec95cb",
+        "encoded": ").toBeDisabled()",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "7254ef",
+        "hash": "5fdecbd0",
+        "encoded": "firstRender.unmount()",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "2370f3",
+        "hash": "73d6d65b",
+        "encoded": "describe('ReaderCard%20entitlement%20journey',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "2370f3",
+        "hash": "37bacd9b",
+        "encoded": "it('autoplays%20OCR%20text%20by%20default%20and%20keeps%20the%20extracted%20text%20editable',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "2370f3",
+        "hash": "90400e46",
+        "encoded": "mocks.requestSpeech.mockResolvedValueOnce(%7B",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "2370f3",
+        "hash": "9c58aca2",
+        "encoded": "chunks:%20%5B'QQ=='%5D,",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "2370f3",
+        "hash": "b18c0f31",
+        "encoded": "audioContentType:%20'audio/mpeg',",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "2370f3",
+        "hash": "84cede80",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "2370f3",
+        "hash": "e3f469bf",
+        "encoded": "render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "2370f3",
+        "hash": "18df3dc2",
+        "encoded": "expect(screen.getByRole('radio',%20%7B%20name:%20'Autoplay'%20%7D)).toBeChecked()",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "2370f3",
+        "hash": "de186b75",
+        "encoded": "act(()%20=%3E%20mocks.onTextExtracted('Text%20extras%20din%20imagine.'))",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "2370f3",
+        "hash": "deeed79f",
+        "encoded": "await%20waitFor(()%20=%3E",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "2370f3",
+        "hash": "db610cdf",
+        "encoded": "expect(mocks.requestSpeech).toHaveBeenCalledWith('Text%20extras%20din%20imagine.',%20''),",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "2370f3",
+        "hash": "b32b80d3",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "2370f3",
+        "hash": "24f0ea14",
+        "encoded": "expect(mocks.loadChunks).toHaveBeenCalledWith(%5B'QQ=='%5D,%20'audio/mpeg',%20true)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "2370f3",
+        "hash": "c254eaad",
+        "encoded": "expect(screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul')).toHaveValue(",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "2370f3",
+        "hash": "79609998",
+        "encoded": "'Text%20extras%20din%20imagine.',",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "2370f3",
+        "hash": "7f77050d",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "2370f3",
+        "hash": "2f4a9577",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "2370f3",
+        "hash": "6ab2e74d",
+        "encoded": "it('does%20not%20generate%20audio%20automatically%20when%20manual%20mode%20is%20selected',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "2370f3",
+        "hash": "e6014b3d",
+        "encoded": "const%20user%20=%20userEvent.setup()",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "2370f3",
+        "hash": "e4175505",
+        "encoded": "render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "2370f3",
+        "hash": "41241f2e",
+        "encoded": "await%20user.click(screen.getByRole('radio',%20%7B%20name:%20'Redare%20manual%C4%83'%20%7D))",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "2370f3",
+        "hash": "20ca9f08",
+        "encoded": "act(()%20=%3E%20mocks.onTextExtracted('Text%20OCR%20pentru%20pornire%20manual%C4%83.'))",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "2370f3",
+        "hash": "84d43a1d",
+        "encoded": "expect(mocks.requestSpeech).not.toHaveBeenCalled()",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "2370f3",
+        "hash": "796e5698",
+        "encoded": "expect(screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul')).toHaveValue(",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "2370f3",
+        "hash": "d70c3b89",
+        "encoded": "'Text%20OCR%20pentru%20pornire%20manual%C4%83.',",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "2370f3",
+        "hash": "177bd539",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "2370f3",
+        "hash": "2dda2de8",
+        "encoded": "await%20user.click(screen.getByRole('button',%20%7B%20name:%20/cite%C8%99te%20cu%20voce%20tare/i%20%7D))",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "2370f3",
+        "hash": "600c1eef",
+        "encoded": "expect(mocks.requestSpeech).toHaveBeenCalledWith('Text%20OCR%20pentru%20pornire%20manual%C4%83.',%20'')",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "2370f3",
+        "hash": "56785993",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "2370f3",
+        "hash": "17cdf230",
+        "encoded": "it('shows%20the%20server%20paywall%20on%20an%20attempted%20reading%20after%20a%20page%20remount',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "149": {
         "chunkId": "e8e66a",
-        "hash": "96376249",
+        "hash": "f846a7bb",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "e8e66a",
+        "hash": "2dcda40c",
+        "encoded": "render(%3CReaderCard%20/%3E)",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "e8e66a",
+        "hash": "28603fe9",
+        "encoded": "const%20textArea%20=%20screen.getByLabelText('Lipe%C8%99te%20sau%20scrie%20textul')",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "e8e66a",
+        "hash": "fba30701",
         "encoded": "const%20originalText%20=%20'Bun%C4%83%20ziua,%20acesta%20este%20textul%20meu.'",
         "prevChunkIds": []
       }

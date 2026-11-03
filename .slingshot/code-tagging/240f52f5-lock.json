@@ -40,103 +40,469 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: claude-sonnet-4-5@20250929\n- **timestamp**: 10/31/2026, 10:55:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1619f9": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743263,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "48d558c9",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:03 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1ce5a4": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743263,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "3796131e",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:03 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "48c992": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743263,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "0991adfd",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:03 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ec5b7b": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743263,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "2a2b3035",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:03 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "7e3884": {
+        "user": "Valentin Ion",
+        "model": "gpt-6-luna",
+        "timestamp": 1793743263,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "2e6ba678"
+        },
+        "hash": "6a210369",
+        "messageId": "system_57c39c80-d757-11f1-81ca-c1627e9cfb2c",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Valentin Ion\n- **model**: gpt-6-luna\n- **timestamp**: 11/4/2026, 12:01:03 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
-      "16": {
-        "chunkId": "a236dd",
-        "hash": "22a52bf7",
-        "encoded": "constructor()%20%7B",
+      "4": {
+        "chunkId": "7e3884",
+        "hash": "6e8b166a",
+        "encoded": "const%20audioInstances:%20FakeAudio%5B%5D%20=%20%5B%5D",
         "prevChunkIds": []
       },
-      "17": {
-        "chunkId": "a236dd",
-        "hash": "77e7143e",
-        "encoded": "super()",
+      "5": {
+        "chunkId": "7e3884",
+        "hash": "902108a4",
+        "encoded": "let%20failFirstPlay%20=%20false",
         "prevChunkIds": []
       },
-      "18": {
-        "chunkId": "a236dd",
-        "hash": "a3fbaf7b",
-        "encoded": "audioInstances.push(this)",
+      "7": {
+        "chunkId": "7e3884",
+        "hash": "770e4185",
+        "encoded": "class%20FakeAudio%20extends%20EventTarget%20%7B",
         "prevChunkIds": []
       },
-      "19": {
-        "chunkId": "a236dd",
-        "hash": "ee39c532",
-        "encoded": "%7D",
+      "8": {
+        "chunkId": "7e3884",
+        "hash": "1fa3a18f",
+        "encoded": "currentTime%20=%200",
         "prevChunkIds": []
       },
-      "21": {
-        "chunkId": "a236dd",
-        "hash": "5dcdb112",
-        "encoded": "load()%20%7B",
+      "9": {
+        "chunkId": "7e3884",
+        "hash": "2e401b5e",
+        "encoded": "duration%20=%2012",
         "prevChunkIds": []
       },
-      "22": {
-        "chunkId": "a236dd",
-        "hash": "0f5d6aa8",
-        "encoded": "queueMicrotask(()%20=%3E%20this.onloadedmetadata?.())",
+      "10": {
+        "chunkId": "7e3884",
+        "hash": "842f3470",
+        "encoded": "paused%20=%20true",
         "prevChunkIds": []
       },
-      "23": {
-        "chunkId": "a236dd",
-        "hash": "7b3531ab",
-        "encoded": "%7D",
+      "11": {
+        "chunkId": "7e3884",
+        "hash": "238e971a",
+        "encoded": "playbackRate%20=%201",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "7e3884",
+        "hash": "b8040610",
+        "encoded": "src%20=%20''",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "7e3884",
+        "hash": "4d6a48ec",
+        "encoded": "failNextPlay%20=%20false",
         "prevChunkIds": []
       },
       "25": {
         "chunkId": "a236dd",
-        "hash": "8cfeacf4",
-        "encoded": "async%20play()%20%7B",
+        "hash": "7b3bd0ce",
+        "encoded": "constructor()%20%7B",
         "prevChunkIds": []
       },
       "26": {
+        "chunkId": "ec5b7b",
+        "hash": "63d750e0",
+        "encoded": "constructor()%20%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "ec5b7b",
+        "hash": "785c34e1",
+        "encoded": "super()",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "ec5b7b",
+        "hash": "b1a4aaf7",
+        "encoded": "this.failNextPlay%20=%20failFirstPlay",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ec5b7b",
+        "hash": "420f0a30",
+        "encoded": "failFirstPlay%20=%20false",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ec5b7b",
+        "hash": "e3b9caeb",
+        "encoded": "audioInstances.push(this)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ec5b7b",
+        "hash": "43353d17",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ec5b7b",
+        "hash": "69b840d2",
+        "encoded": "load()%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
         "chunkId": "a236dd",
-        "hash": "a7a81a1d",
+        "hash": "329b015f",
+        "encoded": "audioInstances.push(this)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "a236dd",
+        "hash": "dfad4947",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "a236dd",
+        "hash": "017026e3",
+        "encoded": "load()%20%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a236dd",
+        "hash": "8366c780",
+        "encoded": "queueMicrotask(()%20=%3E%20this.onloadedmetadata?.())",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "a236dd",
+        "hash": "4771cdac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "a236dd",
+        "hash": "0aedceee",
+        "encoded": "async%20play()%20%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "a236dd",
+        "hash": "0cf021fc",
         "encoded": "if%20(this.failNextPlay)%20%7B",
         "prevChunkIds": []
       },
-      "87": {
+      "62": {
+        "chunkId": "48c992",
+        "hash": "c2e61641",
+        "encoded": "afterEach(()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "48c992",
+        "hash": "6f5d8a84",
+        "encoded": "audioInstances.length%20=%200",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "48c992",
+        "hash": "6d315180",
+        "encoded": "failFirstPlay%20=%20false",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "48c992",
+        "hash": "3560cf91",
+        "encoded": "vi.unstubAllGlobals()",
+        "prevChunkIds": []
+      },
+      "106": {
         "chunkId": "c0340e",
-        "hash": "58ea735c",
+        "hash": "e8a2b571",
         "encoded": "const%20%7B%20result%20%7D%20=%20renderHook(()%20=%3E%20useAudioPlayer())",
         "prevChunkIds": []
       },
-      "88": {
+      "107": {
         "chunkId": "c0340e",
-        "hash": "5b8e0dee",
+        "hash": "e8d6d720",
         "encoded": "await%20act(async%20()%20=%3E%20result.current.loadChunks(%5B'QQ=='%5D))",
         "prevChunkIds": []
       },
-      "89": {
+      "108": {
         "chunkId": "c0340e",
-        "hash": "e16986d7",
+        "hash": "834c5f61",
         "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
         "prevChunkIds": []
       },
-      "90": {
+      "109": {
         "chunkId": "c0340e",
-        "hash": "fbfb86de",
+        "hash": "dde6a425",
         "encoded": "audioInstances%5B0%5D.failNextPlay%20=%20true",
         "prevChunkIds": []
       },
-      "92": {
-        "chunkId": "c0340e",
-        "hash": "e0f092d4",
-        "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
+      "110": {
+        "chunkId": "1ce5a4",
+        "hash": "a92b92d4",
+        "encoded": "unmount()",
         "prevChunkIds": []
       },
-      "94": {
-        "chunkId": "c0340e",
-        "hash": "9f1b3a16",
+      "111": {
+        "chunkId": "1ce5a4",
+        "hash": "64d0cc45",
+        "encoded": "expect(URL.revokeObjectURL).toHaveBeenCalledWith('blob:reader-audio')",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "1ce5a4",
+        "hash": "e1190f01",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "1ce5a4",
+        "hash": "d1c8c531",
+        "encoded": "it('keeps%20the%20player%20ready%20and%20allows%20manual%20playback%20if%20the%20browser%20blocks%20autoplay',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "1ce5a4",
+        "hash": "8b890108",
+        "encoded": "prepareAudio()",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "1ce5a4",
+        "hash": "267f4f34",
+        "encoded": "failFirstPlay%20=%20true",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "1ce5a4",
+        "hash": "806b7bfe",
+        "encoded": "const%20%7B%20result%20%7D%20=%20renderHook(()%20=%3E%20useAudioPlayer())",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "1ce5a4",
+        "hash": "bfa19b09",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.loadChunks(%5B'QQ=='%5D))",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "1ce5a4",
+        "hash": "9faacb72",
         "encoded": "expect(result.current.state).toMatchObject(%7B",
         "prevChunkIds": []
       },
-      "95": {
+      "122": {
+        "chunkId": "1ce5a4",
+        "hash": "9b230c03",
+        "encoded": "status:%20'ready',",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "1ce5a4",
+        "hash": "c1befa14",
+        "encoded": "playing:%20false,",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "1ce5a4",
+        "hash": "e078204c",
+        "encoded": "error:%20expect.stringMatching(/redarea%20automat%C4%83%20a%20fost%20blocat%C4%83/i),",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "1ce5a4",
+        "hash": "c15f5ec4",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "1ce5a4",
+        "hash": "eaf0798c",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "1ce5a4",
+        "hash": "842825da",
+        "encoded": "expect(result.current.state).toMatchObject(%7B%20status:%20'ready',%20playing:%20true,%20error:%20null%20%7D)",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "1ce5a4",
+        "hash": "7e2ee577",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "1ce5a4",
+        "hash": "1c91f06a",
+        "encoded": "it('surfaces%20manual%20playback%20errors%20without%20disabling%20the%20retry%20button',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "1ce5a4",
+        "hash": "25d50987",
+        "encoded": "prepareAudio()",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "1ce5a4",
+        "hash": "d0077f8d",
+        "encoded": "const%20%7B%20result%20%7D%20=%20renderHook(()%20=%3E%20useAudioPlayer())",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "1ce5a4",
+        "hash": "ca27dec2",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.loadChunks(%5B'QQ=='%5D))",
+        "prevChunkIds": []
+      },
+      "136": {
         "chunkId": "c0340e",
-        "hash": "a16bea50",
+        "hash": "27f2e086",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "c0340e",
+        "hash": "852e945c",
+        "encoded": "expect(result.current.state).toMatchObject(%7B",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "c0340e",
+        "hash": "f8e36e4d",
         "encoded": "status:%20'error',",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "1619f9",
+        "hash": "d278f351",
+        "encoded": "expect(result.current.state).toMatchObject(%7B",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "1619f9",
+        "hash": "28df542f",
+        "encoded": "status:%20'ready',",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "1619f9",
+        "hash": "533f419f",
+        "encoded": "playing:%20false,",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "1619f9",
+        "hash": "7c5b6f0c",
+        "encoded": "error:%20'Redarea%20nu%20a%20pornit:%20Playback%20was%20blocked.',",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "1619f9",
+        "hash": "6da7e841",
+        "encoded": "%7D)",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "1619f9",
+        "hash": "3310d9a9",
+        "encoded": "await%20act(async%20()%20=%3E%20result.current.toggle())",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "1619f9",
+        "hash": "b876a132",
+        "encoded": "expect(result.current.state).toMatchObject(%7B%20status:%20'ready',%20playing:%20true,%20error:%20null%20%7D)",
         "prevChunkIds": []
       }
     }

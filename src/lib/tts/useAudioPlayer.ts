@@ -28,7 +28,11 @@ export function useAudioPlayer() {
   )
 
   const loadChunks = useCallback(
-    async (chunks: string[], contentType: 'audio/mpeg' = 'audio/mpeg') => {
+    async (
+      chunks: string[],
+      contentType: 'audio/mpeg' = 'audio/mpeg',
+      autoPlay = true,
+    ) => {
       setState((current) => ({
         ...current,
         status: 'loading',
@@ -64,13 +68,25 @@ export function useAudioPlayer() {
           status: 'ready',
           duration: Number.isFinite(audio.duration) ? audio.duration : 0,
         }))
-        await audio.play()
-        setState((current) => ({ ...current, playing: true }))
       } catch (error) {
         setState((current) => ({
           ...current,
           status: 'error',
-          error: error instanceof Error ? error.message : 'Redarea audio a eșuat.',
+          error: error instanceof Error ? error.message : 'Fișierul audio nu a putut fi încărcat.',
+        }))
+        return
+      }
+
+      if (!autoPlay) return
+      try {
+        await audioRef.current?.play()
+        setState((current) => ({ ...current, playing: true, error: null }))
+      } catch {
+        setState((current) => ({
+          ...current,
+          status: 'ready',
+          playing: false,
+          error: 'Redarea automată a fost blocată. Apasă „Redă lectura” pentru a porni manual.',
         }))
       }
     },
@@ -105,14 +121,21 @@ export function useAudioPlayer() {
     const audio = audioRef.current
     if (!audio) return
     try {
-      if (audio.paused) await audio.play()
-      else audio.pause()
+      if (audio.paused) {
+        await audio.play()
+        setState((current) => ({ ...current, playing: true, error: null }))
+      } else {
+        audio.pause()
+      }
     } catch (error) {
       setState((current) => ({
         ...current,
-        status: 'error',
+        status: 'ready',
         playing: false,
-        error: error instanceof Error ? error.message : 'Redarea audio a eșuat.',
+        error:
+          error instanceof Error
+            ? `Redarea nu a pornit: ${error.message}`
+            : 'Redarea nu a pornit. Apasă din nou pentru a încerca.',
       }))
     }
   }, [])

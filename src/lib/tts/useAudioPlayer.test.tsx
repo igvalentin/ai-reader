@@ -3,6 +3,7 @@ import { act, renderHook } from '@testing-library/react'
 import { useAudioPlayer } from './useAudioPlayer'
 
 const audioInstances: FakeAudio[] = []
+let failFirstPlay = false
 
 class FakeAudio extends EventTarget {
   currentTime = 0
@@ -16,6 +17,8 @@ class FakeAudio extends EventTarget {
 
   constructor() {
     super()
+    this.failNextPlay = failFirstPlay
+    failFirstPlay = false
     audioInstances.push(this)
   }
 
@@ -43,6 +46,7 @@ const originalRevokeObjectURL = URL.revokeObjectURL
 
 afterEach(() => {
   audioInstances.length = 0
+  failFirstPlay = false
   vi.unstubAllGlobals()
   vi.restoreAllMocks()
   if (originalCreateObjectURL) {
@@ -89,7 +93,25 @@ describe('useAudioPlayer', () => {
     expect(URL.revokeObjectURL).toHaveBeenCalledWith('blob:reader-audio')
   })
 
-  it('surfaces playback errors rather than leaving an unhandled rejected play promise', async () => {
+  it('keeps the player ready and allows manual playback if the browser blocks autoplay', async () => {
+    prepareAudio()
+    failFirstPlay = true
+    const { result } = renderHook(() => useAudioPlayer())
+
+    await act(async () => result.current.loadChunks(['QQ==']))
+
+    expect(result.current.state).toMatchObject({
+      status: 'ready',
+      playing: false,
+      error: expect.stringMatching(/redarea automată a fost blocată/i),
+    })
+
+    await act(async () => result.current.toggle())
+
+    expect(result.current.state).toMatchObject({ status: 'ready', playing: true, error: null })
+  })
+
+  it('surfaces manual playback errors without disabling the retry button', async () => {
     prepareAudio()
     const { result } = renderHook(() => useAudioPlayer())
     await act(async () => result.current.loadChunks(['QQ==']))
@@ -99,9 +121,12 @@ describe('useAudioPlayer', () => {
     await act(async () => result.current.toggle())
 
     expect(result.current.state).toMatchObject({
-      status: 'error',
+      status: 'ready',
       playing: false,
-      error: 'Playback was blocked.',
+      error: 'Redarea nu a pornit: Playback was blocked.',
     })
+
+    await act(async () => result.current.toggle())
+    expect(result.current.state).toMatchObject({ status: 'ready', playing: true, error: null })
   })
 })

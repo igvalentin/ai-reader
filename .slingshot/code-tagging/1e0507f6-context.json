@@ -15,6 +15,9 @@
     },
     "b689a106": {
       "value": "tot 500 da, eroarea asta:\n\n{\n    \"code\": \"BILLING_CONFIGURATION_ERROR\",\n    \"error\": \"Price-ul planului 7 zile trebuie să fie activ și să corespundă: 5 RON (500 bani), săptămânal (week × 1) sau zilnic (day × 7).\"\n}\n\nAsa e definitia in Stripe:\nPrice\n\nprice_1UX5eYFSLE8IP7TsWtXWvJFm\nPrice for 7 days subscription\n\nEdit\n\nMore options\nProduct\n7 days subscription\nUnit price\nRON 5.00\nMetadata\nUse metadata to store custom additional information. View docs\n\nEdit metadata\nNo metadata\nPricing\nCurrency\nRON\nI"
+    },
+    "2e6ba678": {
+      "value": "Actualizează interfața pasului de plată a abonamentului:\n\nReordonează secțiunile astfel încât să apară în această ordine: Abonament → Cont și Ajutor → OCR&TTS. Secțiunea Cont și Ajutor trebuie să fie între Abonament și cardul OCR&TTS, pentru a face mai intuitiv faptul că utilizatorul trebuie să introducă adresa de email.\nÎn cardul OCR&TTS, adaugă deasupra câmpului „Limba lecturii” o opțiune radio „Autoplay”, selectată implicit. Când este activată, redarea audio pornește automat după finalizarea "
     }
   },
   "localPrompts": {},

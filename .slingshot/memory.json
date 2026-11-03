@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-01T23:56:37.972Z",
+  "lastUpdated": "2026-11-03T07:32:15.177Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -85,6 +85,13 @@
       "content": "ai-reader UI: `/api/subscription` reports plan status only, not free-use entitlement. UI safely promotes plans after authoritative TTS 402; do not infer unused free usage without server data.",
       "createdAt": "2026-11-01T23:56:37.972Z",
       "updatedAt": "2026-11-01T23:56:37.972Z",
+      "isEnabled": true
+    },
+    {
+      "id": "mem_1793691114665_6y1qh3",
+      "content": "AI Reader autoplay: OCR triggers TTS only in Autoplay mode; media play denial preserves ready/manual controls. Key HomePage sections when reordering to retain ReaderCard text.",
+      "createdAt": "2026-11-03T07:31:54.665Z",
+      "updatedAt": "2026-11-03T07:32:15.177Z",
       "isEnabled": true
     }
   ]

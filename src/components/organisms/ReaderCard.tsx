@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useId, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useId, useRef, useState, type FormEvent } from 'react'
 import { requestSpeech, TtsRequestError } from '../../lib/tts/ttsClient'
 import { useAudioPlayer } from '../../lib/tts/useAudioPlayer'
 import { Button } from '../atoms/Button'
@@ -23,14 +23,73 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
   const [ttsError, setTtsError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showPaywall, setShowPaywall] = useState(false)
+  const [autoPlayEnabled, setAutoPlayEnabled] = useState(true)
   const textareaId = useId()
   const errorId = useId()
+  const autoPlayId = useId()
+  const manualPlayId = useId()
+  const currentTextRef = useRef('')
+  const autoPlayRef = useRef(true)
+  const languageRef = useRef(language)
+  const requestInFlightRef = useRef(false)
   const { state: audioState, loadChunks, toggle, seek, setPlaybackRate } = useAudioPlayer()
 
+  const generateAudio = useCallback(
+    async (sourceText: string, shouldAutoPlay = true) => {
+      if (requestInFlightRef.current || (showPaywall && !subscriptionActive)) return
+      if (!sourceText.trim()) {
+        setError('Adaugă un text sau o imagine pentru a începe lectura.')
+        return
+      }
+      if (sourceText.length > MAX_CHARACTERS) {
+        setError(`Textul depășește limita de ${MAX_CHARACTERS} de caractere.`)
+        return
+      }
+
+      requestInFlightRef.current = true
+      setError(null)
+      setTtsError(null)
+      setShowPaywall(false)
+      setIsSubmitting(true)
+      try {
+        const response = await requestSpeech(
+          sourceText,
+          languageRef.current === 'auto' ? '' : languageRef.current,
+        )
+        await loadChunks(response.chunks, response.audioContentType, shouldAutoPlay)
+      } catch (requestError) {
+        if (
+          requestError instanceof TtsRequestError &&
+          (requestError.code === 'SUBSCRIPTION_REQUIRED' || requestError.code === 'PAYWALL')
+        ) {
+          setShowPaywall(true)
+          return
+        }
+        if (
+          requestError instanceof TtsRequestError &&
+          requestError.code === 'AUTHENTICATION_REQUIRED'
+        ) {
+          setTtsError('Sesiunea a expirat. Cere un link de conectare nou și autentifică-te din nou.')
+          return
+        }
+        setTtsError(requestError instanceof Error ? requestError.message : 'Generarea audio a eșuat.')
+      } finally {
+        requestInFlightRef.current = false
+        setIsSubmitting(false)
+      }
+    },
+    [loadChunks, showPaywall, subscriptionActive],
+  )
+
   const handleTextExtracted = useCallback((extractedText: string) => {
-    setText((current) => (current.trim() ? `${current.trim()}\n\n${extractedText}` : extractedText))
+    const existingText = currentTextRef.current.trim()
+    const nextText = existingText ? `${existingText}\n\n${extractedText}` : extractedText
+    currentTextRef.current = nextText
+    setText(nextText)
     setError(null)
-  }, [])
+    setTtsError(null)
+    if (autoPlayRef.current) void generateAudio(nextText, true)
+  }, [generateAudio])
   const {
     previewUrl,
     status: ocrStatus,
@@ -47,42 +106,9 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
     onPaywallChange?.(showPaywall)
   }, [onPaywallChange, showPaywall])
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    if (!text.trim()) {
-      setError('Adaugă un text sau o imagine pentru a începe lectura.')
-      return
-    }
-    if (isOverLimit) {
-      setError(`Textul depășește limita de ${MAX_CHARACTERS} de caractere.`)
-      return
-    }
-    setError(null)
-    setTtsError(null)
-    setShowPaywall(false)
-    setIsSubmitting(true)
-    try {
-      const response = await requestSpeech(text, language === 'auto' ? '' : language)
-      await loadChunks(response.chunks, response.audioContentType)
-    } catch (requestError) {
-      if (
-        requestError instanceof TtsRequestError &&
-        (requestError.code === 'SUBSCRIPTION_REQUIRED' || requestError.code === 'PAYWALL')
-      ) {
-        setShowPaywall(true)
-        return
-      }
-      if (
-        requestError instanceof TtsRequestError &&
-        requestError.code === 'AUTHENTICATION_REQUIRED'
-      ) {
-        setTtsError('Sesiunea a expirat. Cere un link de conectare nou și autentifică-te din nou.')
-        return
-      }
-      setTtsError(requestError instanceof Error ? requestError.message : 'Generarea audio a eșuat.')
-    } finally {
-      setIsSubmitting(false)
-    }
+    void generateAudio(currentTextRef.current, true)
   }
 
   return (
@@ -91,6 +117,9 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
       noValidate
       className="flex flex-col gap-5 rounded-2xl border border-border bg-surface p-4 shadow-sm sm:gap-6 sm:p-7"
     >
+      <h2 id="reader-heading" className="font-display text-xl text-ink">
+        OCR&amp;TTS
+      </h2>
       <FreeTrialNotice />
       {showPaywall && !subscriptionActive ? <PaywallNotice /> : null}
       <div className="flex flex-col gap-2">
@@ -103,6 +132,7 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
           rows={6}
           value={text}
           onChange={(event) => {
+            currentTextRef.current = event.target.value
             setText(event.target.value)
             if (error) setError(null)
             setTtsError(null)
@@ -145,7 +175,59 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
         onRemove={removeImage}
         onStartOcr={startOcr}
       />
-      <LanguageSelector value={language} onChange={setLanguage} />
+      <fieldset className="flex flex-col gap-2">
+        <legend className="text-sm font-semibold text-ink">Redare după OCR</legend>
+        <div className="flex flex-wrap gap-2">
+          <label
+            htmlFor={autoPlayId}
+            className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-lg border border-border bg-paper px-3 py-2 text-sm font-medium text-ink"
+          >
+            <input
+              id={autoPlayId}
+              type="radio"
+              name="ocr-playback-mode"
+              value="autoplay"
+              checked={autoPlayEnabled}
+              onChange={() => {
+                autoPlayRef.current = true
+                setAutoPlayEnabled(true)
+              }}
+              className="h-4 w-4 accent-teal"
+            />
+            Autoplay
+          </label>
+          <label
+            htmlFor={manualPlayId}
+            className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-lg border border-border bg-paper px-3 py-2 text-sm font-medium text-ink"
+          >
+            <input
+              id={manualPlayId}
+              type="radio"
+              name="ocr-playback-mode"
+              value="manual"
+              checked={!autoPlayEnabled}
+              onChange={() => {
+                autoPlayRef.current = false
+                setAutoPlayEnabled(false)
+              }}
+              className="h-4 w-4 accent-teal"
+            />
+            Redare manuală
+          </label>
+        </div>
+        <p className="text-xs text-ink-muted">
+          {autoPlayEnabled
+            ? 'După extragere, textul este transformat și redat automat.'
+            : 'După extragere, verifică textul și pornește lectura manual.'}
+        </p>
+      </fieldset>
+      <LanguageSelector
+        value={language}
+        onChange={(nextLanguage) => {
+          languageRef.current = nextLanguage
+          setLanguage(nextLanguage)
+        }}
+      />
       <div className="flex flex-col gap-2">
         <Button
           type="submit"
