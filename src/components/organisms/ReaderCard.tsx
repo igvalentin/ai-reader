@@ -118,7 +118,7 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
       className="flex flex-col gap-5 rounded-2xl border border-border bg-surface p-4 shadow-sm sm:gap-6 sm:p-7"
     >
       <h2 id="reader-heading" className="font-display text-xl text-ink">
-        OCR&amp;TTS
+        Ce text vrei sa citim?
       </h2>
       <FreeTrialNotice />
       {showPaywall && !subscriptionActive ? <PaywallNotice /> : null}
@@ -176,7 +176,9 @@ export function ReaderCard({ onPaywallChange, subscriptionActive = false }: Read
         onStartOcr={startOcr}
       />
       <fieldset className="flex flex-col gap-2">
-        <legend className="text-sm font-semibold text-ink">Redare după OCR</legend>
+        <legend className="text-sm font-semibold text-ink">
+          Redare după extragere text
+        </legend>
         <div className="flex flex-wrap gap-2">
           <label
             htmlFor={autoPlayId}

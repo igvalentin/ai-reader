@@ -67,7 +67,7 @@ describe('HomePage', () => {
     expect(screen.getByText('10 caractere')).toBeInTheDocument()
   })
 
-  it('shows account between subscription and OCR&TTS after the server confirms a paywall', async () => {
+  it('shows account between subscription and the reader after the server confirms a paywall', async () => {
     const user = userEvent.setup()
     renderHomePage()
     const originalText = 'Textul meu rămâne disponibil.'
@@ -79,7 +79,7 @@ describe('HomePage', () => {
 
     const subscriptionHeading = screen.getByRole('heading', { name: 'Abonament' })
     const accountHeading = screen.getByRole('heading', { name: 'Cont și ajutor' })
-    const readerHeading = screen.getByRole('heading', { name: 'OCR&TTS' })
+    const readerHeading = screen.getByRole('heading', { name: 'Ce text vrei sa citim?' })
     const follows = (first: HTMLElement, second: HTMLElement) =>
       Boolean(first.compareDocumentPosition(second) & Node.DOCUMENT_POSITION_FOLLOWING)
 

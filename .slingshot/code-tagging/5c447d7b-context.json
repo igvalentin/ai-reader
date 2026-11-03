@@ -15,6 +15,9 @@
     },
     "2e6ba678": {
       "value": "Actualizează interfața pasului de plată a abonamentului:\n\nReordonează secțiunile astfel încât să apară în această ordine: Abonament → Cont și Ajutor → OCR&TTS. Secțiunea Cont și Ajutor trebuie să fie între Abonament și cardul OCR&TTS, pentru a face mai intuitiv faptul că utilizatorul trebuie să introducă adresa de email.\nÎn cardul OCR&TTS, adaugă deasupra câmpului „Limba lecturii” o opțiune radio „Autoplay”, selectată implicit. Când este activată, redarea audio pornește automat după finalizarea "
+    },
+    "1b41e89f": {
+      "value": "Ok dar arata urat cu acronimele OCR&TTS, alea erau doar pentru tine.\nIn loc de OCR&TTS pune \"Ce text vrei sa citim?\"\nin loc de Redare după OCR spune \"Redare după extragere text\""
     }
   },
   "localPrompts": {},

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-11-03T07:32:15.177Z",
+  "lastUpdated": "2026-11-03T22:09:52.364Z",
   "user_memory": [],
   "slingshot_memory": [
     {
@@ -89,9 +89,9 @@
     },
     {
       "id": "mem_1793691114665_6y1qh3",
-      "content": "AI Reader autoplay: OCR triggers TTS only in Autoplay mode; media play denial preserves ready/manual controls. Key HomePage sections when reordering to retain ReaderCard text.",
+      "content": "AI Reader autoplay: OCR triggers TTS only in Autoplay mode; blocked play keeps manual controls. Avoid technical UI labels; keyed HomePage sections preserve text on reorder.",
       "createdAt": "2026-11-03T07:31:54.665Z",
-      "updatedAt": "2026-11-03T07:32:15.177Z",
+      "updatedAt": "2026-11-03T22:09:52.364Z",
       "isEnabled": true
     }
   ]
